@@ -1,286 +1,226 @@
-// Background service worker for AI Workspace Controller
+// AI Workspace Controller Background Script
+console.log("🚀 Background script starting...");
 
-const PLATFORMS = {
-    chatgpt: 'https://chatgpt.com',
-    claude: 'https://claude.ai',
-    perplexity: 'https://perplexity.ai',
-    gemini: 'https://gemini.google.com'
+// Simple tab management - Updated with real URLs (5 total)
+const URLS = {
+  chatgpt: "https://chatgpt.com/",
+  claude: "https://claude.ai/",
+  gemini: "https://gemini.google.com/app",
+  aistudio: "https://aistudio.google.com/app", 
+  perplexity: "https://www.perplexity.ai/"
 };
 
-let platformTabs = {
-    chatgpt: null,
-    claude: null,
-    perplexity: null,
-    gemini: null
+// URL patterns for finding existing tabs - Updated with real patterns  
+const URL_PATTERNS = {
+  chatgpt: ["*://chatgpt.com/*", "*://chat.openai.com/*", "*://*.chatgpt.com/*"],
+  claude: ["*://claude.ai/*", "*://*.claude.ai/*"],
+  gemini: ["*://aistudio.google.com/*", "*://gemini.google.com/*", "*://*.google.com/app*", "*://*.google.com/prompts*"],
+  perplexity: ["*://www.perplexity.ai/*", "*://perplexity.ai/*", "*://*.perplexity.ai/*"]
 };
 
-// Remote config management
-let remoteConfig = null;
-const GITHUB_PAGES_BASE = 'https://manwonyori.github.io/-AI-WORKSPACE/ai-config/';
-
-// Sync remote configuration from GitHub Pages
-async function syncRemoteConfig() {
+// Open all platforms
+async function openAll() {
+  console.log("📂 Opening all platforms...");
+  const results = {};
+  
+  for (const [platform, url] of Object.entries(URLS)) {
     try {
-        const configs = await Promise.all([
-            fetch(GITHUB_PAGES_BASE + 'agents.json').then(r => r.json()),
-            fetch(GITHUB_PAGES_BASE + 'prompts.json').then(r => r.json()),
-            fetch(GITHUB_PAGES_BASE + 'rules.json').then(r => r.json()),
-            fetch(GITHUB_PAGES_BASE + 'selectors.json').then(r => r.json())
-        ]);
-        
-        remoteConfig = {
-            agents: configs[0],
-            prompts: configs[1],
-            rules: configs[2],
-            selectors: configs[3],
-            lastUpdated: Date.now()
-        };
-        
-        // Store in Chrome storage
-        await chrome.storage.local.set({ remoteConfig });
-        console.log('Remote config synced:', new Date().toISOString());
-        
-        // Send config update to all content scripts
-        const tabs = await chrome.tabs.query({});
-        for (const tab of tabs) {
-            if (tab.url && (tab.url.includes('chatgpt.com') || 
-                          tab.url.includes('claude.ai') || 
-                          tab.url.includes('perplexity.ai') ||
-                          tab.url.includes('gemini.google.com'))) {
-                chrome.tabs.sendMessage(tab.id, {
-                    action: 'configUpdate',
-                    config: remoteConfig
-                }).catch(() => {}); // Ignore errors for tabs without content script
-            }
-        }
-        
-        return remoteConfig;
+      const tab = await chrome.tabs.create({ url, active: false });
+      results[platform] = { success: true, tabId: tab.id };
+      console.log(`✅ ${platform} opened: tab ${tab.id}`);
     } catch (error) {
-        console.error('Failed to sync remote config:', error);
-        // Use cached config if available
-        const stored = await chrome.storage.local.get('remoteConfig');
-        return stored.remoteConfig || null;
+      results[platform] = { success: false, error: error.message };
+      console.error(`❌ ${platform} failed:`, error);
     }
+  }
+  
+  return results;
 }
 
-// Initialize and set up periodic sync
-chrome.runtime.onInstalled.addListener(async () => {
-    console.log("AI Workspace Controller installed");
-    // Sync immediately on install
-    await syncRemoteConfig();
+// Check status of all platforms by scanning all tabs
+async function statusAll() {
+  console.log("🔍 Checking status of all platforms...");
+  const status = {
+    chatgpt: { ready: false, reason: "no-tab" },
+    claude: { ready: false, reason: "no-tab" },
+    gemini: { ready: false, reason: "no-tab" },
+    perplexity: { ready: false, reason: "no-tab" }
+  };
+  
+  try {
+    // Get all tabs
+    const allTabs = await chrome.tabs.query({});
+    console.log(`📊 Scanning ${allTabs.length} total tabs`);
     
-    // Set up periodic sync every 30 minutes
-    chrome.alarms.create('syncConfig', { periodInMinutes: 30 });
-});
-
-// Handle alarms for periodic sync
-chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === 'syncConfig') {
-        syncRemoteConfig();
-    }
-});
-
-// Open all AI platforms in arranged windows
-async function openAllPlatforms() {
-    const displays = await chrome.system.display.getInfo();
-    const primaryDisplay = displays[0];
-    const screenWidth = primaryDisplay.bounds.width;
-    const screenHeight = primaryDisplay.bounds.height;
-    
-    // Calculate window positions (3 columns)
-    const windowWidth = Math.floor(screenWidth / 3);
-    const windowHeight = screenHeight - 100; // Leave space for taskbar
-    
-    const positions = [
-        { left: 0, top: 0 },                          // Left - ChatGPT
-        { left: windowWidth, top: 0 },                // Center - Claude
-        { left: windowWidth * 2, top: 0 }             // Right - Perplexity
-    ];
-    
-    let index = 0;
-    for (const [platform, url] of Object.entries(PLATFORMS)) {
-        const window = await chrome.windows.create({
-            url: url,
-            type: 'normal',
-            state: 'normal',
-            left: positions[index].left,
-            top: positions[index].top,
-            width: windowWidth,
-            height: windowHeight
-        });
+    for (const tab of allTabs) {
+      console.log(`🔍 Checking tab ${tab.id}: ${tab.url}`);
+      
+      // Determine platform from URL
+      let platform = null;
+      const url = tab.url || "";
+      
+      if (url.includes("chatgpt.com") || url.includes("chat.openai.com")) {
+        platform = "chatgpt";
+      } else if (url.includes("claude.ai")) {
+        platform = "claude";
+      } else if (url.includes("aistudio.google.com") || url.includes("gemini.google.com") || (url.includes("google.com") && (url.includes("prompts") || url.includes("app")))) {
+        platform = "gemini";
+        console.log(`🔍 Gemini variant detected: ${url}`);
+      } else if (url.includes("perplexity.ai")) {
+        platform = "perplexity";
+      }
+      
+      if (platform) {
+        console.log(`🎯 Found ${platform} tab: ${tab.id}`);
         
-        if (window.tabs && window.tabs[0]) {
-            platformTabs[platform] = window.tabs[0].id;
-        }
-        
-        index++;
-        
-        // Wait a bit between opening windows
-        await new Promise(resolve => setTimeout(resolve, 1000));
-    }
-    
-    return platformTabs;
-}
-
-// Send text to specific platform
-async function sendToPlatform(platform, text) {
-    let tabId = platformTabs[platform];
-    
-    // Check if tab exists and is valid
-    if (tabId) {
         try {
-            await chrome.tabs.get(tabId);
-        } catch (e) {
-            tabId = null;
-        }
-    }
-    
-    // If no tab, find or create one
-    if (!tabId) {
-        const tabs = await chrome.tabs.query({ url: PLATFORMS[platform] + '/*' });
-        if (tabs.length > 0) {
-            tabId = tabs[0].id;
-            platformTabs[platform] = tabId;
-        } else {
-            // Create new tab
-            const tab = await chrome.tabs.create({ url: PLATFORMS[platform] });
-            tabId = tab.id;
-            platformTabs[platform] = tabId;
-            
-            // Wait for page to load
-            await new Promise(resolve => setTimeout(resolve, 3000));
-        }
-    }
-    
-    // Send message to content script
-    return new Promise((resolve) => {
-        chrome.tabs.sendMessage(tabId, {
-            action: 'inputAndSend',
-            text: text
-        }, response => {
-            resolve(response || { error: 'No response' });
-        });
-    });
-}
-
-// Send to all platforms
-async function sendToAll(text) {
-    const results = {};
-    
-    for (const platform of Object.keys(PLATFORMS)) {
-        try {
-            results[platform] = await sendToPlatform(platform, text);
+          // Try to ping the content script
+          const response = await chrome.tabs.sendMessage(tab.id, { action: "status" });
+          console.log(`📨 Response from ${platform}:`, response);
+          
+          if (response && response.ready) {
+            // If platform is already ready, don't overwrite - just log
+            if (!status[platform].ready) {
+              status[platform] = {
+                ready: true,
+                platform: response.platform,
+                url: tab.url,
+                tabId: tab.id
+              };
+              console.log(`🟢 ${platform} is ready!`);
+            } else {
+              console.log(`🟢 ${platform} already ready, found additional tab`);
+            }
+          }
         } catch (error) {
-            results[platform] = { error: error.message };
+          console.log(`🔴 ${platform} content script error:`, error.message);
+          // Only set error status if platform isn't already ready
+          if (!status[platform].ready) {
+            status[platform] = { 
+              ready: false, 
+              reason: "no-content-script", 
+              url: tab.url,
+              tabId: tab.id,
+              error: error.message
+            };
+          }
         }
+      }
     }
     
-    return results;
+  } catch (error) {
+    console.error("❌ Error scanning tabs:", error);
+  }
+  
+  console.log("📋 Final status:", status);
+  return status;
 }
 
-// Get responses from all platforms
-async function getAllResponses() {
-    const responses = {};
-    
-    for (const [platform, tabId] of Object.entries(platformTabs)) {
-        if (tabId) {
-            try {
-                const response = await new Promise((resolve) => {
-                    chrome.tabs.sendMessage(tabId, {
-                        action: 'getResponse'
-                    }, resolve);
-                });
-                responses[platform] = response?.response || '';
-            } catch (error) {
-                responses[platform] = '';
-            }
-        }
-    }
-    
-    return responses;
+// Sync configuration (placeholder)
+async function syncNow() {
+  console.log("⚙️ Syncing configuration...");
+  // TODO: Implement actual config sync
+  return { success: true };
 }
 
-// Check platform status
-async function checkPlatformStatus() {
-    const status = {};
+// Send message to all platforms
+async function sendToAllPlatforms(message) {
+  console.log("📤 Sending to all platforms:", message);
+  const results = {};
+  let successCount = 0;
+  
+  try {
+    const allTabs = await chrome.tabs.query({});
     
-    for (const platform of Object.keys(PLATFORMS)) {
-        const tabId = platformTabs[platform];
-        if (tabId) {
-            try {
-                await chrome.tabs.get(tabId);
-                status[platform] = 'active';
-            } catch (e) {
-                status[platform] = 'closed';
-                platformTabs[platform] = null;
-            }
-        } else {
-            status[platform] = 'closed';
+    for (const tab of allTabs) {
+      const url = tab.url || "";
+      let platform = null;
+      
+      if (url.includes("chatgpt.com") || url.includes("chat.openai.com")) {
+        platform = "chatgpt";
+      } else if (url.includes("claude.ai")) {
+        platform = "claude";
+      } else if (url.includes("aistudio.google.com") || url.includes("gemini.google.com")) {
+        platform = "gemini";
+      } else if (url.includes("perplexity.ai")) {
+        platform = "perplexity";
+      }
+      
+      if (platform && !results[platform]) {
+        try {
+          console.log(`📤 Sending to ${platform} tab ${tab.id}`);
+          const response = await chrome.tabs.sendMessage(tab.id, { 
+            action: "inputAndSend", 
+            text: message 
+          });
+          
+          if (response && response.success) {
+            results[platform] = { success: true };
+            successCount++;
+            console.log(`✅ ${platform} success`);
+          } else {
+            results[platform] = { success: false, reason: "send-failed" };
+            console.log(`❌ ${platform} send failed`);
+          }
+        } catch (error) {
+          results[platform] = { success: false, error: error.message };
+          console.log(`❌ ${platform} error:`, error.message);
         }
+      }
     }
     
-    return status;
+  } catch (error) {
+    console.error("❌ sendToAllPlatforms error:", error);
+    return { success: false, error: error.message };
+  }
+  
+  console.log(`📊 Send results: ${successCount} successes`, results);
+  return { success: successCount > 0, results, successCount };
 }
 
 // Message handler
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log('Background received:', request);
-    
-    if (request.action === 'openAll') {
-        openAllPlatforms().then(sendResponse);
-        return true;
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log("📨 Message received:", message);
+  
+  (async () => {
+    try {
+      switch (message?.action) {
+        case "openAll":
+          const openResults = await openAll();
+          sendResponse(openResults);
+          break;
+          
+        case "statusAll":
+          const statusResults = await statusAll();
+          sendResponse(statusResults);
+          break;
+          
+        case "syncNow":
+          const syncResults = await syncNow();
+          sendResponse(syncResults);
+          break;
+          
+        case "sendToAll":
+          const sendResults = await sendToAllPlatforms(message.message);
+          sendResponse(sendResults);
+          break;
+          
+        default:
+          console.warn("❓ Unknown action:", message?.action);
+          sendResponse({ error: "Unknown action" });
+      }
+    } catch (error) {
+      console.error("❌ Message handler error:", error);
+      sendResponse({ error: error.message });
     }
-    
-    if (request.action === 'sendToPlatform') {
-        sendToPlatform(request.platform, request.text).then(sendResponse);
-        return true;
-    }
-    
-    if (request.action === 'sendToAll') {
-        sendToAll(request.text).then(sendResponse);
-        return true;
-    }
-    
-    if (request.action === 'getResponses') {
-        getAllResponses().then(sendResponse);
-        return true;
-    }
-    
-    if (request.action === 'checkStatus') {
-        checkPlatformStatus().then(sendResponse);
-        return true;
-    }
-    
-    if (request.action === 'syncConfig') {
-        syncRemoteConfig().then(sendResponse);
-        return true;
-    }
-    
-    if (request.action === 'getConfig') {
-        if (remoteConfig) {
-            sendResponse({ success: true, config: remoteConfig });
-        } else {
-            syncRemoteConfig().then(config => {
-                sendResponse({ success: !!config, config: config });
-            });
-            return true;
-        }
-    }
-    
-    if (request.action === 'openPopup') {
-        chrome.action.openPopup();
-        sendResponse({ success: true });
-    }
+  })();
+  
+  return true; // Keep message channel open for async response
 });
 
-// Tab update listener
-chrome.tabs.onRemoved.addListener((tabId) => {
-    for (const [platform, storedTabId] of Object.entries(platformTabs)) {
-        if (storedTabId === tabId) {
-            console.log(`${platform} tab closed`);
-            platformTabs[platform] = null;
-        }
-    }
+// Initialize
+chrome.runtime.onInstalled.addListener(() => {
+  console.log("🎉 AI Workspace Controller installed!");
 });
 
-console.log('AI Workspace Controller background script loaded');
+console.log("✅ Background script ready!");

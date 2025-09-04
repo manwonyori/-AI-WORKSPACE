@@ -1,5 +1,5 @@
-// Enhanced Content Script v1.4.1 with specialized Gemini fixes
-// Implementing proven solutions for ChatGPT DOM/Event issues and proper Quill/Angular handling
+// Enhanced Content Script v1.3.9 with URL handling and debugging
+// Complete implementation for ChatGPT arrow button and Gemini Quill.js integration
 
 function detectPlatform() {
   const h = location.hostname;

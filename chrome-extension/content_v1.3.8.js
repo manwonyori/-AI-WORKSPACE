@@ -1,15 +1,9 @@
-// Enhanced Content Script v1.4.1 with specialized Gemini fixes
-// Implementing proven solutions for ChatGPT DOM/Event issues and proper Quill/Angular handling
+// Enhanced Content Script v1.3.8 with finalized Gemini support
+// Complete implementation for ChatGPT arrow button and Gemini Quill.js integration
 
 function detectPlatform() {
   const h = location.hostname;
-  const pathname = location.pathname;
-  const fullUrl = location.href;
-  
-  console.log("🔍 Platform detection:");
-  console.log("  Hostname:", h);
-  console.log("  Pathname:", pathname);
-  console.log("  Full URL:", fullUrl);
+  console.log("🔍 Platform detection - hostname:", h, "pathname:", location.pathname);
   
   if (h.includes("chatgpt.com") || h.includes("chat.openai.com")) {
     console.log("✅ Detected ChatGPT");
@@ -23,27 +17,9 @@ function detectPlatform() {
     console.log("✅ Detected Perplexity");
     return "perplexity";
   }
-  if (h.includes("aistudio.google.com")) {
-    // Handle Google AI Studio URL issues
-    if (pathname.includes("/500") || pathname === "/" || pathname.includes("/app")) {
-      console.log("⚠️ AI Studio problematic URL detected:", fullUrl);
-      console.log("🔄 Redirecting to proper chat page in 2 seconds...");
-      setTimeout(() => {
-        window.location.href = "https://aistudio.google.com/prompts/new_chat";
-      }, 2000);
-      return "gemini"; // Still return gemini to allow initialization
-    }
-    
-    if (pathname.includes("/prompts/")) {
-      console.log("✅ Detected Google AI Studio (proper URL)");
-      return "gemini";
-    } else {
-      console.log("⚠️ AI Studio detected but not on prompts page:", pathname);
-      return "gemini";
-    }
-  }
-  if (h.includes("gemini.google.com")) {
-    console.log("✅ Detected Gemini");
+  if (h.includes("aistudio.google.com") || h.includes("gemini.google.com") || 
+      (h.includes("google.com") && (location.pathname.includes("prompts") || location.pathname.includes("app")))) {
+    console.log("✅ Detected Gemini/AI Studio - hostname:", h, "pathname:", location.pathname);
     return "gemini";
   }
   
@@ -770,47 +746,15 @@ async function sendMessage() {
     try {
       const trimmedSelector = selector.trim();
       
-      // Special handling for ChatGPT path-based selectors
-      if (trimmedSelector.includes('path[d*=') || platform === 'chatgpt') {
-        // Use the same multi-strategy approach as in waitForButton
-        const candidates = [
-          'button[data-testid="send-button"]',
-          'button[aria-label*="send" i]',
-          'button[title*="send" i]',
-          'form button[type="submit"]'
-        ];
-        
-        // Try standard selectors first
-        for (const sel of candidates) {
-          const btn = document.querySelector(sel);
-          if (btn && !btn.disabled) {
-            try {
-              clickWithPointer(btn);
-              console.log(`[${platform}] Clicked ChatGPT button via ${sel}`);
-            } catch (e) {
-              btn.click();
-              console.log(`[${platform}] Clicked ChatGPT button (fallback)`);
-            }
+      // Special handling for path-based selectors
+      if (trimmedSelector.includes('path[d*=')) {
+        const buttons = document.querySelectorAll('button');
+        for (const btn of buttons) {
+          const path = btn.querySelector('path[d*="M8.99992"]');
+          if (path && !btn.disabled) {
+            btn.click();
+            console.log(`[${platform}] Clicked button with arrow path`);
             return true;
-          }
-        }
-        
-        // Fallback to SVG path detection
-        const svgElements = document.querySelectorAll('svg, path');
-        for (const svg of svgElements) {
-          const d = svg.getAttribute('d') || '';
-          if (d.includes('16V6.414') || d.includes('M8.99992')) {
-            const btn = svg.closest('button');
-            if (btn && !btn.disabled) {
-              try {
-                clickWithPointer(btn);
-                console.log(`[${platform}] Clicked ChatGPT SVG path button`);
-              } catch (e) {
-                btn.click();
-                console.log(`[${platform}] Clicked ChatGPT SVG button (fallback)`);
-              }
-              return true;
-            }
           }
         }
       } else if (trimmedSelector.includes('mat-icon') || trimmedSelector.includes('aria-label')) {
@@ -1028,22 +972,12 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
           
         case "status":
           let inputFound = false;
-          let debugInfo = {};
-          
           if (platform && SELECTORS[platform]) {
             const selectors = SELECTORS[platform].input.split(',');
-            debugInfo.totalSelectors = selectors.length;
-            debugInfo.testedSelectors = [];
             
             for (const selector of selectors) {
               try {
                 const element = document.querySelector(selector.trim());
-                const selectorInfo = {
-                  selector: selector.trim(),
-                  found: !!element,
-                  visible: false
-                };
-                
                 if (element) {
                   // More comprehensive visibility check
                   const rect = element.getBoundingClientRect();
@@ -1052,22 +986,13 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
                                    rect.width > 0 ||
                                    window.getComputedStyle(element).display !== 'none';
                   
-                  selectorInfo.visible = isVisible;
-                  selectorInfo.rect = { width: rect.width, height: rect.height };
-                  
                   if (isVisible) {
                     inputFound = true;
                     console.log(`[${platform}] Status check - found input with selector:`, selector.trim());
+                    break;
                   }
                 }
-                
-                debugInfo.testedSelectors.push(selectorInfo);
-                if (inputFound) break;
               } catch (e) {
-                debugInfo.testedSelectors.push({
-                  selector: selector.trim(),
-                  error: e.message
-                });
                 continue;
               }
             }
@@ -1089,27 +1014,12 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
             }
           }
           
-          // Enhanced debugging for problematic platforms
-          if (!inputFound && (platform === 'chatgpt' || platform === 'gemini')) {
-            console.log(`[${platform}] 🔍 No input found - debugging info:`, debugInfo);
-            
-            // Try fallback detection
-            const fallbackInputs = document.querySelectorAll('textarea, [contenteditable="true"], .ql-editor');
-            if (fallbackInputs.length > 0) {
-              console.log(`[${platform}] 📝 Fallback found ${fallbackInputs.length} inputs:`);
-              fallbackInputs.forEach((el, i) => {
-                console.log(`  ${i+1}. ${el.tagName}.${el.className} #${el.id}`);
-              });
-            }
-          }
-          
           sendResponse({ 
             platform, 
             ready: inputFound, 
-            url: location.href,
-            debug: debugInfo
+            url: location.href 
           });
-          console.log(`[${platform}] Status response:`, { ready: inputFound, debugInfo });
+          console.log(`[${platform}] Status response:`, { ready: inputFound });
           break;
           
         case "configUpdate":
@@ -1160,38 +1070,8 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
   }, 1000);
 })();
 
-console.log(`[${platform}] Enhanced content script v1.4.0 loaded - ChatGPT fixes & advanced debugging`);
+console.log(`[${platform}] Enhanced content script v1.3.8 loaded - Finalized Gemini support`);
 console.log(`[${platform}] URL: ${location.href}`);
-
-// Enhanced debugging for non-working platforms
-if (platform === 'chatgpt' || platform === 'gemini') {
-  console.log(`[${platform}] 🔍 Debugging mode active - this platform currently has issues`);
-  
-  // Immediate element detection
-  setTimeout(() => {
-    console.log(`[${platform}] 🔍 Initial element scan:`);
-    
-    // Check for input elements
-    const inputs = document.querySelectorAll('textarea, div[contenteditable="true"], .ql-editor');
-    console.log(`  📝 Found ${inputs.length} potential input elements`);
-    inputs.forEach((el, i) => {
-      console.log(`    ${i+1}. ${el.tagName}.${el.className} #${el.id}`);
-    });
-    
-    // Check for send buttons
-    const buttons = document.querySelectorAll('button');
-    const sendButtons = Array.from(buttons).filter(btn => {
-      const text = btn.textContent?.toLowerCase() || '';
-      const ariaLabel = btn.getAttribute('aria-label')?.toLowerCase() || '';
-      return text.includes('send') || ariaLabel.includes('send') || btn.querySelector('svg, mat-icon');
-    });
-    console.log(`  🚀 Found ${sendButtons.length} potential send buttons`);
-    sendButtons.forEach((btn, i) => {
-      console.log(`    ${i+1}. ${btn.tagName} - "${btn.getAttribute('aria-label') || btn.textContent?.slice(0, 20)}"`);
-    });
-  }, 2000);
-}
-
 if (SELECTORS[platform]?.waitForButton) {
   console.log(`[${platform}] Note: Will wait for send button after input`);
 }

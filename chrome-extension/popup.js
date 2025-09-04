@@ -1,229 +1,170 @@
 // AI Workspace Controller Popup Script
+const dot = (ok) => ok ? "🟢" : "🔴";
+const id = (k) => document.getElementById(k);
 
-let platformStatus = {
-    chatgpt: false,
-    claude: false,
-    perplexity: false,
-    gemini: false
-};
-
-let responses = {
-    chatgpt: '',
-    claude: '',
-    perplexity: '',
-    gemini: ''
-};
-
-let activeResponseTab = 'chatgpt';
-
-// Update platform status display
-function updatePlatformStatus(platform, isActive) {
-    const card = document.getElementById(`${platform}-card`);
-    const status = document.getElementById(`${platform}-status`);
+async function refreshStatus() {
+  const statusBar = id("statusBar");
+  if (statusBar) statusBar.textContent = "Checking platform status...";
+  
+  try {
+    const res = await chrome.runtime.sendMessage({ action: "statusAll" });
+    console.log("Full status response:", res);
     
-    if (card) {
-        card.className = `platform-card ${isActive ? 'active' : 'inactive'}`;
-    }
-    if (status) {
-        status.className = `platform-status ${isActive ? 'active' : 'inactive'}`;
+    if (!res) {
+      if (statusBar) statusBar.textContent = "Failed to get status";
+      return;
     }
     
-    platformStatus[platform] = isActive;
-}
-
-// Update status bar
-function updateStatusBar(message) {
-    const statusBar = document.getElementById('statusBar');
-    if (statusBar) {
-        statusBar.textContent = message;
+    // Debug each platform status
+    console.log("ChatGPT status:", res.chatgpt);
+    console.log("Claude status:", res.claude);
+    console.log("Perplexity status:", res.perplexity);
+    console.log("Gemini status:", res.gemini);
+    
+    // Update dots
+    const chatDot = id("dotChatGPT");
+    const claudeDot = id("dotClaude");
+    const perplexityDot = id("dotPerplexity");
+    const geminiDot = id("dotGemini");
+    
+    if (chatDot) {
+      chatDot.textContent = dot(res.chatgpt?.ready);
+      console.log("ChatGPT dot set to:", res.chatgpt?.ready ? "🟢" : "🔴");
     }
-}
-
-// Check all platforms status
-async function checkAllPlatforms() {
-    updateStatusBar('Checking platform status...');
-    
-    chrome.runtime.sendMessage({action: 'checkStatus'}, (response) => {
-        if (chrome.runtime.lastError) {
-            console.error('Error checking status:', chrome.runtime.lastError);
-            updateStatusBar('Error checking status');
-            return;
-        }
-        
-        if (response) {
-            for (const [platform, status] of Object.entries(response)) {
-                updatePlatformStatus(platform, status === 'active');
-            }
-            
-            const activeCount = Object.values(response).filter(s => s === 'active').length;
-            updateStatusBar(`${activeCount}/4 platforms active`);
-        }
-    });
-}
-
-// Open all platforms
-function openAllPlatforms() {
-    updateStatusBar('Opening all platforms...');
-    
-    chrome.runtime.sendMessage({action: 'openAll'}, (response) => {
-        if (chrome.runtime.lastError) {
-            console.error('Error opening platforms:', chrome.runtime.lastError);
-            updateStatusBar('Error opening platforms');
-            return;
-        }
-        
-        updateStatusBar('All platforms opened');
-        setTimeout(checkAllPlatforms, 2000);
-    });
-}
-
-// Send message to all platforms
-function sendToAllPlatforms() {
-    const messageInput = document.getElementById('messageInput');
-    const text = messageInput.value.trim();
-    
-    if (!text) {
-        updateStatusBar('Please enter a message');
-        return;
+    if (claudeDot) {
+      claudeDot.textContent = dot(res.claude?.ready);
+      console.log("Claude dot set to:", res.claude?.ready ? "🟢" : "🔴");
+    }
+    if (perplexityDot) {
+      perplexityDot.textContent = dot(res.perplexity?.ready);
+      console.log("Perplexity dot set to:", res.perplexity?.ready ? "🟢" : "🔴");
+    }
+    if (geminiDot) {
+      geminiDot.textContent = dot(res.gemini?.ready);
+      console.log("Gemini dot set to:", res.gemini?.ready ? "🟢" : "🔴");
     }
     
-    updateStatusBar('Sending to all platforms...');
-    
-    chrome.runtime.sendMessage({action: 'sendToAll', text: text}, (response) => {
-        if (chrome.runtime.lastError) {
-            console.error('Error sending message:', chrome.runtime.lastError);
-            updateStatusBar('Error sending message');
-            return;
-        }
-        
-        console.log('Send results:', response);
-        updateStatusBar('Message sent to all platforms');
-        
-        // Clear input
-        messageInput.value = '';
-    });
+    if (statusBar) statusBar.textContent = "Status updated";
+  } catch (error) {
+    console.error("Status check error:", error);
+    if (statusBar) statusBar.textContent = "Error checking status";
+  }
 }
 
-// Get responses from all platforms
-function getResponses() {
-    updateStatusBar('Getting responses...');
-    
-    chrome.runtime.sendMessage({action: 'getResponses'}, (response) => {
-        if (chrome.runtime.lastError) {
-            console.error('Error getting responses:', chrome.runtime.lastError);
-            updateStatusBar('Error getting responses');
-            return;
-        }
-        
-        if (response) {
-            responses = response;
-            showResponseSection();
-            displayResponse(activeResponseTab);
-            updateStatusBar('Responses received');
-        }
-    });
-}
+// Event listeners
+const btnOpenAll = id("btnOpenAll");
+const btnCheckStatus = id("btnCheckStatus");
+const btnSync = id("btnSync");
+const btnSendAll = id("btnSendAll");
+const btnDebug = id("btnDebug");
+const messageInput = id("messageInput");
 
-// Show response section
-function showResponseSection() {
-    const responseSection = document.getElementById('responseSection');
-    if (responseSection) {
-        responseSection.classList.add('visible');
+if (btnOpenAll) {
+  btnOpenAll.addEventListener("click", async () => {
+    try {
+      await chrome.runtime.sendMessage({ action: "openAll" });
+      setTimeout(refreshStatus, 2000);
+    } catch (error) {
+      console.error("Open all error:", error);
     }
+  });
 }
 
-// Display response for specific platform
-function displayResponse(platform) {
-    const responseContent = document.getElementById('responseContent');
-    if (responseContent) {
-        const response = responses[platform] || 'No response from ' + platform;
-        responseContent.textContent = response;
+if (btnCheckStatus) {
+  btnCheckStatus.addEventListener("click", refreshStatus);
+}
+
+if (btnSync) {
+  btnSync.addEventListener("click", async () => {
+    try {
+      await chrome.runtime.sendMessage({ action: "syncNow" });
+      const statusBar = id("statusBar");
+      if (statusBar) statusBar.textContent = "✅ Config synced";
+    } catch (error) {
+      console.error("Sync error:", error);
     }
+  });
+}
+
+if (btnDebug) {
+  btnDebug.addEventListener("click", async () => {
+    // Open developer tools for popup
+    chrome.tabs.create({ url: 'chrome://extensions/?id=' + chrome.runtime.id });
     
-    // Update active tab
-    document.querySelectorAll('.response-tab').forEach(tab => {
-        if (tab.dataset.platform === platform) {
-            tab.classList.add('active');
-        } else {
-            tab.classList.remove('active');
+    // Also send a debug test to each platform
+    try {
+      const tabs = await chrome.tabs.query({});
+      const statusBar = id("statusBar");
+      
+      for (const tab of tabs) {
+        if (tab.url && (
+          tab.url.includes("chatgpt.com") || 
+          tab.url.includes("claude.ai") || 
+          tab.url.includes("perplexity.ai") ||
+          tab.url.includes("gemini.google.com") ||
+          tab.url.includes("aistudio.google.com")
+        )) {
+          try {
+            const response = await chrome.tabs.sendMessage(tab.id, { action: "status" });
+            console.log(`Direct test to tab ${tab.id} (${new URL(tab.url).hostname}):`, response);
+          } catch (e) {
+            console.error(`Failed to send to tab ${tab.id}:`, e);
+          }
         }
-    });
-    
-    activeResponseTab = platform;
+      }
+      
+      if (statusBar) statusBar.textContent = "Debug info in console (F12)";
+    } catch (error) {
+      console.error("Debug error:", error);
+    }
+  });
 }
 
-// Clear all inputs
-function clearAll() {
-    const messageInput = document.getElementById('messageInput');
-    if (messageInput) {
-        messageInput.value = '';
+if (btnSendAll && messageInput) {
+  btnSendAll.addEventListener("click", async () => {
+    const message = messageInput.value.trim();
+    const statusBar = id("statusBar");
+    
+    if (!message) {
+      if (statusBar) statusBar.textContent = "❌ Please enter a message";
+      return;
     }
     
-    responses = {
-        chatgpt: '',
-        claude: '',
-        perplexity: '',
-        gemini: ''
-    };
+    if (statusBar) statusBar.textContent = "📤 Sending to all platforms...";
     
-    const responseContent = document.getElementById('responseContent');
-    if (responseContent) {
-        responseContent.textContent = 'No responses yet...';
-    }
-    
-    updateStatusBar('Cleared');
-}
-
-// Sync configuration from GitHub Pages
-function syncConfig() {
-    updateStatusBar('Syncing configuration...');
-    
-    chrome.runtime.sendMessage({action: 'syncConfig'}, (response) => {
-        if (chrome.runtime.lastError) {
-            console.error('Error syncing config:', chrome.runtime.lastError);
-            updateStatusBar('❌ Config sync failed');
-            return;
-        }
-        
+    try {
+      const response = await chrome.runtime.sendMessage({ 
+        action: "sendToAll", 
+        message: message 
+      });
+      
+      if (statusBar) {
         if (response && response.success) {
-            updateStatusBar('✅ Config synced successfully!');
-            console.log('Config synced:', response.config);
+          statusBar.textContent = "✅ Message sent to all platforms";
+          messageInput.value = ""; // Clear input
         } else {
-            updateStatusBar('❌ Config sync failed');
+          statusBar.textContent = "⚠️ Some platforms failed";
         }
-    });
+      }
+    } catch (error) {
+      console.error("Send error:", error);
+      if (statusBar) statusBar.textContent = "❌ Send failed";
+    }
+  });
 }
 
-// Initialize event listeners
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('AI Workspace Controller popup loaded');
-    
-    // Button event listeners
-    document.getElementById('openAllBtn')?.addEventListener('click', openAllPlatforms);
-    document.getElementById('checkStatusBtn')?.addEventListener('click', checkAllPlatforms);
-    document.getElementById('syncConfigBtn')?.addEventListener('click', syncConfig);
-    document.getElementById('sendAllBtn')?.addEventListener('click', sendToAllPlatforms);
-    document.getElementById('getResponsesBtn')?.addEventListener('click', getResponses);
-    document.getElementById('clearAllBtn')?.addEventListener('click', clearAll);
-    
-    // Response tab listeners
-    document.querySelectorAll('.response-tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-            displayResponse(tab.dataset.platform);
-        });
-    });
-    
-    // Enter key to send
-    document.getElementById('messageInput')?.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) {
-            e.preventDefault();
-            sendToAllPlatforms();
-        }
-    });
-    
-    // Initial status check
-    checkAllPlatforms();
+// Initialize on load
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Popup loaded");
+  // Initial check after a short delay
+  setTimeout(refreshStatus, 1000);
+  // Second check for slower loading tabs
+  setTimeout(refreshStatus, 2500);
 });
 
-// Auto-check status every 5 seconds
-setInterval(checkAllPlatforms, 5000);
+// Also check when popup becomes visible
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) {
+    refreshStatus();
+  }
+});

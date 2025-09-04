@@ -5,178 +5,95 @@
     <title>AI Workspace Controller</title>
     <style>
         body {
-            width: 420px;
-            height: 550px;
-            padding: 0;
+            width: 350px;
+            min-height: 400px;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            overflow-y: auto;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
         }
         .container {
             background: white;
-            margin: 15px;
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
         h1 {
-            font-size: 22px;
-            margin: 0 0 20px 0;
             text-align: center;
+            margin: 0 0 20px 0;
             color: #333;
+            font-size: 18px;
         }
-        .platforms-grid {
+        .platforms {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
             margin-bottom: 20px;
         }
-        .platform-card {
-            background: #f5f5f5;
+        .platform {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            background: #f8f9fa;
             border-radius: 8px;
-            padding: 12px;
-            text-align: center;
-            transition: all 0.3s;
-            border: 2px solid transparent;
-        }
-        .platform-card.active {
-            background: #e8f5e9;
-            border-color: #4CAF50;
-        }
-        .platform-card.inactive {
-            background: #ffebee;
-            border-color: #f44336;
+            border: 1px solid #e9ecef;
         }
         .platform-name {
             font-size: 13px;
-            font-weight: bold;
-            color: #666;
-            margin-bottom: 8px;
+            font-weight: 500;
+            color: #495057;
         }
-        .platform-status {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin: 0 auto;
+        .status-dot {
+            font-size: 14px;
         }
-        .platform-status.active { background: #4CAF50; box-shadow: 0 0 5px #4CAF50; }
-        .platform-status.inactive { background: #f44336; box-shadow: 0 0 5px #f44336; }
-        
-        .control-section {
-            margin-top: 20px;
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-        .input-group {
-            margin-bottom: 15px;
+        button {
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #545b62;
         }
         textarea {
             width: 100%;
-            min-height: 100px;
-            padding: 12px;
+            height: 60px;
+            padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
+            border-radius: 6px;
+            font-size: 13px;
             resize: vertical;
             box-sizing: border-box;
-        }
-        textarea:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-        
-        .button-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 8px;
-            margin-bottom: 10px;
-        }
-        
-        button {
-            padding: 12px;
-            background: #667eea;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        button:hover {
-            background: #5a67d8;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }
-        button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            transform: none;
-        }
-        button.primary {
-            background: #4CAF50;
-            grid-column: 1 / -1;
-        }
-        button.primary:hover {
-            background: #45a049;
-        }
-        button.warning {
-            background: #ff9800;
-        }
-        button.warning:hover {
-            background: #f57c00;
-        }
-        
-        .response-section {
-            margin-top: 20px;
-            display: none;
-        }
-        .response-section.visible {
-            display: block;
-        }
-        .response-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .response-tabs {
-            display: flex;
-            gap: 5px;
-            margin-bottom: 10px;
-        }
-        .response-tab {
-            padding: 6px 12px;
-            background: #f5f5f5;
-            border: none;
-            border-radius: 6px;
-            font-size: 12px;
-            cursor: pointer;
-            color: #666;
-        }
-        .response-tab.active {
-            background: #667eea;
-            color: white;
-        }
-        .response-content {
-            background: #f5f5f5;
-            border-radius: 8px;
-            padding: 12px;
-            font-size: 13px;
-            color: #333;
-            max-height: 120px;
-            overflow-y: auto;
-            white-space: pre-wrap;
-            word-break: break-word;
+            margin: 10px 0;
         }
         .status-bar {
-            background: #f0f0f0;
-            border-radius: 8px;
-            padding: 10px;
-            margin-top: 15px;
-            font-size: 12px;
-            color: #666;
             text-align: center;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #6c757d;
+            margin-top: 12px;
         }
     </style>
 </head>
@@ -184,59 +101,35 @@
     <div class="container">
         <h1>🤖 AI Workspace Controller</h1>
         
-        <!-- Platform Status Grid -->
-        <div class="platforms-grid">
-            <div class="platform-card inactive" id="chatgpt-card">
-                <div class="platform-name">ChatGPT</div>
-                <div class="platform-status inactive" id="chatgpt-status"></div>
+        <div class="platforms">
+            <div class="platform">
+                <span class="platform-name">ChatGPT</span>
+                <span class="status-dot" id="dotChatGPT">🔴</span>
             </div>
-            <div class="platform-card inactive" id="claude-card">
-                <div class="platform-name">Claude</div>
-                <div class="platform-status inactive" id="claude-status"></div>
+            <div class="platform">
+                <span class="platform-name">Claude</span>
+                <span class="status-dot" id="dotClaude">🔴</span>
             </div>
-            <div class="platform-card inactive" id="perplexity-card">
-                <div class="platform-name">Perplexity</div>
-                <div class="platform-status inactive" id="perplexity-status"></div>
+            <div class="platform">
+                <span class="platform-name">Gemini</span>
+                <span class="status-dot" id="dotGemini">🔴</span>
             </div>
-            <div class="platform-card inactive" id="gemini-card">
-                <div class="platform-name">Gemini</div>
-                <div class="platform-status inactive" id="gemini-status"></div>
-            </div>
-        </div>
-        
-        <!-- Control Section -->
-        <div class="control-section">
-            <div class="button-group">
-                <button id="openAllBtn">📂 Open All</button>
-                <button id="checkStatusBtn">🔄 Check Status</button>
-                <button id="syncConfigBtn">⚙️ Sync Config</button>
-            </div>
-            
-            <div class="input-group">
-                <textarea id="messageInput" placeholder="Enter your message for all AI platforms..."></textarea>
-            </div>
-            
-            <button id="sendAllBtn" class="primary">📤 Send to All Platforms</button>
-            
-            <div class="button-group">
-                <button id="getResponsesBtn">📥 Get Responses</button>
-                <button id="clearAllBtn" class="warning">🗑️ Clear All</button>
+            <div class="platform">
+                <span class="platform-name">Perplexity</span>
+                <span class="status-dot" id="dotPerplexity">🔴</span>
             </div>
         </div>
         
-        <!-- Response Section -->
-        <div class="response-section" id="responseSection">
-            <div class="response-title">Responses:</div>
-            <div class="response-tabs">
-                <button class="response-tab active" data-platform="chatgpt">ChatGPT</button>
-                <button class="response-tab" data-platform="claude">Claude</button>
-                <button class="response-tab" data-platform="perplexity">Perplexity</button>
-                <button class="response-tab" data-platform="gemini">Gemini</button>
-            </div>
-            <div class="response-content" id="responseContent">No responses yet...</div>
+        <div class="buttons">
+            <button id="btnOpenAll" class="btn-primary">📂 Open All Platforms</button>
+            <button id="btnCheckStatus" class="btn-secondary">🔄 Check Status</button>
+            <button id="btnSync" class="btn-secondary">⚙️ Sync Config</button>
+            <button id="btnDebug" class="btn-secondary" style="background: #dc3545; color: white;">🐛 Debug Console</button>
         </div>
         
-        <!-- Status Bar -->
+        <textarea id="messageInput" placeholder="Enter message to send to all platforms..."></textarea>
+        <button id="btnSendAll" class="btn-primary">📤 Send to All Platforms</button>
+        
         <div class="status-bar" id="statusBar">Ready</div>
     </div>
     

@@ -1,5 +1,5 @@
-// Enhanced Content Script v1.4.1 with specialized Gemini fixes
-// Implementing proven solutions for ChatGPT DOM/Event issues and proper Quill/Angular handling
+// Enhanced Content Script v1.3.9 with URL handling and debugging
+// Complete implementation for ChatGPT arrow button and Gemini Quill.js integration
 
 function detectPlatform() {
   const h = location.hostname;
@@ -770,47 +770,15 @@ async function sendMessage() {
     try {
       const trimmedSelector = selector.trim();
       
-      // Special handling for ChatGPT path-based selectors
-      if (trimmedSelector.includes('path[d*=') || platform === 'chatgpt') {
-        // Use the same multi-strategy approach as in waitForButton
-        const candidates = [
-          'button[data-testid="send-button"]',
-          'button[aria-label*="send" i]',
-          'button[title*="send" i]',
-          'form button[type="submit"]'
-        ];
-        
-        // Try standard selectors first
-        for (const sel of candidates) {
-          const btn = document.querySelector(sel);
-          if (btn && !btn.disabled) {
-            try {
-              clickWithPointer(btn);
-              console.log(`[${platform}] Clicked ChatGPT button via ${sel}`);
-            } catch (e) {
-              btn.click();
-              console.log(`[${platform}] Clicked ChatGPT button (fallback)`);
-            }
+      // Special handling for path-based selectors
+      if (trimmedSelector.includes('path[d*=')) {
+        const buttons = document.querySelectorAll('button');
+        for (const btn of buttons) {
+          const path = btn.querySelector('path[d*="M8.99992"]');
+          if (path && !btn.disabled) {
+            btn.click();
+            console.log(`[${platform}] Clicked button with arrow path`);
             return true;
-          }
-        }
-        
-        // Fallback to SVG path detection
-        const svgElements = document.querySelectorAll('svg, path');
-        for (const svg of svgElements) {
-          const d = svg.getAttribute('d') || '';
-          if (d.includes('16V6.414') || d.includes('M8.99992')) {
-            const btn = svg.closest('button');
-            if (btn && !btn.disabled) {
-              try {
-                clickWithPointer(btn);
-                console.log(`[${platform}] Clicked ChatGPT SVG path button`);
-              } catch (e) {
-                btn.click();
-                console.log(`[${platform}] Clicked ChatGPT SVG button (fallback)`);
-              }
-              return true;
-            }
           }
         }
       } else if (trimmedSelector.includes('mat-icon') || trimmedSelector.includes('aria-label')) {
@@ -1160,7 +1128,7 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
   }, 1000);
 })();
 
-console.log(`[${platform}] Enhanced content script v1.4.0 loaded - ChatGPT fixes & advanced debugging`);
+console.log(`[${platform}] Enhanced content script v1.3.9 loaded - URL handling & debugging`);
 console.log(`[${platform}] URL: ${location.href}`);
 
 // Enhanced debugging for non-working platforms

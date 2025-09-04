@@ -1,15 +1,9 @@
-// Enhanced Content Script v1.4.1 with specialized Gemini fixes
-// Implementing proven solutions for ChatGPT DOM/Event issues and proper Quill/Angular handling
+// Enhanced Content Script v1.3.4 with MutationObserver button detection
+// Improved handling for ChatGPT arrow button and Gemini mat-icon send button
 
 function detectPlatform() {
   const h = location.hostname;
-  const pathname = location.pathname;
-  const fullUrl = location.href;
-  
-  console.log("🔍 Platform detection:");
-  console.log("  Hostname:", h);
-  console.log("  Pathname:", pathname);
-  console.log("  Full URL:", fullUrl);
+  console.log("🔍 Platform detection - hostname:", h, "pathname:", location.pathname);
   
   if (h.includes("chatgpt.com") || h.includes("chat.openai.com")) {
     console.log("✅ Detected ChatGPT");
@@ -23,27 +17,9 @@ function detectPlatform() {
     console.log("✅ Detected Perplexity");
     return "perplexity";
   }
-  if (h.includes("aistudio.google.com")) {
-    // Handle Google AI Studio URL issues
-    if (pathname.includes("/500") || pathname === "/" || pathname.includes("/app")) {
-      console.log("⚠️ AI Studio problematic URL detected:", fullUrl);
-      console.log("🔄 Redirecting to proper chat page in 2 seconds...");
-      setTimeout(() => {
-        window.location.href = "https://aistudio.google.com/prompts/new_chat";
-      }, 2000);
-      return "gemini"; // Still return gemini to allow initialization
-    }
-    
-    if (pathname.includes("/prompts/")) {
-      console.log("✅ Detected Google AI Studio (proper URL)");
-      return "gemini";
-    } else {
-      console.log("⚠️ AI Studio detected but not on prompts page:", pathname);
-      return "gemini";
-    }
-  }
-  if (h.includes("gemini.google.com")) {
-    console.log("✅ Detected Gemini");
+  if (h.includes("aistudio.google.com") || h.includes("gemini.google.com") || 
+      (h.includes("google.com") && (location.pathname.includes("prompts") || location.pathname.includes("app")))) {
+    console.log("✅ Detected Gemini/AI Studio - hostname:", h, "pathname:", location.pathname);
     return "gemini";
   }
   
@@ -72,12 +48,11 @@ const SELECTORS = {
   },
   gemini: {
     input: "div.ql-editor, div[contenteditable=\"true\"].ql-editor, rich-textarea textarea, textarea[aria-label*=\"Enter a prompt\"], textarea[aria-label*=\"prompt\"], textarea[placeholder*=\"Enter a prompt\"], textarea.textarea, textarea[rows], textarea",
-    // Prioritize aria-label for robustness
-    button: 'button[aria-label="Send message"], button[aria-label*="Send"], button.mat-icon-button:has(mat-icon[fonticon="send"]), button:has(mat-icon[fonticon="send"]), mat-icon-button[aria-label*="Send"], button[mattooltip*="Send"]',
+    // Added mat-icon selector for Gemini
+    button: "mat-icon[fonticon=\"send\"], mat-icon.send-button-icon, button:has(mat-icon[fonticon=\"send\"]), button[aria-label*=\"Send\"], button[aria-label*=\"send\"], button[aria-label*=\"Run\"], button[title*=\"Send\"], button[title*=\"Run\"], button.send-button, mat-icon-button[aria-label*=\"Send\"]",
     container: "main, c-wiz, mat-sidenav-content, .main-content",
-    useCtrlEnter: false,
-    waitForButton: true,
-    useAngularEvents: true  // Flag for Angular-specific event handling
+    useCtrlEnter: false,  // Changed to false since button appears after input
+    waitForButton: true   // Wait for mat-icon button to appear
   },
   perplexity: {
     input: "textarea[placeholder*=\"Ask\"], textarea, [contenteditable=\"true\"]",
@@ -178,45 +153,41 @@ async function inputForChatGPT(inputEl, text) {
 }
 
 async function inputForGemini(inputEl, text) {
-  console.log("[Gemini] Step 1: Text input - Detected element type:", inputEl.tagName, inputEl.className);
+  console.log("[Gemini] Detected element type:", inputEl.tagName, inputEl.className);
   
-  // Handle Quill Editor with finalized approach
+  // Handle Quill Editor
   if (inputEl.classList && inputEl.classList.contains("ql-editor")) {
-    console.log("[Gemini] Using optimized Quill editor method");
+    console.log("[Gemini] Using Quill editor method");
     
     try {
-      // Try Quill API first if available
-      const quill = inputEl.__quill;
+      inputEl.focus();
       
-      if (quill && typeof quill.setText === 'function') {
-        console.log("[Gemini] ✅ Found Quill instance, using API");
-        quill.setText(text);
-        
-        // Set cursor position to end
-        const textLength = quill.getText().length;
-        quill.setSelection(textLength, 0);
-        
-        console.log("[Gemini] Text input via Quill API complete");
-      } else {
-        // Primary method: Direct innerHTML manipulation (most reliable in practice)
-        console.log("[Gemini] Using direct DOM manipulation (primary method)");
-        
-        // Clear and set content
-        inputEl.innerHTML = `<p>${text}</p>`;
-        console.log("[Gemini] Text set via innerHTML:", text);
+      // Clear existing content
+      inputEl.innerHTML = '';
+      
+      // Set new content
+      inputEl.innerHTML = `<p>${text}</p>`;
+      inputEl.dispatchEvent(new Event('input', { bubbles: true }));
+      
+      // Trigger blur/focus cycle for Quill
+      inputEl.dispatchEvent(new Event('blur', { bubbles: true }));
+      await new Promise(r => setTimeout(r, 100));
+      inputEl.dispatchEvent(new Event('focus', { bubbles: true }));
+      
+      // Also try textContent for compatibility
+      if (!inputEl.textContent || inputEl.textContent.trim() !== text) {
+        inputEl.textContent = text;
+        inputEl.dispatchEvent(new InputEvent('input', {
+          data: text,
+          inputType: 'insertText',
+          bubbles: true
+        }));
       }
       
-      // Critical: Dispatch events for Angular change detection
-      // This sequence simulates real user interaction
-      inputEl.dispatchEvent(new Event('input', { bubbles: true }));
-      inputEl.dispatchEvent(new Event('change', { bubbles: true })); // Angular listens to 'change'
-      inputEl.dispatchEvent(new Event('blur', { bubbles: true }));   // Triggers final updates
-      
-      console.log("[Gemini] Event dispatch complete (input, change, blur)");
+      console.log("[Gemini] Quill editor text set successfully");
       return true;
-      
     } catch (e) {
-      console.error("[Gemini] Text input error:", e);
+      console.error("[Gemini] Quill editor error:", e);
       return false;
     }
   }
@@ -465,41 +436,14 @@ async function autoInput(text) {
   return await chunkedInsert(input, text, limit);
 }
 
-// Utility functions
-const sleep = (ms) => new Promise(r => setTimeout(r, ms));
-
-async function waitFor(fn, {timeout=8000, interval=80} = {}) {
-  const start = performance.now();
-  while (performance.now() - start < timeout) {
-    const el = fn();
-    if (el) return el;
-    await sleep(interval);
-  }
-  throw new Error('Timeout waiting for element');
-}
-
-function clickWithPointer(el) {
-  const opts = { bubbles: true, cancelable: true, composed: true };
-  el.dispatchEvent(new PointerEvent('pointerdown', opts));
-  el.dispatchEvent(new MouseEvent('mousedown', opts));
-  el.dispatchEvent(new PointerEvent('pointerup', opts));
-  el.dispatchEvent(new MouseEvent('mouseup', opts));
-  el.dispatchEvent(new MouseEvent('click', opts));
-}
-
 // Enhanced wait for dynamic button with MutationObserver
-async function waitForButton(maxWait = 5000) {  // Increased to 5s for Gemini
+async function waitForButton(maxWait = 3000) {
   const sel = SELECTORS[platform];
   if (!sel || !sel.waitForButton) return null;
   
-  if (platform === 'gemini') {
-    console.log(`[Gemini] Step 2: Waiting for send button activation...`);
-    maxWait = 10000;  // Give Gemini more time (10s)
-  } else {
-    console.log(`[${platform}] Waiting for send button to appear...`);
-  }
+  console.log(`[${platform}] Waiting for send button to appear...`);
   
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     let resolved = false;
     const startTime = Date.now();
     
@@ -540,40 +484,32 @@ async function waitForButton(maxWait = 5000) {  // Increased to 5s for Gemini
             }
           }
           
-          // Special handling for Gemini mat-icon with exact selectors from reliable code
-          if (trimmedSelector.includes('mat-icon') || trimmedSelector.includes('mat-icon-button') || platform === 'gemini') {
-            // Use exact selector priority from sendGeminiMessageReliably
-            let sendBtn = document.querySelector('button[aria-label="Send message"]');
-            
-            if (!sendBtn) {
-              // Secondary: mat-icon-button with nested mat-icon
-              sendBtn = document.querySelector('button.mat-icon-button:has(mat-icon[fonticon="send"])');
-            }
-            
-            // Additional fallbacks
-            if (!sendBtn) {
-              sendBtn = document.querySelector('button[aria-label*="Send" i]') ||
-                        document.querySelector('button:has(mat-icon[fonticon="send"])') ||
-                        document.querySelector('button[mattooltip*="Send" i]');
-            }
-            
-            if (sendBtn) {
-              const rect = sendBtn.getBoundingClientRect();
-              const isVisible = rect.width > 0 && 
-                              rect.height > 0 &&
-                              window.getComputedStyle(sendBtn).display !== 'none';
+          // Special handling for Gemini mat-icon
+          if (trimmedSelector.includes('mat-icon') || platform === 'gemini') {
+            // Look for mat-icon send button
+            const icons = document.querySelectorAll('mat-icon[fonticon="send"], mat-icon.send-button-icon');
+            for (const icon of icons) {
+              // Find clickable parent or check if icon itself is clickable
+              const btn = icon.closest('button, [role="button"], mat-icon-button');
+              const target = btn || icon;
               
-              if (isVisible) {
-                // Check if button is enabled
-                const isDisabled = sendBtn.hasAttribute('disabled') || 
-                                  sendBtn.disabled ||
-                                  sendBtn.classList.contains('disabled') ||
-                                  sendBtn.getAttribute('aria-disabled') === 'true';
+              if (target) {
+                const rect = target.getBoundingClientRect();
+                const isVisible = rect.width > 0 && 
+                                rect.height > 0 &&
+                                window.getComputedStyle(target).display !== 'none';
                 
-                if (!isDisabled) {
-                  console.log(`[${platform}] Step 2 complete: Send button is now active`);
-                  resolved = true;
-                  return sendBtn;
+                if (isVisible) {
+                  // Additional check for Gemini - make sure it's not disabled
+                  const isDisabled = target.hasAttribute('disabled') || 
+                                    target.classList.contains('disabled') ||
+                                    target.getAttribute('aria-disabled') === 'true';
+                  
+                  if (!isDisabled) {
+                    console.log(`[${platform}] Found Gemini send button with mat-icon`);
+                    resolved = true;
+                    return target;
+                  }
                 }
               }
             }
@@ -608,62 +544,32 @@ async function waitForButton(maxWait = 5000) {  // Increased to 5s for Gemini
       return;
     }
     
-    // Setup MutationObserver to watch for button appearance and state changes
+    // Setup MutationObserver to watch for button appearance
     const observer = new MutationObserver((mutations) => {
       if (!resolved) {
-        // For Gemini, specifically look for disabled attribute changes
-        mutations.forEach(mutation => {
-          if (platform === 'gemini' && 
-              mutation.type === 'attributes' && 
-              mutation.attributeName === 'disabled' &&
-              mutation.target.tagName === 'BUTTON') {
-            console.log(`[Gemini] Button disabled state changed`);
-          }
-        });
-        
-        // Check for button on any DOM change
         const button = checkForButton();
         if (button) {
-          // Double-check button is not disabled
-          const isDisabled = button.hasAttribute('disabled') || 
-                            button.disabled ||
-                            button.getAttribute('aria-disabled') === 'true';
-          
-          if (!isDisabled) {
-            observer.disconnect();
-            console.log(`[${platform}] Button found and active`);
-            resolve(button);
-          } else if (platform === 'gemini') {
-            console.log(`[Gemini] Button found but still disabled, continuing to wait...`);
-          }
+          observer.disconnect();
+          resolve(button);
         }
       }
     });
     
-    // Start observing with comprehensive options
-    // For Gemini, focus especially on 'disabled' attribute changes
+    // Start observing
     observer.observe(document.body, {
       childList: true,
       subtree: true,
       attributes: true,
-      attributeFilter: platform === 'gemini' ? 
-        ['disabled', 'aria-disabled'] : 
-        ['disabled', 'aria-disabled', 'class', 'style', 'aria-label']
+      attributeFilter: ['disabled', 'aria-disabled', 'class', 'style']
     });
     
-    // Timeout handling with reject for Gemini
+    // Timeout handling
     setTimeout(() => {
       if (!resolved) {
         resolved = true;
         observer.disconnect();
-        
-        if (platform === 'gemini') {
-          console.error(`[Gemini] Timeout: Send button did not become active within ${maxWait}ms`);
-          reject(new Error('Gemini send button timeout'));
-        } else {
-          console.log(`[${platform}] No button appeared within ${maxWait}ms`);
-          resolve(null);
-        }
+        console.log(`[${platform}] No button appeared within ${maxWait}ms`);
+        resolve(null);
       }
     }, maxWait);
     
@@ -693,26 +599,8 @@ async function sendMessage() {
   if (sel.waitForButton) {
     const button = await waitForButton();
     if (button) {
-      if (platform === 'gemini') {
-        console.log(`[Gemini] Step 3: Clicking activated send button...`);
-      }
-      
-      // Use enhanced click for better compatibility
-      try {
-        clickWithPointer(button);
-        if (platform === 'gemini') {
-          console.log(`[Gemini] ✅ Step 3 complete: Message sent successfully!`);
-        } else {
-          console.log(`[${platform}] Clicked dynamic button with pointer events`);
-        }
-      } catch (e) {
-        button.click();
-        if (platform === 'gemini') {
-          console.log(`[Gemini] ✅ Step 3 complete: Message sent (fallback click)`);
-        } else {
-          console.log(`[${platform}] Clicked dynamic button with fallback`);
-        }
-      }
+      button.click();
+      console.log(`[${platform}] Clicked dynamic button`);
       return true;
     }
   }
@@ -770,69 +658,33 @@ async function sendMessage() {
     try {
       const trimmedSelector = selector.trim();
       
-      // Special handling for ChatGPT path-based selectors
-      if (trimmedSelector.includes('path[d*=') || platform === 'chatgpt') {
-        // Use the same multi-strategy approach as in waitForButton
-        const candidates = [
-          'button[data-testid="send-button"]',
-          'button[aria-label*="send" i]',
-          'button[title*="send" i]',
-          'form button[type="submit"]'
-        ];
-        
-        // Try standard selectors first
-        for (const sel of candidates) {
-          const btn = document.querySelector(sel);
-          if (btn && !btn.disabled) {
-            try {
-              clickWithPointer(btn);
-              console.log(`[${platform}] Clicked ChatGPT button via ${sel}`);
-            } catch (e) {
-              btn.click();
-              console.log(`[${platform}] Clicked ChatGPT button (fallback)`);
-            }
+      // Special handling for path-based selectors
+      if (trimmedSelector.includes('path[d*=')) {
+        const buttons = document.querySelectorAll('button');
+        for (const btn of buttons) {
+          const path = btn.querySelector('path[d*="M8.99992"]');
+          if (path && !btn.disabled) {
+            btn.click();
+            console.log(`[${platform}] Clicked button with arrow path`);
             return true;
           }
         }
-        
-        // Fallback to SVG path detection
-        const svgElements = document.querySelectorAll('svg, path');
-        for (const svg of svgElements) {
-          const d = svg.getAttribute('d') || '';
-          if (d.includes('16V6.414') || d.includes('M8.99992')) {
-            const btn = svg.closest('button');
-            if (btn && !btn.disabled) {
-              try {
-                clickWithPointer(btn);
-                console.log(`[${platform}] Clicked ChatGPT SVG path button`);
-              } catch (e) {
-                btn.click();
-                console.log(`[${platform}] Clicked ChatGPT SVG button (fallback)`);
-              }
-              return true;
-            }
+      } else if (trimmedSelector.includes('mat-icon')) {
+        // Special handling for mat-icon
+        const icon = document.querySelector(trimmedSelector);
+        if (icon) {
+          const btn = icon.closest('button') || icon.closest('[role="button"]');
+          if (btn && !btn.disabled) {
+            btn.click();
+            console.log(`[${platform}] Clicked button with mat-icon`);
+            return true;
           }
-        }
-      } else if (trimmedSelector.includes('mat-icon') || trimmedSelector.includes('aria-label')) {
-        // Prioritize aria-label="Send message" for Gemini
-        let sendBtn = document.querySelector('button[aria-label="Send message"]');
-        
-        if (!sendBtn) {
-          sendBtn = document.querySelector('button.mat-icon-button:has(mat-icon[fonticon="send"])') ||
-                    document.querySelector('button[aria-label*="Send" i]') ||
-                    document.querySelector('button:has(mat-icon[fonticon="send"])') ||
-                    document.querySelector('button[mattooltip*="Send" i]');
-        }
-        
-        if (sendBtn && !sendBtn.disabled && !sendBtn.hasAttribute('disabled')) {
-          try {
-            clickWithPointer(sendBtn);
-            console.log(`[${platform}] Clicked Gemini button with pointer events`);
-          } catch (e) {
-            sendBtn.click();
-            console.log(`[${platform}] Clicked Gemini button with fallback`);
+          // If mat-icon itself is clickable
+          if (icon.onclick || icon.style.cursor === 'pointer') {
+            icon.click();
+            console.log(`[${platform}] Clicked mat-icon directly`);
+            return true;
           }
-          return true;
         }
       } else {
         const btn = document.querySelector(trimmedSelector);
@@ -930,50 +782,16 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
           break;
           
         case "inputAndSend":
-          if (platform === 'gemini') {
-            console.log(`[Gemini] Starting optimized message sending...`);
-          }
-          
           const ok1 = await autoInput(req.text);
           if (ok1) {
-            // Small initial delay to allow DOM updates
-            if (platform === 'gemini') {
-              console.log(`[Gemini] Text input complete, initiating button wait...`);
-              await new Promise(resolve => setTimeout(resolve, 100));
-            } else if (SELECTORS[platform]?.waitForButton) {
+            // For platforms that need dynamic buttons, wait a bit for button to become active
+            if (SELECTORS[platform]?.waitForButton) {
+              console.log(`[${platform}] Waiting for button to become active after input...`);
               await new Promise(resolve => setTimeout(resolve, 300));
             }
-            
-            let ok2 = false;
-            try {
-              ok2 = await sendMessage();
-            } catch (error) {
-              if (platform === 'gemini') {
-                console.error(`[Gemini] Send failed:`, error.message);
-                // Retry once for Gemini
-                console.log(`[Gemini] Retrying send...`);
-                await new Promise(resolve => setTimeout(resolve, 500));
-                try {
-                  ok2 = await sendMessage();
-                } catch (retryError) {
-                  console.error(`[Gemini] Retry failed:`, retryError.message);
-                }
-              }
-            }
-            
-            if (platform === 'gemini') {
-              if (ok1 && ok2) {
-                console.log(`[Gemini] ✅ Message sent successfully!`);
-              } else {
-                console.error(`[Gemini] ❌ Send failed - Input: ${ok1}, Send: ${ok2}`);
-              }
-            }
-            
+            const ok2 = await sendMessage();
             sendResponse({ success: ok1 && ok2, platform });
           } else {
-            if (platform === 'gemini') {
-              console.error(`[Gemini] ❌ Text input failed`);
-            }
             sendResponse({ success: false, platform });
           }
           break;
@@ -1028,22 +846,12 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
           
         case "status":
           let inputFound = false;
-          let debugInfo = {};
-          
           if (platform && SELECTORS[platform]) {
             const selectors = SELECTORS[platform].input.split(',');
-            debugInfo.totalSelectors = selectors.length;
-            debugInfo.testedSelectors = [];
             
             for (const selector of selectors) {
               try {
                 const element = document.querySelector(selector.trim());
-                const selectorInfo = {
-                  selector: selector.trim(),
-                  found: !!element,
-                  visible: false
-                };
-                
                 if (element) {
                   // More comprehensive visibility check
                   const rect = element.getBoundingClientRect();
@@ -1052,22 +860,13 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
                                    rect.width > 0 ||
                                    window.getComputedStyle(element).display !== 'none';
                   
-                  selectorInfo.visible = isVisible;
-                  selectorInfo.rect = { width: rect.width, height: rect.height };
-                  
                   if (isVisible) {
                     inputFound = true;
                     console.log(`[${platform}] Status check - found input with selector:`, selector.trim());
+                    break;
                   }
                 }
-                
-                debugInfo.testedSelectors.push(selectorInfo);
-                if (inputFound) break;
               } catch (e) {
-                debugInfo.testedSelectors.push({
-                  selector: selector.trim(),
-                  error: e.message
-                });
                 continue;
               }
             }
@@ -1089,27 +888,12 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
             }
           }
           
-          // Enhanced debugging for problematic platforms
-          if (!inputFound && (platform === 'chatgpt' || platform === 'gemini')) {
-            console.log(`[${platform}] 🔍 No input found - debugging info:`, debugInfo);
-            
-            // Try fallback detection
-            const fallbackInputs = document.querySelectorAll('textarea, [contenteditable="true"], .ql-editor');
-            if (fallbackInputs.length > 0) {
-              console.log(`[${platform}] 📝 Fallback found ${fallbackInputs.length} inputs:`);
-              fallbackInputs.forEach((el, i) => {
-                console.log(`  ${i+1}. ${el.tagName}.${el.className} #${el.id}`);
-              });
-            }
-          }
-          
           sendResponse({ 
             platform, 
             ready: inputFound, 
-            url: location.href,
-            debug: debugInfo
+            url: location.href 
           });
-          console.log(`[${platform}] Status response:`, { ready: inputFound, debugInfo });
+          console.log(`[${platform}] Status response:`, { ready: inputFound });
           break;
           
         case "configUpdate":
@@ -1160,38 +944,8 @@ chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
   }, 1000);
 })();
 
-console.log(`[${platform}] Enhanced content script v1.4.0 loaded - ChatGPT fixes & advanced debugging`);
+console.log(`[${platform}] Enhanced content script v1.3.4 loaded with MutationObserver`);
 console.log(`[${platform}] URL: ${location.href}`);
-
-// Enhanced debugging for non-working platforms
-if (platform === 'chatgpt' || platform === 'gemini') {
-  console.log(`[${platform}] 🔍 Debugging mode active - this platform currently has issues`);
-  
-  // Immediate element detection
-  setTimeout(() => {
-    console.log(`[${platform}] 🔍 Initial element scan:`);
-    
-    // Check for input elements
-    const inputs = document.querySelectorAll('textarea, div[contenteditable="true"], .ql-editor');
-    console.log(`  📝 Found ${inputs.length} potential input elements`);
-    inputs.forEach((el, i) => {
-      console.log(`    ${i+1}. ${el.tagName}.${el.className} #${el.id}`);
-    });
-    
-    // Check for send buttons
-    const buttons = document.querySelectorAll('button');
-    const sendButtons = Array.from(buttons).filter(btn => {
-      const text = btn.textContent?.toLowerCase() || '';
-      const ariaLabel = btn.getAttribute('aria-label')?.toLowerCase() || '';
-      return text.includes('send') || ariaLabel.includes('send') || btn.querySelector('svg, mat-icon');
-    });
-    console.log(`  🚀 Found ${sendButtons.length} potential send buttons`);
-    sendButtons.forEach((btn, i) => {
-      console.log(`    ${i+1}. ${btn.tagName} - "${btn.getAttribute('aria-label') || btn.textContent?.slice(0, 20)}"`);
-    });
-  }, 2000);
-}
-
 if (SELECTORS[platform]?.waitForButton) {
   console.log(`[${platform}] Note: Will wait for send button after input`);
 }

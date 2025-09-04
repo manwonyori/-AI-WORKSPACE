@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perplexity Test Page</title>
+    <style>
+        body { font-family: system-ui; padding: 20px; background: #f5f5f5; }
+        .SearchBar { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+        .SearchBar-input { width: 100%; min-height: 60px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
+        .SearchBar-sendButton { padding: 10px 20px; background: #0066cc; color: white; border: none; border-radius: 8px; cursor: pointer; }
+        .test-section { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Perplexity Selector Test Page</h1>
+    
+    <div class="test-section">
+        <h2>Current Perplexity UI Structure (2025)</h2>
+        <div class="SearchBar">
+            <textarea 
+                class="SearchBar-input"
+                data-testid="search-bar-input"
+                placeholder="Ask me anything..."
+                aria-label="Ask anything"
+            ></textarea>
+            <button 
+                class="SearchBar-sendButton"
+                data-testid="send-btn"
+                aria-label="Send message"
+            >Send</button>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Results</h2>
+        <div id="results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Manual Test</h2>
+        <button onclick="testSelectors()">Run Selector Test</button>
+        <button onclick="loadExtensionScript()">Load Extension Content Script</button>
+    </div>
+
+    <script>
+        // Test all Perplexity selectors
+        function testSelectors() {
+            const results = document.getElementById('results');
+            results.innerHTML = '';
+            
+            const selectors = {
+                input: [
+                    'textarea.SearchBar-input[data-testid="search-bar-input"]',
+                    'textarea.SearchBar-input',
+                    'textarea[data-testid="search-bar-input"]',
+                    'div[contenteditable="true"][data-testid="search-bar-input"]',
+                    'textarea[aria-label*="Ask anything"]',
+                    'textarea[aria-label*="Type your question"]',
+                    'textarea[placeholder*="Ask me anything"]',
+                    'textarea[placeholder*="Type your question"]',
+                    '.PromptTextarea textarea',
+                    '#chat-input',
+                    'textarea[data-testid="chat-input"]'
+                ],
+                button: [
+                    'button.SearchBar-sendButton[data-testid="send-btn"]',
+                    'button.SearchBar-sendButton',
+                    'button[data-testid="send-btn"]',
+                    'button[aria-label="Send"]',
+                    'button[aria-label*="Send"]'
+                ]
+            };
+            
+            // Test input selectors
+            let inputFound = false;
+            for (const selector of selectors.input) {
+                try {
+                    const element = document.querySelector(selector);
+                    if (element) {
+                        results.innerHTML += `<div class="status success">✅ Found input with: <code>${selector}</code></div>`;
+                        inputFound = true;
+                        // Highlight the element
+                        element.style.outline = '3px solid #4CAF50';
+                        element.style.outlineOffset = '2px';
+                        break;
+                    } else {
+                        results.innerHTML += `<div class="status error">❌ Not found: <code>${selector}</code></div>`;
+                    }
+                } catch (e) {
+                    results.innerHTML += `<div class="status error">❌ Invalid selector: <code>${selector}</code></div>`;
+                }
+            }
+            
+            // Test button selectors
+            let buttonFound = false;
+            for (const selector of selectors.button) {
+                try {
+                    const element = document.querySelector(selector);
+                    if (element) {
+                        results.innerHTML += `<div class="status success">✅ Found button with: <code>${selector}</code></div>`;
+                        buttonFound = true;
+                        // Highlight the element
+                        element.style.outline = '3px solid #2196F3';
+                        element.style.outlineOffset = '2px';
+                        break;
+                    } else {
+                        results.innerHTML += `<div class="status error">❌ Not found: <code>${selector}</code></div>`;
+                    }
+                } catch (e) {
+                    results.innerHTML += `<div class="status error">❌ Invalid selector: <code>${selector}</code></div>`;
+                }
+            }
+            
+            // Summary
+            results.innerHTML += '<hr>';
+            results.innerHTML += `<div class="status ${inputFound ? 'success' : 'error'}">
+                ${inputFound ? '✅' : '❌'} Input Element: ${inputFound ? 'FOUND' : 'NOT FOUND'}
+            </div>`;
+            results.innerHTML += `<div class="status ${buttonFound ? 'success' : 'error'}">
+                ${buttonFound ? '✅' : '❌'} Send Button: ${buttonFound ? 'FOUND' : 'NOT FOUND'}
+            </div>`;
+        }
+        
+        // Load the actual extension content script
+        function loadExtensionScript() {
+            const script = document.createElement('script');
+            script.src = 'content.js';
+            document.head.appendChild(script);
+            
+            setTimeout(() => {
+                const results = document.getElementById('results');
+                results.innerHTML += '<div class="status success">✅ Content script loaded - check for green LOADED badge</div>';
+            }, 1000);
+        }
+        
+        // Auto-run test on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(testSelectors, 500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workspace Controller - All Platforms Test</title>
+    <style>
+        body { font-family: system-ui; padding: 20px; background: #f0f2f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .platform-card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .platform-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .platform-name { font-size: 24px; font-weight: bold; margin-right: 10px; }
+        .status-dot { font-size: 24px; }
+        .test-area { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin: 10px 0;
+        }
+        textarea, div[contenteditable] {
+            width: 100%;
+            min-height: 60px;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .send-button {
+            background: #0066cc;
+            color: white;
+        }
+        .test-button {
+            background: #28a745;
+            color: white;
+        }
+        .clear-button {
+            background: #dc3545;
+            color: white;
+        }
+        .results {
+            background: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .success { color: #28a745; }
+        .error { color: #dc3545; }
+        .info { color: #17a2b8; }
+        .warning { color: #ffc107; }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 AI Workspace Controller - Platform Test Suite v1.2.0</h1>
+        
+        <!-- ChatGPT -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <span class="platform-name">ChatGPT</span>
+                <span class="status-dot" id="dot-chatgpt">🔴</span>
+            </div>
+            <div class="test-area">
+                <div contenteditable="true" 
+                     data-id="root" 
+                     data-placeholder="Message ChatGPT"
+                     aria-label="Message ChatGPT"
+                     class="m-0 w-full resize-none"
+                     placeholder="Message ChatGPT"></div>
+                <button type="submit" 
+                        data-testid="send-button" 
+                        aria-label="Send message"
+                        class="send-button">Send</button>
+                <button onclick="testPlatform('chatgpt')" class="test-button">Test Selectors</button>
+                <button onclick="clearInput('chatgpt')" class="clear-button">Clear</button>
+            </div>
+            <div id="results-chatgpt" class="results"></div>
+        </div>
+
+        <!-- Claude -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <span class="platform-name">Claude</span>
+                <span class="status-dot" id="dot-claude">🔴</span>
+            </div>
+            <div class="test-area">
+                <div contenteditable="true" 
+                     class="ProseMirror"
+                     data-placeholder="Talk to Claude..."
+                     aria-label="Message Claude"
+                     role="textbox"></div>
+                <button aria-label="Send Message" 
+                        data-testid="send-button"
+                        class="send-button">Send Message</button>
+                <button onclick="testPlatform('claude')" class="test-button">Test Selectors</button>
+                <button onclick="clearInput('claude')" class="clear-button">Clear</button>
+            </div>
+            <div id="results-claude" class="results"></div>
+        </div>
+
+        <!-- Perplexity -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <span class="platform-name">Perplexity</span>
+                <span class="status-dot" id="dot-perplexity">🔴</span>
+            </div>
+            <div class="test-area">
+                <div class="SearchBar">
+                    <textarea class="SearchBar-input"
+                             data-testid="search-bar-input"
+                             aria-label="Ask anything"
+                             placeholder="Ask me anything..."></textarea>
+                    <button class="SearchBar-sendButton send-button"
+                           data-testid="send-btn"
+                           aria-label="Send">Send</button>
+                    <button onclick="testPlatform('perplexity')" class="test-button">Test Selectors</button>
+                    <button onclick="clearInput('perplexity')" class="clear-button">Clear</button>
+                </div>
+            </div>
+            <div id="results-perplexity" class="results"></div>
+        </div>
+
+        <!-- Gemini / AI Studio -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <span class="platform-name">Gemini / AI Studio</span>
+                <span class="status-dot" id="dot-gemini">🔴</span>
+            </div>
+            <div class="test-area">
+                <rich-textarea>
+                    <textarea aria-label="Enter a prompt here"
+                             placeholder="Enter a prompt here"
+                             data-test-id="text-input"
+                             class="model-response-text-input prompt-textarea"></textarea>
+                </rich-textarea>
+                <button aria-label="Send prompt"
+                       data-test-id="send-button"
+                       title="Send message"
+                       class="send-button mdc-button">Send</button>
+                <button aria-label="Run"
+                       data-test-id="run-button"
+                       class="send-button">Run</button>
+                <button onclick="testPlatform('gemini')" class="test-button">Test Selectors</button>
+                <button onclick="clearInput('gemini')" class="clear-button">Clear</button>
+            </div>
+            <div id="results-gemini" class="results"></div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <span class="platform-name">🎮 Control Panel</span>
+            </div>
+            <div class="test-area">
+                <button onclick="testAll()" class="test-button">Test All Platforms</button>
+                <button onclick="loadContentScript()" class="test-button">Load Content Script</button>
+                <button onclick="loadSelectorDetector()" class="test-button">Load Selector Detector</button>
+                <button onclick="clearAll()" class="clear-button">Clear All</button>
+            </div>
+            <div id="results-control" class="results"></div>
+        </div>
+    </div>
+
+    <script>
+        // Platform selector configurations
+        const PLATFORM_SELECTORS = {
+            chatgpt: {
+                input: [
+                    'div[contenteditable="true"][data-id="root"]',
+                    'div[contenteditable="true"][data-placeholder*="Message"]',
+                    'div[contenteditable="true"][aria-label*="Message"]',
+                    'div.m-0.w-full.resize-none[contenteditable="true"]'
+                ],
+                button: [
+                    'button[data-testid="send-button"]',
+                    'button[aria-label*="Send"]',
+                    'button[type="submit"]'
+                ]
+            },
+            claude: {
+                input: [
+                    'div[contenteditable="true"].ProseMirror',
+                    'div[contenteditable="true"][data-placeholder]',
+                    'div[role="textbox"][contenteditable="true"]'
+                ],
+                button: [
+                    'button[aria-label="Send Message"]',
+                    'button[data-testid="send-button"]'
+                ]
+            },
+            perplexity: {
+                input: [
+                    'textarea.SearchBar-input[data-testid="search-bar-input"]',
+                    'textarea.SearchBar-input',
+                    'textarea[data-testid="search-bar-input"]',
+                    'textarea[aria-label*="Ask anything"]'
+                ],
+                button: [
+                    'button.SearchBar-sendButton[data-testid="send-btn"]',
+                    'button.SearchBar-sendButton',
+                    'button[data-testid="send-btn"]'
+                ]
+            },
+            gemini: {
+                input: [
+                    'rich-textarea textarea',
+                    'textarea[aria-label*="Enter a prompt"]',
+                    'textarea[aria-label*="Type something"]',
+                    'textarea[data-test-id="text-input"]',
+                    'textarea.prompt-textarea'
+                ],
+                button: [
+                    'button[aria-label*="Send"]',
+                    'button[aria-label*="Run"]',
+                    'button[data-test-id="send-button"]',
+                    'button[data-test-id="run-button"]'
+                ]
+            }
+        };
+
+        function testPlatform(platform) {
+            const resultsDiv = document.getElementById(`results-${platform}`);
+            const dotElement = document.getElementById(`dot-${platform}`);
+            resultsDiv.innerHTML = `<div class="info">Testing ${platform}...</div>`;
+            
+            const selectors = PLATFORM_SELECTORS[platform];
+            let inputFound = false;
+            let buttonFound = false;
+            let output = '';
+            
+            // Test input selectors
+            output += '<div><strong>Input Selectors:</strong></div>';
+            for (const selector of selectors.input) {
+                try {
+                    const element = document.querySelector(selector);
+                    if (element) {
+                        output += `<div class="success">✅ Found: <code>${selector}</code></div>`;
+                        inputFound = true;
+                        element.style.outline = '3px solid #4CAF50';
+                        element.style.outlineOffset = '2px';
+                        setTimeout(() => {
+                            element.style.outline = '';
+                        }, 2000);
+                        break;
+                    } else {
+                        output += `<div class="error">❌ Not found: <code>${selector}</code></div>`;
+                    }
+                } catch (e) {
+                    output += `<div class="warning">⚠️ Invalid: <code>${selector}</code></div>`;
+                }
+            }
+            
+            // Test button selectors
+            output += '<div><strong>Button Selectors:</strong></div>';
+            for (const selector of selectors.button) {
+                try {
+                    const element = document.querySelector(selector);
+                    if (element) {
+                        output += `<div class="success">✅ Found: <code>${selector}</code></div>`;
+                        buttonFound = true;
+                        element.style.outline = '3px solid #2196F3';
+                        element.style.outlineOffset = '2px';
+                        setTimeout(() => {
+                            element.style.outline = '';
+                        }, 2000);
+                        break;
+                    } else {
+                        output += `<div class="error">❌ Not found: <code>${selector}</code></div>`;
+                    }
+                } catch (e) {
+                    output += `<div class="warning">⚠️ Invalid: <code>${selector}</code></div>`;
+                }
+            }
+            
+            // Update status dot
+            if (inputFound && buttonFound) {
+                dotElement.textContent = '🟢';
+                output += '<div class="success"><strong>✅ Platform Ready!</strong></div>';
+            } else {
+                dotElement.textContent = '🔴';
+                output += '<div class="error"><strong>❌ Platform Not Ready</strong></div>';
+            }
+            
+            resultsDiv.innerHTML = output;
+        }
+
+        function testAll() {
+            ['chatgpt', 'claude', 'perplexity', 'gemini'].forEach(platform => {
+                testPlatform(platform);
+            });
+        }
+
+        function clearInput(platform) {
+            const selectors = PLATFORM_SELECTORS[platform];
+            for (const selector of selectors.input) {
+                const element = document.querySelector(selector);
+                if (element) {
+                    if (element.tagName === 'TEXTAREA') {
+                        element.value = '';
+                    } else if (element.contentEditable === 'true') {
+                        element.innerHTML = '';
+                        element.innerText = '';
+                    }
+                    element.dispatchEvent(new Event('input', { bubbles: true }));
+                    break;
+                }
+            }
+        }
+
+        function clearAll() {
+            ['chatgpt', 'claude', 'perplexity', 'gemini'].forEach(platform => {
+                clearInput(platform);
+            });
+        }
+
+        function loadContentScript() {
+            const script = document.createElement('script');
+            script.src = 'content.js';
+            document.head.appendChild(script);
+            document.getElementById('results-control').innerHTML = 
+                '<div class="success">✅ Content script loaded</div>';
+        }
+
+        function loadSelectorDetector() {
+            const script = document.createElement('script');
+            script.src = 'selector-detector.js';
+            document.head.appendChild(script);
+            document.getElementById('results-control').innerHTML = 
+                '<div class="success">✅ Selector detector loaded - check console (F12)</div>';
+        }
+
+        // Auto-test on load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(testAll, 500);
+        });
+    </script>
+</body>
+</html>

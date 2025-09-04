@@ -245,6 +245,11 @@ chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
           url: window.location.href
         });
       }
+      if (request?.action === 'configUpdate') {
+        console.log(`[${platform}] Config updated:`, request.config);
+        // Could use config to update selectors, prompts, etc.
+        return sendResponse({ success: true, platform });
+      }
     } catch (err) {
       console.error('handler error:', err);
       return sendResponse({ success: false, error: String(err), platform });

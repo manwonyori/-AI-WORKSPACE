@@ -3,13 +3,15 @@
 let platformStatus = {
     chatgpt: false,
     claude: false,
-    perplexity: false
+    perplexity: false,
+    gemini: false
 };
 
 let responses = {
     chatgpt: '',
     claude: '',
-    perplexity: ''
+    perplexity: '',
+    gemini: ''
 };
 
 let activeResponseTab = 'chatgpt';
@@ -54,7 +56,7 @@ async function checkAllPlatforms() {
             }
             
             const activeCount = Object.values(response).filter(s => s === 'active').length;
-            updateStatusBar(`${activeCount}/3 platforms active`);
+            updateStatusBar(`${activeCount}/4 platforms active`);
         }
     });
 }
@@ -160,7 +162,8 @@ function clearAll() {
     responses = {
         chatgpt: '',
         claude: '',
-        perplexity: ''
+        perplexity: '',
+        gemini: ''
     };
     
     const responseContent = document.getElementById('responseContent');
@@ -171,6 +174,26 @@ function clearAll() {
     updateStatusBar('Cleared');
 }
 
+// Sync configuration from GitHub Pages
+function syncConfig() {
+    updateStatusBar('Syncing configuration...');
+    
+    chrome.runtime.sendMessage({action: 'syncConfig'}, (response) => {
+        if (chrome.runtime.lastError) {
+            console.error('Error syncing config:', chrome.runtime.lastError);
+            updateStatusBar('❌ Config sync failed');
+            return;
+        }
+        
+        if (response && response.success) {
+            updateStatusBar('✅ Config synced successfully!');
+            console.log('Config synced:', response.config);
+        } else {
+            updateStatusBar('❌ Config sync failed');
+        }
+    });
+}
+
 // Initialize event listeners
 document.addEventListener('DOMContentLoaded', () => {
     console.log('AI Workspace Controller popup loaded');
@@ -178,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Button event listeners
     document.getElementById('openAllBtn')?.addEventListener('click', openAllPlatforms);
     document.getElementById('checkStatusBtn')?.addEventListener('click', checkAllPlatforms);
+    document.getElementById('syncConfigBtn')?.addEventListener('click', syncConfig);
     document.getElementById('sendAllBtn')?.addEventListener('click', sendToAllPlatforms);
     document.getElementById('getResponsesBtn')?.addEventListener('click', getResponses);
     document.getElementById('clearAllBtn')?.addEventListener('click', clearAll);

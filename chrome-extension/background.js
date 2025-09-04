@@ -3,14 +3,82 @@
 const PLATFORMS = {
     chatgpt: 'https://chatgpt.com',
     claude: 'https://claude.ai',
-    perplexity: 'https://perplexity.ai'
+    perplexity: 'https://perplexity.ai',
+    gemini: 'https://gemini.google.com'
 };
 
 let platformTabs = {
     chatgpt: null,
     claude: null,
-    perplexity: null
+    perplexity: null,
+    gemini: null
 };
+
+// Remote config management
+let remoteConfig = null;
+const GITHUB_PAGES_BASE = 'https://manwonyori.github.io/-AI-WORKSPACE/ai-config/';
+
+// Sync remote configuration from GitHub Pages
+async function syncRemoteConfig() {
+    try {
+        const configs = await Promise.all([
+            fetch(GITHUB_PAGES_BASE + 'agents.json').then(r => r.json()),
+            fetch(GITHUB_PAGES_BASE + 'prompts.json').then(r => r.json()),
+            fetch(GITHUB_PAGES_BASE + 'rules.json').then(r => r.json()),
+            fetch(GITHUB_PAGES_BASE + 'selectors.json').then(r => r.json())
+        ]);
+        
+        remoteConfig = {
+            agents: configs[0],
+            prompts: configs[1],
+            rules: configs[2],
+            selectors: configs[3],
+            lastUpdated: Date.now()
+        };
+        
+        // Store in Chrome storage
+        await chrome.storage.local.set({ remoteConfig });
+        console.log('Remote config synced:', new Date().toISOString());
+        
+        // Send config update to all content scripts
+        const tabs = await chrome.tabs.query({});
+        for (const tab of tabs) {
+            if (tab.url && (tab.url.includes('chatgpt.com') || 
+                          tab.url.includes('claude.ai') || 
+                          tab.url.includes('perplexity.ai') ||
+                          tab.url.includes('gemini.google.com'))) {
+                chrome.tabs.sendMessage(tab.id, {
+                    action: 'configUpdate',
+                    config: remoteConfig
+                }).catch(() => {}); // Ignore errors for tabs without content script
+            }
+        }
+        
+        return remoteConfig;
+    } catch (error) {
+        console.error('Failed to sync remote config:', error);
+        // Use cached config if available
+        const stored = await chrome.storage.local.get('remoteConfig');
+        return stored.remoteConfig || null;
+    }
+}
+
+// Initialize and set up periodic sync
+chrome.runtime.onInstalled.addListener(async () => {
+    console.log("AI Workspace Controller installed");
+    // Sync immediately on install
+    await syncRemoteConfig();
+    
+    // Set up periodic sync every 30 minutes
+    chrome.alarms.create('syncConfig', { periodInMinutes: 30 });
+});
+
+// Handle alarms for periodic sync
+chrome.alarms.onAlarm.addListener((alarm) => {
+    if (alarm.name === 'syncConfig') {
+        syncRemoteConfig();
+    }
+});
 
 // Open all AI platforms in arranged windows
 async function openAllPlatforms() {
@@ -181,6 +249,22 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === 'checkStatus') {
         checkPlatformStatus().then(sendResponse);
         return true;
+    }
+    
+    if (request.action === 'syncConfig') {
+        syncRemoteConfig().then(sendResponse);
+        return true;
+    }
+    
+    if (request.action === 'getConfig') {
+        if (remoteConfig) {
+            sendResponse({ success: true, config: remoteConfig });
+        } else {
+            syncRemoteConfig().then(config => {
+                sendResponse({ success: !!config, config: config });
+            });
+            return true;
+        }
     }
     
     if (request.action === 'openPopup') {

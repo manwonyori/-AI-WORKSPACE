@@ -1,72 +1,7 @@
 {
-  "version": "1.0.0",
-  "updated": "2025-09-04T17:30:00Z",
-  "agents": {
-    "claude": {
-      "name": "Claude",
-      "role": "coordinator",
-      "capabilities": [
-        "code_implementation",
-        "file_management", 
-        "system_commands",
-        "debugging",
-        "architecture_design"
-      ],
-      "priority": 1,
-      "timeout": 30000,
-      "retryLimit": 2
-    },
-    "chatgpt": {
-      "name": "ChatGPT",
-      "role": "assistant",
-      "capabilities": [
-        "explanation",
-        "brainstorming",
-        "documentation",
-        "user_guidance",
-        "learning_support"
-      ],
-      "priority": 2,
-      "timeout": 25000,
-      "retryLimit": 3
-    },
-    "gemini": {
-      "name": "Gemini",
-      "role": "creative",
-      "capabilities": [
-        "image_generation",
-        "multimodal_analysis",
-        "creative_content",
-        "ui_design",
-        "marketing_copy"
-      ],
-      "priority": 3,
-      "timeout": 25000,
-      "retryLimit": 2
-    },
-    "perplexity": {
-      "name": "Perplexity",
-      "role": "researcher",
-      "capabilities": [
-        "web_search",
-        "fact_checking",
-        "library_updates",
-        "trend_analysis",
-        "documentation_search"
-      ],
-      "priority": 4,
-      "timeout": 20000,
-      "retryLimit": 3
-    }
-  },
-  "orchestration": {
-    "mode": "sequential",
-    "maxTurns": 10,
-    "turnDelay": 2000,
-    "backoffMultiplier": 1.5,
-    "maxBackoff": 10000,
-    "enableLogging": true,
-    "autoSync": true,
-    "syncInterval": 300000
-  }
+  "order": ["chatgpt", "claude", "gemini", "perplexity"],
+  "maxTurns": 24,
+  "backoffMs": { "min": 2000, "max": 6000 },
+  "loopGuard": { "window": 5, "similarity": 0.96 },
+  "notes": "오케스트레이터가 이 순서대로 릴레이를 돌립니다."
 }

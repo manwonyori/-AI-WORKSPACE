@@ -1,0 +1,12 @@
+{
+  "allow": {
+    "to": ["chatgpt", "claude", "gemini", "perplexity"],
+    "actions": ["input", "send", "inputAndSend", "clear", "getResponse"]
+  },
+  "rateLimitMs": 2000,
+  "stop": {
+    "maxTurns": 24,
+    "stopWords": ["ERROR:", "TERMS VIOLATION"],
+    "timeoutMs": 45000
+  }
+}

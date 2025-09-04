@@ -1,0 +1,18 @@
+{
+  "chatgpt": {
+    "input": "#prompt-textarea, textarea[data-id=\"root\"]",
+    "button": "button[data-testid=\"send-button\"], button[aria-label=\"Send message\"], form button[type=\"submit\"]"
+  },
+  "claude": {
+    "input": "div[contenteditable=\"true\"].ProseMirror, div[contenteditable=\"true\"]",
+    "button": "button[aria-label=\"Send Message\"], form button[type=\"submit\"]"
+  },
+  "gemini": {
+    "input": "textarea, [contenteditable=\"true\"]",
+    "button": "button[aria-label*=\"Send\"], form button[type=\"submit\"], button[aria-label*=\"작성\"]"
+  },
+  "perplexity": {
+    "input": "textarea[placeholder*=\"Ask\"], textarea, [contenteditable=\"true\"]",
+    "button": "button[aria-label=\"Submit\"], button.bg-super, form button[type=\"submit\"]"
+  }
+}

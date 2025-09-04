@@ -1,7 +1,93 @@
 {
+  "version": "1.2.0",
+  "last_updated": "2025-09-04T10:00:00Z",
   "order": ["chatgpt", "claude", "gemini", "perplexity"],
   "maxTurns": 24,
   "backoffMs": { "min": 2000, "max": 6000 },
   "loopGuard": { "window": 5, "similarity": 0.96 },
-  "notes": "오케스트레이터가 이 순서대로 릴레이를 돌립니다."
+  "notes": "오케스트레이터가 이 순서대로 릴레이를 돌립니다.",
+  "agents": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "platform": "chatgpt",
+      "url": "https://chatgpt.com",
+      "capabilities": ["text_generation", "code_analysis", "reasoning", "file_operations"],
+      "status": "active",
+      "mcp_connection": {
+        "enabled": true,
+        "bridge_path": "C:\\Users\\8899y\\mcp_shared\\chatgpt_claude_bridge.json",
+        "connector": "chatgpt_mcp_connector.py"
+      },
+      "selectors": {
+        "input": "#prompt-textarea, textarea[data-id=\"root\"]",
+        "button": "button[data-testid=\"send-button\"], button[aria-label=\"Send message\"]",
+        "container": "main"
+      },
+      "chunk_limit": 3500
+    },
+    {
+      "id": "claude",
+      "name": "Claude", 
+      "platform": "claude",
+      "url": "https://claude.ai",
+      "capabilities": ["text_generation", "code_analysis", "reasoning", "file_operations", "image_analysis"],
+      "status": "active",
+      "mcp_connection": {
+        "enabled": true,
+        "bridge_path": "C:\\Users\\8899y\\mcp_shared\\chatgpt_claude_bridge.json",
+        "connector": "claude_bridge.py"
+      },
+      "selectors": {
+        "input": "div[contenteditable=\"true\"].ProseMirror, div[contenteditable=\"true\"]",
+        "button": "button[aria-label=\"Send Message\"], form button[type=\"submit\"]",
+        "container": "main"
+      },
+      "chunk_limit": 3500
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "platform": "gemini",
+      "url": "https://gemini.google.com",
+      "capabilities": ["text_generation", "code_analysis", "reasoning", "image_analysis", "multimodal"],
+      "status": "active",
+      "mcp_connection": {
+        "enabled": false,
+        "bridge_path": null,
+        "connector": null
+      },
+      "selectors": {
+        "input": "textarea, [contenteditable=\"true\"]",
+        "button": "button[aria-label*=\"Send\"], button[aria-label*=\"작성\"]",
+        "container": "main"
+      },
+      "chunk_limit": 2500
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "platform": "perplexity",
+      "url": "https://www.perplexity.ai",
+      "capabilities": ["research", "web_search", "text_generation", "citations"],
+      "status": "active",
+      "mcp_connection": {
+        "enabled": false,
+        "bridge_path": null,
+        "connector": null
+      },
+      "selectors": {
+        "input": "textarea[placeholder*=\"Ask\"], textarea",
+        "button": "button[aria-label=\"Submit\"], button.bg-super",
+        "container": "main"
+      },
+      "chunk_limit": 3000
+    }
+  ],
+  "collaboration_settings": {
+    "auto_sync_interval": 30000,
+    "cross_platform_tasks": true,
+    "shared_workspace": "C:\\Users\\8899y\\AI-WORKSPACE",
+    "mcp_shared_folder": "C:\\Users\\8899y\\mcp_shared"
+  }
 }

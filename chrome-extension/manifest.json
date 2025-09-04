@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "AI Workspace Controller",
+  "version": "2.0.0",
+  "description": "Control multiple AI platforms simultaneously",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "windows"
+  ],
+  "host_permissions": [
+    "http://localhost:3006/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://perplexity.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://perplexity.ai/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}

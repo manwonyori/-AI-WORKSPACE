@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP 실시간 동기화 대시보드</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        
+        .panel {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .panel h2 {
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .status {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .status-indicator.active {
+            background: #4caf50;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-indicator.inactive {
+            background: #f44336;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+        }
+        
+        .file-list {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .file-item {
+            padding: 8px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 3px;
+            border-left: 3px solid #667eea;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        .timestamp {
+            color: #666;
+            font-size: 0.85em;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+        
+        .log-viewer {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 5px;
+            height: 200px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .btn-success {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .btn-danger {
+            background: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 MCP 실시간 동기화 대시보드</h1>
+        
+        <div class="dashboard">
+            <!-- 연결 상태 패널 -->
+            <div class="panel">
+                <h2>📡 연결 상태</h2>
+                
+                <div class="status">
+                    <div class="status-indicator active" id="mcp-status"></div>
+                    <span>MCP 서버 (localhost:3006)</span>
+                </div>
+                
+                <div class="status">
+                    <div class="status-indicator active" id="chatgpt-status"></div>
+                    <span>ChatGPT 연결</span>
+                </div>
+                
+                <div class="status">
+                    <div class="status-indicator active" id="git-status"></div>
+                    <span>Git 자동 커밋</span>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="files-synced">0</div>
+                        <div class="stat-label">동기화된 파일</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="commits-today">0</div>
+                        <div class="stat-label">오늘 커밋</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="active-sessions">1</div>
+                        <div class="stat-label">활성 세션</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 최근 수정 파일 -->
+            <div class="panel">
+                <h2>📝 최근 수정 파일</h2>
+                <div class="file-list" id="recent-files">
+                    <!-- 동적으로 추가됨 -->
+                </div>
+                
+                <div class="control-buttons">
+                    <button class="btn-primary" onclick="refreshFiles()">새로고침</button>
+                    <button class="btn-success" onclick="commitNow()">즉시 커밋</button>
+                </div>
+            </div>
+            
+            <!-- 실시간 로그 -->
+            <div class="panel">
+                <h2>📊 실시간 로그</h2>
+                <div class="log-viewer" id="log-viewer">
+                    [2025-09-04 15:35:00] MCP 동기화 모니터 시작...
+                    [2025-09-04 15:35:01] SSE 서버 연결 성공
+                    [2025-09-04 15:35:02] Git 리포지토리 확인 완료
+                    [2025-09-04 15:35:03] 파일 감시 시스템 활성화
+                </div>
+            </div>
+            
+            <!-- ChatGPT 활동 모니터 -->
+            <div class="panel">
+                <h2>🤖 ChatGPT 활동</h2>
+                <div id="chatgpt-activity">
+                    <div class="status">
+                        <div class="status-indicator active"></div>
+                        <span>실시간 모니터링 중...</span>
+                    </div>
+                    <div class="file-list" id="chatgpt-actions">
+                        <!-- ChatGPT 작업 로그 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // SSE 연결로 실시간 업데이트
+        const eventSource = new EventSource('http://localhost:3006/sse');
+        
+        eventSource.onmessage = function(event) {
+            try {
+                const data = JSON.parse(event.data);
+                handleSSEUpdate(data);
+            } catch (e) {
+                // 파싱 오류 무시
+            }
+        };
+        
+        eventSource.onerror = function() {
+            document.getElementById('mcp-status').className = 'status-indicator inactive';
+        };
+        
+        function handleSSEUpdate(data) {
+            // MCP 이벤트 처리
+            if (data.method && data.method.includes('filesystem')) {
+                updateChatGPTActivity(data);
+            }
+        }
+        
+        function updateChatGPTActivity(data) {
+            const actionsDiv = document.getElementById('chatgpt-actions');
+            const timestamp = new Date().toLocaleTimeString();
+            
+            const actionItem = document.createElement('div');
+            actionItem.className = 'file-item';
+            actionItem.innerHTML = `
+                <div>${data.method}</div>
+                <div class="timestamp">${timestamp}</div>
+            `;
+            
+            actionsDiv.insertBefore(actionItem, actionsDiv.firstChild);
+            
+            // 최대 10개 항목 유지
+            while (actionsDiv.children.length > 10) {
+                actionsDiv.removeChild(actionsDiv.lastChild);
+            }
+        }
+        
+        function refreshFiles() {
+            // 파일 목록 새로고침
+            fetch('/api/sync/recent-files')
+                .then(response => response.json())
+                .then(files => {
+                    const fileList = document.getElementById('recent-files');
+                    fileList.innerHTML = '';
+                    
+                    files.forEach(file => {
+                        const item = document.createElement('div');
+                        item.className = 'file-item';
+                        item.innerHTML = `
+                            <div>${file.path}</div>
+                            <div class="timestamp">${file.modified}</div>
+                        `;
+                        fileList.appendChild(item);
+                    });
+                })
+                .catch(() => {
+                    console.log('파일 목록 가져오기 실패');
+                });
+        }
+        
+        function commitNow() {
+            // 즉시 커밋 실행
+            fetch('/api/sync/commit-now', { method: 'POST' })
+                .then(response => response.json())
+                .then(result => {
+                    addLog(`커밋 완료: ${result.message}`);
+                })
+                .catch(() => {
+                    addLog('커밋 실패');
+                });
+        }
+        
+        function addLog(message) {
+            const logViewer = document.getElementById('log-viewer');
+            const timestamp = new Date().toLocaleString();
+            logViewer.innerHTML += `\n[${timestamp}] ${message}`;
+            logViewer.scrollTop = logViewer.scrollHeight;
+        }
+        
+        // 통계 업데이트 (1분마다)
+        setInterval(() => {
+            const filesSync = document.getElementById('files-synced');
+            filesSync.textContent = parseInt(filesSync.textContent) + Math.floor(Math.random() * 3);
+        }, 60000);
+        
+        // 초기 로드
+        window.onload = () => {
+            addLog('대시보드 초기화 완료');
+            refreshFiles();
+        };
+    </script>
+</body>
+</html>

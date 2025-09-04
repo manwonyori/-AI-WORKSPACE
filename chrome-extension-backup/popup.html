@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Workspace MCP</title>
+    <style>
+        body {
+            width: 400px;
+            height: 500px;
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            overflow-y: auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        h1 {
+            font-size: 18px;
+            margin: 0;
+            text-align: center;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .connected { background-color: #4ade80; }
+        .disconnected { background-color: #ef4444; }
+        
+        .tabs {
+            display: flex;
+            background: #2a2a2a;
+            border-bottom: 1px solid #444;
+        }
+        .tab {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            background: transparent;
+            color: #888;
+            border: none;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .tab.active {
+            color: white;
+            background: #333;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .content {
+            padding: 15px;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        
+        .tool-section {
+            margin-bottom: 20px;
+        }
+        .tool-title {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .tool-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background: #667eea;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            background: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+        button:hover {
+            background: #444;
+            border-color: #667eea;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            background: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 4px;
+            font-size: 13px;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .output {
+            background: #222;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 12px;
+            max-height: 150px;
+            overflow-y: auto;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        
+        .github-section {
+            background: #2a2a2a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .github-repo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .github-repo input {
+            flex: 1;
+            margin: 0 5px 0 0;
+        }
+        
+        .file-section {
+            background: #2a2a2a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .quick-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .quick-actions button {
+            padding: 8px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Workspace MCP Hub</h1>
+        <div class="status">
+            <span class="status-indicator" id="statusIndicator"></span>
+            <span id="statusText">Checking...</span>
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab active" data-tab="github">GitHub</button>
+        <button class="tab" data-tab="files">Files</button>
+        <button class="tab" data-tab="tools">Tools</button>
+    </div>
+    
+    <!-- GitHub Tab -->
+    <div class="content active" id="github">
+        <div class="github-section">
+            <div class="tool-title">Repository Management</div>
+            <div class="github-repo">
+                <input type="text" id="repoOwner" placeholder="Owner" value="manwonyori">
+                <input type="text" id="repoName" placeholder="Repository" value="AI-WORKSPACE">
+            </div>
+            <button id="getRepoInfo">Get Repository Info</button>
+            <button id="listBranches">List Branches</button>
+            <button id="listFiles">List Files</button>
+            
+            <div class="quick-actions">
+                <button id="gitStatus">Git Status</button>
+                <button id="gitPull">Git Pull</button>
+                <button id="gitCommit">Quick Commit</button>
+                <button id="gitPush">Git Push</button>
+            </div>
+        </div>
+        
+        <div class="tool-title">Create/Update File</div>
+        <input type="text" id="filePath" placeholder="File path (e.g., docs/README.md)">
+        <textarea id="fileContent" placeholder="File content..." rows="4"></textarea>
+        <input type="text" id="commitMessage" placeholder="Commit message">
+        <button id="createFile">Create/Update File</button>
+        
+        <div class="output" id="githubOutput" style="display:none;"></div>
+    </div>
+    
+    <!-- Files Tab -->
+    <div class="content" id="files">
+        <div class="file-section">
+            <div class="tool-title">File System Operations</div>
+            <input type="text" id="fsPath" placeholder="Path" value="C:\Users\8899y\AI-WORKSPACE">
+            <button id="listDir">List Directory</button>
+            <button id="readFile">Read File</button>
+            
+            <div class="tool-title" style="margin-top: 15px;">Quick Access</div>
+            <div class="quick-actions">
+                <button data-path="projects/genesis-ultimate">Genesis Ultimate</button>
+                <button data-path="projects/cafe24-automation">Cafe24</button>
+                <button data-path="mcp-system">MCP System</button>
+                <button data-path="ai-collaboration">AI Collab</button>
+            </div>
+        </div>
+        
+        <div class="output" id="fileOutput" style="display:none;"></div>
+    </div>
+    
+    <!-- Tools Tab -->
+    <div class="content" id="tools">
+        <div class="tool-section">
+            <div class="tool-title">Available MCP Tools</div>
+            <button id="listTools">List All Tools</button>
+            <button id="testConnection">Test Connection</button>
+        </div>
+        
+        <div class="tool-section">
+            <div class="tool-title">Memory & Resources</div>
+            <button id="listResources">List Resources</button>
+            <button id="createMemory">Save to Memory</button>
+        </div>
+        
+        <div class="tool-section">
+            <div class="tool-title">Everything Server</div>
+            <button id="searchFiles">Search Files</button>
+            <button id="getEnv">Get Environment</button>
+        </div>
+        
+        <div class="output" id="toolOutput" style="display:none;"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

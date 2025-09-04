@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "updated": "2025-09-04T17:30:00Z",
+  "templates": {
+    "initial_analysis": {
+      "description": "첫 문제 분석 요청",
+      "template": "다음 요구사항을 분석해주세요:\n\n{user_request}\n\n1. 핵심 목표\n2. 필요한 단계\n3. 예상 난이도\n4. 추천 접근법",
+      "targetAgents": ["claude", "chatgpt"]
+    },
+    "code_implementation": {
+      "description": "코드 구현 요청",
+      "template": "다음 기능을 구현해주세요:\n\n목표: {goal}\n기술 스택: {tech_stack}\n요구사항:\n{requirements}\n\n실제 동작하는 코드를 작성해주세요.",
+      "targetAgents": ["claude"]
+    },
+    "research_latest": {
+      "description": "최신 정보 검색",
+      "template": "다음 주제의 최신 정보를 찾아주세요:\n\n{topic}\n\n- 2024-2025년 최신 자료 우선\n- 공식 문서 위주\n- 실제 사용 사례 포함",
+      "targetAgents": ["perplexity"]
+    },
+    "creative_design": {
+      "description": "창의적 디자인 생성",
+      "template": "다음 콘텐츠를 생성해주세요:\n\n유형: {content_type}\n목적: {purpose}\n스타일: {style}\n\n창의적이고 매력적으로 만들어주세요.",
+      "targetAgents": ["gemini"]
+    },
+    "collaborative_review": {
+      "description": "협업 검토",
+      "template": "이전 AI의 작업을 검토하고 개선해주세요:\n\n이전 작업:\n{previous_work}\n\n개선 포인트:\n{improvement_points}\n\n추가로 필요한 부분을 보완해주세요.",
+      "targetAgents": ["claude", "chatgpt", "gemini", "perplexity"]
+    }
+  },
+  "variables": {
+    "user_name": "사용자",
+    "project_name": "AI-WORKSPACE",
+    "default_language": "Korean",
+    "code_language": "JavaScript",
+    "max_response_length": 4000
+  },
+  "modifiers": {
+    "concise": "간결하게 답변해주세요.",
+    "detailed": "상세하게 설명해주세요.",
+    "code_only": "코드만 제공해주세요.",
+    "step_by_step": "단계별로 설명해주세요.",
+    "korean": "한국어로 답변해주세요."
+  }
+}

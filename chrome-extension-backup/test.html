@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Test</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #f0f0f0;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chrome Extension Test Page</h1>
+    
+    <div class="status" id="status">Ready for testing...</div>
+    
+    <h2>Platform Tests</h2>
+    <button onclick="checkPlatforms()">Check Platform Tabs</button>
+    <button onclick="openPlatform('chatgpt')">Open ChatGPT</button>
+    <button onclick="openPlatform('claude')">Open Claude</button>
+    <button onclick="openPlatform('perplexity')">Open Perplexity</button>
+    
+    <h2>MCP Server Test</h2>
+    <button onclick="testMCPConnection()">Test MCP Connection</button>
+    <button onclick="testMCPTool()">Test MCP Tool</button>
+    
+    <h2>Command Test</h2>
+    <input type="text" id="testCommand" placeholder="Enter test command" style="width: 300px; padding: 8px;">
+    <button onclick="sendTestCommand()">Send Command</button>
+    
+    <h2>Results</h2>
+    <pre id="results"></pre>
+    
+    <script>
+        function updateStatus(message, type = '') {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status ' + type;
+        }
+        
+        function showResult(data) {
+            document.getElementById('results').textContent = JSON.stringify(data, null, 2);
+        }
+        
+        function checkPlatforms() {
+            updateStatus('Checking platforms...');
+            chrome.tabs.query({}, (tabs) => {
+                const platforms = {
+                    chatgpt: false,
+                    claude: false,
+                    perplexity: false
+                };
+                
+                tabs.forEach(tab => {
+                    if (tab.url.includes('chatgpt.com')) platforms.chatgpt = true;
+                    if (tab.url.includes('claude.ai')) platforms.claude = true;
+                    if (tab.url.includes('perplexity.ai')) platforms.perplexity = true;
+                });
+                
+                showResult(platforms);
+                updateStatus('Platform check complete', 'success');
+            });
+        }
+        
+        function openPlatform(platform) {
+            updateStatus(`Opening ${platform}...`);
+            const urls = {
+                chatgpt: 'https://chatgpt.com',
+                claude: 'https://claude.ai',
+                perplexity: 'https://perplexity.ai'
+            };
+            
+            chrome.tabs.create({ url: urls[platform] }, (tab) => {
+                updateStatus(`${platform} opened in new tab`, 'success');
+                showResult({ platform, tabId: tab.id });
+            });
+        }
+        
+        async function testMCPConnection() {
+            updateStatus('Testing MCP connection...');
+            
+            try {
+                const response = await fetch('http://localhost:3006/sse');
+                if (response.ok) {
+                    updateStatus('MCP server is running!', 'success');
+                    showResult({ status: 'connected', url: 'http://localhost:3006/sse' });
+                } else {
+                    updateStatus('MCP server error', 'error');
+                }
+            } catch (error) {
+                updateStatus('Cannot connect to MCP server', 'error');
+                showResult({ error: error.message });
+            }
+        }
+        
+        function testMCPTool() {
+            updateStatus('Testing MCP tool call...');
+            
+            chrome.runtime.sendMessage({
+                action: 'mcp_call',
+                tool: 'filesystem.list_directory',
+                params: { path: 'C:\\Users\\8899y\\AI-WORKSPACE' }
+            }, (response) => {
+                if (chrome.runtime.lastError) {
+                    updateStatus('Error calling MCP tool', 'error');
+                    showResult({ error: chrome.runtime.lastError.message });
+                } else {
+                    updateStatus('MCP tool call successful', 'success');
+                    showResult(response);
+                }
+            });
+        }
+        
+        function sendTestCommand() {
+            const command = document.getElementById('testCommand').value;
+            if (!command) {
+                updateStatus('Please enter a command', 'error');
+                return;
+            }
+            
+            updateStatus('Sending command to all platforms...');
+            
+            chrome.runtime.sendMessage({
+                action: 'send_to_platform',
+                platform: 'chatgpt',
+                command: command,
+                context: {}
+            }, (response) => {
+                showResult(response || { error: 'No response' });
+                updateStatus('Command sent', response ? 'success' : 'error');
+            });
+        }
+        
+        // Check if running as extension
+        if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.id) {
+            updateStatus('Extension context detected', 'success');
+        } else {
+            updateStatus('Not running in extension context - open this file from chrome-extension:// URL', 'error');
+        }
+    </script>
+</body>
+</html>

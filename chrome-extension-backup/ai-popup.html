@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Workspace MCP Hub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            width: 600px;
+            height: 700px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .platform-status {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .platform-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ef4444;
+        }
+        
+        .status-dot.active { background: #4ade80; }
+        
+        .main-tabs {
+            display: flex;
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+        }
+        
+        .main-tab {
+            flex: 1;
+            padding: 15px;
+            background: transparent;
+            color: #888;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .main-tab.active {
+            color: white;
+            background: #222;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+        }
+        
+        .tab-content.active { display: block; }
+        
+        /* Workflow Section */
+        .workflow-builder {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .workflow-title {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #aaa;
+        }
+        
+        .workflow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .workflow-step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-platform {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #333;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        
+        /* Command Section */
+        .command-section {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .command-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .command-input input {
+            flex: 1;
+            padding: 12px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .command-input select {
+            padding: 12px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* Quick Actions */
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .action-card {
+            padding: 15px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .action-card:hover {
+            background: #2a2a2a;
+            border-color: #667eea;
+        }
+        
+        .action-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .action-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .action-desc {
+            font-size: 12px;
+            color: #888;
+        }
+        
+        /* Results Section */
+        .results {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .result-item {
+            padding: 10px;
+            background: #1a1a1a;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        
+        .result-platform {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #2a2a2a;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-right: 8px;
+        }
+        
+        /* Collaboration Monitor */
+        .collab-monitor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .monitor-card {
+            padding: 15px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        
+        .monitor-title {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        
+        .monitor-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .monitor-detail {
+            font-size: 11px;
+            color: #666;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 AI Workspace MCP Hub</h1>
+        <div class="platform-status">
+            <div class="platform-indicator">
+                <span class="status-dot" id="chatgpt-status"></span>
+                <span>ChatGPT</span>
+            </div>
+            <div class="platform-indicator">
+                <span class="status-dot" id="claude-status"></span>
+                <span>Claude</span>
+            </div>
+            <div class="platform-indicator">
+                <span class="status-dot" id="perplexity-status"></span>
+                <span>Perplexity</span>
+            </div>
+            <div class="platform-indicator">
+                <span class="status-dot active" id="mcp-status"></span>
+                <span>MCP</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-tabs">
+        <button class="main-tab active" data-tab="workflows">Workflows</button>
+        <button class="main-tab" data-tab="commands">Commands</button>
+        <button class="main-tab" data-tab="monitor">Monitor</button>
+        <button class="main-tab" data-tab="github">GitHub</button>
+    </div>
+    
+    <!-- Workflows Tab -->
+    <div class="tab-content active" id="workflows">
+        <div class="workflow-builder">
+            <div class="workflow-title">🔄 Cross-Platform Workflows</div>
+            
+            <div class="quick-actions">
+                <div class="action-card" onclick="startWorkflow('research')">
+                    <div class="action-icon">🔍</div>
+                    <div class="action-title">Research & Analysis</div>
+                    <div class="action-desc">Perplexity search → ChatGPT analysis → Claude synthesis</div>
+                </div>
+                
+                <div class="action-card" onclick="startWorkflow('code')">
+                    <div class="action-icon">💻</div>
+                    <div class="action-title">Code Generation</div>
+                    <div class="action-desc">Claude writes → ChatGPT reviews → Save to GitHub</div>
+                </div>
+                
+                <div class="action-card" onclick="startWorkflow('debug')">
+                    <div class="action-icon">🐛</div>
+                    <div class="action-title">Debug & Fix</div>
+                    <div class="action-desc">Read file → Claude debugs → ChatGPT validates → Commit</div>
+                </div>
+                
+                <div class="action-card" onclick="startWorkflow('document')">
+                    <div class="action-icon">📝</div>
+                    <div class="action-title">Documentation</div>
+                    <div class="action-desc">Analyze code → Generate docs → Create README → Push</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="workflow-builder">
+            <div class="workflow-title">Custom Workflow</div>
+            <div class="workflow-steps" id="custom-workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <span class="step-platform">Perplexity</span>
+                        <input type="text" placeholder="Search query..." style="width: 70%; background: #333; border: 1px solid #444; padding: 5px; border-radius: 4px; color: white;">
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <span class="step-platform">ChatGPT</span>
+                        <input type="text" placeholder="Analysis prompt..." style="width: 70%; background: #333; border: 1px solid #444; padding: 5px; border-radius: 4px; color: white;">
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <span class="step-platform">Claude</span>
+                        <input type="text" placeholder="Generation prompt..." style="width: 70%; background: #333; border: 1px solid #444; padding: 5px; border-radius: 4px; color: white;">
+                    </div>
+                </div>
+            </div>
+            <button onclick="executeCustomWorkflow()" style="margin-top: 15px; width: 100%;">Execute Custom Workflow</button>
+        </div>
+    </div>
+    
+    <!-- Commands Tab -->
+    <div class="tab-content" id="commands">
+        <div class="command-section">
+            <div class="workflow-title">Direct AI Commands</div>
+            <div class="command-input">
+                <select id="platform-select">
+                    <option value="chatgpt">ChatGPT</option>
+                    <option value="claude">Claude</option>
+                    <option value="perplexity">Perplexity</option>
+                    <option value="all">All Platforms</option>
+                </select>
+                <input type="text" id="command-text" placeholder="Enter command...">
+                <button onclick="sendCommand()">Send</button>
+            </div>
+        </div>
+        
+        <div class="command-section">
+            <div class="workflow-title">Quick Templates</div>
+            <div class="quick-actions">
+                <button onclick="sendTemplate('review')" style="width: 100%;">Code Review</button>
+                <button onclick="sendTemplate('optimize')" style="width: 100%;">Optimize Code</button>
+                <button onclick="sendTemplate('explain')" style="width: 100%;">Explain Code</button>
+                <button onclick="sendTemplate('test')" style="width: 100%;">Generate Tests</button>
+            </div>
+        </div>
+        
+        <div class="results" id="command-results"></div>
+    </div>
+    
+    <!-- Monitor Tab -->
+    <div class="tab-content" id="monitor">
+        <div class="collab-monitor">
+            <div class="monitor-card">
+                <div class="monitor-title">Active Sessions</div>
+                <div class="monitor-value" id="session-count">0</div>
+                <div class="monitor-detail">AI platforms connected</div>
+            </div>
+            <div class="monitor-card">
+                <div class="monitor-title">Tasks Completed</div>
+                <div class="monitor-value" id="task-count">0</div>
+                <div class="monitor-detail">Today</div>
+            </div>
+            <div class="monitor-card">
+                <div class="monitor-title">MCP Tools</div>
+                <div class="monitor-value" id="tool-count">60+</div>
+                <div class="monitor-detail">Available</div>
+            </div>
+        </div>
+        
+        <div class="command-section" style="margin-top: 20px;">
+            <div class="workflow-title">Recent Activity</div>
+            <div class="results" id="activity-log" style="height: 300px;">
+                <!-- Activity items will be added here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- GitHub Tab -->
+    <div class="tab-content" id="github">
+        <div class="command-section">
+            <div class="workflow-title">Repository: AI-WORKSPACE</div>
+            <div class="quick-actions">
+                <button onclick="gitAction('status')">Git Status</button>
+                <button onclick="gitAction('pull')">Git Pull</button>
+                <button onclick="gitAction('commit')">Commit All</button>
+                <button onclick="gitAction('push')">Git Push</button>
+            </div>
+        </div>
+        
+        <div class="command-section">
+            <div class="workflow-title">File Operations</div>
+            <input type="text" id="file-path" placeholder="File path..." style="width: 100%; margin-bottom: 10px; padding: 10px; background: #2a2a2a; border: 1px solid #444; border-radius: 8px; color: white;">
+            <textarea id="file-content" placeholder="File content..." style="width: 100%; height: 100px; padding: 10px; background: #2a2a2a; border: 1px solid #444; border-radius: 8px; color: white; margin-bottom: 10px;"></textarea>
+            <button onclick="saveFile()" style="width: 100%;">Save & Commit</button>
+        </div>
+        
+        <div class="results" id="github-results"></div>
+    </div>
+    
+    <script src="ai-integration.js"></script>
+    <script src="ai-popup.js"></script>
+</body>
+</html>

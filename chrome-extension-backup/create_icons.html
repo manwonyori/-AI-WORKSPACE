@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Icons</title>
+</head>
+<body>
+    <h1>Icon Generator</h1>
+    <p>Right-click and save each canvas as PNG:</p>
+    
+    <h2>128x128 - Save as icon128.png</h2>
+    <canvas id="canvas128" width="128" height="128"></canvas>
+    
+    <h2>48x48 - Save as icon48.png</h2>
+    <canvas id="canvas48" width="48" height="48"></canvas>
+    
+    <h2>16x16 - Save as icon16.png</h2>
+    <canvas id="canvas16" width="16" height="16"></canvas>
+    
+    <script>
+        function drawIcon(canvasId, size) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            
+            // Draw rounded rectangle background
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.roundRect(0, 0, size, size, size * 0.15);
+            ctx.fill();
+            
+            // Draw text
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.4}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('AI', size / 2, size / 2);
+            
+            // Draw status indicator for larger icons
+            if (size >= 48) {
+                ctx.fillStyle = '#4ade80';
+                ctx.globalAlpha = 0.9;
+                ctx.beginPath();
+                ctx.arc(size * 0.75, size * 0.25, size * 0.09, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+            
+            // Convert to PNG and download
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `icon${size}.png`;
+                document.body.appendChild(a);
+                
+                // Auto-download
+                setTimeout(() => {
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 100 * size); // Stagger downloads
+            });
+        }
+        
+        // Generate all icons
+        drawIcon('canvas128', 128);
+        drawIcon('canvas48', 48);
+        drawIcon('canvas16', 16);
+    </script>
+</body>
+</html>

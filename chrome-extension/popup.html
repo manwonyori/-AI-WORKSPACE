@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Workspace Controller</title>
+    <style>
+        body {
+            width: 420px;
+            height: 550px;
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-y: auto;
+        }
+        .container {
+            background: white;
+            margin: 15px;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 22px;
+            margin: 0 0 20px 0;
+            text-align: center;
+            color: #333;
+        }
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .platform-card {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .platform-card.active {
+            background: #e8f5e9;
+            border-color: #4CAF50;
+        }
+        .platform-card.inactive {
+            background: #ffebee;
+            border-color: #f44336;
+        }
+        .platform-name {
+            font-size: 13px;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .platform-status {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .platform-status.active { background: #4CAF50; box-shadow: 0 0 5px #4CAF50; }
+        .platform-status.inactive { background: #f44336; box-shadow: 0 0 5px #f44336; }
+        
+        .control-section {
+            margin-top: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #5a67d8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        button.primary {
+            background: #4CAF50;
+            grid-column: 1 / -1;
+        }
+        button.primary:hover {
+            background: #45a049;
+        }
+        button.warning {
+            background: #ff9800;
+        }
+        button.warning:hover {
+            background: #f57c00;
+        }
+        
+        .response-section {
+            margin-top: 20px;
+            display: none;
+        }
+        .response-section.visible {
+            display: block;
+        }
+        .response-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .response-tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .response-tab {
+            padding: 6px 12px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            color: #666;
+        }
+        .response-tab.active {
+            background: #667eea;
+            color: white;
+        }
+        .response-content {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 13px;
+            color: #333;
+            max-height: 120px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .status-bar {
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Workspace Controller</h1>
+        
+        <!-- Platform Status Grid -->
+        <div class="platforms-grid">
+            <div class="platform-card inactive" id="chatgpt-card">
+                <div class="platform-name">ChatGPT</div>
+                <div class="platform-status inactive" id="chatgpt-status"></div>
+            </div>
+            <div class="platform-card inactive" id="claude-card">
+                <div class="platform-name">Claude</div>
+                <div class="platform-status inactive" id="claude-status"></div>
+            </div>
+            <div class="platform-card inactive" id="perplexity-card">
+                <div class="platform-name">Perplexity</div>
+                <div class="platform-status inactive" id="perplexity-status"></div>
+            </div>
+        </div>
+        
+        <!-- Control Section -->
+        <div class="control-section">
+            <div class="button-group">
+                <button id="openAllBtn">📂 Open All</button>
+                <button id="checkStatusBtn">🔄 Check Status</button>
+            </div>
+            
+            <div class="input-group">
+                <textarea id="messageInput" placeholder="Enter your message for all AI platforms..."></textarea>
+            </div>
+            
+            <button id="sendAllBtn" class="primary">📤 Send to All Platforms</button>
+            
+            <div class="button-group">
+                <button id="getResponsesBtn">📥 Get Responses</button>
+                <button id="clearAllBtn" class="warning">🗑️ Clear All</button>
+            </div>
+        </div>
+        
+        <!-- Response Section -->
+        <div class="response-section" id="responseSection">
+            <div class="response-title">Responses:</div>
+            <div class="response-tabs">
+                <button class="response-tab active" data-platform="chatgpt">ChatGPT</button>
+                <button class="response-tab" data-platform="claude">Claude</button>
+                <button class="response-tab" data-platform="perplexity">Perplexity</button>
+            </div>
+            <div class="response-content" id="responseContent">No responses yet...</div>
+        </div>
+        
+        <!-- Status Bar -->
+        <div class="status-bar" id="statusBar">Ready</div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

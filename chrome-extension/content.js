@@ -1,288 +1,149 @@
-// Content script for AI platforms auto-input (chunk-safe + multi-site)
-// Updated: add Gemini support, chunked insertion, robust events, minor UI fixes
-
-const platform = detectPlatform();
-
+// Content script (robust domain detection + chunked input)
 function detectPlatform() {
-  const h = window.location.hostname;
-  if (h.includes('chatgpt.com')) return 'chatgpt';
-  if (h.includes('claude.ai')) return 'claude';
-  if (h.includes('perplexity.ai')) return 'perplexity';
-  if (h.includes('gemini.google.com')) return 'gemini';
+  const h = location.hostname;
+  if (h.includes("chatgpt.com")) return "chatgpt";
+  if (h.includes("claude.ai")) return "claude";
+  if (h.includes("perplexity.ai")) return "perplexity";
+  if (h === "gemini.google.com" || (h.endsWith(".google.com") && location.pathname.startsWith("/app"))) return "gemini";
   return null;
 }
+const platform = detectPlatform();
 
-// Platform-specific selectors (2025-09 baseline)
 const SELECTORS = {
   chatgpt: {
-    input: '#prompt-textarea, textarea[data-id=\"root\"]',
-    button: 'button[data-testid=\"send-button\"], button[aria-label=\"Send message\"], form button[type=\"submit\"]',
-    container: 'main'
+    input: "#prompt-textarea, textarea[data-id=\"root\"]",
+    button: "button[data-testid=\"send-button\"], button[aria-label=\"Send message\"], form button[type=\"submit\"]",
+    container: "main"
   },
   claude: {
-    input: 'div[contenteditable=\"true\"].ProseMirror, div[contenteditable=\"true\"]',
-    button: 'button[aria-label=\"Send Message\"], form button[type=\"submit\"]',
-    container: 'main'
+    input: "div[contenteditable=\"true\"].ProseMirror, div[contenteditable=\"true\"]",
+    button: "button[aria-label=\"Send Message\"], form button[type=\"submit\"]",
+    container: "main"
   },
   gemini: {
-    input: 'textarea, [contenteditable=\"true\"]',
-    button: 'button[aria-label*=\"Send\"], form button[type=\"submit\"], button[aria-label*=\"작성\"]',
-    container: 'main'
+    input: "textarea, [contenteditable=\"true\"]",
+    button: "button[aria-label*=\"Send\"], form button[type=\"submit\"], button[aria-label*=\"작성\"]",
+    container: "main"
   },
   perplexity: {
-    input: 'textarea[placeholder*=\"Ask\"], textarea, [contenteditable=\"true\"]',
-    button: 'button[aria-label=\"Submit\"], button.bg-super, form button[type=\"submit\"]',
-    container: 'main'
+    input: "textarea[placeholder*=\"Ask\"], textarea, [contenteditable=\"true\"]",
+    button: "button[aria-label=\"Submit\"], button.bg-super, form button[type=\"submit\"]",
+    container: "main"
   }
 };
 
-// Reasonable per-platform chunk caps (defensive; services can change)
-const CHUNK_LIMIT = {
-  chatgpt: 3500,
-  claude: 3500,
-  gemini: 2500,
-  perplexity: 3000,
-  default: 2500
-};
+const CHUNK_LIMIT = { chatgpt: 4500, claude: 4500, gemini: 3200, perplexity: 3800, default: 3000 };
 
-function getChunkLimit() {
-  return CHUNK_LIMIT[platform] || CHUNK_LIMIT.default;
-}
-
-function sleep(ms) {
-  return new Promise(r => setTimeout(r, ms));
-}
-
-function splitText(text, limit) {
-  // split on paragraph boundaries where possible
+async function chunkedInsert(inputEl, text, limit) {
   const chunks = [];
-  let remaining = text;
-  while (remaining.length > limit) {
-    // try to cut on newline near limit
-    const slice = remaining.slice(0, limit);
-    let cut = slice.lastIndexOf('\\n\\n');
-    if (cut < limit * 0.6) cut = slice.lastIndexOf('\\n');
-    if (cut < limit * 0.4) cut = slice.lastIndexOf(' ');
-    if (cut <= 0) cut = limit;
-    chunks.push(remaining.slice(0, cut));
-    remaining = remaining.slice(cut);
-  }
-  if (remaining) chunks.push(remaining);
-  return chunks;
-}
-
-// React-controlled textarea safe setter
-function setReactTextareaValue(el, value) {
-  const proto = Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype, 'value');
-  if (proto && proto.set) {
-    proto.set.call(el, value);
-  } else {
-    el.value = value;
-  }
-  el.dispatchEvent(new Event('input', { bubbles: true }));
-}
-
-// Insert text into contenteditable using InputEvent
-function insertIntoContentEditable(el, text) {
-  el.focus();
-  // fallback: selection insert
-  const sel = window.getSelection();
-  if (sel && sel.rangeCount) {
-    const range = sel.getRangeAt(0);
-    range.deleteContents();
-    range.insertNode(document.createTextNode(text));
-    range.collapse(false);
-  } else {
-    // execCommand is deprecated but still widely supported
-    document.execCommand('insertText', false, text);
-  }
-  el.dispatchEvent(new InputEvent('input', { bubbles: true, cancelable: true, inputType: 'insertText', data: text }));
-}
-
-async function clearInput(el) {
-  if (!el) return;
-  if (el.tagName === 'TEXTAREA') {
-    setReactTextareaValue(el, '');
-  } else {
-    el.innerHTML = '';
-    el.dispatchEvent(new Event('input', { bubbles: true }));
-  }
-  await sleep(50);
-}
-
-// Chunked insertion core
-async function chunkedInsert(el, text) {
-  const limit = getChunkLimit();
-  const chunks = splitText(text, limit);
-
-  // Always start clean
-  await clearInput(el);
-
-  for (let i = 0; i < chunks.length; i++) {
-    const part = chunks[i];
-    if (el.tagName === 'TEXTAREA') {
-      // Append in pieces for React-controlled inputs
-      const current = el.value ?? '';
-      setReactTextareaValue(el, current + part);
+  for (let i = 0; i < text.length; i += limit) chunks.push(text.slice(i, i + limit));
+  for (const part of chunks) {
+    if (inputEl.tagName === "TEXTAREA") {
+      const setter = Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype, "value").set;
+      setter.call(inputEl, (inputEl.value || "") + part);
+      inputEl.dispatchEvent(new Event("input", { bubbles: true }));
+      inputEl.dispatchEvent(new Event("change", { bubbles: true }));
     } else {
-      // contenteditable
-      insertIntoContentEditable(el, part);
+      inputEl.focus();
+      document.execCommand("insertText", false, part);
+      inputEl.dispatchEvent(new InputEvent("input", { bubbles: true, data: part, inputType: "insertText" }));
     }
-    // small pacing to avoid throttling
-    await sleep(80 + Math.min(220, Math.round(part.length / 10)));
+    await new Promise(r => setTimeout(r, 180));
   }
-
-  // Force a final input/change event
-  el.dispatchEvent(new Event('input', { bubbles: true }));
-  el.dispatchEvent(new Event('change', { bubbles: true }));
   return true;
 }
 
-// Auto-input (now chunk safe)
 async function autoInput(text) {
-  try {
-    if (!platform) throw new Error('Platform not detected');
-    const selector = SELECTORS[platform];
-    if (!selector) throw new Error('Platform not supported');
-
-    // Find input element (with short polling for late-mount UIs)
-    const started = performance.now();
-    let input = null;
-    while (performance.now() - started < 2500) {
-      input = document.querySelector(selector.input);
-      if (input) break;
-      await sleep(120);
-    }
-    if (!input) throw new Error('Input field not found');
-
-    // Decide mode
-    const isTextarea = input.tagName === 'TEXTAREA';
-    await chunkedInsert(input, text);
-
-    return true;
-  } catch (err) {
-    console.error('[autoInput] error:', err);
-    return false;
-  }
+  const sel = SELECTORS[platform];
+  if (!sel) return false;
+  const input = document.querySelector(sel.input);
+  if (!input) return false;
+  const limit = CHUNK_LIMIT[platform] || CHUNK_LIMIT.default;
+  return await chunkedInsert(input, text, limit);
 }
 
-// Send message
 function sendMessage() {
-  const selector = SELECTORS[platform];
-  if (!selector) return false;
-  const button = document.querySelector(selector.button);
-  if (button && !button.disabled) {
-    button.click();
-    return true;
-  }
-  // Fallback: simulate Enter
-  const input = document.querySelector(selector.input);
+  const sel = SELECTORS[platform];
+  if (!sel) return false;
+  const btn = document.querySelector(sel.button);
+  if (btn && !btn.disabled) { btn.click(); return true; }
+  const input = document.querySelector(sel.input);
   if (input) {
-    const evt = new KeyboardEvent('keydown', {
-      key: 'Enter', code: 'Enter', keyCode: 13, which: 13,
-      bubbles: true, cancelable: true
-    });
-    input.dispatchEvent(evt);
+    const e = new KeyboardEvent("keydown", { key: "Enter", code: "Enter", keyCode: 13, which: 13, bubbles: true, cancelable: true });
+    input.dispatchEvent(e);
     return true;
   }
   return false;
 }
 
-// Get response (simple last assistant bubble text)
 function getLastResponse() {
-  let response = '';
-  try {
-    if (platform === 'chatgpt') {
-      const msgs = document.querySelectorAll('[data-message-author-role=\"assistant\"]');
-      if (msgs.length) response = msgs[msgs.length - 1].textContent || '';
-    } else if (platform === 'claude') {
-      const msgs = document.querySelectorAll('[data-test-render-count]');
-      if (msgs.length) response = msgs[msgs.length - 1].textContent || '';
-    } else if (platform === 'perplexity') {
-      const msgs = document.querySelectorAll('.prose');
-      if (msgs.length) response = msgs[msgs.length - 1].textContent || '';
-    } else if (platform === 'gemini') {
-      const msgs = document.querySelectorAll('[data-md-component], article, .response, .prose');
-      if (msgs.length) response = msgs[msgs.length - 1].textContent || '';
-    }
-  } catch (e) {
-    console.warn('[getLastResponse] failed:', e);
+  let t = "";
+  if (platform === "chatgpt") {
+    const m = document.querySelectorAll('[data-message-author-role="assistant"]'); if (m.length) t = m[m.length-1].textContent || "";
+  } else if (platform === "claude") {
+    const m = document.querySelectorAll("[data-test-render-count]"); if (m.length) t = m[m.length-1].textContent || "";
+  } else if (platform === "gemini") {
+    const m = document.querySelectorAll("main, c-wiz, div[aria-live]"); if (m.length) t = m[m.length-1].textContent || "";
+  } else if (platform === "perplexity") {
+    const m = document.querySelectorAll(".prose"); if (m.length) t = m[m.length-1].textContent || "";
   }
-  return response;
+  return t;
 }
 
-// Listen for commands from extension (now supports async input)
-chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
+function extractCommandFromText(s) {
+  const m = s.match(/```json([\s\S]*?)```/);
+  const raw = (m ? m[1] : s).trim();
+  try { const o = JSON.parse(raw); if (o && o.type === "command" && o.to && o.action) return o; } catch {}
+  return null;
+}
+
+async function detectAndRelayCommand() {
+  const r = getLastResponse();
+  if (!r) return;
+  const cmd = extractCommandFromText(r);
+  if (cmd) chrome.runtime.sendMessage({ action: "commandDetected", command: cmd }, () => {});
+}
+
+chrome.runtime.onMessage.addListener((req, _sender, sendResponse) => {
   (async () => {
-    try {
-      if (request?.action === 'input') {
-        const success = await autoInput(request.text || '');
-        return sendResponse({ success, platform });
-      }
-      if (request?.action === 'send') {
-        const success = sendMessage();
-        return sendResponse({ success, platform });
-      }
-      if (request?.action === 'inputAndSend') {
-        const ok = await autoInput(request.text || '');
-        await sleep(300);
-        const sent = ok ? sendMessage() : false;
-        return sendResponse({ success: ok && sent, platform });
-      }
-      if (request?.action === 'getResponse') {
-        const response = getLastResponse();
-        return sendResponse({ response, platform });
-      }
-      if (request?.action === 'clear') {
-        const input = document.querySelector(SELECTORS[platform]?.input);
-        await clearInput(input);
-        return sendResponse({ success: true, platform });
-      }
-      if (request?.action === 'status') {
-        return sendResponse({
-          platform,
-          ready: !!document.querySelector(SELECTORS[platform]?.input),
-          url: window.location.href
-        });
-      }
-      if (request?.action === 'configUpdate') {
-        console.log(`[${platform}] Config updated:`, request.config);
-        // Could use config to update selectors, prompts, etc.
-        return sendResponse({ success: true, platform });
-      }
-    } catch (err) {
-      console.error('handler error:', err);
-      return sendResponse({ success: false, error: String(err), platform });
+    if (req.action === "input") { const ok = await autoInput(req.text); sendResponse({ success: ok, platform }); return; }
+    if (req.action === "send") { const ok = sendMessage(); sendResponse({ success: ok, platform }); return; }
+    if (req.action === "inputAndSend") {
+      const ok1 = await autoInput(req.text);
+      setTimeout(() => { const ok2 = sendMessage(); sendResponse({ success: ok1 && ok2, platform }); }, 400);
+      return true;
+    }
+    if (req.action === "getResponse") { const response = getLastResponse(); sendResponse({ response, platform }); setTimeout(detectAndRelayCommand, 300); return; }
+    if (req.action === "clear") {
+      const input = document.querySelector(SELECTORS[platform]?.input);
+      if (input) { if (platform === "claude") input.innerHTML = ""; else input.value = ""; input.dispatchEvent(new Event("input", { bubbles: true })); }
+      sendResponse({ success: true, platform });
+      return;
+    }
+    if (req.action === "status") { sendResponse({ platform, ready: !!document.querySelector(SELECTORS[platform]?.input), url: location.href }); return; }
+    if (req.action === "configUpdate") {
+      console.log(`[${platform}] Config updated:`, req.config);
+      sendResponse({ success: true, platform });
+      return;
     }
   })();
-  return true; // keep channel open for async
+  return true;
 });
 
-// Visual indicator (guard if unsupported)
-if (platform) {
-  const indicator = document.createElement('div');
-  indicator.style.cssText = `
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 12px;
-    z-index: 999999;
-    opacity: 0.9;
-    cursor: pointer;
-    font-family: system-ui;
-  `;
-  indicator.textContent = \`🤖 \${platform.toUpperCase()} Ready\`;
-  indicator.title = 'AI Workspace Controller Active';
-  indicator.addEventListener('click', () => {
-    chrome.runtime.sendMessage({ action: 'openPopup' });
+// Badge (ready)
+(function () {
+  const badge = document.createElement("div");
+  badge.style.cssText = "position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:8px 15px;border-radius:20px;font-size:12px;z-index:999999;opacity:.9;cursor:pointer;font-family:system-ui;";
+  badge.textContent = "🤖 " + (platform ? platform.toUpperCase() : "AI") + " Ready";
+  badge.title = "AI Workspace Controller Active";
+  badge.addEventListener("click", () => {
+    chrome.runtime.sendMessage({ action: "openPopup" });
   });
-  document.addEventListener('DOMContentLoaded', () => {
-    document.body.appendChild(indicator);
-  });
-}
+  document.addEventListener("DOMContentLoaded", () => { try { document.body.appendChild(badge); } catch {} });
+  // Fallback for already loaded pages
+  if (document.readyState === "complete") {
+    try { document.body.appendChild(badge); } catch {}
+  }
+})();
 
-console.log(\`[\${platform}] Content script loaded (chunk-safe) and ready\`);
+console.log(`[${platform}] Content script loaded (chunk-safe) and ready`);

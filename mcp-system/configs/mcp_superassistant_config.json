@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\8899y\\AI-WORKSPACE"],
+      "env": {
+        "ALLOW_WRITE": "true"
+      }
+    },
+    "github": {
+      "command": "npx", 
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "your_token_here"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    }
+  },
+  "transport": {
+    "type": "sse",
+    "port": 3006,
+    "cors": true,
+    "allowOrigin": "*"
+  }
+}

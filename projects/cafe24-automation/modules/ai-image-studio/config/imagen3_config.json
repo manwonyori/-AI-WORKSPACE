@@ -1,0 +1,26 @@
+{
+  "api": {
+    "google_ai_key": "",
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/imagen-3:generateImage",
+    "timeout": 60
+  },
+  "generation": {
+    "default_width": 2048,
+    "default_height": 2048,
+    "num_images": 4,
+    "guidance_scale": 7.5,
+    "seed": null
+  },
+  "photorealistic": {
+    "style_weight": 0.9,
+    "detail_level": "maximum",
+    "lighting_preset": "studio",
+    "camera_simulation": true
+  },
+  "quality": {
+    "min_resolution": 1024,
+    "max_resolution": 4096,
+    "compression": "lossless",
+    "format": "png"
+  }
+}

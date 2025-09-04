@@ -1,0 +1,182 @@
+{
+  "total_files": 6,
+  "passed_files": 0,
+  "average_score": 84.16666666666667,
+  "reports": [
+    {
+      "product_number": "131_final_clean",
+      "timestamp": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content",
+      "file_size_kb": 12.76,
+      "duplicate_sections": [
+        {
+          "type": "알레르기 정보 중복",
+          "count": 3,
+          "sections": [
+            "알레르기 정보 (단일 섹션) -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title\">영양성분 및 알레르기 정보</h2>\n            \n            <!-- 영양성분표 -->\n            <div style=\"background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0;\">\n                <h3 style=\"color: #333; font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center;\">🍽️ 영양성분표 (100g당)</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n            <tr>\n                <th>칼로리</th>\n                <td style=\"font-weight: 600; color: #333;\">280kcal</td>\n            </tr>\n            <tr>\n                <th>나트륨</th>\n                <td style=\"font-weight: 600; color: #333;\">890mg</td>\n            </tr>\n            <tr>\n                <th>탄수화물</th>\n                <td style=\"font-weight: 600; color: #333;\">35g</td>\n            </tr>\n            <tr>\n                <th>단백질</th>\n                <td style=\"font-weight: 600; color: #333;\">12g</td>\n            </tr>\n            <tr>\n                <th>지방</th>\n                <td style=\"font-weight: 600; color: #333;\">8g</td>\n            </tr>\n                </table>\n            </div>",
+            "알레르기 정보 (단일) -->\n            <div style=\"background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n                <h3 style=\"color: #856404; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">⚠️ 알레르기 유발요소</h3>\n                <p style=\"color: #856404; margin-bottom: 15px; font-weight: 500;\">이 제품은 다음 알레르기 유발 요소를 함유하고 있습니다:</p>\n                <div style=\"text-align: center; margin: 15px 0;\">\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">밀</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">대두</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">돼지고기</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">계란</span>\n                </div>",
+            "알레르기가 있으신 분은 섭취 전 반드시 원재료명을 확인해 주세요.</p>\n            </div>\n            \n            <!-- 보관 주의사항 -->\n            <div style=\"background: #e7f3ff; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; margin: 20px 0;\">\n                <h3 style=\"color: #004085; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">📋 보관 및 취급 주의사항</h3>\n                <ul style=\"color: #004085; margin: 0; padding-left: 20px; line-height: 1.8;\">\n                    <li style=\"margin: 8px 0;\">냉동보관 (-18℃ 이하)에서 보관하세요</li>\n                    <li style=\"margin: 8px 0;\">해동 후 재냉동하지 마세요</li>\n                    <li style=\"margin: 8px 0;\">조리 후 즉시 드시기 바랍니다</li>\n                    <li style=\"margin: 8px 0;\">충분히 가열하여 드세요</li>\n                </ul>\n            </div>\n        </div>\n        \n        <!-- 판매자 정보 -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title seller-title\">판매자 정보</h2>\n            \n            <!-- 회사 정보 -->\n            <div class=\"seller-info-section\">\n                <h3>회사 정보</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n                    <tr>\n                        <th>상호</th>\n                        <td>㈜값진한끼</td>\n                    </tr>\n                    <tr>\n                        <th>대표자</th>\n                        <td>고혜숙</td>\n                    </tr>\n                    <tr>\n                        <th>사업자등록번호</th>\n                        <td>434-86-03863</td>\n                    </tr>\n                    <tr>\n                        <th>통신판매업</th>\n                        <td>2025-경기파주-2195호</td>\n                    </tr>\n                </table>\n            </div>"
+          ]
+        }
+      ],
+      "allergens": {
+        "total_unique": 4,
+        "list": [
+          "계란",
+          "돼지고기",
+          "밀",
+          "대두"
+        ],
+        "duplicated": {}
+      },
+      "quality_issues": [],
+      "score": 85,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "product_number": "132_final_clean",
+      "timestamp": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content",
+      "file_size_kb": 12.75,
+      "duplicate_sections": [
+        {
+          "type": "알레르기 정보 중복",
+          "count": 3,
+          "sections": [
+            "알레르기 정보 (단일 섹션) -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title\">영양성분 및 알레르기 정보</h2>\n            \n            <!-- 영양성분표 -->\n            <div style=\"background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0;\">\n                <h3 style=\"color: #333; font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center;\">🍽️ 영양성분표 (100g당)</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n            <tr>\n                <th>칼로리</th>\n                <td style=\"font-weight: 600; color: #333;\">320kcal</td>\n            </tr>\n            <tr>\n                <th>나트륨</th>\n                <td style=\"font-weight: 600; color: #333;\">950mg</td>\n            </tr>\n            <tr>\n                <th>탄수화물</th>\n                <td style=\"font-weight: 600; color: #333;\">40g</td>\n            </tr>\n            <tr>\n                <th>단백질</th>\n                <td style=\"font-weight: 600; color: #333;\">15g</td>\n            </tr>\n            <tr>\n                <th>지방</th>\n                <td style=\"font-weight: 600; color: #333;\">10g</td>\n            </tr>\n                </table>\n            </div>",
+            "알레르기 정보 (단일) -->\n            <div style=\"background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n                <h3 style=\"color: #856404; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">⚠️ 알레르기 유발요소</h3>\n                <p style=\"color: #856404; margin-bottom: 15px; font-weight: 500;\">이 제품은 다음 알레르기 유발 요소를 함유하고 있습니다:</p>\n                <div style=\"text-align: center; margin: 15px 0;\">\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">밀</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">대두</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">돼지고기</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">계란</span>\n                </div>",
+            "알레르기가 있으신 분은 섭취 전 반드시 원재료명을 확인해 주세요.</p>\n            </div>\n            \n            <!-- 보관 주의사항 -->\n            <div style=\"background: #e7f3ff; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; margin: 20px 0;\">\n                <h3 style=\"color: #004085; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">📋 보관 및 취급 주의사항</h3>\n                <ul style=\"color: #004085; margin: 0; padding-left: 20px; line-height: 1.8;\">\n                    <li style=\"margin: 8px 0;\">냉동보관 (-18℃ 이하)에서 보관하세요</li>\n                    <li style=\"margin: 8px 0;\">해동 후 재냉동하지 마세요</li>\n                    <li style=\"margin: 8px 0;\">조리 후 즉시 드시기 바랍니다</li>\n                    <li style=\"margin: 8px 0;\">충분히 가열하여 드세요</li>\n                </ul>\n            </div>\n        </div>\n        \n        <!-- 판매자 정보 -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title seller-title\">판매자 정보</h2>\n            \n            <!-- 회사 정보 -->\n            <div class=\"seller-info-section\">\n                <h3>회사 정보</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n                    <tr>\n                        <th>상호</th>\n                        <td>㈜값진한끼</td>\n                    </tr>\n                    <tr>\n                        <th>대표자</th>\n                        <td>고혜숙</td>\n                    </tr>\n                    <tr>\n                        <th>사업자등록번호</th>\n                        <td>434-86-03863</td>\n                    </tr>\n                    <tr>\n                        <th>통신판매업</th>\n                        <td>2025-경기파주-2195호</td>\n                    </tr>\n                </table>\n            </div>"
+          ]
+        }
+      ],
+      "allergens": {
+        "total_unique": 4,
+        "list": [
+          "계란",
+          "돼지고기",
+          "밀",
+          "대두"
+        ],
+        "duplicated": {}
+      },
+      "quality_issues": [],
+      "score": 85,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "product_number": "133_final_clean",
+      "timestamp": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content",
+      "file_size_kb": 12.57,
+      "duplicate_sections": [
+        {
+          "type": "알레르기 정보 중복",
+          "count": 3,
+          "sections": [
+            "알레르기 정보 (단일 섹션) -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title\">영양성분 및 알레르기 정보</h2>\n            \n            <!-- 영양성분표 -->\n            <div style=\"background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0;\">\n                <h3 style=\"color: #333; font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center;\">🍽️ 영양성분표 (100g당)</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n            <tr>\n                <th>칼로리</th>\n                <td style=\"font-weight: 600; color: #333;\">290kcal</td>\n            </tr>\n            <tr>\n                <th>나트륨</th>\n                <td style=\"font-weight: 600; color: #333;\">1020mg</td>\n            </tr>\n            <tr>\n                <th>탄수화물</th>\n                <td style=\"font-weight: 600; color: #333;\">36g</td>\n            </tr>\n            <tr>\n                <th>단백질</th>\n                <td style=\"font-weight: 600; color: #333;\">13g</td>\n            </tr>\n            <tr>\n                <th>지방</th>\n                <td style=\"font-weight: 600; color: #333;\">9g</td>\n            </tr>\n                </table>\n            </div>",
+            "알레르기 정보 (단일) -->\n            <div style=\"background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n                <h3 style=\"color: #856404; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">⚠️ 알레르기 유발요소</h3>\n                <p style=\"color: #856404; margin-bottom: 15px; font-weight: 500;\">이 제품은 다음 알레르기 유발 요소를 함유하고 있습니다:</p>\n                <div style=\"text-align: center; margin: 15px 0;\">\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">밀</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">대두</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">돼지고기</span>\n                </div>",
+            "알레르기가 있으신 분은 섭취 전 반드시 원재료명을 확인해 주세요.</p>\n            </div>\n            \n            <!-- 보관 주의사항 -->\n            <div style=\"background: #e7f3ff; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; margin: 20px 0;\">\n                <h3 style=\"color: #004085; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">📋 보관 및 취급 주의사항</h3>\n                <ul style=\"color: #004085; margin: 0; padding-left: 20px; line-height: 1.8;\">\n                    <li style=\"margin: 8px 0;\">냉동보관 (-18℃ 이하)에서 보관하세요</li>\n                    <li style=\"margin: 8px 0;\">해동 후 재냉동하지 마세요</li>\n                    <li style=\"margin: 8px 0;\">조리 후 즉시 드시기 바랍니다</li>\n                    <li style=\"margin: 8px 0;\">충분히 가열하여 드세요</li>\n                </ul>\n            </div>\n        </div>\n        \n        <!-- 판매자 정보 -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title seller-title\">판매자 정보</h2>\n            \n            <!-- 회사 정보 -->\n            <div class=\"seller-info-section\">\n                <h3>회사 정보</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n                    <tr>\n                        <th>상호</th>\n                        <td>㈜값진한끼</td>\n                    </tr>\n                    <tr>\n                        <th>대표자</th>\n                        <td>고혜숙</td>\n                    </tr>\n                    <tr>\n                        <th>사업자등록번호</th>\n                        <td>434-86-03863</td>\n                    </tr>\n                    <tr>\n                        <th>통신판매업</th>\n                        <td>2025-경기파주-2195호</td>\n                    </tr>\n                </table>\n            </div>"
+          ]
+        }
+      ],
+      "allergens": {
+        "total_unique": 3,
+        "list": [
+          "돼지고기",
+          "밀",
+          "대두"
+        ],
+        "duplicated": {}
+      },
+      "quality_issues": [],
+      "score": 85,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "product_number": "134_final_clean",
+      "timestamp": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content",
+      "file_size_kb": 12.56,
+      "duplicate_sections": [
+        {
+          "type": "알레르기 정보 중복",
+          "count": 3,
+          "sections": [
+            "알레르기 정보 (단일 섹션) -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title\">영양성분 및 알레르기 정보</h2>\n            \n            <!-- 영양성분표 -->\n            <div style=\"background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0;\">\n                <h3 style=\"color: #333; font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center;\">🍽️ 영양성분표 (100g당)</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n            <tr>\n                <th>칼로리</th>\n                <td style=\"font-weight: 600; color: #333;\">260kcal</td>\n            </tr>\n            <tr>\n                <th>나트륨</th>\n                <td style=\"font-weight: 600; color: #333;\">780mg</td>\n            </tr>\n            <tr>\n                <th>탄수화물</th>\n                <td style=\"font-weight: 600; color: #333;\">32g</td>\n            </tr>\n            <tr>\n                <th>단백질</th>\n                <td style=\"font-weight: 600; color: #333;\">11g</td>\n            </tr>\n            <tr>\n                <th>지방</th>\n                <td style=\"font-weight: 600; color: #333;\">7g</td>\n            </tr>\n                </table>\n            </div>",
+            "알레르기 정보 (단일) -->\n            <div style=\"background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n                <h3 style=\"color: #856404; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">⚠️ 알레르기 유발요소</h3>\n                <p style=\"color: #856404; margin-bottom: 15px; font-weight: 500;\">이 제품은 다음 알레르기 유발 요소를 함유하고 있습니다:</p>\n                <div style=\"text-align: center; margin: 15px 0;\">\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">밀</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">대두</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">돼지고기</span>\n                </div>",
+            "알레르기가 있으신 분은 섭취 전 반드시 원재료명을 확인해 주세요.</p>\n            </div>\n            \n            <!-- 보관 주의사항 -->\n            <div style=\"background: #e7f3ff; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; margin: 20px 0;\">\n                <h3 style=\"color: #004085; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">📋 보관 및 취급 주의사항</h3>\n                <ul style=\"color: #004085; margin: 0; padding-left: 20px; line-height: 1.8;\">\n                    <li style=\"margin: 8px 0;\">냉동보관 (-18℃ 이하)에서 보관하세요</li>\n                    <li style=\"margin: 8px 0;\">해동 후 재냉동하지 마세요</li>\n                    <li style=\"margin: 8px 0;\">조리 후 즉시 드시기 바랍니다</li>\n                    <li style=\"margin: 8px 0;\">충분히 가열하여 드세요</li>\n                </ul>\n            </div>\n        </div>\n        \n        <!-- 판매자 정보 -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title seller-title\">판매자 정보</h2>\n            \n            <!-- 회사 정보 -->\n            <div class=\"seller-info-section\">\n                <h3>회사 정보</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n                    <tr>\n                        <th>상호</th>\n                        <td>㈜값진한끼</td>\n                    </tr>\n                    <tr>\n                        <th>대표자</th>\n                        <td>고혜숙</td>\n                    </tr>\n                    <tr>\n                        <th>사업자등록번호</th>\n                        <td>434-86-03863</td>\n                    </tr>\n                    <tr>\n                        <th>통신판매업</th>\n                        <td>2025-경기파주-2195호</td>\n                    </tr>\n                </table>\n            </div>"
+          ]
+        }
+      ],
+      "allergens": {
+        "total_unique": 3,
+        "list": [
+          "돼지고기",
+          "밀",
+          "대두"
+        ],
+        "duplicated": {}
+      },
+      "quality_issues": [],
+      "score": 85,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "product_number": "135_final_clean",
+      "timestamp": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content",
+      "file_size_kb": 12.42,
+      "duplicate_sections": [
+        {
+          "type": "알레르기 정보 중복",
+          "count": 3,
+          "sections": [
+            "알레르기 정보 (단일 섹션) -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title\">영양성분 및 알레르기 정보</h2>\n            \n            <!-- 영양성분표 -->\n            <div style=\"background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0;\">\n                <h3 style=\"color: #333; font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center;\">🍽️ 영양성분표 (100g당)</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n            <tr>\n                <th>칼로리</th>\n                <td style=\"font-weight: 600; color: #333;\">350kcal</td>\n            </tr>\n            <tr>\n                <th>나트륨</th>\n                <td style=\"font-weight: 600; color: #333;\">920mg</td>\n            </tr>\n            <tr>\n                <th>탄수화물</th>\n                <td style=\"font-weight: 600; color: #333;\">38g</td>\n            </tr>\n            <tr>\n                <th>단백질</th>\n                <td style=\"font-weight: 600; color: #333;\">14g</td>\n            </tr>\n            <tr>\n                <th>지방</th>\n                <td style=\"font-weight: 600; color: #333;\">15g</td>\n            </tr>\n                </table>\n            </div>",
+            "알레르기 정보 (단일) -->\n            <div style=\"background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n                <h3 style=\"color: #856404; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">⚠️ 알레르기 유발요소</h3>\n                <p style=\"color: #856404; margin-bottom: 15px; font-weight: 500;\">이 제품은 다음 알레르기 유발 요소를 함유하고 있습니다:</p>\n                <div style=\"text-align: center; margin: 15px 0;\">\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">밀</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">대두</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">돼지고기</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">계란</span>\n                </div>",
+            "알레르기가 있으신 분은 섭취 전 반드시 원재료명을 확인해 주세요.</p>\n            </div>\n            \n            <!-- 보관 주의사항 -->\n            <div style=\"background: #e7f3ff; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; margin: 20px 0;\">\n                <h3 style=\"color: #004085; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">📋 보관 및 취급 주의사항</h3>\n                <ul style=\"color: #004085; margin: 0; padding-left: 20px; line-height: 1.8;\">\n                    <li style=\"margin: 8px 0;\">냉동보관 (-18℃ 이하)에서 보관하세요</li>\n                    <li style=\"margin: 8px 0;\">해동 후 재냉동하지 마세요</li>\n                    <li style=\"margin: 8px 0;\">조리 후 즉시 드시기 바랍니다</li>\n                    <li style=\"margin: 8px 0;\">충분히 가열하여 드세요</li>\n                </ul>\n            </div>\n        </div>\n        \n        <!-- 판매자 정보 -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title seller-title\">판매자 정보</h2>\n            \n            <!-- 회사 정보 -->\n            <div class=\"seller-info-section\">\n                <h3>회사 정보</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n                    <tr>\n                        <th>상호</th>\n                        <td>㈜값진한끼</td>\n                    </tr>\n                    <tr>\n                        <th>대표자</th>\n                        <td>고혜숙</td>\n                    </tr>\n                    <tr>\n                        <th>사업자등록번호</th>\n                        <td>434-86-03863</td>\n                    </tr>\n                    <tr>\n                        <th>통신판매업</th>\n                        <td>2025-경기파주-2195호</td>\n                    </tr>\n                </table>\n            </div>"
+          ]
+        }
+      ],
+      "allergens": {
+        "total_unique": 4,
+        "list": [
+          "계란",
+          "돼지고기",
+          "밀",
+          "대두"
+        ],
+        "duplicated": {}
+      },
+      "quality_issues": [],
+      "score": 85,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "product_number": "140_final_clean",
+      "timestamp": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content",
+      "file_size_kb": 11.46,
+      "duplicate_sections": [
+        {
+          "type": "알레르기 정보 중복",
+          "count": 3,
+          "sections": [
+            "알레르기 정보 (단일 섹션) -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title\">영양성분 및 알레르기 정보</h2>\n            \n            <!-- 영양성분표 -->\n            <div style=\"background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0;\">\n                <h3 style=\"color: #333; font-size: 18px; font-weight: 600; margin-bottom: 15px; text-align: center;\">🍽️ 영양성분표 (100g당)</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n            <tr>\n                <th>칼로리</th>\n                <td style=\"font-weight: 600; color: #333;\">270kcal</td>\n            </tr>\n            <tr>\n                <th>나트륨</th>\n                <td style=\"font-weight: 600; color: #333;\">850mg</td>\n            </tr>\n            <tr>\n                <th>탄수화물</th>\n                <td style=\"font-weight: 600; color: #333;\">33g</td>\n            </tr>\n            <tr>\n                <th>단백질</th>\n                <td style=\"font-weight: 600; color: #333;\">13g</td>\n            </tr>\n            <tr>\n                <th>지방</th>\n                <td style=\"font-weight: 600; color: #333;\">8g</td>\n            </tr>\n                </table>\n            </div>",
+            "알레르기 정보 (단일) -->\n            <div style=\"background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n                <h3 style=\"color: #856404; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">⚠️ 알레르기 유발요소</h3>\n                <p style=\"color: #856404; margin-bottom: 15px; font-weight: 500;\">이 제품은 다음 알레르기 유발 요소를 함유하고 있습니다:</p>\n                <div style=\"text-align: center; margin: 15px 0;\">\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">밀</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">대두</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">새우</span>\n            <span style=\"background: #dc3545; color: white; padding: 8px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 4px;\">계란</span>\n                </div>",
+            "알레르기가 있으신 분은 섭취 전 반드시 원재료명을 확인해 주세요.</p>\n            </div>\n            \n            <!-- 보관 주의사항 -->\n            <div style=\"background: #e7f3ff; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff; margin: 20px 0;\">\n                <h3 style=\"color: #004085; font-size: 18px; font-weight: 600; margin-bottom: 15px;\">📋 보관 및 취급 주의사항</h3>\n                <ul style=\"color: #004085; margin: 0; padding-left: 20px; line-height: 1.8;\">\n                    <li style=\"margin: 8px 0;\">냉동보관 (-18℃ 이하)에서 보관하세요</li>\n                    <li style=\"margin: 8px 0;\">해동 후 재냉동하지 마세요</li>\n                    <li style=\"margin: 8px 0;\">조리 후 즉시 드시기 바랍니다</li>\n                    <li style=\"margin: 8px 0;\">충분히 가열하여 드세요</li>\n                </ul>\n            </div>\n        </div>\n        \n        <!-- 판매자 정보 -->\n        <div class=\"content-section\">\n            <h2 class=\"section-title seller-title\">판매자 정보</h2>\n            \n            <!-- 회사 정보 -->\n            <div class=\"seller-info-section\">\n                <h3>회사 정보</h3>\n                <table class=\"detail-table\" style=\"margin: 0;\">\n                    <tr>\n                        <th>상호</th>\n                        <td>㈜값진한끼</td>\n                    </tr>\n                    <tr>\n                        <th>대표자</th>\n                        <td>고혜숙</td>\n                    </tr>\n                    <tr>\n                        <th>사업자등록번호</th>\n                        <td>434-86-03863</td>\n                    </tr>\n                    <tr>\n                        <th>통신판매업</th>\n                        <td>2025-경기파주-2195호</td>\n                    </tr>\n                </table>\n            </div>"
+          ]
+        }
+      ],
+      "allergens": {
+        "total_unique": 5,
+        "list": [
+          "밀",
+          "대두",
+          "돼지고기",
+          "계란",
+          "새우"
+        ],
+        "duplicated": {
+          "새우": 7
+        }
+      },
+      "quality_issues": [],
+      "score": 80,
+      "status": "NEEDS_REVIEW"
+    }
+  ]
+}

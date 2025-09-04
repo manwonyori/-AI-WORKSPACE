@@ -1,0 +1,78 @@
+{
+  "product_no": "338",
+  "timestamp": "2025-09-01T01:26:14.564546",
+  "requirements": {
+    "1_dom_scan": {
+      "error": "Alert Text: Session이 종료되었거나, 비정상적인 접속입니다.\nMessage: unexpected alert open: {Alert text : Session이 종료되었거나, 비정상적인 접속입니다.}\n  (Session info: chrome=139.0.7258.155)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f83e14]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "2_element_mapping": {
+      "error": "Alert Text: 쇼핑몰의 소중한 정보보호 및 보안 강화를 위하여 관리자 전용 로그인 페이지로 이동합니다.\nMessage: unexpected alert open: {Alert text : 쇼핑몰의 소중한 정보보호 및 보안 강화를 위하여 관리자 전용 로그인 페이지로 이동합니다.}\n  (Session info: chrome=139.0.7258.155)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763eecc39]\n\t(No symbol) [0x0x7ff763ef3a8a]\n\t(No symbol) [0x0x7ff763ec84cd]\n\t(No symbol) [0x0x7ff763eec0d0]\n\t(No symbol) [0x0x7ff763f8321d]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "3_event_listeners": {
+      "error": "Alert Text: 쇼핑몰의 소중한 정보보호 및 보안 강화를 위하여 관리자 전용 로그인 페이지로 이동합니다.\nMessage: unexpected alert open: {Alert text : 쇼핑몰의 소중한 정보보호 및 보안 강화를 위하여 관리자 전용 로그인 페이지로 이동합니다.}\n  (Session info: chrome=139.0.7258.155)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f83e14]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "4_ajax_monitoring": {
+      "monitoring": "active",
+      "message": "AJAX 호출이 window.ajaxCalls에 기록됩니다"
+    },
+    "5_save_process": {
+      "forms": [
+        {
+          "action": "https://eclogin.cafe24.com/Shop/",
+          "id": "frm_user",
+          "method": "post",
+          "name": "frm_user"
+        },
+        {
+          "action": "https://user.cafe24.com/sns/?action=snsLogin",
+          "id": "snsFrm",
+          "method": "post",
+          "name": ""
+        }
+      ],
+      "save_buttons": []
+    }
+  },
+  "sections": {
+    "표시설정": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "기본정보": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "판매정보": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "옵션/재고": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "이미지정보": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "제작정보": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "상세이용안내": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "아이콘설정": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "배송정보": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "추가구성상품": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "관련상품": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "SEO설정": {
+      "error": "탭을 찾을 수 없음"
+    },
+    "메모": {
+      "error": "탭을 찾을 수 없음"
+    }
+  },
+  "url": "https://manwonyori.cafe24.com/disp/admin/shop1/product/ProductRegister?product_no=338"
+}

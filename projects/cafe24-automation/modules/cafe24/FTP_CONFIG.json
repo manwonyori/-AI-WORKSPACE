@@ -1,0 +1,27 @@
+{
+  "sftp_server": {
+    "host": "ecimg-ftp-c01.cafe24img.com",
+    "port": 8013,
+    "username": "manwonyori",
+    "password": "happy8263!",
+    "protocol": "SFTP",
+    "valid_period": {
+      "start": "2025-08-31",
+      "end": "2025-09-06"
+    }
+  },
+  "local_mirror": {
+    "base_path": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\ftp_mirror",
+    "structure": {
+      "download_path": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\ftp_mirror\\download",
+      "upload_path": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\ftp_mirror\\upload",
+      "backup_path": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\ftp_mirror\\backup"
+    }
+  },
+  "sync_settings": {
+    "preserve_structure": true,
+    "verify_after_download": true,
+    "create_checksums": true,
+    "maintain_timestamps": true
+  }
+}

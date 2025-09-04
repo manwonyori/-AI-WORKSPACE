@@ -1,0 +1,475 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반찬단지 혼밥러 한끼꾸러미 4종세트 - 38만 유튜버 최씨남매 추천</title>
+<meta name="description" content="오늘 뭐 먹지? 고민 끝! 38만 유튜버 최씨남매가 극찬한 반찬단지 밥도둑 4종(진미채,낙지젓,무말랭이,오징어젓) 세트. 46% 할인된 만원의 행복으로 당신의 식탁을 업그레이드하세요.">
+
+<!-- ▼▼▼▼▼ (1/2) 상세페이지 콘텐츠 스타일 ▼▼▼▼▼ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+	/* ===== 기본 및 리셋 스타일 ===== */
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		margin: 0; font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; background-color: #f5f5f5; color: #333; line-height: 1.6;
+	}
+	
+	.container {
+		max-width: 860px; margin: 0 auto; background-color: #FFFFFF; overflow-x: hidden;
+	}
+	
+	img {
+		max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;
+	}
+	
+	a {
+		text-decoration: none; color: inherit;
+	}
+	
+	.section {
+		padding: 48px 20px;
+	}
+	
+	.bg-gray {
+		background-color: #f8f9fa;
+	}
+	
+	.content-wrapper {
+		max-width: 600px; margin: 0 auto; text-align: center;
+	}
+	
+	.content-title {
+		font-size: 28px; font-weight: 700; color: #2d3748; margin: 0 0 16px 0; line-height: 1.4;
+	}
+	
+	.highlight-yellow {
+		background-color: #FFF2B2; color: #1a202c; padding: 2px 6px; font-weight: bold; border-radius: 4px;
+	}
+	
+	.gradient-text {
+		background: linear-gradient(45deg, #FF6B6B, #4ECDC4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+	}
+	
+	.hero-header {
+		background: linear-gradient(135deg, #E31837 0%, #004F9F 100%); color: white; padding: 48px 20px; text-align: center;
+	}
+	
+	.hero-header h1,
+	.hero-header h2 {
+		font-weight: 900; line-height: 1.3; margin: 0 0 24px 0;
+	}
+	
+	.hero-header h1 {
+		font-size: 32px;
+	}
+	
+	.hero-header h2 {
+		font-size: 28px;
+	}
+	
+	.hero-header p {
+		font-size: 18px; opacity: 0.9; margin: 0 0 24px 0;
+	}
+	
+	.hero-main-image {
+		max-width: 500px; border-radius: 8px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); margin-bottom: 24px;
+	}
+	
+	.price-box .original-price {
+		font-size: 16px; text-decoration: line-through; opacity: 0.75;
+	}
+	
+	.price-box .sale-price {
+		font-size: 36px; font-weight: bold; color: #FFD700; margin: 8px 0 16px 0;
+	}
+	
+	.price-box .discount-badge {
+		font-size: 16px; background-color: #FFD700; color: #E31837; padding: 6px 12px; border-radius: 9999px; font-weight: bold;
+	}
+	
+	.product-summary-box {
+		font-size: 16px; background-color: rgba(0, 0, 0, 0.2); padding: 20px; border-radius: 8px; margin: 24px auto 0 auto;
+	}
+	
+	.product-summary-box p {
+		margin: 0;
+	}
+	
+	.product-summary-box .strong-point {
+		margin-top: 8px; font-weight: bold; color: #FFD700;
+	}
+	
+	.content-box {
+		margin-bottom: 48px;
+	}
+	
+	.problem-title {
+		font-size: 20px; font-weight: bold; color: #E31837; margin: 16px 0 8px 0;
+	}
+	
+	.product-card {
+		margin-bottom: 24px; background-color: #ffffff; padding: 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+	}
+	
+	.product-card img {
+		border-radius: 8px; margin-bottom: 16px;
+	}
+	
+	.product-card h3 {
+		font-size: 20px; font-weight: bold; margin: 0;
+	}
+	
+	.recipe-card {
+		margin-bottom: 16px; background-color: #f8f9fa; padding: 16px; border-radius: 8px; text-align: left;
+	}
+	
+	.recipe-card p {
+		margin: 0; font-size: 16px;
+	}
+	
+	.trust-box {
+		margin-bottom: 48px;
+	}
+	
+	.trust-box img {
+		border-radius: 8px; margin-bottom: 16px;
+	}
+	
+	.trust-box h3 {
+		font-size: 20px; font-weight: bold; margin: 0 0 8px 0;
+	}
+	
+	.policy-box {
+		font-size: 14px; color: #4a5568; background-color: #ffffff; padding: 24px; border-radius: 8px; border: 1px solid #dee2e6;
+	}
+	
+	.policy-box h3 {
+		font-size: 18px; font-weight: bold; margin: 0 0 16px 0;
+	}
+	
+	.policy-box ul {
+		margin: 0; padding-left: 20px; list-style: none;
+	}
+	
+	.policy-box li {
+		margin-bottom: 12px;
+	}
+	
+	.policy-box .important-text {
+		font-weight: bold; color: #E31837;
+	}
+	
+	.final-cta-button {
+		display: inline-block; background-color: #FFD700; color: #2d3748; font-size: 22px; font-weight: 900; padding: 18px 36px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); transition: transform 0.2s ease-in-out;
+	}
+	
+	.final-cta-button:hover {
+		transform: scale(1.05);
+	}
+
+</style>
+<!-- ▲▲▲▲▲ (1/2) 상세페이지 콘텐츠 스타일 ▲▲▲▲▲ -->
+
+
+
+<!-- ▼▼▼▼▼ (2/2) 브랜드 허브 헤더 v22.1 ▼▼▼▼▼ -->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GmarketSansMedium.woff'); .manwon-hub-container {
+		max-width: 860px; margin: 30px auto; padding: 40px 20px; font-family: 'GmarketSansMedium', sans-serif; background: linear-gradient(to top, #fffaf6, #ffffff); border: 3px solid #FF7A2F; border-radius: 16px; text-align: center; word-break: keep-all; position: relative; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	}
+	
+	.manwon-hub-container .intro-text {
+		font-size: 18px; color: #555; font-weight: 700;
+	}
+	
+	.manwon-hub-container h1 {
+		font-size: 36px; font-weight: 900; color: #333; margin: 16px 0; line-height: 1.4;
+	}
+	
+	.manwon-hub-container h1 .highlight {
+		color: #FF7A2F;
+	}
+	
+	.manwon-hub-container .sub-text {
+		font-size: 16px; color: #555;
+	}
+	
+	.manwon-hub-container .final-message {
+		margin-top: 30px; font-size: 16px; font-weight: 700; color: #333;
+	}
+	
+	@keyframes hub-cta-glow {
+		0%,
+		100% {
+			box-shadow: 0 0 15px 0px rgba(255, 122, 47, 0.6);
+		}
+		50% {
+			box-shadow: 0 0 25px 8px rgba(255, 122, 47, 0.9);
+		}
+	}
+	
+	.manwon-hub-container .cta-button {
+		display: inline-block; background-color: #FF7A2F; color: white; font-size: 24px; font-weight: 700; padding: 18px 40px; border-radius: 50px; text-decoration: none; margin-top: 24px; animation: hub-cta-glow 2.5s infinite; transition: transform 0.2s ease-in-out;
+	}
+	
+	.manwon-hub-container .cta-button:hover {
+		transform: scale(1.05);
+	}
+	
+	.manwon-hub-container .cta-subtext {
+		font-size: 14px; color: #777; margin-top: 10px;
+	}
+	
+	.manwon-card-section {
+		margin-top: 40px; padding-top: 30px; border-top: 2px dashed #fae5d3; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+	}
+	
+	.manwon-card {
+		background-color: #fff; border: 1px solid #fae5d3; border-radius: 12px; padding: 20px; text-decoration: none; display: block; color: #333; transition: all 0.3s ease;
+	}
+	
+	.manwon-card:hover {
+		transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); border-color: #FF7A2F;
+	}
+	
+	.manwon-card .icon {
+		font-size: 28px; color: #FF7A2F; margin-bottom: 10px;
+	}
+	
+	.manwon-card .title {
+		font-size: 18px; font-weight: 700; margin-bottom: 5px;
+	}
+	
+	.manwon-card .desc {
+		font-size: 14px; color: #666;
+	}
+	
+	#kakao-add-channel-button-container {
+		position: absolute; top: 20px; right: 20px; z-index: 10;
+	}
+
+</style>
+
+<div class="manwon-hub-container">
+<div id="kakao-add-channel-button-container"></div>
+
+<p class="intro-text">안녕하세요! 만원요리 최씨남매입니다.</p>
+
+<h1>잠깐! 이 상품만 보고 가시게요?
+<br><span class="highlight">더 많은 행복이 기다리고 있어요!</span></h1>
+
+<p class="sub-text">저희가 직접 발로 뛰어 찾아낸, 말도 안 되는 가격의
+<br>맛있는 제품들이 매일 업데이트됩니다.</p>
+<a href="https://www.manwonyori.com" rel="noopener noreferrer" target="_blank" class="cta-button">만원요리 최씨남매 사이트 바로가기!</a>
+
+<p class="cta-subtext">(클릭하시면 더 많고 저렴한 제품을 보실 수 있습니다!)</p>
+<div class="manwon-card-section">
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=75" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">💡</div>
+<div class="title">최씨남매 기획전</div>
+<div class="desc">지금 가장 핫한 상품만 모았어요!</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=53" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⭐</div>
+<div class="title">최씨남매 PICK</div>
+<div class="desc">저희가 직접 고른 믿고 먹는 제품</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=54" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤔</div>
+<div class="title">오늘 뭐 먹지?</div>
+<div class="desc">고민 끝! 식단 걱정 덜어드려요</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=55" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">📦</div>
+<div class="title">사장님 브랜드관 (대용량)</div>
+<div class="desc">자영업자 사장님들을 위한 특별관</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=56" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤝</div>
+<div class="title">직거래 브랜드관</div>
+<div class="desc">산지직송! 신선함 그대로</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=57" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⚡</div>
+<div class="title">공장직속/반짝특가</div>
+<div class="desc">이 가격, 실화? 역대급 가성비</div>
+</a>
+</div>
+
+<p class="final-message">누야히야들, 모든 사장님들 화이팅!</p>
+</div>
+
+
+
+<!-- ▲▲▲▲▲ (2/2) 브랜드 허브 헤더 v22.1 ▲▲▲▲▲ -->
+
+
+<div class="container">
+
+<!-- Section 1: Hero -->
+<header id="main-content" class="hero-header">
+
+<h1>반찬단지 × 만원요리 최씨남매
+<br>혼밥러 한끼 꾸러미 4종 세트</h1>
+
+<p>38만 구독자의 입맛을 사로잡은 <span class="highlight-yellow">진짜 맛집 비밀</span></p>
+<img src="https://page1.genspark.site/v1/base64_upload/063d1dc1bc023e866cb0b1641dba483f" alt="밥도둑 반찬 4종이 정갈하게 차려진 모습" class="hero-main-image fr-draggable">
+
+<h2 style="margin-top: 24px;">단 돈 만원으로 완성하는
+<br><span class="gradient-text">침샘폭발 진수성찬</span></h2>
+<div class="price-box">
+<span class="original-price">정상가 18,620원</span>
+<div class="sale-price">🔥 특가 10,000원 🔥</div>
+<span class="discount-badge">무려 46% 파격 할인!</span>
+</div>
+<div class="product-summary-box">
+
+<p>✨ 진미채 80g + 낙지젓 120g + 무말랭이 120g + 오징어젓 120g</p>
+
+<p class="strong-point">총 440g! 밥 세 그릇도 부족한 구성 💕</p>
+</div>
+</header>
+
+<!-- Section 2: Problem -->
+<section class="section bg-gray">
+<div class="content-wrapper">
+
+<h2 class="content-title">😩 매일 반복되는 그 고민,
+<br>정말 <span class="highlight-yellow">지겹지 않나요?</span></h2>
+<div class="content-box"><img src="https://cdn1.genspark.ai/user-upload-image/22_generated/c51825f4-65ac-45df-aa53-cac7725fa95b" alt="텅 빈 냉장고 앞에서 고민하는 자취생" style="border-radius: 8px;" loading="lazy" class="fr-draggable">
+
+<h3 class="problem-title">😰 냉장고 앞 무한 고민타임</h3>
+
+<p>"또 김치, 계란후라이...?"
+<br>매일 똑같은 메뉴에 지친 당신</p>
+</div>
+<div style="margin-bottom: 0;" class="content-box"><img src="https://cdn1.genspark.ai/user-upload-image/22_generated/0cb63e57-b1ab-41e7-a917-77846682ff91" alt="야근 후 지친 직장인" style="border-radius: 8px;" loading="lazy" class="fr-draggable">
+
+<h3 class="problem-title">⏰ 반찬 만들 시간도 체력도 없는 날</h3>
+
+<p>퇴근 후 지친 몸으로
+<br>또 마트 가서 장보기는 너무 힘들어</p>
+</div>
+</div>
+</section>
+
+<!-- Section 4: Product Details - [수정됨] -->
+<section class="section bg-gray">
+<div class="content-wrapper">
+
+<h2 class="content-title">🍽️ 밥상 위, <span class="gradient-text">4가지 행복</span>을 만나보세요</h2>
+<div class="product-card"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/d-im/jimi-1.jpg" alt="진미채 80g 제품 이미지" loading="lazy" class="fr-draggable">
+<h3>🌶️ 매콤달콤 진미채무침</h3>
+</div>
+<div class="product-card"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/d-im/jimmi-1.jpg" alt="낙지젓 120g 제품 이미지" loading="lazy" class="fr-draggable">
+<h3>🐙 쫄깃탱글 낙지젓</h3>
+</div>
+<div class="product-card"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/d-im/mumal-1.jpg" alt="무말랭이 120g 제품 이미지" loading="lazy" class="fr-draggable">
+<h3>🥕 오독오독 무말랭이</h3>
+</div>
+<div class="product-card"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/d-im/oj-1.jpg" alt="오징어젓 120g 제품 이미지" loading="lazy" class="fr-draggable">
+<h3>🦑 감칠맛 폭발 오징어젓</h3>
+</div>
+</div>
+</section>
+
+<!-- Section 5: How to Enjoy (Text Only) -->
+<section class="section">
+<div class="content-wrapper">
+<h2 class="content-title">🍚 우리집이 맛집이 되는 <span class="highlight-yellow">꿀팁 대방출!</span></h2>
+<div class="recipe-card">
+<p>🍳 낙지젓 볶음밥: 김가루와 참기름만 추가하면 끝! 매콤한 풍미가 일품이에요.</p>
+</div>
+<div class="recipe-card">
+<p>🍙 진미채 주먹밥: 아이들 간식, 도시락 반찬으로 최고! 마요네즈를 살짝 섞어도 꿀맛!</p>
+</div>
+<div class="recipe-card">
+<p>🍜 무말랭이 비빔국수: 삶은 소면에 오이채, 무말랭이를 넣고 비비면 입맛 돋우는 별미 완성!</p>
+</div>
+<div class="recipe-card">
+<p>🥚 오징어젓 계란찜: 계란물에 오징어젓을 잘게 썰어 넣고 쪄보세요.</p>
+</div>
+</div>
+</section>
+
+<!-- Section 6: Trust & Certification -->
+<section class="section bg-gray">
+<div class="content-wrapper">
+
+<h2 class="content-title">💚 믿음의 증거, 안전하고 깨끗하게!</h2>
+<div class="trust-box"><img src="https://cdn1.genspark.ai/user-upload-image/22_generated/fb1f40aa-f542-4fd8-98d2-36c189b39376" alt="HACCP 인증 식품 제조 시설" loading="lazy" class="fr-draggable">
+<h3>🏭 HACCP 인증 제조시설</h3>
+<p>식약처의 엄격한 기준을 통과한 위생적인 환경에서 만듭니다.</p>
+</div>
+<div style="margin-bottom: 0;" class="trust-box"><img src="https://cdn1.genspark.ai/user-upload-image/22_generated/4e3b1ec3-4f2e-43da-91eb-f75993e20431" alt="아이스박스 신선 배송" loading="lazy" class="fr-draggable">
+<h3>🚛 집 앞까지 신선하게!</h3>
+<p>아이스팩+아이스박스로 꼼꼼하게 냉장 배송됩니다.</p>
+</div>
+</div>
+</section>
+
+<!-- Section 7: Product Specifications -->
+<section class="section">
+<div class="content-wrapper">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/jinmi-80g.jpg" alt="진미채 제품 상세 정보" loading="lazy" class="fr-draggable">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/mumal-120g.jpg" alt="무말랭이 제품 상세 정보" loading="lazy" style="margin-top: 20px;" class="fr-draggable">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/nakji-120g.jpg" alt="낙지젓 제품 상세 정보" loading="lazy" style="margin-top: 20px;" class="fr-draggable">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan-4set/ojin-120g.jpg" alt="오징어젓 제품 상세 정보" loading="lazy" style="margin-top: 20px;" class="fr-draggable">
+</div>
+</section>
+
+
+<!-- Section 8: Common Policies -->
+<section class="section bg-gray">
+<div class="content-wrapper">
+
+<h2 class="content-title">🚚 배송 및 교환/반품 안내</h2>
+<div class="policy-box">
+
+<h3>배송 안내</h3>
+
+<ul>
+<li>✔️ 평균 배송일은 출고일(주말/공휴일 제외) 기준 1~3일입니다.</li>
+<li>✔️ 주문폭주, 기상악화, 택배사 사정에 따라 배송이 지연될 수 있습니다.</li>
+<li>✔️ 제주도 및 도서산간 지역은 추가 운임료(제주 3,000원 / 도서산간 6,000원)가 발생합니다.</li>
+</ul>
+<hr style="border: 0; border-top: 1px solid #dee2e6; margin: 24px 0;">
+
+<h3>교환/반품 안내</h3>
+
+<ul>
+<li>✔️ 식품 특성상, 제품에 이상이 있을 경우 <strong class="important-text">수령 후 1일 이내에 사진과 함께 고객센터로 연락</strong>주셔야 처리가 가능합니다.</li>
+<li>✔️ 오배송, 파손, 불량 상품은 100% 교환 및 반품이 가능합니다.</li>
+<li class="important-text">✔️ 단순 변심, 제품 개봉 후에는 환불이 불가합니다.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Section 9: Final CTA -->
+<section class="hero-header">
+
+<h2 style="margin-bottom: 16px;">⚡ 망설이는 순간, <span class="highlight-yellow">품절입니다!</span> ⚡</h2>
+
+<p>38만 구독자가 인정한 밥도둑, 만원으로 경험하세요</p>
+<div style="background-color: rgba(255, 255, 255, 0.2); border-radius: 8px; padding: 24px; margin: 32px auto;" class="price-box">
+<div style="margin-bottom: 8px;" class="sale-price">🔥 단 한번의 특가 10,000원 🔥</div>
+<div><span class="original-price">정상가 18,620원</span><span style="margin-left: 8px;" class="discount-badge">46% 할인</span></div>
+</div>
+
+<a href="https://manwonyori.com/product/list.html?cate_no=56" rel="noopener noreferrer" target="_blank" class="final-cta-button">이 구성 그대로! 특가 구매하기</a>
+
+<div style="margin-top: 32px; font-size: 14px; opacity: 0.85;">
+
+<p style="margin: 0;">✓ 안전한 냉장택배 배송 ✓ 문제 발생 시 100% 책임보상 ✓ HACCP 인증 제품</p>
+
+<p style="margin-top: 8px; color: #FFD700;">💕 이미 수천 명이 주문했어요! 지금 바로 시작하세요!</p>
+</div>
+</section>
+</div>

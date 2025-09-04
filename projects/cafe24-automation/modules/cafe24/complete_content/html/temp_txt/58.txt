@@ -1,0 +1,847 @@
+<center>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>만원요리 최씨남매 X 반찬단지 비벼먹는 씨앗젓갈 200g</title>
+<meta name="description" content="바다 3형제와 견과 2총사의 완벽한 조합! 오징어 45.46% + 낙지 17.48% + 청어 13.11% + 해바라기씨 + 호박씨. 전통 젓갈의 현대적 재해석으로 고소하고 깊은 맛을 경험하세요.">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800;900&amp;family=Pretendard:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+ :root {
+  --font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ocean-blue: #2E5984;
+  --sea-salt: #F0F4F7;
+  --silver-blue: #9FB4D8;
+  --deep-navy: #1B365D;
+  --pearl-white: #F8F6F0;
+  --soft-cream: #FAF8F3;
+  --coral-red: #FF6B6B;
+  --warm-gray: #6B7280;
+  --deep-charcoal: #2C2C2C;
+ }
+ 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ body {
+  font-family: var(--font-primary);
+  line-height: 1.7;
+  color: var(--deep-charcoal);
+  background: var(--pearl-white);
+ }
+ 
+ .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px);
+ }
+ 
+ .section {
+  margin: clamp(30px, 6vw, 60px) 0;
+  padding: clamp(25px, 5vw, 40px);
+  border-radius: clamp(16px, 3vw, 24px);
+  background: var(--soft-cream);
+  border: 1px solid #E8E3DD;
+  box-shadow: 0 8px 32px rgba(46, 89, 132, 0.08);
+ }
+ 
+ .section-title {
+  font-size: clamp(20px, 4.5vw, 32px);
+  font-weight: 800;
+  color: var(--ocean-blue);
+  text-align: center;
+  margin-bottom: clamp(20px, 4vw, 30px);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+ }
+ 
+ .section-subtitle {
+  font-size: clamp(16px, 3.5vw, 22px);
+  font-weight: 700;
+  color: var(--silver-blue);
+  margin-bottom: clamp(12px, 2.5vw, 18px);
+  line-height: 1.4;
+  text-align: left;
+ }
+ 
+ .hero-section {
+  background: linear-gradient(135deg, var(--ocean-blue) 0%, var(--deep-navy) 100%);
+  color: var(--pearl-white);
+  text-align: center;
+  padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 40px);
+  border-radius: clamp(20px, 4vw, 30px);
+  margin-bottom: clamp(40px, 6vw, 60px);
+  position: relative;
+  overflow: hidden;
+ }
+ 
+ .hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+  animation: float 20s infinite linear;
+ }
+ 
+ @keyframes float {
+  0% {
+  transform: translateY(0) rotate(0deg);
+  }
+  100% {
+  transform: translateY(-100px) rotate(360deg);
+  }
+ }
+ 
+ .hero-title {
+  font-size: clamp(24px, 6vw, 48px);
+  font-weight: 900;
+  margin-bottom: clamp(15px, 3vw, 25px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+ }
+ 
+ .hero-subtitle {
+  font-size: clamp(16px, 3.5vw, 24px);
+  font-weight: 500;
+  margin-bottom: clamp(25px, 5vw, 40px);
+  opacity: 0.95;
+  line-height: 1.5;
+ }
+ 
+ .taste-card {
+  background: var(--pearl-white);
+  padding: clamp(20px, 4vw, 30px);
+  border-radius: clamp(12px, 2.5vw, 18px);
+  border-left: 4px solid var(--silver-blue);
+  margin: clamp(15px, 3vw, 20px) 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+ }
+ 
+ .taste-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(159, 180, 216, 0.1), transparent);
+  transition: all 0.6s ease;
+ }
+ 
+ .taste-card:hover::before {
+  left: 100%;
+ }
+ 
+ .taste-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(46, 89, 132, 0.15);
+  border-left-color: var(--ocean-blue);
+ }
+ 
+ .taste-profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(20px, 4vw, 30px);
+  margin: clamp(25px, 5vw, 35px) 0;
+ }
+ 
+ .profile-card {
+  background: var(--pearl-white);
+  padding: clamp(20px, 4vw, 25px);
+  border-radius: clamp(12px, 2.5vw, 16px);
+  text-align: center;
+  position: relative;
+  border: 1px solid rgba(159, 180, 216, 0.2);
+ }
+ 
+ .profile-icon {
+  font-size: clamp(28px, 6vw, 40px);
+  margin-bottom: clamp(12px, 2.5vw, 16px);
+  color: var(--silver-blue);
+ }
+ 
+ .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(20px, 4vw, 30px);
+ }
+ 
+ .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(15px, 3vw, 25px);
+ }
+ 
+ .image-section {
+  margin: clamp(30px, 5vw, 50px) 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .image-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: clamp(8px, 2vw, 12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .highlight-box {
+  background: linear-gradient(135deg, #FFF8E1, #F5F0E1);
+  border: 2px solid var(--silver-blue);
+  border-radius: clamp(12px, 2.5vw, 18px);
+  padding: clamp(20px, 4vw, 30px);
+  margin: clamp(20px, 4vw, 30px) 0;
+  text-align: center;
+  position: relative;
+ }
+ 
+ .highlight-box::before {
+  content: '🔥';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--coral-red);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+ }
+ 
+ .checklist {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+ }
+ 
+ .checklist li {
+  padding: clamp(8px, 1.5vw, 12px) 0;
+  position: relative;
+  padding-left: clamp(30px, 6vw, 40px);
+  font-size: clamp(14px, 2.8vw, 16px);
+  line-height: 1.6;
+  text-align: left;
+ }
+ 
+ .checklist li:before {
+  content: "🌊";
+  position: absolute;
+  left: 0;
+  font-size: clamp(16px, 3vw, 18px);
+ }
+ 
+ .michelin-quote {
+  background: var(--deep-navy);
+  color: var(--pearl-white);
+  padding: clamp(30px, 6vw, 50px);
+  border-radius: clamp(16px, 3vw, 24px);
+  text-align: center;
+  margin: clamp(40px, 6vw, 60px) 0;
+  position: relative;
+  overflow: hidden;
+ }
+ 
+ .michelin-quote::before {
+  content: '"';
+  font-size: clamp(60px, 12vw, 120px);
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  opacity: 0.2;
+  font-family: serif;
+ }
+ 
+ .quote-text {
+  font-size: clamp(18px, 3.5vw, 26px);
+  font-weight: 500;
+  line-height: 1.6;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+ }
+ 
+ .quote-author {
+  font-size: clamp(14px, 2.5vw, 16px);
+  margin-top: clamp(15px, 3vw, 20px);
+  opacity: 0.8;
+  text-align: left;
+ }
+ 
+ .company-info {
+  background: var(--sea-salt);
+  padding: clamp(25px, 5vw, 35px);
+  border-radius: clamp(12px, 2.5vw, 18px);
+  margin: clamp(20px, 4vw, 30px) 0;
+ }
+ 
+ .company-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  text-align: left;
+ }
+ 
+ .company-label {
+  width: 120px;
+  font-weight: 700;
+  color: var(--ocean-blue);
+  flex-shrink: 0;
+  text-align: left;
+ }
+ 
+ .company-colon {
+  margin: 0 8px;
+  color: var(--silver-blue);
+  font-weight: 600;
+ }
+ 
+ .company-value {
+  flex: 1;
+  color: var(--deep-charcoal);
+  line-height: 1.5;
+  text-align: left;
+ }
+ 
+ .final-cta {
+  background: linear-gradient(135deg, var(--silver-blue) 0%, var(--ocean-blue) 100%);
+  color: var(--pearl-white);
+  text-align: center;
+  padding: clamp(40px, 6vw, 60px);
+  border-radius: clamp(20px, 4vw, 30px);
+  margin: clamp(40px, 6vw, 60px) 0;
+ }
+ 
+ .cta-title {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 900;
+  margin-bottom: clamp(15px, 3vw, 20px);
+ }
+ 
+ .cta-subtitle {
+  font-size: clamp(16px, 3vw, 20px);
+  margin-bottom: clamp(25px, 5vw, 35px);
+  opacity: 0.95;
+ }
+ 
+ .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: clamp(15px, 3vw, 20px);
+  margin: clamp(25px, 5vw, 35px) 0;
+ }
+ 
+ .stat-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: clamp(15px, 3vw, 20px);
+  border-radius: clamp(8px, 1.5vw, 12px);
+  text-align: center;
+ }
+ 
+ .stat-number {
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 900;
+  display: block;
+ }
+ 
+ .stat-label {
+  font-size: clamp(12px, 2.5vw, 14px);
+  opacity: 0.9;
+ }
+ 
+ .urgent-box {
+  background: linear-gradient(135deg, var(--coral-red) 0%, #ff5252 100%);
+  color: var(--pearl-white);
+  border-radius: clamp(12px, 2.5vw, 18px);
+  padding: clamp(20px, 4vw, 30px);
+  margin: clamp(20px, 4vw, 30px) 0;
+  text-align: center;
+  animation: pulse 2s infinite;
+ }
+ 
+ @keyframes pulse {
+  0%, 100% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.02);
+  }
+ }
+ 
+ .review-card {
+  background: var(--pearl-white);
+  padding: clamp(16px, 3vw, 20px);
+  border-radius: clamp(8px, 1.5vw, 12px);
+  border-left: 3px solid var(--silver-blue);
+  margin: clamp(10px, 2vw, 15px) 0;
+  box-shadow: 0 2px 8px rgba(46, 89, 132, 0.08);
+ }
+ 
+ .review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+ }
+ 
+ .review-avatar {
+  background: var(--silver-blue);
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 12px;
+ }
+ 
+ .review-text {
+  font-size: clamp(13px, 2.6vw, 15px);
+  line-height: 1.6;
+  color: var(--deep-charcoal);
+  text-align: left;
+ }
+ 
+ .shipping-section {
+  background: linear-gradient(135deg, var(--ocean-blue) 0%, var(--deep-navy) 100%);
+  color: var(--pearl-white);
+  padding: clamp(25px, 5vw, 35px);
+  border-radius: clamp(16px, 3vw, 24px);
+  margin: clamp(30px, 6vw, 50px) 0;
+ }
+ 
+ .shipping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(15px, 3vw, 20px);
+  margin-top: clamp(20px, 4vw, 25px);
+ }
+ 
+ .shipping-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: clamp(15px, 3vw, 20px);
+  border-radius: clamp(8px, 1.5vw, 12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+ }
+ 
+ .shipping-icon {
+  font-size: clamp(18px, 3.5vw, 22px);
+  margin-bottom: clamp(8px, 1.5vw, 10px);
+  color: var(--pearl-white);
+ }
+ 
+ .shipping-text {
+  font-size: clamp(14px, 2.8vw, 16px);
+  line-height: 1.5;
+  text-align: left;
+ }
+ 
+ @media (max-width: 768px) {
+  .container {
+  padding: 15px;
+  }
+  .grid-2 {
+  grid-template-columns: 1fr;
+  }
+  .taste-profile {
+  grid-template-columns: 1fr;
+  }
+  .shipping-grid {
+  grid-template-columns: 1fr;
+  }
+ }
+</style>
+
+<div class="container">
+<div class="hero-section">
+<h1 class="hero-title">🌊 바다 3형제 + 견과 2총사의 완벽한 조합</h1>
+<p class="hero-subtitle">
+만원요리 최씨남매 X 반찬단지 비벼먹는 씨앗젓갈 200g
+<br>전통 젓갈의 현대적 재해석
+</p>
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number">45.46%</span>
+<span class="stat-label">오징어 함량</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">17.48%</span>
+<span class="stat-label">낙지 함량</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">13.11%</span>
+<span class="stat-label">청어 함량</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">200g</span>
+<span class="stat-label">적당한 용량</span>
+</div>
+</div>
+</div>
+
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-main.gif" alt="반찬단지 메인 정보" loading="lazy" class="fr-draggable">
+</div>
+
+<div class="michelin-quote">
+<p class="quote-text">"전통 젓갈에 견과류를 더한 혁신적인 조합으로, 짠맛과 고소함의 완벽한 밸런스를 만들어낸 제품입니다."</p>
+<p class="quote-author">- 만원요리 최씨남매</p>
+</div>
+
+<div class="section">
+<h2 class="section-title">🏺 씨앗젓갈의 특별한 이야기</h2>
+<div class="taste-card">
+<h3 class="section-subtitle">🌊 젓갈의 전통</h3>
+<p style="font-size: clamp(15px, 3vw, 17px); line-height: 1.8; margin-bottom: 15px; text-align: left;">
+조선시대부터 이어진 젓갈은 냉장 보관이 어려웠던 시절, 바다의 신선한 해산물을 오래 보관하기 위한 조상들의 지혜였습니다. 소금에 절여 자연 발효시키는 과정에서 생성되는 깊은 감칠맛이 젓갈의 핵심입니다.
+</p>
+</div>
+
+<div class="taste-card">
+<h3 class="section-subtitle">🌰 견과류와의 만남</h3>
+<p style="font-size: clamp(15px, 3vw, 17px); line-height: 1.8; margin-bottom: 15px; text-align: left;">
+전통적으로 젓갈에 견과류를 넣는 이유는 짠맛을 중화시키고 영양을 보완하기 위함입니다. 해바라기씨와 호박씨의 고소함이 해산물의 감칠맛과 어우러져 더욱 깊고 풍부한 맛을 만들어냅니다.
+</p>
+</div>
+
+<div class="taste-profile">
+<div class="profile-card">
+<div class="profile-icon">🦑</div>
+<h4 style="font-weight: 700; margin-bottom: 10px; text-align: center;">오징어 45.46%</h4>
+<p style="font-size: 14px; text-align: center;">쫄깃한 식감과 진한 바다 맛</p>
+</div>
+<div class="profile-card">
+<div class="profile-icon">🐙</div>
+<h4 style="font-weight: 700; margin-bottom: 10px; text-align: center;">낙지 17.48%</h4>
+<p style="font-size: 14px; text-align: center;">부드러운 식감과 깊은 감칠맛</p>
+</div>
+<div class="profile-card">
+<div class="profile-icon">🐟</div>
+<h4 style="font-weight: 700; margin-bottom: 10px; text-align: center;">청어 13.11%</h4>
+<p style="font-size: 14px; text-align: center;">진한 바다 향과 오메가3</p>
+</div>
+<div class="profile-card">
+<div class="profile-icon">🌻</div>
+<h4 style="font-weight: 700; margin-bottom: 10px; text-align: center;">해바라기씨 + 호박씨</h4>
+<p style="font-size: 14px; text-align: center;">고소함과 영양 보완</p>
+</div>
+</div>
+</div>
+
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/30/1.jpg" alt="반찬단지 비벼먹는 씨앗젓갈 제품 이미지 1" loading="lazy" class="fr-draggable">
+</div>
+
+<div class="section">
+<h2 class="section-title">💎 Why? 왜 이 씨앗젓갈이어야 할까요?</h2>
+<div class="grid-2">
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--silver-blue); margin-right: 12px;" class="fas fa-fish"></i>
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">3종 해산물 조합</h3>
+</div>
+<p style="font-size: clamp(14px, 2.8vw, 16px); line-height: 1.7; text-align: left;">
+오징어, 낙지, 청어 각각의 고유한 맛과 식감이 조화를 이루어 단조로운 젓갈과는 차원이 다른 풍부한 맛을 선사합니다.
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--silver-blue); margin-right: 12px;" class="fas fa-seedling"></i>
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">견과류의 영양</h3>
+</div>
+<p style="font-size: clamp(14px, 2.8vw, 16px); line-height: 1.7; text-align: left;">
+해바라기씨와 호박씨가 해산물의 짠맛을 중화시키고, 비타민E와 식이섬유 등 추가 영양소를 공급합니다.
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--silver-blue); margin-right: 12px;" class="fas fa-shield-alt"></i>
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">HACCP 인증</h3>
+</div>
+<p style="font-size: clamp(14px, 2.8vw, 16px); line-height: 1.7; text-align: left;">
+주식회사 진찬의 위생적인 시설에서 HACCP 기준에 따라 안전하게 제조된 믿을 수 있는 제품입니다.
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--silver-blue); margin-right: 12px;" class="fas fa-box"></i>
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">200g 적정 용량</h3>
+</div>
+<p style="font-size: clamp(14px, 2.8vw, 16px); line-height: 1.7; text-align: left;">
+상하기 전에 신선하게 다 드실 수 있는 적정 용량으로, 냉장고 보관도 부담 없는 컴팩트 사이즈입니다.
+</p>
+</div>
+</div>
+</div>
+
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/30/2.jpg" alt="반찬단지 비벼먹는 씨앗젓갈 제품 이미지 2" loading="lazy" class="fr-draggable">
+</div>
+
+<div class="section">
+<h2 class="section-title">🍽️ How? 이렇게 활용하세요!</h2>
+<div class="highlight-box">
+<h3 style="font-size: clamp(18px, 3.5vw, 22px); font-weight: 800; margin-bottom: 15px; color: var(--ocean-blue);">
+<i style="color: var(--silver-blue); margin-right: 8px;" class="fas fa-lightbulb"></i> 씨앗젓갈 완벽 활용법
+</h3>
+<p style="font-size: clamp(15px, 3vw, 17px); line-height: 1.7;">
+따뜻한 밥에 비벼먹으면 가장 맛있어요! 견과류의 고소함이 더해져 밥도둑이 됩니다.
+</p>
+</div>
+
+<div class="grid-2">
+<div class="taste-card">
+<h3 class="section-subtitle">
+<i style="margin-right: 8px;" class="fas fa-bowl-rice"></i>기본 비빔밥
+</h3>
+<ul class="checklist">
+<li>따뜻한 밥 위에 씨앗젓갈 1-2숟가락</li>
+<li>참기름 살짝 둘러서 비벼주기</li>
+<li>김 가루나 깨소금 뿌려서 마무리</li>
+<li>바로 먹어도 되고 주먹밥으로 만들어도 좋아요</li>
+</ul>
+</div>
+
+<div class="taste-card">
+<h3 class="section-subtitle">
+<i style="margin-right: 8px;" class="fas fa-carrot"></i>야채 비빔밥
+</h3>
+<ul class="checklist">
+<li>밥 위에 상추, 오이, 무순 등 야채 올리기</li>
+<li>씨앗젓갈과 함께 골고루 비벼주기</li>
+<li>고추장이나 참기름 추가 가능</li>
+<li>영양과 맛이 균형잡힌 한 끼 완성</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/30/3.jpg" alt="반찬단지 비벼먹는 씨앗젓갈 제품 이미지 3" loading="lazy" class="fr-draggable">
+</div>
+
+<div class="section">
+<h2 class="section-title">💬 실제 구매 고객들의 솔직한 반응</h2>
+<div class="grid-3">
+<div class="review-card">
+<div class="review-header">
+<div class="review-avatar">김</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">김○○님</div>
+<div style="color: var(--silver-blue); font-size: 12px;">구매후기</div>
+</div>
+</div>
+<p class="review-text">
+"처음 먹어보는데 견과류가 들어있어서 그런지 고소해요. 너무 짜지 않고 밥이랑 비벼먹으니까 정말 맛있어요."
+</p>
+</div>
+
+<div class="review-card">
+<div class="review-header">
+<div class="review-avatar">이</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">이○○님</div>
+<div style="color: var(--silver-blue); font-size: 12px;">구매후기</div>
+</div>
+</div>
+<p class="review-text">
+"200g 용량이 딱 좋네요. 혼자 먹기에 부담스럽지 않고 상하기 전에 다 먹을 수 있어서 좋아요."
+</p>
+</div>
+
+<div class="review-card">
+<div class="review-header">
+<div class="review-avatar">박</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">박○○님</div>
+<div style="color: var(--silver-blue); font-size: 12px;">구매후기</div>
+</div>
+</div>
+<p class="review-text">
+"아이들이 젓갈 싫어하는데 이건 견과류 때문인지 잘 먹어요. 영양도 좋을 것 같고 맛도 괜찮아요."
+</p>
+</div>
+
+<div class="review-card">
+<div class="review-header">
+<div class="review-avatar">최</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">최○○님</div>
+<div style="color: var(--silver-blue); font-size: 12px;">구매후기</div>
+</div>
+</div>
+<p class="review-text">
+"해산물 3종이 다 들어있어서 그런지 맛이 복합적이에요. 한 가지 젓갈보다 훨씬 풍부한 맛이 나요."
+</p>
+</div>
+
+<div class="review-card">
+<div class="review-header">
+<div class="review-avatar">정</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">정○○님</div>
+<div style="color: var(--silver-blue); font-size: 12px;">구매후기</div>
+</div>
+</div>
+<p class="review-text">
+"오징어, 낙지, 청어가 각각 다른 식감을 주니까 씹는 재미가 있어요. 견과류도 바삭하고 좋아요."
+</p>
+</div>
+
+<div class="review-card">
+<div class="review-header">
+<div class="review-avatar">한</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">한○○님</div>
+<div style="color: var(--silver-blue); font-size: 12px;">구매후기</div>
+</div>
+</div>
+<p class="review-text">
+"냉장고에 보관해놓고 반찬 없을 때 밥에 비벼먹으면 정말 편해요. 한 숟가락이면 밥 한 공기 뚝딱!"
+</p>
+</div>
+</div>
+</div>
+
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/30/4.jpg" alt="반찬단지 비벼먹는 씨앗젓갈 제품 이미지 4" loading="lazy" class="fr-draggable">
+</div>
+
+<div class="shipping-section">
+<h2 style="font-size: clamp(20px, 4vw, 28px); font-weight: 800; text-align: center; margin-bottom: clamp(15px, 3vw, 20px);">
+🚚 배송 정보 및 혜택 📦
+</h2>
+<div class="shipping-grid">
+<div class="shipping-item">
+<div class="shipping-icon">💰</div>
+<div class="shipping-text">
+<strong>배송비 안내</strong>
+<br>내륙: 3,500원 / 제주: +4,000원 / 도서산간: +7,000원
+</div>
+</div>
+<div class="shipping-item">
+<div class="shipping-icon">❄️</div>
+<div class="shipping-text">
+<strong>냉장 보관 필수</strong>
+<br>0~10℃ 냉장보관, 개봉 후 1주일 이내 섭취
+</div>
+</div>
+<div class="shipping-item">
+<div class="shipping-icon">📦</div>
+<div class="shipping-text">
+<strong>묶음 배송 가능</strong>
+<br>최씨남매 상품과 함께 주문하면 배송비 절약
+</div>
+</div>
+<div class="shipping-item">
+<div class="shipping-icon">💡</div>
+<div class="shipping-text">
+<strong>카카오채널 혜택</strong>
+<br>카카오채널 추가 시 신상품 정보 및 혜택 제공
+</div>
+</div>
+</div>
+</div>
+
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/30/6.jpg" alt="품목제조보고서" loading="lazy" class="fr-draggable">
+</div>
+
+<div class="final-cta">
+<h2 class="cta-title">🌊 지금 바로 주문하세요!</h2>
+<p class="cta-subtitle">
+전통과 현대가 만난 특별한 씨앗젓갈
+<br>바다 3형제와 견과 2총사의 완벽한 조합
+</p>
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number">✅</span>
+<span class="stat-label">HACCP 인증</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">🚚</span>
+<span class="stat-label">묶음배송 가능</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">💎</span>
+<span class="stat-label">프리미엄 품질</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">🌊</span>
+<span class="stat-label">신선한 맛</span>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">🏢 업체 정보</h2>
+<div class="company-info">
+<h3 style="font-size: clamp(16px, 3.2vw, 18px); font-weight: 700; margin-bottom: 15px; color: var(--ocean-blue); text-align: center;">판매자 정보</h3>
+<div class="company-info-item">
+<span class="company-label">상호명</span>
+<span class="company-colon">:</span>
+<span class="company-value">㈜값진한끼</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">사업자등록번호</span>
+<span class="company-colon">:</span>
+<span class="company-value">434-86-03863</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">대표자명</span>
+<span class="company-colon">:</span>
+<span class="company-value">고혜숙</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">주소</span>
+<span class="company-colon">:</span>
+<span class="company-value">경기도 파주시 경의로 1246, 11층 1105-19호</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">연락처</span>
+<span class="company-colon">:</span>
+<span class="company-value">070-8835-2885</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">이메일</span>
+<span class="company-colon">:</span>
+<span class="company-value">we@manwonyori.com</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">통신판매업</span>
+<span class="company-colon">:</span>
+<span class="company-value">2025-경기파주-2195호</span>
+</div>
+</div>
+<div style="margin-top: 30px; text-align: center; padding: 20px; background: var(--sea-salt); border-radius: 12px;">
+<p style="font-size: clamp(14px, 2.8vw, 16px); color: var(--deep-charcoal); line-height: 1.7;">
+<i style="color: var(--silver-blue); margin-right: 8px;" class="fas fa-heart"></i>
+<strong>만원요리 최씨남매와 함께하는 홈쿡의 즐거움!</strong>
+<br>전통 젓갈의 새로운 경험을 선사하는 씨앗젓갈을 만나보세요.
+</p>
+</div>
+</div>
+</div>
+</center>

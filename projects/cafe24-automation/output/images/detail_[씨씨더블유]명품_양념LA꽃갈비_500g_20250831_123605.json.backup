@@ -1,0 +1,35 @@
+{
+  "product": {
+    "name": "[씨씨더블유]명품 양념LA꽃갈비 500g",
+    "brand": "씨씨더블유",
+    "catchphrase": "프리미엄 양념의 깊은 맛",
+    "features": [
+      "24시간 숙성",
+      "특제 양념",
+      "간편 조리"
+    ],
+    "cooking_steps": [
+      "1. 포장을 개봉합니다",
+      "2. 팬을 달군 후 기름을 두릅니다",
+      "3. 중불에서 5-7분간 굽습니다",
+      "4. 노릇하게 구워지면 완성"
+    ],
+    "cooking_time": "10분",
+    "difficulty": "쉬움",
+    "servings": "2-3인분",
+    "nutrition": {
+      "열량": "380kcal",
+      "탄수화물": "25g",
+      "단백질": "28g",
+      "지방": "18g",
+      "나트륨": "680mg"
+    }
+  },
+  "generated_at": "2025-08-31T12:36:05.957064",
+  "dimensions": {
+    "width": 860,
+    "height": 2100
+  },
+  "sections": 5,
+  "file": "C:\\Users\\8899y\\CUA-MASTER\\output\\images\\detail_[씨씨더블유]명품_양념LA꽃갈비_500g_20250831_123605.jpg"
+}

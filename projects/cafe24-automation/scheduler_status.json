@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-09-01T08:41:24.835764",
+  "scheduler": "running",
+  "next_runs": [
+    {
+      "job": "Job(interval=1, unit=days, do=<lambda>, args=(), kwargs={})",
+      "next_run": "2025-09-01 10:00:00"
+    },
+    {
+      "job": "Job(interval=1, unit=weeks, do=<lambda>, args=(), kwargs={})",
+      "next_run": "2025-09-07 03:00:00"
+    },
+    {
+      "job": "Job(interval=5, unit=minutes, do=write_status_report, args=(), kwargs={})",
+      "next_run": "2025-09-01 08:41:24.701904"
+    },
+    {
+      "job": "Job(interval=30, unit=seconds, do=monitor_claude_bridge, args=(), kwargs={})",
+      "next_run": "2025-09-01 08:41:24.821268"
+    }
+  ],
+  "recent_tasks": []
+}

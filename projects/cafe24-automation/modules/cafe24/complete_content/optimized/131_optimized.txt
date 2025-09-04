@@ -1,0 +1,346 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>만원요리 최씨남매 X 취영루 오리지널 교자만두</title>
+<style>
+ @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'); @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');:root {
+  --font-primary: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; --saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937; --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB;
+ }
+ 
+ body {
+  margin: 0; padding: 0; font-family: var(--font-primary); color: var(--deep-charcoal); background-color: var(--pure-white); word-break: keep-all; -webkit-font-smoothing: antialiased;
+ }
+ 
+ .container {
+  max-width: 860px; margin: 0 auto; padding: 0;
+ }
+ 
+ .section {
+  padding: clamp(40px, 8vw, 80px) clamp(15px, 4vw, 20px); text-align: center;
+ }
+ /* --- 1. Strategic Header --- */
+ 
+ .strategic-header {
+  border: 3px solid var(--saffron-gold); border-radius: 12px; margin: clamp(20px, 5vw, 30px); padding: clamp(20px, 5vw, 30px); background-color: var(--pure-white);
+ }
+ 
+ .header-brand {
+  font-size: clamp(16px, 4vw, 20px); font-weight: 700; margin-bottom: 12px;
+ }
+ 
+ .header-main-copy {
+  font-size: clamp(28px, 8vw, 42px); font-weight: 900; margin: 0 0 20px 0; line-height: 1.3;
+ }
+ 
+ @keyframes color-change {
+  0% {
+  color: var(--deep-rose);
+  }
+  50% {
+  color: var(--saffron-gold);
+  }
+  100% {
+  color: var(--deep-rose);
+  }
+ }
+ 
+ .animated-text {
+  animation: color-change 3s infinite;
+ }
+ 
+ .price-layout {
+  display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 24px;
+ }
+ 
+ .price-original {
+  font-size: clamp(16px, 4vw, 20px); font-weight: 400; color: var(--medium-gray); text-decoration: line-through;
+ }
+ 
+ .price-final-wrapper {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 12px;
+ }
+ 
+ .price-final {
+  font-size: clamp(32px, 9vw, 48px); font-weight: 900; color: var(--deep-rose);
+ }
+ 
+ .price-discount {
+  font-size: clamp(24px, 6vw, 36px); font-weight: 700; color: var(--deep-rose);
+ }
+ /* --- 2. Why Section --- */
+ 
+ .why-section {
+  background-color: var(--light-gray);
+ }
+ 
+ .section-title {
+  font-size: clamp(24px, 6.5vw, 36px); font-weight: 900; margin-bottom: clamp(30px, 6vw, 50px);
+ }
+ 
+ .why-grid {
+  display: grid; grid-template-columns: 1fr; gap: 30px; text-align: left; max-width: 600px; margin: 0 auto;
+ }
+ 
+ @media (min-width: 600px) {
+  .why-grid {
+  grid-template-columns: 1fr 1fr;
+  }
+ }
+ 
+ .why-card {
+  background-color: var(--pure-white); border: 1px solid var(--border-gray); border-radius: 12px; padding: 25px;
+ }
+ 
+ .why-card-title {
+  font-size: clamp(18px, 4.5vw, 22px); font-weight: 700; margin: 0 0 10px 0;
+ }
+ 
+ .why-card-desc {
+  font-size: clamp(15px, 3.5vw, 16px); line-height: 1.6; color: var(--medium-gray);
+ }
+ 
+ .highlight {
+  color: var(--deep-rose); font-weight: 700;
+ }
+ /* --- 3. Wow Section --- */
+ 
+ .wow-section {
+  background: linear-gradient(135deg, var(--deep-rose) 0%, #a12828 100%); color: var(--pure-white);
+ }
+ 
+ .wow-title {
+  font-size: clamp(28px, 7vw, 40px); font-weight: 900; margin-bottom: 30px;
+ }
+ 
+ .wow-content ul {
+  list-style-type: none; padding: 0; margin: 0 auto; max-width: 550px; text-align: left;
+ }
+ 
+ .wow-content li {
+  font-size: clamp(16px, 4vw, 18px); line-height: 1.7; padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ .wow-content li:last-child {
+  border-bottom: none;
+ }
+ /* --- 4. How Section --- */
+ 
+ .how-grid {
+  display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 700px; margin: 0 auto;
+ }
+ 
+ @media (min-width: 600px) {
+  .how-grid {
+  grid-template-columns: 1fr 1fr;
+  }
+ }
+ 
+ .how-card {
+  border: 2px solid var(--border-gray); border-radius: 12px; text-align: left; overflow: hidden;
+ }
+ 
+ .how-card-header {
+  padding: 20px; font-size: clamp(18px, 5vw, 22px); font-weight: 700;
+ }
+ 
+ .how-card-header.bg-gold {
+  background-color: var(--saffron-gold); color: var(--pure-white);
+ }
+ 
+ .how-card-header.bg-rose {
+  background-color: var(--deep-rose); color: var(--pure-white);
+ }
+ 
+ .how-card-body {
+  padding: 20px; font-size: clamp(15px, 3.5vw, 16px); line-height: 1.7;
+ }
+ 
+ .how-card-body ol {
+  padding-left: 20px;
+ }
+ 
+ .how-card-body li {
+  margin-bottom: 10px;
+ }
+ /* --- 5. Trust Section --- */
+ 
+ .trust-section {
+  background-color: var(--light-gray);
+ }
+ 
+ .trust-grid {
+  display: flex; flex-direction: column; gap: 20px; max-width: 700px; margin: 0 auto;
+ }
+ 
+ .trust-item {
+  display: flex; align-items: center; background-color: var(--pure-white); padding: 20px; border-radius: 12px; border: 1px solid var(--border-gray); text-align: left;
+ }
+ 
+ .trust-icon {
+  font-size: 36px; margin-right: 20px;
+ }
+ 
+ .trust-text h3 {
+  font-size: clamp(17px, 4vw, 20px); margin: 0 0 5px 0; color: var(--deep-charcoal);
+ }
+ 
+ .trust-text p {
+  font-size: clamp(14px, 3.5vw, 15px); margin: 0; color: var(--medium-gray);
+ }
+ /* --- Detail Image Section --- */
+ 
+ .detail-image-section {
+  text-align: center; padding: 0 clamp(12px, 3vw, 15px); margin-bottom: 20px;
+ }
+ 
+ .detail-image-section img {
+  max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;
+ }
+ /* --- Company Info --- */
+ 
+ .company-info {
+  background-color: var(--deep-charcoal); color: var(--medium-gray); padding: clamp(30px, 6vw, 50px) clamp(15px, 4vw, 20px); font-size: clamp(12px, 3vw, 14px); line-height: 1.8;
+ }
+ 
+ .company-info-grid {
+  max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 15px 30px;
+ }
+ 
+ @media (min-width: 600px) {
+  .company-info-grid {
+  grid-template-columns: 1fr 1fr;
+  }
+ }
+ 
+ .company-info-grid span {
+  display: block;
+ }
+ 
+ .company-info-grid strong {
+  color: var(--border-gray); margin-right: 8px;
+ }
+ 
+ .company-intro {
+  grid-column: 1 / -1; margin-top: 20px; font-size: clamp(13px, 3.2vw, 15px); color: var(--border-gray);
+ }
+
+</style>
+<div class="container">
+<!-- 1. Strategic Header -->
+<section class="strategic-header">
+
+<p class="header-brand">만원요리 최씨남매 X 취영루 단독 공구</p>
+
+<h1 class="header-main-copy"> 10분 완성, 79년 전통의
+<br> <span class="animated-text">바삭한 진짜 교자만두!</span> </h1>
+<!-- 2. Why Section -->
+<section class="section why-section">
+
+<h2 class="section-title">🤔 Why? 왜 이 교자만두여야 할까요?</h2>
+<div class="why-grid">
+<div class="why-card">
+
+<h3 class="why-card-title">전문점의 맛, 그대로 집에서</h3>
+
+<p class="why-card-desc"> 바쁜 하루 끝, 요리는 귀찮지만 제대로 된 식사를 하고 싶을 때. <span class="highlight">단 10분만 투자하세요.</span> 1945년부터 이어져 온 중식 명가 취영루의 비법으로, 집에서도 방금 구워낸 듯한 전문점급 군만두를 즐길 수 있습니다. </p>
+</div>
+<div class="why-card">
+
+<h3 class="why-card-title">깐깐하게 고른 '진짜' 재료</h3>
+
+<p class="why-card-desc"> 아무거나 먹을 순 없으니까. <span class="highlight">100% 국내산 돼지고기</span>와 신선한 채소를 아낌없이 채웠습니다. 한 입 베어 물면 터져 나오는 풍부한 육즙과 담백한 맛의 조화를 느껴보세요. </p>
+</div> </div>
+</section>
+<!-- 3. Wow Section -->
+<section class="section wow-section">
+
+<h2 class="wow-title">💰 배송비 절약의 기회! 🚚</h2>
+<div class="wow-content">
+
+<ul>
+<li>✅ 같은 공장에서 출고되는 <strong style="color:var(--saffron-gold);">'최씨남매'의 다른 상품과 함께</strong> 구매 시 배송비를 크게 아낄 수 있어요!</li>
+<li>📦 배송비 3,500원 → <strong style="color:var(--saffron-gold);">총 4kg 이상 구매 시 추가 배송비 부과 됩니다.</strong></li>
+<li>🎁 만원요리 최씨남매 <strong style="color:var(--saffron-gold);">카카오채널 친구 추가</strong>하고 할인 혜택도 놓치지 마세요!</li>
+<li>💡 <strong style="color:var(--saffron-gold);">TIP:</strong> 다양한 만두, 떡갈비 등과 함께 주문해 냉동실을 든든하게 채워보세요!</li>
+</ul>
+</div>
+</section>
+<!-- 4. How Section -->
+<section class="section">
+
+<h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+<div class="how-grid">
+<div class="how-card">
+<div class="how-card-header bg-gold">👑 바삭함의 정석! 군만두</div>
+<div class="how-card-body">
+
+<ol>
+<li>달군 팬에 기름을 넉넉히 두르고 냉동상태의 만두를 올립니다.</li>
+<li>중불에서 약 3~4분간 뒤집어가며 노릇하게 구워주세요.</li>
+<li>물이 닿지 않게 조리하면 더욱 바삭한 식감을 즐길 수 있습니다.</li>
+</ol>
+</div> </div>
+<div class="how-card">
+<div class="how-card-header bg-rose">🔥 요즘 대세! 에어프라이어</div>
+<div class="how-card-body">
+
+<ol>
+<li>냉동상태의 만두에 기름(오일스프레이)을 살짝 발라주세요.</li>
+<li>180도로 예열된 에어프라이어에 넣고 10~12분간 조리합니다.</li>
+<li>겉은 바삭, 속은 촉촉! 담백한 맛을 즐기기에 최고입니다.</li>
+</ol>
+</div> </div> </div>
+</section>
+<!-- 5. Trust Section -->
+<section class="section trust-section">
+
+<h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+<div class="trust-grid">
+<div class="trust-item"> <span class="trust-icon">📜</span>
+<div class="trust-text">
+
+<h3>안전한 HACCP 인증 시설</h3>
+
+<p>생산부터 포장까지, HACCP 인증을 받은 깨끗하고 안전한 시설에서 만듭니다.</p>
+</div> </div>
+<div class="trust-item"> <span class="trust-icon">🏭</span>
+<div class="trust-text">
+
+<h3>79년 전통의 브랜드, 취영루</h3>
+
+<p>반세기 넘게 사랑받아 온 이름. 만두 하나에도 역사의 깊이가 담겨있습니다.</p>
+</div> </div>
+<div class="trust-item"> <span class="trust-icon">✅</span>
+<div class="trust-text">
+
+<h3>(주)값진한끼의 품질 보증</h3>
+
+<p>만원요리 최씨남매가 자신있게 소개하는 제품으로, 품질을 약속합니다.</p>
+</div> </div> </div>
+</section>
+<!-- 상세페이지/품목제조보고서 이미지 -->
+<div class="detail-image-section"> 
+<div class="product-image-container">
+    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg" 
+         class="product-image product-main-image lazy-load" 
+         alt=" "
+         loading="lazy">
+</div>
+<br> 
+<div class="product-image-container">
+    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g.jpg" 
+         class="product-image product-main-image lazy-load" 
+         alt=" "
+         loading="lazy">
+</div>
+<br> 
+<div class="product-image-container">
+    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g-d.jpg" 
+         class="product-image product-main-image lazy-load" 
+         alt=" "
+         loading="lazy">
+</div> </div> </section></div>
+<!-- COMPANY INFORMATION -->
+<footer class="company-info">
+<div class="company-info-grid"> <span><strong>사이트명:</strong> 만원요리 최씨남매</span> <span><strong>회사명:</strong> ㈜값진한끼</span> <span><strong>대표자명:</strong> 고혜숙</span> <span><strong>사업자등록번호:</strong> 434-86-03863</span> <span><strong>통신판매업:</strong> 2025-경기파주-2195호</span> <span><strong>연락처:</strong> 070-8835-2885</span> <span><strong>이메일:</strong> manwonyori@naver.com</span> <span><strong>주소:</strong> 경기도 파주시 경의로 1246, 11층 1105-19호</span>
+<div class="company-intro"> <strong>회사 소개:</strong> 식품제조·유통 전문기업으로, AI 자동화 시스템을 통해 유튜브 커머스, B2B 식자재몰, 스마트스토어를 운영하며 고객 만족도 향상에 집중하고 있습니다. </div> </div>
+</footer>

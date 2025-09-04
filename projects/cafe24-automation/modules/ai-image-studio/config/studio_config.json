@@ -1,0 +1,39 @@
+{
+  "platforms": {
+    "midjourney": {
+      "enabled": true,
+      "api_endpoint": null,
+      "default_params": "--ar 1:1 --v 6 --quality 2"
+    },
+    "dalle": {
+      "enabled": true,
+      "api_key": null,
+      "api_endpoint": "https://api.openai.com/v1/images/generations",
+      "default_size": "1024x1024",
+      "default_quality": "hd"
+    },
+    "stable_diffusion": {
+      "enabled": true,
+      "api_endpoint": null,
+      "default_model": "SDXL",
+      "default_steps": 30,
+      "default_cfg": 7
+    }
+  },
+  "output": {
+    "base_directory": "C:\\Users\\8899y\\CUA-MASTER\\modules\\ai-image-studio\\generated",
+    "organize_by_date": true,
+    "organize_by_platform": true,
+    "save_metadata": true
+  },
+  "analysis": {
+    "auto_analyze": true,
+    "save_analysis": true,
+    "quality_threshold": 70
+  },
+  "batch": {
+    "max_concurrent": 3,
+    "retry_failed": true,
+    "max_retries": 2
+  }
+}

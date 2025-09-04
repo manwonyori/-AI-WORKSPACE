@@ -1,0 +1,54 @@
+{
+  "suppliers": [
+    {
+      "id": "SUP-2024-001",
+      "company_info": {
+        "registration_number": "813-81-02169",
+        "company_name": "주식회사 웰빙신선식품",
+        "representative": "강광욱",
+        "establishment_date": "2021-03-26",
+        "corporate_registration_number": "135511-0380366",
+        "email": "wb8822@naver.com"
+      },
+      "address": {
+        "business_location": "경기도 시흥시 장현능곡로 155, 지하1층 비1100호(능곡동, 시흥플랑드르)",
+        "headquarters": "경기도 시흥시 장현능곡로 155, 지하1층 비1100호(능곡동, 시흥플랑드르)"
+      },
+      "business_type": {
+        "category": "일반창고, 도매 및 소매업",
+        "items": [
+          "육류·음료·주류 외 축산물",
+          "음료·주류",
+          "수산물",
+          "기타음식료품",
+          "건강기능식품",
+          "컨테이너"
+        ]
+      },
+      "liquor_license": {
+        "number": "140-5-45956",
+        "type": "역제한매입(일반소매)",
+        "restriction": "판매및 주류의 종류인을 판매장소에서 소매하여야 한다"
+      },
+      "contact_person": {
+        "name": "윤철",
+        "position": "대리",
+        "phone": "010-7727-8009"
+      },
+      "document_info": {
+        "issue_reason": "정정",
+        "issue_date": "2021-11-23",
+        "issuer": "시흥세무서장",
+        "image_path": "C:\\Users\\8899y\\mart-project\\data\\images\\pending\\웰빙푸드마켓_웰빙신선시흥.jpg"
+      },
+      "status": "active",
+      "created_date": "2025-08-28",
+      "last_updated": "2025-08-28"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_modified": "2025-08-28",
+    "total_suppliers": 1
+  }
+}

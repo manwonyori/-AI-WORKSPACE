@@ -1,0 +1,397 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[인생]]페스츄리오징어 - 만원요리 최씨남매</title>
+    <meta name="description" content="페스츄리오징어 - 프리미엄 냉동식품">
+    <meta name="keywords" content="페스츄리오징어, [인생], 냉동식품, 만원요리, 최씨남매">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[만원요리] [[인생]]페스츄리오징어 | 최씨남매 공식몰">
+    <meta property="og:description" content="HACCP 인증, 만원요리 베스트, 고객만족 1위">
+    <meta property="og:image" content="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/pastry-squid-150g/pastry-squid-150g-1.jpg">
+    <meta property="og:type" content="product">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Pretendard:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+        
+        .sub-copy {
+            font-size: clamp(16px, 3vw, 20px);
+            color: var(--medium-gray);
+            margin-bottom: 32px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 24px;
+            background-color: var(--pure-white);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: var(--deep-charcoal);
+            text-align: center;
+        }
+        
+        /* Why Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .why-card {
+            background: var(--pure-white);
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .why-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        .why-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .why-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 12px;
+        }
+        
+        /* Wow Section */
+        .wow-highlight {
+            background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+            color: white;
+            padding: 48px 32px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .wow-list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .wow-item {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 700;
+        }
+        
+        /* How Section */
+        .how-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: var(--saffron-gold);
+        }
+        
+        .trust-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        /* Gallery - Vertical Layout */
+        .gallery-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        
+        
+        /* Company Info */
+        .company-info {
+            padding: 40px 24px;
+            background: var(--deep-charcoal);
+            color: var(--light-gray);
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .why-grid, .trust-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .wow-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Strategic Header -->
+        <section class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X [인생] 단독 공구</span>
+            <h1 class="main-copy">페스츄리오징어</h1>
+            <p class="sub-copy">프리미엄 냉동식품</p>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/pastry-squid-150g/pastry-squid-150g-1.jpg" alt="[[인생]]페스츄리오징어" class="hero-image fr-draggable">
+        </section>
+        
+        <!-- Video Section (Optional) -->
+        
+        
+        <!-- Story Section -->
+        <section style="background: linear-gradient(135deg, #FFF5E6 0%, #FFFFFF 100%);" class="section">
+            <h2 class="section-title">📜 페스츄리오징어의 이야기</h2>
+            <div style="max-width: 840px; margin: 0 auto;">
+                
+                <!-- 기원의 발견 -->
+                <div style="margin-bottom: 40px;">
+                    <h3 style="color: var(--saffron-gold); font-size: 24px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 16px;">1</span>
+                        기원의 발견
+                    </h3>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 48px;">
+                        페스츄리오징어은(는) 오랜 역사와 전통을 가진 음식입니다. 각 지역의 특색있는 재료와 조리법이 만나 지금의 모습이 되었습니다.
+                    </p>
+                </div>
+                
+                <!-- 여행하는 맛 -->
+                <div style="margin-bottom: 40px;">
+                    <h3 style="color: var(--saffron-gold); font-size: 24px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 16px;">2</span>
+                        여행하는 맛
+                    </h3>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 48px;">
+                        시간이 흐르며 페스츄리오징어은(는) 여러 지역으로 전파되어 각 지역만의 특색을 담은 음식으로 발전했습니다.
+                    </p>
+                </div>
+                
+                <!-- 한국인의 입맛을 사로잡다 -->
+                <div style="margin-bottom: 40px;">
+                    <h3 style="color: var(--saffron-gold); font-size: 24px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 16px;">3</span>
+                        한국인의 입맛을 사로잡다
+                    </h3>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 48px;">
+                        한국에서 페스츄리오징어은(는) 우리만의 독특한 양념과 조리법으로 재탄생하여 한국인의 입맛을 사로잡았습니다.
+                    </p>
+                </div>
+                
+                <!-- 세대를 잇는 맛의 기억 -->
+                <div style="margin-bottom: 40px;">
+                    <h3 style="color: var(--saffron-gold); font-size: 24px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 16px;">4</span>
+                        세대를 잇는 맛의 기억
+                    </h3>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 48px;">
+                        가족이 함께 모이는 특별한 날, 페스츄리오징어은(는) 언제나 식탁의 중심에 있었습니다. 그 따뜻한 추억은 여전히 우리 곁에 있습니다.
+                    </p>
+                </div>
+                
+                <!-- 현대적 재탄생 -->
+                <div style="margin-bottom: 40px;">
+                    <h3 style="color: var(--saffron-gold); font-size: 24px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 16px;">5</span>
+                        현대적 재탄생
+                    </h3>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 48px;">
+                        바쁜 현대인을 위해 간편하면서도 정통의 맛을 그대로 살린 페스츄리오징어. 언제 어디서나 쉽게 즐길 수 있습니다.
+                    </p>
+                </div>
+                
+                <!-- 만원요리의 약속 -->
+                <div style="background: #FFF3E0; padding: 24px; border-radius: 16px; border-left: 4px solid var(--saffron-gold);">
+                    <h3 style="color: var(--deep-rose); font-size: 24px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--deep-rose); color: white; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 16px;">✓</span>
+                        만원요리의 약속
+                    </h3>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 48px; font-weight: 500;">
+                        만원요리 최씨남매는 38만 구독자와의 약속을 지키며, 최고의 페스츄리오징어을(를) 합리적인 가격에 제공합니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Why Section -->
+        <section class="section">
+            <h2 class="section-title">🤔 Why? 왜 이 페스츄리오징어이어야 할까요?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">✨</div>
+                    <h3 class="why-title">핵심 베네핏 1</h3>
+                    <p>최고급 재료로 만든 정통 맛</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3 class="why-title">핵심 베네핏 2</h3>
+                    <p>5분 만에 완성되는 간편 조리</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Wow Section -->
+        <section class="section">
+            <h2 class="section-title">💰 배송비 절약의 기회! 🚚</h2>
+            <div class="wow-highlight">
+                <h3 style="font-size: 24px; margin-bottom: 16px;">만원요리 최씨남매 특별 혜택</h3>
+                <p>지금 구매하시면 다음 혜택을 누리실 수 있습니다!</p>
+                <div class="wow-list">
+                    <div class="wow-item">HACCP 인증</div><div class="wow-item">만원요리 베스트</div><div class="wow-item">고객만족 1위</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How Section -->
+        <section class="section">
+            <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+            <div class="how-content">
+                <p>뜨거운 물에 5분간 데워 드세요. 전자레인지 사용 시 3분이면 충분합니다.</p>
+            </div>
+        </section>
+        
+        <!-- Trust Section -->
+        <section class="section">
+            <h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">🏆</div>
+                    <h3 class="trust-title">안전 인증</h3>
+                    <p>HACCP 인증 시설에서 위생적으로 제조</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="trust-title">만원요리 보증</h3>
+                    <p>만원요리 최씨남매가 직접 엄선한 레시피</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title">📸 제품 상세 이미지</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/pastry-squid-150g/pastry-squid-150g-2.jpg" alt="[[인생]]페스츄리오징어 2번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[[인생]]페스츄리오징어 3번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div>
+            </div>
+        </section>
+        
+        
+        <!-- Delivery Info Section (조건부 표시) -->
+        
+        
+        <!-- Company Info -->
+        <section class="company-info">
+            <p>
+                판매원: ㈜값진한끼 | 대표자: 고혜숙<br>
+                사업자등록번호: 434-86-03863 | 통신판매업: 2025-경기파주-2195호<br>
+                주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+                전화: 070-8835-2885 | 이메일: we@manwonyori.com
+            </p>
+        </section>
+    </div>

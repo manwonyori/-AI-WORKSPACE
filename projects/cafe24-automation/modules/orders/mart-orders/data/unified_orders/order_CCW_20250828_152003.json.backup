@@ -1,0 +1,15 @@
+{
+  "order_date": "2025-08-28T15:20:03.249472",
+  "delivery_date": null,
+  "supplier": "CCW",
+  "order_number": null,
+  "payment_terms": null,
+  "source_file": "C:\\Users\\8899y\\mart-project\\tests\\ccw 발주.xlsx",
+  "format_type": "ccw_b2b",
+  "items": [],
+  "summary": {
+    "total_items": 0,
+    "total_quantity": 0,
+    "total_amount": 0
+  }
+}

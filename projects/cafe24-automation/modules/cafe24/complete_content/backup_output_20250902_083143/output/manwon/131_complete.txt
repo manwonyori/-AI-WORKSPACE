@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*   CSS */
+        .product-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .product-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+            padding: 40px 0;
+        }
+        
+        .product-images {
+            flex: 1;
+            max-width: 500px;
+        }
+        
+        .main-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .thumbnail-list {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        .thumbnail:hover {
+            border-color: #5f0080;
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        .product-title {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .product-subtitle {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        
+        .price-box {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .price-discount {
+            color: #fa622f;
+            font-size: 32px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .price-original {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 18px;
+        }
+        
+        .price-final {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .product-meta {
+            border-top: 1px solid #f4f4f4;
+            padding-top: 20px;
+        }
+        
+        .meta-item {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        
+        .meta-label {
+            width: 120px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .meta-value {
+            flex: 1;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .product-detail {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid #333;
+        }
+        
+        .detail-nav {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 40px;
+        }
+        
+        .nav-item {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #666;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .nav-item.active {
+            color: #5f0080;
+            border-bottom-color: #5f0080;
+            font-weight: 500;
+        }
+        
+        .detail-content {
+            padding: 40px 0;
+        }
+        
+        .detail-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .description-image {
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .ingredient-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        
+        .ingredient-table th,
+        .ingredient-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        
+        .ingredient-table th {
+            background: #f7f7f7;
+            font-weight: 500;
+        }
+        
+        /*   */
+        @media (max-width: 768px) {
+            .product-header {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .product-images {
+                max-width: 100%;
+            }
+            
+            .detail-nav {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <!--    -->
+        <div class="product-header">
+            <div class="product-images">
+                <img src="/images/main.jpg" alt="" class="main-image">
+                <div class="thumbnail-list">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="product-title"></h1>
+                <p class="product-subtitle">  </p>
+                
+                <div class="price-box">
+                    <span class="price-discount">20%</span>
+                    <span class="price-original">10,000</span>
+                    <div class="price-final">8,000</div>
+                </div>
+                
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label"></span>
+                        <span class="meta-value">1</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">/</span>
+                        <span class="meta-value">500g</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label"></span>
+                        <span class="meta-value"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label"></span>
+                        <span class="meta-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--    -->
+        <div class="product-detail">
+            <div class="detail-nav">
+                <div class="nav-item active"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+            </div>
+            
+            <div class="detail-content">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        

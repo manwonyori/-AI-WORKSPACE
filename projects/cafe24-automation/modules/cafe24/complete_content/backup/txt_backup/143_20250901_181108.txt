@@ -1,0 +1,549 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>최씨남매 돼지김치찜 단품 (솔직해서 더 맛있는)</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');:root {
+		--font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; --saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937; --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB;
+	}
+	
+	body {
+		margin: 0; padding: 0; font-family: var(--font-primary); color: var(--deep-charcoal); background-color: var(--pure-white); word-break: keep-all; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+	}
+	
+	.product-page-container {
+		max-width: 860px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 24px);
+	}
+	/* --- 1. Strategic Header --- */
+	
+	.strategic-header {
+		border: 2px solid var(--saffron-gold); border-radius: 12px; text-align: center; padding: clamp(24px, 6vw, 40px); margin: 40px 0;
+	}
+	
+	.strategic-header .brand-collab {
+		font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 700; color: var(--medium-gray); margin: 0 0 16px 0;
+	}
+	
+	.strategic-header .main-copy {
+		font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 900; margin: 0 0 24px 0; line-height: 1.3; animation: color-change 4s infinite alternate;
+	}
+	
+	@keyframes color-change {
+		0% {
+			color: var(--deep-rose);
+		}
+		100% {
+			color: var(--saffron-gold);
+		}
+	}
+	
+	.price-message {
+		font-size: clamp(1.2rem, 3.5vw, 1.6rem); font-weight: 700; color: var(--deep-rose); margin: 16px 0;
+	}
+	
+	/* --- Section Base --- */
+	
+	.section {
+		padding: 60px 0; border-bottom: 1px solid var(--border-gray);
+	}
+	
+	.section:last-child {
+		border-bottom: none;
+	}
+	
+	.section-title {
+		font-size: clamp(1.75rem, 5vw, 2.25rem); font-weight: 900; margin: 0 0 40px 0; text-align: center;
+	}
+	
+	/* --- 2. Why Section --- */
+	
+	.why-section .benefit-grid {
+		display: grid; grid-template-columns: 1fr; gap: 32px;
+	}
+	
+	@media (min-width: 768px) {
+		.why-section .benefit-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	
+	.benefit-item {
+		background-color: var(--light-gray); padding: 24px; border-radius: 12px; text-align: center;
+	}
+	
+	.benefit-item h3 {
+		font-size: clamp(1.1rem, 3vw, 1.3rem); font-weight: 700; margin: 0 0 12px 0;
+	}
+	
+	.benefit-item p {
+		font-size: clamp(1rem, 2.5vw, 1.1rem); margin: 0; line-height: 1.6;
+	}
+	
+	.benefit-item strong {
+		color: var(--deep-rose); font-weight: 900;
+	}
+	
+	/* --- Comparison Section --- */
+	
+	.comparison-section {
+		background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 60px clamp(16px, 4vw, 32px); margin: 60px 0; border-radius: 20px;
+	}
+	
+	.comparison-grid {
+		display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 40px;
+	}
+	
+	@media (min-width: 768px) {
+		.comparison-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	
+	@media (min-width: 1024px) {
+		.comparison-grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	
+	.comparison-card {
+		background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+	
+	.comparison-card:hover {
+		transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	}
+	
+	.comparison-card.winner {
+		background: linear-gradient(135deg, var(--deep-rose) 0%, #e53e3e 100%); color: white; transform: scale(1.05);
+	}
+	
+	.comparison-card.winner:hover {
+		transform: scale(1.05) translateY(-2px);
+	}
+	
+	.card-header {
+		text-align: center; margin-bottom: 20px;
+	}
+	
+	.brand-name {
+		font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;
+	}
+	
+	.total-ratio {
+		font-size: 2rem; font-weight: 900; margin: 8px 0;
+	}
+	
+	.comparison-card.winner .total-ratio {
+		color: white;
+	}
+	
+	.progress-container {
+		margin: 16px 0;
+	}
+	
+	.progress-label {
+		display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;
+	}
+	
+	.progress-bar {
+		height: 8px; background-color: #e5e7eb; border-radius: 4px; overflow: hidden;
+	}
+	
+	.progress-fill {
+		height: 100%; border-radius: 4px; transition: width 0.8s ease;
+	}
+	
+	.comparison-card:not(.winner) .progress-fill.kimchi {
+		background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+	}
+	
+	.comparison-card:not(.winner) .progress-fill.pork {
+		background: linear-gradient(90deg, #dc2626 0%, #b91c1c 100%);
+	}
+	
+	.comparison-card.winner .progress-fill {
+		background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+	}
+	
+	.highlight-badge {
+		background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-top: 12px; display: inline-block;
+	}
+	
+	.comparison-card.winner .highlight-badge {
+		background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%); color: var(--deep-rose);
+	}
+	
+	/* --- 3. Wow Section (Shipping) --- */
+	
+	.wow-section {
+		background: linear-gradient(135deg, var(--deep-rose), #a12828); color: var(--pure-white); padding: 40px clamp(16px, 4vw, 32px); margin: 40px 0; border-radius: 12px; text-align: center;
+	}
+	
+	.wow-section .main-text {
+		font-size: clamp(1.5rem, 4.5vw, 2rem); font-weight: 900; margin: 0 0 20px 0;
+	}
+	
+	.wow-section p {
+		font-size: clamp(0.95rem, 2.5vw, 1.1rem); margin: 8px 0; line-height: 1.7;
+	}
+	
+	.wow-section .tip {
+		margin-top: 20px; background-color: rgba(255, 255, 255, 0.1); padding: 16px; border-radius: 8px; font-weight: 700;
+	}
+	
+	/* --- 4. How Section --- */
+	
+	.how-section .how-grid {
+		display: grid; grid-template-columns: 1fr; gap: 24px;
+	}
+	
+	@media (min-width: 768px) {
+		.how-section .how-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	
+	.how-item {
+		border-radius: 12px; padding: 24px; border: 2px solid;
+	}
+	
+	.how-item.basic {
+		border-color: var(--deep-rose);
+	}
+	
+	.how-item.plus {
+		border-color: var(--saffron-gold);
+	}
+	
+	.how-item h3 {
+		font-size: clamp(1.2rem, 3.5vw, 1.4rem); font-weight: 700; margin: 0 0 16px 0;
+	}
+	
+	.how-item.basic h3 {
+		color: var(--deep-rose);
+	}
+	
+	.how-item.plus h3 {
+		color: var(--saffron-gold);
+	}
+	
+	.how-item p {
+		margin: 0 0 8px 0; line-height: 1.6;
+	}
+	
+	.how-item .pro-tip {
+		margin-top: 16px; font-size: 0.9rem; color: var(--medium-gray);
+	}
+	
+	/* --- 5. Trust Section --- */
+	
+	.trust-section .trust-grid {
+		display: grid; grid-template-columns: 1fr; gap: 20px;
+	}
+	
+	@media (min-width: 768px) {
+		.trust-section .trust-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	
+	.trust-item {
+		background-color: var(--light-gray); padding: 24px; border-radius: 12px; text-align: center;
+	}
+	
+	.trust-item .icon {
+		font-size: 2.5rem; margin-bottom: 12px;
+	}
+	
+	.trust-item h3 {
+		font-size: clamp(1.1rem, 3vw, 1.25rem); margin: 0 0 8px 0;
+	}
+	
+	.trust-item p {
+		font-size: clamp(0.9rem, 2.2vw, 1rem); color: var(--medium-gray); margin: 0; line-height: 1.5;
+	}
+	
+	/* --- 6. Detail Image Section --- */
+	
+	.detail-image-section {
+		padding: 20px 0;
+	}
+	
+	.detail-image-wrapper {
+		text-align: center; padding: 0 clamp(12px, 3vw, 15px); margin-bottom: 20px;
+	}
+	
+	.detail-image-wrapper img {
+		max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;
+	}
+	
+	/* --- Company Info Section --- */
+	
+	.company-info-section {
+		background-color: var(--light-gray); padding: 40px clamp(16px, 4vw, 32px); font-size: 0.875rem; color: var(--medium-gray); line-height: 1.8; margin-top: 60px; border-radius: 12px;
+	}
+	
+	.company-info-section h3 {
+		font-size: 1.1rem; color: var(--deep-charcoal); margin: 0 0 16px 0;
+	}
+	
+	.company-info-section strong {
+		font-weight: 700; color: var(--deep-charcoal); min-width: 110px; display: inline-block;
+	}
+	
+	.info-separator {
+		border-top: 1px solid var(--border-gray); margin: 24px 0;
+	}
+	
+	.allergy-info {
+		background-color: #fffbe6; border: 1px solid #fde047; padding: 16px; border-radius: 8px; margin-top: 20px; font-size: 0.85rem;
+	}
+</style>
+
+
+
+<div class="product-page-container">
+
+<!-- 1. Strategic Header -->
+<header class="strategic-header">
+<p class="brand-collab">만원요리 최씨남매 X 돼지김치찜 단품</p>
+<h1 class="main-copy">가성비 끝판왕 등장!<br>한 번 드셔보세요!</h1>
+<div class="price-message">가격보다 가치에 집중하세요</div>
+</header>
+
+<!-- 6. 상세페이지 이미지 (인트로) -->
+<section class="detail-image-section">
+<div class="detail-image-wrapper">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/kichi-1.jpg" alt="최씨남매 돼지김치찜 제품 패키지" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;" class="fr-draggable">
+</div>
+</section>
+
+<!-- 2. Why Section (최종 마케팅 카피 적용) -->
+<section class="section why-section">
+<h2 class="section-title">🤔 Why? 자신 있으니까, 모두 공개합니다.</h2>
+<div class="benefit-grid">
+<div class="benefit-item">
+<h3>맛의 핵심, 76%의 압도적 건더기</h3>
+<p><strong>배추김치(중국산) 54%</strong>와 <strong>돼지목살(오스트리아산) 22%</strong>의 황금 비율. 건더기만으로 76%를 꽉 채워 밥 두 공기도 부족할 만큼 푸짐합니다.</p>
+</div>
+<div class="benefit-item">
+<h3>솔직함으로 완성한 놀라운 가성비</h3>
+<p>맛과 품질을 위해 세계 곳곳에서 찾은 최적의 원료로 가격 거품을 뺐습니다. <strong>원산지를 자신있게 공개하는 이유</strong>, 맛으로 증명하겠습니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 충격적인 비교 결과 공개 섹션 -->
+<section class="comparison-section">
+<h2 class="section-title">📊 충격적인 비교 결과 공개!</h2>
+<p style="text-align: center; font-size: 1.1rem; color: var(--medium-gray); margin-bottom: 20px;">*네이버 푸드탐구생활 공식 비교 데이터 기반</p>
+
+<div class="comparison-grid">
+<div class="comparison-card">
+<div class="card-header">
+<div class="brand-name">오**사</div>
+<div class="total-ratio">34%</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>김치</span>
+<span>28%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 28%;" class="progress-fill kimchi"></div>
+</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>돼지고기</span>
+<span>6%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 6%;" class="progress-fill pork"></div>
+</div>
+</div>
+<div class="highlight-badge">일반적 수준</div>
+</div>
+
+<div class="comparison-card">
+<div class="card-header">
+<div class="brand-name">종**사</div>
+<div class="total-ratio">33%</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>김치</span>
+<span>23.4%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 23.4%;" class="progress-fill kimchi"></div>
+</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>돼지고기</span>
+<span>9.57%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 9.57%;" class="progress-fill pork"></div>
+</div>
+</div>
+<div class="highlight-badge">평균 수준</div>
+</div>
+
+<div class="comparison-card">
+<div class="card-header">
+<div class="brand-name">비**사</div>
+<div class="total-ratio">37%</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>김치</span>
+<span>23.9%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 23.9%;" class="progress-fill kimchi"></div>
+</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>돼지고기</span>
+<span>13%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 13%;" class="progress-fill pork"></div>
+</div>
+</div>
+<div class="highlight-badge">준수한 수준</div>
+</div>
+
+<div class="comparison-card winner">
+<div class="card-header">
+<div class="brand-name">최씨남매</div>
+<div class="total-ratio">76%</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>김치</span>
+<span>54%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 54%;" class="progress-fill"></div>
+</div>
+</div>
+<div class="progress-container">
+<div class="progress-label">
+<span>돼지고기</span>
+<span>22%</span>
+</div>
+<div class="progress-bar">
+<div style="width: 22%;" class="progress-fill"></div>
+</div>
+</div>
+<div class="highlight-badge">🏆 압도적 1위</div>
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 40px; padding: 20px; background-color: rgba(255, 255, 255, 0.8); border-radius: 12px;">
+<h3 style="color: var(--deep-rose); margin: 0 0 12px 0;">🔥 결과: 최씨남매가 다른 브랜드 대비 2배 이상 많은 건더기!</h3>
+<p style="font-size: 1.1rem; margin: 0; color: var(--deep-charcoal);">이게 바로 진짜 가성비입니다. 숫자로 증명된 압도적 차이를 직접 확인하세요!</p>
+</div>
+</section>
+
+<!-- 상세페이지 이미지 (중간) -->
+<section class="detail-image-section">
+<div class="detail-image-wrapper">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/KIMCHI-2.jpeg" alt="푸짐하게 차려진 돼지김치찜 한상" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;" class="fr-draggable">
+<br>
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/kimchi-3.jpg" alt="두툼한 돼지고기와 잘 익은 김치" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;" class="fr-draggable">
+</div>
+</section>
+
+<!-- 3. Wow Section -->
+<section class="wow-section">
+<h2 class="main-text">💰 한 번 드셔보세요! 🚚</h2>
+<p><strong>✅ 단품으로 부담없이 시작하세요!</strong></p>
+<p>📦 배송비는 3,500원이며, 4kg 이상 주문 시 3,500원이 추가됩니다.</p>
+<p>🎁 카카오채널 '만원요리' 추가하고 다양한 혜택과 소식을 받아보세요!</p>
+<p class="tip">💡 TIP: 맛보고 만족하시면 3개 세트로 쟁여두세요! 최씨남매의 다른 제품과 함께 주문하면 배송비가 더욱 절약됩니다.</p>
+</section>
+
+<!-- 4. How Section -->
+<section class="section how-section">
+<h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+<div class="how-grid">
+<div class="how-item basic">
+<h3>① 간편하게 전자렌지로</h3>
+<p><strong>전자렌지 5분 30초</strong> 돌리면 끝! 바쁜 일상에서 가장 빠른 방법입니다.</p>
+<p class="pro-tip"><strong>💡 주의하세요!</strong> 전자렌지용 용기에 옮겨 담고, 랩을 씌워 돌려주세요. 뜨거우니 꺼낼 때 조심하세요!</p>
+</div>
+<div class="how-item plus">
+<h3>② 냄비에서 푸짐하게</h3>
+<p><strong>방법 1:</strong> 냄비에 내용물을 모두 붓고 <strong>중불에서 10분</strong> 끓여주세요.</p>
+<p><strong>방법 2:</strong> 더 깊은 맛을 원한다면 <strong>약불에서 10-15분</strong> 천천히 끓여주세요.</p>
+<p class="pro-tip"><strong>💡 주의하세요!</strong> 끓는 동안 가끔 저어주시고, 물이 부족하면 조금씩 추가해주세요. 김이 모락모락 날 때까지!</p>
+</div>
+</div>
+
+<div style="margin-top: 32px; padding: 20px; background-color: #fff3cd; border: 1px solid #ffc107; border-radius: 12px;">
+<h3 style="color: #856404; margin: 0 0 12px 0;">🔥 더욱 맛있게 드시려면</h3>
+<p style="margin: 0 0 8px 0; line-height: 1.6;">취향에 따라 두부, 대파, 양파 등을 추가하거나 남은 국물에 라면사리, 우동사리를 넣어 끓이면 더욱 특별하고 든든한 요리가 됩니다.</p>
+<p style="margin: 0; font-weight: 700; color: #856404;"><strong>Pro-Tip:</strong> 한 개로 맛보시고 만족하시면 3개 세트로 쟁여두세요! 언제든 든든한 일품요리를 뚝딱 만들 수 있어요!</p>
+</div>
+</section>
+
+<!-- 5. Trust Section -->
+<section class="section trust-section">
+<h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+<div class="trust-grid">
+<div class="trust-item">
+<div class="icon">📜</div>
+<h3>안전 인증 완료</h3>
+<p>식품안전관리인증(HACCP)을 받은 깨끗하고 안전한 시설에서 정성을 다해 만들었습니다.</p>
+</div>
+<div class="trust-item">
+<div class="icon">🏭</div>
+<h3>신뢰할 수 있는 제조사</h3>
+<p>HMR 전문 제조기업 (주)초심푸드에서 위생적으로 생산하여 더욱 믿을 수 있습니다.</p>
+</div>
+<div class="trust-item">
+<div class="icon">✅</div>
+<h3>최씨남매 품질 보증</h3>
+<p>유튜버 '만원요리 최씨남매'가 직접 먹어보고 꼼꼼하게 검증하여 자신있게 추천하는 제품입니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 상세페이지 이미지 (하단 정보) -->
+<section class="detail-image-section">
+<div class="detail-image-wrapper">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/porkkimchi-650g.jpg" alt="최씨남매 돼지김치찜 제품상세정보" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;" class="fr-draggable">
+</div>
+</section>
+
+<!-- Company Information Section -->
+<footer class="company-info-section">
+<h3>판매자 정보</h3>
+<p><strong>판매원</strong>㈜값진한끼</p>
+<p><strong>대표자명</strong>고혜숙</p>
+<p><strong>사업자등록번호</strong>434-86-03863</p>
+<p><strong>통신판매업신고</strong>2025-경기파주-2195호</p>
+<p><strong>주소</strong>경기도 파주시 경의로 1246, 11층 1105-19호</p>
+<p><strong>고객센터</strong>070-8835-2885</p>
+<p><strong>이메일</strong>manwonyori@naver.com</p>
+
+<div class="info-separator"></div>
+
+<h3>제조원 및 원산지 정보 (100% 팩트 기반)</h3>
+<p><strong>제조원</strong>(주)초심푸드</p>
+<p><strong>인증사항</strong>식품안전관리인증 HACCP</p>
+<p><strong>주소</strong>전북 익산시 왕궁면 푸드폴리스로10길 48</p>
+<p><strong>연락처</strong>063-838-1116</p>
+<p><strong>주요 원산지</strong>배추김치(중국산), 돼지목살(오스트리아산), 찹쌀가루(국내산)</p>
+
+<div class="allergy-info">
+<strong>알레르기 정보</strong>
+<p>본 제품은 돼지고기, 쇠고기, 대두, 밀, 우유를 함유하고 있습니다.<br> 또한, 메밀, 땅콩, 호두, 잣, 조개류(굴, 전복, 홍합 포함), 새우, 오징어, 고등어, 게, 알류, 닭고기, 아황산류, 복숭아, 토마토를 사용한 제품과 같은 제조시설에서 제조하고 있으니 특정 성분에 알레르기가 있으신 분은 섭취에 유의하시기 바랍니다.</p>
+</div>
+</footer>
+
+</div>

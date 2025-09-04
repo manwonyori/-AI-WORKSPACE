@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "filesystem-local": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\8899y"
+      ],
+      "env": {
+        "MCP_FS_ALLOW": "C:\\Users\\8899y;D:\\주문취합"
+      },
+      "disabled": false,
+      "alwaysAllow": true,
+      "timeout": 30
+    },
+    "filesystem-invoice": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "D:\\주문취합\\주문_배송"
+      ],
+      "env": {
+        "MCP_FS_ALLOW": "D:\\주문취합"
+      },
+      "disabled": false,
+      "alwaysAllow": true,
+      "timeout": 30
+    }
+  }
+}

@@ -1,0 +1,355 @@
+<center>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>만원요리 최씨남매 - 상품 상세페이지</title>
+  <style>
+  /* ===== 기본 스타일 ===== */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+  @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GmarketSansMedium.woff');
+  
+  html {
+  scroll-behavior: smooth;
+  }
+  
+  body {
+  margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; color: #333333; background-color: #FFFFFF; word-break: keep-all;
+  }
+  
+  .page-wrapper {
+  max-width: 800px; margin: 0 auto; padding: 0;
+  }
+  
+  .section-divider {
+  border: 0; border-top: 8px solid #F5F5F5; margin: 30px 0;
+  }
+  
+  .section-padding {
+  padding: 20px;
+  }
+
+  /* ===== 컴팩트 브랜드 허브 헤더 ===== */
+  .manwon-hub-compact {
+  max-width: 800px; 
+  margin: 20px auto; 
+  padding: 25px 20px; 
+  font-family: 'GmarketSansMedium', sans-serif; 
+  background: linear-gradient(to bottom, #fffaf6, #ffffff); 
+  border: 2px solid #FF7A2F; 
+  border-radius: 12px; 
+  text-align: center; 
+  word-break: keep-all; 
+  position: relative; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .manwon-hub-compact .intro-text {
+  font-size: 14px; color: #666; font-weight: 500; margin-bottom: 8px;
+  }
+  
+  .manwon-hub-compact h1 {
+  font-size: 22px; font-weight: 700; color: #333; margin: 8px 0 12px; line-height: 1.3;
+  }
+  
+  .manwon-hub-compact h1 .highlight {
+  color: #FF7A2F;
+  }
+  
+  .manwon-hub-compact .sub-text {
+  font-size: 13px; color: #666; margin-bottom: 15px;
+  }
+  
+  .manwon-hub-compact .cta-button {
+  display: inline-block; 
+  background-color: #FF7A2F; 
+  color: white; 
+  font-size: 16px; 
+  font-weight: 700; 
+  padding: 12px 24px; 
+  border-radius: 25px; 
+  text-decoration: none; 
+  margin-bottom: 8px;
+  transition: transform 0.2s ease;
+  }
+  
+  .manwon-hub-compact .cta-button:hover {
+  transform: scale(1.02);
+  }
+  
+  .manwon-hub-compact .cta-subtext {
+  font-size: 11px; color: #888; margin-bottom: 15px;
+  }
+  
+  .manwon-card-compact {
+  display: flex; 
+  justify-content: center; 
+  gap: 8px; 
+  flex-wrap: wrap; 
+  margin-top: 12px;
+  }
+  
+  .manwon-card-compact a {
+  background-color: #fff; 
+  border: 1px solid #fae5d3; 
+  border-radius: 8px; 
+  padding: 8px 12px; 
+  text-decoration: none; 
+  color: #333; 
+  font-size: 11px; 
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  }
+  
+  .manwon-card-compact a:hover {
+  background-color: #FF7A2F;
+  color: white;
+  transform: translateY(-1px);
+  }
+  
+  .manwon-card-compact .icon {
+  font-size: 12px;
+  }
+
+  /* ===== 상품 이미지 섹션 ===== */
+  .product-image-section {
+  padding: 20px;
+  }
+
+  .main-product-image {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  }
+
+  .product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  }
+
+  .product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #D92525;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 2;
+  }
+
+  .brand-watermark {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  z-index: 2;
+  }
+
+  /* ===== 히어로 섹션 ===== */
+  .hero-title {
+  font-size: 30px; font-weight: 700; line-height: 1.3; text-align: center; margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+  font-size: 24px; font-weight: 700; color: #D92525; text-align: center; margin-bottom: 15px;
+  position: relative; 
+  overflow: hidden;
+  }
+  
+  .hero-subtitle::after {
+  content: ''; 
+  position: absolute; 
+  top: 0; 
+  left: -150%; 
+  width: 70%; 
+  height: 100%; 
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%); 
+  transform: skewX(-25deg); 
+  animation: shine 2.5s infinite; 
+  animation-delay: 0.5s;
+  }
+  
+  .hero-desc {
+  font-size: 16px; font-weight: 400; line-height: 1.6; text-align: center; color: #666; margin-bottom: 20px;
+  }
+  
+  .price-info-box {
+  background-color: #F5EFE6; padding: 20px; border-radius: 10px; text-align: center; margin: 30px 0;
+  }
+  
+  .price-info-box .main-price {
+  margin: 5px 0 0; font-size: 28px; font-weight: 900; color: #D92525;
+  }
+  
+  .price-info-box .sub-price {
+  font-size: 18px; font-weight: 500; color: #333;
+  }
+  
+  .feature-points {
+  display: flex; justify-content: space-around; text-align: center; margin: 30px 0; padding: 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+  }
+  
+  .feature-point p:first-child {
+  font-size: 20px; font-weight: 700; margin: 0;
+  }
+  
+  .feature-point p:last-child {
+  font-size: 14px; margin: 5px 0 0;
+  }
+  
+  @keyframes shine {
+  100% {
+  left: 150%;
+  }
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 768px) {
+  .manwon-hub-compact {
+  margin: 15px auto;
+  padding: 20px 15px;
+  }
+  
+  .manwon-hub-compact h1 {
+  font-size: 18px;
+  }
+  
+  .hero-title {
+  font-size: 24px;
+  }
+  
+  .hero-subtitle {
+  font-size: 20px;
+  }
+  
+  .feature-points {
+  flex-direction: column;
+  gap: 15px;
+  }
+  
+  .section-padding {
+  padding: 15px;
+  }
+  }
+
+  @media (max-width: 480px) {
+  .manwon-card-compact {
+  gap: 4px;
+  }
+  
+  .manwon-card-compact a {
+  padding: 6px 8px;
+  font-size: 10px;
+  }
+  
+  .hero-title {
+  font-size: 20px;
+  }
+  
+  .hero-subtitle {
+  font-size: 18px;
+  }
+  }
+  </style>
+
+  <!-- ===== 컴팩트 브랜드 허브 헤더 ===== -->
+  <div class="manwon-hub-compact">
+  <p class="intro-text">만원요리 최씨남매입니다</p>
+  <h1>더 많은 <span class="highlight">특가 상품</span>이 기다려요!</h1>
+  <p class="sub-text">매일 업데이트되는 말도 안 되는 가격의 맛있는 제품들</p>
+  
+  <a href="https://www.manwonyori.com" target="_blank" class="cta-button">전체 상품 보러가기</a>
+  <p class="cta-subtext">더 많고 저렴한 제품을 확인하세요!</p>
+  
+  <div class="manwon-card-compact">
+  <a href="https://manwonyori.cafe24.com/product/list.html?cate_no=75" target="_blank">
+  <span class="icon">💡</span>기획전
+  </a>
+  <a href="https://manwonyori.cafe24.com/product/list.html?cate_no=53" target="_blank">
+  <span class="icon">⭐</span>PICK
+  </a>
+  <a href="https://manwonyori.cafe24.com/product/list.html?cate_no=54" target="_blank">
+  <span class="icon">🤔</span>오늘뭐먹지
+  </a>
+  <a href="https://manwonyori.cafe24.com/product/list.html?cate_no=55" target="_blank">
+  <span class="icon">📦</span>대용량
+  </a>
+  <a href="https://manwonyori.cafe24.com/product/list.html?cate_no=56" target="_blank">
+  <span class="icon">🤝</span>직거래
+  </a>
+  <a href="https://manwonyori.cafe24.com/product/list.html?cate_no=57" target="_blank">
+  <span class="icon">⚡</span>반짝특가
+  </a>
+  </div>
+  </div>
+
+  <div class="page-wrapper">
+  <!-- ===== 히어로 섹션 ===== -->
+  <div class="section-padding">
+  <!-- ✅ 실제 상품명 -->
+  <h1 class="hero-title">한우떡갈비 400g</h1>
+  
+  <!-- ✨ 반짝이는 캐치프레이즈 -->
+  <h2 class="hero-subtitle">프리미엄 한우로 만든 정성 가득 떡갈비</h2>
+  
+  <!-- 🎯 후킹 상품 설명 -->
+  <p class="hero-desc">국내산 한우 100%로 만든 부드럽고 촉촉한 떡갈비<br>400g 대용량 4개입, 팬에 구우면 5분이면 완성!</p>
+  
+  <!-- 💰 실제 가격 정보 -->
+  <div class="price-info-box">
+  <p class="sub-price">정가 15,000원</p>
+  <p class="main-price">특가 12,800원</p>
+  </div>
+  
+  <!-- 🎯 마케팅 전문가 추천 핵심특징 -->
+  <div class="feature-points">
+  <div class="feature-point">
+  <p>🥩</p>
+  <p>100% 한우만<br><span style="font-size: 12px; color: #666;">프리미엄 품질</span></p>
+  </div>
+  <div class="feature-point">
+  <p>👨‍🍳</p>
+  <p>장인의 손맛<br><span style="font-size: 12px; color: #666;">전통 제조법</span></p>
+  </div>
+  <div class="feature-point">
+  <p>⚡</p>
+  <p>5분 완성<br><span style="font-size: 12px; color: #666;">간편조리</span></p>
+  </div>
+  </div>
+  </div>
+
+  <!-- ===== 상품 이미지 섹션 ===== -->
+  <div class="product-image-section">
+  <div class="main-product-image">
+  <div class="product-badge">14% 할인</div>
+  <!-- 📸 실제 한우떡갈비 상품 이미지 -->
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/hanwoo_tteokgalbi-400g/hanwoo_tteokgalbi_400g-main.jpg" alt="한우떡갈비 400g" loading="lazy" class="product-img fr-draggable">
+  <div class="brand-watermark">만원요리 최씨남매</div>
+  </div>
+  </div>
+
+  <!-- ===== 추가 상품 이미지 섹션 ===== -->
+  <div class="product-image-section">
+  <div class="main-product-image">
+  <!-- 📸 한우떡갈비 추가 이미지 -->
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/hanwoo_tteokgalbi-400g/hanwoo_tteokgalbi_400g-main2.jpeg" alt="한우떡갈비 400g 상세" loading="lazy" class="product-img fr-draggable">
+  <div class="brand-watermark">만원요리 최씨남매</div>
+  </div>
+  </div>
+  </div>
+</center>

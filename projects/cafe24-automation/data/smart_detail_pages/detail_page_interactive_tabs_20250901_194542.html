@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>훈제오리 완포 - 인터랙티브 탭형</title>
+    
+    <!-- 최신 라이브러리들 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        :root {
+            --primary: #C53030;
+            --secondary: #E4A853;
+            --dark: #1F2937;
+        }
+        
+        /* 부드러운 스크롤 */
+        html { scroll-behavior: smooth; }
+        
+        /* 이미지 레이지 로딩 효과 */
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+        
+        /* 패럴랙스 효과 */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .mobile-full { width: 100vw; margin-left: -1rem; margin-right: -1rem; }
+            .mobile-padding { padding: 1rem; }
+        }
+        
+        /* 스티키 요소 */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+        
+        /* 인터렉티브 카드 */
+        .hover-lift {
+            transition: all 0.3s;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- 메인 이미지 -->
+        <div class="mb-8">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-1.jpg" class="w-full rounded-2xl shadow-2xl">
+        </div>
+        
+        <!-- 탭 메뉴 -->
+        <div class="flex gap-2 mb-6 overflow-x-auto">
+            <button onclick="switchTab('info')" class="tab-btn px-6 py-3 rounded-lg bg-red-600 text-white font-semibold whitespace-nowrap">
+                상품정보
+            </button>
+            <button onclick="switchTab('cooking')" class="tab-btn px-6 py-3 rounded-lg bg-gray-200 text-gray-700 font-semibold whitespace-nowrap">
+                조리법
+            </button>
+            <button onclick="switchTab('nutrition')" class="tab-btn px-6 py-3 rounded-lg bg-gray-200 text-gray-700 font-semibold whitespace-nowrap">
+                영양성분
+            </button>
+            <button onclick="switchTab('shipping')" class="tab-btn px-6 py-3 rounded-lg bg-gray-200 text-gray-700 font-semibold whitespace-nowrap">
+                배송안내
+            </button>
+        </div>
+        
+        <!-- 탭 콘텐츠 -->
+        <div id="info" class="tab-content">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-2.jpg" class="w-full rounded-lg mb-4">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-3.jpg" class="w-full rounded-lg">
+        </div>
+        
+        <div id="cooking" class="tab-content hidden">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-4.jpg" class="w-full rounded-lg">
+            <div class="mt-6 p-6 bg-yellow-50 rounded-lg">
+                <h3 class="font-bold text-xl mb-4">조리 방법</h3>
+                <ol class="space-y-2">
+                    <li>1. 냉동 상태에서 바로 조리 가능</li>
+                    <li>2. 에어프라이어 180도 10분</li>
+                    <li>3. 중간에 한 번 뒤집어주세요</li>
+                    <li>4. 기호에 따라 소스와 함께</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div id="nutrition" class="tab-content hidden">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-5.jpg" class="w-full rounded-lg">
+        </div>
+        
+        <div id="shipping" class="tab-content hidden">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-6.jpg" class="w-full rounded-lg mb-4">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-7.jpg" class="w-full rounded-lg">
+        </div>
+    </div>
+
+    <!-- 스크립트 -->
+    <script>
+        // AOS 초기화
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // 레이지 로딩
+        const images = document.querySelectorAll('.lazy-image');
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        
+        // 스티키 CTA
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 500;
+            const cta = document.querySelector('.sticky-cta');
+            if (cta) {
+                cta.classList.toggle('show', scrolled);
+            }
+        });
+        
+        // 탭 전환
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.getElementById(tabName).classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-red-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('bg-red-600', 'text-white');
+        }
+    </script>
+</body>
+</html>

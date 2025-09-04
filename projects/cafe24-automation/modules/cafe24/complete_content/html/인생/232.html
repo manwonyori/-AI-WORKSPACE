@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 232 - P00000IY</title>
+</head>
+<body>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[인생]나가사키짬뽕탕410g - 만원요리 최씨남매</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: var(--pure-white);
+        }
+        
+        /* Typography System */
+        h1 {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+        }
+        
+        h2 {
+            font-size: clamp(22px, 4vw, 28px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 24px;
+        }
+        
+        h3 {
+            font-size: clamp(18px, 3vw, 22px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 16px;
+        }
+        
+        p {
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.8;
+            color: var(--deep-charcoal);
+            margin-bottom: 16px;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 40px 24px;
+            background-color: var(--pure-white);
+            border-bottom: 1px solid var(--border-gray);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(24px, 5vw, 32px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+        
+        /* Image Styles */
+        .main-product-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 24px;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+        
+        /* Highlight Text */
+        .highlight {
+            color: var(--deep-rose);
+            font-weight: 700;
+        }
+        
+        /* Benefit List */
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+        }
+        
+        .benefit-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.8;
+        }
+        
+        .benefit-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--saffron-gold);
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        /* Trust Box */
+        .trust-box {
+            background-color: var(--light-gray);
+            padding: 32px;
+            border-radius: 16px;
+            margin: 24px 0;
+        }
+        
+        /* FAQ Styles */
+        .faq-item {
+            margin-bottom: 24px;
+            padding: 20px;
+            background-color: var(--light-gray);
+            border-radius: 12px;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 8px;
+            font-size: clamp(16px, 2.5vw, 18px);
+        }
+        
+        .faq-answer {
+            color: var(--medium-gray);
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.8;
+        }
+        
+        /* CTA Button Style */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--saffron-gold);
+            color: var(--pure-white);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 16px 0;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(228, 168, 83, 0.3);
+        }
+        
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .section {
+                padding: 32px 20px;
+            }
+            
+            .strategic-header {
+                padding: 40px 20px;
+            }
+            
+            .trust-box {
+                padding: 24px;
+            }
+            
+            .main-copy {
+                font-size: 24px;
+            }
+        }
+        
+        /* Company Info Table */
+        .info-table {
+            width: 100%;
+            margin: 24px 0;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        .info-table th,
+        .info-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        
+        .info-table th {
+            background-color: var(--light-gray);
+            font-weight: 700;
+            width: 30%;
+            color: var(--deep-charcoal);
+        }
+        
+        .info-table td {
+            color: var(--medium-gray);
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- 1. Strategic Header -->
+        <div class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X 인생 나가사키짬뽕탕 단독 공구</span>
+            <h1 class="main-copy">진짜 나가사키 현지의 맛! 깊고 진한 해물육수의 정석</h1>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/champon410g/champon-1-410g.jpg" alt="[인생]나가사키짬뽕탕410g" class="main-product-image fr-draggable">
+        </div>
+        
+        <!-- 2. Why Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>Why? 왜 이 인생 나가사키짬뽕탕이어야 할까요?</h2>
+            </div>
+            <div>
+                
+        <p>일본 정통 짬뽕의 <strong>깊고 진한 맛</strong>이 그리우셨나요? 시원한 해물 국물의 <strong>나가사키짬뽕</strong>을 집에서도 간편하게 즐기고 싶으셨나요?</p>
+        <p>이제 그런 고민은 끝! <span class="highlight">일본 나가사키 현지 레시피 그대로</span> 재현한 프리미엄 짬뽕탕으로 집에서도 본격적인 나가사키짬뽕을 즐겨보세요.</p>
+    
+                <ul class="benefit-list">
+                    <li><strong>일본 나가사키</strong> 정통 레시피</li>
+                    <li><strong>돼지뼈와 닭뼈</strong>를 푹 고아낸 진한 육수</li>
+                    <li><strong>오징어, 새우</strong> 등 풍부한 해물</li>
+                    <li><strong>5분 완성</strong> 간편 조리</li>
+                    <li><strong>HACCP 인증</strong> 시설에서 위생적으로 제조</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 3. Story Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>나가사키짬뽕의 특별한 이야기</h2>
+            </div>
+            <div>
+                
+        <p>안녕하세요! <strong>만원요리 최씨남매</strong>입니다. 오늘은 <strong>[인생]나가사키짬뽕탕410g</strong>의 특별한 이야기를 들려드릴게요.</p>
+        <p>나가사키짬뽕은 일본 나가사키에서 시작된 면 요리로, <strong>중국 요리의 영향</strong>을 받아 탄생했습니다. 한국의 짬뽕과는 달리 <strong>돼지뼈와 닭뼈를 오래 끓여</strong> 만든 하얀 국물이 특징이죠.</p>
+        <p>이 제품은 나가사키 현지의 <strong>정통 레시피</strong>를 그대로 재현했습니다. 진한 육수에 시원한 해물, 아삭한 야채가 어우러져 <strong>깊고 부드러운 맛</strong>을 자랑합니다.</p>
+        <p class="highlight">최씨남매 꿀팁: 남은 국물에 밥을 말아 먹으면 일품! 라유를 추가하면 매콤한 맛도 즐길 수 있어요.</p>
+    
+            </div>
+        </div>
+        
+        <!-- 4. How Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>How? 이렇게 활용하세요!</h2>
+            </div>
+            <div>
+                
+        <p><strong>인생 나가사키짬뽕탕</strong> 200% 즐기는 방법!</p>
+        <ol style="line-height: 2;">
+            <li>물 <strong>550ml</strong>를 끓여주세요</li>
+            <li>제품을 넣고 <strong>5분간</strong> 끓여주세요</li>
+            <li>면이 부드러워지면 <strong>완성!</strong></li>
+            <li>기호에 따라 <strong>파, 숙주나물</strong> 추가</li>
+            <li>매운맛을 원하시면 <strong>라유</strong> 추가</li>
+        </ol>
+        <div style="background: var(--light-gray); padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <p style="margin: 0;"><strong>조리 팁:</strong> 새우, 오징어 등 해물을 추가하면 더욱 풍성해요! 계란을 풀어 넣으면 부드러운 맛을 즐길 수 있습니다.</p>
+        </div>
+    
+            </div>
+        </div>
+        
+        <!-- 5. Trust Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>Trust! 믿을 수 있는 이유</h2>
+            </div>
+            <div class="trust-box">
+                <h3>만원요리 최씨남매가 보증합니다</h3>
+                
+        <p><span class="highlight">"일본 현지에서 먹던 그 맛 그대로! 진한 국물이 일품이에요!"</span></p>
+        <p>만원요리 최씨남매가 <strong>직접 선별하고 검증</strong>한 제품입니다. 특히 <strong>진한 육수</strong>와 <strong>신선한 해물</strong>의 조화가 일품! 한국식 짬뽕과는 다른 부드럽고 깊은 맛을 느낄 수 있습니다.</p>
+    
+            </div>
+            
+            <h3 style="margin-top: 32px;">제품의 특별한 특징</h3>
+            <ul class="benefit-list">
+                <li><strong>일본 정통</strong> 나가사키 레시피</li>
+                <li><strong>진한 육수</strong> 돼지뼈+닭뼈 베이스</li>
+                <li><strong>신선한 해물</strong> 오징어, 새우 등</li>
+                <li><strong>410g 푸짐한</strong> 1인분</li>
+                <li><strong>5분 완성</strong> 간편 조리</li>
+            </ul>
+            
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/champon410g/champon-2-410g.jpg" alt="상세 이미지" class="product-image fr-draggable">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="상세 이미지" class="product-image fr-draggable">
+        </div>
+        
+        <!-- 6. FAQ Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>자주 묻는 질문</h2>
+            </div>
+            <div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 한국 짬뽕과 어떻게 다른가요?</div>
+                    <div class="faq-answer">A. 나가사키짬뽕은 돼지뼈와 닭뼈를 베이스로 한 하얀 국물이 특징입니다. 한국 짬뽕보다 부드럽고 깊은 맛이 나요.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 매운맛인가요?</div>
+                    <div class="faq-answer">A. 기본적으로 순한 맛입니다. 매운맛을 원하시면 라유나 청양고추를 추가해서 드세요!</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 양은 얼마나 되나요?</div>
+                    <div class="faq-answer">A. 410g으로 성인 1인이 푸짐하게 즐기기 좋은 양입니다. 면, 야채, 해물이 모두 포함되어 있어요.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 추가로 넣으면 좋은 재료가 있나요?</div>
+                    <div class="faq-answer">A. 파, 숙주나물, 계란을 추가하면 좋습니다. 해물을 더 넣으면 더욱 시원한 맛을 즐길 수 있어요!</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 7. Company Information -->
+        <div class="section">
+            <h3 style="text-align: center; margin-bottom: 24px;">판매원 정보</h3>
+            <table class="info-table"><tbody><tr><th>상호</th>
+                    <td>㈜값진한끼</td></tr>
+                <tr><th>대표자</th>
+                    <td>고혜숙</td></tr>
+                <tr><th>사업자등록번호</th>
+                    <td>434-86-03863</td></tr>
+                <tr><th>통신판매업</th>
+                    <td>2025-경기파주-2195호</td></tr>
+                <tr><th>주소</th>
+                    <td>경기도 파주시 경의로 1246, 11층 1105-19호</td></tr>
+                <tr><th>전화</th>
+                    <td>070-8835-2885</td></tr>
+                <tr><th>이메일</th>
+                    <td>we@manwonyori.com</td></tr></tbody></table>
+        </div>
+    </div>
+</body>
+</html>

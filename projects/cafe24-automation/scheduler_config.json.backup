@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "name": "cafe24_learning",
+      "script": "modules/cafe24/cafe24_unified_learner.py",
+      "schedule": "daily",
+      "time": "10:00",
+      "enabled": true
+    },
+    {
+      "name": "cafe24_price_update",
+      "script": "modules/cafe24/price_updater.py",
+      "schedule": "hourly",
+      "enabled": false
+    },
+    {
+      "name": "system_cleanup",
+      "script": "scripts/cleanup.py",
+      "schedule": "weekly",
+      "day": "sunday",
+      "time": "03:00",
+      "enabled": true
+    }
+  ],
+  "monitoring": {
+    "cpu_limit": 50,
+    "memory_limit": 70,
+    "check_interval": 60
+  }
+}

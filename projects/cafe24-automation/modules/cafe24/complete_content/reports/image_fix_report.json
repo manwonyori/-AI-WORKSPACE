@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-09-02T08:24:51.720103",
+  "total_products": 6,
+  "fixed_products": 6,
+  "output_directory": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content\\output\\chuyoungru_fixed",
+  "image_mappings": {
+    "131": {
+      "name": "교자만두 360g",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g-d.jpg"
+      ]
+    },
+    "132": {
+      "name": "고기왕만두 420g",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gokiking-420/gokiking-420g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gokiking-420/gokiking-420g-d.jpg"
+      ]
+    },
+    "133": {
+      "name": "김치만두 420g",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kimchi/kimchi-420g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kimchi/kimchi-420g-d.jpg"
+      ]
+    },
+    "134": {
+      "name": "물만두 420g",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/mul/mul-420g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/mul/mul-420g-d.jpg"
+      ]
+    },
+    "135": {
+      "name": "튀김만두 300g",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/fried/fried-300g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/fried/fried-300g-d.jpg"
+      ]
+    },
+    "140": {
+      "name": "새우만두 420g",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/shrimp/shrimp-420g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/shrimp/shrimp-420g-d.jpg"
+      ]
+    }
+  }
+}

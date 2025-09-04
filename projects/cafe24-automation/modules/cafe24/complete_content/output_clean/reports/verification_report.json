@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-09-02T08:32:19.587697",
+  "total": 10,
+  "valid": 8,
+  "invalid": 2,
+  "details": [
+    {
+      "product_id": "131",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "132",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "133",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "134",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "135",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "136",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "137",
+      "valid": false,
+      "images_count": 3,
+      "issues": [
+        "다른 제품(140) 이미지 포함"
+      ]
+    },
+    {
+      "product_id": "138",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "139",
+      "valid": true,
+      "images_count": 3,
+      "issues": []
+    },
+    {
+      "product_id": "140",
+      "valid": false,
+      "images_count": 3,
+      "issues": [
+        "다른 제품(137) 이미지 포함"
+      ]
+    }
+  ]
+}

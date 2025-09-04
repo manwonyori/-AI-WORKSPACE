@@ -1,0 +1,2130 @@
+{
+  "valid_files": [
+    {
+      "product_no": "131",
+      "file_size": 12347,
+      "content_length": 10345,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "132",
+      "file_size": 12320,
+      "content_length": 10332,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "133",
+      "file_size": 12592,
+      "content_length": 10558,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "134",
+      "file_size": 9781,
+      "content_length": 7895,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "135",
+      "file_size": 9054,
+      "content_length": 7347,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "136",
+      "file_size": 8935,
+      "content_length": 7261,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "142",
+      "file_size": 12718,
+      "content_length": 10880,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "144",
+      "file_size": 14413,
+      "content_length": 11769,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "145",
+      "file_size": 9567,
+      "content_length": 7686,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "148",
+      "file_size": 30171,
+      "content_length": 25615,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "149",
+      "file_size": 16410,
+      "content_length": 14010,
+      "issues": [],
+      "status": "valid",
+      "image_count": 7
+    },
+    {
+      "product_no": "150",
+      "file_size": 12058,
+      "content_length": 10146,
+      "issues": [],
+      "status": "valid",
+      "image_count": 8
+    },
+    {
+      "product_no": "151",
+      "file_size": 30678,
+      "content_length": 25823,
+      "issues": [],
+      "status": "valid",
+      "image_count": 7
+    },
+    {
+      "product_no": "158",
+      "file_size": 26203,
+      "content_length": 21759,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "159",
+      "file_size": 29154,
+      "content_length": 24383,
+      "issues": [],
+      "status": "valid",
+      "image_count": 1
+    },
+    {
+      "product_no": "165",
+      "file_size": 20844,
+      "content_length": 17490,
+      "issues": [],
+      "status": "valid",
+      "image_count": 7
+    },
+    {
+      "product_no": "166",
+      "file_size": 21331,
+      "content_length": 17101,
+      "issues": [],
+      "status": "valid",
+      "image_count": 6
+    },
+    {
+      "product_no": "167",
+      "file_size": 21907,
+      "content_length": 17351,
+      "issues": [],
+      "status": "valid",
+      "image_count": 7
+    },
+    {
+      "product_no": "169",
+      "file_size": 19882,
+      "content_length": 15936,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "170",
+      "file_size": 19882,
+      "content_length": 15936,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "171",
+      "file_size": 19634,
+      "content_length": 15709,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "172",
+      "file_size": 20437,
+      "content_length": 16393,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "173",
+      "file_size": 20900,
+      "content_length": 16647,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "174",
+      "file_size": 19379,
+      "content_length": 15273,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "175",
+      "file_size": 19566,
+      "content_length": 15239,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "176",
+      "file_size": 11913,
+      "content_length": 9563,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "177",
+      "file_size": 11469,
+      "content_length": 9162,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "178",
+      "file_size": 11308,
+      "content_length": 8898,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "179",
+      "file_size": 11609,
+      "content_length": 9196,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "180",
+      "file_size": 11605,
+      "content_length": 9192,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "181",
+      "file_size": 11720,
+      "content_length": 9271,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "182",
+      "file_size": 15396,
+      "content_length": 12589,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "183",
+      "file_size": 15559,
+      "content_length": 12730,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "184",
+      "file_size": 15400,
+      "content_length": 12607,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "187",
+      "file_size": 15110,
+      "content_length": 12407,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "188",
+      "file_size": 14313,
+      "content_length": 11772,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "189",
+      "file_size": 15074,
+      "content_length": 12395,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "190",
+      "file_size": 15141,
+      "content_length": 12482,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "192",
+      "file_size": 14543,
+      "content_length": 12004,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "193",
+      "file_size": 12563,
+      "content_length": 10858,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "194",
+      "file_size": 13988,
+      "content_length": 11435,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "195",
+      "file_size": 15003,
+      "content_length": 12392,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "196",
+      "file_size": 15168,
+      "content_length": 12455,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "197",
+      "file_size": 15167,
+      "content_length": 12518,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "198",
+      "file_size": 14094,
+      "content_length": 11503,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "199",
+      "file_size": 14154,
+      "content_length": 11529,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "205",
+      "file_size": 15335,
+      "content_length": 12580,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "206",
+      "file_size": 15429,
+      "content_length": 12608,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "208",
+      "file_size": 14488,
+      "content_length": 11851,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "209",
+      "file_size": 14656,
+      "content_length": 11907,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "210",
+      "file_size": 14322,
+      "content_length": 11747,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "211",
+      "file_size": 14454,
+      "content_length": 11853,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "232",
+      "file_size": 11918,
+      "content_length": 9520,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "233",
+      "file_size": 14217,
+      "content_length": 11708,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "249",
+      "file_size": 14655,
+      "content_length": 11882,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "253",
+      "file_size": 13624,
+      "content_length": 11620,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "256",
+      "file_size": 18801,
+      "content_length": 15284,
+      "issues": [],
+      "status": "valid",
+      "image_count": 6
+    },
+    {
+      "product_no": "257",
+      "file_size": 17550,
+      "content_length": 14552,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "258",
+      "file_size": 17950,
+      "content_length": 14575,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "259",
+      "file_size": 17001,
+      "content_length": 14081,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "261",
+      "file_size": 17664,
+      "content_length": 14543,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "262",
+      "file_size": 16687,
+      "content_length": 13873,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "263",
+      "file_size": 17415,
+      "content_length": 14398,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "264",
+      "file_size": 18344,
+      "content_length": 15008,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "265",
+      "file_size": 17819,
+      "content_length": 14704,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "266",
+      "file_size": 16546,
+      "content_length": 13801,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "267",
+      "file_size": 16818,
+      "content_length": 13902,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "268",
+      "file_size": 17344,
+      "content_length": 14429,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "269",
+      "file_size": 16980,
+      "content_length": 14033,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "27",
+      "file_size": 625,
+      "content_length": 620,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "270",
+      "file_size": 16633,
+      "content_length": 13975,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "271",
+      "file_size": 17661,
+      "content_length": 14648,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "272",
+      "file_size": 16600,
+      "content_length": 13906,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "273",
+      "file_size": 17303,
+      "content_length": 14282,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "274",
+      "file_size": 16629,
+      "content_length": 13876,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "275",
+      "file_size": 15779,
+      "content_length": 13340,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "276",
+      "file_size": 18214,
+      "content_length": 14899,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "277",
+      "file_size": 18218,
+      "content_length": 14770,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "278",
+      "file_size": 17200,
+      "content_length": 14179,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "279",
+      "file_size": 17062,
+      "content_length": 14179,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "28",
+      "file_size": 625,
+      "content_length": 620,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "280",
+      "file_size": 18189,
+      "content_length": 14874,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "281",
+      "file_size": 16959,
+      "content_length": 14056,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "282",
+      "file_size": 17148,
+      "content_length": 14267,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "283",
+      "file_size": 16774,
+      "content_length": 13947,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "284",
+      "file_size": 16945,
+      "content_length": 14149,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "285",
+      "file_size": 15040,
+      "content_length": 12835,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "286",
+      "file_size": 14934,
+      "content_length": 12777,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "287",
+      "file_size": 15022,
+      "content_length": 12833,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "288",
+      "file_size": 15018,
+      "content_length": 12829,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "289",
+      "file_size": 15318,
+      "content_length": 13078,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "29",
+      "file_size": 635,
+      "content_length": 625,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "290",
+      "file_size": 15152,
+      "content_length": 12966,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "291",
+      "file_size": 15232,
+      "content_length": 13046,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "292",
+      "file_size": 15447,
+      "content_length": 13135,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "293",
+      "file_size": 15150,
+      "content_length": 13000,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "294",
+      "file_size": 15192,
+      "content_length": 13024,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "295",
+      "file_size": 15193,
+      "content_length": 13025,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "296",
+      "file_size": 15210,
+      "content_length": 13042,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "297",
+      "file_size": 15266,
+      "content_length": 13062,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "298",
+      "file_size": 15314,
+      "content_length": 13074,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "299",
+      "file_size": 15172,
+      "content_length": 13004,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "30",
+      "file_size": 268,
+      "content_length": 266,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "300",
+      "file_size": 15191,
+      "content_length": 13005,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "301",
+      "file_size": 15238,
+      "content_length": 13034,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "302",
+      "file_size": 15239,
+      "content_length": 13053,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "303",
+      "file_size": 15258,
+      "content_length": 13054,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "304",
+      "file_size": 15199,
+      "content_length": 13013,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "305",
+      "file_size": 15269,
+      "content_length": 13047,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "306",
+      "file_size": 15152,
+      "content_length": 12984,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "307",
+      "file_size": 14491,
+      "content_length": 12353,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "308",
+      "file_size": 15284,
+      "content_length": 13080,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "309",
+      "file_size": 15392,
+      "content_length": 13152,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "31",
+      "file_size": 625,
+      "content_length": 620,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "310",
+      "file_size": 15350,
+      "content_length": 13110,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "311",
+      "file_size": 15373,
+      "content_length": 13115,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "312",
+      "file_size": 15262,
+      "content_length": 13058,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "313",
+      "file_size": 15313,
+      "content_length": 13073,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "314",
+      "file_size": 15210,
+      "content_length": 12988,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "315",
+      "file_size": 15280,
+      "content_length": 13058,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "316",
+      "file_size": 15127,
+      "content_length": 12959,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "317",
+      "file_size": 15270,
+      "content_length": 13048,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "318",
+      "file_size": 15277,
+      "content_length": 13055,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "319",
+      "file_size": 15320,
+      "content_length": 13062,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "32",
+      "file_size": 635,
+      "content_length": 625,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "320",
+      "file_size": 15347,
+      "content_length": 13053,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "33",
+      "file_size": 625,
+      "content_length": 620,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "330",
+      "file_size": 16238,
+      "content_length": 13853,
+      "issues": [],
+      "status": "valid",
+      "image_count": 7
+    },
+    {
+      "product_no": "331",
+      "file_size": 17881,
+      "content_length": 14728,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "332",
+      "file_size": 16828,
+      "content_length": 13964,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "333",
+      "file_size": 18299,
+      "content_length": 14992,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "334",
+      "file_size": 16969,
+      "content_length": 14138,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "335",
+      "file_size": 16978,
+      "content_length": 14200,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "336",
+      "file_size": 17057,
+      "content_length": 14233,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "337",
+      "file_size": 16940,
+      "content_length": 14124,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "338",
+      "file_size": 17156,
+      "content_length": 14132,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "339",
+      "file_size": 17694,
+      "content_length": 14413,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "34",
+      "file_size": 635,
+      "content_length": 625,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "35",
+      "file_size": 744,
+      "content_length": 738,
+      "issues": [],
+      "status": "valid",
+      "image_count": 6
+    },
+    {
+      "product_no": "36",
+      "file_size": 630,
+      "content_length": 625,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "37",
+      "file_size": 640,
+      "content_length": 630,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "38",
+      "file_size": 640,
+      "content_length": 630,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "39",
+      "file_size": 21676,
+      "content_length": 19459,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "40",
+      "file_size": 270,
+      "content_length": 268,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "41",
+      "file_size": 8742,
+      "content_length": 7211,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "42",
+      "file_size": 8880,
+      "content_length": 7307,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "43",
+      "file_size": 20284,
+      "content_length": 18289,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "44",
+      "file_size": 8875,
+      "content_length": 7284,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "45",
+      "file_size": 8885,
+      "content_length": 7288,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "47",
+      "file_size": 8486,
+      "content_length": 6903,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "48",
+      "file_size": 8378,
+      "content_length": 6858,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "49",
+      "file_size": 9451,
+      "content_length": 7730,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "50",
+      "file_size": 24955,
+      "content_length": 21464,
+      "issues": [],
+      "status": "valid",
+      "image_count": 8
+    },
+    {
+      "product_no": "52",
+      "file_size": 9132,
+      "content_length": 7599,
+      "issues": [],
+      "status": "valid",
+      "image_count": 5
+    },
+    {
+      "product_no": "53",
+      "file_size": 15053,
+      "content_length": 12977,
+      "issues": [],
+      "status": "valid",
+      "image_count": 10
+    },
+    {
+      "product_no": "57",
+      "file_size": 20690,
+      "content_length": 18659,
+      "issues": [],
+      "status": "valid",
+      "image_count": 4
+    },
+    {
+      "product_no": "58",
+      "file_size": 26325,
+      "content_length": 22542,
+      "issues": [],
+      "status": "valid",
+      "image_count": 6
+    },
+    {
+      "product_no": "62",
+      "file_size": 12031,
+      "content_length": 10064,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "65",
+      "file_size": 13201,
+      "content_length": 10875,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "66",
+      "file_size": 149,
+      "content_length": 148,
+      "issues": [],
+      "status": "valid",
+      "image_count": 1
+    },
+    {
+      "product_no": "69",
+      "file_size": 19598,
+      "content_length": 19357,
+      "issues": [],
+      "status": "valid",
+      "image_count": 9
+    },
+    {
+      "product_no": "71",
+      "file_size": 22237,
+      "content_length": 21963,
+      "issues": [],
+      "status": "valid",
+      "image_count": 21
+    },
+    {
+      "product_no": "72",
+      "file_size": 18553,
+      "content_length": 15428,
+      "issues": [],
+      "status": "valid",
+      "image_count": 8
+    },
+    {
+      "product_no": "75",
+      "file_size": 26635,
+      "content_length": 22160,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    },
+    {
+      "product_no": "77",
+      "file_size": 20804,
+      "content_length": 16440,
+      "issues": [],
+      "status": "valid",
+      "image_count": 6
+    },
+    {
+      "product_no": "92",
+      "file_size": 9195,
+      "content_length": 8206,
+      "issues": [],
+      "status": "valid",
+      "image_count": 1
+    },
+    {
+      "product_no": "93",
+      "file_size": 9703,
+      "content_length": 8625,
+      "issues": [],
+      "status": "valid",
+      "image_count": 2
+    },
+    {
+      "product_no": "94",
+      "file_size": 10032,
+      "content_length": 8413,
+      "issues": [],
+      "status": "valid",
+      "image_count": 3
+    }
+  ],
+  "corrupted_files": [
+    {
+      "product_no": "143",
+      "file_size": 19232,
+      "content_length": 16170,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 4
+    },
+    {
+      "product_no": "146",
+      "file_size": 29584,
+      "content_length": 24885,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 10
+    },
+    {
+      "product_no": "147",
+      "file_size": 19400,
+      "content_length": 15997,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 2
+    },
+    {
+      "product_no": "46",
+      "file_size": 10771,
+      "content_length": 8874,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 5
+    },
+    {
+      "product_no": "51",
+      "file_size": 20948,
+      "content_length": 17584,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 5
+    },
+    {
+      "product_no": "73",
+      "file_size": 14977,
+      "content_length": 12249,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 3
+    },
+    {
+      "product_no": "76",
+      "file_size": 20590,
+      "content_length": 17468,
+      "issues": [
+        "손상 패턴 발견: 404|not found|error"
+      ],
+      "status": "corrupted",
+      "image_count": 6
+    }
+  ],
+  "empty_files": [],
+  "missing_files": [],
+  "suspicious_files": [
+    {
+      "product_no": "137",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "138",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "139",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "140",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "141",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "152",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "153",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "154",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "155",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "156",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "157",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "160",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "161",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "162",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "163",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "164",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "168",
+      "file_size": 13850,
+      "content_length": 12357,
+      "issues": [
+        "유효한 HTML 패턴이 없음",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "185",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "186",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "191",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "200",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "201",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "202",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "203",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "204",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "207",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "212",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "213",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "214",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "215",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "216",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "217",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "218",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "219",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "220",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "221",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "222",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "223",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "224",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "225",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "226",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "227",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "228",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "229",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "230",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "231",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "234",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "235",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "236",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "237",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "238",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "239",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "240",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "241",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "242",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "243",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "244",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "245",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "246",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "247",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "248",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "250",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "251",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    },
+    {
+      "product_no": "252",
+      "file_size": 681,
+      "content_length": 305,
+      "issues": [
+        "HTML 패턴이 부족함",
+        "이미지 링크가 없음"
+      ],
+      "status": "suspicious",
+      "image_count": 0
+    }
+  ],
+  "total_files": 239,
+  "validation_time": "2025-09-01T18:34:20.221525"
+}

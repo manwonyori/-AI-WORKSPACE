@@ -1,0 +1,11 @@
+{
+  "id": "req_20250831_144807",
+  "timestamp": "2025-08-31T14:48:07.884245",
+  "type": "action_plan",
+  "task": "현재 화면을 캡처해주세요",
+  "context": {
+    "screenshot": "C:\\Users\\8899y\\CUA-MASTER\\data\\screenshots\\context_1756619287.png",
+    "memory": []
+  },
+  "instructions": "\n아래 작업을 수행하기 위한 구체적인 액션 계획을 JSON 형식으로 작성해주세요.\n각 액션은 다음 형식을 따라야 합니다:\n{\n    \"type\": \"screenshot|click|type|key|scroll|drag|wait|find|read|execute\",\n    \"parameters\": {...},\n    \"description\": \"액션 설명\"\n}\n\n사용 가능한 액션 타입:\n- screenshot: 화면 캡처\n- click: 마우스 클릭 (x, y 좌표 또는 element)\n- type: 텍스트 입력\n- key: 키보드 키 입력 (Enter, Tab, Ctrl+C 등)\n- scroll: 스크롤 (direction, amount)\n- drag: 드래그 (from_x, from_y, to_x, to_y)\n- wait: 대기 (seconds)\n- find: 화면에서 요소 찾기 (query)\n- read: 화면 텍스트 읽기\n- execute: 명령 실행 (command)\n            "
+}

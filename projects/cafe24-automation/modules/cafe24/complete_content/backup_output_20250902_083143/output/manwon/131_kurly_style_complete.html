@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>만원요리 최씨남매 X 취영루 오리지널 교자만두 - 컬리</title>
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 마켓컬리 디자인 시스템 */
+        :root {
+            --kurly-purple: #5f0080;
+            --kurly-purple-dark: #4a0063;
+            --kurly-purple-light: #7b1fa2;
+            --kurly-red: #fa622f;
+            --kurly-gray-900: #333333;
+            --kurly-gray-700: #666666;
+            --kurly-gray-500: #999999;
+            --kurly-gray-300: #cccccc;
+            --kurly-gray-100: #f4f4f4;
+            --kurly-white: #ffffff;
+            --kurly-bg: #f7f7f7;
+            --max-width: 1050px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--kurly-gray-900);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 컨테이너 */
+        .kurly-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 상품 헤더 영역 */
+        .product-header {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--kurly-gray-100);
+        }
+        
+        @media (min-width: 768px) {
+            .product-header {
+                grid-template-columns: 500px 1fr;
+                gap: 50px;
+            }
+        }
+        
+        /* 이미지 영역 */
+        .product-images {
+            position: relative;
+        }
+        
+        .main-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 4px;
+            background: var(--kurly-gray-100);
+        }
+        
+        .thumbnail-list {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: border-color 0.2s;
+            flex-shrink: 0;
+            object-fit: cover;
+            background: var(--kurly-gray-100);
+        }
+        
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: var(--kurly-purple);
+        }
+        
+        /* 상품 정보 영역 */
+        .product-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .delivery-type {
+            display: inline-block;
+            padding: 4px 8px;
+            background: var(--kurly-gray-100);
+            color: var(--kurly-gray-700);
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        
+        .product-title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 8px;
+            word-break: keep-all;
+        }
+        
+        @media (min-width: 768px) {
+            .product-title {
+                font-size: 28px;
+            }
+        }
+        
+        .product-subtitle {
+            font-size: 14px;
+            color: var(--kurly-gray-500);
+            margin-bottom: 20px;
+        }
+        
+        /* 가격 영역 */
+        .price-area {
+            padding: 20px 0;
+            border-top: 1px solid var(--kurly-gray-100);
+            border-bottom: 1px solid var(--kurly-gray-100);
+        }
+        
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .discount-rate {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--kurly-red);
+        }
+        
+        .current-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--kurly-gray-900);
+        }
+        
+        .original-price {
+            font-size: 16px;
+            color: var(--kurly-gray-500);
+            text-decoration: line-through;
+        }
+        
+        .price-unit {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--kurly-gray-700);
+        }
+        
+        /* 회원 할인 정보 */
+        .member-discount {
+            margin-top: 12px;
+            padding: 12px;
+            background: #faf0ff;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .member-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            background: var(--kurly-purple);
+            color: white;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-right: 6px;
+        }
+        
+        /* 상품 정보 테이블 */
+        .info-table {
+            margin: 20px 0;
+        }
+        
+        .info-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--kurly-gray-100);
+            font-size: 14px;
+        }
+        
+        .info-label {
+            width: 120px;
+            color: var(--kurly-gray-700);
+            flex-shrink: 0;
+        }
+        
+        .info-value {
+            flex: 1;
+            color: var(--kurly-gray-900);
+            word-break: break-word;
+        }
+        
+        /* 구매 수량 */
+        .purchase-area {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--kurly-gray-100);
+        }
+        
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--kurly-gray-300);
+            border-radius: 4px;
+            width: fit-content;
+        }
+        
+        .quantity-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--kurly-gray-700);
+        }
+        
+        .quantity-btn:hover {
+            background: var(--kurly-gray-100);
+        }
+        
+        .quantity-input {
+            width: 50px;
+            height: 36px;
+            border: none;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        /* 총 상품 금액 */
+        .total-price-area {
+            padding: 20px 0;
+            text-align: right;
+        }
+        
+        .total-label {
+            font-size: 14px;
+            color: var(--kurly-gray-700);
+            margin-bottom: 8px;
+        }
+        
+        .total-price {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--kurly-gray-900);
+        }
+        
+        /* 구매 버튼 */
+        .button-group {
+            display: flex;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            flex: 1;
+            height: 56px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-cart {
+            background: white;
+            border: 1px solid var(--kurly-purple);
+            color: var(--kurly-purple);
+        }
+        
+        .btn-cart:hover {
+            background: #faf0ff;
+        }
+        
+        .btn-buy {
+            background: var(--kurly-purple);
+            color: white;
+        }
+        
+        .btn-buy:hover {
+            background: var(--kurly-purple-dark);
+        }
+        
+        /* 탭 네비게이션 */
+        .tab-nav {
+            display: flex;
+            border-bottom: 1px solid var(--kurly-gray-300);
+            margin-top: 60px;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 10;
+        }
+        
+        .tab-item {
+            flex: 1;
+            padding: 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--kurly-gray-500);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .tab-item.active {
+            color: var(--kurly-purple);
+            border-bottom-color: var(--kurly-purple);
+        }
+        
+        @media (max-width: 767px) {
+            .tab-item {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+        
+        /* 상세 콘텐츠 */
+        .detail-content {
+            padding: 40px 0;
+        }
+        
+        .detail-section {
+            margin-bottom: 60px;
+        }
+        
+        .detail-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--kurly-gray-900);
+        }
+        
+        .detail-image {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .detail-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--kurly-gray-700);
+            margin-bottom: 20px;
+        }
+        
+        /* 상품 정보 고시 */
+        .product-notice {
+            background: var(--kurly-bg);
+            padding: 24px;
+            border-radius: 4px;
+            margin-top: 40px;
+        }
+        
+        .notice-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .notice-table {
+            width: 100%;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .notice-row {
+            display: flex;
+            border-bottom: 1px solid var(--kurly-gray-100);
+        }
+        
+        .notice-row:last-child {
+            border-bottom: none;
+        }
+        
+        .notice-label {
+            width: 180px;
+            padding: 16px;
+            background: var(--kurly-bg);
+            font-size: 14px;
+            color: var(--kurly-gray-700);
+            border-right: 1px solid var(--kurly-gray-100);
+        }
+        
+        .notice-value {
+            flex: 1;
+            padding: 16px;
+            font-size: 14px;
+            color: var(--kurly-gray-900);
+        }
+        
+        @media (max-width: 767px) {
+            .notice-row {
+                flex-direction: column;
+            }
+            
+            .notice-label {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid var(--kurly-gray-100);
+            }
+        }
+        
+        /* WHY KURLY */
+        .why-kurly {
+            margin-top: 60px;
+            padding: 40px 0;
+            border-top: 1px solid var(--kurly-gray-100);
+        }
+        
+        .why-kurly-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        .why-kurly-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .why-card {
+            padding: 24px;
+            background: var(--kurly-bg);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .why-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--kurly-purple);
+            color: white;
+            border-radius: 50%;
+            font-size: 24px;
+        }
+        
+        .why-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .why-desc {
+            font-size: 14px;
+            color: var(--kurly-gray-700);
+            line-height: 1.6;
+        }
+        
+        /* 반응형 유틸리티 */
+        @media (max-width: 767px) {
+            .kurly-container {
+                padding: 0 16px;
+            }
+            
+            .product-header {
+                padding: 20px 0;
+            }
+            
+            .hide-mobile {
+                display: none;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .hide-desktop {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 상품 헤더 -->
+    <div class="kurly-container">
+        <div class="product-header">
+            <!-- 이미지 영역 -->
+            <div class="product-images">
+                <img src="https://img-cf.kurly.com/cdn-cgi/image/width=500,quality=85/shop/data/goods/temp.jpg" 
+                     alt="만원요리 최씨남매 X 취영루 오리지널 교자만두" 
+                     class="main-image">
+                <div class="thumbnail-list">
+                    <img src="https://img-cf.kurly.com/cdn-cgi/image/width=60,quality=85/shop/data/goods/thumb1.jpg" 
+                         class="thumbnail active" alt="상품이미지1">
+                    <img src="https://img-cf.kurly.com/cdn-cgi/image/width=60,quality=85/shop/data/goods/thumb2.jpg" 
+                         class="thumbnail" alt="상품이미지2">
+                    <img src="https://img-cf.kurly.com/cdn-cgi/image/width=60,quality=85/shop/data/goods/thumb3.jpg" 
+                         class="thumbnail" alt="상품이미지3">
+                    <img src="https://img-cf.kurly.com/cdn-cgi/image/width=60,quality=85/shop/data/goods/thumb4.jpg" 
+                         class="thumbnail" alt="상품이미지4">
+                </div>
+            </div>
+            
+            <!-- 상품 정보 영역 -->
+            <div class="product-info">
+                <span class="delivery-type">샛별배송</span>
+                <h1 class="product-title">만원요리 최씨남매 X 취영루 오리지널 교자만두</h1>
+                <p class="product-subtitle">3대를 이어온 만두 명가의 시그니처 교자만두</p>
+                
+                <!-- 가격 정보 -->
+                <div class="price-area">
+                    <div class="price-row">
+                        <span class="discount-rate">30%</span>
+                        <span class="current-price">10,000</span>
+                        <span class="price-unit">원</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="original-price">14,900원</span>
+                    </div>
+                    <div class="member-discount">
+                        <span class="member-badge">적립</span>
+                        <span>구매 시 100원 적립</span>
+                    </div>
+                </div>
+                
+                <!-- 상품 정보 -->
+                <div class="info-table">
+                    <div class="info-row">
+                        <span class="info-label">판매단위</span>
+                        <span class="info-value">1봉</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">중량/용량</span>
+                        <span class="info-value">1kg (약 30개입)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">배송구분</span>
+                        <span class="info-value">샛별배송/택배배송</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">원산지</span>
+                        <span class="info-value">상세정보 별도표기</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">포장타입</span>
+                        <span class="info-value">냉동/종이포장</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">유통기한</span>
+                        <span class="info-value">제조일로부터 12개월</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">안내사항</span>
+                        <span class="info-value">- 냉동제품으로 수령 후 냉동보관 하세요<br>
+                        - 조리 시 해동 없이 바로 조리 가능합니다</span>
+                    </div>
+                </div>
+                
+                <!-- 구매 수량 -->
+                <div class="purchase-area">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                
+                <!-- 총 상품금액 -->
+                <div class="total-price-area">
+                    <div class="total-label">총 상품금액:</div>
+                    <div class="total-price">10,000<span class="price-unit">원</span></div>
+                </div>
+                
+                <!-- 구매 버튼 -->
+                <div class="button-group">
+                    <button class="btn btn-cart">🛒 장바구니 담기</button>
+                    <button class="btn btn-buy">바로 구매</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 상세 콘텐츠 탭 -->
+        <div class="tab-nav">
+            <div class="tab-item active">상품설명</div>
+            <div class="tab-item">상세정보</div>
+            <div class="tab-item">후기</div>
+            <div class="tab-item">문의</div>
+        </div>
+        
+        <!-- 상세 콘텐츠 -->
+        <div class="detail-content">
+            <div class="detail-section">
+                <h2 class="detail-title">🥟 만원요리 시그니처 교자만두</h2>
+                <img src="https://img-cf.kurly.com/cdn-cgi/image/width=860,quality=85/shop/data/goods/detail1.jpg" 
+                     alt="상품 상세 이미지" class="detail-image">
+                <p class="detail-text">
+                    3대째 이어오는 만두 전문점의 노하우로 만든 프리미엄 교자만두입니다.<br><br>
+                    
+                    <strong>✓ 엄선된 재료</strong><br>
+                    국내산 돼지고기와 신선한 채소만을 사용하여 만들었습니다. 
+                    매일 새벽 직접 다진 고기와 손질한 채소로 속을 채워 신선함이 살아있습니다.<br><br>
+                    
+                    <strong>✓ 수제 만두피</strong><br>
+                    기계가 아닌 손으로 직접 빚은 만두피는 쫄깃하면서도 부드러운 식감을 자랑합니다. 
+                    적당한 두께로 속재료의 맛을 해치지 않으면서도 찢어지지 않는 최적의 밸런스를 찾았습니다.<br><br>
+                    
+                    <strong>✓ 황금비율 속재료</strong><br>
+                    돼지고기, 양배추, 부추, 대파를 황금비율로 배합하여 
+                    한 입 베어물면 육즙이 팡 터지는 풍미를 경험하실 수 있습니다.
+                </p>
+            </div>
+            
+            <!-- 상품정보 고시 -->
+            <div class="product-notice">
+                <h3 class="notice-title">상품정보 고시</h3>
+                <div class="notice-table">
+                    <div class="notice-row">
+                        <div class="notice-label">품목 또는 명칭</div>
+                        <div class="notice-value">만두</div>
+                    </div>
+                    <div class="notice-row">
+                        <div class="notice-label">포장단위별 내용물의 용량(중량)</div>
+                        <div class="notice-value">1kg</div>
+                    </div>
+                    <div class="notice-row">
+                        <div class="notice-label">원재료명 및 함량</div>
+                        <div class="notice-value">돼지고기(국내산) 35%, 양배추 20%, 부추 10%, 대파 8%, 
+                        밀가루(밀:미국,캐나다산), 간장, 참기름, 마늘, 생강, 소금, 후추</div>
+                    </div>
+                    <div class="notice-row">
+                        <div class="notice-label">영양성분</div>
+                        <div class="notice-value">100g당: 열량 230kcal, 탄수화물 28g, 단백질 12g, 지방 8g, 나트륨 450mg</div>
+                    </div>
+                    <div class="notice-row">
+                        <div class="notice-label">유통기한</div>
+                        <div class="notice-value">제조일로부터 12개월 (제품에 별도 표기)</div>
+                    </div>
+                    <div class="notice-row">
+                        <div class="notice-label">보관방법</div>
+                        <div class="notice-value">-18℃ 이하 냉동보관</div>
+                    </div>
+                    <div class="notice-row">
+                        <div class="notice-label">소비자상담 관련 전화번호</div>
+                        <div class="notice-value">고객센터 1644-1107</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WHY KURLY -->
+            <div class="why-kurly">
+                <h3 class="why-kurly-title">WHY KURLY</h3>
+                <div class="why-kurly-grid">
+                    <div class="why-card">
+                        <div class="why-icon">✓</div>
+                        <div class="why-title">깐깐한 상품위원회</div>
+                        <div class="why-desc">나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접 먹어보고, 경험해보고 탄생한 상품을 판매합니다.</div>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🚚</div>
+                        <div class="why-title">차별화된 Kurly Only 상품</div>
+                        <div class="why-desc">전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너, 마켓컬리. 3천여 개가 넘는 컬리 단독 브랜드를 믿고 만나보세요.</div>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">❄️</div>
+                        <div class="why-title">신선한 풀콜드체인 배송</div>
+                        <div class="why-desc">온라인 업계 최초로 산지에서 문 앞까지 상온, 냉장, 냉동 상품을 분리 포장 후 최적의 온도를 유지하는 냉장 배송 시스템을 도입했습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 썸네일 클릭 이벤트
+        document.querySelectorAll('.thumbnail').forEach((thumb, index) => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                // 실제로는 메인 이미지를 변경하는 로직 추가
+            });
+        });
+        
+        // 수량 선택
+        const quantityInput = document.querySelector('.quantity-input');
+        const totalPrice = document.querySelector('.total-price');
+        const unitPrice = 10000;
+        
+        document.querySelectorAll('.quantity-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value);
+                if (this.textContent === '+') {
+                    quantityInput.value = currentValue + 1;
+                } else if (this.textContent === '-' && currentValue > 1) {
+                    quantityInput.value = currentValue - 1;
+                }
+                updateTotalPrice();
+            });
+        });
+        
+        quantityInput.addEventListener('change', updateTotalPrice);
+        
+        function updateTotalPrice() {
+            const quantity = parseInt(quantityInput.value);
+            const total = unitPrice * quantity;
+            totalPrice.innerHTML = total.toLocaleString() + '<span class="price-unit">원</span>';
+        }
+        
+        // 탭 클릭 이벤트
+        document.querySelectorAll('.tab-item').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

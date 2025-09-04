@@ -1,0 +1,37 @@
+{
+  "시작": "2025-08-29T11:38:27.542493",
+  "유지": [
+    "MASTER_CONTROL.py",
+    "START_MASTER.bat",
+    "README.md",
+    "TODO.md",
+    "FOLDER_STRUCTURE.md",
+    ".env",
+    ".gitignore",
+    ".claude.json"
+  ],
+  "이동": [
+    "api_check_results.json",
+    "key_validation_results.json",
+    "perplexity_correct_test.json",
+    "perplexity_test_results.json",
+    "OPTIMIZATION_REPORT_20250826_182653.md",
+    "OPTIMIZATION_REPORT_20250826_182915.md",
+    "SYSTEM_INTEGRATION_PLAN.md",
+    "cleanup_system.py",
+    "analyze_excel_files.py",
+    "no_emoji_config.py",
+    ".claude.json.corrupted.1756034198101",
+    ".claude.json.backup"
+  ],
+  "삭제": [
+    "DO_NOT_CREATE_FILES_HERE.txt",
+    "migration.log",
+    "cafe24_autonomous_learning.log",
+    "cafe24_continuous_improvement.log"
+  ],
+  "통합": [
+    "claude_launcher.bat"
+  ],
+  "완료": "2025-08-29T11:38:27.555644"
+}

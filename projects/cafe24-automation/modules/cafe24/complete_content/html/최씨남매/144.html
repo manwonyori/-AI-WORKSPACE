@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 144 - P00000FO</title>
+</head>
+<body>
+!DOCTYPE html&gt;
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최씨남매 돼지김치찜 3개 세트 (솔직해서 더 맛있는)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            word-break: keep-all;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #E4A853, #C53030);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 2s infinite;
+        }
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .comparison-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #cbd5e1;
+            transition: all 0.3s ease;
+        }
+        .comparison-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .winner-card {
+            background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+            border: 3px solid #f59e0b;
+            position: relative;
+            overflow: hidden;
+        }
+        .winner-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shine 3s infinite;
+        }
+        @keyframes shine {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12 p-8 border-2 border-yellow-400 rounded-2xl bg-gradient-to-r from-yellow-50 to-orange-50">
+            <p class="text-gray-600 mb-4 font-bold">만원요리 최씨남매 X 돼지김치찜 3개 세트</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-6 gradient-text leading-tight">
+                가성비 끝판왕 등장!<br>
+                알뜰하게 쟁여두세요!
+            </h1>
+            <div class="text-2xl md:text-3xl font-bold text-gray-700 animate-bounce-subtle">
+                🔥 가격? 이미 알고 계실 텐데요
+            </div>
+        </header>
+
+        <!-- Product Image -->
+        <section class="mb-12 text-center">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/kichi-1.jpg" alt="최씨남매 돼지김치찜 제품 패키지" class="w-full max-w-2xl mx-auto rounded-2xl shadow-lg fr-draggable">
+        </section>
+
+        <!-- Why Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-10 text-gray-800">
+                🤔 Why? 자신 있으니까, 모두 공개합니다.
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl border-2 border-gray-200 hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">맛의 핵심, 76%의 압도적 건더기</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <span class="font-bold text-red-600">배추김치(중국산) 54%</span>와 
+                        <span class="font-bold text-red-600">돼지목살(오스트리아산) 22%</span>의 황금 비율. 
+                        건더기만으로 76%를 꽉 채워 밥 두 공기도 부족할 만큼 푸짐합니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border-2 border-gray-200 hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">솔직함으로 완성한 놀라운 가성비</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        맛과 품질을 위해 세계 곳곳에서 찾은 최적의 원료로 가격 거품을 뺐습니다. 
+                        <span class="font-bold text-red-600">원산지를 자신있게 공개하는 이유</span>, 
+                        맛으로 증명하겠습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-10 text-gray-800">
+                📊 충격적인 비교 결과 공개!
+            </h2>
+            <div class="mb-8">
+                <canvas id="comparisonChart" style="height: 400px;"></canvas>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="comparison-card rounded-2xl p-6 text-center">
+                    <div class="text-2xl mb-2">🥈</div>
+                    <h3 class="font-bold text-lg mb-3">오**</h3>
+                    <div class="text-sm text-gray-600 mb-2">김치 28% + 돼지고기 6%</div>
+                    <div class="text-2xl font-bold text-gray-700">34%</div>
+                </div>
+                
+                <div class="comparison-card rounded-2xl p-6 text-center">
+                    <div class="text-2xl mb-2">🥉</div>
+                    <h3 class="font-bold text-lg mb-3">종**</h3>
+                    <div class="text-sm text-gray-600 mb-2">김치 23.4% + 돼지고기 9.57%</div>
+                    <div class="text-2xl font-bold text-gray-700">33%</div>
+                </div>
+                
+                <div class="comparison-card rounded-2xl p-6 text-center">
+                    <div class="text-2xl mb-2">🥈</div>
+                    <h3 class="font-bold text-lg mb-3">비**</h3>
+                    <div class="text-sm text-gray-600 mb-2">김치 23.9% + 돼지고기 13%</div>
+                    <div class="text-2xl font-bold text-gray-700">37%</div>
+                </div>
+                
+                <div class="winner-card rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-2">🏆</div>
+                    <h3 class="font-bold text-lg mb-3 text-orange-800">최씨남매</h3>
+                    <div class="text-sm text-orange-700 mb-2 font-semibold">김치 54% + 돼지고기 22%</div>
+                    <div class="text-3xl font-black text-orange-800">76%</div>
+                    <div class="text-xs text-orange-600 mt-2 font-bold">압도적 1위!</div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-2xl border-2 border-red-200">
+                <div class="text-center">
+                    <div class="text-lg font-bold text-red-700 mb-2">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        실제 시장조사 결과
+                    </div>
+                    <p class="text-gray-700">
+                        *출처: 네이버 푸드탐구생활 공식 비교 분석 자료<br>
+                        다른 브랜드 대비 <span class="font-bold text-red-600">2배 이상의 건더기 함량</span>으로 압도적 가성비 입증!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Images -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-8">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/KIMCHI-2.jpeg" alt="푸짐하게 차려진 돼지김치찜 한상" class="w-full rounded-2xl shadow-lg fr-draggable">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/kimchi-3.jpg" alt="두툼한 돼지고기와 잘 익은 김치" class="w-full rounded-2xl shadow-lg fr-draggable">
+            </div>
+        </section>
+
+        <!-- Shipping Info -->
+        <section class="mb-16 bg-gradient-to-r from-red-500 to-red-600 text-white p-8 rounded-2xl">
+            <h2 class="text-2xl md:text-3xl font-black text-center mb-6">
+                💰 3개 세트로 더 알뜰하게! 🚚
+            </h2>
+            <div class="text-center space-y-4">
+                <p class="text-lg"><span class="font-bold">✅ 3개 묶음 세트로 더 저렴하게, 배송비는 한 번에!</span></p>
+                <p>📦 배송비는 3,500원이며, 4kg 이상 주문 시 3,500원이 추가됩니다.</p>
+                <p>🎁 카카오채널 '만원요리' 추가하고 다양한 혜택과 소식을 받아보세요!</p>
+                <div class="bg-white bg-opacity-10 p-4 rounded-xl mt-6">
+                    <p class="font-bold">💡 TIP: 쟁여두고 먹기 좋은 3개 세트! 최씨남매의 다른 제품과 함께 주문하면 배송비가 더욱 절약됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Cook -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-10 text-gray-800">
+                🍳 How? 이렇게 활용하세요!
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-red-700">① 간편하게 전자렌지로</h3>
+                    <p class="mb-4 text-gray-700">
+                        <span class="font-bold text-red-600">전자렌지 5분 30초</span> 돌리면 끝! 
+                        바쁜 일상에서 가장 빠른 방법입니다.
+                    </p>
+                    <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-3">
+                        <p class="text-sm font-semibold text-yellow-800">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            주의하세요! 전자렌지용 용기에 옮겨 담고, 랩을 씌워 돌려주세요. 뜨거우니 꺼낼 때 조심하세요!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-orange-50 border-2 border-orange-200 rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-orange-700">② 냄비에서 푸짐하게</h3>
+                    <p class="mb-2 text-gray-700">
+                        <span class="font-bold">방법 1:</span> 냄비에 내용물을 모두 붓고 <span class="font-bold text-orange-600">중불에서 10분</span> 끓여주세요.
+                    </p>
+                    <p class="mb-4 text-gray-700">
+                        <span class="font-bold">방법 2:</span> 더 깊은 맛을 원한다면 <span class="font-bold text-orange-600">약불에서 10-15분</span> 천천히 끓여주세요.
+                    </p>
+                    <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-3">
+                        <p class="text-sm font-semibold text-yellow-800">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            주의하세요! 끓는 동안 가끔 저어주시고, 물이 부족하면 조금씩 추가해주세요. 김이 모락모락 날 때까지!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-300 rounded-2xl p-8">
+                <h3 class="text-xl font-bold text-yellow-800 mb-4 text-center">
+                    <i class="fas fa-fire mr-2"></i>
+                    더욱 맛있게 드시려면
+                </h3>
+                <p class="text-gray-700 mb-4 text-center">
+                    취향에 따라 두부, 대파, 양파 등을 추가하거나 남은 국물에 라면사리, 우동사리를 넣어 끓이면 
+                    더욱 특별하고 든든한 요리가 됩니다.
+                </p>
+                <p class="text-center font-bold text-yellow-800">
+                    <strong>Pro-Tip:</strong> 3개 세트로 쟁여두면 갑자기 손님이 오거나 캠핑 갈 때, 
+                    언제든 든든한 일품요리를 뚝딱 만들 수 있어요!
+                </p>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-10 text-gray-800">
+                🛡️ Trust! 믿을 수 있는 이유
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">📜</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">안전 인증 완료</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        식품안전관리인증(HACCP)을 받은 깨끗하고 안전한 시설에서 정성을 다해 만들었습니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">🏭</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">신뢰할 수 있는 제조사</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        HMR 전문 제조기업 (주)초심푸드에서 위생적으로 생산하여 더욱 믿을 수 있습니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">✅</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">최씨남매 품질 보증</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        유튜버 '만원요리 최씨남매'가 직접 먹어보고 꼼꼼하게 검증하여 자신있게 추천하는 제품입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Detail Image -->
+        <section class="mb-16 text-center">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/kimchizzim/porkkimchi-650g.jpg" alt="최씨남매 돼지김치찜 제품상세정보" class="w-full max-w-3xl mx-auto rounded-2xl shadow-lg fr-draggable">
+        </section>
+
+        <!-- Company Info -->
+        <footer class="bg-gray-100 p-8 rounded-2xl text-sm text-gray-600 leading-relaxed">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">판매자 정보</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p><span class="font-bold text-gray-800">판매원:</span> ㈜값진한끼</p>
+                    <p><span class="font-bold text-gray-800">대표자명:</span> 고혜숙</p>
+                    <p><span class="font-bold text-gray-800">사업자등록번호:</span> 434-86-03863</p>
+                    <p><span class="font-bold text-gray-800">통신판매업신고:</span> 2025-경기파주-2195호</p>
+                </div>
+                <div>
+                    <p><span class="font-bold text-gray-800">주소:</span> 경기도 파주시 경의로 1246, 11층 1105-19호</p>
+                    <p><span class="font-bold text-gray-800">고객센터:</span> 070-8835-2885</p>
+                    <p><span class="font-bold text-gray-800">이메일:</span> manwonyori@naver.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-300 mt-8 pt-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">제조원 및 원산지 정보</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <p><span class="font-bold text-gray-800">제조원:</span> (주)초심푸드</p>
+                        <p><span class="font-bold text-gray-800">인증사항:</span> 식품안전관리인증 HACCP</p>
+                        <p><span class="font-bold text-gray-800">주소:</span> 전북 익산시 왕궁면 푸드폴리스로10길 48</p>
+                    </div>
+                    <div>
+                        <p><span class="font-bold text-gray-800">연락처:</span> 063-838-1116</p>
+                        <p><span class="font-bold text-gray-800">주요 원산지:</span> 배추김치(중국산), 돼지목살(오스트리아산), 찹쌀가루(국내산)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 border border-yellow-300 rounded-lg p-4 mt-6">
+                <p class="font-bold text-yellow-800 mb-2">알레르기 정보</p>
+                <p class="text-yellow-700 text-xs">
+                    본 제품은 돼지고기, 쇠고기, 대두, 밀, 우유를 함유하고 있습니다. 
+                    또한, 메밀, 땅콩, 호두, 잣, 조개류(굴, 전복, 홍합 포함), 새우, 오징어, 고등어, 게, 알류, 닭고기, 아황산류, 복숭아, 토마토를 사용한 제품과 같은 제조시설에서 제조하고 있으니 특정 성분에 알레르기가 있으신 분은 섭취에 유의하시기 바랍니다.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

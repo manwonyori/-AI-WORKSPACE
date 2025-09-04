@@ -1,0 +1,317 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>취영루 물만두 추천: 38만 유튜버 최씨남매 인생 만두 레시피 (만두국, 에어프라이어)</title>
+<!-- ▼▼▼▼▼ (1/2) 상세페이지 콘텐츠 스타일 ▼▼▼▼▼ -->
+<style>
+	▶️ 38만 구독자가 극찬한 바로 그 맛! @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+	/* ===== 기본 및 리셋 스타일 ===== */
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		margin: 0; font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; background-color: #f5f5f5; color: #333; line-height: 1.6;
+	}
+	
+	.container {
+		max-width: 860px; margin: 0 auto; background-color: #FFFFFF; overflow-x: hidden;
+	}
+	
+	img {
+		max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;
+	}
+	
+	a {
+		text-decoration: none; color: inherit;
+	}
+	
+	.section {
+		padding: 48px 20px;
+	}
+	
+	.bg-gray {
+		background-color: #f8f9fa;
+	}
+	
+	.content-wrapper {
+		max-width: 600px; margin: 0 auto; text-align: center;
+	}
+	
+	.content-title {
+		font-size: 32px; font-weight: 800; color: #2d3748; margin: 0 0 16px 0; line-height: 1.4;
+	}
+	
+	.highlight-yellow {
+		background-color: #FFF2B2; color: #1a202c; padding: 2px 8px; font-weight: bold; border-radius: 4px;
+	}
+	
+	.gradient-text {
+		background: linear-gradient(45deg, #FF6B6B, #4ECDC4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+	}
+	
+	.hero-header {
+		background: #1a202c; color: white; padding: 48px 20px; text-align: center;
+	}
+	
+	.hero-header h1,
+	.hero-header h2 {
+		font-weight: 900; line-height: 1.3; margin: 0 0 16px 0;
+	}
+	
+	.hero-header h1 {
+		font-size: 36px;
+	}
+	
+	.hero-header h2 {
+		font-size: 24px; font-weight: 500; opacity: 0.9;
+	}
+	
+	.summary-grid {
+		display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; text-align: left;
+	}
+	
+	.summary-item {
+		background-color: rgba(255, 255, 255, 0.1); padding: 16px; border-radius: 8px;
+	}
+	
+	.summary-item .title {
+		font-size: 18px; font-weight: 700; color: #FFD700; margin-bottom: 4px;
+	}
+	
+	.summary-item .desc {
+		font-size: 14px; opacity: 0.8; margin: 0;
+	}
+	
+	.creator-box {
+		background-color: #f8f9fa; border-radius: 8px; padding: 24px;
+	}
+	
+	.creator-box .quote {
+		background-color: white; padding: 20px; border-radius: 8px; font-style: italic; border-left: 4px solid #E31837; text-align: left;
+	}
+	
+	.creator-box .quote p {
+		color: #4a5568; margin: 0; line-height: 1.7; font-size: 17px;
+	}
+	
+	.recipe-card {
+		text-align: left; margin-bottom: 24px; padding: 20px; background: white; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	}
+	
+	.recipe-card h3 {
+		font-size: 20px; margin: 0 0 8px 0; display: flex; align-items: center;
+	}
+	
+	.recipe-card h3 .icon {
+		font-size: 24px; margin-right: 12px;
+	}
+
+</style>
+<!-- ▲▲▲▲▲ (1/2) 상세페이지 콘텐츠 스타일 ▲▲▲▲▲ -->
+<div class="container">
+<!-- ====================================================== -->
+<!-- SECTION 1: 후킹 & SEO 최적화 (네이버/구글/유튜브) -->
+<!-- ====================================================== -->
+<header class="hero-header">
+<div class="content-wrapper">
+
+<h1>38만 유튜버가 '인생 만두'라
+<br>극찬한 바로 그 제품</h1>
+
+<h2>라면, 만두국, 에어프라이어... 당신의 모든 요리가 '맛집'이 됩니다.</h2>
+<div class="summary-grid">
+<div class="summary-item">
+<div class="title">압도적인 맛</div>
+
+<p class="desc">70년 내공이 담긴, 비교불가 퀄리티</p>
+</div>
+<div class="summary-item">
+<div class="title">시간 순삭</div>
+
+<p class="desc">5분 완성! 야식, 자취요리 종결템</p>
+</div>
+<div class="summary-item">
+<div class="title">절대 안심</div>
+
+<p class="desc">국산 돼지고기 + HACCP 인증</p>
+</div>
+<div class="summary-item">
+<div class="title">레시피 보장</div>
+
+<p class="desc">최씨남매 영상 속 '그 맛' 완벽 재현</p>
+</div> </div> </div>
+</header>
+<!-- ====================================================== -->
+<!-- SECTION 2: 신뢰 구축 (왜 이 제품인가?) -->
+<!-- ====================================================== -->
+<section class="section">
+<div class="content-wrapper">
+
+<h2 class="content-title">왜 '그냥 물만두'가 아닐까요?</h2>
+<div class="creator-box">
+<div class="quote">
+
+<p>"수많은 냉동만두를 먹어봤지만, 이건 차원이 달라요. 핵심은 <span style="font-weight:bold;">'피'</span>입니다. 얇고 쫄깃해서 절대 퉁퉁 불거나 터지지 않아요. 만두소의 육즙과 맛을 온전히 가둬주죠. 이게 70년 전통의 기술력입니다."</p>
+</div> </div> </div>
+</section>
+<!-- ====================================================== -->
+<!-- SECTION 3: 욕망 자극 (이렇게 맛있게 먹을 수 있다) -->
+<!-- ====================================================== -->
+<section class="section bg-gray">
+<div class="content-wrapper">
+
+<h2 class="content-title">당신의 식탁이
+<br><span class="gradient-text">'맛집'</span>이 되는 마법</h2>
+<div class="recipe-card">
+
+<h3><span class="icon">🍲</span>"국물 맛이 달라져요" 명품 만두국</h3>
+
+<p>멸치 육수에 국간장 살짝, 그리고 이 만두를 넣으면 국물 맛부터 달라져요. 얇고 쫄깃한 피가 국물을 머금어, 한 입 먹는 순간 감탄이 나옵니다.</p>
+</div>
+<div class="recipe-card">
+
+<h3><span class="icon">🔥</span>"치킨 시킬 필요 없어요" 마성의 만두강정</h3>
+
+<p>에어프라이어에 바삭하게 구워 양념에 버무리면 끝. 웬만한 치킨집보다 맛있어요. 오늘 밤 맥주 안주는 이걸로 정했습니다.</p>
+</div>
+<div class="recipe-card">
+
+<h3><span class="icon">🧀</span>"요리 못해도 괜찮아요" 5분 완성 만두 그라탱</h3>
+
+<p>내열용기에 물만두, 토마토소스, 옥수수콘, 피자치즈 듬뿍! 전자레인지 5분이면 아이들 간식, 자취생 필살기로 완벽합니다.</p>
+</div> </div>
+</section>
+<!-- ▼▼▼▼▼ (2/2) 브랜드 허브 헤더 v22.1 ▼▼▼▼▼ -->
+<style>
+		@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GmarketSansMedium.woff'); .manwon-hub-container {
+			max-width: 860px; margin: 30px auto; padding: 40px 20px; font-family: 'GmarketSansMedium', sans-serif; background: linear-gradient(to top, #fffaf6, #ffffff); border: 3px solid #FF7A2F; border-radius: 16px; text-align: center; word-break: keep-all; position: relative; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+		}
+		
+		.manwon-hub-container .intro-text {
+			font-size: 18px; color: #555; font-weight: 700;
+		}
+		
+		.manwon-hub-container h1 {
+			font-size: 36px; font-weight: 900; color: #333; margin: 16px 0; line-height: 1.4;
+		}
+		
+		.manwon-hub-container h1 .highlight {
+			color: #FF7A2F;
+		}
+		
+		.manwon-hub-container .sub-text {
+			font-size: 16px; color: #555;
+		}
+		
+		.manwon-hub-container .final-message {
+			margin-top: 30px; font-size: 16px; font-weight: 700; color: #333;
+		}
+		
+		@keyframes hub-cta-glow {
+			0%,
+			100% {
+				box-shadow: 0 0 15px 0px rgba(255, 122, 47, 0.6);
+			}
+			50% {
+				box-shadow: 0 0 25px 8px rgba(255, 122, 47, 0.9);
+			}
+		}
+		
+		.manwon-hub-container .cta-button {
+			display: inline-block; background-color: #FF7A2F; color: white; font-size: 24px; font-weight: 700; padding: 18px 40px; border-radius: 50px; text-decoration: none; margin-top: 24px; animation: hub-cta-glow 2.5s infinite; transition: transform 0.2s ease-in-out;
+		}
+		
+		.manwon-hub-container .cta-button:hover {
+			transform: scale(1.05);
+		}
+		
+		.manwon-hub-container .cta-subtext {
+			font-size: 14px; color: #777; margin-top: 10px;
+		}
+		
+		.manwon-card-section {
+			margin-top: 40px; padding-top: 30px; border-top: 2px dashed #fae5d3; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+		}
+		
+		.manwon-card {
+			background-color: #fff; border: 1px solid #fae5d3; border-radius: 12px; padding: 20px; text-decoration: none; display: block; color: #333; transition: all 0.3s ease;
+		}
+		
+		.manwon-card:hover {
+			transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); border-color: #FF7A2F;
+		}
+		
+		.manwon-card .icon {
+			font-size: 28px; color: #FF7A2F; margin-bottom: 10px;
+		}
+		
+		.manwon-card .title {
+			font-size: 18px; font-weight: 700; margin-bottom: 5px;
+		}
+		
+		.manwon-card .desc {
+			font-size: 14px; color: #666;
+		}
+		
+		#kakao-add-channel-button-container {
+			position: absolute; top: 20px; right: 20px; z-index: 10;
+		}
+
+	</style>
+<div class="manwon-hub-container">
+<div id="kakao-add-channel-button-container"></div>
+
+<p class="intro-text">안녕하세요! 만원요리 최씨남매입니다.</p>
+
+<h1>잠깐! 이 상품만 보고 가시게요?
+<br><span class="highlight">더 많은 행복이 기다리고 있어요!</span></h1>
+
+<p class="sub-text">저희가 직접 발로 뛰어 찾아낸, 말도 안 되는 가격의
+<br>맛있는 제품들이 매일 업데이트됩니다.</p> <a href="https://www.manwonyori.com" rel="noopener noreferrer" target="_blank" class="cta-button">만원요리 최씨남매 사이트 바로가기!</a>
+
+<p class="cta-subtext">(클릭하시면 더 많고 저렴한 제품을 보실 수 있습니다!)</p>
+<div class="manwon-card-section">
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=75" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">💡</div>
+<div class="title">최씨남매 기획전</div>
+<div class="desc">지금 가장 핫한 상품만 모았어요!</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=53" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⭐</div>
+<div class="title">최씨남매 PICK</div>
+<div class="desc">저희가 직접 고른 믿고 먹는 제품</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=54" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤔</div>
+<div class="title">오늘 뭐 먹지?</div>
+<div class="desc">고민 끝! 식단 걱정 덜어드려요</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=55" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">📦</div>
+<div class="title">사장님 브랜드관 (대용량)</div>
+<div class="desc">자영업자 사장님들을 위한 특별관</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=56" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤝</div>
+<div class="title">직거래 브랜드관</div>
+<div class="desc">산지직송! 신선함 그대로</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=57" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⚡</div>
+<div class="title">공장직속/반짝특가</div>
+<div class="desc">이 가격, 실화? 역대급 가성비</div>
+</a> </div>
+
+<p class="final-message">누야히야들, 모든 사장님들 화이팅!</p>
+</div>
+<!-- ▲▲▲▲▲ (2/2) 브랜드 허브 헤더 v22.1 ▲▲▲▲▲ -->
+</div>
+<center><img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_10/1/1.jpg" class="fr-draggable">
+<br><img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_10/1/2.jpg" class="fr-draggable">
+<br><img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_10/1/3.jpg" class="fr-draggable">
+<center></center></center>

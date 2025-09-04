@@ -1,0 +1,370 @@
+<center>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[[인생]]마라탕 - 만원요리 최씨남매</title>
+  <meta name="description" content="만원의 행복, 진짜 마라탕 - 청나라 수군의 전통을 담은 프리미엄 마라탕의 특별한 맛">
+  <meta name="keywords" content="마라탕, 프리미엄마라탕, 만원마라탕, 인생마라탕, 마라탕맛집">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="[만원요리] [[인생]]마라탕 | 최씨남매 공식몰">
+  <meta property="og:description" content="맵기 조절 가능한 맞춤형 마라탕, HACCP 인증 위생 관리, 프리미엄급 재료의 가성비 가격">
+  <meta property="og:image" content="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/mala-tang-727g/mala-tang-727g-1.jpg">
+  <meta property="og:type" content="product">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Pretendard:wght@400;700&amp;display=swap" rel="stylesheet">
+  
+  <style>
+  /* v9.0 Design System */
+  :root {
+  --saffron-gold: #E4A853;
+  --deep-rose: #C53030;
+  --deep-charcoal: #1F2937;
+  --pure-white: #FFFFFF;
+  --light-gray: #F9FAFB;
+  --medium-gray: #6B7280;
+  --border-gray: #E5E7EB;
+  }
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+  line-height: 1.7;
+  color: var(--deep-charcoal);
+  background-color: var(--pure-white);
+  }
+  
+  .container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0;
+  }
+  
+  /* Strategic Header */
+  .strategic-header {
+  text-align: center;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+  }
+  
+  .brand-label {
+  color: var(--saffron-gold);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  display: block;
+  }
+  
+  .main-copy {
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  color: var(--deep-charcoal);
+  line-height: 1.4;
+  margin-bottom: 16px;
+  }
+  
+  .sub-copy {
+  font-size: clamp(16px, 3vw, 20px);
+  color: var(--medium-gray);
+  margin-bottom: 32px;
+  }
+  
+  .hero-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  display: block;
+  }
+  
+  /* Section Styles */
+  .section {
+  padding: 80px 24px;
+  background-color: var(--pure-white);
+  }
+  
+  .section:nth-child(even) {
+  background-color: var(--light-gray);
+  }
+  
+  .section-title {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--deep-charcoal);
+  text-align: center;
+  }
+  
+  /* Why Section */
+  .why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  
+  .why-card {
+  background: var(--pure-white);
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 4px solid var(--saffron-gold);
+  text-align: left;
+  }
+  
+  .why-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--saffron-gold);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  }
+  
+  .why-title::before {
+  content: '✓';
+  width: 24px;
+  height: 24px;
+  background: var(--saffron-gold);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 14px;
+  }
+  
+  /* Wow Section */
+  .wow-highlight {
+  background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+  color: white;
+  padding: 48px 32px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  }
+  
+  .wow-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  }
+  
+  .wow-item {
+  background: rgba(255,255,255,0.2);
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 700;
+  }
+  
+  /* How Section */
+  .how-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  }
+  
+  /* Trust Section */
+  .trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 720px;
+  margin: 0 auto;
+  }
+  
+  .trust-item {
+  text-align: center;
+  }
+  
+  .trust-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  color: var(--saffron-gold);
+  }
+  
+  .trust-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  }
+  
+  /* Gallery - Vertical Layout */
+  .gallery-vertical img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+  }
+
+  /* Company Info */
+  .company-info {
+  padding: 40px 24px;
+  background: var(--deep-charcoal);
+  color: var(--light-gray);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  }
+  
+  @media (max-width: 768px) {
+  .why-grid, .trust-grid {
+  grid-template-columns: 1fr;
+  }
+  
+  .wow-list {
+  flex-direction: column;
+  align-items: center;
+  }
+  }
+  </style>
+
+  <div class="container">
+  <!-- Strategic Header -->
+  <section class="strategic-header">
+  <span class="brand-label">만원요리 최씨남매 X [인생] 단독 공구</span>
+  <h1 class="main-copy">만원의 행복, 진 마라탕</h1>
+  <p class="sub-copy">청나라 수군의 전통을 담은 프리미엄 마라탕의 특별한 맛</p>
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/mala-tang-727g/mala-tang-727g-1.jpg" alt="[[인생]]마라탕" class="hero-image fr-draggable">
+  </section>
+  
+  <!-- Video Section (Optional) -->
+
+  <!-- Story Section -->
+  <section style="background: linear-gradient(135deg, #FFF5E6 0%, #FFFFFF 100%);" class="section">
+  <h2 class="section-title">📜 마라탕의 이야기</h2>
+  <div style="max-width: 840px; margin: 0 auto;">
+  
+  <!-- 기원의 발견 -->
+  <div style="margin-bottom: 40px; text-align: left;">
+  <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+  <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">1</span>
+  기원의 발견
+  </h3>
+  <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+  1940년대, 중국 쓰촨성 충칭시의 장강 선창. 추운 겨울날, 뱃사공들은 차가운 강바람을 견디며 생계를 이어갔습니다. 그들은 몸을 덥히기 위해 마비감을 주는 호저근과 매운 향신료를 넣은 뜨거운 국물을 끓였죠. 중일전쟁 시기 충칭이 임시 수도였던 그때, 이 소박한 한 끼가 마라탕의 시작이었습니다.
+  </p>
+  </div>
+  
+  <!-- 여행하는 맛 -->
+  <div style="margin-bottom: 40px; text-align: left;">
+  <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+  <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">2</span>
+  여행하는 맛
+  </h3>
+  <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+  1940년 충칭의 길거리 음식으로 시작된 마라탕은 1980년 개혁개방과 함께 중국 전역으로 퍼져나갔습니다. 홍콩에서는 신선한 해산물을, 대만에서는 고기를 듬뿍 넣은 현지화된 마라탕이 탄생했죠. 2000년대에 들어서며 해외 중국 유학생들과 이주 상인들을 통해 한국, 일본 등 아시아 전역으로 전파되었습니다.
+  </p>
+  </div>
+  
+  <!-- 한국인의 입맛을 사로잡다 -->
+  <div style="margin-bottom: 40px; text-align: left;">
+  <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+  <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">3</span>
+  한국인의 입맛을 사로잡다
+  </h3>
+  <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+  2000년대 초반, 서울 대림동 차이나타운을 통해 한국에 첫 발을 내딛은 마라탕은 6,000원대의 가격으로 시작했습니다. 한국인의 입맛에 맞춰 맵기 조절이 가능해졌고, 다양한 채소가 추가되었죠. 2015년 프랜차이즈화를 시작으로, 2018년에는 전국적인 마라탕 붐이 일어났습니다.
+  </p>
+  </div>
+  
+  <!-- 세대를 잇는 맛의 기억 -->
+  <div style="margin-bottom: 40px; text-align: left;">
+  <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+  <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">4</span>
+  세대를 잇는 맛의 기억
+  </h3>
+  <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+  SNS 맛집 문화와 함께 성장한 2030세대에게 마라탕은 특별한 의미를 가집니다. 대학생들의 저렴한 한 끼로, 회식 메뉴로, 추운 날씨의 포장마차 대용으로 사랑받고 있죠. '마라 중독자들의 금단현상'이라는 재미있는 이야기는 이제 하나의 도시 전설이 되었습니다.
+  </p>
+  </div>
+  
+  <!-- 현대적 재탄생 -->
+  <div style="margin-bottom: 40px; text-align: left;">
+  <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+  <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">5</span>
+  현대적 재탄생
+  </h3>
+  <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+  2023년 기준 연간 1조원 이상의 시장을 형성한 마라탕은 셀프바 스타일 운영과 배달 서비스로 진화했습니다. 마라탕 라면, 간편식 소스, 마라 시즈닝 등 다양한 형태로 재탄생하며 건강한 재료와 결합한 프리미엄 시장으로 성장하고 있습니다.
+  </p>
+  </div>
+  
+  <!-- 만원요리의 약속 -->
+  <div style="background: #FFF3E0; padding: 24px; border-radius: 16px; border-left: 4px solid var(--saffron-gold); text-align: left;">
+  <h3 style="color: var(--deep-rose); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+  <span style="background: var(--deep-rose); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">✓</span>
+  만원요리의 약속
+  </h3>
+  <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px; font-weight: 500;">
+  20여 가지 이상의 정통 향신료로 만드는 진정한 마라의 맛을 지키면서도, 현대적 감각으로 재해석합니다. 건강과 맛, 그리고 합리적인 가격의 균형을 추구하며 고객과 함께 성장하겠습니다.
+  </p>
+  </div>
+  
+  </div>
+  </section>
+  
+  <!-- Why Section -->
+  <section class="section">
+  <h2 class="section-title">🤔 Why? 왜 이 마라탕이어야 할까요?</h2>
+  <div class="why-grid">
+  <div class="why-card">
+  <h3 class="why-title">최고급 재료와 정통 레시피</h3>
+  <p style="color: var(--deep-charcoal); line-height: 1.7;">매일 아침 공수되는 신선한 재료</p>
+  </div>
+  <div class="why-card">
+  <h3 class="why-title">간편한 조리와 합리적인 가격</h3>
+  <p style="color: var(--deep-charcoal); line-height: 1.7;">20가지 이상의 정통 사천 향신료</p>
+  </div>
+  </div>
+  </section>
+
+  <!-- How Section -->
+  <section class="section">
+  <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+  <div class="how-content">
+  <p>1. 취향에 따라 맵기 단계를 선택하세요(1-5단계)
+2. 신선한 야채와 고기를 곁들여 즐기세요
+3. 따뜻하게 데워 드시면 더욱 맛있습니다</p>
+  </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+  <h2 class="section-title">📸 제품 상세 이미지</h2>
+  <div style="max-width: 800px; margin: 0 auto;">
+  <div style="margin: 20px 0;">
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/mala-tang-727g/mala-tang-727g-2.jpg" alt="[[인생]]마라탕 2번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+  </div><div style="margin: 20px 0;">
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[[인생]]마라탕 3번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+  </div>
+  </div>
+  </section>
+
+  <!-- Delivery Info Section (조건부 표시) -->
+
+  <!-- Company Info -->
+  <section class="company-info">
+  <p>
+  판매원: ㈜값진한끼 | 대표자: 고혜숙<br>
+  사업자등록번호: 434-86-03863 | 통신판매업: 2025-경기파주-2195호<br>
+  주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+  전화: 070-8835-2885 | 이메일: we@manwonyori.com
+  </p>
+  </section>
+  </div>
+</center>

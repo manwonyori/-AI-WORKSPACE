@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "total_products": 239,
+    "last_updated": "2025-08-31T17:12:52.783676",
+    "automation_ready": 3,
+    "p00000nb_status": "identified"
+  },
+  "product_ranges": [
+    {
+      "range_id": "range_1",
+      "start": 27,
+      "end": 53,
+      "count": 27,
+      "status": "pending",
+      "coverage_percent": 11.297071129707113
+    },
+    {
+      "range_id": "range_2",
+      "start": 131,
+      "end": 253,
+      "count": 123,
+      "status": "pending",
+      "coverage_percent": 51.46443514644351
+    },
+    {
+      "range_id": "range_3",
+      "start": 261,
+      "end": 320,
+      "count": 60,
+      "status": "pending",
+      "coverage_percent": 25.10460251046025
+    }
+  ],
+  "sample_products": [
+    {
+      "product_code": "P00000NB",
+      "product_number": "339",
+      "product_name": "[씨씨더블유]가마솥 불스지 300g",
+      "price": "7500.0"
+    },
+    {
+      "product_code": "P00000NA",
+      "product_number": "338",
+      "product_name": "[씨씨더블유]고추장 오돌뼈 200g",
+      "price": "4500.0"
+    },
+    {
+      "product_code": "P00000MZ",
+      "product_number": "337",
+      "product_name": "[씨씨더블유]국내산 소이동왕구이 1.25kg",
+      "price": "30000.0"
+    },
+    {
+      "product_code": "P00000MY",
+      "product_number": "336",
+      "product_name": "[씨씨더블유]수제양념 순살구이 1kg",
+      "price": "11000.0"
+    },
+    {
+      "product_code": "P00000MX",
+      "product_number": "335",
+      "product_name": "[씨씨더블유]솔잎 돼지왕구이 1+1",
+      "price": "32000.0"
+    },
+    {
+      "product_code": "P00000MW",
+      "product_number": "334",
+      "product_name": "[씨씨더블유]양념 소대창 200g",
+      "price": "6000.0"
+    },
+    {
+      "product_code": "P00000MV",
+      "product_number": "333",
+      "product_name": "[씨씨더블유]명품 양념LA꽃갈비 500g",
+      "price": "13000.0"
+    },
+    {
+      "product_code": "P00000MU",
+      "product_number": "332",
+      "product_name": "[씨씨더블유]오돌뼈 소금구이 200g",
+      "price": "4500.0"
+    },
+    {
+      "product_code": "P00000MT",
+      "product_number": "331",
+      "product_name": "[씨씨더블유]한돈 수제 양념갈비 1kg",
+      "price": "14000.0"
+    },
+    {
+      "product_code": "P00000MS",
+      "product_number": "330",
+      "product_name": "[비에스]미국산 프라임 소갈비살 200g x 3팩 600g,  200g x 5팩 1kg",
+      "price": "21000.0"
+    }
+  ],
+  "automation_status": {
+    "completed_ranges": 0,
+    "failed_ranges": 0,
+    "total_executions": 0
+  }
+}

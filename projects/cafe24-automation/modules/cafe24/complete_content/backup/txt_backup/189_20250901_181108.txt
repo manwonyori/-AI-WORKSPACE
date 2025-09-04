@@ -1,0 +1,378 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[태공식품]]슬라이스맛살 - 만원요리 최씨남매</title>
+    <meta name="description" content="40년 장인이 담은 진짜 맛 - 알래스카 청정 명태로 만든 프리미엄 슬라이스맛살의 품격">
+    <meta name="keywords" content="슬라이스맛살, 프리미엄맛살, 태공식품, 간편식재료, 김밥재료">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[만원요리] [[태공식품]]슬라이스맛살 | 최씨남매 공식몰">
+    <meta property="og:description" content="방부제 무첨가 안심 제품, 개별포장으로 신선도 유지, 다양한 요리에 활용 가능">
+    <meta property="og:image" content="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/sliced-meat-1kg/sliced-meat-1kg-1.png">
+    <meta property="og:type" content="product">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Pretendard:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+        
+        .sub-copy {
+            font-size: clamp(16px, 3vw, 20px);
+            color: var(--medium-gray);
+            margin-bottom: 32px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 24px;
+            background-color: var(--pure-white);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: var(--deep-charcoal);
+            text-align: center;
+        }
+        
+        /* Why Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .why-card {
+            background: var(--pure-white);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--saffron-gold);
+            text-align: left;
+        }
+        
+        .why-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--saffron-gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .why-title::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--saffron-gold);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        /* Wow Section */
+        .wow-highlight {
+            background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+            color: white;
+            padding: 48px 32px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .wow-list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .wow-item {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 700;
+        }
+        
+        /* How Section */
+        .how-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: var(--saffron-gold);
+        }
+        
+        .trust-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        /* Gallery - Vertical Layout */
+        .gallery-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        
+        
+        /* Company Info */
+        .company-info {
+            padding: 40px 24px;
+            background: var(--deep-charcoal);
+            color: var(--light-gray);
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .why-grid, .trust-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .wow-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Strategic Header -->
+        <section class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X [태공식품] 단독 공구</span>
+            <h1 class="main-copy">40년 장인이 담은 진짜 맛</h1>
+            <p class="sub-copy">알래스카 청정 명태로 만든 프리미엄 슬라이스맛살의 품격</p>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/sliced-meat-1kg/sliced-meat-1kg-1.png" alt="[[태공식품]]슬라이스맛살" class="hero-image fr-draggable">
+        </section>
+        
+        <!-- Video Section (Optional) -->
+        
+        
+        <!-- Story Section -->
+        <section style="background: linear-gradient(135deg, #FFF5E6 0%, #FFFFFF 100%);" class="section">
+            <h2 class="section-title">📜 슬라이스맛살의 이야기</h2>
+            <div style="max-width: 840px; margin: 0 auto;">
+                
+                <!-- 기원의 발견 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">1</span>
+                        기원의 발견
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1978년 부산 사하구 감천동, 삼양식품의 창업자 김창호는 일본의 카마보코 제조 기술을 한국형으로 재해석했습니다. 그는 전통적인 어육살을 얇게 슬라이스하여 편의성을 높인 혁신적인 제품을 탄생시켰고, 이는 1970년대 수산물 가공산업 육성 정책과 맞물려 큰 반향을 일으켰습니다.
+                    </p>
+                </div>
+                
+                <!-- 여행하는 맛 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">2</span>
+                        여행하는 맛
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1978년 한국에서 시작된 슬라이스맛살의 여정은 1980년 일본 수출을 시작으로 세계로 뻗어나갔습니다. 일본의 카마보코, 중국의 어육완자, 동남아의 피시볼 등 각 지역의 특색과 만나 독특한 변주를 이뤄냈습니다. 김창호와 한국수산가공협회의 노력으로 1985년에는 동남아 시장까지 진출하는 쾌거를 이루었습니다.
+                    </p>
+                </div>
+                
+                <!-- 한국인의 입맛을 사로잡다 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">3</span>
+                        한국인의 입맛을 사로잡다
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1978년 부산 삼양식품 직영매장에서 첫선을 보인 슬라이스맛살은 팩당 300원이라는 합리적인 가격으로 출시되었습니다. 얇은 슬라이스 형태와 한국인의 입맛에 맞춘 맛으로 도시락 문화의 필수품이 되었고, 1985년 전국 유통망 확보, 1990년대에는 즉석식품의 대표주자로 자리잡았습니다.
+                    </p>
+                </div>
+                
+                <!-- 세대를 잇는 맛의 기억 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">4</span>
+                        세대를 잇는 맛의 기억
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        70-80년대생에게는 도시락의 필수품으로, 90년대생에게는 라면 토핑의 추억으로, 2000년대생에게는 샐러드 토핑으로 사랑받고 있습니다. 소풍날, 운동회, 도시락데이 등 특별한 날의 단골메뉴였으며, 1985년 '우리들의 일그러진 영웅' 도시락 장면에서도 그 모습을 확인할 수 있습니다.
+                    </p>
+                </div>
+                
+                <!-- 현대적 재탄생 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">5</span>
+                        현대적 재탄생
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        2022년 기준 연간 2,000억원 규모의 시장을 형성하고 있는 슬라이스맛살은 건강식품화와 고급화를 추구하며 진화하고 있습니다. 프리미엄 맛살, 식물성 맛살 개발, 친환경 패키징 도입 등 끊임없는 혁신을 통해 현대적 식문화에 적응하고 있습니다.
+                    </p>
+                </div>
+                
+                <!-- 만원요리의 약속 -->
+                <div style="background: #FFF3E0; padding: 24px; border-radius: 16px; border-left: 4px solid var(--saffron-gold); text-align: left;">
+                    <h3 style="color: var(--deep-rose); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--deep-rose); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">✓</span>
+                        만원요리의 약속
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px; font-weight: 500;">
+                        전통의 맛을 지키되 현대적 감각을 더하고, 합리적인 가격으로 누구나 즐길 수 있는 맛있는 경험을 제공하겠습니다. 우리의 식탁에서 영원히 사랑받는 국민간식이 되겠습니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Why Section -->
+        <section class="section">
+            <h2 class="section-title">🤔 Why? 왜 이 슬라이스맛살이어야 할까요?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 class="why-title">최고급 재료와 정통 레시피</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">100% 알래스카산 고급 명태살 사용</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="why-title">간편한 조리와 합리적인 가격</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">균일한 두께의 완벽한 슬라이스</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- How Section -->
+        <section class="section">
+            <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+            <div class="how-content">
+                <p>김밥, 라면, 샐러드의 토핑으로 활용하세요. 샌드위치나 볶음요리의 재료로도 훌륭합니다. 해동 후 바로 드실 수 있어 간편하고, 단백질이 풍부한 건강한 식재료입니다.</p>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title">📸 제품 상세 이미지</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/sliced-meat-1kg/sliced-meat-1kg-2.jpg" alt="[[태공식품]]슬라이스맛살 2번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/sliced-meat-1kg/sliced-meat-1kg-3.jpg" alt="[[태공식품]]슬라이스맛살 3번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/sliced-meat-1kg/sliced-meat-1kg-4.jpg" alt="[[태공식품]]슬라이스맛살 4번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[[태공식품]]슬라이스맛살 5번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div>
+            </div>
+        </section>
+        
+        
+        <!-- Delivery Info Section (조건부 표시) -->
+        
+        
+        <!-- Company Info -->
+        <section class="company-info">
+            <p>
+                판매원: ㈜값진한끼 | 대표자: 고혜숙<br>
+                사업자등록번호: 434-86-03863 | 통신판매업: 2025-경기파주-2195호<br>
+                주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+                전화: 070-8835-2885 | 이메일: we@manwonyori.com
+            </p>
+        </section>
+    </div>

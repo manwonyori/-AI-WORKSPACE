@@ -1,0 +1,59 @@
+{
+  "categories": {
+    "food": {
+      "base_templates": {
+        "product_showcase": "A professional product photography of {product_name}, {style_description}, placed on a {background_setting}, shot with {lighting_type} lighting, {camera_angle} view, high resolution, ultra detailed, commercial quality",
+        "lifestyle": "A lifestyle shot showing {product_name} in {context_setting}, {mood_description}, natural lighting, candid style, {demographic_target} enjoying the product, authentic atmosphere",
+        "ingredient_focus": "Macro photography of {product_name} showing {texture_details}, {color_palette}, fresh ingredients visible, appetizing presentation, {artistic_style}"
+      },
+      "style_modifiers": {
+        "minimalist": "clean white background, minimal shadows, modern aesthetic",
+        "rustic": "wooden background, natural textures, warm tones",
+        "premium": "marble surface, elegant styling, luxury presentation",
+        "casual": "kitchen counter, everyday setting, approachable feel"
+      },
+      "lighting_options": ["studio", "natural", "dramatic", "soft", "golden hour", "overhead"],
+      "angles": ["45-degree", "overhead", "side profile", "close-up macro", "wide establishing shot"]
+    },
+    "ecommerce": {
+      "base_templates": {
+        "product_grid": "{product_name} on pure white background, centered composition, even lighting, no shadows, product catalog style, {size_specification}",
+        "lifestyle_ecommerce": "{product_name} in use, {usage_context}, realistic scenario, {target_audience} demographic, clean composition",
+        "detail_shots": "Close-up detail of {product_feature}, high resolution macro, {material_texture}, professional product photography"
+      },
+      "requirements": {
+        "background": ["pure white #FFFFFF", "transparent", "neutral gray"],
+        "format": ["square 1:1", "landscape 4:3", "portrait 3:4"],
+        "quality": ["4K resolution", "300 DPI", "professional lighting"]
+      }
+    }
+  },
+  "quality_parameters": {
+    "resolution": ["4K", "8K", "ultra HD", "high resolution"],
+    "style_quality": ["photorealistic", "ultra detailed", "professional", "commercial grade", "studio quality"],
+    "composition": ["rule of thirds", "centered composition", "dynamic angle", "symmetrical"],
+    "post_processing": ["color graded", "enhanced contrast", "vibrant colors", "natural colors"]
+  },
+  "negative_prompts": {
+    "common": "blurry, low quality, pixelated, distorted, unrealistic, amateur",
+    "food_specific": "moldy, rotten, unappetizing, dirty, artificial looking",
+    "ecommerce_specific": "cluttered background, poor lighting, shadows, cropped product"
+  },
+  "platform_specific": {
+    "midjourney": {
+      "prefix": "/imagine prompt: ",
+      "parameters": " --ar {aspect_ratio} --v 6 --style {style_value} --quality 2",
+      "aspect_ratios": ["1:1", "4:3", "3:4", "16:9", "9:16"]
+    },
+    "dalle": {
+      "size_options": ["1024x1024", "1024x1792", "1792x1024"],
+      "quality": "hd",
+      "style": ["vivid", "natural"]
+    },
+    "stable_diffusion": {
+      "models": ["SDXL", "SD 1.5", "SD 2.1"],
+      "steps": [20, 30, 50],
+      "cfg_scale": [7, 10, 15]
+    }
+  }
+}

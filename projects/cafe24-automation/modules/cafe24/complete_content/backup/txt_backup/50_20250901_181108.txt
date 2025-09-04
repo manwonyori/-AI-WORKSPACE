@@ -1,0 +1,634 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반찬단지 궁채절임 1kg - 오독오독의 예술</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800;900&amp;family=Pretendard:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+	:root {
+		--warm-taupe: #8B7355; --sage-green: #9CAF88; --golden-amber: #D4AF37; --deep-charcoal: #2C2C2C; --pearl-white: #F8F6F0; --soft-cream: #FAF8F3; --heritage-bronze: #8D6E63; --whisper-gray: #F5F3F0;
+	}
+	
+	* {
+		margin: 0; padding: 0; box-sizing: border-box;
+	}
+	
+	body {
+		font-family: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: var(--deep-charcoal); background: var(--pearl-white);
+	}
+	
+	.container {
+		max-width: 1200px; margin: 0 auto; padding: clamp(20px, 4vw, 40px);
+	}
+	
+	.section {
+		margin: clamp(30px, 6vw, 60px) 0; padding: clamp(25px, 5vw, 40px); border-radius: clamp(16px, 3vw, 24px); background: var(--soft-cream); border: 1px solid #E8E3DD; box-shadow: 0 8px 32px rgba(139, 115, 85, 0.08);
+	}
+	
+	.section-title {
+		font-size: clamp(20px, 4.5vw, 32px); font-weight: 800; color: var(--warm-taupe); text-align: center; margin-bottom: clamp(20px, 4vw, 30px); line-height: 1.3; letter-spacing: -0.02em;
+	}
+	
+	.section-subtitle {
+		font-size: clamp(16px, 3.5vw, 22px); font-weight: 700; color: var(--sage-green); margin-bottom: clamp(12px, 2.5vw, 18px); line-height: 1.4; text-align: left;
+	}
+	
+	.hero-section {
+		background: linear-gradient(135deg, var(--warm-taupe) 0%, var(--heritage-bronze) 100%); color: var(--pearl-white); text-align: center; padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 40px); border-radius: clamp(20px, 4vw, 30px); margin-bottom: clamp(40px, 6vw, 60px); position: relative; overflow: hidden;
+	}
+	
+	.hero-section::before {
+		content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>'); animation: float 20s infinite linear;
+	}
+	
+	@keyframes float {
+		0% {
+			transform: translateY(0) rotate(0deg);
+		}
+		100% {
+			transform: translateY(-100px) rotate(360deg);
+		}
+	}
+	
+	.hero-title {
+		font-size: clamp(24px, 6vw, 48px); font-weight: 900; margin-bottom: clamp(15px, 3vw, 25px); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); line-height: 1.2;
+	}
+	
+	.hero-subtitle {
+		font-size: clamp(16px, 3.5vw, 24px); font-weight: 500; margin-bottom: clamp(25px, 5vw, 40px); opacity: 0.95; line-height: 1.5;
+	}
+	/* 이미지 섹션 - 확실한 가운데 정렬 */
+	
+	.image-section {
+		margin: clamp(30px, 5vw, 50px) 0; text-align: center; width: 100%; display: flex; justify-content: center; align-items: center;
+	}
+	
+	.image-section img {
+		max-width: 100%; height: auto; border-radius: clamp(8px, 2vw, 12px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto;
+	}
+	
+	.taste-card {
+		background: var(--pearl-white); padding: clamp(20px, 4vw, 30px); border-radius: clamp(12px, 2.5vw, 18px); border-left: 4px solid var(--golden-amber); margin: clamp(15px, 3vw, 20px) 0; transition: all 0.3s ease; position: relative; overflow: hidden; text-align: left;
+	}
+	
+	.taste-card::before {
+		content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent); transition: all 0.6s ease;
+	}
+	
+	.taste-card:hover::before {
+		left: 100%;
+	}
+	
+	.taste-card:hover {
+		transform: translateY(-3px); box-shadow: 0 12px 40px rgba(139, 115, 85, 0.15); border-left-color: var(--warm-taupe);
+	}
+	
+	.taste-profile {
+		display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: clamp(20px, 4vw, 30px); margin: clamp(25px, 5vw, 35px) 0;
+	}
+	
+	.profile-card {
+		background: var(--pearl-white); padding: clamp(20px, 4vw, 25px); border-radius: clamp(12px, 2.5vw, 16px); text-align: center; position: relative; border: 1px solid rgba(156, 175, 136, 0.2);
+	}
+	
+	.profile-icon {
+		font-size: clamp(28px, 6vw, 40px); margin-bottom: clamp(12px, 2.5vw, 16px); color: var(--golden-amber);
+	}
+	
+	.grid-2 {
+		display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(20px, 4vw, 30px);
+	}
+	
+	.grid-3 {
+		display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: clamp(15px, 3vw, 25px);
+	}
+	
+	.highlight-box {
+		background: linear-gradient(135deg, #FFF8E1, #F5F0E1); border: 2px solid var(--golden-amber); border-radius: clamp(12px, 2.5vw, 18px); padding: clamp(20px, 4vw, 30px); margin: clamp(20px, 4vw, 30px) 0; text-align: center; position: relative;
+	}
+	
+	.highlight-box::before {
+		content: '✨'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--golden-amber); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px;
+	}
+	
+	.checklist {
+		list-style: none; padding: 0; text-align: left;
+	}
+	
+	.checklist li {
+		padding: clamp(8px, 1.5vw, 12px) 0; position: relative; padding-left: clamp(30px, 6vw, 40px); font-size: clamp(14px, 2.8vw, 16px); line-height: 1.6; text-align: left;
+	}
+	
+	.checklist li:before {
+		content: "🌿"; position: absolute; left: 0; font-size: clamp(16px, 3vw, 18px);
+	}
+	
+	.michelin-quote {
+		background: var(--deep-charcoal); color: var(--pearl-white); padding: clamp(30px, 6vw, 50px); border-radius: clamp(16px, 3vw, 24px); text-align: center; margin: clamp(40px, 6vw, 60px) 0; position: relative; overflow: hidden;
+	}
+	
+	.michelin-quote::before {
+		content: '"'; font-size: clamp(60px, 12vw, 120px); position: absolute; top: -20px; left: 20px; opacity: 0.2; font-family: serif;
+	}
+	
+	.quote-text {
+		font-size: clamp(18px, 3.5vw, 26px); font-weight: 500; line-height: 1.6; font-style: italic; position: relative; z-index: 1;
+	}
+	
+	.quote-author {
+		font-size: clamp(14px, 2.5vw, 16px); margin-top: clamp(15px, 3vw, 20px); opacity: 0.8;
+	}
+	/* 업체 정보 섹션 - 완벽한 왼쪽 정렬 */
+	
+	.company-info {
+		background: var(--whisper-gray); padding: clamp(25px, 5vw, 35px); border-radius: clamp(12px, 2.5vw, 18px); margin: clamp(20px, 4vw, 30px) 0;
+	}
+	
+	.company-info-item {
+		display: flex; align-items: flex-start; margin-bottom: 12px; text-align: left; width: 100%;
+	}
+	
+	.company-label {
+		width: 120px; font-weight: 700; color: var(--warm-taupe); flex-shrink: 0; text-align: left; font-size: clamp(13px, 2.5vw, 15px);
+	}
+	
+	.company-colon {
+		margin: 0 8px; color: var(--sage-green); font-weight: 600; flex-shrink: 0;
+	}
+	
+	.company-value {
+		flex: 1; color: var(--deep-charcoal); line-height: 1.5; text-align: left; font-size: clamp(13px, 2.5vw, 15px);
+	}
+	
+	.company-section-title {
+		font-size: clamp(16px, 3.2vw, 18px); font-weight: 700; margin-bottom: 15px; color: var(--warm-taupe); text-align: center;
+	}
+	
+	.final-cta {
+		background: linear-gradient(135deg, var(--sage-green) 0%, var(--warm-taupe) 100%); color: var(--pearl-white); text-align: center; padding: clamp(40px, 6vw, 60px); border-radius: clamp(20px, 4vw, 30px); margin: clamp(40px, 6vw, 60px) 0;
+	}
+	
+	.cta-title {
+		font-size: clamp(24px, 5vw, 36px); font-weight: 900; margin-bottom: clamp(15px, 3vw, 20px);
+	}
+	
+	.cta-subtitle {
+		font-size: clamp(16px, 3vw, 20px); margin-bottom: clamp(25px, 5vw, 35px); opacity: 0.95;
+	}
+	
+	.stats-grid {
+		display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(15px, 3vw, 20px); margin: clamp(25px, 5vw, 35px) 0;
+	}
+	
+	.stat-item {
+		background: rgba(255, 255, 255, 0.15); padding: clamp(15px, 3vw, 20px); border-radius: clamp(8px, 1.5vw, 12px); text-align: center;
+	}
+	
+	.stat-number {
+		font-size: clamp(20px, 4vw, 28px); font-weight: 900; display: block;
+	}
+	
+	.stat-label {
+		font-size: clamp(12px, 2.5vw, 14px); opacity: 0.9;
+	}
+	/* 텍스트 정렬 통일 */
+	
+	.text-left {
+		text-align: left;
+	}
+	
+	.text-content {
+		font-size: clamp(15px, 3vw, 17px); line-height: 1.8; margin-bottom: 15px; text-align: left;
+	}
+	
+	@media (max-width: 768px) {
+		.container {
+			padding: 15px;
+		}
+		.grid-2 {
+			grid-template-columns: 1fr;
+		}
+		.taste-profile {
+			grid-template-columns: 1fr;
+		}
+		.company-label {
+			width: 100px;
+		}
+	}
+
+</style>
+
+
+<!-- 1. 임팩트 존 -->
+<div class="container">
+<div class="hero-section">
+
+<h1 class="hero-title">🥬 반찬단지 궁채절임 1kg</h1>
+
+<p class="hero-subtitle">40년 장인이 빚어낸 발효의 교향곡
+<br>미슐랭이 인정한 오독오독의 예술</p>
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number">40년</span>
+<span class="stat-label">전통 장인 기법</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">1kg</span>
+<span class="stat-label">프리미엄 대용량</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">5층</span>
+<span class="stat-label">복합 맛의 레이어</span>
+</div>
+</div>
+</div>
+
+<!-- 메인 정보 이미지 -->
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-main.gif" alt="반찬단지 궁채절임 메인 정보" loading="lazy" class="fr-draggable">
+</div>
+
+<!-- 2. 신뢰 강화 존 -->
+<div class="michelin-quote">
+
+<p class="quote-text">"첫 한 입에 펼쳐지는 복합적 레이어가 혀끝에서 춤을 춘다. 이것은 단순한 절임이 아닌, 시간이 빚어낸 발효의 교향곡이다."</p>
+
+<p class="quote-author">- 만원요리 최씨남매, 유튜버 요리 전문가</p>
+</div>
+
+<!-- 공지사항 이미지 -->
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-1.jpg" alt="배송 관련 공지사항" loading="lazy" class="fr-draggable">
+</div>
+
+<!-- 3. 제품 이해 존 -->
+<div class="section">
+
+<h2 class="section-title">🎭 궁채절임, 그 신비로운 정체성</h2>
+<div class="taste-card">
+
+<h3 class="section-subtitle">🌱 궁채(宮菜)의 비밀</h3>
+
+<p class="text-content">
+궁궐에서 먹던 귀한 채소, 궁채. 무순을 정성스럽게 말린 이 특별한 재료는 조선시대 왕실의 상궁들이 즐겨 먹던 비밀의 맛입니다.
+</p>
+
+<p style="color: var(--sage-green);" class="text-content">
+<strong>왜 오독오독할까?</strong> 섬유질이 살아있는 줄기상추의 특별한 구조 때문입니다. 마치 자연이 선사한 천연 스프링처럼, 씹을 때마다 되살아나는 식감의 마법을 경험하세요.
+</p>
+</div>
+
+<div class="taste-profile">
+<div class="profile-card">
+<div class="profile-icon">🎵</div>
+
+<h4 style="font-weight: 700; margin-bottom: 10px;">첫 번째 악장</h4>
+
+<p style="font-size: 14px;">간장의 깊은 저음이 혀끝을 감싸며</p>
+</div>
+<div class="profile-card">
+<div class="profile-icon">🍯</div>
+
+<h4 style="font-weight: 700; margin-bottom: 10px;">두 번째 악장</h4>
+
+<p style="font-size: 14px;">매실액의 은은한 단조가 흘러나오고</p>
+</div>
+<div class="profile-card">
+<div class="profile-icon">🍋</div>
+
+<h4 style="font-weight: 700; margin-bottom: 10px;">세 번째 악장</h4>
+
+<p style="font-size: 14px;">식초의 상큼한 고음이 조화를 이루며</p>
+</div>
+<div class="profile-card">
+<div class="profile-icon">🌊</div>
+
+<h4 style="font-weight: 700; margin-bottom: 10px;">피날레</h4>
+
+<p style="font-size: 14px;">발효의 깊은 여운이 목구멍 끝까지</p>
+</div>
+</div>
+</div>
+
+<!-- 회사정보 이미지 -->
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-2.jpg" alt="제조사 품질 인증 정보" loading="lazy" class="fr-draggable">
+</div>
+
+<!-- 4. 핵심 가치 증명 존 -->
+<div class="section">
+
+<h2 class="section-title">💎 Why? 왜 이 궁채절임이어야 할까요?</h2>
+<div class="grid-2">
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--golden-amber); margin-right: 12px;" class="fas fa-crown"></i>
+
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">40년 장인의 손맛</h3>
+</div>
+
+<p class="text-content">
+세 번의 끓임과 네 번의 간 조절. 시간이 만든 발효의 깊이가 첫 한 입부터 다른 차원의 감동을 선사합니다.
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--golden-amber); margin-right: 12px;" class="fas fa-certificate"></i>
+
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">국제 인증 품질</h3>
+</div>
+
+<p class="text-content">
+HACCP, ISO22000, FSSC22000, BRC FOOD 4관왕!
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--golden-amber); margin-right: 12px;" class="fas fa-balance-scale"></i>
+
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">완벽한 맛의 밸런스</h3>
+</div>
+
+<p class="text-content">
+짠맛, 단맛, 신맛, 감칠맛의 황금비율. 마치 오케스트라처럼 조화롭게 어우러진 복합적 레이어를 경험하세요.
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+<i style="font-size: 24px; color: var(--golden-amber); margin-right: 12px;" class="fas fa-weight"></i>
+
+<h3 style="font-size: clamp(16px, 3.5vw, 20px); font-weight: 700;">넉넉한 1kg 대용량</h3>
+</div>
+
+<p class="text-content">
+4인 가족 기준 3주 이상! 매일 먹어도 질리지 않는 깊은 맛과 경제적인 대용량으로 만족도 200%입니다.
+</p>
+</div>
+</div>
+</div>
+
+<!-- 배송정보 이미지 -->
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-3.jpg" alt="콜드체인 배송 시스템" loading="lazy" class="fr-draggable">
+</div>
+
+<!-- 5. 사용법 & 활용법 존 -->
+<div class="section">
+
+<h2 class="section-title">🍽️ How? 이렇게 즐기세요!</h2>
+<div class="highlight-box">
+
+<h3 style="font-size: clamp(18px, 3.5vw, 22px); font-weight: 800; margin-bottom: 15px; color: var(--warm-taupe);">
+<i style="color: var(--golden-amber); margin-right: 8px;" class="fas fa-lightbulb"></i> 궁채절임 미슐랭 스타일 활용법
+</h3>
+
+<p style="font-size: clamp(15px, 3vw, 17px); line-height: 1.7;">
+단순히 반찬이 아닌, 요리의 품격을 한 단계 높여주는 시크릿 소스
+</p>
+</div>
+
+<div class="grid-2">
+<div class="taste-card">
+
+<h3 class="section-subtitle">
+<i style="margin-right: 8px;" class="fas fa-utensils"></i>클래식 스타일
+</h3>
+
+<ul class="checklist">
+<li>갓 지은 따뜻한 쌀밥과 함께 (한국인의 소울푸드)</li>
+<li>육류 요리의 느끼함을 중화시키는 완벽한 파트너</li>
+<li>술안주로 한 접시 (오독오독 씹는 재미가 일품)</li>
+<li>국물 요리에 고명으로 올려 식감의 포인트 연출</li>
+</ul>
+</div>
+
+<div class="taste-card">
+
+<h3 class="section-subtitle">
+<i style="margin-right: 8px;" class="fas fa-star"></i>시그니처 레시피
+</h3>
+
+<ul class="checklist">
+<li>궁채절임 비빔밥 (고급 레스토랑 부럽지 않은 한 그릇)</li>
+<li>샐러드 토핑으로 활용 (서양식과 한식의 퓨전)</li>
+<li>볶음밥에 넣어 감칠맛 업그레이드</li>
+<li>김밥 속재료로 특별함 더하기</li>
+</ul>
+</div>
+</div>
+
+<div style="background: var(--sage-green); margin: 30px 0;" class="michelin-quote">
+
+<p style="font-size: clamp(16px, 3.2vw, 20px);" class="quote-text">
+"진짜 맛있는 건 복잡하지 않아요. 이 궁채절임만 있으면 모든 음식이 특별해져요!"
+</p>
+
+<p class="quote-author">- 만원요리 최씨남매의 궁채절임 꿀팁</p>
+</div>
+</div>
+
+<!-- 제품상세정보 이미지 -->
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-4.jpg" alt="제품 상세 정보 및 품목제조보고" loading="lazy" class="fr-draggable">
+</div>
+
+<!-- 6. 소셜 프루프 존 -->
+<div class="section">
+
+<h2 class="section-title">💬 실제 고객들의 진짜 반응</h2>
+<div class="grid-3">
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 12px;">
+<div style="background: var(--golden-amber); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-weight: bold;">김</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">김○○님</div>
+<div style="color: var(--golden-amber); font-size: 12px;">★★★★★</div>
+</div>
+</div>
+
+<p style="font-size: clamp(13px, 2.6vw, 15px); line-height: 1.6; font-style: italic; text-align: left;">
+"아이들이 편식하는데 이 궁채절임만큼은 정말 잘 먹어요. 오독오독 씹는 소리만 들어도 기분이 좋아져요!"
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 12px;">
+<div style="background: var(--sage-green); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-weight: bold;">이</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">이○○님</div>
+<div style="color: var(--golden-amber); font-size: 12px;">★★★★★</div>
+</div>
+</div>
+
+<p style="font-size: clamp(13px, 2.6vw, 15px); line-height: 1.6; font-style: italic; text-align: left;">
+"고급 일식집에서 먹던 그 맛이에요! 집에서 이런 퀄리티를 경험할 수 있다니 정말 놀라웠습니다."
+</p>
+</div>
+
+<div class="taste-card">
+<div style="display: flex; align-items: center; margin-bottom: 12px;">
+<div style="background: var(--warm-taupe); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-weight: bold;">박</div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">박○○님</div>
+<div style="color: var(--golden-amber); font-size: 12px;">★★★★★</div>
+</div>
+</div>
+
+<p style="font-size: clamp(13px, 2.6vw, 15px); line-height: 1.6; font-style: italic; text-align: left;">
+"다른 절임류와는 완전히 다른 차원의 맛이에요. 한 번 먹으면 계속 생각나는 중독성 있는 맛!"
+</p>
+</div>
+</div>
+
+<!-- 실제 제품 관련 이미지들 -->
+<div style="margin-top: 40px;" class="grid-2">
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-6.jpg" alt="고객 실제 사용 사례 1" loading="lazy" class="fr-draggable">
+</div>
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-7.jpg" alt="고객 실제 사용 사례 2" loading="lazy" class="fr-draggable">
+</div>
+</div>
+</div>
+
+<!-- 배송안내 이미지 -->
+<div class="image-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/goongche-1kg/goongchae-5.jpg" alt="배송안내 및 교환 관련 정보" loading="lazy" class="fr-draggable">
+</div>
+
+<!-- 7. 최종 구매 제안 존 -->
+<div class="final-cta">
+
+<h2 class="cta-title">🎯 지금 바로 경험하세요!</h2>
+
+<p class="cta-subtitle">
+40년 장인이 빚어낸 발효의 교향곡
+<br> 미슐랭이 인정한 오독오독의 예술을 집에서
+</p>
+<div class="stats-grid">
+<div class="stat-item">
+<span class="stat-number">✅</span>
+<span class="stat-label">당일 발송</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">🚚</span>
+<span class="stat-label">콜드체인 배송</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">💰</span>
+<span class="stat-label">합배송 혜택</span>
+</div>
+<div class="stat-item">
+<span class="stat-number">🔒</span>
+<span class="stat-label">품질 보장</span>
+</div>
+</div>
+<div style="background: rgba(255,255,255,0.15); padding: clamp(20px, 4vw, 25px); border-radius: 12px; margin-top: 25px;">
+
+<p style="font-size: clamp(16px, 3.2vw, 18px); font-weight: 600; margin-bottom: 10px;">
+<i style="margin-right: 8px;" class="fas fa-clock"></i> 오후 2시 이전 주문 시 당일 발송
+</p>
+
+<p style="font-size: clamp(14px, 2.8vw, 16px); opacity: 0.9;">
+반찬단지 다른 제품과 함께 주문하시면 배송비 절약 혜택까지!
+</p>
+</div>
+</div>
+
+<!-- 8. 업체 정보 존 (NEW) -->
+<div class="section">
+
+<h2 class="section-title">🏢 업체 정보</h2>
+<div class="grid-2">
+<!-- 판매자 정보 (고정) -->
+<div class="company-info">
+
+<h3 class="company-section-title">판매자 정보</h3>
+<div class="company-info-item">
+<span class="company-label">상호명</span>
+<span class="company-colon">:</span>
+<span class="company-value">㈜값진한끼</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">사업자등록번호</span>
+<span class="company-colon">:</span>
+<span class="company-value">434-86-03863</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">대표자명</span>
+<span class="company-colon">:</span>
+<span class="company-value">고혜숙</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">주소</span>
+<span class="company-colon">:</span>
+<span class="company-value">경기도 파주시 경의로 1246, 11층 1105-19호</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">연락처</span>
+<span class="company-colon">:</span>
+<span class="company-value">070-8835-2885</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">이메일</span>
+<span class="company-colon">:</span>
+<span class="company-value">we@manwonyori.com</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">통신판매업</span>
+<span class="company-colon">:</span>
+<span class="company-value">2025-경기파주-2195호</span>
+</div>
+</div>
+
+<!-- 제조원 정보 (혼합 방식) -->
+<div class="company-info">
+
+<h3 class="company-section-title">제조원 정보</h3>
+<div class="company-info-item">
+<span class="company-label">제조사</span>
+<span class="company-colon">:</span>
+<span class="company-value">40년 전통 HMR 전문 기업</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">품질 인증</span>
+<span class="company-colon">:</span>
+<span class="company-value">HACCP, ISO22000, FSSC22000, BRC FOOD</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">용량</span>
+<span class="company-colon">:</span>
+<span class="company-value">1kg (약 3-4주 분량)</span>
+</div>
+<div class="company-info-item">
+<span class="company-label">보관방법</span>
+<span class="company-colon">:</span>
+<span class="company-value">냉장보관 (0~10℃)</span>
+</div>
+<div style="margin-top: 15px; padding: 10px; background: var(--whisper-gray); border-radius: 8px; text-align: center;">
+
+<p style="font-size: 12px; color: var(--sage-green); font-weight: 600;">
+[VISUAL: 상세 제조사 정보는 상품 이미지 참조]
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 9. 기본 정보 존 -->
+<div class="section">
+
+<h2 class="section-title">📋 제품 기본 정보</h2>
+<div style="text-align: center; padding: 20px; background: var(--whisper-gray); border-radius: 12px;">
+
+<p style="font-size: clamp(14px, 2.8vw, 16px); color: var(--deep-charcoal); line-height: 1.7; text-align: left;">
+<i style="color: var(--golden-amber); margin-right: 8px;" class="fas fa-heart"></i>
+<strong>만원요리 최씨남매와 함께하는 홈쿡의 즐거움!</strong>
+<br> 40년 장인 정신으로 만든 궁채절임으로 특별한 한 끼를 완성하세요.
+</p>
+</div>
+</div>
+</div>

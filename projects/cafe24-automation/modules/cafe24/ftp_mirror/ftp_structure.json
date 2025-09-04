@@ -1,0 +1,58 @@
+{
+  "mobile3": {
+    "type": "directory",
+    "items": 17
+  },
+  "base": {
+    "type": "directory",
+    "items": 24
+  },
+  "skin8": {
+    "type": "directory",
+    "items": 20
+  },
+  "skin2": {
+    "type": "directory",
+    "items": []
+  },
+  "mobile4": {
+    "type": "directory",
+    "items": 18
+  },
+  "mobile": {
+    "type": "directory",
+    "items": 19
+  },
+  "skin6": {
+    "type": "directory",
+    "items": 24
+  },
+  "skin7": {
+    "type": "directory",
+    "items": 24
+  },
+  "mobile2": {
+    "type": "directory",
+    "items": 18
+  },
+  "skin3": {
+    "type": "directory",
+    "items": 24
+  },
+  "skin1": {
+    "type": "directory",
+    "items": 24
+  },
+  "skin4": {
+    "type": "directory",
+    "items": 24
+  },
+  "skin5": {
+    "type": "directory",
+    "items": 24
+  },
+  "web": {
+    "type": "directory",
+    "items": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "시작": "2025-08-29T17:35:59.447463",
+  "유지": [
+    "MASTER_CONTROL.py",
+    "README.md",
+    "TODO.md",
+    "FOLDER_STRUCTURE.md",
+    ".env",
+    ".gitignore",
+    ".claude.json"
+  ],
+  "이동": [
+    ".claude.json.backup"
+  ],
+  "삭제": [],
+  "통합": [
+    "claude_launcher.bat"
+  ],
+  "완료": "2025-08-29T17:35:59.467418"
+}

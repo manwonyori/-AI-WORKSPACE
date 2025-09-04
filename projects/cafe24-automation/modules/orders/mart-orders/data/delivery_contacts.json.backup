@@ -1,0 +1,22 @@
+{
+  "웰빙푸드마켓": {
+    "company_name": "웰빙 푸드마켓",
+    "address": {
+      "full_address": "경기 시흥시 장현능곡로 155 시흥 플랑드르 지하 1층",
+      "street": "장현능곡로 155",
+      "city": "시흥시",
+      "province": "경기",
+      "building": "시흥 플랑드르",
+      "floor": "지하 1층",
+      "location_name": "웰빙 푸드마켓"
+    },
+    "contact_person": {
+      "name": "윤철",
+      "position": "대리",
+      "phone": "010-7727-8009"
+    },
+    "registered_date": "2024-01-28",
+    "status": "active",
+    "notes": "배송 담당자 정보"
+  }
+}

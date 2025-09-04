@@ -1,0 +1,408 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해선정 빅레드폭립 1KG - 폭립계 가성비 혁명! 만원요리 최씨남매 단독공구</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            font-family: var(--font-primary);
+        }
+        
+        .gradient-rose {
+            background: linear-gradient(135deg, var(--deep-rose), #E53E3E);
+        }
+        
+        .gradient-gold {
+            background: linear-gradient(135deg, var(--saffron-gold), #F6AD55);
+        }
+        
+        .animate-pulse-color {
+            animation: pulseColor 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulseColor {
+            from { color: var(--deep-rose); }
+            to { color: var(--saffron-gold); }
+        }
+        
+        .bounce-in {
+            animation: bounceIn 0.8s ease-out;
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .section-border {
+            border: 2px solid var(--saffron-gold);
+            border-radius: 12px;
+        }
+        
+        .price-highlight {
+            background: linear-gradient(90deg, var(--deep-rose), #E53E3E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .trust-badge {
+            background: linear-gradient(135deg, var(--saffron-gold), #F6AD55);
+            border-radius: 50px;
+            padding: 8px 16px;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .competitive-advantage {
+            background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+            border-left: 4px solid var(--saffron-gold);
+        }
+    </style>
+
+
+    <!-- Strategic Header -->
+    <header class="gradient-gold text-white py-8 px-4 text-center section-border mx-4 mt-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-sm font-semibold mb-2">
+                <i class="fas fa-crown"></i> 만원요리 최씨남매 X 해선정 단독 공구
+            </div>
+            <h1 class="text-3xl md:text-4xl font-black mb-4 animate-pulse-color">
+                🔥 폭립계 가성비 혁명! 해선정 빅레드폭립
+            </h1>
+            <p class="text-xl md:text-2xl font-bold mb-6">
+                미국산 등갈비 63.79% 함량의 진정한 폭립
+            </p>
+            <div class="bg-white text-gray-800 rounded-lg p-4 inline-block bounce-in">
+                <div class="text-sm text-gray-500 line-through mb-1">정가 XX,XXX원</div>
+                <div class="text-2xl font-black price-highlight mb-2">
+                    특가 진행중! <span class="bg-red-500 text-white px-2 py-1 rounded text-sm ml-2">🔥 한정특가</span>
+                </div>
+                <div class="text-sm text-gray-600">1kg 대용량으로 3-4인분 넉넉</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Why Section -->
+        <section class="mb-12 bg-white rounded-lg shadow-lg p-6 section-border">
+            <h2 style="color: var(--deep-rose);" class="text-2xl font-bold text-center mb-8">
+                🤔 Why? 왜 해선정 빅레드폭립이어야 할까요?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="competitive-advantage p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i style="color: var(--saffron-gold);" class="fas fa-certificate text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">검증된 원재료 함량</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        미국산 돼지등갈비 <strong style="color: var(--deep-rose);">63.79%</strong> 함량으로 
+                        시장 평균을 뛰어넘는 실속 있는 구성
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>투명한 함량 공개</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>HACCP 인증 완료</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>품질 검증 완료</li>
+                    </ul>
+                </div>
+                
+                <div class="competitive-advantage p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i style="color: var(--saffron-gold);" class="fas fa-utensils text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">간편한 조리 방식</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        쪽갈비 형태로 썰어진 <strong>슬라이스 타입</strong>으로 
+                        조리 시간 단축과 균등한 익힘 보장
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fas fa-clock text-blue-500 mr-2"></i>해동 5분 + 조리 10분</li>
+                        <li><i class="fas fa-fire text-red-500 mr-2"></i>팬, 오븐, 전자레인지 모두 OK</li>
+                        <li><i class="fas fa-thumbs-up text-green-500 mr-2"></i>조리 실패 확률 0%</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                <p class="text-sm text-gray-700">
+                    <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
+                    <strong>시장 비교:</strong> 타 브랜드 대비 동등한 품질에서 차별화된 가성비를 제공합니다. 
+                    C*** 브랜드 대비 합리적인 가격, B*** 브랜드 대비 대용량 구성으로 
+                    고객 만족도를 극대화했습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Wow Section -->
+        <section class="mb-12 gradient-rose text-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold text-center mb-8">
+                💰 배송비 절약의 기회! 🚚
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-truck mr-2"></i>스마트 배송 시스템
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle mr-3"></i>
+                            같은 공장 제품 함께 주문 시 배송비 절약
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-snowflake mr-3"></i>
+                            전문 냉동포장으로 품질 보장
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3"></i>
+                            평일 오후 1시 이전 주문 시 당일 발송
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-gift mr-2"></i>추가 혜택 안내
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-plus-circle mr-3"></i>
+                            카카오채널 추가 시 특별 혜택
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-box mr-3"></i>
+                            4kg 이상 주문 시 추가 배송비 3,500원
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-lightbulb mr-3"></i>
+                            TIP: 다른 제품과 함께 주문 권장
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Section -->
+        <section class="mb-12 bg-white rounded-lg shadow-lg p-6 section-border">
+            <h2 style="color: var(--deep-rose);" class="text-2xl font-bold text-center mb-8">
+                🍳 How? 이렇게 활용하세요!
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div style="border-color: var(--deep-rose);" class="border-2 rounded-lg p-6">
+                    <h3 style="color: var(--deep-rose);" class="text-xl font-bold mb-4">
+                        <i class="fas fa-campground mr-2"></i>캠핑 &amp; 야외활동
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-fire text-red-500 mr-2"></i>숯불구이로 진짜 바베큐 맛</li>
+                        <li><i class="fas fa-users text-blue-500 mr-2"></i>3-4명이 함께 나눠먹기 딱 좋은 양</li>
+                        <li><i class="fas fa-camera text-purple-500 mr-2"></i>SNS 인증샷 필수 아이템</li>
+                        <li><i class="fas fa-clock text-green-500 mr-2"></i>간편 조리로 더 많은 시간 여유</li>
+                    </ul>
+                </div>
+                
+                <div style="border-color: var(--saffron-gold);" class="border-2 rounded-lg p-6">
+                    <h3 style="color: var(--saffron-gold);" class="text-xl font-bold mb-4">
+                        <i class="fas fa-home mr-2"></i>홈파티 &amp; 일상
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-wine-glass text-red-500 mr-2"></i>술안주로 완벽한 조화</li>
+                        <li><i class="fas fa-utensils text-blue-500 mr-2"></i>팬 구이로 간단하게</li>
+                        <li><i class="fas fa-heart text-pink-500 mr-2"></i>가족 저녁 식사 메인 요리</li>
+                        <li><i class="fas fa-microwave text-gray-500 mr-2"></i>전자레인지 조리도 가능</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-50 rounded-lg p-6">
+                <h4 class="text-lg font-bold mb-4 text-center">
+                    <i style="color: var(--saffron-gold);" class="fas fa-chef-hat mr-2"></i>
+                    추천 조리법
+                </h4>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="text-center p-4 bg-white rounded-lg">
+                        <i style="color: var(--deep-rose);" class="fas fa-microwave text-2xl mb-2"></i>
+                        <h5 class="font-bold mb-2">전자레인지</h5>
+                        <p class="text-gray-600">해동 후 2-3분씩 뒤집어가며 가열</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg">
+                        <i style="color: var(--saffron-gold);" class="fas fa-fire text-2xl mb-2"></i>
+                        <h5 class="font-bold mb-2">팬 구이</h5>
+                        <p class="text-gray-600">중약불에서 앞뒤 5분씩 구이</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg">
+                        <i style="color: var(--medium-gray);" class="fas fa-temperature-high text-2xl mb-2"></i>
+                        <h5 class="font-bold mb-2">오븐 조리</h5>
+                        <p class="text-gray-600">200℃에서 15-20분 조리</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="mb-12 bg-white rounded-lg shadow-lg p-6 section-border">
+            <h2 style="color: var(--deep-rose);" class="text-2xl font-bold text-center mb-8">
+                🛡️ Trust! 믿을 수 있는 이유
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="trust-badge inline-block mb-4">
+                        <i class="fas fa-certificate mr-2"></i>HACCP 인증
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">안전 인증 완료</h3>
+                    <p class="text-gray-600 text-sm">
+                        식품안전관리인증기준(HACCP) 인증으로 
+                        위생적이고 안전한 제조과정 보장
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="trust-badge inline-block mb-4">
+                        <i class="fas fa-industry mr-2"></i>신뢰 제조사
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">검증된 제조사</h3>
+                    <p class="text-gray-600 text-sm">
+                        (주)이목원<br>
+                        충북 음성군 삼성면 하이텍산단로 127<br>
+                        전문 제조시설에서 생산
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="trust-badge inline-block mb-4">
+                        <i class="fas fa-youtube mr-2"></i>유튜버 검증
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">만원요리 인증</h3>
+                    <p class="text-gray-600 text-sm">
+                        만원요리 최씨남매 채널에서 
+                        직접 테스트하고 검증한 제품으로 
+                        품질과 맛 보장
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-8 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
+                <h4 class="font-bold mb-2">
+                    <i class="fas fa-shield-alt text-blue-500 mr-2"></i>
+                    품질 보증 약속
+                </h4>
+                <p class="text-sm text-gray-700">
+                    제품에 이상이 있을 경우 즉시 교환/환불 처리해드립니다. 
+                    고객센터: 080-055-5292 (평일 9시-18시)
+                </p>
+            </div>
+        </section>
+
+        <!-- Product Detail Images -->
+        <section class="mb-12">
+            <h2 style="color: var(--deep-rose);" class="text-2xl font-bold text-center mb-8">
+                📷 상세 제품 정보
+            </h2>
+            
+            <div class="space-y-6">
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-1.jpg" alt="해선정 빅레드폭립 메인 제품 이미지" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-2.jpg" alt="해선정 빅레드폭립 상세 포장 정보" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-3.jpg" alt="해선정 빅레드폭립 조리법 안내" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-4.jpg" alt="해선정 빅레드폭립 자주묻는질문" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-5.jpg" alt="해선정 빅레드폭립 상품정보제공고시" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-6.jpg" alt="해선정 빅레드폭립 배송 및 주의사항" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/rip-1kg/rip-8.jpg" alt="냉동택배 관련 주의사항" class="max-w-full h-auto rounded-lg shadow-lg mx-auto fr-draggable">
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Information -->
+        <section class="mb-12 bg-gray-100 rounded-lg p-6">
+            <h2 class="text-xl font-bold mb-6 text-center">
+                <i style="color: var(--deep-rose);" class="fas fa-building mr-2"></i>
+                회사 정보
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="bg-white rounded-lg p-4">
+                    <h3 style="color: var(--saffron-gold);" class="font-bold mb-3">
+                        <i class="fas fa-store mr-2"></i>판매원
+                    </h3>
+                    <div class="space-y-1 text-gray-700">
+                        <p><strong>상호명:</strong> ㈜값진한끼</p>
+                        <p><strong>사업자등록번호:</strong> 434-86-03863</p>
+                        <p><strong>대표자명:</strong> 고혜숙</p>
+                        <p><strong>주소:</strong> 경기도 파주시 경의로 1246, 11층 1105-19호</p>
+                        <p><strong>연락처:</strong> 070-8835-2885</p>
+                        <p><strong>이메일:</strong> we@manwonyori.com</p>
+                        <p><strong>통신판매업 신고번호:</strong> 2025-경기파주-2195호</p>
+                        <p><strong>사이트명:</strong> 만원요리 최씨남매</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4">
+                    <h3 style="color: var(--saffron-gold);" class="font-bold mb-3">
+                        <i class="fas fa-industry mr-2"></i>제조원
+                    </h3>
+                    <div class="space-y-1 text-gray-700">
+                        <p><strong>제조사:</strong> (주)이목원</p>
+                        <p><strong>주소:</strong> 충북 음성군 삼성면 하이텍산단로 127</p>
+                        <p><strong>고객센터:</strong> 080-055-5292</p>
+                        <p><strong>인증:</strong> HACCP 인증 완료</p>
+                        <p><strong>품목:</strong> 냉동 갈비가공품</p>
+                        <p><strong>보관방법:</strong> -18℃ 이하 냉동보관</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                <p class="text-sm text-gray-700">
+                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                    <strong>중요:</strong> 제조사와 판매사는 다릅니다. 
+                    제품 문의는 고객센터(080-055-5292)로, 
+                    주문 관련 문의는 만원요리 최씨남매 고객센터(070-8835-2885)로 연락 부탁드립니다.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Final CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t p-4 z-50">
+        <div class="max-w-4xl mx-auto flex justify-center">
+            <button class="gradient-rose text-white px-8 py-4 rounded-lg font-bold text-lg transform hover:scale-105 transition-transform duration-200">
+                <i class="fas fa-shopping-cart mr-2"></i>
+                지금 주문하기
+            </button>
+        </div>
+    </div>

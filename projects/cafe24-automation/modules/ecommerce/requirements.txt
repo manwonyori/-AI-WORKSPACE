@@ -1,0 +1,7 @@
+# 필수 패키지
+python-dotenv==1.0.0
+
+# 선택 패키지 (AI 기능)
+openai>=1.0.0
+anthropic>=0.7.0
+google-generativeai>=0.3.0

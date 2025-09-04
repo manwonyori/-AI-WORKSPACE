@@ -1,0 +1,6 @@
+﻿product_no,status,product_code,product_name,price,processing_time,error_message
+339,failed,,,,5.19,데이터 추출 실패
+340,failed,,,,3.13,페이지 접근 실패
+341,failed,,,,3.12,페이지 접근 실패
+342,failed,,,,3.13,페이지 접근 실패
+343,failed,,,,3.15,페이지 접근 실패

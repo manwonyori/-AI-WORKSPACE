@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem-local": {
+      "command": "mcp-server-filesystem",
+      "args": [
+        "--root", "C:\\Users\\8899y",
+        "--allow-write"
+      ],
+      "env": {}
+    }
+  }
+}

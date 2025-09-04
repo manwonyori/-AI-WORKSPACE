@@ -1,0 +1,656 @@
+<center>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[최씨남매] 38만 유튜버 인생 고추무침 1kg - 만원요리</title>
+<meta name="description" content="38만 유튜버 '만원요리 최씨남매'의 바로 그 레시피! 아삭한 식감과 매콤새콤한 맛의 인생 고추무침. 삼겹살, 라면에 곁들이면 느끼함 제로. 지금 만원요리에서 압도적인 가성비로 만나보세요.">
+<meta name="keywords" content="고추무침, 밥도둑 반찬, 최씨남매 고추무침, 캠핑 반찬, 삼겹살 반찬, 맛있는 반찬, 만원요리, 가성비 반찬">
+<meta name="author" content="만원요리 최씨남매">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;family=Pretendard:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<style>
+ :root {
+  --font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  --saffron-gold: #E4A853;
+  --deep-rose: #C53030;
+  --deep-charcoal: #1F2937;
+  --pure-white: #FFFFFF;
+  --light-gray: #F9FAFB;
+  --medium-gray: #6B7280;
+  --border-gray: #E5E7EB;
+ }
+ 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+ }
+ 
+ body {
+  line-height: 1.6;
+  color: var(--deep-charcoal);
+  background: var(--pure-white);
+ }
+ 
+ .pepper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(15px, 3vw, 30px);
+  width: 100%;
+ }
+ 
+ .main-image {
+  width: 400px;
+  max-width: 400px;
+  height: auto;
+  margin: clamp(20px, 4vw, 30px) auto;
+  display: block;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+ }
+ 
+ @media (max-width: 768px) {
+  .main-image {
+  width: 300px;
+  max-width: 300px;
+  }
+ }
+ 
+ .section {
+  margin: clamp(20px, 4vw, 40px) 0;
+  padding: clamp(20px, 4vw, 30px);
+  border-radius: clamp(12px, 2vw, 20px);
+  background: var(--light-gray);
+  border: 2px solid var(--border-gray);
+  width: 100%;
+ }
+ 
+ .section-title {
+  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 800;
+  color: var(--deep-rose);
+  text-align: center;
+  margin-bottom: clamp(15px, 3vw, 25px);
+  line-height: 1.3;
+ }
+ 
+ .section-subtitle {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 700;
+  color: var(--saffron-gold);
+  margin-bottom: clamp(10px, 2vw, 15px);
+  line-height: 1.4;
+ }
+ 
+ .grid-container {
+  display: grid;
+  gap: clamp(15px, 3vw, 25px);
+  margin: clamp(15px, 3vw, 25px) 0;
+ }
+ 
+ .grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ }
+ 
+ .grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+ 
+ .card {
+  background: var(--pure-white);
+  padding: clamp(16px, 3vw, 25px);
+  border-radius: clamp(8px, 1.5vw, 15px);
+  border-left: 4px solid var(--deep-rose);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ .card-center {
+  background: var(--pure-white);
+  padding: clamp(16px, 3vw, 25px);
+  border-radius: clamp(8px, 1.5vw, 15px);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ 
+ .highlight-box {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: clamp(8px, 1.5vw, 12px);
+  padding: clamp(15px, 3vw, 25px);
+  margin: clamp(15px, 3vw, 25px) 0;
+  text-align: center;
+ }
+ 
+ .shipping-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(12px, 2vw, 20px);
+  max-width: 900px;
+  margin: 0 auto;
+ }
+ 
+ .shipping-item {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 15px);
+  padding: clamp(8px, 1.5vw, 12px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: clamp(8px, 1.5vw, 12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ .shipping-icon {
+  font-size: clamp(18px, 3vw, 22px);
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+ }
+ 
+ .shipping-text {
+  font-weight: 600;
+  font-size: clamp(13px, 2.5vw, 15px);
+  line-height: 1.4;
+  flex: 1;
+  text-align: left;
+ }
+ 
+ @media (max-width: 768px) {
+  .shipping-container {
+  grid-template-columns: 1fr;
+  gap: clamp(8px, 1.5vw, 12px);
+  }
+  .shipping-item {
+  padding: clamp(10px, 2vw, 12px);
+  }
+ }
+ 
+ .red-gradient {
+  background: linear-gradient(135deg, var(--deep-rose) 0%, #B91C1C 100%);
+  color: var(--pure-white);
+  padding: clamp(20px, 4vw, 35px);
+  border-radius: clamp(12px, 2vw, 20px);
+  margin: clamp(20px, 4vw, 40px) 0;
+ }
+ 
+ .checklist {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+ }
+ 
+ .checklist li {
+  padding: clamp(6px, 1.5vw, 10px) 0;
+  position: relative;
+  padding-left: clamp(25px, 5vw, 35px);
+  font-size: clamp(14px, 2.5vw, 16px);
+  line-height: 1.5;
+  text-align: left;
+ }
+ 
+ .checklist li:before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: clamp(14px, 2.5vw, 16px);
+ }
+ 
+ .company-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(8px, 2vw, 12px);
+  align-items: start;
+  font-size: clamp(13px, 2.5vw, 15px);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+ }
+ 
+ .company-label {
+  font-weight: 700;
+  color: var(--deep-charcoal);
+  white-space: nowrap;
+  min-width: fit-content;
+  text-align: left;
+ }
+ 
+ .company-value {
+  color: var(--medium-gray);
+  word-break: break-word;
+  text-align: left;
+ }
+ 
+ .animate-text {
+  background: linear-gradient(45deg, var(--deep-rose), var(--saffron-gold));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+ }
+ 
+ @keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+ }
+ 
+ .brand-header {
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 700;
+  color: var(--saffron-gold);
+  margin-bottom: clamp(12px, 2.5vw, 18px);
+  text-align: center;
+ }
+ 
+ .main-title {
+  font-size: clamp(20px, 4.5vw, 32px);
+  font-weight: 800;
+  margin-bottom: clamp(15px, 3vw, 25px);
+  line-height: 1.2;
+  text-align: center;
+ }
+ 
+ .text-content {
+  font-size: clamp(14px, 2.5vw, 16px);
+  line-height: 1.8;
+  text-align: left;
+ }
+ 
+ .highlight-text {
+  font-weight: 600;
+  color: #856404;
+  font-size: clamp(14px, 2.5vw, 16px);
+  line-height: 1.7;
+  text-align: left;
+ }
+ 
+ .card p {
+  text-align: left;
+ }
+ 
+ .card-center p {
+  text-align: center;
+ }
+ 
+ .icon-large {
+  font-size: clamp(36px, 8vw, 56px);
+  margin-bottom: clamp(12px, 2.5vw, 18px);
+ }
+ 
+ .mb-section {
+  margin-bottom: clamp(25px, 5vw, 45px);
+ }
+ 
+ .mt-section {
+  margin-top: clamp(25px, 5vw, 45px);
+ }
+ 
+ .product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: var(--pure-white);
+  border-radius: clamp(8px, 1.5vw, 12px);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .product-table th,
+ .product-table td {
+  padding: clamp(12px, 2.5vw, 16px);
+  text-align: left;
+  border-bottom: 1px solid var(--border-gray);
+  font-size: clamp(13px, 2.5vw, 15px);
+ }
+ 
+ .product-table th {
+  background: var(--light-gray);
+  font-weight: 600;
+  width: 25%;
+  color: var(--deep-charcoal);
+ }
+ 
+ .product-table td {
+  color: var(--medium-gray);
+ }
+ 
+ .brand-story-section {
+  background: linear-gradient(135deg, #fffaf5 0%, #fff5e6 100%);
+  padding: clamp(30px, 6vw, 50px);
+  border-radius: clamp(12px, 2vw, 20px);
+  margin: clamp(30px, 6vw, 50px) 0;
+ }
+ 
+ .influencer-tag {
+  display: inline-block;
+  background: #ffca00;
+  color: var(--deep-charcoal);
+  padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 20px);
+  border-radius: 20px;
+  font-weight: 700;
+  margin-bottom: clamp(15px, 3vw, 20px);
+  font-size: clamp(12px, 2.5vw, 14px);
+ }
+ 
+ @media (max-width: 480px) {
+  .pepper-container {
+  padding: 15px;
+  }
+  .company-grid {
+  grid-template-columns: 1fr;
+  gap: 4px;
+  }
+  .company-label {
+  margin-bottom: 2px;
+  }
+  .grid-container {
+  gap: 15px;
+  }
+ }
+ 
+ @media (min-width: 481px) and (max-width: 768px) {
+  .grid-2 {
+  grid-template-columns: 1fr;
+  }
+  .grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+ }
+ 
+ @media (min-width: 1200px) {
+  .pepper-container {
+  padding: 40px;
+  }
+  .section {
+  margin: 50px 0;
+  padding: 40px;
+  }
+ }
+
+</style>
+
+<div class="pepper-container">
+
+<!-- 메인 이미지 -->
+<div style="text-align: center;" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-01.webp" alt="만원요리 최씨남매 아삭 고추무침 1kg 메인" class="main-image fr-draggable">
+</div>
+
+<!-- Strategic Header -->
+<div style="border-color: var(--saffron-gold);" class="section">
+<div style="text-align: center;">
+<div class="brand-header">
+⭐ 만원요리 최씨남매 X 반찬단지 협력 특가
+</div>
+
+<h1 class="main-title animate-text">
+🌶️ 반찬단지 고추무침!
+<br> 만원요리가 더 저렴하게 소개하는
+<br> 아삭한 식감과 매콤새콤한 맛
+</h1>
+
+<div class="highlight-box">
+<p style="text-align: center;" class="highlight-text">
+🥢 좋은 제품을 더 많은 분들께 알리고 싶어서!
+<br> 만원요리 최씨남매가 책임지고 홍보하는 반찬단지 제품
+<br> 삼겹살, 라면에 곁들이면 느끼함 제로! 🎯
+</p>
+</div>
+</div>
+</div>
+
+<!-- 상세페이지 이미지 1 -->
+<div style="text-align: center; padding: 0 clamp(12px, 3vw, 15px);" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-02.webp" alt="최씨남매 고추무침만의 특별한 3가지 이유" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="fr-draggable">
+</div>
+
+<!-- Why Section -->
+<div class="section">
+
+<h2 class="section-title">❓ Why? 왜 만원요리에서 이 제품을 소개할까요?</h2>
+
+<div class="grid-container grid-2">
+<div class="card">
+
+<h3 class="section-subtitle">🏆 반찬단지 품질</h3>
+
+<p class="text-content">믿을 수 있는 반찬단지의 정통 고추무침! 좋은 제품을 더 많은 분들께 알리고 싶어 만원요리에서 특별히 소개해드립니다.</p>
+</div>
+
+<div class="card">
+
+<h3 class="section-subtitle">💰 더 저렴한 가격</h3>
+
+<p class="text-content">반찬단지 제품을 만원요리 최씨남매가 직접 소개하여 더욱 합리적인 가격으로 만나보실 수 있습니다.</p>
+</div>
+
+<div class="card">
+
+<h3 class="section-subtitle">🌶️ 아삭한 식감의 비밀</h3>
+
+<p class="text-content">신선한 고추의 아삭한 식감과 매콤새콤한 양념이 완벽한 조화! 한 번 맛보면 잊을 수 없는 중독성 있는 맛입니다.</p>
+</div>
+
+<div class="card">
+
+<h3 class="section-subtitle">📦 1kg 대용량</h3>
+
+<p class="text-content">1kg 대용량으로 가족 단위, 캠핑용으로 최적! 냉장보관으로 오래도록 맛있게 드실 수 있습니다.</p>
+</div>
+</div>
+</div>
+
+<!-- Brand Story Section -->
+<div class="brand-story-section">
+<div style="text-align: center;">
+<div class="influencer-tag">유튜브 38만 / 인스타그램 14만</div>
+
+<h2 style="font-size: clamp(20px, 4vw, 28px); font-weight: 800; color: var(--deep-rose); margin-bottom: clamp(20px, 4vw, 30px);">
+만원요리 최씨남매 X 반찬단지 협력
+</h2>
+
+<div style="text-align: left; max-width: 800px; margin: 0 auto;">
+<p style="margin-bottom: 20px;" class="text-content">
+'만원으로도 충분히 행복한 밥상을 차릴 수 있다'는 믿음으로 시작한 만원요리 최씨남매입니다. 항상 좋은 제품을 더 합리적인 가격으로 소개해드리고 싶다는 마음을 가지고 있습니다.
+</p>
+<p class="text-content">
+반찬단지의 정통 고추무침은 정말 맛있는 제품인데, 더 많은 분들께 알려지지 않아 아쉬웠습니다. 그래서 만원요리 최씨남매가 직접 나서서 이 좋은 제품을 더 저렴하게, 더 널리 알리기로 했습니다. 여러분의 식탁에 '만원의 행복'을 전해드리겠습니다.
+</p>
+</div>
+</div>
+</div>
+
+<!-- 상세페이지 이미지 2 -->
+<div style="text-align: center; padding: 0 clamp(12px, 3vw, 15px);" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-03.jpg" alt="이런 고민을 하시는 분들께 고추무침을 추천합니다" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="fr-draggable">
+</div>
+
+<!-- Wow Section (배송비) -->
+<div style="padding: clamp(20px, 3vw, 25px);" class="red-gradient">
+
+<h2 style="font-size: clamp(18px, 3.5vw, 24px); font-weight: 800; text-align: center; margin-bottom: clamp(15px, 3vw, 20px);">
+🚚 배송 안내 📦
+</h2>
+
+<div class="shipping-container">
+<div class="shipping-item">
+<span class="shipping-icon">📦</span>
+<span class="shipping-text">배송사: CJ대한통운</span>
+</div>
+<div class="shipping-item">
+<span class="shipping-icon">💰</span>
+<span class="shipping-text">배송비: 3,500원 (4kg 이상 시 추가)</span>
+</div>
+<div class="shipping-item">
+<span class="shipping-icon">📅</span>
+<span class="shipping-text">평일 오후 2시 이전 결제 시 당일 발송</span>
+</div>
+<div class="shipping-item">
+<span class="shipping-icon">🏝️</span>
+<span class="shipping-text">제주도/도서산간 지역 배송비 별도</span>
+</div>
+</div>
+</div>
+
+<!-- How Section -->
+<div class="section">
+
+<h2 class="section-title">🍽️ How? 이렇게 활용하세요!</h2>
+
+<div class="grid-container grid-2">
+<div style="border-top: 4px solid var(--saffron-gold); border-left: none;" class="card">
+
+<h3 class="section-subtitle">🥩 삼겹살과 함께</h3>
+
+<ul class="checklist">
+<li>구운 삼겹살에 고추무침 한 젓가락</li>
+<li>느끼함이 싹 사라지는 마법같은 조합</li>
+<li>상추쌈에 함께 넣어도 최고</li>
+<li>술안주로도 일품!</li>
+</ul>
+</div>
+
+<div style="border-top: 4px solid var(--saffron-gold); border-left: none;" class="card">
+
+<h3 class="section-subtitle">🍜 다양한 활용법</h3>
+
+<ul class="checklist">
+<li>라면에 토핑으로 올려서</li>
+<li>밥과 함께 비벼 먹기</li>
+<li>캠핑 갈 때 필수 반찬</li>
+<li>도시락 반찬으로도 완벽!</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 상세페이지 이미지 3 -->
+<div style="text-align: center; padding: 0 clamp(12px, 3vw, 15px);" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-04.jpg" alt="실제 구매 고객들의 생생한 후기 모음" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="fr-draggable">
+</div>
+
+<!-- Trust Section -->
+<div class="section">
+
+<h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+
+<div class="grid-container grid-3">
+<div class="card-center">
+<div class="icon-large">🏭</div>
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(8px, 2vw, 12px);">반찬단지 품질</h3>
+
+<p style="color: var(--medium-gray);" class="text-content">
+믿을 수 있는 반찬단지의 정통 고추무침
+<br>검증된 제조 공정과 품질
+</p>
+</div>
+
+<div class="card-center">
+<div class="icon-large">💰</div>
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(8px, 2vw, 12px);">합리적 가격</h3>
+
+<p style="color: var(--medium-gray);" class="text-content">
+만원요리가 직접 소개하여
+<br>더욱 저렴한 가격으로 제공
+</p>
+</div>
+
+<div class="card-center">
+<div class="icon-large">✅</div>
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(8px, 2vw, 12px);">만원요리 보증</h3>
+
+<p style="color: var(--medium-gray);" class="text-content">
+만원요리 최씨남매가 책임지고
+<br>좋은 제품을 널리 알리는 역할
+</p>
+</div>
+</div>
+</div>
+
+<!-- 상세페이지 이미지 4,5,6 -->
+<div style="text-align: center; padding: 0 clamp(12px, 3vw, 15px);" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-05.jpg" alt="신선한 원재료와 정성스러운 제조 과정 공개" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: clamp(20px, 4vw, 30px);" class="fr-draggable">
+
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-06.jpg" alt="고추무침을 더 맛있게 즐기는 꿀조합 레시피" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: clamp(20px, 4vw, 30px);" class="fr-draggable">
+
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/gochumuchim-1kg/gochumuchim-1kg-07.jpg" alt="만원요리 최씨남매의 고객 만족 약속" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="fr-draggable">
+</div>
+
+<!-- 제품정보 -->
+<div class="section">
+
+<h2 class="section-title">📋 구매 안내</h2>
+
+<div style="background: var(--pure-white); border-radius: clamp(8px, 1.5vw, 15px); padding: clamp(20px, 4vw, 30px);">
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(15px, 3vw, 22px); text-align: center; color: var(--deep-rose);">
+🔄 교환/반품 안내
+</h3>
+
+<div style="font-size: clamp(14px, 2.5vw, 16px); line-height: 1.8; text-align: left;">
+<p style="margin-bottom: 12px;">• <strong>신선식품의 특성상</strong>, 단순 변심이나 주문 착오로 인한 교환 및 환불은 어렵습니다. 신중한 구매 부탁드립니다.</p>
+<p style="margin-bottom: 12px;">• 제품에 문제가 있을 경우(변질, 파손 등), <strong>상품을 받은 즉시 사진을 찍어 문의</strong>해주시면 확인 후 신속하게 처리해 드리겠습니다.</p>
+<p style="margin-bottom: 12px;">• <strong>발송 후 1~2일 이내 수령 가능</strong> (주말/공휴일 제외, 택배사 사정에 따라 변동 가능)</p>
+<p style="color: #ff4757; font-weight: 700;">• <strong>문의방법:</strong> 카카오톡채널 또는 게시판 문의</p>
+</div>
+</div>
+</div>
+
+<!-- 업체 정보 -->
+<div class="section">
+
+<h2 style="font-size: clamp(18px, 3.5vw, 24px); font-weight: 700; text-align: center; margin-bottom: clamp(25px, 5vw, 35px); color: var(--deep-charcoal);">
+🏢 업체 정보
+</h2>
+
+<!-- 판매자 정보 -->
+<div style="background: var(--pure-white); border-radius: clamp(8px, 1.5vw, 15px); padding: clamp(20px, 4vw, 30px);">
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(15px, 3vw, 22px); padding-bottom: clamp(8px, 1.5vw, 12px); border-bottom: 2px solid var(--deep-rose); color: var(--deep-rose); text-align: center;">
+🏪 판매자 정보
+</h3>
+<div class="company-grid">
+<span class="company-label">상호명:</span>
+<span class="company-value">㈜값진한끼</span>
+
+<span class="company-label">사업자등록번호:</span>
+<span class="company-value">434-86-03863</span>
+
+<span class="company-label">대표자명:</span>
+<span class="company-value">고혜숙</span>
+
+<span class="company-label">주소:</span>
+<span class="company-value">경기도 파주시 경의로 1246, 11층 1105-19호</span>
+
+<span class="company-label">연락처:</span>
+<span class="company-value">카카오톡채널 또는 게시판 문의</span>
+
+<span class="company-label">이메일:</span>
+<span class="company-value">we@manwonyori.com</span>
+
+<span class="company-label">통신판매업 신고번호:</span>
+<span class="company-value">2025-경기파주-2195호</span>
+
+<span class="company-label">사이트명:</span>
+<span class="company-value">만원요리 최씨남매</span>
+</div>
+</div>
+</div>
+</div>
+</center>

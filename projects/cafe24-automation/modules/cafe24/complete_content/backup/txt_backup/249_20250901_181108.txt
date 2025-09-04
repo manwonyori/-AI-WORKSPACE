@@ -1,0 +1,374 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[인생]]오다리백족 국내가공 - 만원요리 최씨남매</title>
+    <meta name="description" content="천년 전통의 프리미엄 안주 - HACCP 국내가공으로 더 깐깐하게 만든 정직한 오다리백족">
+    <meta name="keywords" content="오다리백족, 국내가공 오징어, 프리미엄 안주, 건강 단백질 간식, HACCP 인증 수산물">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[만원요리] [[인생]]오다리백족 국내가공 | 최씨남매 공식몰">
+    <meta property="og:description" content="당일 작업 진공포장으로 신선도 보장, 높은 단백질 함량의 건강 간식, 합리적인 가격의 프리미엄 안주">
+    <meta property="og:image" content="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/odari-baekjok-200g/odari-baekjok-200g-1.jpg">
+    <meta property="og:type" content="product">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Pretendard:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+        
+        .sub-copy {
+            font-size: clamp(16px, 3vw, 20px);
+            color: var(--medium-gray);
+            margin-bottom: 32px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 24px;
+            background-color: var(--pure-white);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: var(--deep-charcoal);
+            text-align: center;
+        }
+        
+        /* Why Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .why-card {
+            background: var(--pure-white);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--saffron-gold);
+            text-align: left;
+        }
+        
+        .why-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--saffron-gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .why-title::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--saffron-gold);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        /* Wow Section */
+        .wow-highlight {
+            background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+            color: white;
+            padding: 48px 32px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .wow-list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .wow-item {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 700;
+        }
+        
+        /* How Section */
+        .how-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: var(--saffron-gold);
+        }
+        
+        .trust-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        /* Gallery - Vertical Layout */
+        .gallery-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        
+        
+        /* Company Info */
+        .company-info {
+            padding: 40px 24px;
+            background: var(--deep-charcoal);
+            color: var(--light-gray);
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .why-grid, .trust-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .wow-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Strategic Header -->
+        <section class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X [인생] 단독 공구</span>
+            <h1 class="main-copy">천년 전통의 프리미엄 안주</h1>
+            <p class="sub-copy">HACCP 국내가공으로 더 깐깐하게 만든 정직한 오다리백족</p>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/odari-baekjok-200g/odari-baekjok-200g-1.jpg" alt="[[인생]]오다리백족 국내가공" class="hero-image fr-draggable">
+        </section>
+        
+        <!-- Video Section (Optional) -->
+        
+        
+        <!-- Story Section -->
+        <section style="background: linear-gradient(135deg, #FFF5E6 0%, #FFFFFF 100%);" class="section">
+            <h2 class="section-title">📜 오다리백족 국내가공의 이야기</h2>
+            <div style="max-width: 840px; margin: 0 auto;">
+                
+                <!-- 기원의 발견 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">1</span>
+                        기원의 발견
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1960년대 초반, 부산 자갈치시장의 바닷가에서 시작된 작은 혁신이 있었습니다. 어획량이 많은 오징어의 다리만을 따로 모아 건조하는 방식을 개발한 것입니다. 어민들의 집단지혜가 만들어낸 이 가공법은, 수산물 가공 산업이 성장하던 그 시기의 빛나는 발명품이었습니다.
+                    </p>
+                </div>
+                
+                <!-- 여행하는 맛 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">2</span>
+                        여행하는 맛
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1960년 부산에서 시작된 건조 가공은 1970년대에 이르러 전국적인 인기 간식으로 자리잡았습니다. 부산 자갈치시장 상인들의 노하우와 수산물 가공업체들의 기술이 만나, 1980년대에는 현대적 가공 방식이 도입되었습니다. 특히 말린 오징어다리를 숙성시켜 백색으로 가공하는 독특한 한국만의 기술이 개발되었습니다.
+                    </p>
+                </div>
+                
+                <!-- 한국인의 입맛을 사로잡다 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">3</span>
+                        한국인의 입맛을 사로잡다
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1960년대 부산 자갈치시장을 통해 첫 선을 보인 오다리백족은, 위생적인 포장 도입과 백색 가공법 개발로 큰 변화를 맞이했습니다. 1980년 현대식 가공설비 도입으로 대량생산이 가능해졌고, 2000년 HACCP 인증 시스템 도입으로 품질 관리가 한층 강화되었습니다. 부산의 전통적 자연건조와 포항의 기계건조가 조화를 이루며 발전했습니다.
+                    </p>
+                </div>
+                
+                <!-- 세대를 잇는 맛의 기억 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">4</span>
+                        세대를 잇는 맛의 기억
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        7080세대에게는 술안주의 대표주자로, 현대인들에게는 건강간식으로 사랑받고 있습니다. 회식과 캠핑, 운동 후 단백질 보충용으로 즐기는 등 활용도가 높아졌고, 2010년 1박2일에서 캠핑음식으로 등장하며 더욱 유명해졌습니다. 어부들의 전통적인 선상 간식이라는 이야기는 여전히 회자됩니다.
+                    </p>
+                </div>
+                
+                <!-- 현대적 재탄생 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">5</span>
+                        현대적 재탄생
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        현재 연간 약 1000억원 규모의 시장을 형성하고 있는 오다리백족은, 진공포장 기술과 신선도 유지 기술 개발로 더욱 발전했습니다. 건강식품으로서의 포지셔닝과 개별포장 소포장 제품의 증가, 프리미엄 가공제품 출시로 새로운 전기를 맞이하고 있습니다.
+                    </p>
+                </div>
+                
+                <!-- 만원요리의 약속 -->
+                <div style="background: #FFF3E0; padding: 24px; border-radius: 16px; border-left: 4px solid var(--saffron-gold); text-align: left;">
+                    <h3 style="color: var(--deep-rose); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--deep-rose); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">✓</span>
+                        만원요리의 약속
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px; font-weight: 500;">
+                        전통의 맛을 지키되 현대적 기술로 신선도와 위생을 보장하는 것이 우리의 약속입니다. 합리적인 가격으로 최고의 품질을 제공하여, 38만 구독자와 함께 성장하는 정직한 식품이 되겠습니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Why Section -->
+        <section class="section">
+            <h2 class="section-title">🤔 Why? 왜 이 오다리백족 국내가공이어야 할까요?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 class="why-title">최고급 재료와 정통 레시피</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">HACCP 인증 국내가공으로 신선하고 안전한 품질</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="why-title">간편한 조리와 합리적인 가격</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">무첨가물 자연건조로 완성된 쫄깃한 식감</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- How Section -->
+        <section class="section">
+            <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+            <div class="how-content">
+                <p>술안주로 즐기실 때는 가볍게 구워서 드시면 더욱 맛있습니다. 캠핑이나 운동 후 단백질 보충용 간식으로도 훌륭하며, 포장을 개봉한 후에는 냉장 보관하시면 더 오래 신선하게 드실 수 있습니다.</p>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title">📸 제품 상세 이미지</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/odari-baekjok-200g/odari-baekjok-200g-2.jpg" alt="[[인생]]오다리백족 국내가공 2번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[[인생]]오다리백족 국내가공 3번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div>
+            </div>
+        </section>
+        
+        
+        <!-- Delivery Info Section (조건부 표시) -->
+        
+        
+        <!-- Company Info -->
+        <section class="company-info">
+            <p>
+                판매원: ㈜값진한끼 | 대표자: 고혜숙<br>
+                사업자등록번호: 434-86-03863 | 통신판매업: 2025-경기파주-2195호<br>
+                주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+                전화: 070-8835-2885 | 이메일: we@manwonyori.com
+            </p>
+        </section>
+    </div>

@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "created": "2025-08-31T19:15:35.180825",
+  "successful_patterns": {
+    "login": {
+      "xpath_username": "//input[@type='text' and not(@placeholder='')]",
+      "xpath_password": "//input[@type='password']",
+      "xpath_login_button": "//button[contains(text(), '로그인')]"
+    },
+    "excel_download": {
+      "base_url": "https://manwonyori.cafe24.com/admin/php/shop1/Excel/ExcelCreateRequest.php",
+      "product_url": "https://manwonyori.cafe24.com/admin/php/shop1/Excel/ExcelCreateRequest.php?request=product",
+      "download_url": "https://manwonyori.cafe24.com/admin/php/shop1/Excel/ExcelCreateDownload.php?request=product#DirectDownload"
+    },
+    "6month_selection": {
+      "xpath": "//span[text()='6개월']",
+      "success": true
+    },
+    "html_found": true
+  },
+  "execution_history": [
+    {
+      "timestamp": "2025-08-31T19:55:27.509280",
+      "product_code": "339",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T19:56:27.865886",
+      "product_code": "338",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T19:57:02.244615",
+      "product_code": "337",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T19:58:05.867243",
+      "product_code": "336",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T19:58:42.132091",
+      "product_code": "335",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T19:59:28.489190",
+      "product_code": "334",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T20:00:12.584697",
+      "product_code": "333",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T20:00:51.006472",
+      "product_code": "332",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T20:01:53.715227",
+      "product_code": "331",
+      "success": true,
+      "type": "content_download"
+    },
+    {
+      "timestamp": "2025-08-31T20:02:55.332251",
+      "product_code": "330",
+      "success": true,
+      "type": "content_download"
+    }
+  ],
+  "error_patterns": [],
+  "optimization_hints": {
+    "wait_times": {
+      "after_login": 3,
+      "after_page_load": 5,
+      "after_click": 2
+    }
+  }
+}

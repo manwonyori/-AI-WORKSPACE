@@ -1,0 +1,69 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\8899y"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "YOUR_GITHUB_TOKEN_HERE"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "invoice-system": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "D:\\주문취합\\주문_배송"]
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    },
+    "inspector": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/inspector"]
+    },
+    "computer-use": {
+      "command": "python",
+      "args": ["C:\\Users\\8899y\\computer-use-agent\\mcp_server.py"]
+    },
+    "comfyui": {
+      "command": "python",
+      "args": ["C:\\Users\\8899y\\Users8899ymcp-serverscomfyui-mcp-server\\server.py"]
+    },
+    "stability-ai": {
+      "command": "node",
+      "args": ["C:\\Users\\8899y\\Users8899ymcp-serversstability-ai\\build\\index.js"],
+      "env": {
+        "STABILITY_API_KEY": "YOUR_STABILITY_KEY"
+      }
+    },
+    "web-browser": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-browser"]
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_TOKEN": "YOUR_SLACK_TOKEN"
+      }
+    },
+    "google-drive": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-google-drive"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mcp": {
+    "enabled": true,
+    "server": "http://localhost:3006/sse",
+    "shared_path": "C:\\Users\\8899y\\mcp_shared",
+    "auto_connect": true
+  },
+  "permissions": {
+    "file_system": true,
+    "network": true,
+    "execute_code": true
+  }
+}

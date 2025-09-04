@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-08-27 13:02:39.675996",
+  "results": {
+    "OpenAI": true,
+    "Anthropic": false,
+    "Gemini": true,
+    "Perplexity": false,
+    "Cohere": true
+  },
+  "working": [
+    "OpenAI",
+    "Gemini",
+    "Cohere"
+  ],
+  "failed": [
+    "Anthropic",
+    "Perplexity"
+  ]
+}

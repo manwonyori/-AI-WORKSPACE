@@ -1,0 +1,496 @@
+{
+  "order_date": "2025-08-28T15:22:47.599014",
+  "delivery_date": null,
+  "supplier": "CCW",
+  "order_number": null,
+  "payment_terms": null,
+  "source_file": "tests\\ccw 발주.xlsx",
+  "format_type": "ccw_b2b",
+  "items": [
+    {
+      "product_name": "함흥 물냉면 5인분",
+      "quantity": 5.0,
+      "unit": "개",
+      "unit_price": 6100.0,
+      "total_price": 38500.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "몸보신 남원추어탕 500g",
+      "quantity": 12.0,
+      "unit": "개",
+      "unit_price": 3000.0,
+      "total_price": 44800.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "평양 비빔냉면 5인분",
+      "quantity": 7.0,
+      "unit": "개",
+      "unit_price": 7100.0,
+      "total_price": 60700.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "전통 인절미 50개입",
+      "quantity": 8.0,
+      "unit": "개",
+      "unit_price": 7500.0,
+      "total_price": 72000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "매콤양념 목살구이 200g",
+      "quantity": 40.0,
+      "unit": "개",
+      "unit_price": 2200.0,
+      "total_price": 104000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "옛날 쑥개떡 12개입",
+      "quantity": 8.0,
+      "unit": "개",
+      "unit_price": 6000.0,
+      "total_price": 58400.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "강화 사자발 약쑥 인절미 12개입",
+      "quantity": 8.0,
+      "unit": "개",
+      "unit_price": 7400.0,
+      "total_price": 71200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "이태원 햄폭탄 부대찌개",
+      "quantity": 8.0,
+      "unit": "개",
+      "unit_price": 8500.0,
+      "total_price": 81600.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "무뼈 순살 족발 300g",
+      "quantity": 6.0,
+      "unit": "개",
+      "unit_price": 5200.0,
+      "total_price": 39400.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "여수돌산 갓물김치 3kg",
+      "quantity": 20.0,
+      "unit": "개",
+      "unit_price": 7500.0,
+      "total_price": 174000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "힘찬 장어탕 500g",
+      "quantity": 2.0,
+      "unit": "개",
+      "unit_price": 3600.0,
+      "total_price": 12200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "한우 순살 갈비탕 800g",
+      "quantity": 18.0,
+      "unit": "개",
+      "unit_price": 7000.0,
+      "total_price": 148000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "프리미엄 콩 쑥개떡 20개",
+      "quantity": 12.0,
+      "unit": "개",
+      "unit_price": 11500.0,
+      "total_price": 161200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "산더미 순대국밥 150g",
+      "quantity": 10.0,
+      "unit": "개",
+      "unit_price": 2200.0,
+      "total_price": 29000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "순살 간장새우장 400g + 400g",
+      "quantity": 30.0,
+      "unit": "개",
+      "unit_price": 11000.0,
+      "total_price": 379000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "산더미 얼큰 순대국밥 150g",
+      "quantity": 30.0,
+      "unit": "개",
+      "unit_price": 2200.0,
+      "total_price": 79000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "못난이 백명란 400g",
+      "quantity": 4.0,
+      "unit": "개",
+      "unit_price": 7500.0,
+      "total_price": 38000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "겨울동치미 3KG",
+      "quantity": 1.0,
+      "unit": "개",
+      "unit_price": 9800.0,
+      "total_price": 15100.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "겨울동치미 5KG",
+      "quantity": 1.0,
+      "unit": "개",
+      "unit_price": 14000.0,
+      "total_price": 19900.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "쫄쫄이 오징어 300g",
+      "quantity": 30.0,
+      "unit": "개",
+      "unit_price": 17500.0,
+      "total_price": 601000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "잔기지떡 24개",
+      "quantity": 10.0,
+      "unit": "개",
+      "unit_price": 9000.0,
+      "total_price": 106000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "고집 불막창 300g",
+      "quantity": 20.0,
+      "unit": "개",
+      "unit_price": 5500.0,
+      "total_price": 130000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "꾸븐 돼지막창 300g",
+      "quantity": 20.0,
+      "unit": "개",
+      "unit_price": 5500.0,
+      "total_price": 130000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "갓 담은 실비김치 3kg",
+      "quantity": 1.0,
+      "unit": "개",
+      "unit_price": 19000.0,
+      "total_price": 25600.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "삼점 암꽃게장 7미 2kg",
+      "quantity": 4.0,
+      "unit": "개",
+      "unit_price": 7000.0,
+      "total_price": 36000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "매콤 직화무뼈닭발 250g",
+      "quantity": 1.0,
+      "unit": "개",
+      "unit_price": 5500.0,
+      "total_price": 10300.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "알곤이찜 800g",
+      "quantity": 1.0,
+      "unit": "개",
+      "unit_price": 9500.0,
+      "total_price": 14800.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "한돈 고추장주물럭",
+      "quantity": 50.0,
+      "unit": "개",
+      "unit_price": 3300.0,
+      "total_price": 194000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "한돈 간장갈비찜 700g",
+      "quantity": 1.0,
+      "unit": "개",
+      "unit_price": 9000.0,
+      "total_price": 14200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "황제 해신탕",
+      "quantity": 2.0,
+      "unit": "개",
+      "unit_price": 19000.0,
+      "total_price": 47200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "폭탄 감자탕 3kg",
+      "quantity": 4.0,
+      "unit": "개",
+      "unit_price": 10800.0,
+      "total_price": 53200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "얼큰 양평해장국 600g",
+      "quantity": 15.0,
+      "unit": "개",
+      "unit_price": 3500.0,
+      "total_price": 64000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "산더미 얼큰 돼지국밥 150g",
+      "quantity": 30.0,
+      "unit": "개",
+      "unit_price": 2200.0,
+      "total_price": 79000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "산더미 얼큰 돼지국밥 200g",
+      "quantity": 20.0,
+      "unit": "개",
+      "unit_price": 2400.0,
+      "total_price": 58000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "실속 해신탕",
+      "quantity": 3.0,
+      "unit": "개",
+      "unit_price": 11000.0,
+      "total_price": 41500.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "개미집 낙곱새 1kg",
+      "quantity": 6.0,
+      "unit": "개",
+      "unit_price": 19000.0,
+      "total_price": 133600.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "​프리미엄 홈마카세 세트",
+      "quantity": 3.0,
+      "unit": "개",
+      "unit_price": 19000.0,
+      "total_price": 68800.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "흑임자인절미 40개",
+      "quantity": 10.0,
+      "unit": "개",
+      "unit_price": 11000.0,
+      "total_price": 129000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "김치어묵우동 480g",
+      "quantity": 20.0,
+      "unit": "개",
+      "unit_price": 3800.0,
+      "total_price": 90000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "왕문어 해신탕",
+      "quantity": 4.0,
+      "unit": "개",
+      "unit_price": 22000.0,
+      "total_price": 104000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "김치어묵우동 1팩",
+      "quantity": 20.0,
+      "unit": "개",
+      "unit_price": 3800.0,
+      "total_price": 90000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "명품 하모샤브샤브 1세트",
+      "quantity": 5.0,
+      "unit": "개",
+      "unit_price": 21000.0,
+      "total_price": 123500.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "새콤달달 용궁쫄면 5인분",
+      "quantity": 7.0,
+      "unit": "개",
+      "unit_price": 6700.0,
+      "total_price": 57200.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "옛날 가래떡 떡볶이",
+      "quantity": 12.0,
+      "unit": "개",
+      "unit_price": 4200.0,
+      "total_price": 61600.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "한돈 수제 양념갈비 1kg",
+      "quantity": 7.0,
+      "unit": "개",
+      "unit_price": 11000.0,
+      "total_price": 91500.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "오돌뼈 소금구이 200g",
+      "quantity": 40.0,
+      "unit": "개",
+      "unit_price": 3300.0,
+      "total_price": 156000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "명품 양념LA꽃갈비 500g",
+      "quantity": 15.0,
+      "unit": "개",
+      "unit_price": 0,
+      "total_price": 175000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    },
+    {
+      "product_name": "양념 소대창 200g",
+      "quantity": 50.0,
+      "unit": "개",
+      "unit_price": 0,
+      "total_price": 259000.0,
+      "margin_rate": null,
+      "consumer_price": null,
+      "notes": null
+    }
+  ],
+  "summary": {
+    "total_items": 48,
+    "total_quantity": 641.0,
+    "total_amount": 4770000.0
+  }
+}

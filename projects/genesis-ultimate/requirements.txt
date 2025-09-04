@@ -1,0 +1,14 @@
+openai
+anthropic
+pillow
+jinja2
+requests
+opencv-python
+numpy
+asyncio
+aiohttp
+python-dotenv
+beautifulsoup4
+pandas
+selenium
+webdriver-manager

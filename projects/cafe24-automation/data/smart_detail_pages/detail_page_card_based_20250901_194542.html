@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>훈제오리 완포 - 카드 기반 모듈형</title>
+    
+    <!-- 최신 라이브러리들 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        :root {
+            --primary: #C53030;
+            --secondary: #E4A853;
+            --dark: #1F2937;
+        }
+        
+        /* 부드러운 스크롤 */
+        html { scroll-behavior: smooth; }
+        
+        /* 이미지 레이지 로딩 효과 */
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+        
+        /* 패럴랙스 효과 */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .mobile-full { width: 100vw; margin-left: -1rem; margin-right: -1rem; }
+            .mobile-padding { padding: 1rem; }
+        }
+        
+        /* 스티키 요소 */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+        
+        /* 인터렉티브 카드 */
+        .hover-lift {
+            transition: all 0.3s;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- 메인 카드 -->
+        <div class="mb-8 rounded-2xl overflow-hidden shadow-2xl hover-lift" data-aos="fade-up">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-1.jpg" class="w-full h-96 object-cover">
+            <div class="p-6 bg-white">
+                <h1 class="text-3xl font-bold mb-4">훈제오리 완포</h1>
+                <div class="flex gap-4">
+                    <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">96.11% 오리육</span>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">10분 조리</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">뼈 없음</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 혜택 카드들 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-xl p-6 shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-4xl mb-4">🥇</div>
+                <h3 class="font-bold text-lg mb-2">최고 함량</h3>
+                <p class="text-gray-600">업계 최고 수준 96.11% 오리육</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-4xl mb-4">⏱️</div>
+                <h3 class="font-bold text-lg mb-2">초간편 조리</h3>
+                <p class="text-gray-600">에어프라이어 10분이면 완성</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-4xl mb-4">🦴</div>
+                <h3 class="font-bold text-lg mb-2">완포 제품</h3>
+                <p class="text-gray-600">뼈 제거 완료, 바로 조리 가능</p>
+            </div>
+        </div>
+        
+        <!-- 이미지 그리드 -->
+        <div class="grid grid-cols-2 gap-4">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-2.jpg" class="rounded-lg shadow hover-lift" data-aos="zoom-in">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-3.jpg" class="rounded-lg shadow hover-lift" data-aos="zoom-in">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-4.jpg" class="rounded-lg shadow hover-lift" data-aos="zoom-in">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-5.jpg" class="rounded-lg shadow hover-lift" data-aos="zoom-in">
+        </div>
+    </div>
+
+    <!-- 스크립트 -->
+    <script>
+        // AOS 초기화
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // 레이지 로딩
+        const images = document.querySelectorAll('.lazy-image');
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        
+        // 스티키 CTA
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 500;
+            const cta = document.querySelector('.sticky-cta');
+            if (cta) {
+                cta.classList.toggle('show', scrolled);
+            }
+        });
+        
+        // 탭 전환
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.getElementById(tabName).classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-red-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('bg-red-600', 'text-white');
+        }
+    </script>
+</body>
+</html>

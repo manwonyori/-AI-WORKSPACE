@@ -1,0 +1,58 @@
+{
+  "archive_date": "20250901",
+  "archive_folder": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\archive_20250901",
+  "statistics": {
+    "temp_files": 0,
+    "test_files": 6,
+    "backup_folders": 1
+  },
+  "core_files_preserved": {
+    "scripts": [
+      "sftp_downloader.py",
+      "image_matching_verification.py",
+      "extract_image_links.py",
+      "verified_downloader.py",
+      "quick_status.py",
+      "restart_download.py",
+      "run_cua.py"
+    ],
+    "config": [
+      "FTP_CONFIG.json",
+      "requirements.txt"
+    ],
+    "data": [
+      "download_mapping.json"
+    ],
+    "docs": [
+      "FINAL_STATUS_REPORT.md",
+      "SUCCESSFUL_FORMULA_20250831.md",
+      "README.md",
+      "FTP_DOWNLOAD_GUIDE.md"
+    ]
+  },
+  "archive_patterns_used": {
+    "temp_files": [
+      "retry_list.json",
+      "*.log",
+      "autonomous_workflow.log",
+      "nul"
+    ],
+    "test_files": [
+      "test_*.py",
+      "quick_test.py",
+      "*_test.py"
+    ],
+    "old_versions": [
+      "*_v2.py",
+      "*_old.py",
+      "enhanced_*.py"
+    ],
+    "backup_folders": [
+      "backup",
+      "test_output",
+      "bulk_processing_output",
+      "advanced_editing_output"
+    ]
+  },
+  "timestamp": "2025-09-01T00:58:43.469972"
+}

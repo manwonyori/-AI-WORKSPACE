@@ -1,0 +1,63 @@
+
+===========================================
+    이미지 링크 추출 분석 리포트
+===========================================
+
+[전체 현황]
+-------------------------------------------
+총 HTML 파일: 226개
+이미지 있는 파일: 175개 (77.4%)
+이미지 없는 파일: 1개 (0.4%)
+빈 HTML 파일: 50개 (22.1%)
+
+[이미지 통계]
+-------------------------------------------
+총 이미지 수: 726개
+평균 이미지/파일: 4.1개 (이미지 있는 파일 기준)
+
+[이미지 도메인 분포]
+-------------------------------------------
+ecimg.cafe24img.com: 690개
+page1.genspark.site: 12개
+cdn1.genspark.ai: 10개
+relative: 8개
+i.ytimg.com: 3개
+img.youtube.com: 1개
+cdn.imweb.me: 1개
+cdn.hantoday.net: 1개
+
+[문제 파일들]
+-------------------------------------------
+빈 HTML: 50개
+이미지 없음: 1개
+
+[샘플 데이터]
+-------------------------------------------
+이미지 있는 파일 예시:
+
+기타/143:
+  이미지 4개
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+
+기타/144:
+  이미지 4개
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+
+기타/146:
+  이미지 10개
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+  - https://img.youtube.com/vi/Lzj6UcRHr2E/maxresdefault.jpg
+
+기타/147:
+  이미지 2개
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+
+기타/148:
+  이미지 3개
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+  - https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/we...
+
+===========================================

@@ -1,0 +1,376 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[인생]]점보떡볶이 - 만원요리 최씨남매</title>
+    <meta name="description" content="단 한입에 인생이 바뀐다 - 최씨남매가 3년간 연구한 프리미엄 점보떡볶이의 환상적인 맛">
+    <meta name="keywords" content="점보떡볶이, 인생떡볶이, 최씨남매떡볶이, 고대갈비소스떡볶이, 프리미엄떡볶이">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[만원요리] [[인생]]점보떡볶이 | 최씨남매 공식몰">
+    <meta property="og:description" content="특제 고대갈비소스로 만든 깊은 맛, 떡:오뎅:어묵 황금비율 구성, 진공포장으로 신선도 완벽 보장">
+    <meta property="og:image" content="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/jumbo-tteokbokki-1490g/jumbo-tteokbokki-1490g-1.jpg">
+    <meta property="og:type" content="product">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Pretendard:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+        
+        .sub-copy {
+            font-size: clamp(16px, 3vw, 20px);
+            color: var(--medium-gray);
+            margin-bottom: 32px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 24px;
+            background-color: var(--pure-white);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: var(--deep-charcoal);
+            text-align: center;
+        }
+        
+        /* Why Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .why-card {
+            background: var(--pure-white);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--saffron-gold);
+            text-align: left;
+        }
+        
+        .why-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--saffron-gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .why-title::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--saffron-gold);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        /* Wow Section */
+        .wow-highlight {
+            background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+            color: white;
+            padding: 48px 32px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .wow-list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .wow-item {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 700;
+        }
+        
+        /* How Section */
+        .how-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: var(--saffron-gold);
+        }
+        
+        .trust-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        /* Gallery - Vertical Layout */
+        .gallery-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        
+        
+        /* Company Info */
+        .company-info {
+            padding: 40px 24px;
+            background: var(--deep-charcoal);
+            color: var(--light-gray);
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .why-grid, .trust-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .wow-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Strategic Header -->
+        <section class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X [인생] 단독 공구</span>
+            <h1 class="main-copy">단 한입에 인생이 바뀐다</h1>
+            <p class="sub-copy">최씨남매가 3년간 연구한 프리미엄 점보떡볶이의 환상적인 맛</p>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/jumbo-tteokbokki-1490g/jumbo-tteokbokki-1490g-1.jpg" alt="[[인생]]점보떡볶이" class="hero-image fr-draggable">
+        </section>
+        
+        <!-- Video Section (Optional) -->
+        
+        
+        <!-- Story Section -->
+        <section style="background: linear-gradient(135deg, #FFF5E6 0%, #FFFFFF 100%);" class="section">
+            <h2 class="section-title">📜 점보떡볶이의 이야기</h2>
+            <div style="max-width: 840px; margin: 0 auto;">
+                
+                <!-- 기원의 발견 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">1</span>
+                        기원의 발견
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1800년대 후반, 조선 궁중에서 시작된 떡볶이는 처음 간장 기반의 고급 요리였습니다. 궁중 요리사들이 쇠고기와 채소를 넣고 간장으로 볶은 떡을 만들었는데, 이것이 바로 '궁중떡볶이'의 시작이었습니다. 당시 조선 후기는 궁중음식의 발달기로, 떡을 활용한 다양한 요리법이 개발되던 시기였지요.
+                    </p>
+                </div>
+                
+                <!-- 여행하는 맛 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">2</span>
+                        여행하는 맛
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1953년 고추장 떡볶이의 탄생을 시작으로, 1970년대 서울 신당동에서는 매운맛 떡볶이의 상업화가 본격화되었습니다. 마복림 할머니가 시작한 신당동 떡볶이는 이후 한국의 대표적인 길거리 음식이 되었죠. 2000년대에 들어서며 한류와 함께 세계로 뻗어나가 일본의 떡볶이우동, 중국의 라조기 소스 떡볶이, 미국의 치즈 떡볶이 등 각국의 특색있는 변형이 탄생했습니다.
+                    </p>
+                </div>
+                
+                <!-- 한국인의 입맛을 사로잡다 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">3</span>
+                        한국인의 입맛을 사로잡다
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1953년, 서울 남대문시장에서 이용우 할머니가 우연히 떡국떡을 고추장에 볶으면서 현대식 떡볶이가 탄생했습니다. 당시 가격은 5원. 간장 베이스에서 고추장 베이스로 변화하며 한국전쟁 이후 서민들의 든든한 한 끼가 되었습니다. 1978년 신당동 떡볶이 거리가 형성되었고, 2009년에는 떡볶이 연구소가 설립되어 한국의 대표 간식으로 자리잡았습니다.
+                    </p>
+                </div>
+                
+                <!-- 세대를 잇는 맛의 기억 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">4</span>
+                        세대를 잇는 맛의 기억
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        60-70년대생에게는 배고픈 학창시절을 달래준 간식이었고, 80-90년대생에게는 하교 후 친구들과 나눠 먹던 추억의 맛이었습니다. 2000년대생에게는 SNS 인증샷의 주인공이 되었죠. 수능날이면 수험생을 응원하는 음식으로, 비 오는 날이면 생각나는 영원한 메뉴로 자리잡았습니다.
+                    </p>
+                </div>
+                
+                <!-- 현대적 재탄생 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">5</span>
+                        현대적 재탄생
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        2022년 기준 연간 약 3조원 규모의 시장으로 성장한 떡볶이는 끊임없이 진화하고 있습니다. 냉동 떡볶이의 글로벌화, 프리미엄 떡볶이 전문점의 증가, 밀키트 시장 확대 등 새로운 트렌드를 만들어가고 있습니다. 고구마떡과 다양한 소스의 개발로 새로운 맛의 지평을 열어가고 있죠.
+                    </p>
+                </div>
+                
+                <!-- 만원요리의 약속 -->
+                <div style="background: #FFF3E0; padding: 24px; border-radius: 16px; border-left: 4px solid var(--saffron-gold); text-align: left;">
+                    <h3 style="color: var(--deep-rose); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--deep-rose); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">✓</span>
+                        만원요리의 약속
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px; font-weight: 500;">
+                        점보떡볶이는 70년 전통의 정통 레시피를 바탕으로, 현대적 감각을 더해 새로운 맛을 창조합니다. 합리적인 가격으로 풍성한 양과 깊은 맛을 전하며, 한국의 맛을 세계에 알리는 데 앞장서겠습니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Why Section -->
+        <section class="section">
+            <h2 class="section-title">🤔 Why? 왜 이 점보떡볶이이어야 할까요?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 class="why-title">최고급 재료와 정통 레시피</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">2-3인분 푸짐한 양의 점보 사이즈 (1,490g)</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="why-title">간편한 조리와 합리적인 가격</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">프리미엄 고대갈비소스의 깊은 맛</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- How Section -->
+        <section class="section">
+            <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+            <div class="how-content">
+                <p>1. 끓는 물에 진공 포장째로 5분간 데워주세요
+2. 소스와 함께 떡, 오뎅, 어묵을 넣고 2분간 더 끓여주세요
+3. 기호에 따라 대파나 치즈를 올려 즐기세요</p>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title">📸 제품 상세 이미지</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/jumbo-tteokbokki-1490g/jumbo-tteokbokki-1490g-2.jpg" alt="[[인생]]점보떡볶이 2번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[[인생]]점보떡볶이 3번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div>
+            </div>
+        </section>
+        
+        
+        <!-- Delivery Info Section (조건부 표시) -->
+        
+        
+        <!-- Company Info -->
+        <section class="company-info">
+            <p>
+                판매원: ㈜값진한끼 | 대표자: 고혜숙<br>
+                사업자등록번호: 434-86-03863 | 통신판매업: 2025-경기파주-2195호<br>
+                주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+                전화: 070-8835-2885 | 이메일: we@manwonyori.com
+            </p>
+        </section>
+    </div>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>발주서 - PO-CCW-20250828-160821</title>
+    <style>
+        body { 
+            font-family: 'Malgun Gothic', sans-serif; 
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 20px;
+        }
+        h1 { 
+            font-size: 32px; 
+            margin: 0;
+            color: #333;
+        }
+        .order-info {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .info-item {
+            padding: 10px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background: #f9f9f9;
+        }
+        .number { text-align: center; }
+        .quantity { text-align: center; }
+        .price { text-align: right; }
+        .total-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+        }
+        .grand-total {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-top: 2px solid #333;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #2c3e50;
+        }
+        .stamp-area {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .stamp-box {
+            width: 150px;
+            padding: 20px;
+            border: 2px solid #ccc;
+        }
+        @media print {
+            body { margin: 20px; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>발 주 서</h1>
+        <p style="margin-top: 10px; color: #666;">Purchase Order</p>
+    </div>
+    
+    <div class="order-info">
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">발주번호</div>
+                <div>PO-CCW-20250828-160821</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">발주일자</div>
+                <div>2025년 08월 28일</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">공급업체</div>
+                <div>주식회사 웰빙신선식품</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">사업자번호</div>
+                <div>813-81-02169</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">담당자</div>
+                <div>윤철 대리</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">연락처</div>
+                <div>010-7727-8009</div>
+            </div>
+        </div>
+        <div class="info-item" style="margin-top: 20px;">
+            <div class="info-label">배송지</div>
+            <div>경기 시흥시 장현능곡로 155 시흥 플랑드르 지하 1층</div>
+        </div>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th width="60" class="number">번호</th>
+                <th>품목명</th>
+                <th width="100" class="quantity">수량</th>
+                <th width="120" class="price">단가</th>
+                <th width="150" class="price">금액</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="number">1</td>
+                <td>최씨남매 (  매입가 매입  )</td>
+                <td class="quantity">18</td>
+                <td class="price">0원</td>
+                <td class="price">0원</td>
+            </tr>
+
+            <tr>
+                <td class="number">2</td>
+                <td>이태원 햄폭탄 부대찌개</td>
+                <td class="quantity">3</td>
+                <td class="price">8,500원</td>
+                <td class="price">25,500원</td>
+            </tr>
+
+            <tr>
+                <td class="number">3</td>
+                <td>힘찬 장어탕 500g</td>
+                <td class="quantity">15</td>
+                <td class="price">3,600원</td>
+                <td class="price">54,000원</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+    <div class="total-section">
+        <div class="total-row">
+            <span>공급가액</span>
+            <span>79,500원</span>
+        </div>
+        <div class="total-row">
+            <span>부가세 (10%)</span>
+            <span>7,950원</span>
+        </div>
+        <div class="total-row grand-total">
+            <span>합계금액</span>
+            <span>87,450원</span>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h3>비고</h3>
+        <p>• 납품 전 사전 연락 요망</p>
+        <p>• 결제조건: 월말 정산</p>
+        <p>• 문의: 웰빙 푸드마켓</p>
+    </div>
+    
+    <div class="stamp-area">
+        <div class="stamp-box">
+            <p>발주담당</p>
+            <br><br><br>
+            <p>(인)</p>
+        </div>
+        <div class="stamp-box">
+            <p>검토</p>
+            <br><br><br>
+            <p>(인)</p>
+        </div>
+        <div class="stamp-box">
+            <p>승인</p>
+            <br><br><br>
+            <p>(인)</p>
+        </div>
+    </div>
+    
+    <div style="margin-top: 30px; text-align: center; color: #999; font-size: 12px;">
+        생성일시: 2025-08-28 16:08:21 | CCW 발주 시스템
+    </div>
+</body>
+</html>

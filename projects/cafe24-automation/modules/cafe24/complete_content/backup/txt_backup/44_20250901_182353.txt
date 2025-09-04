@@ -1,0 +1,118 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만원요리 최씨남매 - 반찬단지 콩조림 1kg</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        .star-rating {
+            color: #FFC107;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    </style>
+
+
+
+<div style="width:100%; max-width:860px; margin:0 auto; font-family:'Pretendard', sans-serif; background-color:#FFFBEB; text-align:center; box-sizing: border-box;">
+
+    <!-- [전략적 헤더] -->
+    <div style="padding: 50px 20px 40px 20px;">
+        <p style="font-size:16px; color:#2D3748; font-weight:600; margin:0;">[ 만원요리 최씨남매 ] 구독자님과 사장님을 위한 특별 기획</p>
+        
+        <h1 style="font-size:48px; color:#2D3748; margin: 25px 0; line-height:1.3; font-weight:900; word-break:keep-all;">
+            콩 싫어하는 아이도 밥 한 그릇 뚝딱!<br>국민 반찬, 이제 사서 드세요.
+        </h1>
+        
+        <p style="font-size:18px; color:#4A5568; line-height:1.7; margin:0;">
+            콩 불리고, 몇 시간씩 뭉근하게 졸이는 과정... 정말 힘드셨죠?<br>
+            딱딱하지도, 너무 무르지도 않은 완벽한 식감에 윤기 좔좔 흐르는 단짠 양념까지!<br>
+            가정에서는 든든한 영양 반찬, 가게에서는 인건비 걱정 없는 효자 반찬으로 강력 추천합니다.
+        </p>
+
+        <div style="background-color:#ffffff; border: 1px solid #E2E8F0; border-radius:12px; padding:30px; margin-top:40px;">
+            <p style="font-size:16px; text-decoration:line-through; color:#A0AEC0; margin:0;">정상가 6,680원</p>
+            <p style="font-size:44px; color:#DD6B20; font-weight:800; margin:5px 0;">
+                4,580원
+                <span style="font-size:26px; font-weight:600; color:#2D3748;">[든든한 1kg]</span>
+            </p>
+            <p style="background-color:#DD6B20; color:#ffffff; font-weight:600; display:inline-block; padding: 10px 18px; border-radius: 8px; font-size:17px; margin:10px 0 0 0;">
+                구독자 &amp; 사장님 한정 2,100원 파격 할인!
+            </p>
+        </div>
+
+        <div style="text-align:left; margin-top:40px; border-top: 2px solid #F7FAFC; border-bottom: 2px solid #F7FAFC; padding: 25px 0;">
+            <ul style="list-style-type:none; padding:0; margin:0;">
+                <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span> 
+                    <div><strong>시간 절약 끝판왕!</strong><br><span style="font-size:16px; color:#4A5568;">콩 불리고 졸이는 번거로움 없이, 꺼내기만 하면 끝!</span></div>
+                </li>
+                <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>아이들 입맛 저격, 단짠 양념!</strong><br><span style="font-size:16px; color:#4A5568;">윤기 좔좔 흐르는 양념에 밥 비벼주면 밥 한 그릇 순삭!</span></div>
+                </li>
+                 <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>가게 매출을 올리는 효자 반찬!</strong><br><span style="font-size:16px; color:#4A5568;">호불호 없는 국민반찬으로 손님 만족도와 재방문율을 높여요.</span></div>
+                </li>
+                <li style="font-size:18px; color:#2D3748; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>엄선한 고품질 원재료!</strong><br><span style="font-size:16px; color:#4A5568;">탱글탱글 식감이 살아있는 좋은 콩만 골라 정성껏 만들었습니다.</span></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="background-color:#ffffff; border-radius:12px; padding: 30px; margin-top:30px; text-align:left; border: 1px solid #E2E8F0;">
+            <p style="font-size:17px; font-weight:700; color:#DD6B20; margin:0;">👨‍🍳 만원요리 최씨남매's REAL 추천사</p>
+            <p style="font-size:17px; color:#4A5568; line-height:1.8; margin-top:15px; margin-bottom:0;">
+                "저희 어릴 때 콩자반 정말 싫어했거든요. 딱딱하고 맛없어서... 근데 이건 진짜 달라요. 너무 부드럽고 양념이 쏙 배서 계속 손이 가요. 한식뷔페 하시는 구독자 사장님은 이거 쓴 뒤로 콩조림이 제일 먼저 동난다고 하시더라고요. 집에서, 가게에서 모두 만족하실 거라고 저희가 보장합니다!"
+            </p>
+        </div>
+    </div>
+
+    <!-- [실제 고객 후기] -->
+    <div style="background-color:#ffffff; padding: 50px 20px; text-align: left;">
+        <h2 style="font-size:32px; color:#2D3748; text-align:center; font-weight:800; margin-top:0; margin-bottom:40px;">먼저 맛본 분들의 리얼 후기!</h2>
+        <div style="display:grid; grid-template-columns:1fr; gap:20px; max-width:700px; margin:0 auto;">
+            
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">콩 편식하던 저희 아들이 이건 밥에 비벼달라고 할 정도예요. 드디어 콩 먹이는데 성공했습니다. 감사합니다!</p>
+                <p style="font-size:14px; color:#718096; margin:0;">네이버페이 구매자 / 7살아들맘***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">백반집 하는데, 기본찬으로 이만한 게 없네요. 직접 조리는 것보다 시간, 가스비, 인건비 다 따져보면 이게 훨씬 이득입니다.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">마포구 백반집 사장님 / park***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">너무 딱딱하지도, 무르지도 않은 딱 좋은 식감! 짜지 않아서 그냥 간식처럼 집어 먹어도 맛있어요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">카카오 구매자 / dalcom***</p>
+            </div>
+            
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">가성비 최고입니다. 1kg 사서 든든하게 쟁여놓으니 반찬 걱정 덜었어요. 도시락 반찬으로도 딱이에요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">자사몰 구매자 / kimyj***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">어머니가 해주시던 그 맛이랑 비슷해요. 추억 돋는 맛... 양념이 맛있어서 밥 비벼먹으려고 일부러 남겨둡니다.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">네이버페이 구매자 / bluesky***</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<center>
+<img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/18/1.jpg" class="fr-draggable">
+<br>
+<img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/18/2.jpg" class="fr-draggable">
+<center></center></center>

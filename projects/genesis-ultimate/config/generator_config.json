@@ -1,0 +1,123 @@
+{
+  "brands": {
+    "manwon": {
+      "name": "만원요리 최씨남매",
+      "tone": "친근하고 따뜻한",
+      "values": ["가성비", "정성", "신선함"],
+      "target_age": "30-50대"
+    },
+    "premium": {
+      "name": "프리미엄 브랜드",
+      "tone": "고급스럽고 세련된",
+      "values": ["최고급", "장인정신", "희소성"],
+      "target_age": "40-60대"
+    },
+    "young": {
+      "name": "트렌디 브랜드",
+      "tone": "활기차고 재미있는",
+      "values": ["트렌드", "SNS", "편의성"],
+      "target_age": "20-30대"
+    }
+  },
+  
+  "product_categories": {
+    "food": {
+      "keywords": ["맛", "신선", "건강", "영양", "조리"],
+      "focus": "taste_health",
+      "image_style": "warm"
+    },
+    "fashion": {
+      "keywords": ["스타일", "트렌드", "편안함", "소재", "디자인"],
+      "focus": "style_comfort",
+      "image_style": "modern"
+    },
+    "electronics": {
+      "keywords": ["성능", "혁신", "편의", "기술", "효율"],
+      "focus": "performance_innovation",
+      "image_style": "tech"
+    }
+  },
+  
+  "color_themes": {
+    "purple": {
+      "primary": "#667eea",
+      "secondary": "#764ba2",
+      "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    "blue": {
+      "primary": "#4A90E2",
+      "secondary": "#357ABD",
+      "gradient": "linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)"
+    },
+    "green": {
+      "primary": "#27AE60",
+      "secondary": "#229954",
+      "gradient": "linear-gradient(135deg, #27AE60 0%, #229954 100%)"
+    },
+    "orange": {
+      "primary": "#FF6B6B",
+      "secondary": "#FD7E14",
+      "gradient": "linear-gradient(135deg, #FF6B6B 0%, #FD7E14 100%)"
+    }
+  },
+  
+  "prompt_variations": {
+    "analysis": [
+      {
+        "id": "detailed",
+        "template": "제품의 세부 특징과 시장 포지셔닝을 분석하세요"
+      },
+      {
+        "id": "emotional",
+        "template": "고객의 감정적 연결점과 구매 욕구를 분석하세요"
+      },
+      {
+        "id": "competitive",
+        "template": "경쟁 제품 대비 우위와 차별화 포인트를 분석하세요"
+      }
+    ],
+    "story": [
+      {
+        "id": "origin",
+        "template": "제품의 탄생 스토리와 창업자의 철학을 중심으로"
+      },
+      {
+        "id": "craftsmanship",
+        "template": "장인정신과 제조 과정의 특별함을 중심으로"
+      },
+      {
+        "id": "customer",
+        "template": "고객 성공 사례와 변화된 일상을 중심으로"
+      }
+    ]
+  },
+  
+  "content_seeds": {
+    "headlines": [
+      "진짜가 왔다",
+      "선택의 이유",
+      "특별한 만남",
+      "새로운 시작",
+      "완벽한 선택",
+      "최고의 가치",
+      "프리미엄의 기준",
+      "당신을 위한"
+    ],
+    "cta_messages": [
+      "지금 주문하고 특별함을 경험하세요",
+      "놓치면 후회할 기회입니다",
+      "당신의 일상을 바꿀 선택",
+      "오늘만의 특별 혜택",
+      "한정 수량, 서두르세요",
+      "변화는 지금부터 시작됩니다"
+    ],
+    "urgency_messages": [
+      "오늘만 특가!",
+      "한정 수량 판매",
+      "마감 임박",
+      "단 3일간",
+      "품절 임박",
+      "재입고 미정"
+    ]
+  }
+}

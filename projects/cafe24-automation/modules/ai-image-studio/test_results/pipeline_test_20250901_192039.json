@@ -1,0 +1,32 @@
+{
+  "Real Image Learning": {
+    "status": "SUCCESS",
+    "data": {
+      "total_images": 0,
+      "learned": 0,
+      "categories": {},
+      "features_extracted": []
+    }
+  },
+  "Prompt Generation": {
+    "status": "ERROR",
+    "error": "string indices must be integers, not 'str'"
+  },
+  "Batch Processing": {
+    "status": "ERROR",
+    "error": "'Imagen3PhotorealisticEngine' object has no attribute 'generate'"
+  },
+  "Quality Validation": {
+    "status": "ERROR",
+    "error": "'float' object is not subscriptable"
+  },
+  "Cafe24 Integration": {
+    "status": "SUCCESS",
+    "data": {
+      "products_found": 0,
+      "images_analyzed": 0,
+      "prompts_created": 0,
+      "categories": []
+    }
+  }
+}

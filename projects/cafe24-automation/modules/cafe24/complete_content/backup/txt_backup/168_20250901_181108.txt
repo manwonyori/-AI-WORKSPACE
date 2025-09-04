@@ -1,0 +1,468 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>만원요리 최씨남매 그랜드 오픈 특가전</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap'); * {
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+	
+	.flash-animation {
+		animation: flash 2s infinite;
+	}
+	
+	@keyframes flash {
+		0%,
+		50%,
+		100% {
+			opacity: 1;
+		}
+		25%,
+		75% {
+			opacity: 0.5;
+		}
+	}
+	
+	.gold-text {
+		color: #FFD700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	}
+	
+	.red-glow {
+		color: #FF0000; text-shadow: 0 0 10px #FF6B6B;
+	}
+	
+	.product-card {
+		transition: all 0.3s ease; border: 3px solid #FFD700; background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 100%);
+	}
+	
+	.product-card:hover {
+		transform: scale(1.05); box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4); border-color: #FF0000;
+	}
+	
+	.discount-badge {
+		background: linear-gradient(45deg, #FF0000, #FF6B6B); animation: pulse 2s infinite;
+	}
+	
+	@keyframes pulse {
+		0%,
+		100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.05);
+		}
+	}
+	
+	.price-strike {
+		text-decoration: line-through; color: #888;
+	}
+	
+	.sale-price {
+		color: #FF0000; font-weight: 900; font-size: 1.8em;
+	}
+	
+	.image-placeholder {
+		background: linear-gradient(45deg, #f0f0f0, #e0e0e0); border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9em; height: 150px;
+	}
+	
+	.header-banner {
+		background: linear-gradient(135deg, #FF0000, #FF6B6B, #FFD700); color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+	
+	.section-title {
+		background: linear-gradient(90deg, #FFD700, #FFA500); color: #000; border: 3px solid #FF0000;
+	}
+	
+	.limited-time {
+		background: #FF0000; color: white; animation: blink 1s infinite;
+	}
+	
+	@keyframes blink {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.7;
+		}
+	}
+	
+	.brand-logo {
+		font-size: 2.5em; font-weight: 900; color: #FF0000; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+	}
+	
+	.trust-badge {
+		background: #FFD700; color: #000; border: 2px solid #FF0000; font-weight: 700;
+	}
+
+</style>
+
+
+<!-- Header Section -->
+<div class="header-banner text-center py-8 mb-8">
+<div class="brand-logo flash-animation">🍜 만원요리 최씨남매 🍜</div>
+
+<h1 class="text-4xl font-black mt-4 mb-2">🎉 GRAND OPENING 특가전 🎉</h1>
+<div class="trust-badge inline-block px-4 py-2 rounded-full mt-2">
+⭐ 38만 구독자 검증 완료 ⭐
+</div>
+<div class="limited-time inline-block px-6 py-2 rounded-full mt-4 text-xl font-black">
+🔥 한정시간! 지금 놓치면 1년 기다려! 🔥
+</div>
+</div>
+
+<!-- Grand Opening Special Section -->
+<div class="section-title text-center py-4 mb-6 mx-4 rounded-lg">
+
+<h2 class="text-3xl font-black">🔥 최씨남매 GRAND OPEN 특가 🔥</h2>
+
+<p class="text-lg font-bold mt-2">한정수량 99개! 선착순 마감!</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 mb-8">
+<!-- Product 1 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+60% 할인!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-utensils text-4xl"></i>
+<div class="ml-2">젓갈 3종 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">입맛돋우는 젓갈 3종</h3>
+
+<p class="text-sm text-gray-600 mb-2">낙지+오징어+씨앗 각 200G</p>
+<div class="text-center">
+<span class="price-strike text-lg">39,600원</span>
+<div class="sale-price">15,800원</div>
+</div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+70% 할인!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-cookie-bite text-4xl"></i>
+<div class="ml-2">만두 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">취영루만두올스타 4종기획</h3>
+
+<p class="text-sm text-gray-600 mb-2">2.5KG 대용량</p>
+<div class="text-center">
+<span class="price-strike text-lg">50,000원</span>
+<div class="sale-price">15,000원</div>
+</div>
+</div>
+
+<!-- Product 3 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+34% 할인!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-fish text-4xl"></i>
+<div class="ml-2">간장게장 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">연평도 간장게장</h3>
+
+<p class="text-sm text-gray-600 mb-2">2.5KG 프리미엄</p>
+<div class="text-center">
+<span class="price-strike text-lg">59,000원</span>
+<div class="sale-price">39,000원</div>
+</div>
+</div>
+</div>
+
+<!-- Anjudome Brand Section -->
+<div class="section-title text-center py-4 mb-6 mx-4 rounded-lg">
+
+<h2 class="text-3xl font-black">🍻 안주도매 인기상품 🍻</h2>
+
+<p class="text-lg font-bold mt-2">술안주 베스트셀러!</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-8">
+<!-- Product 4 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+특가!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-bowl-hot text-4xl"></i>
+<div class="ml-2">떡볶이 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">국물떡볶기</h3>
+
+<p class="text-sm text-gray-600 mb-2">매운/순한 430G</p>
+<div class="text-center">
+<div class="sale-price">3,880원</div>
+</div>
+</div>
+
+<!-- Product 5 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+HOT!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-drumstick-bite text-4xl"></i>
+<div class="ml-2">닭발 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">무뼈닭발</h3>
+
+<p class="text-sm text-gray-600 mb-2">250G</p>
+<div class="text-center">
+<div class="sale-price">7,480원</div>
+</div>
+</div>
+
+<!-- Product 6 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+NEW!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-pepper-hot text-4xl"></i>
+<div class="ml-2">감바스 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">감바스</h3>
+
+<p class="text-sm text-gray-600 mb-2">336G</p>
+<div class="text-center">
+<div class="sale-price">7,280원</div>
+</div>
+</div>
+
+<!-- Product 7 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+BEST!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-pizza-slice text-4xl"></i>
+<div class="ml-2">핏자 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">핏자 4종</h3>
+
+<p class="text-sm text-gray-600 mb-2">페퍼/불고기/고르곤/치즈</p>
+<div class="text-center">
+<div class="sale-price">5,980원</div>
+</div>
+</div>
+</div>
+
+<!-- Choi Siblings Brand Section -->
+<div class="section-title text-center py-4 mb-6 mx-4 rounded-lg">
+
+<h2 class="text-3xl font-black">👨‍🍳 최씨남매 브랜드 BEST 👨‍🍳</h2>
+
+<p class="text-lg font-bold mt-2">38만 구독자가 인정한 맛!</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-8">
+<!-- Product 8 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+자체브랜드!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-bacon text-4xl"></i>
+<div class="ml-2">돈삼겹 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">백돈 돈삼겹</h3>
+
+<p class="text-sm text-gray-600 mb-2">400G</p>
+<div class="text-center">
+<div class="sale-price">17,600원</div>
+</div>
+</div>
+
+<!-- Product 9 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+자체브랜드!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-meat text-4xl"></i>
+<div class="ml-2">돈목살 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">백돈 돈목살</h3>
+
+<p class="text-sm text-gray-600 mb-2">400G</p>
+<div class="text-center">
+<div class="sale-price">12,800원</div>
+</div>
+</div>
+
+<!-- Product 10 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+자체브랜드!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-fire text-4xl"></i>
+<div class="ml-2">숯불삼겹 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">고추장 숯불삼겹</h3>
+
+<p class="text-sm text-gray-600 mb-2">400G</p>
+<div class="text-center">
+<div class="sale-price">19,500원</div>
+</div>
+</div>
+
+<!-- Product 11 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+자체브랜드!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-fire text-4xl"></i>
+<div class="ml-2">숯불목살 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">고추장 숯불목살</h3>
+
+<p class="text-sm text-gray-600 mb-2">400G</p>
+<div class="text-center">
+<div class="sale-price">15,900원</div>
+</div>
+</div>
+</div>
+
+<!-- Premium Section -->
+<div class="section-title text-center py-4 mb-6 mx-4 rounded-lg">
+
+<h2 class="text-3xl font-black">🥇 프리미엄 특가 🥇</h2>
+
+<p class="text-lg font-bold mt-2">최고 할인율! 놓치면 후회!</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 mb-8">
+<!-- Product 12 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+61% 할인!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-duck text-4xl"></i>
+<div class="ml-2">훈제오리 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">냉동훈제오리완포</h3>
+
+<p class="text-sm text-gray-600 mb-2">800G</p>
+<div class="text-center">
+<span class="price-strike text-lg">21,280원</span>
+<div class="sale-price">8,380원</div>
+</div>
+</div>
+
+<!-- Product 13 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+특가!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-bone text-4xl"></i>
+<div class="ml-2">폭립 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">빅레드폭립</h3>
+
+<p class="text-sm text-gray-600 mb-2">1KG</p>
+<div class="text-center">
+<div class="sale-price">15,480원</div>
+</div>
+</div>
+
+<!-- Product 14 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+9% 할인!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-hamburger text-4xl"></i>
+<div class="ml-2">함박스테이크 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">한우한돈 함박스테이크</h3>
+
+<p class="text-sm text-gray-600 mb-2">125G×8개</p>
+<div class="text-center">
+<span class="price-strike text-lg">10,800원</span>
+<div class="sale-price">9,800원</div>
+</div>
+</div>
+</div>
+
+<!-- Kimchi Section -->
+<div class="section-title text-center py-4 mb-6 mx-4 rounded-lg">
+
+<h2 class="text-3xl font-black">🥬 이젠 김치도 최씨남매에서! 🥬</h2>
+
+<p class="text-lg font-bold mt-2">주문 시 바로 생산! 신선함 보장!</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 mb-8">
+<!-- Product 15 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+국내산!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-leaf text-4xl"></i>
+<div class="ml-2">쌀김치 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">국내산 쌀김치</h3>
+
+<p class="text-sm text-gray-600 mb-2">10KG 대용량</p>
+<div class="text-center">
+<div class="sale-price">39,800원</div>
+</div>
+</div>
+
+<!-- Product 16 -->
+<div class="product-card p-4 rounded-lg">
+<div class="discount-badge text-white text-center py-2 px-4 rounded-full mb-4 font-black">
+국내산!
+</div>
+<div class="image-placeholder rounded-lg mb-4">
+<i class="fas fa-leaf text-4xl"></i>
+<div class="ml-2">배추김치 이미지</div>
+</div>
+
+<h3 class="text-lg font-bold mb-2">국내산 배추김치</h3>
+
+<p class="text-sm text-gray-600 mb-2">10KG 대용량</p>
+<div class="text-center">
+<div class="sale-price">25,800원</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="text-center py-8 bg-gray-100">
+<div class="gold-text text-2xl font-black mb-4">🏆 만원요리 최씨남매 🏆</div>
+
+<p class="text-lg font-bold mb-2">38만 구독자가 인정한 프리미엄 품질</p>
+
+<p class="text-sm text-gray-600">📞 고객센터: 1588-0000 | 🌐 manwonyori.com</p>
+<div class="limited-time inline-block px-6 py-2 rounded-full mt-4 text-lg font-black">
+⏰ 한정시간 특가! 지금 바로 주문하세요! ⏰
+</div>
+</div>

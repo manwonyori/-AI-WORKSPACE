@@ -1,0 +1,11 @@
+[
+  {
+    "name": "CCW B2B 발주서",
+    "status": "성공",
+    "format": "ccw_b2b",
+    "total_items": 48,
+    "total_quantity": 641.0,
+    "total_amount": 4770000.0,
+    "saved_file": "data\\unified_orders\\order_CCW_20250828_152247.json"
+  }
+]

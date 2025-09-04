@@ -1,0 +1,764 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>만원요리 최씨남매 X 연평도 프리미엄 간장게장 (냉동배송)</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Pretendard:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+	:root {
+		--font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; --saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937; --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB;
+	}
+	
+	* {
+		margin: 0; padding: 0; box-sizing: border-box;
+	}
+	
+	body {
+		font-family: var(--font-primary); line-height: 1.6; color: var(--deep-charcoal); background: var(--pure-white);
+	}
+	/* 메인 컨테이너 - PDF 최적화 */
+	
+	.pizza-container {
+		max-width: 1200px; margin: 0 auto; padding: 30px; width: 100%;
+	}
+	/* 이미지 스타일 - GIF 최적화 (크기 고정) */
+	
+	.main-image {
+		width: 400px; max-width: 400px; height: auto; margin: 30px auto; display: block; border: none !important; outline: none !important; box-shadow: none !important; background: transparent !important;
+	}
+	/* How 섹션 이미지 통일 */
+	
+	.how-image {
+		width: 100%; height: 250px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
+	/* 섹션 기본 스타일 */
+	
+	.section {
+		margin: 40px 0; padding: 30px; border-radius: 20px; background: var(--light-gray); border: 2px solid var(--border-gray); width: 100%;
+	}
+	/* 제목 스타일 */
+	
+	.section-title {
+		font-size: 28px; font-weight: 800; color: var(--deep-rose); text-align: center; margin-bottom: 25px; line-height: 1.3;
+	}
+	
+	.section-subtitle {
+		font-size: 20px; font-weight: 700; color: var(--saffron-gold); margin-bottom: 15px; line-height: 1.4; text-align: left;
+	}
+	/* 그리드 레이아웃 */
+	
+	.grid-container {
+		display: grid; gap: 25px; margin: 25px 0;
+	}
+	
+	.grid-2 {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+	
+	.grid-3 {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+	/* 카드 스타일 */
+	
+	.card {
+		background: var(--pure-white); padding: 25px; border-radius: 15px; border-left: 4px solid var(--deep-rose); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); height: 100%; display: flex; flex-direction: column;
+	}
+	
+	.card-center {
+		background: var(--pure-white); padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); height: 100%; display: flex; flex-direction: column; justify-content: center;
+	}
+	/* 텍스트 정렬 통일 시스템 */
+	
+	.text-content {
+		font-size: 16px; line-height: 1.8; text-align: left;
+	}
+	
+	.highlight-text {
+		font-weight: 600; color: #856404; font-size: 16px; line-height: 1.7; text-align: left;
+	}
+	/* 카드 내 텍스트 왼쪽 정렬 통일 */
+	
+	.card p {
+		text-align: left;
+	}
+	
+	.card-center p {
+		text-align: center;
+	}
+	/* 하이라이트 박스 */
+	
+	.highlight-box {
+		background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px; padding: 25px; margin: 25px 0; text-align: center;
+	}
+	/* 체크리스트 - 왼쪽 정렬 */
+	
+	.checklist {
+		list-style: none; padding: 0; text-align: left;
+	}
+	
+	.checklist li {
+		padding: 10px 0; position: relative; padding-left: 35px; font-size: 16px; line-height: 1.5; text-align: left;
+	}
+	
+	.checklist li:before {
+		content: "✓"; color: #28a745; font-weight: bold; position: absolute; left: 0; font-size: 16px;
+	}
+	/* 회사정보 그리드 - 왼쪽 정렬 통일 */
+	
+	.company-grid {
+		display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; font-size: 15px; text-align: left; max-width: 800px;
+	}
+	
+	.company-label {
+		font-weight: 700; color: var(--deep-charcoal); white-space: nowrap; min-width: fit-content; text-align: left;
+	}
+	
+	.company-value {
+		color: var(--medium-gray); word-break: break-word; text-align: left;
+	}
+	/* 헤더 스타일 */
+	
+	.header-container {
+		background: linear-gradient(135deg, var(--pure-white) 0%, #f8f9fa 100%); border: 2px solid var(--saffron-gold); border-radius: 20px; padding: 30px; text-align: center; margin: 40px 0;
+	}
+	
+	.brand-text {
+		font-size: 14px; color: var(--medium-gray); font-weight: 500; margin-bottom: 12px;
+	}
+	
+	.main-title {
+		font-size: 28px; font-weight: 800; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(45deg, var(--deep-rose), var(--saffron-gold)); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 3s ease-in-out infinite;
+	}
+	
+	@keyframes gradientShift {
+		0%,
+		100% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+	}
+	
+	.sub-title {
+		font-size: 16px; color: var(--medium-gray); margin-bottom: 24px;
+	}
+	/* 특가 배너 */
+	
+	.special-banner {
+		background: var(--deep-rose); color: var(--pure-white); padding: 12px 24px; border-radius: 30px; display: inline-block; margin: 16px 0; font-weight: 700; font-size: 14px;
+	}
+	/* 냉동 배송 안내 */
+	
+	.frozen-notice {
+		background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 4px solid #3b82f6; padding: 24px; border-radius: 12px; margin: 40px 0;
+	}
+	
+	.frozen-title {
+		font-size: 20px; font-weight: 700; color: #1e40af; margin-bottom: 16px;
+	}
+	/* 상세 이미지 스타일 */
+	
+	.detail-image {
+		max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;
+	}
+	/* Trust 아이콘 */
+	
+	.trust-icon {
+		font-size: 48px; color: var(--saffron-gold); margin-bottom: 16px;
+	}
+	/* 유튜브 비디오 스타일 - 모바일 최적화 */
+	
+	.video-container {
+		position: relative; margin: 30px 0; text-align: center;
+	}
+	
+	.video-thumbnail {
+		position: relative; display: inline-block; cursor: pointer; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease; -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+	}
+	
+	.video-thumbnail:hover {
+		transform: scale(1.02);
+	}
+	
+	.video-thumbnail img {
+		width: 100%; height: auto; display: block;
+	}
+	
+	.play-button {
+		position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; background: rgba(255, 255, 255, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; color: var(--deep-rose); transition: all 0.3s ease;
+	}
+	
+	.play-button:hover {
+		background: rgba(255, 255, 255, 1); transform: translate(-50%, -50%) scale(1.1);
+	}
+	/* 비디오 모달 */
+	
+	.video-modal {
+		position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: none; align-items: center; justify-content: center; z-index: 1000; -webkit-overflow-scrolling: touch;
+	}
+	
+	.video-modal.active {
+		display: flex;
+	}
+	
+	.video-modal-content {
+		position: relative; background: #000; border-radius: 15px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	}
+	
+	.video-close {
+		position: absolute; top: -50px; right: 0; background: rgba(255, 255, 255, 0.9); border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 18px; color: #333; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 1001; transition: all 0.3s ease;
+	}
+	
+	.video-close:hover {
+		background: rgba(255, 255, 255, 1); transform: scale(1.1);
+	}
+	
+	.video-iframe {
+		border: none; border-radius: 15px;
+	}
+	/* 모바일 최적화 */
+	
+	@media (max-width: 768px) {
+		.video-modal-content {
+			width: 90vw; height: 70vh;
+		}
+		.video-iframe {
+			width: 100%; height: 100%;
+		}
+		.video-close {
+			top: -40px; right: 10px; width: 35px; height: 35px; font-size: 16px;
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.video-modal-content {
+			width: 95vw !important; height: 60vh !important;
+		}
+		.video-close {
+			top: -35px !important; right: 5px !important;
+		}
+	}
+	/* 데스크톱 최적화 */
+	
+	@media (min-width: 769px) {
+		.video-modal-content {
+			width: 80vw; height: 55vh; max-width: 900px;
+		}
+		.video-iframe {
+			width: 100%; height: 100%;
+		}
+	}
+	/* 유튜브 쇼케이스 섹션 */
+	
+	.youtube-showcase {
+		background: linear-gradient(135deg, #fff1f1 0%, #ffe6e6 100%); border: 2px solid var(--deep-rose); border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center;
+	}
+	
+	.youtube-title {
+		font-size: 24px; font-weight: 700; color: var(--deep-rose); margin-bottom: 16px;
+	}
+	
+	.youtube-description {
+		font-size: 16px; color: var(--medium-gray); margin-bottom: 30px; line-height: 1.6;
+	}
+	
+	.video-quote {
+		background: var(--pure-white); padding: 20px; border-radius: 12px; margin: 20px 0; font-style: italic; color: var(--deep-charcoal); border-left: 4px solid var(--saffron-gold);
+	}
+	
+	.creator-badge {
+		display: inline-flex; align-items: center; background: var(--saffron-gold); color: var(--pure-white); padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-top: 15px;
+	}
+	
+	.creator-badge i {
+		margin-right: 8px;
+	}
+	
+	/* 실물 확인 섹션 */
+	.real-photo-section {
+		background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 2px solid #0369a1; border-radius: 20px; padding: 40px; margin: 40px 0; text-align: center;
+	}
+	
+	.real-photo-title {
+		font-size: 24px; font-weight: 700; color: #0369a1; margin-bottom: 16px;
+	}
+	
+	.real-photo-description {
+		font-size: 16px; color: var(--medium-gray); margin-bottom: 30px; line-height: 1.6;
+	}
+	
+	.real-photo-container {
+		position: relative; display: inline-block; margin: 20px 0; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	}
+	
+	.real-photo-main {
+		width: 100%; max-width: 600px; height: auto; border-radius: 15px;
+	}
+	
+	.photo-badge {
+		position: absolute; top: 15px; right: 15px; background: rgba(3, 105, 161, 0.9); color: white; padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+	}
+	
+	.real-photo-highlights {
+		background: var(--pure-white); padding: 25px; border-radius: 12px; margin: 25px 0; text-align: left;
+	}
+	
+	.highlights-title {
+		font-size: 18px; font-weight: 700; color: #0369a1; margin-bottom: 16px; text-align: center;
+	}
+	
+	.highlights-grid {
+		display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;
+	}
+	
+	.highlight-item {
+		display: flex; align-items: center; padding: 10px; background: #f8fafc; border-radius: 8px; font-size: 14px;
+	}
+	
+	.highlight-item i {
+		color: #0369a1; margin-right: 8px; font-size: 16px;
+	}
+</style>
+
+
+
+<div class="pizza-container">
+<!-- Strategic Header -->
+<div class="header-container">
+<div class="brand-text">
+만원요리 최씨남매 X 연평도 프리미엄 간장게장 단독 공구
+</div>
+
+<!-- 메인 GIF 이미지 (크기 고정) -->
+<div style="text-align: center;" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-2.gif" alt="살아있는 게들의 신선한 모습" class="main-image fr-draggable">
+</div>
+
+<h1 class="main-title">
+❄️ 냉동 배송! 연평도 직송 알 꽉 찬 암게 간장게장
+</h1>
+
+<p class="sub-title">
+⏰ 38만 구독자가 직접 검증한 프리미엄 게장
+</p>
+
+<!-- 특가 한정 배너 -->
+<div class="special-banner">
+🚨 한정 특가 재고 소진시 즉시 판매 중단!
+</div>
+</div>
+
+<!-- YouTube Showcase -->
+<div class="youtube-showcase">
+<h2 class="youtube-title">
+<i class="fab fa-youtube mr-2"></i>38만 구독자 최씨남매 검증 영상
+</h2>
+
+<p class="youtube-description">
+최씨남매가 직접 맛보고 인정한 연평도 간장게장의 진짜 맛을 영상으로 확인해보세요!
+</p>
+
+<div class="video-container">
+<div onclick="openVideo()" class="video-thumbnail">
+<img src="https://img.youtube.com/vi/Lzj6UcRHr2E/maxresdefault.jpg" alt="최씨남매 연평도 간장게장 리뷰 영상" class="fr-draggable">
+<div class="play-button">
+<i class="fas fa-play"></i>
+</div>
+</div>
+</div>
+
+<div class="video-quote">
+"진짜 이거 해동법만 제대로 알면 집에서 고급 횟집 부럽지 않아요. 알도 꽉 차있고 게살도 달콤해서 밥 한 그릇 뚝딱!"
+</div>
+
+<div class="creator-badge">
+<i class="fas fa-crown"></i> 38만 구독자 최씨남매 인증
+</div>
+</div>
+
+<!-- 비디오 모달 -->
+<div id="videoModal" onclick="closeVideo(event)" class="video-modal">
+<div class="video-modal-content">
+<button onclick="closeVideo(event)" class="video-close">
+<i class="fas fa-times"></i>
+</button>
+<iframe id="videoFrame" src="" allowfullscreen="" class="video-iframe"></iframe>
+</div>
+</div>
+
+<!-- 냉동 배송 안내 섹션 -->
+<div class="frozen-notice">
+<h2 class="frozen-title">
+<i class="fas fa-snowflake mr-2"></i>냉동 배송으로 신선함 그대로!
+</h2>
+<div class="grid-container grid-2">
+<div class="card-center">
+<h3 class="section-subtitle">❄️ 왜 냉동 배송인가요?</h3>
+<ul class="checklist">
+<li>신선함을 최대한 보존</li>
+<li>운송 중 품질 변화 방지</li>
+<li>장기보관 가능</li>
+<li>원하는 시점에 해동하여 섭취</li>
+</ul>
+</div>
+<div class="card-center">
+<h3 class="section-subtitle">📦 배송 상태</h3>
+<ul class="checklist">
+<li>냉동 포장 상태로 배송</li>
+<li>아이스팩 + 보온박스 포장</li>
+<li>배송 후 즉시 냉동고 보관</li>
+<li>해동 후 2-3일 숙성 권장</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Why Section -->
+<div class="section">
+<h2 class="section-title">
+🤔 Why? 왜 이 연평도 간장게장이어야 할까요?
+</h2>
+
+<div class="grid-container grid-2">
+<div class="card">
+<div style="text-align: center; margin-bottom: 16px;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-3-1000.jpg" alt="연평도 청정해역 전경" style="width: 100%; height: auto; border-radius: 12px;" class="fr-draggable">
+</div>
+<h3 class="section-subtitle">🌊 연평도 청정해역 직송</h3>
+<p class="text-content">
+서해 최고의 청정해역 연평도에서 직접 공수한 프리미엄 암게만을 엄선했습니다. 깨끗한 바다에서 자란 게는 비린내 없이 달콤한 살맛이 특징입니다.
+</p>
+</div>
+
+<div class="card">
+<div style="text-align: center; margin-bottom: 16px;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-2-1000.jpg" alt="시장의 신선한 게들" style="width: 100%; height: auto; border-radius: 12px;" class="fr-draggable">
+</div>
+<h3 class="section-subtitle">🥚 알 꽉 찬 암게 (알배기)</h3>
+<p class="text-content">
+산란기 직전의 암게만을 선별하여 게 살과 함께 고소한 알까지 함께 즐길 수 있습니다. 대자 사이즈로 가족이 함께 나누어 먹기에 충분한 양입니다.
+</p>
+</div>
+</div>
+</div>
+
+<!-- 실물 확인 섹션 -->
+<div class="real-photo-section">
+<h2 class="real-photo-title">
+<i class="fas fa-camera mr-2"></i>실물 확인! 이렇게 받으세요
+</h2>
+
+<p class="real-photo-description">
+포장지를 열면 이런 모습! 4마리의 통통한 암게가 진한 간장소스에 정갈하게 담겨있어요.
+</p>
+
+<div class="real-photo-container">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-1000.jpeg" alt="실제 간장게장 실물 사진" class="real-photo-main fr-draggable">
+<div class="photo-badge">
+<i class="fas fa-eye"></i> 실물 사진
+</div>
+</div>
+
+<div class="real-photo-highlights">
+<h3 class="highlights-title">📸 실물 사진에서 확인 가능한 포인트들</h3>
+<div class="highlights-grid">
+<div class="highlight-item">
+<i class="fas fa-check-circle"></i>
+<span>4마리 암게 개별 포장</span>
+</div>
+<div class="highlight-item">
+<i class="fas fa-tint"></i>
+<span>진한 간장소스 충분히</span>
+</div>
+<div class="highlight-item">
+<i class="fas fa-fish"></i>
+<span>통통한 게 몸통</span>
+</div>
+<div class="highlight-item">
+<i class="fas fa-gem"></i>
+<span>광택 나는 신선함</span>
+</div>
+<div class="highlight-item">
+<i class="fas fa-shield-alt"></i>
+<span>위생적인 밀폐 포장</span>
+</div>
+<div class="highlight-item">
+<i class="fas fa-star"></i>
+<span>균등한 크기</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 완벽한 해동법 & 숙성 비법 섹션 -->
+<div class="section">
+<h2 class="section-title">
+<i class="fas fa-clock mr-2"></i>최씨남매 전수! 완벽한 해동법 &amp; 숙성 비법
+</h2>
+
+<div class="grid-container grid-2">
+<!-- 해동법 -->
+<div class="card">
+<div style="text-align: center; margin-bottom: 16px;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-5-1000.jpg" alt="냉장고에서 해동 중인 간장게장" class="how-image fr-draggable">
+</div>
+<h3 class="section-subtitle">
+<i class="fas fa-thermometer-half mr-2"></i>1단계: 올바른 해동법
+</h3>
+<div class="text-content">
+<div style="background: #d4edda; padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+<span style="background: #28a745; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">BEST</span>
+<div style="margin-top: 8px;">
+<div style="font-weight: 600; color: #155724;">냉장 해동 (권장)</div>
+<div style="font-size: 14px; color: #6c757d;">드시기 1-2시간 전 냉장실로 이동</div>
+</div>
+</div>
+<div style="background: #fff3cd; padding: 16px; border-radius: 8px; margin-bottom: 12px;">
+<span style="background: #ffc107; color: #856404; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">OK</span>
+<div style="margin-top: 8px;">
+<div style="font-weight: 600; color: #856404;">실온 해동</div>
+<div style="font-size: 14px; color: #6c757d;">25°C 기준 4시간 30분</div>
+</div>
+</div>
+<div style="background: #f8d7da; padding: 16px; border-radius: 8px;">
+<strong style="color: #721c24;">주의:</strong> 전자레인지나 뜨거운 물 해동은 피해주세요!
+</div>
+</div>
+</div>
+
+<!-- 숙성법 -->
+<div class="card">
+<div style="text-align: center; margin-bottom: 16px;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-6-time.jpg" alt="시간을 상징하는 모래시계" class="how-image fr-draggable">
+</div>
+<h3 class="section-subtitle">
+<i class="fas fa-leaf mr-2"></i>2단계: 황금 숙성법
+</h3>
+<div class="text-content">
+<div style="border-left: 4px solid #28a745; padding-left: 16px; margin-bottom: 12px;">
+<div style="font-weight: 600; color: #28a745;">해동 직후 → 즉시 드셔도 OK</div>
+<div style="font-size: 12px; color: #6c757d;">신선한 게 본연의 맛</div>
+</div>
+<div style="border-left: 4px solid #007bff; padding-left: 16px; margin-bottom: 12px;">
+<div style="font-weight: 600; color: #007bff;">2-3일 숙성 → 가장 맛있는 시점</div>
+<div style="font-size: 12px; color: #6c757d;">간장이 게 속까지 깊게 배어듦</div>
+</div>
+<div style="border-left: 4px solid #6f42c1; padding-left: 16px; margin-bottom: 12px;">
+<div style="font-weight: 600; color: #6f42c1;">4-5일 → 진한 간장 맛 선호시</div>
+<div style="font-size: 12px; color: #6c757d;">더욱 짭짤하고 감칠맛 증대</div>
+</div>
+<div style="background: #fff3cd; padding: 16px; border-radius: 8px;">
+<strong style="color: #856404;">TIP:</strong> 5일 이후는 게살이 물러질 수 있어요!
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- How Section -->
+<div class="section">
+<h2 class="section-title">
+🍳 How? 이렇게 활용하세요!
+</h2>
+
+<div class="grid-container grid-2">
+<div class="card">
+<div style="text-align: center; margin-bottom: 16px;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-1-1000.jpg" alt="완성된 간장게장 요리" class="how-image fr-draggable">
+</div>
+<h3 class="section-subtitle">기본 먹는 법</h3>
+<ul class="checklist">
+<li>냉장고에서 1-2시간간 자연해동</li>
+<li>따뜻한 밥 위에 올려 쓱쓱 비벼먹기</li>
+<li>게딱지에 밥 넣어 마지막까지 깔끔하게</li>
+<li>청양고추 송송 썰어 올리면 더욱 맛있게</li>
+</ul>
+</div>
+
+<div class="card">
+<div style="text-align: center; margin-bottom: 16px;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-7-family.jpg" alt="가족이 함께하는 특별한 식사" class="how-image fr-draggable">
+</div>
+<h3 class="section-subtitle">특별한 날 활용법</h3>
+<ul class="checklist">
+<li>명절/생일상 메인 요리로</li>
+<li>가족 모임 특별 반찬</li>
+<li>소주/맥주 안주로 최고</li>
+<li>지인께 선물용으로도 인기</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Trust Section -->
+<div class="section">
+<h2 class="section-title">
+🛡️ Trust! 믿을 수 있는 이유
+</h2>
+
+<div class="grid-container grid-3">
+<div class="card-center">
+<div class="trust-icon">
+<i class="fas fa-certificate"></i>
+</div>
+<h4 style="font-weight: 700; color: var(--deep-charcoal); margin-bottom: 12px;">안전 인증 완료</h4>
+<p style="text-align: center;" class="text-content">
+품목제조보고서 완료로 엄격한 품질 관리 시스템을 통해 안전하고 위생적인 가공 과정을 거쳤습니다.
+</p>
+</div>
+
+<div class="card-center">
+<div class="trust-icon">
+<i class="fas fa-industry"></i>
+</div>
+<h4 style="font-weight: 700; color: var(--deep-charcoal); margin-bottom: 12px;">신뢰할 수 있는 제조사</h4>
+<p style="text-align: center;" class="text-content">
+제조사: ㈜비에스에프엔씨
+<br> 인천광역시 중구 소재
+<br> 수산물 가공 전문 업체로 품질을 보장합니다.
+</p>
+</div>
+
+<div class="card-center">
+<div class="trust-icon">
+<i class="fas fa-star"></i>
+</div>
+<h4 style="font-weight: 700; color: var(--deep-charcoal); margin-bottom: 12px;">38만 구독자 최씨남매 검증</h4>
+<p style="text-align: center;" class="text-content">
+38만 구독자가 믿고 보는 최씨남매가 직접 맛보고 추천하는 검증된 제품입니다.
+</p>
+</div>
+</div>
+</div>
+
+<!-- 보관법 상세 안내 -->
+<div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 20px; padding: 30px; margin: 40px 0;">
+<h2 style="font-size: 20px; font-weight: 700; color: #856404; margin-bottom: 24px; text-align: center;">
+<i class="fas fa-info-circle mr-2"></i>보관법 &amp; 유통기한 안내
+</h2>
+
+<div class="grid-container grid-2">
+<div style="background: white; border-radius: 12px; padding: 20px;">
+<h3 style="font-weight: 700; color: #007bff; margin-bottom: 12px;">❄️ 냉동 보관 (배송 상태)</h3>
+<ul class="checklist">
+<li><strong>보관기간:</strong> 최대 12개월</li>
+<li><strong>보관온도:</strong> -18°C 이하</li>
+<li><strong>주의사항:</strong> 해동 후 재냉동 금지</li>
+<li><strong>꺼내는 시점:</strong> 드시기 1-2시간 전</li>
+</ul>
+</div>
+
+<div style="background: white; border-radius: 12px; padding: 20px;">
+<h3 style="font-weight: 700; color: #28a745; margin-bottom: 12px;">🧊 냉장 보관 (해동 후)</h3>
+<ul class="checklist">
+<li><strong>보관기간:</strong> 5-7일 이내</li>
+<li><strong>보관온도:</strong> 1-5°C</li>
+<li><strong>최적 섭취:</strong> 해동 후 2-3일</li>
+<li><strong>주의사항:</strong> 밀폐용기 사용 필수</li>
+</ul>
+</div>
+</div>
+
+<div style="margin-top: 20px; background: #f8d7da; border: 2px solid #dc3545; padding: 20px; border-radius: 12px;">
+<div style="display: flex; align-items: flex-start; gap: 8px;">
+<i style="color: #dc3545; margin-top: 4px;" class="fas fa-exclamation-triangle"></i>
+<div style="font-size: 14px;">
+<strong style="color: #721c24;">중요:</strong> 해동 후 5일이 지나면 게살이 물러지고 짜질 수 있으니, 먹지 않을 분량은 한 마리씩 소분하여 냉동 보관하시기 바랍니다.
+</div>
+</div>
+</div>
+</div>
+
+<!-- 상세 이미지 섹션 -->
+<div style="text-align: center; padding: 30px 0;">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/crab/crab-pk-1.jpg" alt="포장 상태" class="detail-image fr-draggable">
+<p style="color: var(--medium-gray); margin-top: 12px; font-size: 14px;">
+* 상세 이미지는 실제 제품과 다를 수 있습니다.
+</p>
+</div>
+
+<!-- 제품 상세 정보 -->
+<div style="background: #f8f9fa; border-radius: 20px; padding: 30px; margin: 40px 0;">
+<h3 style="font-size: 18px; font-weight: 700; color: var(--deep-charcoal); margin-bottom: 20px; text-align: center;">제품 상세 정보</h3>
+
+<div class="company-grid">
+<div class="company-label">제품명:</div>
+<div class="company-value">간장게장</div>
+<div class="company-label">품목보고번호:</div>
+<div class="company-value">2019019235017</div>
+<div class="company-label">식품의 유형:</div>
+<div class="company-value">절임식품(가열하지 않고 섭취하는 냉동식품)</div>
+<div class="company-label">용량 및 내용량:</div>
+<div class="company-value">2500g [게(30%), 간장소스(70%)]</div>
+<div class="company-label">품질유지기한:</div>
+<div class="company-value">제조일로부터 냉동 12개월</div>
+<div class="company-label">보관방법:</div>
+<div class="company-value">냉동 -18℃이상</div>
+<div class="company-label">원재료명:</div>
+<div class="company-value">꽃게(국내산)35%, 정제수31.4%, 소스(게장소스)31.1%, 물엿</div>
+<div class="company-label">포장재질:</div>
+<div class="company-value">폴리프로필렌</div>
+<div class="company-label">제조원:</div>
+<div class="company-value">㈜비에스에프엔씨
+<br>주소: 인천광역시 중구 축항대로 296번길56-18</div>
+</div>
+
+<div style="margin-top: 30px; background: #e3f2fd; padding: 20px; border-radius: 12px;">
+<h4 style="font-weight: 700; color: #1976d2; margin-bottom: 16px;">
+<i class="fas fa-shield-alt mr-2"></i>보관 및 취급방법
+</h4>
+<ul class="checklist">
+<li>구입 후 반드시 냉동보관 하십시오</li>
+<li>해동 후 변질의 위험이 있으니 냉장에서 4일 이내 빠른 섭취를 권장해 드립니다</li>
+<li>이미 냉동된 바 있으니 해동 후 재냉동시키지 마시길 바랍니다</li>
+<li>게 알레르기가 있으신 분은 만지거나 섭취를 금하여 주십시오</li>
+<li>껍질이 단단하여 치아가 손상될 수 있으니 주의하십시오</li>
+</ul>
+</div>
+
+<div style="margin-top: 20px; background: #ffebee; padding: 20px; border-radius: 12px;">
+<h4 style="font-weight: 700; color: #c62828; margin-bottom: 16px;">
+<i class="fas fa-exclamation-triangle mr-2"></i>주의사항
+</h4>
+<ul class="checklist">
+<li>본 제품은 대두, 밀, 새우, 이산화황, 땅콩, 조개류를 사용한 제품과 같은 시설에서 생산됩니다</li>
+<li>본 제품은 공정거래위원회 고시 소비자 분쟁 해결 기준에 의거 교환 또는 보상받을 수 있습니다</li>
+<li>부정, 불량식품은 국번 없이 1399</li>
+</ul>
+</div>
+</div>
+
+<!-- Company Information -->
+<div style="background: #f8f9fa; border-radius: 20px; padding: 30px; margin: 40px 0;">
+<h3 style="font-size: 18px; font-weight: 700; color: var(--deep-charcoal); margin-bottom: 20px; text-align: center;">판매자 정보</h3>
+<div class="company-grid">
+<div class="company-label">판매업체:</div>
+<div class="company-value">㈜값진한끼</div>
+<div class="company-label">사업자등록번호:</div>
+<div class="company-value">434-86-03863</div>
+<div class="company-label">대표자명:</div>
+<div class="company-value">고혜숙</div>
+<div class="company-label">주소:</div>
+<div class="company-value">경기도 파주시 경의로 1246, 11층 1105-19호</div>
+<div class="company-label">연락처:</div>
+<div class="company-value">070-8835-2885</div>
+<div class="company-label">이메일:</div>
+<div class="company-value">we@manwonyori.com</div>
+<div class="company-label">통신판매업 신고번호:</div>
+<div class="company-value">2025-경기파주-2195호</div>
+<div class="company-label">사이트명:</div>
+<div class="company-value">만원요리 최씨남매</div>
+</div>
+
+<h3 style="font-size: 18px; font-weight: 700; color: var(--deep-charcoal); margin: 30px 0 20px 0; text-align: center;">제조사 정보</h3>
+<div class="company-grid">
+<div class="company-label">제조업체:</div>
+<div class="company-value">㈜비에스에프엔씨 (BSFNC CO.LTD)</div>
+<div class="company-label">주소:</div>
+<div class="company-value">인천광역시 중구 축항대로 296번길 56-18</div>
+<div class="company-label">인증사항:</div>
+<div class="company-value">HACCP 인증, 품목제조보고서 완료</div>
+</div>
+</div>
+</div>

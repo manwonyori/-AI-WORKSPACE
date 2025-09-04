@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem", "C:\\Users\\8899y\\AI-WORKSPACE"],
+      "env": {
+        "ALLOW_WRITE": "true"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-memory"]
+    },
+    "superassistant": {
+      "command": "npx", 
+      "args": ["@srbhptl39/mcp-superassistant-proxy@latest", "--port", "45454"]
+    }
+  }
+}

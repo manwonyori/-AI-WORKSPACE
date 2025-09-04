@@ -1,0 +1,118 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만원요리 최씨남매 - 반찬단지 연근조림 1kg</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        .star-rating {
+            color: #FFC107;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    </style>
+
+
+
+<div style="width:100%; max-width:860px; margin:0 auto; font-family:'Pretendard', sans-serif; background-color:#FFFBEB; text-align:center; box-sizing: border-box;">
+
+    <!-- [전략적 헤더] -->
+    <div style="padding: 50px 20px 40px 20px;">
+        <p style="font-size:16px; color:#2D3748; font-weight:600; margin:0;">[ 만원요리 최씨남매 ] 구독자님과 사장님을 위한 특별 기획</p>
+        
+        <h1 style="font-size:48px; color:#2D3748; margin: 25px 0; line-height:1.3; font-weight:900; word-break:keep-all;">
+            편식하는 아이, 까다로운 손님도<br>이 '명품 반찬' 하나면 대만족!
+        </h1>
+        
+        <p style="font-size:18px; color:#4A5568; line-height:1.7; margin:0;">
+            연근 손질하고, 데치고, 몇 시간씩 졸이는 고된 과정... 이제 저희가 대신 해드릴게요.<br>
+            아삭함과 쫀득함이 완벽하게 공존하는 식감에, 질리지 않는 단짠 양념까지!<br>
+            가정에서는 밥상 위 품격을, 가게에서는 인건비 절감과 손님 만족을 동시에 잡으세요.
+        </p>
+
+        <div style="background-color:#ffffff; border: 1px solid #E2E8F0; border-radius:12px; padding:30px; margin-top:40px;">
+            <p style="font-size:16px; text-decoration:line-through; color:#A0AEC0; margin:0;">정상가 9,280원</p>
+            <p style="font-size:44px; color:#DD6B20; font-weight:800; margin:5px 0;">
+                6,580원
+                <span style="font-size:26px; font-weight:600; color:#2D3748;">[든든한 1kg]</span>
+            </p>
+            <p style="background-color:#DD6B20; color:#ffffff; font-weight:600; display:inline-block; padding: 10px 18px; border-radius: 8px; font-size:17px; margin:10px 0 0 0;">
+                구독자 &amp; 사장님 한정 2,700원 특별 할인!
+            </p>
+        </div>
+
+        <div style="text-align:left; margin-top:40px; border-top: 2px solid #F7FAFC; border-bottom: 2px solid #F7FAFC; padding: 25px 0;">
+            <ul style="list-style-type:none; padding:0; margin:0;">
+                <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span> 
+                    <div><strong>아삭쫀득! 완벽한 식감!</strong><br><span style="font-size:16px; color:#4A5568;">너무 무르지도, 딱딱하지도 않은 환상의 식감을 잡았어요.</span></div>
+                </li>
+                <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>시간&amp;인건비 절약 끝판왕!</strong><br><span style="font-size:16px; color:#4A5568;">꺼내기만 하면 명품 반찬 완성, 주방 효율이 올라가요.</span></div>
+                </li>
+                 <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>밥도둑 단짠 양념!</strong><br><span style="font-size:16px; color:#4A5568;">윤기 좔좔 흐르는, 밥 비벼 먹고 싶은 마성의 양념.</span></div>
+                </li>
+                <li style="font-size:18px; color:#2D3748; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>엄격하게 선별한 원재료!</strong><br><span style="font-size:16px; color:#4A5568;">깐깐한 기준으로 고른 연근으로 정성껏 만들었습니다.</span></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="background-color:#ffffff; border-radius:12px; padding: 30px; margin-top:30px; text-align:left; border: 1px solid #E2E8F0;">
+            <p style="font-size:17px; font-weight:700; color:#DD6B20; margin:0;">👨‍🍳 만원요리 최씨남매's REAL 추천사</p>
+            <p style="font-size:17px; color:#4A5568; line-height:1.8; margin-top:15px; margin-bottom:0;">
+                "저희가 연근조림을 진짜 좋아하는데, 집에서 하면 왜 그 아삭쫀득한 맛이 안 나는지... 근데 이건 진짜 '사 먹는 게 훨씬 낫다' 소리가 절로 나와요. 윤기 좔좔 흐르는 거 보이시죠? 식당 하시는 구독자님은 이거 밑반찬으로 내놨더니 손님들이 따로 안 파냐고 물어볼 정도래요. 자신 있게 추천합니다!"
+            </p>
+        </div>
+    </div>
+
+    <!-- [실제 고객 후기] -->
+    <div style="background-color:#ffffff; padding: 50px 20px; text-align: left;">
+        <h2 style="font-size:32px; color:#2D3748; text-align:center; font-weight:800; margin-top:0; margin-bottom:40px;">먼저 맛본 분들의 리얼 후기!</h2>
+        <div style="display:grid; grid-template-columns:1fr; gap:20px; max-width:700px; margin:0 auto;">
+            
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">편식 심한 우리 아이가 야채는 안 먹어도 이건 정말 잘 먹어요. 밥에 올려주면 뚝딱입니다. 고마운 반찬이에요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">네이버페이 구매자 / 아이둘맘***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">한정식집인데, 밑반찬 하나 바꿨을 뿐인데 상차림이 훨씬 고급스러워졌다는 소릴 들어요. 맛과 시간 모두 잡았네요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">파주시 한정식집 사장님 / lee***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">딱 원하던 식감이에요. 너무 딱딱하지도 무르지도 않고 아삭쫀득! 양념도 안 짜고 맛있어서 계속 집어먹게 돼요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">카카오 구매자 / sweet_***</p>
+            </div>
+            
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">도시락 반찬으로 싸가기 너무 좋아요. 만들기 번거로운 반찬인데, 덕분에 도시락 퀄리티가 올라갔습니다.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">자사몰 구매자 / office***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">다른 곳 연근조림은 너무 달아서 금방 물리는데, 여긴 딱 적당해서 좋아요. 1kg 금방 먹고 또 주문하러 왔습니다.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">네이버페이 구매자 / silver***</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<center>
+<img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/19/1.jpg" class="fr-draggable">
+<br>
+<img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/19/2.jpg" class="fr-draggable">
+<center></center></center>

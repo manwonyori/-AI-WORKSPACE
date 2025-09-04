@@ -1,0 +1,24 @@
+{
+  "cafe24": {
+    "mall_id": "manwonyori",
+    "admin_url": "https://manwonyori.cafe24.com/admin",
+    "username": "manwonyori",
+    "password": "happy8263!"
+  },
+  "google_drive": {
+    "service_account_file": "path/to/service_account.json",
+    "folder_id": "1HHc_-hga4DK_6tUtL9LshTpZKI8M0m7_"
+  },
+  "workflow": {
+    "crawl_products": true,
+    "save_to_drive": true,
+    "bulk_modify": true,
+    "auto_update": true,
+    "headless_mode": false
+  },
+  "modification_rules": {
+    "price_increase_percent": 10,
+    "update_images": true,
+    "update_description": true
+  }
+}

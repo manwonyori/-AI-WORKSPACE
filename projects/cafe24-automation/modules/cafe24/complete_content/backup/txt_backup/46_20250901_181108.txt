@@ -1,0 +1,362 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실속메추리알 1kg - 만원요리 최씨남매 단독 공구</title>
+    <!-- 수정: 본문용(400), 제목용(700, 800) 굵기를 명확히 가져옵니다. -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&amp;family=Pretendard:wght@400;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-primary: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--pure-white);
+            color: var(--deep-charcoal);
+            line-height: 1.6;
+            /* 수정: 기본 굵기를 400(normal)으로 설정하여 가독성 확보 */
+            font-weight: 400; 
+            word-break: keep-all; /* 단어 단위 줄바꿈으로 가독성 향상 */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: clamp(12px, 3vw, 20px);
+        }
+
+        /* --- 헤더 --- */
+        .header-section {
+            background: linear-gradient(135deg, var(--saffron-gold) 0%, #F4D03F 100%);
+            border: 2px solid var(--saffron-gold);
+            border-radius: 12px;
+            padding: clamp(20px, 5vw, 30px);
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(228, 168, 83, 0.3);
+        }
+
+        .brand-title {
+            font-size: clamp(18px, 4vw, 22px);
+            font-weight: 700; /* 수정: 굵게 */
+            color: var(--deep-charcoal);
+            margin-bottom: 15px;
+            animation: colorShift 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes colorShift {
+            0% { color: var(--deep-rose); }
+            100% { color: var(--saffron-gold); }
+        }
+
+        .main-copy {
+            font-size: clamp(24px, 6vw, 32px);
+            font-weight: 800; /* 수정: 가장 굵게 */
+            color: var(--deep-rose);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* --- 공통 섹션 스타일 --- */
+        .section {
+            background: var(--light-gray);
+            border-radius: 12px;
+            padding: clamp(20px, 5vw, 25px);
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: clamp(20px, 5vw, 24px);
+            font-weight: 800; /* 수정: 가장 굵게 */
+            color: var(--deep-rose);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* --- 카드 공통 제목 스타일 --- */
+        .card-title {
+            font-size: clamp(18px, 4vw, 20px);
+            font-weight: 700; /* 수정: 굵게 */
+            margin-bottom: 10px;
+        }
+
+        /* --- Why Section --- */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .why-card {
+            background: var(--pure-white);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--deep-rose);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .why-card .card-title {
+            color: var(--deep-rose);
+        }
+
+        /* --- Wow Section --- */
+        .wow-section {
+            background: linear-gradient(135deg, var(--deep-rose) 0%, #E53E3E 100%);
+            color: var(--pure-white);
+            text-align: center;
+        }
+
+        .wow-section .section-title {
+            color: var(--pure-white);
+        }
+
+        .shipping-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .shipping-card {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .shipping-card .card-title {
+            font-size: 18px; /* 통일성을 위해 clamp 대신 고정값 사용 */
+        }
+        
+        /* --- How Section --- */
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .how-card {
+            background: var(--pure-white);
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid var(--saffron-gold);
+        }
+        
+        .how-card .card-title {
+            color: var(--saffron-gold);
+        }
+
+        .how-card ul {
+            padding-left: 20px;
+        }
+        .how-card li {
+            margin-bottom: 8px;
+        }
+
+        /* --- 최씨남매 꿀팁 박스 --- */
+        .tip-box {
+            background: #FFF3CD;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #856404;
+        }
+
+        .tip-box .card-title {
+            font-size: 16px;
+            color: inherit;
+        }
+
+        /* --- Trust Section --- */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .trust-card {
+            background: var(--pure-white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-gray);
+        }
+        
+        .trust-card .card-title {
+            color: var(--deep-charcoal);
+        }
+
+        .trust-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* --- 상세 이미지 --- */
+        .detail-images {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .detail-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            /* 이미지 사이 간격 */
+            margin-bottom: 15px; 
+        }
+
+        /* --- 판매자 정보 --- */
+        .company-info {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--medium-gray);
+            margin-top: 30px;
+        }
+        
+        .company-info .info-title {
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 10px;
+        }
+
+        .company-info .info-title:not(:first-child) {
+            margin-top: 20px;
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Strategic Header (가격 정보 제거 완료) -->
+        <header class="header-section">
+            <h1 class="brand-title">만원요리 최씨남매 X 실속메추리알 단독 공구</h1>
+            <p class="main-copy">🥚 껍질 까는 스트레스 끝!<br>바로 쓰는 깐메추리알 1kg</p>
+        </header>
+
+        <!-- Why Section -->
+        <section class="section">
+            <h2 class="section-title">🤔 Why? 왜 이 실속메추리알이어야 할까요?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 class="card-title">⏰ 시간 절약의 혁신</h3>
+                    <p>메추리알 껍질 까는 시간 80% 단축! 바쁜 일상 속에서도 영양 만점 메추리알 요리를 5분 만에 완성할 수 있어요.</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="card-title">💪 영양 밀도의 우수성</h3>
+                    <p>작은 알 속 큰 영양! 100g당 단백질 12.6g, 비타민 A 432㎍ 함유로 성장기 아이들과 어른들의 영양 보충에 완벽해요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wow Section -->
+        <section class="section wow-section">
+            <h2 class="section-title">💰 배송비 절약의 기회! 🚚</h2>
+            <div class="shipping-benefits">
+                <div class="shipping-card">
+                    <h3 class="card-title">✅ 배송비 절약</h3>
+                    <p>같은 공장 제품과 함께 구매 시<br>배송비 대폭 절약!</p>
+                </div>
+                <div class="shipping-card">
+                    <h3 class="card-title">📦 배송비 안내</h3>
+                    <p>기본 3,500원<br>4kg 이상 시 3,500원 추가</p>
+                </div>
+                <div class="shipping-card">
+                    <h3 class="card-title">🎁 카카오채널 혜택</h3>
+                    <p>카카오채널 추가 시<br>추가 할인 혜택!</p>
+                </div>
+                <div class="shipping-card">
+                    <h3 class="card-title">💡 TIP</h3>
+                    <p>브랜드 다른 제품과 함께<br>주문하면 더욱 알뜰!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Section -->
+        <section class="section">
+            <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+            <div class="how-grid">
+                <div class="how-card">
+                    <h3 class="card-title">🥢 간편 반찬 만들기</h3>
+                    <ul>
+                        <li>메추리알 장조림 (간장 2큰술 + 설탕 1큰술 + 물 1컵)</li>
+                        <li>메추리알 피클 (식초 + 설탕 + 소금 절임)</li>
+                        <li>메추리알 마요 샐러드</li>
+                    </ul>
+                </div>
+                <div class="how-card">
+                    <h3 class="card-title">🍲 요리 토핑 활용</h3>
+                    <ul>
+                        <li>비빔밥 토핑으로 단백질 보충</li>
+                        <li>라면 고명으로 영양 업그레이드</li>
+                        <li>도시락 반찬으로 색다른 맛</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tip-box">
+                <h4 class="card-title">💡 최씨남매's 꿀팁</h4>
+                <p>냉장고에 보관하면서 필요한 만큼씩 꺼내 쓰세요. 개봉 후 5일 이내 섭취 권장!</p>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="section">
+            <h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">📜</div>
+                    <h3 class="card-title">안전 인증 완료</h3>
+                    <p>HACCP, ISO22000, FSSC22000<br>3중 안전 인증 완료</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🏭</div>
+                    <h3 class="card-title">신뢰할 수 있는 제조사</h3>
+                    <p>(주)반찬단지<br>40년 전통의 식품 전문 기업</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">✅</div>
+                    <h3 class="card-title">품질 보증</h3>
+                    <p>만원요리 최씨남매<br>직접 검증 완료 제품</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 상세페이지 이미지 -->
+        <section class="detail-images">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/smallegg/1.jpg" alt="실속메추리알 상세정보 1" class="fr-draggable">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/smallegg/2.jpg" alt="실속메추리알 상세정보 2" class="fr-draggable">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/smallegg/3.jpg" alt="실속메추리알 상세정보 3" class="fr-draggable">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/smallegg/4.jpg" alt="실속메추리알 상세정보 4" class="fr-draggable">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/smallegg/5.jpg" alt="실속메추리알 상세정보 5" class="fr-draggable">
+        </section>
+
+        <!-- Company Information -->
+        <footer class="company-info">
+            <h4 class="info-title">판매자 정보</h4>
+            <p>㈜값진한끼<br>
+            사업자등록번호: 434-86-03863<br>
+            대표자명: 고혜숙<br>
+            주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+            연락처: 070-8835-2885<br>
+            이메일: we@manwonyori.com<br>
+            통신판매업 신고번호: 2025-경기파주-2195호<br>
+            사이트명: 만원요리 최씨남매</p>
+            
+            <h4 class="info-title">제조사 정보</h4>
+            <p>(주)반찬단지<br>
+            대표자: 우성명<br>
+            주소: 인천광역시 서구 북항로 28-29 (원창동)<br>
+            HACCP, ISO22000, FSSC22000 인증 완료</p>
+        </footer>
+    </div>

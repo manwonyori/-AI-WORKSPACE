@@ -1,0 +1,227 @@
+{
+  "execution_time": "2025-08-31T17:14:29.308843",
+  "config_status": "loaded",
+  "analysis_phases": [
+    {
+      "phase": "configuration_validation",
+      "status": "success",
+      "details": "All configuration data loaded successfully"
+    },
+    {
+      "phase": "automation_planning",
+      "status": "success",
+      "details": "Generated plan for 3 ranges"
+    },
+    {
+      "phase": "dashboard_creation",
+      "status": "success",
+      "details": "Dashboard data created successfully"
+    },
+    {
+      "phase": "recommendations",
+      "status": "success",
+      "details": "Generated 4 recommendations"
+    }
+  ],
+  "automation_plan": {
+    "plan_id": "automation_plan_20250831_171429",
+    "created_at": "2025-08-31T17:14:29.308886",
+    "total_ranges": 3,
+    "estimated_total_products": 210,
+    "estimated_total_time_hours": 0.42,
+    "phases": [
+      {
+        "phase_number": 1,
+        "range_info": {
+          "range_id": "range_1",
+          "start_number": 27,
+          "end_number": 53,
+          "product_count": 27,
+          "estimated_time_minutes": 3.2399999999999998,
+          "priority": "medium",
+          "description": "상품번호 27~53 (27개 상품)"
+        },
+        "recommended_batch_size": 25,
+        "estimated_batches": 2,
+        "priority": "medium"
+      },
+      {
+        "phase_number": 2,
+        "range_info": {
+          "range_id": "range_2",
+          "start_number": 131,
+          "end_number": 253,
+          "product_count": 123,
+          "estimated_time_minutes": 14.76,
+          "priority": "high",
+          "description": "상품번호 131~253 (123개 상품)"
+        },
+        "recommended_batch_size": 25,
+        "estimated_batches": 5,
+        "priority": "high"
+      },
+      {
+        "phase_number": 3,
+        "range_info": {
+          "range_id": "range_3",
+          "start_number": 261,
+          "end_number": 320,
+          "product_count": 60,
+          "estimated_time_minutes": 7.199999999999999,
+          "priority": "high",
+          "description": "상품번호 261~320 (60개 상품)"
+        },
+        "recommended_batch_size": 25,
+        "estimated_batches": 3,
+        "priority": "high"
+      }
+    ]
+  },
+  "dashboard_data": {
+    "summary": {
+      "total_products": 239,
+      "last_updated": "2025-08-31T17:12:52.783676",
+      "automation_ready": 3,
+      "p00000nb_status": "identified"
+    },
+    "product_ranges": [
+      {
+        "range_id": "range_1",
+        "start": 27,
+        "end": 53,
+        "count": 27,
+        "status": "pending",
+        "coverage_percent": 11.297071129707113
+      },
+      {
+        "range_id": "range_2",
+        "start": 131,
+        "end": 253,
+        "count": 123,
+        "status": "pending",
+        "coverage_percent": 51.46443514644351
+      },
+      {
+        "range_id": "range_3",
+        "start": 261,
+        "end": 320,
+        "count": 60,
+        "status": "pending",
+        "coverage_percent": 25.10460251046025
+      }
+    ],
+    "sample_products": [
+      {
+        "product_code": "P00000NB",
+        "product_number": "339",
+        "product_name": "[씨씨더블유]가마솥 불스지 300g",
+        "price": "7500.0"
+      },
+      {
+        "product_code": "P00000NA",
+        "product_number": "338",
+        "product_name": "[씨씨더블유]고추장 오돌뼈 200g",
+        "price": "4500.0"
+      },
+      {
+        "product_code": "P00000MZ",
+        "product_number": "337",
+        "product_name": "[씨씨더블유]국내산 소이동왕구이 1.25kg",
+        "price": "30000.0"
+      },
+      {
+        "product_code": "P00000MY",
+        "product_number": "336",
+        "product_name": "[씨씨더블유]수제양념 순살구이 1kg",
+        "price": "11000.0"
+      },
+      {
+        "product_code": "P00000MX",
+        "product_number": "335",
+        "product_name": "[씨씨더블유]솔잎 돼지왕구이 1+1",
+        "price": "32000.0"
+      },
+      {
+        "product_code": "P00000MW",
+        "product_number": "334",
+        "product_name": "[씨씨더블유]양념 소대창 200g",
+        "price": "6000.0"
+      },
+      {
+        "product_code": "P00000MV",
+        "product_number": "333",
+        "product_name": "[씨씨더블유]명품 양념LA꽃갈비 500g",
+        "price": "13000.0"
+      },
+      {
+        "product_code": "P00000MU",
+        "product_number": "332",
+        "product_name": "[씨씨더블유]오돌뼈 소금구이 200g",
+        "price": "4500.0"
+      },
+      {
+        "product_code": "P00000MT",
+        "product_number": "331",
+        "product_name": "[씨씨더블유]한돈 수제 양념갈비 1kg",
+        "price": "14000.0"
+      },
+      {
+        "product_code": "P00000MS",
+        "product_number": "330",
+        "product_name": "[비에스]미국산 프라임 소갈비살 200g x 3팩 600g,  200g x 5팩 1kg",
+        "price": "21000.0"
+      }
+    ],
+    "automation_status": {
+      "completed_ranges": 0,
+      "failed_ranges": 0,
+      "total_executions": 0
+    }
+  },
+  "recommendations": [
+    {
+      "category": "단계적 자동화 실행",
+      "priority": "high",
+      "description": "131~253번 상품 범위 (123개)를 우선 처리하여 시스템 안정성 검증",
+      "action_items": [
+        "25개씩 배치 처리로 시작",
+        "각 배치 후 2초 대기로 서버 부하 방지",
+        "오류 발생 시 자동 재시도 (최대 3회)",
+        "처리 결과를 CSV/JSON으로 저장"
+      ]
+    },
+    {
+      "category": "데이터 품질 관리",
+      "priority": "medium",
+      "description": "상품 데이터 일관성 검증 및 누락 데이터 보완",
+      "action_items": [
+        "가격 데이터 0원 상품 식별 및 검토",
+        "상품명 길이 및 특수문자 검증",
+        "이미지 URL 유효성 검사",
+        "SEO 키워드 최적화 상태 점검"
+      ]
+    },
+    {
+      "category": "CUA Agent 확장",
+      "priority": "medium",
+      "description": "Cafe24 자동화를 다른 업무와 연동",
+      "action_items": [
+        "주문 처리 자동화와 연결",
+        "재고 관리 시스템 통합",
+        "고객 문의 자동 응답 시스템",
+        "매출 분석 및 리포팅 자동화"
+      ]
+    },
+    {
+      "category": "모니터링 및 알림",
+      "priority": "low",
+      "description": "자동화 프로세스 모니터링 체계 구축",
+      "action_items": [
+        "처리 진행률 실시간 모니터링",
+        "오류 발생 시 이메일 알림",
+        "일일/주간 처리 결과 보고서",
+        "시스템 성능 지표 추적"
+      ]
+    }
+  ]
+}

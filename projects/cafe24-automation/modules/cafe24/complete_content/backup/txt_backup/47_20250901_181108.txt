@@ -1,0 +1,112 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만원요리 최씨남매 - [업소용] 반찬단지 간장고추 4kg</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        .star-rating {
+            color: #FFC107;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    </style>
+
+
+
+<div style="width:100%; max-width:860px; margin:0 auto; font-family:'Pretendard', sans-serif; background-color:#FFFBEB; text-align:center; box-sizing: border-box;">
+
+    <!-- [전략적 헤더] -->
+    <div style="padding: 50px 20px 40px 20px;">
+        <p style="font-size:16px; color:#2D3748; font-weight:600; margin:0;">[ 만원요리 최씨남매 ] 식당 사장님들을 위한 특별 제안</p>
+        
+        <h1 style="font-size:48px; color:#2D3748; margin: 25px 0; line-height:1.3; font-weight:900; word-break:keep-all;">
+            손님들이 리필을 외치는 '그 반찬',<br>인건비 없이 완성하세요!
+        </h1>
+        
+        <p style="font-size:18px; color:#4A5568; line-height:1.7; margin:0;">
+            매일 고추 손질하고, 장아찌 담그는 인건비와 시간, 이제 아끼셔야죠.<br>
+            느끼함을 싹 잡아주는 아삭하고 칼칼한 맛! 어떤 메인 메뉴와도 찰떡궁합을 자랑하며<br>
+            손님 입맛은 사로잡고 사장님 가게의 회전율과 재방문율은 확실하게 높여드립니다.
+        </p>
+
+        <div style="background-color:#ffffff; border: 1px solid #E2E8F0; border-radius:12px; padding:30px; margin-top:40px;">
+            <p style="font-size:16px; text-decoration:line-through; color:#A0AEC0; margin:0;">정상가 19,280원</p>
+            <p style="font-size:44px; color:#DD6B20; font-weight:800; margin:5px 0;">
+                15,880원
+                <span style="font-size:26px; font-weight:600; color:#2D3748;">[업소용 4kg]</span>
+            </p>
+            <p style="background-color:#DD6B20; color:#ffffff; font-weight:600; display:inline-block; padding: 10px 18px; border-radius: 8px; font-size:17px; margin:10px 0 0 0;">
+                사장님 사업 성공 기원! 3,400원 특별 할인
+            </p>
+        </div>
+
+        <div style="text-align:left; margin-top:40px; border-top: 2px solid #F7FAFC; border-bottom: 2px solid #F7FAFC; padding: 25px 0;">
+            <ul style="list-style-type:none; padding:0; margin:0;">
+                <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span> 
+                    <div><strong>주방 효율 극대화!</strong><br><span style="font-size:16px; color:#4A5568;">밑반찬 준비 시간과 인건비를 획기적으로 절감합니다.</span></div>
+                </li>
+                <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>재방문율 상승 치트키!</strong><br><span style="font-size:16px; color:#4A5568;">고기, 전, 튀김 등 기름진 음식의 느끼함을 완벽하게 잡아줍니다.</span></div>
+                </li>
+                 <li style="font-size:18px; color:#2D3748; margin-bottom:18px; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>언제나 완벽하게 아삭한 식감!</strong><br><span style="font-size:16px; color:#4A5568;">물러지지 않는 비법 숙성으로 손님 만족도를 높입니다.</span></div>
+                </li>
+                <li style="font-size:18px; color:#2D3748; display:flex; align-items:flex-start;">
+                    <span style="font-size:24px; margin-right:12px; line-height:1.4;">✅</span>
+                    <div><strong>일정한 맛으로 신뢰도 UP!</strong><br><span style="font-size:16px; color:#4A5568;">황금비율 간장소스로 '이 집 맛은 변치 않는다'는 평을 듣게 됩니다.</span></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="background-color:#ffffff; border-radius:12px; padding: 30px; margin-top:30px; text-align:left; border: 1px solid #E2E8F0;">
+            <p style="font-size:17px; font-weight:700; color:#DD6B20; margin:0;">👨‍🍳 만원요리 최씨남매's 추천사</p>
+            <p style="font-size:17px; color:#4A5568; line-height:1.8; margin-top:15px; margin-bottom:0;">
+                "요즘 식당 하시는 사장님들, 인건비 때문에 걱정이 이만저만이 아니라고 들었습니다. 그래서 저희가 직접 맛보고, 또 여러 사장님들께 테스트까지 부탁드렸습니다. 삼겹살집 사장님은 '고기 추가 주문이 늘었다'고 하시고, 전집 사장님은 '느끼하지 않아서 막걸리 안주로 최고'라고 하시더군요. 사장님의 든든한 조력자가 될 겁니다!"
+            </p>
+        </div>
+    </div>
+
+    <!-- [실제 고객 후기] -->
+    <div style="background-color:#ffffff; padding: 50px 20px; text-align: left;">
+        <h2 style="font-size:32px; color:#2D3748; text-align:center; font-weight:800; margin-top:0; margin-bottom:40px;">먼저 써보신 사장님들의 실제 후기!</h2>
+        <div style="display:grid; grid-template-columns:1fr; gap:20px; max-width:700px; margin:0 auto;">
+            
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">삼겹살집인데, 손님들이 명이나물보다 이걸 더 찾습니다. 고기 느끼함을 싹 잡아주니 추가 주문이 늘어서 좋아요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">마포구 고기집 사장님 / park***</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">전, 튀김 메뉴랑 궁합이 최고입니다. 손님들이 '이 집은 고추 맛집'이라고 해요. 반찬 하나로 가게 이미지가 좋아졌어요.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">종로구 전집 사장님 / lee_사장님</p>
+            </div>
+
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">일일이 담그는 것보다 원가 계산해보니 이게 훨씬 저렴하고, 시간 아낀 걸로 다른 메뉴 개발에 집중할 수 있어 좋습니다.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">강남구 한정식집 사장님 / choi***</p>
+            </div>
+            
+            <div style="border:1px solid #E2E8F0; border-radius:10px; padding:20px; background-color:#F7FAFC;">
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                <p style="font-size:16px; color:#2D3748; line-height:1.6; margin:0 0 10px 0;">칼국수랑 같이 내는데 반응이 폭발적입니다. 너무 짜지도 않고 아삭해서 국수 맛을 해치지 않아요. 정기적으로 주문합니다.</p>
+                <p style="font-size:14px; color:#718096; margin:0;">수원시 팔달구 칼국수집 사장님 / yoon***</p>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+<center>
+<img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/21/1.jpg" class="fr-draggable">
+<br>
+<img src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/21/2.jpg" class="fr-draggable">
+<center></center></center>

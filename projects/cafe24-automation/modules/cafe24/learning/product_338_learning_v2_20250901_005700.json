@@ -1,0 +1,1586 @@
+{
+  "product_no": "338",
+  "timestamp": "2025-09-01T00:56:22.264035",
+  "sections": {
+    "표시설정": {
+      "name": "표시설정",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "id": "is_display",
+          "value": "T",
+          "checked": false,
+          "parent_text": "만원요리 최씨남매(한국어) 기본",
+          "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "id": "is_display",
+          "value": "T",
+          "checked": true,
+          "parent_text": "만원요리 최씨남매 채널(한국어)",
+          "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "id": "selling_status",
+          "value": "T",
+          "checked": false,
+          "parent_text": "만원요리 최씨남매(한국어) 기본",
+          "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "id": "selling_status",
+          "value": "T",
+          "checked": false,
+          "parent_text": "만원요리 최씨남매 채널(한국어)",
+          "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:41.292886"
+    },
+    "기본정보": {
+      "name": "기본정보",
+      "elements": [
+        {
+          "type": "input",
+          "subtype": "product_name",
+          "name": "product_name[1]",
+          "id": "product_name",
+          "value": "[씨씨더블유]고추장 오돌뼈 200g",
+          "maxlength": ""
+        },
+        {
+          "type": "input",
+          "subtype": "product_name",
+          "name": "product_name[4]",
+          "id": "",
+          "value": "[씨씨더블유]고추장 오돌뼈 200g",
+          "maxlength": ""
+        },
+        {
+          "type": "input",
+          "subtype": "product_name",
+          "name": "item_name",
+          "id": "",
+          "value": "[씨씨더블유]고추장 오돌뼈 200g",
+          "maxlength": "50"
+        },
+        {
+          "type": "input",
+          "subtype": "product_name",
+          "name": "purchase_prd_name",
+          "id": "",
+          "value": "[씨씨더블유]고추장 오돌뼈 200g",
+          "maxlength": ""
+        },
+        {
+          "type": "input",
+          "subtype": "product_name",
+          "name": "summary_desc",
+          "id": "",
+          "value": "씹는 맛이 매력적인 오돌뼈와 고소한 식감, 자극적인 양념!",
+          "maxlength": ""
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "product_description_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "product_description_mobile_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "size_guide_description_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "payment_info_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "shipping_info_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "exchange_info_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        },
+        {
+          "type": "html_editor",
+          "tag": "iframe",
+          "class": "fr-iframe",
+          "id": "cs_info_IFRAME",
+          "src": "about:blank",
+          "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:42.579519"
+    },
+    "판매정보": {
+      "name": "판매정보",
+      "elements": [
+        {
+          "type": "select",
+          "name": "",
+          "id": "eCategoryToggle",
+          "options_count": 4,
+          "selected_text": "만원요리 최씨남매(한국어)[기본]",
+          "first_3_options": [
+            "- 쇼핑몰별 상품분류 보기 -",
+            "전체 상품분류 보기",
+            "만원요리 최씨남매(한국어)[기본]"
+          ]
+        },
+        {
+          "type": "select",
+          "name": "prd_used_type",
+          "id": "prd_used_type",
+          "options_count": 7,
+          "selected_text": "신상품",
+          "first_3_options": [
+            "신상품",
+            "중고상품",
+            "반품상품"
+          ]
+        },
+        {
+          "type": "select",
+          "name": "sFromLocale",
+          "id": "sFromLocale",
+          "options_count": 107,
+          "selected_text": "",
+          "first_3_options": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": "select",
+          "name": "sToLocale",
+          "id": "sToLocale",
+          "options_count": 107,
+          "selected_text": "",
+          "first_3_options": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": "select",
+          "name": "mobile_img_resize1",
+          "id": "mobile_img_resize1",
+          "options_count": 5,
+          "selected_text": "",
+          "first_3_options": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": "select",
+          "name": "product_tax_type[1]",
+          "id": "",
+          "options_count": 3,
+          "selected_text": "과세상품",
+          "first_3_options": [
+            "과세상품",
+            "면세상품",
+            "영세상품"
+          ]
+        },
+        {
+          "type": "select",
+          "name": "product_tax_type[4]",
+          "id": "",
+          "options_count": 3,
+          "selected_text": "과세상품",
+          "first_3_options": [
+            "과세상품",
+            "면세상품",
+            "영세상품"
+          ]
+        },
+        {
+          "type": "select",
+          "name": "buy_unit_type",
+          "id": "",
+          "options_count": 2,
+          "selected_text": "품목 기준",
+          "first_3_options": [
+            "상품 기준",
+            "품목 기준"
+          ]
+        },
+        {
+          "type": "select",
+          "name": "order_limit_type",
+          "id": "",
+          "options_count": 2,
+          "selected_text": "품목 기준",
+          "first_3_options": [
+            "상품 기준",
+            "품목 기준"
+          ]
+        },
+        {
+          "type": "select",
+          "name": "mileage_type",
+          "id": "mileage_type",
+          "options_count": 2,
+          "selected_text": "",
+          "first_3_options": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:43.971376"
+    },
+    "옵션/재고": {
+      "name": "옵션/재고",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:45.885073"
+    },
+    "이미지정보": {
+      "name": "이미지정보",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:47.394517"
+    },
+    "제작정보": {
+      "name": "제작정보",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:48.818455"
+    },
+    "상세이용안내": {
+      "name": "상세이용안내",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:50.221529"
+    },
+    "아이콘설정": {
+      "name": "아이콘설정",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:51.682266"
+    },
+    "배송정보": {
+      "name": "배송정보",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:53.094998"
+    },
+    "추가구성상품": {
+      "name": "추가구성상품",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:54.505329"
+    },
+    "관련상품": {
+      "name": "관련상품",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:55.936252"
+    },
+    "SEO설정": {
+      "name": "SEO설정",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:57.345865"
+    },
+    "메모": {
+      "name": "메모",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "checkAllList",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "is_display[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "checkAllSell",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[1]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "selling_status[4]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][95]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][99]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "",
+          "placeholder": "",
+          "value": "on"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group3][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "category_product[group2][110]",
+          "placeholder": "",
+          "value": "T"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "2"
+        },
+        {
+          "type": "checkbox",
+          "name": "display_group[1][]",
+          "placeholder": "",
+          "value": "3"
+        }
+      ],
+      "timestamp": "2025-09-01T00:56:58.813738"
+    }
+  },
+  "elements": {
+    "inputs": [],
+    "selects": [
+      {
+        "type": "select",
+        "name": "",
+        "id": "eCategoryToggle",
+        "options_count": 4,
+        "selected_text": "만원요리 최씨남매(한국어)[기본]",
+        "first_3_options": [
+          "- 쇼핑몰별 상품분류 보기 -",
+          "전체 상품분류 보기",
+          "만원요리 최씨남매(한국어)[기본]"
+        ]
+      },
+      {
+        "type": "select",
+        "name": "prd_used_type",
+        "id": "prd_used_type",
+        "options_count": 7,
+        "selected_text": "신상품",
+        "first_3_options": [
+          "신상품",
+          "중고상품",
+          "반품상품"
+        ]
+      },
+      {
+        "type": "select",
+        "name": "sFromLocale",
+        "id": "sFromLocale",
+        "options_count": 107,
+        "selected_text": "",
+        "first_3_options": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "select",
+        "name": "sToLocale",
+        "id": "sToLocale",
+        "options_count": 107,
+        "selected_text": "",
+        "first_3_options": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "select",
+        "name": "mobile_img_resize1",
+        "id": "mobile_img_resize1",
+        "options_count": 5,
+        "selected_text": "",
+        "first_3_options": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "type": "select",
+        "name": "product_tax_type[1]",
+        "id": "",
+        "options_count": 3,
+        "selected_text": "과세상품",
+        "first_3_options": [
+          "과세상품",
+          "면세상품",
+          "영세상품"
+        ]
+      },
+      {
+        "type": "select",
+        "name": "product_tax_type[4]",
+        "id": "",
+        "options_count": 3,
+        "selected_text": "과세상품",
+        "first_3_options": [
+          "과세상품",
+          "면세상품",
+          "영세상품"
+        ]
+      },
+      {
+        "type": "select",
+        "name": "buy_unit_type",
+        "id": "",
+        "options_count": 2,
+        "selected_text": "품목 기준",
+        "first_3_options": [
+          "상품 기준",
+          "품목 기준"
+        ]
+      },
+      {
+        "type": "select",
+        "name": "order_limit_type",
+        "id": "",
+        "options_count": 2,
+        "selected_text": "품목 기준",
+        "first_3_options": [
+          "상품 기준",
+          "품목 기준"
+        ]
+      },
+      {
+        "type": "select",
+        "name": "mileage_type",
+        "id": "mileage_type",
+        "options_count": 2,
+        "selected_text": "",
+        "first_3_options": [
+          "",
+          ""
+        ]
+      }
+    ],
+    "checkboxes": [
+      {
+        "type": "checkbox",
+        "name": "is_display[1]",
+        "id": "is_display",
+        "value": "T",
+        "checked": false,
+        "parent_text": "만원요리 최씨남매(한국어) 기본",
+        "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+      },
+      {
+        "type": "checkbox",
+        "name": "is_display[4]",
+        "id": "is_display",
+        "value": "T",
+        "checked": true,
+        "parent_text": "만원요리 최씨남매 채널(한국어)",
+        "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+      },
+      {
+        "type": "checkbox",
+        "name": "selling_status[1]",
+        "id": "selling_status",
+        "value": "T",
+        "checked": false,
+        "parent_text": "만원요리 최씨남매(한국어) 기본",
+        "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+      },
+      {
+        "type": "checkbox",
+        "name": "selling_status[4]",
+        "id": "selling_status",
+        "value": "T",
+        "checked": false,
+        "parent_text": "만원요리 최씨남매 채널(한국어)",
+        "xpath": "//label[contains(text(), '만원요리')]/..//input[@type='checkbox']"
+      }
+    ],
+    "radios": [],
+    "textareas": [],
+    "buttons": [],
+    "links": [],
+    "iframes": [
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "product_description_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      },
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "product_description_mobile_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      },
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "size_guide_description_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      },
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "payment_info_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      },
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "shipping_info_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      },
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "exchange_info_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      },
+      {
+        "type": "html_editor",
+        "tag": "iframe",
+        "class": "fr-iframe",
+        "id": "cs_info_IFRAME",
+        "src": "about:blank",
+        "xpath": "//iframe[contains(@class, 'fr-iframe')]"
+      }
+    ]
+  },
+  "successful_actions": [],
+  "failed_actions": [],
+  "statistics": {
+    "total_inputs": 0,
+    "total_selects": 10,
+    "total_checkboxes": 4,
+    "total_radios": 0,
+    "total_textareas": 0,
+    "total_iframes": 7,
+    "total_sections": 13
+  }
+}

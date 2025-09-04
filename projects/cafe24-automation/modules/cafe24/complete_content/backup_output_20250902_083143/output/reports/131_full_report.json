@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-09-01T20:55:56.824800",
+  "optimization_level": "full",
+  "analysis": {
+    "product_number": "131",
+    "has_images": true,
+    "has_price": true,
+    "has_description": true,
+    "structure_type": "strategic_style",
+    "quality_score": 90,
+    "product_info": {
+      "title": "만원요리 최씨남매 X 취영루 오리지널 교자만두",
+      "price": "3,500",
+      "discount": "0",
+      "images": [
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g.jpg",
+        "https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g-d.jpg"
+      ],
+      "description": "만원요리 최씨남매 X 취영루 단독 공구",
+      "specifications": {}
+    },
+    "improvements_needed": [
+      "영양 정보 또는 원재료 정보 추가 권장"
+    ]
+  },
+  "generated_content": {
+    "html": "<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>만원요리 최씨남매 X 취영루 오리지널 교자만두 - 만원요리</title>\n    <link href=\"https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap\" rel=\"stylesheet\">\n</head>\n<body>\n    <div class=\"premium-container\">\n        <!-- 프리미엄 헤더 -->\n        <header class=\"product-header\">\n            <div class=\"brand-section\">\n                <span class=\"brand-logo\">만원요리</span>\n                <span class=\"brand-tagline\">프리미엄 간편식의 새로운 기준</span>\n            </div>\n        </header>\n        \n        <!-- 메인 콘텐츠 -->\n        <main class=\"product-main\">\n            <section class=\"product-showcase\">\n                <div class=\"image-gallery\">\n                    <div class=\"main-image-wrapper\">\n                        <img src=\"https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg\" \n                             alt=\"만원요리 최씨남매 X 취영루 오리지널 교자만두\" class=\"main-image\">\n                        <span class=\"discount-badge\">0% OFF</span>\n                    </div>\n                </div>\n                \n                <div class=\"product-details\">\n                    <h1 class=\"product-title\">만원요리 최씨남매 X 취영루 오리지널 교자만두</h1>\n                    <div class=\"price-section\">\n                        <span class=\"final-price\">3,500원</span>\n                    </div>\n                    <div class=\"action-buttons\">\n                        <button class=\"btn-primary\">구매하기</button>\n                        <button class=\"btn-secondary\">장바구니</button>\n                    </div>\n                </div>\n            </section>\n        </main>\n    </div>\n</body>\n</html>",
+    "css": "\n        :root {\n            --brand-gold: #E4A853;\n            --brand-red: #C53030;\n            --brand-dark: #1F2937;\n            --max-width: 1200px;\n        }\n        \n        .premium-container {\n            max-width: var(--max-width);\n            margin: 0 auto;\n            padding: 20px;\n        }\n        \n        @media (max-width: 768px) {\n            .product-showcase {\n                flex-direction: column;\n            }\n        }\n        ",
+    "javascript": "\n        function initializeProduct() {\n            // 이미지 갤러리\n            document.querySelectorAll('.thumbnail').forEach(thumb => {\n                thumb.addEventListener('click', function() {\n                    document.querySelector('.main-image').src = this.src;\n                });\n            });\n        }\n        document.addEventListener('DOMContentLoaded', initializeProduct);\n        "
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "pattern_name": "Cafe24 Product HTML Download",
+  "version": "1.0.0",
+  "success_date": "2025-08-31",
+  "success_rate": 94.6,
+  "total_processed": 239,
+  "successful": 226,
+  "failed": 13,
+  "core_principles": {
+    "session_management": "같은 창 유지, 새창 절대 금지",
+    "navigation_method": "window.location.href JavaScript",
+    "element_interaction": "execute_script 클릭",
+    "alert_handling": "모든 Alert 자동 처리",
+    "rate_limiting": "30개마다 1분 휴식"
+  },
+  "credentials": {
+    "login_url": "https://eclogin.cafe24.com/Shop/",
+    "username": "manwonyori",
+    "password_hint": "happy****!",
+    "admin_url": "https://manwonyori.cafe24.com/disp/admin/"
+  },
+  "technical_details": {
+    "tab_selector": "a[href=\"#tabCont1_2\"]",
+    "html_button_selector": "button[data-cmd=\"html\"]",
+    "content_sources": [
+      "product_description",
+      "iframe[id*='editor']",
+      "iframe#prd-detail"
+    ],
+    "wait_times": {
+      "page_load": 2,
+      "tab_switch": 1,
+      "between_products": 2,
+      "batch_pause": 60
+    }
+  },
+  "supplier_classification": {
+    "인생": "[인생] && !만두",
+    "인생만두": "[인생만두]",
+    "취영루": "[취영루]",
+    "최시남매": "[최시남매]",
+    "기타": "default"
+  },
+  "error_patterns": {
+    "session_expired": "Session이 종료되었거나",
+    "security_redirect": "쇼핑몰의 보안을 위해",
+    "empty_html": "<p><br></p>",
+    "unicode_error": "cp949 codec can't encode"
+  },
+  "reusable_templates": {
+    "url_navigation": "window.location.href = '{url}'",
+    "element_click": "driver.execute_script(\"arguments[0].click();\", element)",
+    "alert_handler": "while True: try: driver.switch_to.alert.accept() except: break",
+    "content_extractor": "element.get_attribute('value') or element.get_attribute('innerHTML')"
+  },
+  "applicable_tasks": [
+    "product_html_download",
+    "product_info_update",
+    "price_batch_update",
+    "inventory_management",
+    "category_modification",
+    "image_upload",
+    "content_migration"
+  ],
+  "performance_metrics": {
+    "average_speed": "8.5 products/minute",
+    "success_rate": "94.6%",
+    "valid_html_rate": "71.7%",
+    "empty_html_rate": "22.1%",
+    "failure_rate": "5.4%"
+  },
+  "lessons_learned": [
+    "세션 유지가 가장 중요",
+    "JavaScript 실행이 일반 클릭보다 안정적",
+    "Alert 처리 로직 필수",
+    "유니코드 처리 필수",
+    "업체별 분류 자동화 가능"
+  ]
+}

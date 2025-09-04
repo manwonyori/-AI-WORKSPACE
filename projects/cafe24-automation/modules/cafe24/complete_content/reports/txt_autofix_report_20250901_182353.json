@@ -1,0 +1,1077 @@
+{
+  "fixed_files": [],
+  "backup_files": [
+    {
+      "original": "html\\temp_txt\\131.txt",
+      "backup": "backup\\txt_backup\\131_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\132.txt",
+      "backup": "backup\\txt_backup\\132_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\133.txt",
+      "backup": "backup\\txt_backup\\133_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\134.txt",
+      "backup": "backup\\txt_backup\\134_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\135.txt",
+      "backup": "backup\\txt_backup\\135_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\136.txt",
+      "backup": "backup\\txt_backup\\136_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\137.txt",
+      "backup": "backup\\txt_backup\\137_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\138.txt",
+      "backup": "backup\\txt_backup\\138_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\139.txt",
+      "backup": "backup\\txt_backup\\139_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\140.txt",
+      "backup": "backup\\txt_backup\\140_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\141.txt",
+      "backup": "backup\\txt_backup\\141_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\142.txt",
+      "backup": "backup\\txt_backup\\142_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\143.txt",
+      "backup": "backup\\txt_backup\\143_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\144.txt",
+      "backup": "backup\\txt_backup\\144_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\145.txt",
+      "backup": "backup\\txt_backup\\145_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\146.txt",
+      "backup": "backup\\txt_backup\\146_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\147.txt",
+      "backup": "backup\\txt_backup\\147_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\148.txt",
+      "backup": "backup\\txt_backup\\148_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\149.txt",
+      "backup": "backup\\txt_backup\\149_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\150.txt",
+      "backup": "backup\\txt_backup\\150_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\151.txt",
+      "backup": "backup\\txt_backup\\151_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\152.txt",
+      "backup": "backup\\txt_backup\\152_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\153.txt",
+      "backup": "backup\\txt_backup\\153_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\154.txt",
+      "backup": "backup\\txt_backup\\154_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\155.txt",
+      "backup": "backup\\txt_backup\\155_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\156.txt",
+      "backup": "backup\\txt_backup\\156_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\157.txt",
+      "backup": "backup\\txt_backup\\157_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\158.txt",
+      "backup": "backup\\txt_backup\\158_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\159.txt",
+      "backup": "backup\\txt_backup\\159_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\160.txt",
+      "backup": "backup\\txt_backup\\160_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\161.txt",
+      "backup": "backup\\txt_backup\\161_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\162.txt",
+      "backup": "backup\\txt_backup\\162_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\163.txt",
+      "backup": "backup\\txt_backup\\163_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\164.txt",
+      "backup": "backup\\txt_backup\\164_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\165.txt",
+      "backup": "backup\\txt_backup\\165_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\166.txt",
+      "backup": "backup\\txt_backup\\166_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\167.txt",
+      "backup": "backup\\txt_backup\\167_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\168.txt",
+      "backup": "backup\\txt_backup\\168_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\169.txt",
+      "backup": "backup\\txt_backup\\169_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\170.txt",
+      "backup": "backup\\txt_backup\\170_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\171.txt",
+      "backup": "backup\\txt_backup\\171_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\172.txt",
+      "backup": "backup\\txt_backup\\172_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\173.txt",
+      "backup": "backup\\txt_backup\\173_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\174.txt",
+      "backup": "backup\\txt_backup\\174_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\175.txt",
+      "backup": "backup\\txt_backup\\175_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\176.txt",
+      "backup": "backup\\txt_backup\\176_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\177.txt",
+      "backup": "backup\\txt_backup\\177_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\178.txt",
+      "backup": "backup\\txt_backup\\178_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\179.txt",
+      "backup": "backup\\txt_backup\\179_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\180.txt",
+      "backup": "backup\\txt_backup\\180_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\181.txt",
+      "backup": "backup\\txt_backup\\181_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\182.txt",
+      "backup": "backup\\txt_backup\\182_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\183.txt",
+      "backup": "backup\\txt_backup\\183_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\184.txt",
+      "backup": "backup\\txt_backup\\184_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\185.txt",
+      "backup": "backup\\txt_backup\\185_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\186.txt",
+      "backup": "backup\\txt_backup\\186_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\187.txt",
+      "backup": "backup\\txt_backup\\187_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\188.txt",
+      "backup": "backup\\txt_backup\\188_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\189.txt",
+      "backup": "backup\\txt_backup\\189_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\190.txt",
+      "backup": "backup\\txt_backup\\190_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\191.txt",
+      "backup": "backup\\txt_backup\\191_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\192.txt",
+      "backup": "backup\\txt_backup\\192_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\193.txt",
+      "backup": "backup\\txt_backup\\193_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\194.txt",
+      "backup": "backup\\txt_backup\\194_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\195.txt",
+      "backup": "backup\\txt_backup\\195_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\196.txt",
+      "backup": "backup\\txt_backup\\196_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\197.txt",
+      "backup": "backup\\txt_backup\\197_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\198.txt",
+      "backup": "backup\\txt_backup\\198_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\199.txt",
+      "backup": "backup\\txt_backup\\199_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\200.txt",
+      "backup": "backup\\txt_backup\\200_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\201.txt",
+      "backup": "backup\\txt_backup\\201_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\202.txt",
+      "backup": "backup\\txt_backup\\202_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\203.txt",
+      "backup": "backup\\txt_backup\\203_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\204.txt",
+      "backup": "backup\\txt_backup\\204_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\205.txt",
+      "backup": "backup\\txt_backup\\205_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\206.txt",
+      "backup": "backup\\txt_backup\\206_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\207.txt",
+      "backup": "backup\\txt_backup\\207_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\208.txt",
+      "backup": "backup\\txt_backup\\208_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\209.txt",
+      "backup": "backup\\txt_backup\\209_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\210.txt",
+      "backup": "backup\\txt_backup\\210_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\211.txt",
+      "backup": "backup\\txt_backup\\211_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\212.txt",
+      "backup": "backup\\txt_backup\\212_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\213.txt",
+      "backup": "backup\\txt_backup\\213_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\214.txt",
+      "backup": "backup\\txt_backup\\214_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\215.txt",
+      "backup": "backup\\txt_backup\\215_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\216.txt",
+      "backup": "backup\\txt_backup\\216_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\217.txt",
+      "backup": "backup\\txt_backup\\217_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\218.txt",
+      "backup": "backup\\txt_backup\\218_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\219.txt",
+      "backup": "backup\\txt_backup\\219_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\220.txt",
+      "backup": "backup\\txt_backup\\220_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\221.txt",
+      "backup": "backup\\txt_backup\\221_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\222.txt",
+      "backup": "backup\\txt_backup\\222_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\223.txt",
+      "backup": "backup\\txt_backup\\223_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\224.txt",
+      "backup": "backup\\txt_backup\\224_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\225.txt",
+      "backup": "backup\\txt_backup\\225_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\226.txt",
+      "backup": "backup\\txt_backup\\226_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\227.txt",
+      "backup": "backup\\txt_backup\\227_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\228.txt",
+      "backup": "backup\\txt_backup\\228_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\229.txt",
+      "backup": "backup\\txt_backup\\229_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\230.txt",
+      "backup": "backup\\txt_backup\\230_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\231.txt",
+      "backup": "backup\\txt_backup\\231_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\232.txt",
+      "backup": "backup\\txt_backup\\232_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\233.txt",
+      "backup": "backup\\txt_backup\\233_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\234.txt",
+      "backup": "backup\\txt_backup\\234_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\235.txt",
+      "backup": "backup\\txt_backup\\235_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\236.txt",
+      "backup": "backup\\txt_backup\\236_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\237.txt",
+      "backup": "backup\\txt_backup\\237_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\238.txt",
+      "backup": "backup\\txt_backup\\238_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\239.txt",
+      "backup": "backup\\txt_backup\\239_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\240.txt",
+      "backup": "backup\\txt_backup\\240_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\241.txt",
+      "backup": "backup\\txt_backup\\241_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\242.txt",
+      "backup": "backup\\txt_backup\\242_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\243.txt",
+      "backup": "backup\\txt_backup\\243_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\244.txt",
+      "backup": "backup\\txt_backup\\244_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\245.txt",
+      "backup": "backup\\txt_backup\\245_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\246.txt",
+      "backup": "backup\\txt_backup\\246_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\247.txt",
+      "backup": "backup\\txt_backup\\247_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\248.txt",
+      "backup": "backup\\txt_backup\\248_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\249.txt",
+      "backup": "backup\\txt_backup\\249_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\250.txt",
+      "backup": "backup\\txt_backup\\250_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\251.txt",
+      "backup": "backup\\txt_backup\\251_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\252.txt",
+      "backup": "backup\\txt_backup\\252_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\253.txt",
+      "backup": "backup\\txt_backup\\253_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\256.txt",
+      "backup": "backup\\txt_backup\\256_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\257.txt",
+      "backup": "backup\\txt_backup\\257_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\258.txt",
+      "backup": "backup\\txt_backup\\258_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\259.txt",
+      "backup": "backup\\txt_backup\\259_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\261.txt",
+      "backup": "backup\\txt_backup\\261_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\262.txt",
+      "backup": "backup\\txt_backup\\262_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\263.txt",
+      "backup": "backup\\txt_backup\\263_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\264.txt",
+      "backup": "backup\\txt_backup\\264_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\265.txt",
+      "backup": "backup\\txt_backup\\265_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\266.txt",
+      "backup": "backup\\txt_backup\\266_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\267.txt",
+      "backup": "backup\\txt_backup\\267_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\268.txt",
+      "backup": "backup\\txt_backup\\268_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\269.txt",
+      "backup": "backup\\txt_backup\\269_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\27.txt",
+      "backup": "backup\\txt_backup\\27_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\270.txt",
+      "backup": "backup\\txt_backup\\270_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\271.txt",
+      "backup": "backup\\txt_backup\\271_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\272.txt",
+      "backup": "backup\\txt_backup\\272_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\273.txt",
+      "backup": "backup\\txt_backup\\273_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\274.txt",
+      "backup": "backup\\txt_backup\\274_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\275.txt",
+      "backup": "backup\\txt_backup\\275_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\276.txt",
+      "backup": "backup\\txt_backup\\276_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\277.txt",
+      "backup": "backup\\txt_backup\\277_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\278.txt",
+      "backup": "backup\\txt_backup\\278_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\279.txt",
+      "backup": "backup\\txt_backup\\279_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\28.txt",
+      "backup": "backup\\txt_backup\\28_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\280.txt",
+      "backup": "backup\\txt_backup\\280_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\281.txt",
+      "backup": "backup\\txt_backup\\281_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\282.txt",
+      "backup": "backup\\txt_backup\\282_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\283.txt",
+      "backup": "backup\\txt_backup\\283_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\284.txt",
+      "backup": "backup\\txt_backup\\284_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\285.txt",
+      "backup": "backup\\txt_backup\\285_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\286.txt",
+      "backup": "backup\\txt_backup\\286_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\287.txt",
+      "backup": "backup\\txt_backup\\287_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\288.txt",
+      "backup": "backup\\txt_backup\\288_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\289.txt",
+      "backup": "backup\\txt_backup\\289_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\29.txt",
+      "backup": "backup\\txt_backup\\29_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\290.txt",
+      "backup": "backup\\txt_backup\\290_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\291.txt",
+      "backup": "backup\\txt_backup\\291_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\292.txt",
+      "backup": "backup\\txt_backup\\292_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\293.txt",
+      "backup": "backup\\txt_backup\\293_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\294.txt",
+      "backup": "backup\\txt_backup\\294_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\295.txt",
+      "backup": "backup\\txt_backup\\295_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\296.txt",
+      "backup": "backup\\txt_backup\\296_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\297.txt",
+      "backup": "backup\\txt_backup\\297_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\298.txt",
+      "backup": "backup\\txt_backup\\298_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\299.txt",
+      "backup": "backup\\txt_backup\\299_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\30.txt",
+      "backup": "backup\\txt_backup\\30_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\300.txt",
+      "backup": "backup\\txt_backup\\300_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\301.txt",
+      "backup": "backup\\txt_backup\\301_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\302.txt",
+      "backup": "backup\\txt_backup\\302_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\303.txt",
+      "backup": "backup\\txt_backup\\303_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\304.txt",
+      "backup": "backup\\txt_backup\\304_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\305.txt",
+      "backup": "backup\\txt_backup\\305_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\306.txt",
+      "backup": "backup\\txt_backup\\306_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\307.txt",
+      "backup": "backup\\txt_backup\\307_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\308.txt",
+      "backup": "backup\\txt_backup\\308_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\309.txt",
+      "backup": "backup\\txt_backup\\309_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\31.txt",
+      "backup": "backup\\txt_backup\\31_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\310.txt",
+      "backup": "backup\\txt_backup\\310_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\311.txt",
+      "backup": "backup\\txt_backup\\311_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\312.txt",
+      "backup": "backup\\txt_backup\\312_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\313.txt",
+      "backup": "backup\\txt_backup\\313_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\314.txt",
+      "backup": "backup\\txt_backup\\314_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\315.txt",
+      "backup": "backup\\txt_backup\\315_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\316.txt",
+      "backup": "backup\\txt_backup\\316_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\317.txt",
+      "backup": "backup\\txt_backup\\317_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\318.txt",
+      "backup": "backup\\txt_backup\\318_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\319.txt",
+      "backup": "backup\\txt_backup\\319_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\32.txt",
+      "backup": "backup\\txt_backup\\32_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\320.txt",
+      "backup": "backup\\txt_backup\\320_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\33.txt",
+      "backup": "backup\\txt_backup\\33_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\330.txt",
+      "backup": "backup\\txt_backup\\330_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\331.txt",
+      "backup": "backup\\txt_backup\\331_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\332.txt",
+      "backup": "backup\\txt_backup\\332_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\333.txt",
+      "backup": "backup\\txt_backup\\333_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\334.txt",
+      "backup": "backup\\txt_backup\\334_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\335.txt",
+      "backup": "backup\\txt_backup\\335_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\336.txt",
+      "backup": "backup\\txt_backup\\336_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\337.txt",
+      "backup": "backup\\txt_backup\\337_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\338.txt",
+      "backup": "backup\\txt_backup\\338_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\339.txt",
+      "backup": "backup\\txt_backup\\339_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\34.txt",
+      "backup": "backup\\txt_backup\\34_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\35.txt",
+      "backup": "backup\\txt_backup\\35_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\36.txt",
+      "backup": "backup\\txt_backup\\36_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\37.txt",
+      "backup": "backup\\txt_backup\\37_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\38.txt",
+      "backup": "backup\\txt_backup\\38_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\39.txt",
+      "backup": "backup\\txt_backup\\39_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\40.txt",
+      "backup": "backup\\txt_backup\\40_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\41.txt",
+      "backup": "backup\\txt_backup\\41_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\42.txt",
+      "backup": "backup\\txt_backup\\42_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\43.txt",
+      "backup": "backup\\txt_backup\\43_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\44.txt",
+      "backup": "backup\\txt_backup\\44_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\45.txt",
+      "backup": "backup\\txt_backup\\45_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\46.txt",
+      "backup": "backup\\txt_backup\\46_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\47.txt",
+      "backup": "backup\\txt_backup\\47_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\48.txt",
+      "backup": "backup\\txt_backup\\48_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\49.txt",
+      "backup": "backup\\txt_backup\\49_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\50.txt",
+      "backup": "backup\\txt_backup\\50_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\51.txt",
+      "backup": "backup\\txt_backup\\51_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\52.txt",
+      "backup": "backup\\txt_backup\\52_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\53.txt",
+      "backup": "backup\\txt_backup\\53_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\57.txt",
+      "backup": "backup\\txt_backup\\57_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\58.txt",
+      "backup": "backup\\txt_backup\\58_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\62.txt",
+      "backup": "backup\\txt_backup\\62_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\65.txt",
+      "backup": "backup\\txt_backup\\65_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\66.txt",
+      "backup": "backup\\txt_backup\\66_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\69.txt",
+      "backup": "backup\\txt_backup\\69_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\71.txt",
+      "backup": "backup\\txt_backup\\71_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\72.txt",
+      "backup": "backup\\txt_backup\\72_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\73.txt",
+      "backup": "backup\\txt_backup\\73_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\75.txt",
+      "backup": "backup\\txt_backup\\75_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\76.txt",
+      "backup": "backup\\txt_backup\\76_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\77.txt",
+      "backup": "backup\\txt_backup\\77_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\92.txt",
+      "backup": "backup\\txt_backup\\92_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\93.txt",
+      "backup": "backup\\txt_backup\\93_20250901_182353.txt"
+    },
+    {
+      "original": "html\\temp_txt\\94.txt",
+      "backup": "backup\\txt_backup\\94_20250901_182353.txt"
+    }
+  ],
+  "unfixable_files": [
+    {
+      "file": "27.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "28.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "29.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "30.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "31.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "32.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "33.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "34.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "35.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "36.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "37.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "38.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "39.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "40.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "41.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "42.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "43.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "44.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "45.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "47.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "48.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "49.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "52.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "57.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "62.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "65.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "66.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    },
+    {
+      "file": "69.txt",
+      "reason": "검증 실패: center 태그 불일치"
+    }
+  ],
+  "total_processed": 239,
+  "fix_time": "2025-09-01T18:23:53.389428"
+}

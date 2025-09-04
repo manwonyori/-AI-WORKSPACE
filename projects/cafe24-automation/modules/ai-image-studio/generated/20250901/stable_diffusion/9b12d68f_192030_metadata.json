@@ -1,0 +1,18 @@
+{
+  "id": "9b12d68f",
+  "timestamp": "20250901_192030",
+  "product_data": {
+    "name": "Korean Kimchi"
+  },
+  "category": "food",
+  "style": "product_showcase",
+  "platform": "stable_diffusion",
+  "prompt": "A professional product photography of Korean Kimchi, modern, placed on a clean white background, shot with studio lighting, 45-degree view, high resolution, ultra detailed, commercial quality, 4K, photorealistic, dynamic angle, masterpiece, best quality, highly detailed",
+  "negative_prompt": "blurry, low quality, pixelated, distorted, unrealistic, amateur",
+  "quality_score": null,
+  "metadata": {
+    "template_used": "food/product_showcase",
+    "prompt_length": 270,
+    "estimated_generation_time": 45
+  }
+}

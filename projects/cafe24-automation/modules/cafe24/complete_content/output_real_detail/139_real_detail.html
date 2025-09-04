@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[취영루] 물반 고기반 황금비율 - 홈콤보 세트 - 만원요리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 헤더 섹션 */
+        .header-section {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .product-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .product-subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        /* 메인 콘텐츠 그리드 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* 이미지 섹션 */
+        .image-section {
+            position: relative;
+        }
+        
+        .main-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        /* 정보 섹션 */
+        .info-section {
+            padding: 20px;
+        }
+        
+        .feature-list {
+            margin-bottom: 30px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .feature-item:hover {
+            transform: translateX(10px);
+            background: #e9ecef;
+        }
+        
+        .feature-icon {
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            border-radius: 50%;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* 영양정보 테이블 */
+        .nutrition-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #495057;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .nutrition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .nutrition-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .nutrition-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .nutrition-label {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        
+        /* 재료 섹션 */
+        .ingredients-section {
+            margin-bottom: 40px;
+        }
+        
+        .ingredient-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .ingredient-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        /* 조리방법 섹션 */
+        .cooking-section {
+            background: white;
+            border: 2px solid #e9ecef;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .cooking-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .cooking-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .cooking-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .cooking-desc {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        /* 하단 이미지 섹션 */
+        .bottom-images {
+            margin-top: 50px;
+        }
+        
+        .detail-image {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* 푸터 */
+        .footer-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+        
+        .brand-info {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        
+        .haccp-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="detail-container">
+        <!-- 헤더 -->
+        <div class="header-section">
+            <h1 class="product-title">[취영루] 물반 고기반 황금비율 - 홈콤보 세트</h1>
+            <p class="product-subtitle">만원요리 X 취영루 프리미엄 만두</p>
+        </div>
+        
+        <!-- 메인 콘텐츠 -->
+        <div class="content-grid">
+            <!-- 이미지 섹션 -->
+            <div class="image-section">
+                <span class="badge">BEST</span>
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/vege/vege-420g.jpg" 
+                     alt="[취영루] 물반 고기반 황금비율 - 홈콤보 세트" 
+                     class="main-image">
+            </div>
+            
+            <!-- 정보 섹션 -->
+            <div class="info-section">
+                <h2 class="section-title">제품 특징</h2>
+                <div class="feature-list">
+
+                    <div class="feature-item">
+                        <div class="feature-icon">1</div>
+                        <span>다양한 맛을 한번에 즐기는 세트</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">2</div>
+                        <span>김치와 고기 또는 물만두 조합</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">3</div>
+                        <span>가족이 함께 즐기는 구성</span>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">4</div>
+                        <span>각 제품의 장점을 모은 패키지</span>
+                    </div>
+
+                </div>
+                
+                <div style="background: #fff3cd; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                    <strong style="color: #856404;">차별점:</strong>
+                    <p style="color: #856404; margin-top: 5px;">한 번에 여러 맛을 경험할 수 있는 프리미엄 세트 구성</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 영양정보 -->
+        <div class="nutrition-section">
+            <h2 class="section-title">영양정보 (100g당)</h2>
+            <div class="nutrition-grid">
+
+                <div class="nutrition-item">
+                    <div class="nutrition-value">270kcal (평균)</div>
+                    <div class="nutrition-label">열량</div>
+                </div>
+
+                <div class="nutrition-item">
+                    <div class="nutrition-value">30g</div>
+                    <div class="nutrition-label">탄수화물</div>
+                </div>
+
+                <div class="nutrition-item">
+                    <div class="nutrition-value">12g</div>
+                    <div class="nutrition-label">단백질</div>
+                </div>
+
+                <div class="nutrition-item">
+                    <div class="nutrition-value">11g</div>
+                    <div class="nutrition-label">지방</div>
+                </div>
+
+                <div class="nutrition-item">
+                    <div class="nutrition-value">520mg</div>
+                    <div class="nutrition-label">나트륨</div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- 주요 재료 -->
+        <div class="ingredients-section">
+            <h2 class="section-title">주요 재료</h2>
+            <div class="ingredient-list">
+
+                <div class="ingredient-item">돼지고기 평균 20%</div>
+
+                <div class="ingredient-item">김치 일부 포함</div>
+
+                <div class="ingredient-item">야채류 다양</div>
+
+                <div class="ingredient-item">조미료 적정량</div>
+
+            </div>
+        </div>
+        
+        <!-- 조리방법 -->
+        <div class="cooking-section">
+            <h2 class="section-title">조리방법</h2>
+            <div class="cooking-methods">
+
+            </div>
+        </div>
+        
+        <!-- 하단 이미지 -->
+        <div class="bottom-images">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg" 
+                 alt="취영루 브랜드 소개" 
+                 class="detail-image">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/vege/vege-420g-d.jpg" 
+                 alt="[취영루] 물반 고기반 황금비율 - 홈콤보 세트 상세정보" 
+                 class="detail-image">
+        </div>
+        
+        <!-- 푸터 -->
+        <div class="footer-section">
+            <p class="brand-info">70년 전통 취영루</p>
+            <p class="brand-info">서울특별시 영등포구 도림로 152</p>
+            <span class="haccp-badge">HACCP 인증</span>
+        </div>
+    </div>
+</body>
+</html>

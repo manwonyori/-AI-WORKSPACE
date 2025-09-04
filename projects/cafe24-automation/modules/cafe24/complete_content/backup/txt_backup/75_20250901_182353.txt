@@ -1,0 +1,597 @@
+<center>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사장님을 위한 진짜 업소용 반찬 - 반찬단지 무말랭이무침 4kg + 매실간장깻잎 4kg 특가세트</title>
+  <meta name="description" content="사장님, 반찬 준비로 힘드셨죠? 월 50만원 인건비 절약, 새벽 준비시간 2시간 단축! 40년 전통 반찬단지의 진짜 업소용 대용량 반찬(8kg)을 사장님 특가로 만나보세요.">
+<style>
+ @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+ /* ===== 기본 및 공통 스타일 ===== */
+ 
+ * {
+  box-sizing: border-box;
+ }
+ 
+ body {
+  margin: 0; font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; background-color: #f5f5f5; color: #333; line-height: 1.6;
+ }
+ 
+ .page-wrapper {
+  max-width: 860px; margin: 0 auto; background-color: #FFFFFF; overflow-x: hidden;
+ }
+ 
+ img {
+  max-width: 100%; height: auto; display: block;
+ }
+ 
+ a {
+  text-decoration: none; color: inherit;
+ }
+ 
+ .section {
+  padding: 48px 20px; text-align: center;
+ }
+ 
+ .section-title {
+  font-size: 28px; font-weight: bold; color: #2d3748; margin: 0 0 16px 0; line-height: 1.4;
+ }
+ 
+ .content-box {
+  max-width: 600px; margin: 0 auto;
+ }
+ 
+ .highlight-green {
+  background-color: #C8E6C9; padding: 4px 8px; font-weight: bold; color: #1B5E20; border-radius: 4px; display: inline-block;
+ }
+ /* ===== Hero Section ===== */
+ 
+ .hero-section {
+  background: linear-gradient(135deg, #1B5E20 0%, #E31837 100%); color: white; padding: 48px 20px; text-align: center;
+ }
+ 
+ .hero-section h1 {
+  font-size: 36px; font-weight: 900; margin: 0 0 24px 0; line-height: 1.2;
+ }
+ 
+ .hero-section .direct-choice {
+  background: linear-gradient(45deg, #1B5E20, #4CAF50); color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 8px;
+ }
+ 
+ .hero-section .sub-headline {
+  font-size: 20px; opacity: 0.9; margin: 0 0 24px 0;
+ }
+ 
+ .hero-section .sub-headline .highlight-yellow {
+  background-color: #FFF2B2; color: #1a202c; padding: 4px 8px; font-weight: bold; border-radius: 4px; display: inline-block;
+ }
+ 
+ .hero-section h2 {
+  font-size: 28px; font-weight: bold; margin: 0 0 24px 0;
+ }
+ 
+ .hero-section .gradient-text {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 900;
+ }
+ 
+ .price-box {
+  margin-bottom: 24px;
+ }
+ 
+ .price-box .original-price {
+  font-size: 16px; text-decoration: line-through; opacity: 0.75;
+ }
+ 
+ .price-box .sale-price {
+  font-size: 36px; font-weight: bold; color: #FFD700; margin: 8px 0 16px 0;
+ }
+ 
+ .price-box .discount-badge {
+  font-size: 16px; background-color: #FFD700; color: #E31837; padding: 6px 12px; border-radius: 9999px; font-weight: bold;
+ }
+ 
+ .product-summary-box {
+  font-size: 18px; margin-bottom: 16px; background-color: rgba(0, 0, 0, 0.2); padding: 24px; border-radius: 8px; max-width: 450px; margin-left: auto; margin-right: auto;
+ }
+ 
+ .product-summary-box p {
+  margin: 0;
+ }
+ 
+ .product-summary-box .strong-point {
+  margin-top: 8px; font-weight: bold; color: #FFD700;
+ }
+ /* ===== Problem / Before & After Section ===== */
+ 
+ .problem-box {
+  margin-bottom: 48px;
+ }
+ 
+ .problem-box img,
+ .ba-box img {
+  max-width: 600px; border-radius: 8px; margin: 0 auto 16px auto; display: block;
+ }
+ 
+ .problem-box-title {
+  font-size: 20px; font-weight: bold; color: #dc3545; margin: 0 0 8px 0;
+ }
+ 
+ .ba-box {
+  margin-bottom: 48px;
+ }
+ 
+ .ba-badge {
+  border-radius: 50%; width: 96px; height: 96px; line-height: 96px; margin: 0 auto 24px auto; font-size: 20px; font-weight: bold;
+ }
+ 
+ .ba-before {
+  background-color: #f8d7da; color: #721c24;
+ }
+ 
+ .ba-after {
+  background-color: #d4edda; color: #155724;
+ }
+ /* ===== Solution / Social Proof Section ===== */
+ 
+ .creator-video-box {
+  background-color: #f8f9fa; border-radius: 8px; padding: 24px; margin: 0 auto 32px auto; max-width: 600px;
+ }
+ 
+ .creator-profile-box {
+  background-color: #f8f9fa; border-radius: 8px; padding: 24px; max-width: 600px; margin: 0 auto; text-align: left;
+ }
+ 
+ .creator-profile-header {
+  display: flex; align-items: center; margin-bottom: 16px;
+ }
+ 
+ .creator-profile-header img {
+  width: 64px; height: 64px; border-radius: 50%; margin-right: 16px;
+ }
+ 
+ .creator-quote {
+  background-color: white; padding: 16px; border-radius: 8px; font-style: italic; border-left: 4px solid #28a745;
+ }
+ 
+ .creator-channel-btn {
+  display: inline-block; background-color: #28a745; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 16px; font-weight: bold;
+ }
+ /* ===== Product / Trust / Brand / Info Section ===== */
+ 
+ .product-card,
+ .trust-card,
+ .brand-story-card,
+ .info-card {
+  border: 1px solid #dee2e6; border-radius: 8px; padding: 24px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin: 0 auto 32px auto; max-width: 600px;
+ }
+ 
+ .product-card img {
+  max-width: 250px; border-radius: 8px; margin: 0 auto 16px auto;
+ }
+ 
+ .product-card .usage-info {
+  margin-top: 16px; background-color: #e9f5e9; padding: 12px; border-radius: 8px; font-size: 14px; color: #1B5E20; text-align: left;
+ }
+ 
+ .review-card {
+  background-color: white; border-radius: 8px; padding: 24px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 24px; text-align: left;
+ }
+ 
+ .review-card .stars {
+  color: #ffc107; font-size: 18px; margin: 0 0 16px 0;
+ }
+ 
+ .review-card .reviewer {
+  float: right; font-size: 14px; font-weight: bold; color: #4a5568;
+ }
+ /* ===== FAQ / Final CTA Section ===== */
+ 
+ .faq-item {
+  background-color: white; border-radius: 8px; padding: 24px; border: 1px solid #dee2e6; margin-bottom: 16px; text-align: left;
+ }
+ 
+ .final-cta-section {
+  background: linear-gradient(135deg, #1B5E20 0%, #E31837 100%); color: white; padding: 48px 20px; text-align: center;
+ }
+ 
+ .final-price-box {
+  max-width: 400px; margin: 0 auto 32px auto; background-color: rgba(255, 255, 255, 0.2); border-radius: 8px; padding: 24px;
+ }
+ 
+ .final-cta-button {
+  display: inline-block; font-size: 22px; font-weight: 900; padding: 18px 36px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); transition: transform 0.2s ease-in-out;
+ }
+ 
+ .final-cta-button:hover {
+  transform: scale(1.05);
+ }
+ 
+ .btn-purchase {
+  background-color: #FFD700; color: #1B5E20; margin-bottom: 16px;
+ }
+ 
+ .btn-kakao {
+  background-color: #FEE500; color: #3C1E1E;
+ }
+
+</style>
+
+<!-- ▼▼▼ [추가] 브랜드 허브 헤더 v22.1 ▼▼▼ -->
+<style>
+ @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GmarketSansMedium.woff'); .manwon-hub-container {
+  max-width: 860px; margin: 30px auto; padding: 40px 20px; font-family: 'GmarketSansMedium', sans-serif; background: linear-gradient(to top, #fffaf6, #ffffff); border: 3px solid #FF7A2F; border-radius: 16px; text-align: center; word-break: keep-all; position: relative; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .manwon-hub-container .intro-text {
+  font-size: 18px; color: #555; font-weight: 700;
+ }
+ 
+ .manwon-hub-container h1 {
+  font-size: 36px; font-weight: 900; color: #333; margin: 16px 0; line-height: 1.4;
+ }
+ 
+ .manwon-hub-container h1 .highlight {
+  color: #FF7A2F;
+ }
+ 
+ .manwon-hub-container .sub-text {
+  font-size: 16px; color: #555;
+ }
+ 
+ .manwon-hub-container .final-message {
+  margin-top: 30px; font-size: 16px; font-weight: 700; color: #333;
+ }
+ 
+ @keyframes hub-cta-glow {
+  0%,
+  100% {
+  box-shadow: 0 0 15px 0px rgba(255, 122, 47, 0.6);
+  }
+  50% {
+  box-shadow: 0 0 25px 8px rgba(255, 122, 47, 0.9);
+  }
+ }
+ 
+ .manwon-hub-container .cta-button {
+  display: inline-block; background-color: #FF7A2F; color: white; font-size: 24px; font-weight: 700; padding: 18px 40px; border-radius: 50px; text-decoration: none; margin-top: 24px; animation: hub-cta-glow 2.5s infinite; transition: transform 0.2s ease-in-out;
+ }
+ 
+ .manwon-hub-container .cta-button:hover {
+  transform: scale(1.05);
+ }
+ 
+ .manwon-hub-container .cta-subtext {
+  font-size: 14px; color: #777; margin-top: 10px;
+ }
+ 
+ .manwon-card-section {
+  margin-top: 40px; padding-top: 30px; border-top: 2px dashed #fae5d3; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+ }
+ 
+ .manwon-card {
+  background-color: #fff; border: 1px solid #fae5d3; border-radius: 12px; padding: 20px; text-decoration: none; display: block; color: #333; transition: all 0.3s ease;
+ }
+ 
+ .manwon-card:hover {
+  transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); border-color: #FF7A2F;
+ }
+ 
+ .manwon-card .icon {
+  font-size: 28px; color: #FF7A2F; margin-bottom: 10px;
+ }
+ 
+ .manwon-card .title {
+  font-size: 18px; font-weight: 700; margin-bottom: 5px;
+ }
+ 
+ .manwon-card .desc {
+  font-size: 14px; color: #666;
+ }
+ 
+ #kakao-add-channel-button-container {
+  position: absolute; top: 20px; right: 20px; z-index: 10;
+ }
+
+</style>
+<div class="manwon-hub-container">
+<div id="kakao-add-channel-button-container"></div>
+
+<p class="intro-text">안녕하세요! 만원요리 최씨남매입니다.</p>
+
+<h1>잠깐! 이 상품만 보고 가시게요?
+<br><span class="highlight">더 많은 행복이 기다리고 있어요!</span></h1>
+
+<p class="sub-text">저희가 직접 발로 뛰어 찾아낸, 말도 안 되는 가격의
+<br>맛있는 제품들이 매일 업데이트됩니다.</p>
+<a href="https://www.manwonyori.com" rel="noopener noreferrer" target="_blank" class="cta-button">만원요리 최씨남매 사이트 바로가기!</a>
+
+<p class="cta-subtext">(클릭하시면 더 많고 저렴한 제품을 보실 수 있습니다!)</p>
+<div class="manwon-card-section">
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=75" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">💡</div>
+<div class="title">최씨남매 기획전</div>
+<div class="desc">지금 가장 핫한 상품만 모았어요!</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=53" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⭐</div>
+<div class="title">최씨남매 PICK</div>
+<div class="desc">저희가 직접 고른 믿고 먹는 제품</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=54" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤔</div>
+<div class="title">오늘 뭐 먹지?</div>
+<div class="desc">고민 끝! 식단 걱정 덜어드려요</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=55" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">📦</div>
+<div class="title">사장님 브랜드관 (대용량)</div>
+<div class="desc">자영업자 사장님들을 위한 특별관</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=56" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤝</div>
+<div class="title">직거래 브랜드관</div>
+<div class="desc">산지직송! 신선함 그대로</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=57" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⚡</div>
+<div class="title">공장직속/반짝특가</div>
+<div class="desc">이 가격, 실화? 역대급 가성비</div>
+</a>
+</div>
+
+<p class="final-message">누야히야들, 모든 사장님들 화이팅!</p>
+</div>
+
+<!-- ▲▲▲ [추가] 브랜드 허브 헤더 v22.1 ▲▲▲ -->
+
+<div class="page-wrapper">
+
+<!-- Section 1: Hero -->
+<header class="hero-section">
+<!-- [수정] 헤드라인 변경 -->
+<h1>사장님, 반찬 준비에 쏟는 시간과 비용
+<br><span class="direct-choice">이제 그만 낭비하세요!</span></h1>
+
+<p class="sub-headline"><span class="highlight-yellow">진짜 업소용 반찬의 비밀</span></p>
+
+<h2>40년 전통 반찬단지
+<br><span class="gradient-text">사장님 특가 세트</span></h2>
+<div class="price-box">
+<span class="original-price">정상가 53,340원</span>
+<div class="sale-price">⚡ 사장님 특가 39,800원 ⚡</div>
+<span class="discount-badge">무려 25% 파격 할인!</span>
+</div>
+<div class="product-summary-box">
+
+<p>🏪 무말랭이무침 4kg + 매실간장깻잎 4kg</p>
+
+<p class="strong-point">업소용 대용량 8kg! 한 달 든든한 반찬 해결 💪</p>
+</div>
+</header>
+
+<!-- Section 2: Problem -->
+<section style="background-color: #f8f9fa;" class="section">
+<div class="content-box">
+
+<h3 class="section-title">😩 사장님, 매일 새벽부터 반찬 준비하느라 <span class="highlight-green">지치셨죠?</span></h3>
+
+<p style="font-size: 18px; color: #4a5568;">소중한 시간과 인건비, 더 이상 반찬 준비에 낭비하지 마세요.</p>
+</div>
+<div class="problem-box">
+<img src="https://page1.genspark.site/v1/base64_upload/0978631e547eebae3087b059704ff9a4" alt="새벽에 반찬 준비하는 사장님" loading="lazy" class="fr-draggable">
+
+<h4 class="problem-box-title">⏰ 새벽 3시부터 시작되는 고된 하루</h4>
+
+<p style="color: #4a5568; margin: 0;">"장보기, 썰기, 무치기..."
+<br>반찬 준비만으로도 몸이 지쳐버려요</p>
+</div>
+<div style="margin-bottom:0;" class="problem-box">
+<img src="https://page1.genspark.site/v1/base64_upload/09f4536401a31b6599e3981e70931a6e" alt="인건비 부담 느끼는 사장님" loading="lazy" class="fr-draggable">
+
+<h4 class="problem-box-title">💸 월 50만원 이상, 치솟는 인건비 부담</h4>
+
+<p style="color: #4a5568; margin: 0;">반찬 전담 직원 고용하기엔
+<br>부담스럽고, 직접 하기엔 너무 힘듭니다</p>
+</div>
+</section>
+  
+  <!-- [삭제] Section 3: Solution & Social Proof 섹션 전체 삭제 -->
+
+<!-- Section 4: Before & After -->
+<section style="background-color: #f8f9fa;" class="section">
+
+<h3 style="margin-bottom: 48px;" class="section-title">✨ 반찬 하나 바꿨을 뿐인데, 이렇게 달라집니다!</h3>
+<div class="ba-box">
+<div class="ba-badge ba-before">😔 BEFORE</div>
+<img src="https://page1.genspark.site/v1/base64_upload/09f4536401a31b6599e3981e70931a6e" alt="새벽부터 반찬 준비하는 모습" loading="lazy" class="fr-draggable">
+
+<p style="font-size: 18px; color: #4a5568; margin: 0;">새벽 3시 기상, 4시간 반찬 준비...</p>
+
+<p style="color: #dc3545; font-weight: 600; margin: 4px 0 0 0;">😞 지쳐가는 몸과 마음, 늘어가는 인건비</p>
+</div>
+<div style="margin-bottom: 0;" class="ba-box">
+<div class="ba-badge ba-after">😍 AFTER</div>
+<img src="https://page1.genspark.site/v1/base64_upload/a8d847ef0d13da67370512b48b0c3b80" alt="여유롭게 운영하는 업소" loading="lazy" class="fr-draggable">
+
+<p style="font-size: 18px; color: #4a5568; margin: 0;">오전 7시 여유로운 시작, 30분이면 <span style="font-weight: 900; color:#1B5E20;">준비 완료!</span></p>
+
+<p style="color: #28a745; font-weight: 600; margin: 4px 0 0 0;">🥰 충분한 수면시간 확보, 월 50만원 인건비 절약</p>
+</div>
+</section>
+
+<!-- Section 5: Product Details -->
+<section class="section">
+
+<h3 style="margin-bottom: 48px;" class="section-title">🍽️ 사장님 식탁의 <span style="font-weight:900;">든든한 매출 효자</span></h3>
+<div class="product-card">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/banchan/mumalangi.png" alt="무말랭이무침" loading="lazy" class="fr-draggable">
+
+<h4 style="font-size: 20px; font-weight: bold; margin: 0 0 8px 0;">🥢 무말랭이무침 (4kg)</h4>
+
+<p style="color: #4a5568; margin: 0;">족발·보쌈집 필수템! <span style="font-weight:900;">아삭꼬들 식감의 밥도둑</span>
+<br><small>67% 무말랭이 + 40년 전통 양념</small></p>
+<div class="usage-info">
+
+<p style="margin:0;"><strong>업소 활용도 ★★★★★</strong>
+<br>한식당, 족발집, 보쌈집, 도시락집</p>
+</div>
+</div>
+<div style="margin-bottom:0;" class="product-card">
+<img src="https://cdn.imweb.me/thumbnail/20210427/fc5849bdfc7cf.png" alt="매실간장깻잎" loading="lazy" class="fr-draggable">
+
+<h4 style="font-size: 20px; font-weight: bold; margin: 0 0 8px 0;">🌿 매실간장깻잎 (4kg)</h4>
+
+<p style="color: #4a5568; margin: 0;">2022 우수상 수상작! <span style="font-weight:900;">상큼매콤 향긋한 프리미엄</span>
+<br><small>매실의 상큼함 + 깊은 간장맛</small></p>
+<div class="usage-info">
+
+<p style="margin:0;"><strong>업소 활용도 ★★★★★</strong>
+<br>한식당, 도시락집, 카페, 분식점</p>
+</div>
+</div>
+</section>
+
+<!-- Section 6: Customer Reviews -->
+<section style="background-color: #f8f9fa;" class="section">
+
+<h3 class="section-title">💕 먼저 사용해본 사장님들의 <span style="font-weight:900;">찐리뷰</span> 👍</h3>
+
+<p style="color: #6c757d; margin: 0 0 48px 0;">재구매율 78%! 10명 중 8명 사장님이 또 주문하는 이유</p>
+<div class="content-box">
+<div class="review-card">
+
+<p class="stars">⭐⭐⭐⭐⭐<span class="reviewer">김○수님 (분식점)</span></p>
+
+<p style="color: #4a5568; margin: 0;">"20년 장사하면서 이런 가성비는 처음이에요. <span class="highlight-green">새벽 준비시간을 2시간은 단축</span>했습니다. 손님들이 '이 무말랭이 어디서 사냐'고 물어볼 정도로 맛있어요. 💪"</p>
+</div>
+<div class="review-card">
+
+<p class="stars">⭐⭐⭐⭐⭐<span class="reviewer">박○영님 (도시락집)</span></p>
+
+<p style="color: #4a5568; margin: 0;">"매일 새벽 3시에 일어나서 반찬 준비하다가 몸이 너무 힘들었는데, 이 제품 쓰고나서 <span class="highlight-green">삶의 질이 달라졌어요</span>. 맛도 제가 직접 만든 것보다 낫네요! 🔥"</p>
+</div>
+<div class="review-card">
+
+<p class="stars">⭐⭐⭐⭐⭐<span class="reviewer">이○철님 (족발집)</span></p>
+
+<p style="color: #4a5568; margin: 0;">"처음엔 업소용 반찬에 대한 편견이 있었는데, 직접 먹어보니 깜짝 놀랐습니다. <span class="highlight-green">40년 전통이 느껴지는 깊은 맛</span>이에요. 단골손님들도 전부 좋아해요. 🏪"</p>
+</div>
+<div class="review-card">
+
+<p class="stars">⭐⭐⭐⭐⭐<span class="reviewer">최○미님 (한식당)</span></p>
+
+<p style="color: #4a5568; margin: 0;">"4kg 용량이라 한 달은 넉넉히 쓸 수 있어서 경제적이에요. 특히 깻잎 매실향이 일품이고, <span class="highlight-green">월 50만원 인건비 절약</span> 효과까지! 감사합니다. 🙏"</p>
+</div>
+</div>
+</section>
+
+<!-- Section 7: Trust & Certification -->
+<section class="section">
+
+<h3 style="margin-bottom: 48px;" class="section-title">💚 내 가족이 먹는다는 마음으로,
+<br><span class="highlight-green">안전하고 깨끗하게!</span></h3>
+<div class="trust-card"><img src="https://cdn1.genspark.ai/user-upload-image/4_generated/9d26cfca-0d06-42c4-8cb7-e65c69df8c8d" alt="HACCP 인증 시설" loading="lazy" class="fr-draggable">
+
+<h4 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0;">🏭 4중 국제인증 제조시설</h4>
+
+<p style="color: #4a5568; margin: 0;">HACCP, BRC, ISO22000, FSSC22000 국제 표준으로 만듭니다.</p>
+</div>
+<div class="trust-card"><img src="https://page1.genspark.site/v1/base64_upload/4a26fc79d62f812b9a4bf576f83552a1" alt="2022 우수상 수상" loading="lazy" class="fr-draggable">
+
+<h4 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0;">🏆 2022 우수상 수상</h4>
+
+<p style="color: #4a5568; margin: 0;">한국소비자산업평가 '식품' 부문 깻잎무침 우수상 수상</p>
+</div>
+<div style="margin-bottom:0;" class="trust-card"><img src="https://cdn1.genspark.ai/user-upload-image/4_generated/626256b0-4d91-4755-ab49-c8a7e8f2604d" alt="신선 배송" loading="lazy" class="fr-draggable">
+
+<h4 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0;">🚛 전국 냉장 택배 배송</h4>
+
+<p style="color: #4a5568; margin: 0;">아이스팩 + 보냉박스로 업소까지 신선하게 배송됩니다.</p>
+</div>
+</section>
+
+<!-- Section 8: Brand Story -->
+<section style="background-color: #f8f9fa;" class="section">
+
+<h3 style="margin-bottom: 24px;" class="section-title">💖 40년 전통의 고집, <span class="highlight-green">사장님과의 약속</span></h3>
+<div class="content-box">
+<div style="text-align: left;" class="brand-story-card">
+  <!-- [수정] 헤드라인 변경 -->
+<h4 style="font-size: 22px; font-weight: bold; margin: 0 0 16px 0; color: #2d3748;">💕 40년 반찬 명가, 반찬단지 이야기</h4>
+
+<p style="color: #4a5568; margin: 0 0 16px 0;">1983년 설립된 (주)반찬단지는 인천에서 40년간 반찬을 제조해온 <span style="font-weight: bold;">한국 반찬 1등 브랜드</span>입니다. 저희는 단순한 제품 판매를 넘어, 사장님들의 성공을 돕는 <span style="font-weight: bold;">든든한 비즈니스 파트너</span>가 되겠습니다.</p>
+  <!-- [삭제] 최씨남매 인용구 삭제 -->
+  </div>
+<img src="https://cdn.hantoday.net/news/photo/202503/6_20683_68793_741.jpg" alt="반찬단지 공장 전경" style="border-radius: 8px;" loading="lazy" class="fr-draggable">
+</div>
+</section>
+
+<!-- Section 9: Official Product Information -->
+<section class="section">
+
+<h3 style="margin-bottom: 48px;" class="section-title">📋 믿고 확인하는 제품 상세 정보</h3>
+<div class="content-box">
+<div class="info-card">
+
+<h5 style="font-size: 18px; font-weight: bold; margin: 0 0 16px 0; text-align: center;">🌿 반찬단지 매실간장깻잎 상세 정보</h5><img src="https://page1.genspark.site/v1/base64_upload/d07fe5cefaa87470e1e46d10431690b2" alt="무말랭이무침 품목제조보고 및 상세정보 이미지" loading="lazy" class="fr-draggable"></div>
+<div style="margin-bottom:0;" class="info-card">
+
+<h5 style="font-size: 18px; font-weight: bold; margin: 0 0 16px 0; text-align: center;">🥢 반찬단지 무말랭이무침 상세 정보</h5><img src="https://page1.genspark.site/v1/base64_upload/87dd80af5c1058700f1d8b4bb7807eac" alt="매실간장깻잎 품목제조보고 및 상세정보 이미지" loading="lazy" class="fr-draggable"></div></div>
+</section>
+
+<!-- Section 10: FAQ -->
+<section style="background-color: #f8f9fa;" class="section">
+
+<h3 style="margin-bottom: 48px;" class="section-title">❓ 구매 전, 자주 묻는 질문</h3>
+<div class="content-box">
+<div class="faq-item">
+
+<h5 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0; color: #2d3748;">Q. 유통기한과 보관은 어떻게 하나요?</h5>
+
+<p style="color: #4a5568; margin: 0;">A. 제조일로부터 6개월이며, 개봉 후에는 0~10℃ 냉장보관하시고 <span style="font-weight: bold; color: #1B5E20;">가급적 빠른 시일 내에 섭취</span>하시는 것을 권장합니다.</p>
+</div>
+<div class="faq-item">
+
+<h5 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0; color: #2d3748;">Q. 4kg가 실제로 얼마나 쓸 수 있나요?</h5>
+
+<p style="color: #4a5568; margin: 0;">A. <strong>소형 업소(1-2인)</strong>: 2-3주 | <strong>중형 업소(3-5인)</strong>: 1-1.5주 | <strong>대형 업소(5인 이상)</strong>: 3-5일 사용량입니다. <span style="font-weight: bold; color: #1B5E20;">업소 규모에 맞춘 주문량 상담</span> 가능합니다.</p>
+</div>
+<div class="faq-item">
+
+<h5 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0; color: #2d3748;">Q. 배송은 얼마나 걸리나요?</h5>
+
+<p style="color: #4a5568; margin: 0;">A. 평일 오후 2시 이전 주문 시 당일 발송되며, 보통 1-2일 이내에 <span style="font-weight: bold; color: #1B5E20;">냉장택배</span>로 배송됩니다. (주말/공휴일 제외)</p>
+</div>
+<div class="faq-item">
+
+<h5 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0; color: #2d3748;">Q. 교환/환불 정책은 어떻게 되나요?</h5>
+
+<p style="color: #4a5568; margin: 0;">A. 신선식품 특성상 단순 변심으로 인한 교환/환불은 어렵습니다. 제품에 문제가 있을 경우, 수령 후 24시간 이내에 사진과 함께 고객센터로 연락주시면 <span style="font-weight: bold; color: #1B5E20;">신속하게 처리</span>해드리겠습니다.</p>
+</div></div>
+</section>
+
+<!-- Section 11: Final CTA -->
+<section class="final-cta-section">
+
+<h3 style="color: white; margin-bottom: 16px;" class="section-title">이제 사장님의 소중한 시간을
+<br>매출 올리는 곳에 집중하세요!</h3>
+
+<p style="font-size: 20px; margin: 0 0 32px 0; opacity: 0.9;">반찬 준비는 저희에게 맡기시고, 더 큰 성공을 만드세요.</p>
+<div class="final-price-box">
+<div style="font-size: 28px; font-weight: bold; color: #FFD700; margin-bottom: 8px;">🔥 사장님 특가 39,800원 🔥</div>
+<div><span style="text-decoration: line-through; opacity: 0.75;">정상가 53,340원</span><span style="margin-left: 8px; background-color: #FFD700; color: #E31837; padding: 4px 8px; border-radius: 4px; font-size: 14px; font-weight: bold;">25% 할인</span></div>
+</div>
+
+<a href="https://manwonyori.com/product/list.html?cate_no=55" rel="noopener noreferrer" target="_blank" class="final-cta-button btn-purchase">사장님 대용량<br>상품 전체보기</a>
+
+<p style="font-size: 16px; font-weight: 500; margin: 24px auto 8px auto;">궁금한 점이 있으신가요? 지금 바로 편하게 물어보세요!</p>
+<a href="https://pf.kakao.com/_xipwJn/chat" rel="noopener noreferrer" target="_blank" class="final-cta-button btn-kakao">💬 카카오톡으로 1:1 상담 및 주문하기</a>
+
+<div style="margin-top: 32px; font-size: 14px; opacity: 0.85;">
+
+<p style="margin: 0;">✓ 안전한 냉장택배 배송 ✓ 문제 발생 시 100% 책임보상 ✓ HACCP 인증 제품</p>
+
+<p style="margin-top: 8px; color: #FFD700;">💕 재구매율 78%! 이미 수많은 사장님들이 선택하셨습니다!</p>
+</div>
+</section>
+
+</div>
+</center>

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>훈제오리 완포 - 스토리텔링형</title>
+    
+    <!-- 최신 라이브러리들 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        :root {
+            --primary: #C53030;
+            --secondary: #E4A853;
+            --dark: #1F2937;
+        }
+        
+        /* 부드러운 스크롤 */
+        html { scroll-behavior: smooth; }
+        
+        /* 이미지 레이지 로딩 효과 */
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+        
+        /* 패럴랙스 효과 */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .mobile-full { width: 100vw; margin-left: -1rem; margin-right: -1rem; }
+            .mobile-padding { padding: 1rem; }
+        }
+        
+        /* 스티키 요소 */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+        
+        /* 인터렉티브 카드 */
+        .hover-lift {
+            transition: all 0.3s;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 브랜드 스토리 -->
+    <section class="min-h-screen flex items-center parallax" 
+             style="background-image: url('https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-8.png')">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-white/95 backdrop-blur p-8 rounded-2xl shadow-2xl" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-6">해선정 X 만원요리의 만남</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    30년 전통의 해선정과 만원요리 최씨남매가 만났습니다.
+                    최고의 품질, 합리적인 가격, 그리고 간편함까지.
+                    오리육 96.11%의 진심을 담았습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 제품 여정 -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">품질의 여정</h2>
+            
+            <div class="space-y-8">
+                <div class="flex items-center gap-8" data-aos="fade-right">
+                    <div class="flex-1">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-2.jpg" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">엄선된 원료</h3>
+                        <p class="text-gray-700">최상급 오리만을 선별하여 96.11%의 고함량을 실현했습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-8 flex-row-reverse" data-aos="fade-left">
+                    <div class="flex-1">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-4.jpg" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">간편한 조리</h3>
+                        <p class="text-gray-700">에어프라이어 10분, 번거로움 없이 레스토랑 퀄리티를 즐기세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 스크립트 -->
+    <script>
+        // AOS 초기화
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // 레이지 로딩
+        const images = document.querySelectorAll('.lazy-image');
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        
+        // 스티키 CTA
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 500;
+            const cta = document.querySelector('.sticky-cta');
+            if (cta) {
+                cta.classList.toggle('show', scrolled);
+            }
+        });
+        
+        // 탭 전환
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.getElementById(tabName).classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-red-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('bg-red-600', 'text-white');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<title>170_인생 조미 오징어입 200g</title>
+<meta name="description" content="쫄깃한 식감의 프리미엄 오징어입">
+
+<h1>인생 조미 오징어입 200g</h1>
+
+<p>엄선된 원양산 오징어를 최적의 크기로 잘라 특제 양념에 조미한 프리미엄 안주입니다. 쫄깃한 식감과 달콤짭짤한 맛이 일품입니다.</p>
+
+<p>맥주 안주로도, 밥반찬으로도 완벽한 만능 조미 오징어입. 한 번 먹으면 멈출 수 없는 중독성 있는 맛!</p>
+
+<img src="https://images.unsplash.com/photo-1626551670223-96bb76ae4f71?w=800&h=600" alt="인생 조미 오징어입 메인">
+<img src="https://images.unsplash.com/photo-1580476262525-1695730f01f4?w=800&h=600" alt="조미 오징어입 상세">
+<img src="https://images.unsplash.com/photo-1590736157970-4f2cb99de2fb?w=800&h=600" alt="오징어입 포장">
+
+<h2>제품 특징</h2>
+<ul>
+<li>원양산 프리미엄 오징어</li>
+<li>최적의 크기로 커팅</li>
+<li>특제 조미 양념</li>
+<li>쫄깃한 식감</li>
+<li>달콤짭짤한 맛</li>
+</ul>
+
+<h2>조리 방법</h2>
+<p>그대로 드셔도 되고, 살짝 구워 드시면 더욱 고소합니다.</p>
+
+<div class="price">
+<span>판매가: 12,900원</span>
+<span>중량: 200g (1kg 대용량도 있음)</span>
+</div>

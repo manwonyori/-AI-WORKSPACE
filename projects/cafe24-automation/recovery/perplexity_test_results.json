@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-08-27 13:05:16.693920",
+  "api_key": "pplx-Y89qe...xsGHy",
+  "working_models": [],
+  "failed_models": {
+    "llama-3.1-sonar-small-128k-online": "잘못된 요청",
+    "llama-3.1-sonar-large-128k-online": "잘못된 요청",
+    "llama-3.1-sonar-huge-128k-online": "잘못된 요청",
+    "llama-3.1-sonar-small-128k-chat": "잘못된 요청",
+    "llama-3.1-sonar-large-128k-chat": "잘못된 요청",
+    "llama-3.1-8b-instruct": "잘못된 요청",
+    "llama-3.1-70b-instruct": "잘못된 요청",
+    "mixtral-8x7b-instruct": "잘못된 요청",
+    "mistral-7b-instruct": "잘못된 요청",
+    "codellama-70b-instruct": "잘못된 요청",
+    "gemma-2b-it": "잘못된 요청",
+    "gemma-7b-it": "잘못된 요청"
+  },
+  "total_tested": 12,
+  "total_working": 0
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-08-27 13:00:06.746068",
+  "results": {
+    "OpenAI (기존)": "sk-proj-BvvIo2QxfaU...",
+    "OpenAI (새키)": "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",
+    "Anthropic": "sk-ant-api03a7P7z... (인증 실패)",
+    "Perplexity": "pplx-Y89qeSXQ... (인증 실패)",
+    "Cohere": "QuIt8I1QmGp4... (정상)",
+    "Gemini": "AIzaSyAxSmtw3E... (정상)",
+    "Runway": "key_6bbe6a8d9b66... (미검증)",
+    "ElevenLabs": "sk_71639d624f01... (미검증)"
+  },
+  "anthropic_analysis": {
+    "original_key": "sk-ant-api03a7P7zhmL...",
+    "issue": "api03 뒤 하이픈 누락 의심",
+    "status": "인증 실패"
+  }
+}

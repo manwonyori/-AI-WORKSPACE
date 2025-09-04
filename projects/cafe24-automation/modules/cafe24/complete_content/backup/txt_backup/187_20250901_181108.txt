@@ -1,0 +1,378 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[태공식품]]크랩요리애맛살 - 만원요리 최씨남매</title>
+    <meta name="description" content="35년 전통의 프리미엄 맛살 - 최씨남매가 인정한 탱글탱글한 식감과 풍부한 맛">
+    <meta name="keywords" content="크랩요리애맛살, 태공식품, 게맛살, 만원요리, 최씨남매">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="[만원요리] [[태공식품]]크랩요리애맛살 | 최씨남매 공식몰">
+    <meta property="og:description" content="100% 국내 제조 프리미엄 품질, 저칼로리 고단백 건강식품, 다양한 요리에 활용 가능">
+    <meta property="og:image" content="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/crab-dish-1kg/crab-dish-1kg-1.png">
+    <meta property="og:type" content="product">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;family=Pretendard:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+            margin-bottom: 16px;
+        }
+        
+        .sub-copy {
+            font-size: clamp(16px, 3vw, 20px);
+            color: var(--medium-gray);
+            margin-bottom: 32px;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 24px;
+            background-color: var(--pure-white);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: var(--deep-charcoal);
+            text-align: center;
+        }
+        
+        /* Why Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .why-card {
+            background: var(--pure-white);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--saffron-gold);
+            text-align: left;
+        }
+        
+        .why-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--saffron-gold);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .why-title::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--saffron-gold);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        /* Wow Section */
+        .wow-highlight {
+            background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+            color: white;
+            padding: 48px 32px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .wow-list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .wow-item {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 700;
+        }
+        
+        /* How Section */
+        .how-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: var(--saffron-gold);
+        }
+        
+        .trust-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        /* Gallery - Vertical Layout */
+        .gallery-vertical img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        
+        
+        /* Company Info */
+        .company-info {
+            padding: 40px 24px;
+            background: var(--deep-charcoal);
+            color: var(--light-gray);
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .why-grid, .trust-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .wow-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- Strategic Header -->
+        <section class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X [태공식품] 단독 공구</span>
+            <h1 class="main-copy">35년 전통의 프리미엄 맛살</h1>
+            <p class="sub-copy">최씨남매가 인정한 탱글탱글한 식감과 풍부한 맛</p>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/crab-dish-1kg/crab-dish-1kg-1.png" alt="[[태공식품]]크랩요리애맛살" class="hero-image fr-draggable">
+        </section>
+        
+        <!-- Video Section (Optional) -->
+        
+        
+        <!-- Story Section -->
+        <section style="background: linear-gradient(135deg, #FFF5E6 0%, #FFFFFF 100%);" class="section">
+            <h2 class="section-title">📜 크랩요리애맛살의 이야기</h2>
+            <div style="max-width: 840px; margin: 0 auto;">
+                
+                <!-- 기원의 발견 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">1</span>
+                        기원의 발견
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1977년, 부산 사하구의 작은 공장에서 신라교역의 김상현 회장은 역사적인 도전을 시작했습니다. 일본의 카니카마보코 기술을 연구하며, 한국형 게맛살 개발에 몰두했죠. 수산물 가공식품 산업화 시기였던 당시, 그의 도전은 한국 식품 산업의 새로운 장을 열었습니다.
+                    </p>
+                </div>
+                
+                <!-- 여행하는 맛 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">2</span>
+                        여행하는 맛
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1974년 일본에서 처음 개발된 카니카마보코는 3년 후 한국에서 '게맛살'로 재탄생했습니다. 신라교역 김상현 회장과 수산진흥원 연구진의 노력으로, 1980년에는 미국 수출까지 시작했죠. 각 나라마다 독특한 이름으로 불리며 - 일본의 카니카마보코, 한국의 크랩요리애맛살, 미국의 Imitation Crab Stick - 세계인의 입맛을 사로잡아갔습니다.
+                    </p>
+                </div>
+                
+                <!-- 한국인의 입맛을 사로잡다 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">3</span>
+                        한국인의 입맛을 사로잡다
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        1977년 부산 사하구 신라교역 공장에서 첫 생산된 게맛살은 명태 연육을 사용해 원가를 낮추고, 한국인의 입맛에 맞게 개발되었습니다. 특히 대게살 모양을 완벽하게 재현하는데 성공했죠. 1990년 대형마트 유통을 시작으로 전국으로 퍼져나갔고, 부산은 짭짤한 맛을, 서울은 담백한 맛을 선호하며 지역별 특색도 생겨났습니다.
+                    </p>
+                </div>
+                
+                <!-- 세대를 잇는 맛의 기억 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">4</span>
+                        세대를 잇는 맛의 기억
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        70-80년대에는 고급 식재료로 인식되던 게맛살이 90-00년대를 거치며 김밥과 샐러드의 필수 재료로 자리잡았습니다. 실제 게살보다 저렴하면서도 맛있는 대체재로서 큰 인기를 얻었고, 특히 김밥데이나 도시락데이같은 특별한 날에는 빠질 수 없는 재료가 되었죠.
+                    </p>
+                </div>
+                
+                <!-- 현대적 재탄생 -->
+                <div style="margin-bottom: 40px; text-align: left;">
+                    <h3 style="color: var(--saffron-gold); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--saffron-gold); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">5</span>
+                        현대적 재탄생
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px;">
+                        2022년 기준 연간 약 3,000억원의 시장규모를 자랑하는 게맛살은 현대에 들어 건강식품화, 프리미엄화의 길을 걷고 있습니다. 저염제품 출시, 단백질 강화제품 개발 등 건강을 고려한 혁신을 거듭하며, 간편식 시장의 새로운 지평을 열어가고 있습니다.
+                    </p>
+                </div>
+                
+                <!-- 만원요리의 약속 -->
+                <div style="background: #FFF3E0; padding: 24px; border-radius: 16px; border-left: 4px solid var(--saffron-gold); text-align: left;">
+                    <h3 style="color: var(--deep-rose); font-size: 22px; margin-bottom: 16px; display: flex; align-items: center;">
+                        <span style="background: var(--deep-rose); color: white; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 14px; flex-shrink: 0;">✓</span>
+                        만원요리의 약속
+                    </h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--deep-charcoal); padding-left: 44px; font-weight: 500;">
+                        38년의 역사를 자랑하는 크랩요리애맛살의 정통성을 지키면서도, 현대인의 건강한 식탁을 위해 끊임없이 연구개발을 이어가겠습니다. 합리적인 가격으로 최고의 맛과 품질을 제공하는 것, 그것이 우리의 변함없는 약속입니다.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Why Section -->
+        <section class="section">
+            <h2 class="section-title">🤔 Why? 왜 이 크랩요리애맛살이어야 할까요?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 class="why-title">최고급 재료와 정통 레시피</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">HACCP 인증된 프리미엄급 맛살</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="why-title">간편한 조리와 합리적인 가격</h3>
+                    <p style="color: var(--deep-charcoal); line-height: 1.7;">실제 게맛에 가까운 탱글한 식감</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- How Section -->
+        <section class="section">
+            <h2 class="section-title">🍳 How? 이렇게 활용하세요!</h2>
+            <div class="how-content">
+                <p>김밥, 샐러드는 물론 볶음요리, 전, 찜까지 다양하게 활용 가능합니다. 해동 후 바로 섭취하거나 간단히 조리하여 즐기실 수 있습니다.</p>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title">📸 제품 상세 이미지</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/crab-dish-1kg/crab-dish-1kg-2.jpg" alt="[[태공식품]]크랩요리애맛살 2번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/crab-dish-1kg/crab-dish-1kg-3.jpg" alt="[[태공식품]]크랩요리애맛살 3번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/taekong/crab-dish-1kg/crab-dish-1kg-4.jpg" alt="[[태공식품]]크랩요리애맛살 4번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div><div style="margin: 20px 0;">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[[태공식품]]크랩요리애맛살 5번 이미지" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" class="fr-draggable">
+                    </div>
+            </div>
+        </section>
+        
+        
+        <!-- Delivery Info Section (조건부 표시) -->
+        
+        
+        <!-- Company Info -->
+        <section class="company-info">
+            <p>
+                판매원: ㈜값진한끼 | 대표자: 고혜숙<br>
+                사업자등록번호: 434-86-03863 | 통신판매업: 2025-경기파주-2195호<br>
+                주소: 경기도 파주시 경의로 1246, 11층 1105-19호<br>
+                전화: 070-8835-2885 | 이메일: we@manwonyori.com
+            </p>
+        </section>
+    </div>

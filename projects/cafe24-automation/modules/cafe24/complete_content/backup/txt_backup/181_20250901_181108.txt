@@ -1,0 +1,369 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[인생]매콤돼지곱창볶음280g - 만원요리 최씨남매</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        /* v9.0 Design System */
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: var(--deep-charcoal);
+            background-color: var(--pure-white);
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: var(--pure-white);
+        }
+        
+        /* Typography System */
+        h1 {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            line-height: 1.4;
+        }
+        
+        h2 {
+            font-size: clamp(22px, 4vw, 28px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 24px;
+        }
+        
+        h3 {
+            font-size: clamp(18px, 3vw, 22px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 16px;
+        }
+        
+        p {
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.8;
+            color: var(--deep-charcoal);
+            margin-bottom: 16px;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 40px 24px;
+            background-color: var(--pure-white);
+            border-bottom: 1px solid var(--border-gray);
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        /* Strategic Header */
+        .strategic-header {
+            text-align: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+        }
+        
+        .brand-label {
+            color: var(--saffron-gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .main-copy {
+            font-size: clamp(24px, 5vw, 32px);
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+        
+        /* Image Styles */
+        .product-image {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin: 32px 0;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .main-product-image {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin: 32px auto;
+            display: block;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        }
+        
+        /* Text Highlights */
+        .highlight {
+            color: var(--deep-rose);
+            font-weight: 700;
+        }
+        
+        /* List Styles */
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0;
+        }
+        
+        .benefit-list li {
+            position: relative;
+            padding: 12px 0 12px 36px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        
+        .benefit-list li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+        
+        /* Trust Box */
+        .trust-box {
+            background: var(--light-gray);
+            border-left: 4px solid var(--saffron-gold);
+            padding: 24px;
+            margin: 24px 0;
+            border-radius: 8px;
+        }
+        
+        .trust-box h3 {
+            color: var(--saffron-gold);
+            margin-bottom: 16px;
+        }
+        
+        /* FAQ Styles */
+        .faq-item {
+            background: var(--light-gray);
+            padding: 20px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-gray);
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: var(--deep-charcoal);
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        
+        .faq-answer {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section {
+                padding: 32px 16px;
+            }
+            
+            .strategic-header {
+                padding: 40px 16px;
+            }
+            
+            .main-copy {
+                font-size: 24px;
+            }
+        }
+        
+        /* Company Info Table */
+        .info-table {
+            width: 100%;
+            margin: 24px 0;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        .info-table th,
+        .info-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        
+        .info-table th {
+            background-color: var(--light-gray);
+            font-weight: 700;
+            width: 30%;
+            color: var(--deep-charcoal);
+        }
+        
+        .info-table td {
+            color: var(--medium-gray);
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- 1. Strategic Header -->
+        <div class="strategic-header">
+            <span class="brand-label">만원요리 최씨남매 X 인생 매콤돼지곱창 단독 공구</span>
+            <h1 class="main-copy">중독성 있는 매콤함, 쫄깃한 곱창의 진수!</h1>
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/dwaeji_gopchang_bokkeum200g/dwaeji_gopchang_bokkeum200g-1.jpg" alt="[인생]매콤돼지곱창볶음280g" class="main-product-image fr-draggable">
+        </div>
+        
+        <!-- 2. Why Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>Why? 왜 이 인생 매콤돼지곱창볶음이어야 할까요?</h2>
+            </div>
+            <div>
+                
+        <p>매콤하고 쫄깃한 곱창은 좋아하지만 <strong>손질하기 번거로우셨나요?</strong> 집에서도 <strong>간편하게</strong> 술집 스타일의 곱창을 즐기고 싶으셨나요?</p>
+        <p>이제 그런 고민은 끝! <span class="highlight">매콤한 양념에 버무려진 쫄깃한 돼지곱창</span>으로 집에서도 포차 부럽지 않은 안주를 완성하세요.</p>
+    
+                <ul class="benefit-list">
+                    <li><strong>쫄깃한 식감</strong>이 살아있는 돼지곱창</li>
+                    <li><strong>매콤한 양념</strong>의 중독성 있는 맛</li>
+                    <li><strong>간편한 조리</strong>로 5분 만에 완성</li>
+                    <li><strong>280g 넉넉한 용량</strong>으로 푸짐하게</li>
+                    <li><strong>HACCP 인증</strong> 시설에서 위생적으로 제조</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 3. Story Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>매콤한 곱창 이야기</h2>
+            </div>
+            <div>
+                
+        <p>안녕하세요! <strong>만원요리 최씨남매</strong>입니다. 오늘은 <strong>[인생]매콤돼지곱창볶음280g</strong>의 이야기를 들려드릴게요.</p>
+        <p>돼지곱창은 쫄깃한 식감과 고소한 맛으로 사랑받는 부위입니다. 특히 이 제품은 <strong>매콤한 특제 양념</strong>으로 맛을 더해 중독성 있는 맛을 자랑합니다.</p>
+        <p>깨끗하게 손질된 곱창을 <strong>비법 양념</strong>에 버무려 미리 조리되어 있어 간편하게 데우기만 하면 완성! 바쁜 일상 속에서도 <strong>포차 스타일의 안주</strong>를 즐길 수 있습니다.</p>
+        <p class="highlight">최씨남매 꿀팁: 파채나 깻잎을 곁들이면 더욱 맛있게 즐길 수 있어요!</p>
+    
+            </div>
+        </div>
+        
+        <!-- 4. How Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>How? 이렇게 활용하세요!</h2>
+            </div>
+            <div>
+                
+        <p><strong>인생 매콤돼지곱창볶음</strong> 200% 즐기는 방법!</p>
+        <ol style="line-height: 2;">
+            <li>팬에 기름 없이 <strong>중불에서 3-4분</strong> 볶아주세요</li>
+            <li>기호에 따라 <strong>양파나 대파</strong>를 추가하면 더욱 맛있어요</li>
+            <li>마지막에 <strong>깨소금</strong>을 뿌리면 고소함이 UP!</li>
+            <li>시원한 <strong>소주나 맥주</strong>와 함께 즐기세요</li>
+            <li>남은 양념에 <strong>밥을 비벼</strong> 먹어도 일품!</li>
+        </ol>
+        <div style="background: var(--light-gray); padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <p style="margin: 0;"><strong>조리 팁:</strong> 전자레인지 사용 시 전용 용기에 담아 2-3분 가열하세요. 중간에 한 번 섞어주면 더 고르게 데워집니다!</p>
+        </div>
+    
+            </div>
+        </div>
+        
+        <!-- 5. Trust Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>Trust! 믿을 수 있는 이유</h2>
+            </div>
+            <div class="trust-box">
+                <h3>만원요리 최씨남매가 보증합니다</h3>
+                
+        <p><span class="highlight">"매콤한 맛이 정말 중독성 있어요! 쫄깃한 식감도 최고!"</span></p>
+        <p>만원요리 최씨남매가 <strong>직접 선별하고 검증</strong>한 제품입니다. 특히 곱창의 <strong>쫄깃한 식감</strong>과 <strong>매콤한 양념의 조화</strong>가 일품! 간편하면서도 맛있는 안주를 찾는 분들께 자신있게 추천드립니다.</p>
+    
+            </div>
+            
+            <h3 style="margin-top: 32px;">제품의 특별한 특징</h3>
+            <ul class="benefit-list">
+                <li><strong>신선한 돼지곱창</strong> 엄선 사용</li>
+                <li><strong>매콤한 특제 양념</strong>으로 중독성 있는 맛</li>
+                <li><strong>간편 조리</strong>로 5분 완성</li>
+                <li><strong>HACCP 인증</strong> 시설에서 위생적으로 제조</li>
+                <li><strong>280g 넉넉한 용량</strong>으로 푸짐하게</li>
+            </ul>
+            
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/dwaeji_gopchang_bokkeum200g/dwaeji_gopchang_bokkeum200g-2.jpg" alt="상세 이미지" class="product-image fr-draggable">
+            <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="상세 이미지" class="product-image fr-draggable">
+        </div>
+        
+        <!-- 6. FAQ Section -->
+        <div class="section">
+            <div style="text-align: center;">
+                <h2>자주 묻는 질문</h2>
+            </div>
+            <div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 곱창 특유의 냄새가 나지 않나요?</div>
+                    <div class="faq-answer">A. 깨끗하게 손질하고 특제 양념으로 조리하여 곱창 특유의 냄새가 거의 없습니다. 매콤한 양념이 풍미를 더해줍니다.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 너무 맵지 않나요?</div>
+                    <div class="faq-answer">A. 적당한 매콤함으로 대부분의 분들이 즐기실 수 있는 맵기입니다. 매운 것을 못 드시는 분은 양파나 파를 추가하면 맵기가 중화됩니다.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 조리 방법이 어렵지 않나요?</div>
+                    <div class="faq-answer">A. 전혀 어렵지 않습니다! 팬에 3-4분만 볶아주시면 완성됩니다. 기름도 따로 두르실 필요 없어요.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 양은 얼마나 되나요?</div>
+                    <div class="faq-answer">A. 280g으로 2-3인이 안주로 즐기기에 충분한 양입니다. 혼술하시는 분도 2번 정도 나눠 드실 수 있어요.</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 7. Company Information -->
+        <div class="section">
+            <h3 style="text-align: center; margin-bottom: 24px;">판매원 정보</h3>
+            <table class="info-table"><tbody><tr><th>상호</th>
+                    <td>㈜값진한끼</td></tr>
+                <tr><th>대표자</th>
+                    <td>고혜숙</td></tr>
+                <tr><th>사업자등록번호</th>
+                    <td>434-86-03863</td></tr>
+                <tr><th>통신판매업</th>
+                    <td>2025-경기파주-2195호</td></tr>
+                <tr><th>주소</th>
+                    <td>경기도 파주시 경의로 1246, 11층 1105-19호</td></tr>
+                <tr><th>전화</th>
+                    <td>070-8835-2885</td></tr>
+                <tr><th>이메일</th>
+                    <td>we@manwonyori.com</td></tr></tbody></table>
+        </div>
+    </div>

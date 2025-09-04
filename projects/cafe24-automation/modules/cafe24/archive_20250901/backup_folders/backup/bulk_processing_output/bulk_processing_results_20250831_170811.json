@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "total_processed": 10,
+    "success_count": 10,
+    "error_count": 0,
+    "processing_time": "20250831_170811"
+  },
+  "details": [
+    {
+      "product_no": 330,
+      "status": "success",
+      "product_code": "P00000MS",
+      "product_name": "[비에스]미국산 프라임 소갈비살 200g x 3팩 600g,  200g x 5팩 1kg",
+      "price": "19091",
+      "processing_time": 7.33,
+      "error_message": ""
+    },
+    {
+      "product_no": 331,
+      "status": "success",
+      "product_code": "P00000MT",
+      "product_name": "[씨씨더블유]한돈 수제 양념갈비 1kg",
+      "price": "12727",
+      "processing_time": 6.59,
+      "error_message": ""
+    },
+    {
+      "product_no": 332,
+      "status": "success",
+      "product_code": "P00000MU",
+      "product_name": "[씨씨더블유]오돌뼈 소금구이 200g",
+      "price": "4091",
+      "processing_time": 6.57,
+      "error_message": ""
+    },
+    {
+      "product_no": 333,
+      "status": "success",
+      "product_code": "P00000MV",
+      "product_name": "[씨씨더블유]명품 양념LA꽃갈비 500g",
+      "price": "11818",
+      "processing_time": 6.64,
+      "error_message": ""
+    },
+    {
+      "product_no": 334,
+      "status": "success",
+      "product_code": "P00000MW",
+      "product_name": "[씨씨더블유]양념 소대창 200g",
+      "price": "5455",
+      "processing_time": 6.72,
+      "error_message": ""
+    },
+    {
+      "product_no": 335,
+      "status": "success",
+      "product_code": "P00000MX",
+      "product_name": "[씨씨더블유]솔잎 돼지왕구이 1+1",
+      "price": "29091",
+      "processing_time": 6.73,
+      "error_message": ""
+    },
+    {
+      "product_no": 336,
+      "status": "success",
+      "product_code": "P00000MY",
+      "product_name": "[씨씨더블유]수제양념 순살구이 1kg",
+      "price": "10000",
+      "processing_time": 6.8,
+      "error_message": ""
+    },
+    {
+      "product_no": 337,
+      "status": "success",
+      "product_code": "P00000MZ",
+      "product_name": "[씨씨더블유]국내산 소이동왕구이 1.25kg",
+      "price": "27273",
+      "processing_time": 6.73,
+      "error_message": ""
+    },
+    {
+      "product_no": 338,
+      "status": "success",
+      "product_code": "P00000NA",
+      "product_name": "[씨씨더블유]고추장 오돌뼈 200g",
+      "price": "4091",
+      "processing_time": 6.68,
+      "error_message": ""
+    },
+    {
+      "product_no": 339,
+      "status": "success",
+      "product_code": "P00000NB",
+      "product_name": "[씨씨더블유]가마솥 불스지 300g",
+      "price": "6818",
+      "processing_time": 6.64,
+      "error_message": ""
+    }
+  ]
+}

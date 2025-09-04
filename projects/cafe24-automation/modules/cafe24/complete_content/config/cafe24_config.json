@@ -1,0 +1,25 @@
+{
+  "cafe24": {
+    "mall_id": "manwonyori",
+    "admin_url": "https://manwonyori.cafe24.com/admin",
+    "login_url": "https://eclogin.cafe24.com/Shop/",
+    "credentials": {
+      "username": "DEMO_USER",
+      "password": "DEMO_PASSWORD"
+    },
+    "product_management": {
+      "product_list_url": "https://manwonyori.cafe24.com/admin/php/shop1/product/Product_list.php",
+      "product_modify_url": "https://manwonyori.cafe24.com/admin/php/shop1/product/Product_write.php"
+    }
+  },
+  "selenium": {
+    "headless": false,
+    "wait_timeout": 10,
+    "page_load_timeout": 30
+  },
+  "download": {
+    "delay_seconds": 2,
+    "max_retries": 3,
+    "output_folder": "html/temp_txt"
+  }
+}

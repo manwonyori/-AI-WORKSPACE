@@ -1,0 +1,524 @@
+<center>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>피자코리아 사각피자 4종 20개입 | HACCP인증 어린이간식 | 만원요리 최씨남매</title>
+<meta name="description" content="피자코리아 HACCP 인증 사각피자 4종 20개입. 전자레인지 1분30초 완성! 17년 전통 브랜드의 저온숙성 도우로 푹신푹신. 어린이 간식, 홈파티, 야식용으로 최고. 비프떡갈비/불고기/치즈 4가지 맛 구성. 만원요리 최씨남매 추천 가성비 냉동피자.">
+<meta name="keywords" content="피자코리아, 냉동피자, 사각피자, HACCP인증, 어린이간식, 전자레인지피자, 만원요리, 최씨남매, 업소용피자, 가성비피자, 4종피자, 20개입, 간편조리, 냉동간식, 저온숙성도우, 푹신한피자, 안전한피자, 브랜드피자, 홈파티간식, 야식추천">
+<meta name="author" content="만원요리 최씨남매">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;family=Pretendard:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<style>
+ :root {
+  --font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; --saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937; --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB;
+ }
+ 
+ * {
+  margin: 0; padding: 0; box-sizing: border-box;
+ }
+ 
+ body {
+  font-family: var(--font-primary); line-height: 1.6; color: var(--deep-charcoal); background: var(--pure-white);
+ }
+ /* 메인 컨테이너 - 완전 반응형 */
+ 
+ .pizza-container {
+  max-width: 1200px; margin: 0 auto; padding: clamp(15px, 3vw, 30px); width: 100%;
+ }
+ /* 이미지 스타일 - 데스크톱 400px, 모바일 300px */
+ 
+ .main-image {
+  width: 400px; max-width: 400px; height: auto; margin: clamp(20px, 4vw, 30px) auto; display: block; border: none !important; outline: none !important; box-shadow: none !important; background: transparent !important;
+ }
+ 
+ @media (max-width: 768px) {
+  .main-image {
+  width: 300px; max-width: 300px;
+  }
+ }
+ /* 섹션 기본 스타일 - 완전 반응형 */
+ 
+ .section {
+  margin: clamp(20px, 4vw, 40px) 0; padding: clamp(20px, 4vw, 30px); border-radius: clamp(12px, 2vw, 20px); background: var(--light-gray); border: 2px solid var(--border-gray); width: 100%;
+ }
+ /* 제목 스타일 - 완전 반응형 */
+ 
+ .section-title {
+  font-size: clamp(18px, 4vw, 28px); font-weight: 800; color: var(--deep-rose); text-align: center; margin-bottom: clamp(15px, 3vw, 25px); line-height: 1.3;
+ }
+ 
+ .section-subtitle {
+  font-size: clamp(16px, 3vw, 20px); font-weight: 700; color: var(--saffron-gold); margin-bottom: clamp(10px, 2vw, 15px); line-height: 1.4;
+ }
+ /* 그리드 레이아웃 - 완전 반응형 */
+ 
+ .grid-container {
+  display: grid; gap: clamp(15px, 3vw, 25px); margin: clamp(15px, 3vw, 25px) 0;
+ }
+ 
+ .grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ }
+ 
+ .grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+ /* 카드 스타일 - 완전 반응형 */
+ 
+ .card {
+  background: var(--pure-white); padding: clamp(16px, 3vw, 25px); border-radius: clamp(8px, 1.5vw, 15px); border-left: 4px solid var(--deep-rose); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); height: 100%; display: flex; flex-direction: column;
+ }
+ 
+ .card-center {
+  background: var(--pure-white); padding: clamp(16px, 3vw, 25px); border-radius: clamp(8px, 1.5vw, 15px); text-align: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); height: 100%; display: flex; flex-direction: column; justify-content: center;
+ }
+ /* 하이라이트 박스 - 완전 반응형 */
+ 
+ .highlight-box {
+  background: #fff3cd; border: 2px solid #ffc107; border-radius: clamp(8px, 1.5vw, 12px); padding: clamp(15px, 3vw, 25px); margin: clamp(15px, 3vw, 25px) 0; text-align: center;
+ }
+ /* 배송비 절약 섹션 전용 스타일 */
+ 
+ .shipping-container {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(12px, 2vw, 20px); max-width: 900px; margin: 0 auto;
+ }
+ 
+ .shipping-item {
+  display: flex; align-items: center; gap: clamp(12px, 2vw, 15px); padding: clamp(8px, 1.5vw, 12px); background: rgba(255, 255, 255, 0.1); border-radius: clamp(8px, 1.5vw, 12px); border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ .shipping-icon {
+  font-size: clamp(18px, 3vw, 22px); flex-shrink: 0; width: 28px; text-align: center;
+ }
+ 
+ .shipping-text {
+  font-weight: 600; font-size: clamp(13px, 2.5vw, 15px); line-height: 1.4; flex: 1; text-align: left;
+ }
+ /* 모바일에서는 1열로 변경 */
+ 
+ @media (max-width: 768px) {
+  .shipping-container {
+  grid-template-columns: 1fr; gap: clamp(8px, 1.5vw, 12px);
+  }
+  .shipping-item {
+  padding: clamp(10px, 2vw, 12px);
+  }
+ }
+ /* 그라데이션 섹션 - 세로 공간 축소 */
+ 
+ .red-gradient {
+  background: linear-gradient(135deg, var(--deep-rose) 0%, #B91C1C 100%); color: var(--pure-white); padding: clamp(20px, 4vw, 35px); border-radius: clamp(12px, 2vw, 20px); margin: clamp(20px, 4vw, 40px) 0;
+ }
+ /* 체크리스트 - 완전 반응형 */
+ 
+ .checklist {
+  list-style: none; padding: 0; text-align: left;
+ }
+ 
+ .checklist li {
+  padding: clamp(6px, 1.5vw, 10px) 0; position: relative; padding-left: clamp(25px, 5vw, 35px); font-size: clamp(14px, 2.5vw, 16px); line-height: 1.5; text-align: left;
+ }
+ 
+ .checklist li:before {
+  content: "✓"; color: #28a745; font-weight: bold; position: absolute; left: 0; font-size: clamp(14px, 2.5vw, 16px);
+ }
+ /* 회사정보 그리드 - 왼쪽 정렬 통일 */
+ 
+ .company-grid {
+  display: grid; grid-template-columns: auto 1fr; gap: clamp(8px, 2vw, 12px); align-items: start; font-size: clamp(13px, 2.5vw, 15px); text-align: left; max-width: 800px; margin: 0 auto;
+ }
+ 
+ .company-label {
+  font-weight: 700; color: var(--deep-charcoal); white-space: nowrap; min-width: fit-content; text-align: left;
+ }
+ 
+ .company-value {
+  color: var(--medium-gray); word-break: break-word; text-align: left;
+ }
+ /* 플렉스 아이템 - 데스크톱 정렬 개선 */
+ 
+ .flex-item {
+  display: flex; align-items: center; gap: clamp(10px, 2vw, 15px); margin: clamp(8px, 1.5vw, 12px) 0; text-align: left;
+ }
+ 
+ .flex-item span:first-child {
+  font-size: clamp(20px, 4vw, 28px); flex-shrink: 0; width: 30px; text-align: center;
+ }
+ 
+ .flex-item span:last-child {
+  font-weight: 600; font-size: clamp(14px, 2.5vw, 16px); line-height: 1.4; flex: 1; text-align: left;
+ }
+ /* 애니메이션 텍스트 */
+ 
+ .animate-text {
+  background: linear-gradient(45deg, var(--deep-rose), var(--saffron-gold)); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 3s ease-in-out infinite;
+ }
+ 
+ @keyframes gradientShift {
+  0%,
+  100% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+ }
+ /* 브랜드 헤더 - 완전 반응형 */
+ 
+ .brand-header {
+  font-size: clamp(14px, 3vw, 18px); font-weight: 700; color: var(--saffron-gold); margin-bottom: clamp(12px, 2.5vw, 18px); text-align: center;
+ }
+ 
+ .main-title {
+  font-size: clamp(20px, 4.5vw, 32px); font-weight: 800; margin-bottom: clamp(15px, 3vw, 25px); line-height: 1.2; text-align: center;
+ }
+ /* 텍스트 정렬 통일 - 긴 글은 왼쪽 정렬 */
+ 
+ .text-content {
+  font-size: clamp(14px, 2.5vw, 16px); line-height: 1.8; text-align: left;
+ }
+ 
+ .highlight-text {
+  font-weight: 600; color: #856404; font-size: clamp(14px, 2.5vw, 16px); line-height: 1.7; text-align: left;
+ }
+ /* 카드 내 텍스트 왼쪽 정렬 */
+ 
+ .card p {
+  text-align: left;
+ }
+ 
+ .card-center p {
+  text-align: center;
+ }
+ /* 체크리스트 왼쪽 정렬 */
+ 
+ .checklist {
+  list-style: none; padding: 0; text-align: left;
+ }
+ 
+ .checklist li {
+  padding: clamp(6px, 1.5vw, 10px) 0; position: relative; padding-left: clamp(25px, 5vw, 35px); font-size: clamp(14px, 2.5vw, 16px); line-height: 1.5; text-align: left;
+ }
+ /* 모바일 텍스트 간격 향상 */
+ 
+ @media (max-width: 768px) {
+  .text-content {
+  line-height: 2.0; margin-bottom: 8px; text-align: left;
+  }
+  .highlight-text {
+  line-height: 1.9; text-align: left;
+  }
+  .section-subtitle {
+  line-height: 1.6; margin-bottom: 15px; text-align: left;
+  }
+  .checklist li {
+  padding: 10px 0; line-height: 1.7; text-align: left;
+  }
+  .card p {
+  text-align: left;
+  }
+ }
+ /* 아이콘 크기 조정 */
+ 
+ .icon-large {
+  font-size: clamp(36px, 8vw, 56px); margin-bottom: clamp(12px, 2.5vw, 18px);
+ }
+ /* 특별 여백 클래스 */
+ 
+ .mb-section {
+  margin-bottom: clamp(25px, 5vw, 45px);
+ }
+ 
+ .mt-section {
+  margin-top: clamp(25px, 5vw, 45px);
+ }
+ /* 모바일 전용 조정 */
+ 
+ @media (max-width: 480px) {
+  .pizza-container {
+  padding: 15px;
+  }
+  .company-grid {
+  grid-template-columns: 1fr; gap: 4px;
+  }
+  .company-label {
+  margin-bottom: 2px;
+  }
+  .grid-container {
+  gap: 15px;
+  }
+  .flex-item {
+  align-items: flex-start;
+  }
+ }
+ /* 태블릿 조정 */
+ 
+ @media (min-width: 481px) and (max-width: 768px) {
+  .grid-2 {
+  grid-template-columns: 1fr;
+  }
+  .grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+ }
+ /* 데스크톱 대형 화면 조정 */
+ 
+ @media (min-width: 1200px) {
+  .pizza-container {
+  padding: 40px;
+  }
+  .section {
+  margin: 50px 0; padding: 40px;
+  }
+ }
+
+</style>
+
+<div class="pizza-container">
+
+<!-- 메인 이미지 -->
+<div style="text-align: center;" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/pizza-20/pizz1-v-main1.gif" alt="피자코리아 사각피자 4종 20개입 HACCP 인증 냉동피자 어린이간식" class="main-image fr-draggable">
+</div>
+
+<!-- Strategic Header -->
+<div style="border-color: var(--saffron-gold);" class="section">
+<div style="text-align: center;">
+<div class="brand-header">
+⭐ 만원요리 최씨남매 X 피자코리아 4종 20개입 단독 공구
+</div>
+
+<h1 class="main-title animate-text">
+👶 어린이 간식의 새로운 강자!
+<br> 전자레인지 1분30초 이면 푹신푹신~
+<br> HACCP 인증! 17년 노하우의 프리미엄 사각피자
+</h1>
+
+<div class="highlight-box">
+
+<p style="text-align: center;" class="highlight-text">
+🍕 솔직하게 말씀드려요!
+<br> 최씨네 피자같은 프리미엄 토핑을 기대하시면 안돼요~
+<br> 대량 생산 업소용이니까 토핑은 적당히 기대해주세요!
+<br> 하지만 가성비는 정말 최고거든요? 😉
+</p>
+</div>
+</div>
+</div>
+
+<!-- Why Section -->
+<div class="section">
+
+<h2 class="section-title">❓ Why? 왜 이 피자코리아 4종 20개입이어야 할까요?</h2>
+
+<div class="grid-container grid-2">
+<div class="card">
+
+<h3 class="section-subtitle">🏆 국내 최초 HACCP 인증 제조사</h3>
+
+<p class="text-content">2012년 식품의약안전청 HACCP 인증을 국내 피자 업계 최초로 취득한 피자코리아. 엄격한 안전 관리 시스템으로 안심하고 드실 수 있는 프리미엄 품질을 보장합니다.</p>
+</div>
+
+<div class="card">
+
+<h3 class="section-subtitle">👶 엄마들이 선택하는 #1 어린이 간식</h3>
+
+<p class="text-content">전자레인지 1분30초이면 푹신푹신 완성! 저온숙성 발효 도우로 아이들이 씹기 편한 부드러운 식감. 적당한 크기(65~85g)로 한 번에 먹기 딱 좋아요.</p>
+</div>
+
+<div class="card">
+
+<h3 class="section-subtitle">🔥 전자레인지에도 푹신푹신한 비밀</h3>
+
+<p class="text-content">17년 노하우의 저온숙성 발효 도우 + 직화오븐 베이킹 + 급속동결 기술. 전자레인지로 데워도 촉촉하고 부드러운 식감이 살아있어요!</p>
+</div>
+
+<div class="card">
+
+<h3 class="section-subtitle">❤️ 4가지 맛의 완벽한 조화</h3>
+
+<p class="text-content">불고기 75g / 고르곤존라 65g / 김치불고기 85g / 콰트로 65g 4종으로 구성. 아이들 취향에 따라 골라먹는 재미 + 질리지 않는 다양한 맛!</p>
+</div>
+</div>
+</div>
+
+<!-- Wow Section (무료 배송) -->
+<div style="padding: clamp(20px, 3vw, 25px);" class="red-gradient">
+
+<h2 style="font-size: clamp(18px, 3.5vw, 24px); font-weight: 800; text-align: center; margin-bottom: clamp(15px, 3vw, 20px);">
+🚚 무료배송! 추가 혜택까지! 💰
+</h2>
+
+<div class="shipping-container">
+<div class="shipping-item">
+<span class="shipping-icon">🆓</span>
+<span class="shipping-text">전국 무료배송! (내륙 한정)</span>
+</div>
+<div class="shipping-item">
+<span class="shipping-icon">🏝️</span>
+<span class="shipping-text">제주도 +4,000원 / 도서산간 +7,000원</span>
+</div>
+<div class="shipping-item">
+<span class="shipping-icon">📦</span>
+<span class="shipping-text">같은 공장 제품과 함께 구매 시 더욱 경제적</span>
+</div>
+<div class="shipping-item">
+<span class="shipping-icon">🎁</span>
+<span class="shipping-text">카카오채널 추가 시 특별 혜택 안내</span>
+</div>
+</div>
+</div>
+
+<!-- How Section -->
+<div class="section">
+
+<h2 class="section-title">🍽️ How? 이렇게 활용하세요!</h2>
+
+<div class="grid-container grid-2">
+<div style="border-top: 4px solid var(--saffron-gold); border-left: none;" class="card">
+
+<h3 class="section-subtitle">📱 전자레인지 간편조리</h3>
+
+<ul class="checklist">
+<li>냉동피자를 전자레인지용 접시에 올려주세요</li>
+<li>700W 기준 1분30초 가열</li>
+<li>바삭함을 원한다면 오븐토스터 1분 추가</li>
+<li>뜨거우니 조심해서 드세요!</li>
+</ul>
+</div>
+
+<div style="border-top: 4px solid var(--saffron-gold); border-left: none;" class="card">
+
+<h3 class="section-subtitle">❤️ 완벽한 간식 타임</h3>
+
+<ul class="checklist">
+<li>적당한 크기로 출출할 때 간식용으로 최적</li>
+<li>아이들 방학 간식으로 인기만점</li>
+<li>홈파티나 친구들과 함께 나눠먹기 좋음</li>
+<li>야식이나 새벽 출출함 해결사!</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Trust Section -->
+<div class="section">
+
+<h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+
+<div class="grid-container grid-3">
+<div class="card-center">
+<div class="icon-large">📜</div>
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(8px, 2vw, 12px);">HACCP 안전 인증 완료</h3>
+
+<p style="color: var(--medium-gray);" class="text-content">
+국내 최초 피자 HACCP 인증 취득
+<br> 식품의약안전청 공식 인증번호: 2012-3-8116
+</p>
+</div>
+
+<div class="card-center">
+<div class="icon-large">🏭</div>
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(8px, 2vw, 12px);">신뢰할 수 있는 제조사</h3>
+
+<p style="color: var(--medium-gray);" class="text-content">
+(주)피자코리아 2007년 설립
+<br> 17년 축적된 노하우와 최신 설비 시스템
+</p>
+</div>
+
+<div class="card-center">
+<div class="icon-large">✅</div>
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(8px, 2vw, 12px);">만원요리 최씨남매 검증</h3>
+
+<p style="color: var(--medium-gray);" class="text-content">
+직접 맛보고 엄선한 제품
+<br> 구독자 여러분께 자신 있게 추천
+</p>
+</div>
+</div>
+</div>
+
+<!-- 상세페이지 이미지 -->
+<div style="text-align: center; padding: 0 clamp(12px, 3vw, 15px);" class="mb-section">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/pizza-20/pizza-main2-1.jpg" alt="전자레인지 조리법 푹신한 도우 피자코리아 사각피자 조리방법" style="max-width: 100%; height: auto; border-radius: clamp(8px, 1.5vw, 12px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="fr-draggable">
+
+<p style="color: var(--medium-gray); margin-top: clamp(8px, 2vw, 12px); font-size: clamp(12px, 2vw, 14px);">
+* 상세 이미지는 실제 제품과 다를 수 있습니다.
+</p>
+</div>
+
+<!-- 업체 정보 -->
+<div class="section">
+
+<h2 style="font-size: clamp(18px, 3.5vw, 24px); font-weight: 700; text-align: center; margin-bottom: clamp(25px, 5vw, 35px); color: var(--deep-charcoal);">
+🏢 업체 정보
+</h2>
+
+<!-- 판매자 정보 -->
+<div style="background: var(--pure-white); border-radius: clamp(8px, 1.5vw, 15px); padding: clamp(20px, 4vw, 30px); margin-bottom: clamp(20px, 4vw, 30px);">
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(15px, 3vw, 22px); padding-bottom: clamp(8px, 1.5vw, 12px); border-bottom: 2px solid var(--deep-rose); color: var(--deep-rose); text-align: center;">
+🏪 판매자 정보
+</h3>
+<div class="company-grid">
+<span class="company-label">상호명:</span>
+<span class="company-value">㈜값진한끼</span>
+
+<span class="company-label">사업자등록번호:</span>
+<span class="company-value">434-86-03863</span>
+
+<span class="company-label">대표자명:</span>
+<span class="company-value">고혜숙</span>
+
+<span class="company-label">주소:</span>
+<span class="company-value">경기도 파주시 경의로 1246, 11층 1105-19호</span>
+
+<span class="company-label">연락처:</span>
+<span class="company-value">070-8835-2885</span>
+
+<span class="company-label">이메일:</span>
+<span class="company-value">we@manwonyori.com</span>
+
+<span class="company-label">통신판매업 신고번호:</span>
+<span class="company-value">2025-경기파주-2195호</span>
+
+<span class="company-label">사이트명:</span>
+<span class="company-value">만원요리 최씨남매</span>
+</div>
+</div>
+
+<!-- 제조사 정보 -->
+<div style="background: var(--pure-white); border-radius: clamp(8px, 1.5vw, 15px); padding: clamp(20px, 4vw, 30px);">
+
+<h3 style="font-size: clamp(16px, 3vw, 20px); font-weight: 700; margin-bottom: clamp(15px, 3vw, 22px); padding-bottom: clamp(8px, 1.5vw, 12px); border-bottom: 2px solid var(--saffron-gold); color: var(--saffron-gold); text-align: center;">
+🏭 제조사 정보
+</h3>
+<div class="company-grid">
+<span class="company-label">제조사:</span>
+<span class="company-value">(주)피자코리아</span>
+
+<span class="company-label">주소:</span>
+<span class="company-value">인천광역시 남동구 호구포로 111 (고잔동)</span>
+
+<span class="company-label">연락처:</span>
+<span class="company-value">032-813-8770</span>
+
+<span class="company-label">HACCP 인증:</span>
+<span class="company-value">2012-3-8116 (2012.04.12 ~ 2025.11.13)</span>
+
+<span class="company-label">설립:</span>
+<span class="company-value">2007년 (17년 업력)</span>
+
+<span class="company-label">특징:</span>
+<span class="company-value">국내 최초 피자 HACCP 인증 취득 / 직화오븐 베이킹 기술 / 저온숙성 발효 도우 전문</span>
+</div>
+</div>
+</div>
+</div>
+</center>

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2025-08-28T17:20:18.703648",
+  "business_flow": {
+    "purchase_from": "웰빙신선식품",
+    "sell_to": "CCW",
+    "delivery_by": "웰빙신선식품",
+    "delivery_to": "웰빙 푸드마켓"
+  },
+  "financials": {
+    "total_purchase": 312000,
+    "total_sale": 427800,
+    "total_margin": 115800,
+    "margin_rate": 37.11538461538461
+  },
+  "items": [
+    {
+      "product_name": "이태원 햄폭탄 부대찌개",
+      "quantity": 3,
+      "purchase_price": 68000,
+      "sale_price": 81600,
+      "margin": 13600
+    },
+    {
+      "product_name": "힘찬 장어탕 500g",
+      "quantity": 15,
+      "purchase_price": 7200,
+      "sale_price": 12200,
+      "margin": 5000
+    }
+  ]
+}

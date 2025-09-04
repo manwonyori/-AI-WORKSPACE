@@ -1,0 +1,33 @@
+{
+  "core_scripts": [
+    "scripts/sftp_downloader.py",
+    "scripts/image_matching_verification.py",
+    "scripts/extract_image_links.py",
+    "scripts/quick_status.py",
+    "scripts/verified_downloader.py"
+  ],
+  "config_files": [
+    "FTP_CONFIG.json",
+    "ftp_mirror/download_mapping.json",
+    "requirements.txt"
+  ],
+  "folder_structure": [
+    "scripts",
+    "config",
+    "ftp_mirror",
+    "complete_content",
+    "utils",
+    "archive_20250901"
+  ],
+  "archive_status": [
+    "test_files",
+    "temp_files",
+    "backup_folders",
+    "archive_report.html"
+  ],
+  "missing_items": [],
+  "timestamp": "2025-09-01T01:00:54.775839",
+  "base_path": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24",
+  "total_missing": 0,
+  "validation_passed": true
+}

@@ -1,0 +1,55 @@
+{
+  "summary": {
+    "total_processed": 5,
+    "success_count": 0,
+    "error_count": 5,
+    "processing_time": "20250831_170607"
+  },
+  "details": [
+    {
+      "product_no": 339,
+      "status": "failed",
+      "product_code": "",
+      "product_name": "",
+      "price": "",
+      "processing_time": 5.19,
+      "error_message": "데이터 추출 실패"
+    },
+    {
+      "product_no": 340,
+      "status": "failed",
+      "product_code": "",
+      "product_name": "",
+      "price": "",
+      "processing_time": 3.13,
+      "error_message": "페이지 접근 실패"
+    },
+    {
+      "product_no": 341,
+      "status": "failed",
+      "product_code": "",
+      "product_name": "",
+      "price": "",
+      "processing_time": 3.12,
+      "error_message": "페이지 접근 실패"
+    },
+    {
+      "product_no": 342,
+      "status": "failed",
+      "product_code": "",
+      "product_name": "",
+      "price": "",
+      "processing_time": 3.13,
+      "error_message": "페이지 접근 실패"
+    },
+    {
+      "product_no": 343,
+      "status": "failed",
+      "product_code": "",
+      "product_name": "",
+      "price": "",
+      "processing_time": 3.15,
+      "error_message": "페이지 접근 실패"
+    }
+  ]
+}

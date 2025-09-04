@@ -1,0 +1,734 @@
+[
+  {
+    "product_no": "252",
+    "product_code": "P00000JS",
+    "product_name": "[인생]땅콩버터오징어 다리250g 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "251",
+    "product_code": "P00000JR",
+    "product_name": "[인생]땅콩버터오징어 몸통250g 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "250",
+    "product_code": "P00000JQ",
+    "product_name": "[인생]조미오징어입200g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "248",
+    "product_code": "P00000JO",
+    "product_name": "[인생]가문어통족200g 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "247",
+    "product_code": "P00000JN",
+    "product_name": "[인생]맥반석 땅콩오징어200g 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "246",
+    "product_code": "P00000JM",
+    "product_name": "[인생]치킨스킨가라아게1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "245",
+    "product_code": "P00000JL",
+    "product_name": "[인생]테바나카1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "244",
+    "product_code": "P00000JK",
+    "product_name": "[인생]옛날치킨700g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "243",
+    "product_code": "P00000JJ",
+    "product_name": "[인생]옛날통닭600g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "242",
+    "product_code": "P00000JI",
+    "product_name": "[인생]핫치킨 퀘사디아380g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "241",
+    "product_code": "P00000JH",
+    "product_name": "[인생]사각피자 고르곤졸라240g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "240",
+    "product_code": "P00000JG",
+    "product_name": "[인생]사각피자 페퍼로니255g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "239",
+    "product_code": "P00000JF",
+    "product_name": "[인생]화덕피자 고르곤졸라290g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "238",
+    "product_code": "P00000JE",
+    "product_name": "[인생]화덕피자 페퍼로니380g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "237",
+    "product_code": "P00000JD",
+    "product_name": "[인생]씬피자 치즈280g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "236",
+    "product_code": "P00000JC",
+    "product_name": "[인생]해물토마토스튜645g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "235",
+    "product_code": "P00000JB",
+    "product_name": "[인생]바지락술찜550g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "234",
+    "product_code": "P00000JA",
+    "product_name": "[인생]부대찌개643g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "231",
+    "product_code": "P00000IX",
+    "product_name": "[인생]알탕600g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "230",
+    "product_code": "P00000IW",
+    "product_name": "[인생]김치찌개700g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "229",
+    "product_code": "P00000IV",
+    "product_name": "[인생]얼큰짬뽕탕500g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "228",
+    "product_code": "P00000IU",
+    "product_name": "[인생]조개탕650g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "227",
+    "product_code": "P00000IT",
+    "product_name": "[인생]큐브불족발300g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "226",
+    "product_code": "P00000IS",
+    "product_name": "[인생]매콤불닭400g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "225",
+    "product_code": "P00000IR",
+    "product_name": "[인생]모듬튀김270g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "224",
+    "product_code": "P00000IQ",
+    "product_name": "[인생]모듬감자튀김500g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "223",
+    "product_code": "P00000IP",
+    "product_name": "[인생]킹 군만두1.4kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "222",
+    "product_code": "P00000IO",
+    "product_name": "[인생]쫄비빔만두460g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "221",
+    "product_code": "P00000IN",
+    "product_name": "[인생]치즈돈까스230g*10ea",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "220",
+    "product_code": "P00000IM",
+    "product_name": "[인생]등심왕돈까스250g*10ea",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "219",
+    "product_code": "P00000IL",
+    "product_name": "[인생]빨간어묵꼬치360g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "218",
+    "product_code": "P00000IK",
+    "product_name": "[인생]꼬치어묵320g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "217",
+    "product_code": "P00000IJ",
+    "product_name": "[인생]꽈배기어묵꼬치500g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "216",
+    "product_code": "P00000II",
+    "product_name": "[인생]모듬꼬치어묵230g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "215",
+    "product_code": "P00000IH",
+    "product_name": "[인생]포차어묵우동373g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "214",
+    "product_code": "P00000IG",
+    "product_name": "[인생]가마보꼬 어묵탕350g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "213",
+    "product_code": "P00000IF",
+    "product_name": "[인생]김치어묵우동448g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "212",
+    "product_code": "P00000IE",
+    "product_name": "[인생] 오뎅탕 매운맛 300g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "207",
+    "product_code": "P00000HZ",
+    "product_name": "[태공식품]바다싱싱꽃맛살[냉장]300g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "204",
+    "product_code": "P00000HW",
+    "product_name": "[태공식품]크랩바오징어[냉장]80g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "203",
+    "product_code": "P00000HV",
+    "product_name": "[태공식품]크랩바매콤[냉장]80g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "202",
+    "product_code": "P00000HU",
+    "product_name": "[태공식품]꽃맛살(사우전아일랜드)[냉장]120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "201",
+    "product_code": "P00000HT",
+    "product_name": "[태공식품]꽃맛살(어니언크림)[냉장]120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "200",
+    "product_code": "P00000HS",
+    "product_name": "[태공식품]꽃맛살(레몬아이올리)[냉장]120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "191",
+    "product_code": "P00000HJ",
+    "product_name": "[태공식품]토핑맛살[냉장]20kg(2kg*10pk)",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "186",
+    "product_code": "P00000HE",
+    "product_name": "[태공식품]꽃송이맛살[냉동]12kg(2kg*6pk)",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "185",
+    "product_code": "P00000HD",
+    "product_name": "[태공식품]꽃송이맛살[냉장]12kg(2kg*6pk)",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "160",
+    "product_code": "P00000GE",
+    "product_name": "[반찬단지]맛김치(중국산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "161",
+    "product_code": "P00000GF",
+    "product_name": "[반찬단지]슬라이스김치(중국산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "162",
+    "product_code": "P00000GG",
+    "product_name": "[반찬단지]포기김치(중국산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "163",
+    "product_code": "P00000GH",
+    "product_name": "[반찬단지]대파김치(중국산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "164",
+    "product_code": "P00000GI",
+    "product_name": "[반찬단지]쪽파김치(중국산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "152",
+    "product_code": "P00000FW",
+    "product_name": "[반찬단지]갓김치(국내산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "153",
+    "product_code": "P00000FX",
+    "product_name": "[반찬단지]대파김치 (국내산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "154",
+    "product_code": "P00000FY",
+    "product_name": "[반찬단지]백김치 (국내산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "155",
+    "product_code": "P00000FZ",
+    "product_name": "[반찬단지]포기김치 (국내산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "156",
+    "product_code": "P00000GA",
+    "product_name": "[반찬단지]동치미 (국내산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "157",
+    "product_code": "P00000GB",
+    "product_name": "[반찬단지]미니깍두기 (국내산) 10KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "158",
+    "product_code": "P00000GC",
+    "product_name": "[반찬단지]열무김치 (국내산) 10KG(주문후 5일이내 배송)",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "151",
+    "product_code": "P00000FV",
+    "product_name": "[최씨남매제조]토마토 만능소스350g*3 배송비포함! 순차적 발송!",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "150",
+    "product_code": "P00000FU",
+    "product_name": "[모비딕]냉동훈제오리완포(뼈없는 통오리)800g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "149",
+    "product_code": "P00000FT",
+    "product_name": "[모비딕]냉동빅레드폭립1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "148",
+    "product_code": "P00000FS",
+    "product_name": "[단지식품유통]쭈꾸미300g*5개 최저가 보장!",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "147",
+    "product_code": "P00000FR",
+    "product_name": "[피자코리아] 무료배송 포카치아 피자 4종  비프불고기 애플고르곤졸라 콰트로치즈 김치불고기 20개 구성 세트 [ 총 1,450g ]",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "146",
+    "product_code": "P00000FQ",
+    "product_name": "[BS]연평도 간장게장2.5kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "145",
+    "product_code": "P00000FP",
+    "product_name": "[취영루]수라간맛있는물만두2800g*2ea",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "144",
+    "product_code": "P00000FO",
+    "product_name": "[최씨남매]돼지김치찜 650g*3ea",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "143",
+    "product_code": "P00000FN",
+    "product_name": "[최씨남매]돼지김치찜 650g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "142",
+    "product_code": "P00000FM",
+    "product_name": "[취영루]만두 올스타 4종 세트",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "131",
+    "product_code": "P00000FB",
+    "product_name": "[취영루] 교자만두 360g *3입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "132",
+    "product_code": "P00000FC",
+    "product_name": "[취영루] 고기왕만두 420g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "133",
+    "product_code": "P00000FD",
+    "product_name": "[취영루] 김치왕만두 490g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "134",
+    "product_code": "P00000FE",
+    "product_name": "[취영루]중화군만두 1.4kg *3입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "135",
+    "product_code": "P00000FF",
+    "product_name": "[취영루] 수라간맛있는물만두2800g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "136",
+    "product_code": "P00000FG",
+    "product_name": "[취영루]튀겨만두 1300g *3입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "137",
+    "product_code": "P00000FH",
+    "product_name": "[취영루] 대용량 바삭함 끝판왕 – 튀김만두 업소용 6입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "138",
+    "product_code": "P00000FI",
+    "product_name": "[취영루] 김치&고기 듀오 – 왕만두 2종 세트",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "139",
+    "product_code": "P00000FJ",
+    "product_name": "[취영루] 물반 고기반 황금비율 – 홈콤보 세트",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "140",
+    "product_code": "P00000FK",
+    "product_name": "[취영루] 5.6kg 육즙창고 – 물만두 업소용 2입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "141",
+    "product_code": "P00000FL",
+    "product_name": "[취영루] 중국식 만두 끝판왕 – 중화군만두 업소용 6입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "92",
+    "product_code": "P00000DO",
+    "product_name": "[최씨남매]한우국밥 600g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "93",
+    "product_code": "P00000DP",
+    "product_name": "[최씨남매]한우떡갈비 400g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "94",
+    "product_code": "P00000DQ",
+    "product_name": "[최씨남매]고추장 돼지 삼겹살 250g*3개 750g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "77",
+    "product_code": "P00000CZ",
+    "product_name": "[최씨남매]뼈없는 소갈비탕 400g x 4팩 1.6kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "76",
+    "product_code": "P00000CY",
+    "product_name": "[반찬단지]간장깻잎 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "75",
+    "product_code": "P00000CX",
+    "product_name": "[반찬단지]인기 식당용 반찬 세트[무말랭이4kg+간장깻잎4kg]",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "73",
+    "product_code": "P00000CV",
+    "product_name": "[반찬단지]입맛 돋우는 젓갈 3종 세트[낙지젓pe200+오징어젓pe200+씨앗젓갈200g]",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "72",
+    "product_code": "P00000CU",
+    "product_name": "[반찬단지]혼밥러 한끼 꾸러미 4종 세트[진미채무침80+낙지젓120+무말랭이120+오징어젓120]",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "71",
+    "product_code": "P00000CT",
+    "product_name": "[반찬단지]혼밥러 한끼 꾸러미 4종 세트[진미채무침80+낙지젓120+무말랭이120+오징어젓120]",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "69",
+    "product_code": "P00000CR",
+    "product_name": "[반찬단지]건강반찬 꾸러미 (한달든든)1 4종세트[마늘쫑1kg+콩조림1kg+연근조림1kg+실속메추리알장조림1kg]",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "66",
+    "product_code": "P00000CO",
+    "product_name": "[굿프렌즈]감자고기잎새만두 1000G 기획",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "65",
+    "product_code": "P00000CN",
+    "product_name": "[취영루]물만두 350g*3 기획",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "62",
+    "product_code": "P00000CK",
+    "product_name": "[취영루]물만두 350g *3입",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "58",
+    "product_code": "P00000CG",
+    "product_name": "[반찬단지]비벼먹는 씨앗젓갈 200g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "57",
+    "product_code": "P00000CF",
+    "product_name": "[반찬단지]갈치속젓 500g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "53",
+    "product_code": "P00000CB",
+    "product_name": "[반찬단지]무말랭이무침 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "52",
+    "product_code": "P00000CA",
+    "product_name": "[반찬단지]깻잎무침 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "51",
+    "product_code": "P00000BZ",
+    "product_name": "[반찬단지]고추무침 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "50",
+    "product_code": "P00000BY",
+    "product_name": "[반찬단지]궁채절임 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "49",
+    "product_code": "P00000BX",
+    "product_name": "[반찬단지]간장깻잎 4kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "48",
+    "product_code": "P00000BW",
+    "product_name": "[반찬단지]무말랭이무침 4kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "47",
+    "product_code": "P00000BV",
+    "product_name": "[반찬단지]간장고추 4kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "46",
+    "product_code": "P00000BU",
+    "product_name": "[반찬단지]실속메추리알장조림 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "45",
+    "product_code": "P00000BT",
+    "product_name": "[반찬단지]연근조림 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "44",
+    "product_code": "P00000BS",
+    "product_name": "[반찬단지]콩조림 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "43",
+    "product_code": "P00000BR",
+    "product_name": "[반찬단지]마늘쫑무침 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "42",
+    "product_code": "P00000BQ",
+    "product_name": "[반찬단지]김밥우엉5MM 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "41",
+    "product_code": "P00000BP",
+    "product_name": "[반찬단지]산고추 500g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "40",
+    "product_code": "P00000BO",
+    "product_name": "[반찬단지]초생강적색 1.3KG",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "39",
+    "product_code": "P00000BN",
+    "product_name": "[반찬단지]락교 1kg",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "38",
+    "product_code": "P00000BM",
+    "product_name": "[반찬단지]짜먹는 명란마요 200g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "37",
+    "product_code": "P00000BL",
+    "product_name": "[반찬단지]간장알마늘 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "36",
+    "product_code": "P00000BK",
+    "product_name": "[반찬단지]명이나물 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "35",
+    "product_code": "P00000BJ",
+    "product_name": "[반찬단지]오징어젓 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "34",
+    "product_code": "P00000BI",
+    "product_name": "[반찬단지]연근조림 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "33",
+    "product_code": "P00000BH",
+    "product_name": "[반찬단지]무말랭이무침 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "32",
+    "product_code": "P00000BG",
+    "product_name": "[반찬단지]낙지젓 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "31",
+    "product_code": "P00000BF",
+    "product_name": "[반찬단지]깻잎무침 120g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "30",
+    "product_code": "P00000BE",
+    "product_name": "[반찬단지]낙지젓 200gPE",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "29",
+    "product_code": "P00000BD",
+    "product_name": "[반찬단지]진미채무침 80g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "28",
+    "product_code": "P00000BC",
+    "product_name": "[반찬단지]멸치견과류조림(NB)80g",
+    "reason": "not_downloaded"
+  },
+  {
+    "product_no": "27",
+    "product_code": "P00000BB",
+    "product_name": "[반찬단지]모듬콩조림 120g",
+    "reason": "not_downloaded"
+  }
+]

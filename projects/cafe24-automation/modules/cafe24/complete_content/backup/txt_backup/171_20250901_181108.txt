@@ -1,0 +1,608 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만원요리 최씨남매 X 형기네 무뼈닭발 250g</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --deep-charcoal: #1F2937;
+            --deep-rose: #C53030;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+            --warm-gold: #D4AF37;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--pure-white);
+            color: var(--deep-charcoal);
+            line-height: 1.6;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .text-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left !important;
+            padding: 0 20px;
+        }
+
+        .center-only {
+            text-align: center !important;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: var(--pure-white);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            font-size: clamp(24px, 5vw, 32px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: clamp(20px, 4vw, 26px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            color: var(--deep-charcoal);
+        }
+
+        h3 {
+            font-size: clamp(16px, 3vw, 20px);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: clamp(14px, 2.5vw, 16px);
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .main-product-image {
+            max-width: 500px;
+        }
+
+        .heritage-section {
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+            padding: 40px;
+            border-radius: 16px;
+            margin: 40px 0;
+        }
+
+        .heritage-quote {
+            font-size: clamp(16px, 3vw, 18px);
+            font-style: italic;
+            color: var(--warm-gold);
+            margin: 30px 0;
+            padding: 20px;
+            border-left: 4px solid var(--warm-gold);
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .timeline-container {
+            margin: 30px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: var(--pure-white);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: var(--deep-rose);
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .timeline-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .timeline-desc {
+            color: var(--medium-gray);
+            font-size: 14px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background-color: var(--light-gray);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            color: var(--deep-rose);
+            margin-bottom: 15px;
+        }
+
+        .info-section {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .info-list {
+            font-size: 14px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .info-label {
+            min-width: 140px;
+            font-weight: 600;
+            color: var(--deep-charcoal);
+            flex-shrink: 0;
+        }
+
+        .info-colon {
+            margin: 0 8px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            flex: 1;
+            color: var(--deep-charcoal);
+            text-align: left;
+        }
+
+        .company-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--deep-charcoal);
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--deep-rose);
+            font-weight: 600;
+        }
+
+        .usage-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .usage-step {
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .step-number {
+            background-color: var(--deep-rose);
+            color: var(--pure-white);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin: 0 auto 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 0 15px;
+            }
+
+            .text-container {
+                padding: 0 15px;
+            }
+
+            .section {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+
+            .product-image {
+                max-width: 350px;
+            }
+
+            .main-product-image {
+                max-width: 400px;
+            }
+
+            .heritage-section {
+                padding: 25px;
+            }
+
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 12px;
+            }
+
+            .info-label {
+                min-width: 100%;
+                margin-bottom: 4px;
+                font-weight: bold;
+            }
+
+            .info-colon {
+                display: none;
+            }
+
+            .info-value {
+                padding-left: 0;
+                word-break: break-word;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .usage-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+    <div class="main-container">
+        <!-- Section 1: Impact Zone -->
+        <section class="section">
+            <div class="center-only">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feet250g/feet-1.jpg" alt="형기네 무뼈닭발 250g 매콤달콤한 양념 뼈 제거로 편리하게 즐기는 닭발 만원요리 최씨남매 추천 제품 메인 이미지" class="product-image main-product-image fr-draggable">
+            </div>
+            <h1 class="center-only">🔥 만원요리 최씨남매 인정!<br>형기네 무뼈닭발 250g</h1>
+            <div class="text-container">
+                <p><strong>뼈 제거로 편리하게 즐기는 진짜 닭발!</strong> 매콤달콤한 양념과 쫄깃한 식감이 살아있는 250g 구성으로 1-2인분에 딱 맞습니다.</p>
+                <p>간편하게 데워서 먹으면 집에서도 포장마차에서 먹는 것 같은 진짜 맛을 경험할 수 있어요.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Heritage Story Zone -->
+        <section class="heritage-section">
+            <h2 class="center-only">🏛️ 닭발, 서민 음식에서 국민 간식으로</h2>
+            
+            <div class="heritage-quote center-only">
+                "일제강점기 어려운 시절, 서민들이 저렴한 닭발로 시작한 음식 문화가<br>
+                오늘날 남녀노소 모두가 사랑하는<br>
+                <strong>대한민국 대표 술안주이자 간식</strong>으로 완성됩니다"
+            </div>
+            
+            <div class="timeline-container text-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">일제강점기 (1910-1945)</div>
+                    <div class="timeline-title"><strong>서민 음식의 시작</strong></div>
+                    <div class="timeline-desc">어려운 시절, 저렴한 닭발을 고추장과 양념으로 매콤하게 조리해 먹기 시작. 단백질 공급원이자 든든한 한 끼가 되었습니다.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1960년대</div>
+                    <div class="timeline-title"><strong>포장마차 문화의 확산</strong></div>
+                    <div class="timeline-desc">포장마차에서 술안주로 인기를 끌기 시작. 매콤한 맛과 쫄깃한 식감이 술과 잘 어울려 서민들의 사랑을 받았습니다.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1990년대</div>
+                    <div class="timeline-title"><strong>대중화의 시작</strong></div>
+                    <div class="timeline-desc">TV 프로그램과 미디어를 통해 전국적으로 알려지며 젊은 세대에게도 인기. 각 지역마다 특색 있는 닭발 요리가 등장했습니다.</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2000년대 이후</div>
+                    <div class="timeline-title"><strong>무뼈 혁신의 완성</strong></div>
+                    <div class="timeline-desc">뼈 제거 기술로 편의성을 극대화. 누구나 부담 없이 즐길 수 있는 형태로 발전하여 진정한 국민 간식이 되었습니다.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Trust Building Zone -->
+        <section class="section">
+            <h2 class="center-only">👥 만원요리 최씨남매가 직접 추천하는 이유</h2>
+            <div class="text-container">
+                <div style="background-color: var(--light-gray); padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <p style="font-size: 18px; font-weight: 600; color: var(--deep-rose); margin-bottom: 10px;">
+                        <i class="fas fa-quote-left"></i> 이거 진짜 뼈 빼는 게 이렇게 편할 줄 몰랐어요!
+                    </p>
+                    <p>닭발 먹을 때마다 뼈 때문에 불편했는데, 이 제품은 뼈를 완전히 제거해서 정말 편리해요. 맛도 포장마차에서 먹는 것처럼 매콤하고 쫄깃하고, 250g이면 혼자 먹기에도 둘이 나눠 먹기에도 딱 좋습니다!</p>
+                </div>
+                <p>가성비와 편의성을 모두 중시하는 만원요리 최씨남매가 직접 체험하고 인정한 제품입니다. 맛은 물론이고, 먹기 편한 점이 압도적이라서 자신 있게 추천드립니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Core Value Proof Zone -->
+        <section class="section">
+            <h2 class="center-only">💎 왜 이 제품을 선택해야 할까요?</h2>
+            <div class="text-container">
+                <h3><span class="highlight">고객 Pain Point:</span> 이런 고민 있으시죠?</h3>
+                <ul style="margin-left: 20px; margin-bottom: 30px;">
+                    <li>닭발 먹고 싶은데 뼈 때문에 먹기 불편하다</li>
+                    <li>포장마차까지 가기 번거롭고 시간이 없다</li>
+                    <li>혼자 먹기에 적당한 양을 찾기 어렵다</li>
+                    <li>집에서 간편하게 술안주를 즐기고 싶다</li>
+                </ul>
+                
+                <h3><span class="highlight">해결책:</span> 이 제품이 답입니다!</h3>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🦴</div>
+                    <h4>완전 무뼈 처리</h4>
+                    <p>뼈를 완전히 제거해서 편리하게 먹을 수 있어요. 더 이상 뼈 때문에 고생하지 마세요!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌶️</div>
+                    <h4>매콤달콤한 진짜 맛</h4>
+                    <p>포장마차에서 먹는 것 같은 진짜 닭발 맛! 매콤달콤한 양념이 일품입니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>간편한 조리</h4>
+                    <p>데우기만 하면 바로 완성! 집에서 간편하게 포장마차 맛을 즐기세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Usage & Application Zone -->
+        <section class="section">
+            <h2 class="center-only">🍽️ 간편한 조리법 &amp; 활용법</h2>
+            
+            <div class="usage-steps">
+                <div class="usage-step">
+                    <div class="step-number">1</div>
+                    <h4>해동하기</h4>
+                    <p>냉동 제품을 자연 해동<br>또는 찬물 해동</p>
+                </div>
+                <div class="usage-step">
+                    <div class="step-number">2</div>
+                    <h4>데우기</h4>
+                    <p>전자레인지 2-3분<br>또는 팬에 볶아주기</p>
+                </div>
+                <div class="usage-step">
+                    <div class="step-number">3</div>
+                    <h4>완성</h4>
+                    <p>따뜻하게 데워서<br>바로 드세요!</p>
+                </div>
+            </div>
+            
+            <div class="text-container">
+                <h3>🎯 이런 분들께 추천합니다:</h3>
+                <ul style="margin-left: 20px;">
+                    <li><strong>술안주 애호가</strong> - 맥주, 소주와 궁합이 완벽해요</li>
+                    <li><strong>혼술족</strong> - 250g 딱 맞는 1-2인분 구성</li>
+                    <li><strong>직장인</strong> - 간편하게 데워 먹는 야식</li>
+                    <li><strong>매운 음식 좋아하는 분</strong> - 매콤달콤한 양념이 일품</li>
+                    <li><strong>간편식 선호하는 분</strong> - 조리 시간 단축</li>
+                    <li><strong>닭발 초보자</strong> - 뼈 없어서 먹기 쉬워요</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 6: Social Proof Zone -->
+        <section class="section">
+            <h2 class="center-only">⭐ 고객 만족도 체크포인트</h2>
+            <div class="text-container">
+                <div style="background-color: var(--light-gray); padding: 25px; border-radius: 12px;">
+                    <h3>✅ 이 제품의 핵심 장점들</h3>
+                    <ul style="margin-left: 20px; line-height: 1.8;">
+                        <li><strong>완전 무뼈 처리</strong> - 뼈 제거로 편리하게 즐기는 닭발</li>
+                        <li><strong>포장마차 맛</strong> - 매콤달콤한 진짜 닭발 맛</li>
+                        <li><strong>쫄깃한 식감</strong> - 부드러우면서도 탱탱한 식감</li>
+                        <li><strong>간편한 조리</strong> - 데우기만 하면 바로 완성</li>
+                        <li><strong>적당한 양</strong> - 250g 1-2인분 딱 맞는 구성</li>
+                        <li><strong>완벽한 술안주</strong> - 맥주, 소주와 궁합 100%</li>
+                    </ul>
+                </div>
+                <p style="margin-top: 20px;">이 모든 것이 하나의 제품에 담겨 있습니다. 만원요리 최씨남매가 직접 체험하고 인정한 품질을 확인해보세요.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: Final Purchase Proposal Zone -->
+        <section class="section">
+            <h2 class="center-only">🛒 구매 결정을 위한 마지막 체크</h2>
+            <div class="text-container">
+                <h3>🤔 자주 묻는 질문 FAQ</h3>
+                <div style="margin: 20px 0;">
+                    <p><strong>Q: 정말 뼈가 다 제거되어 있나요?</strong></p>
+                    <p>A: 네! 완전히 뼈를 제거한 상태로 포장되어 있어서 편리하게 드실 수 있습니다.</p>
+                </div>
+                <div style="margin: 20px 0;">
+                    <p><strong>Q: 250g이면 몇 인분인가요?</strong></p>
+                    <p>A: 1-2인분 기준입니다. 혼자 드시기에도 충분하고, 둘이 나눠 드시기에도 적당합니다.</p>
+                </div>
+                <div style="margin: 20px 0;">
+                    <p><strong>Q: 조리 방법이 어렵나요?</strong></p>
+                    <p>A: 전혀 어렵지 않습니다! 해동 후 전자레인지나 팬에 데우기만 하면 바로 드실 수 있어요.</p>
+                </div>
+                
+                <div style="background-color: var(--light-gray); padding: 20px; border-radius: 10px; margin: 30px 0;">
+                    <h4 style="color: var(--deep-rose); margin-bottom: 10px;">💡 보관 팁</h4>
+                    <p>냉동보관 가능하니까 여러 봉지 사서 냉동실에 보관해두시면 언제든 간편하게 드실 수 있어요. 술안주나 야식으로 정말 좋습니다!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Additional Product Images -->
+        <section class="section">
+            <h2 class="center-only">📸 제품 상세 이미지</h2>
+            <div class="center-only">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feet250g/feet-2.jpg" alt="형기네 무뼈닭발 250g 제품 상세 정보 매콤달콤한 양념 조리법 안내 포장마차 맛 간편식 이미지" class="product-image fr-draggable">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feet250g/feet-3.jpg" alt="형기네 무뼈닭발 250g 배송 안내 제주도 배송 주의사항 냉동 냉장 제품 보관 방법 안내 이미지" class="product-image fr-draggable">
+            </div>
+        </section>
+
+        <!-- Section 9: Product Basic Information -->
+        <section class="info-section">
+            <h2 class="center-only">
+                <i style="color: var(--deep-rose); margin-right: 10px;" class="fas fa-info-circle"></i>
+                제품 기본정보
+            </h2>
+            <div class="text-container">
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-label">제품명</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">[형기네] 무뼈닭발 250g</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">용량</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">250g (1-2인분)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">주요 원료</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">닭발, 고추장, 양념류, 설탕, 마늘 등</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">보관방법</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">냉동보관 (-18℃ 이하)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">유통기한</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">제조일로부터 냉동보관 1년</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">조리방법</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">해동 후 전자레인지 2-3분 또는 팬에 볶기</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">특징</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">완전 무뼈 처리, 매콤달콤한 양념</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">원산지</span>
+                        <span class="info-colon">:</span>
+                        <span class="info-value">국내산</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Company Information -->
+        <section class="info-section">
+            <h2 class="center-only">
+                <i style="color: var(--deep-rose); margin-right: 10px;" class="fas fa-building"></i>
+                판매원 정보
+            </h2>
+            <div class="info-grid">
+                <div class="company-section">
+                    <h3 class="company-title">회사 정보</h3>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-label">상호</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">㈜값진한끼</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">대표자</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">고혜숙</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">사업자등록번호</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">434-86-03863</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">통신판매업</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">2025-경기파주-2195호</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="company-section">
+                    <h3 class="company-title">연락처</h3>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-label">주소</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">경기도 파주시 경의로 1246, 11층 1105-19호</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">전화</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">070-8835-2885</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">이메일</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">we@manwonyori.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">사이트</span>
+                            <span class="info-colon">:</span>
+                            <span class="info-value">만원요리 최씨남매</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 40px 0; color: var(--medium-gray); border-top: 1px solid var(--border-gray);">
+            <p>© 2025 ㈜값진한끼. All rights reserved.</p>
+            <p>만원요리 최씨남매와 함께하는 맛있는 가성비 라이프</p>
+        </footer>
+    </div>

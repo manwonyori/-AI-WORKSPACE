@@ -1,0 +1,534 @@
+<center>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>최씨남매 뼈없는 소갈비탕 - 우리집이 맛집이 되는 3분 완성</title>
+<meta name="description" content="최씨남매가 직접 만든 뼈없는 소갈비탕. 뼈 바를 필요 없이 순살 소갈비 15%가 가득! 3분이면 완성되는 든든하고 건강한 한 끼를 경험하세요.">
+<meta name="keywords" content="갈비탕, 뼈없는 소갈비탕, 간편식, HMR, 최씨남매, 만원요리, 소갈비탕, 즉석조리식품, 호주산 소고기">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+ /* ===== 기본 및 공통 스타일 ===== */
+ 
+ html {
+  scroll-behavior: smooth;
+ }
+ 
+ body {
+  margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; color: #333333; background-color: #FFFFFF; word-break: keep-all;
+ }
+ 
+ .page-wrapper {
+  max-width: 800px; margin: 0 auto; padding: 0;
+ }
+ 
+ .section-divider {
+  border: 0; border-top: 10px solid #F5F5F5; margin: 50px 0;
+ }
+ 
+ .responsive-img {
+  max-width: 100%; height: auto; display: block;
+ }
+ 
+ .section-padding {
+  padding: 20px;
+ }
+ 
+ .text-center {
+  text-align: center;
+ }
+ /* ===== Hero Section (Impact Zone) ===== */
+ 
+ .hero-title {
+  font-size: 30px; font-weight: 700; line-height: 1.3; text-align: center;
+ }
+ 
+ .hero-subtitle {
+  font-size: 24px; font-weight: 700; color: #D92525; text-align: center;
+ }
+ 
+ .hero-desc {
+  font-size: 16px; font-weight: 400; line-height: 1.6; text-align: center;
+ }
+ 
+ .price-info-box {
+  background-color: #F5EFE6; padding: 20px; border-radius: 10px; text-align: center; margin: 30px 0;
+ }
+ 
+ .price-info-box .main-price {
+  margin: 5px 0 0; font-size: 28px; font-weight: 900; color: #D92525;
+ }
+ 
+ .price-info-box .sub-price {
+  font-size: 18px; font-weight: 500; color: #333;
+ }
+ 
+ .feature-points {
+  display: flex; justify-content: space-around; text-align: center; margin: 30px 0; padding: 15px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+ }
+ 
+ .feature-point p:first-child {
+  font-size: 20px; font-weight: 700; margin: 0;
+ }
+ 
+ .feature-point p:last-child {
+  font-size: 14px; margin: 5px 0 0;
+ }
+ /* ===== Problem / Trust / Feature Sections ===== */
+ 
+ .section-title-md {
+  font-size: 24px; font-weight: 700; text-align: center;
+ }
+ 
+ .pain-points-list {
+  border: 1px solid #ddd; padding: 25px; border-radius: 10px; margin-top: 20px; background-color: #fafafa;
+ }
+ 
+ .pain-points-list p {
+  font-size: 16px; line-height: 2;
+ }
+ 
+ .pain-points-list span {
+  font-weight: 700;
+ }
+ 
+ .pain-points-list .highlight {
+  color: #D92525;
+ }
+ 
+ .brand-story {
+  font-size: 18px; font-weight: 500; color: #555; text-align: center;
+ }
+ 
+ .trust-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; text-align: left;
+ }
+ 
+ .trust-card {
+  background-color: #F5EFE6; padding: 20px; border-radius: 8px;
+ }
+ 
+ .trust-card p:first-child {
+  font-size: 18px; font-weight: 700; margin: 0;
+ }
+ 
+ .trust-card p:last-child {
+  font-size: 14px; margin-top: 8px; line-height: 1.5;
+ }
+ 
+ .feature-detail {
+  margin-top: 40px;
+ }
+ 
+ .feature-detail-title {
+  font-size: 20px; font-weight: 700; color: #D92525; margin-top: 20px;
+ }
+ 
+ .feature-detail-desc {
+  font-size: 16px; font-weight: 400; line-height: 1.7;
+ }
+ /* ===== Review / Info / CTA Sections ===== */
+ 
+ .review-card {
+  background-color: #fff; border: 1px solid #eee; padding: 20px; border-radius: 8px; margin: 20px 0;
+ }
+ 
+ .review-card .stars {
+  font-size: 16px; font-weight: 700; margin: 0;
+ }
+ 
+ .review-card .comment {
+  font-size: 16px; font-weight: 400; line-height: 1.6; margin: 10px 0;
+ }
+ 
+ .review-card .reviewer {
+  font-size: 14px; color: #888; margin: 0;
+ }
+ 
+ .final-price-box {
+  border: 2px solid #D92525; background-color: #F5EFE6; padding: 25px; border-radius: 10px; text-align: center; line-height: 1.5; margin-top: 20px;
+ }
+ 
+ .final-cta-button {
+  display: block; background-color: #D92525; color: white; padding: 20px; text-align: center; border-radius: 8px; font-size: 22px; font-weight: 700; cursor: pointer; margin: 30px 0;
+ }
+ 
+ .info-section {
+  text-align: left; margin-top: 50px;
+ }
+ 
+ .info-title {
+  font-size: 20px; font-weight: 700; border-bottom: 2px solid #333; padding-bottom: 10px;
+ }
+ 
+ .info-details {
+  font-size: 14px; line-height: 2.2; background-color: #fafafa; padding: 20px; border-radius: 8px; margin-top: 20px;
+ }
+ /* CTA 버튼 반짝이는 효과 */
+ 
+ .cta-shine {
+  position: relative; overflow: hidden;
+ }
+ 
+ .cta-shine::after {
+  content: ''; position: absolute; top: 0; left: -150%; width: 70%; height: 100%; background: linear-gradient( to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%); transform: skewX(-25deg); animation: shine 3.5s infinite; animation-delay: 1s;
+ }
+ 
+ @keyframes shine {
+  100% {
+  left: 150%;
+  }
+ }
+
+</style>
+
+<!-- ▼▼▼ [추가] 브랜드 허브 헤더 v22.1 ▼▼▼ -->
+<style>
+ @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GmarketSansMedium.woff'); .manwon-hub-container {
+  max-width: 800px; margin: 30px auto; padding: 40px 20px; font-family: 'GmarketSansMedium', sans-serif; background: linear-gradient(to top, #fffaf6, #ffffff); border: 3px solid #FF7A2F; border-radius: 16px; text-align: center; word-break: keep-all; position: relative; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .manwon-hub-container .intro-text {
+  font-size: 18px; color: #555; font-weight: 700;
+ }
+ 
+ .manwon-hub-container h1 {
+  font-size: 36px; font-weight: 900; color: #333; margin: 16px 0; line-height: 1.4;
+ }
+ 
+ .manwon-hub-container h1 .highlight {
+  color: #FF7A2F;
+ }
+ 
+ .manwon-hub-container .sub-text {
+  font-size: 16px; color: #555;
+ }
+ 
+ .manwon-hub-container .final-message {
+  margin-top: 30px; font-size: 16px; font-weight: 700; color: #333;
+ }
+ 
+ @keyframes hub-cta-glow {
+  0%,
+  100% {
+  box-shadow: 0 0 15px 0px rgba(255, 122, 47, 0.6);
+  }
+  50% {
+  box-shadow: 0 0 25px 8px rgba(255, 122, 47, 0.9);
+  }
+ }
+ 
+ .manwon-hub-container .cta-button {
+  display: inline-block; background-color: #FF7A2F; color: white; font-size: 24px; font-weight: 700; padding: 18px 40px; border-radius: 50px; text-decoration: none; margin-top: 24px; animation: hub-cta-glow 2.5s infinite; transition: transform 0.2s ease-in-out;
+ }
+ 
+ .manwon-hub-container .cta-button:hover {
+  transform: scale(1.05);
+ }
+ 
+ .manwon-hub-container .cta-subtext {
+  font-size: 14px; color: #777; margin-top: 10px;
+ }
+ 
+ .manwon-card-section {
+  margin-top: 40px; padding-top: 30px; border-top: 2px dashed #fae5d3; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+ }
+ 
+ .manwon-card {
+  background-color: #fff; border: 1px solid #fae5d3; border-radius: 12px; padding: 20px; text-decoration: none; display: block; color: #333; transition: all 0.3s ease;
+ }
+ 
+ .manwon-card:hover {
+  transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); border-color: #FF7A2F;
+ }
+ 
+ .manwon-card .icon {
+  font-size: 28px; color: #FF7A2F; margin-bottom: 10px;
+ }
+ 
+ .manwon-card .title {
+  font-size: 18px; font-weight: 700; margin-bottom: 5px;
+ }
+ 
+ .manwon-card .desc {
+  font-size: 14px; color: #666;
+ }
+ 
+ #kakao-add-channel-button-container {
+  position: absolute; top: 20px; right: 20px; z-index: 10;
+ }
+
+</style>
+<div class="manwon-hub-container">
+<div id="kakao-add-channel-button-container"></div>
+
+<p class="intro-text">안녕하세요! 만원요리 최씨남매입니다.</p>
+
+<h1>잠깐! 이 상품만 보고 가시게요?
+<br><span class="highlight">더 많은 행복이 기다리고 있어요!</span></h1>
+
+<p class="sub-text">저희가 직접 발로 뛰어 찾아낸, 말도 안 되는 가격의
+<br>맛있는 제품들이 매일 업데이트됩니다.</p>
+<a href="https://www.manwonyori.com" rel="noopener noreferrer" target="_blank" class="cta-button">만원요리 최씨남매 사이트 바로가기!</a>
+
+<p class="cta-subtext">(클릭하시면 더 많고 저렴한 제품을 보실 수 있습니다!)</p>
+<div class="manwon-card-section">
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=75" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">💡</div>
+<div class="title">최씨남매 기획전</div>
+<div class="desc">지금 가장 핫한 상품만 모았어요!</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=53" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⭐</div>
+<div class="title">최씨남매 PICK</div>
+<div class="desc">저희가 직접 고른 믿고 먹는 제품</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=54" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤔</div>
+<div class="title">오늘 뭐 먹지?</div>
+<div class="desc">고민 끝! 식단 걱정 덜어드려요</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=55" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">📦</div>
+<div class="title">사장님 브랜드관 (대용량)</div>
+<div class="desc">자영업자 사장님들을 위한 특별관</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=56" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">🤝</div>
+<div class="title">직거래 브랜드관</div>
+<div class="desc">산지직송! 신선함 그대로</div>
+</a>
+<a href="https://manwonyori.cafe24.com/product/list.html?cate_no=57" rel="noopener noreferrer" target="_blank" class="manwon-card">
+<div class="icon">⚡</div>
+<div class="title">공장직속/반짝특가</div>
+<div class="desc">이 가격, 실화? 역대급 가성비</div>
+</a>
+</div>
+
+<p class="final-message">누야히야들, 모든 사장님들 화이팅!</p>
+</div>
+
+<!-- ▲▲▲ [추가] 브랜드 허브 헤더 v22.1 ▲▲▲ -->
+
+<div class="page-wrapper">
+
+<!-- Section 1: Impact Zone -->
+<div class="text-center">
+<!-- [속도 최적화] loading="lazy" 추가 -->
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/galbitang-400g/galbitang-400g-01.jpg" alt="최씨남매 뼈없는 소갈비탕 대표 이미지" loading="lazy" class="responsive-img fr-draggable">
+<div class="section-padding">
+
+<h1 class="hero-title">3분이면 끝!
+<br>우리집이 갈비탕 맛집이 됩니다.</h1>
+
+<h2 class="hero-subtitle">최씨남매 뼈없는 소갈비탕</h2>
+
+<p class="hero-desc">뼈 바를 필요 없이 순살 소갈비가 가득!
+<br>바쁜 날, 입맛 없는 날, 든든한 한 끼가 필요할 때
+<br>최씨남매가 자신 있게 준비했습니다.</p>
+<div class="price-info-box">
+
+<p style="margin: 0; font-size: 18px; font-weight: 700;">4팩 세트, 파격적인 가격!</p>
+
+<p class="main-price">17,600원 <span class="sub-price">(팩당 4,400원)</span></p>
+</div>
+<div class="feature-points">
+<div class="feature-point">
+
+<p>푸짐한 순살</p>
+
+<p>고기 함량 15%</p>
+</div>
+<div class="feature-point">
+
+<p>초간편 조리</p>
+
+<p>단 3분 완성</p>
+</div>
+<div class="feature-point">
+
+<p>깊은 국물맛</p>
+
+<p>호주산 프리미엄</p>
+</div>
+</div>
+</div>
+</div>
+
+<hr class="section-divider">
+
+<!-- Section 2: Pain Points -->
+<div class="section-padding">
+
+<h2 class="section-title-md">혹시, 이런 생각 해보셨죠?</h2>
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/galbitang-400g/galbitang-400g-02.jpg" alt="갈비탕 조리의 어려움을 고민하는 모습" style="margin-top:20px;" loading="lazy" class="responsive-img fr-draggable">
+<div class="pain-points-list">
+
+<p><span class="highlight">"갈비탕은 먹고 싶은데..."</span>
+<br>❌ 핏물 빼고, 삶고, 기름 걷어내고... <span>너무 번거로워.</span>
+<br>❌ 나가서 사 먹자니 한 그릇에 <span>만원이 훌쩍 넘어</span> 부담돼.
+<br>❌ 배달 음식은 이제 좀 지겹고, <span>건강한 집밥</span>이 그리워.
+<br>❌ 시판 갈비탕은 뼈만 크고 <span>먹을 고기는 별로 없더라.</span></p>
+</div>
+
+<p style="font-size: 18px; font-weight: 500; text-align: center; margin-top: 30px; line-height: 1.5;">그 마음, 요리 전문가 최씨남매가
+<br>누구보다 잘 알기에 만들었습니다.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- Section 3: Trust Building (We Make It!) -->
+<div class="section-padding text-center">
+
+<h2 class="section-title-md">맛의 비밀? 저희가 직접 만듭니다!</h2>
+
+<h3 class="brand-story">최씨남매의 키친 (자체 제조시설)</h3>
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/galbitang-400g/galbitang-400g-03.jpg" alt="최씨남매의 깨끗한 자체 제조 시설(키친)" style="margin-top:20px;" loading="lazy" class="responsive-img fr-draggable">
+
+<p style="font-size: 16px; font-weight: 400; line-height: 1.6; margin-top: 20px;">저희 이름에 책임을 다하기 위해, 외주 생산에 맡기지 않습니다.
+<br>최씨남매가 직접 운영하는 깨끗한 제조 시설에서 모든 과정을 깐깐하게 관리합니다.</p>
+<div class="trust-grid">
+<div class="trust-card">
+
+<p>엄격한 품질관리</p>
+
+<p>원재료 입고부터 생산, 포장까지 직접 챙겨 맛의 편차를 없앴습니다.</p>
+</div>
+<div class="trust-card">
+
+<p>HACCP 인증 위생</p>
+
+<p>HACCP 인증으로 증명된 위생적인 환경에서 안심하고 드실 수 있도록 만들었습니다.</p>
+</div>
+<div class="trust-card">
+
+<p>유통마진 ZERO</p>
+
+<p>중간 유통 과정 없이 직접 판매하여 최고의 가성비를 실현했습니다.</p>
+</div>
+<div class="trust-card">
+
+<p>진심을 담은 맛</p>
+
+<p>'내 가족이 먹는다'는 마음으로 정직하게, 맛있게, 푸짐하게 담았습니다.</p>
+</div>
+</div>
+</div>
+
+<hr class="section-divider">
+
+<!-- Section 4: USP (Unique Selling Proposition) -->
+<div class="section-padding">
+
+<h2 class="section-title-md">그래서, 무엇이 다른가요?</h2>
+<div style="margin-top: 30px;" class="feature-detail"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/galbitang-400g/galbitang-400g-04.jpg" alt="푸짐한 순살 소갈비 건더기 클로즈업" loading="lazy" class="responsive-img fr-draggable">
+
+<h3 class="feature-detail-title">하나. 뼈 무게 뺀, 순살 소갈비 15% (60g)</h3>
+
+<p class="feature-detail-desc">큼직한 뼈로 눈속임하지 않았습니다. 먹기 좋게 손질한 부드러운 순살 소갈비만 팩당 15%, 60g씩 꾹꾹 눌러 담아 씹는 맛이 다릅니다. 국물만 많은 갈비탕에 실망하셨다면, 기대하셔도 좋습니다.</p>
+</div>
+<div class="feature-detail"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/galbitang-400g/galbitang-400g-05.jpg" alt="청정 호주산 소고기 원재료" loading="lazy" class="responsive-img fr-draggable">
+
+<h3 class="feature-detail-title">둘. 잡내 없이 부드러운 호주산 소고기</h3>
+
+<p class="feature-detail-desc">까다롭게 고른 청정 호주산 소고기를 사용하여 잡내는 잡고 육향은 살렸습니다. 오랜 시간 푹 끓여내어 아이부터 어르신까지 누구나 부드럽게 즐길 수 있습니다.</p>
+</div>
+<div class="feature-detail"><img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/galbitang-400g/galbitang-400g-06.jpg" alt="맑고 깊은 갈비탕 국물" loading="lazy" class="responsive-img fr-draggable">
+
+<h3 class="feature-detail-title">셋. 자극적이지 않은 깊고 진한 국물</h3>
+
+<p class="feature-detail-desc">짜고 자극적인 맛이 아닌, 채소와 고기에서 우러나온 자연스러운 감칠맛을 살렸습니다. 밥 한 공기 말아먹으면 속까지 든든해지는 바로 그 맛입니다.</p>
+</div>
+</div>
+
+<hr class="section-divider">
+
+<!-- Section 5: Social Proof -->
+<div class="section-padding">
+
+<h2 class="section-title-md">먼저 맛보신 분들의
+<br>진짜 후기가 증명합니다!</h2>
+
+<h3 style="text-align: center; font-size: 22px; font-weight: 700; margin: 30px 0;">그동안의 진짜 후기 입니다.</h3>
+<div class="review-card">
+
+<p class="stars">⭐️⭐️⭐️⭐️⭐️ 워킹맘 저녁 걱정 끝!</p>
+
+<p class="comment">퇴근하고 밥 차리기 너무 힘든데, 이거 3분 데워서 파만 송송 썰어주니 애들이 식당에서 사 온 줄 알아요. 고기도 부드럽고 뼈가 없어서 아이들 먹이기도 편해요. 재구매 각입니다!</p>
+
+<p class="reviewer">김*영 님</p>
+</div>
+<div class="review-card">
+
+<p class="stars">⭐️⭐️⭐️⭐️⭐️ 자취생 필템 등극</p>
+
+<p class="comment">솔직히 레토르트 갈비탕 고기는 기대 안 했는데, 생각보다 고기가 실해서 놀랐어요. 국물에 밥 말아서 깍두기 하나 올려 먹으면... 이게 행복이죠. 4팩 금방 먹을 듯.</p>
+
+<p class="reviewer">이*훈 님</p>
+</div>
+</div>
+
+<hr class="section-divider">
+
+<!-- Section 6: Final CTA & Information -->
+<div class="section-padding text-center">
+
+<h2 class="section-title-md">든든한 한 끼, 더 이상 미루지 마세요!</h2>
+<div class="final-price-box">
+
+<p style="font-size: 20px; font-weight: 700; margin: 0;">최씨남매 뼈없는 소갈비탕 4팩 세트</p>
+
+<p style="font-size: 32px; font-weight: 900; color: #D92525; margin: 10px 0;">17,600원</p>
+
+<p style="font-size: 16px; font-weight: 500; margin: 0;">(1팩 400g / 4,400원 꼴)</p>
+</div>
+
+<!-- [수정] 최종 구매 버튼 링크 적용 및 새 창 열기 -->
+<a href="https://manwonyori.com/product/list.html?cate_no=53" rel="noopener noreferrer" target="_blank" class="final-cta-button cta-shine">만원요리 최씨남매<br>추천상품 바로가기</a>
+
+<div class="info-section">
+
+<h3 class="info-title">제품 상세 정보</h3>
+<div class="info-details">
+
+<p><strong>제품명</strong>: 최씨남매 뼈없는 소갈비탕</p>
+
+<p><strong>식품의 유형</strong>: 즉석조리식품 (가열하여 섭취하는 냉동식품)</p>
+
+<p><strong>제조원 및 판매원</strong>: (주)초심푸드</p>
+
+<p><strong>소재지</strong>: 전라북도 익산시 왕궁면 푸드폴리스로10길 48, 초심푸드</p>
+
+<p><strong>내용량</strong>: 400g</p>
+
+<p><strong>유통기한</strong>: 제품 후면 별도 표기일까지</p>
+
+<p><strong>원재료명 및 함량</strong>: 정제수, 소갈비 15% (호주산), 무(국산), 대파(국산), 혼합간장[탈지대두(외국산:인도,미국,중국 등), 소맥(미국산), 천일염, 액상과당], 양파(국산), 마늘(국산), 설탕, 정제소금, 복합조미식품, 후추분말, L-글루탐산나트륨(향미증진제)
+<br><strong style="color: #D92525;">※ 소고기, 대두, 밀 함유</strong></p>
+
+<p><strong>포장재질(내면)</strong>: 폴리에틸렌 (PE)</p>
+
+<p><strong>보관방법</strong>: -18℃ 이하에서 냉동보관하십시오.</p>
+
+<p><strong>조리방법</strong>:
+<br>- 냄비 조리: 해동 후 내용물을 냄비에 붓고 약 3~4분간 충분히 가열하여 드십시오.</p>
+
+<p><strong>섭취 시 주의사항</strong>:
+<br>- 이미 냉동된 바 있으니 해동 후 재냉동시키지 마십시오.
+<br>- 뼈없는 제품이나 간혹 미세한 뼛조각이 나올 수 있으니 섭취 시 주의하십시오.
+<br>- 특정 원료에 알레르기가 있으신 분은 원재료명을 확인 후 섭취하십시오.
+<br>- 조리 시 자리를 뜨지 마시고 조리과정을 확인하십시오.</p>
+
+<p><strong>반품 및 교환</strong>: 본사 및 구입처</p>
+
+<p><strong>소비자 상담실</strong>: <strong style="font-size: 16px; color: #D92525;">063-838-1116</strong></p>
+
+<p><strong>부정·불량식품 신고는 국번없이 1399</strong></p>
+
+<p style="padding-top:10px; border-top: 1px dashed #ccc; margin-top: 10px;">※ 본 제품은 공정거래위원회 고시 소비자분쟁해결기준에 의거 교환 또는 보상받으실 수 있습니다.</p>
+</div>
+</div>
+</div>
+
+</div>
+</center>

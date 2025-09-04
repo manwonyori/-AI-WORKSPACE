@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-08-27 13:07:12.559579",
+  "api_key_valid": true,
+  "working_models": [
+    "sonar",
+    "sonar-deep-research"
+  ],
+  "tested_models": [
+    "sonar",
+    "sonar-reasoning",
+    "sonar-deep-research",
+    "sonar-small",
+    "sonar-medium",
+    "sonar-large",
+    "llama-3-sonar-small-32k-online",
+    "llama-3-sonar-large-32k-online",
+    "mixtral-8x7b-instruct",
+    "llama-2-70b-chat"
+  ]
+}

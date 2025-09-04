@@ -1,0 +1,54 @@
+{
+  "plan_id": "automation_plan_20250831_171429",
+  "created_at": "2025-08-31T17:14:29.308886",
+  "total_ranges": 3,
+  "estimated_total_products": 210,
+  "estimated_total_time_hours": 0.42,
+  "phases": [
+    {
+      "phase_number": 1,
+      "range_info": {
+        "range_id": "range_1",
+        "start_number": 27,
+        "end_number": 53,
+        "product_count": 27,
+        "estimated_time_minutes": 3.2399999999999998,
+        "priority": "medium",
+        "description": "상품번호 27~53 (27개 상품)"
+      },
+      "recommended_batch_size": 25,
+      "estimated_batches": 2,
+      "priority": "medium"
+    },
+    {
+      "phase_number": 2,
+      "range_info": {
+        "range_id": "range_2",
+        "start_number": 131,
+        "end_number": 253,
+        "product_count": 123,
+        "estimated_time_minutes": 14.76,
+        "priority": "high",
+        "description": "상품번호 131~253 (123개 상품)"
+      },
+      "recommended_batch_size": 25,
+      "estimated_batches": 5,
+      "priority": "high"
+    },
+    {
+      "phase_number": 3,
+      "range_info": {
+        "range_id": "range_3",
+        "start_number": 261,
+        "end_number": 320,
+        "product_count": 60,
+        "estimated_time_minutes": 7.199999999999999,
+        "priority": "high",
+        "description": "상품번호 261~320 (60개 상품)"
+      },
+      "recommended_batch_size": 25,
+      "estimated_batches": 3,
+      "priority": "high"
+    }
+  ]
+}

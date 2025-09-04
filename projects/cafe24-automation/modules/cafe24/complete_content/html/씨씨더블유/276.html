@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 276 - P00000KQ</title>
+</head>
+<body>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[씨씨더블유]고집 불막창 300g - 만원요리 최씨남매</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --saffron-gold: #E4A853;
+            --deep-rose: #C53030;
+            --deep-charcoal: #1F2937;
+            --pure-white: #FFFFFF;
+            --light-gray: #F9FAFB;
+            --medium-gray: #6B7280;
+            --border-gray: #E5E7EB;
+            --success-green: #10B981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--deep-charcoal);
+            background: var(--light-gray);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: clamp(15px, 4vw, 30px);
+        }
+        
+        .section {
+            margin: clamp(20px, 6vw, 50px) 0;
+            padding: clamp(20px, 5vw, 40px);
+            background: var(--pure-white);
+            border-radius: clamp(16px, 3vw, 24px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .section-title {
+            font-size: clamp(20px, 5vw, 32px);
+            font-weight: 800;
+            color: var(--deep-rose);
+            text-align: center;
+            margin-bottom: clamp(25px, 5vw, 40px);
+            line-height: 1.3;
+        }
+        
+        .red-gradient {
+            background: linear-gradient(135deg, var(--deep-rose) 0%, #B91C1C 100%);
+            color: var(--pure-white);
+            border-radius: clamp(16px, 3vw, 24px);
+            padding: clamp(25px, 6vw, 50px);
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(197, 48, 48, 0.3);
+        }
+        
+        .grid-mobile {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(15px, 4vw, 25px);
+        }
+        
+        @media (min-width: 768px) {
+            .grid-mobile {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .grid-mobile {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .card {
+            background: var(--pure-white);
+            padding: clamp(20px, 4vw, 30px);
+            border-radius: clamp(12px, 2vw, 18px);
+            border: 2px solid var(--border-gray);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            border-color: var(--deep-rose);
+        }
+        
+        .title-responsive {
+            font-size: clamp(16px, 3.5vw, 22px);
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        
+        .text-responsive {
+            font-size: clamp(13px, 2.8vw, 15px);
+            line-height: 1.8;
+        }
+        
+        .badge-responsive {
+            padding: clamp(5px, 1.2vw, 9px) clamp(10px, 2.5vw, 18px);
+            font-size: clamp(11px, 2.2vw, 13px);
+            border-radius: 100px;
+            font-weight: 700;
+            display: inline-block;
+            margin: clamp(6px, 1.5vw, 10px) clamp(3px, 0.8vw, 5px);
+        }
+        
+        .feature-badge {
+            background: white;
+            color: var(--deep-rose);
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        .icon-circle {
+            width: clamp(60px, 12vw, 80px);
+            height: clamp(60px, 12vw, 80px);
+            background: var(--deep-rose);
+            color: var(--pure-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(24px, 5vw, 32px);
+            margin: 0 auto clamp(15px, 3vw, 20px);
+        }
+        
+        .company-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .company-grid span:nth-child(odd) {
+            font-weight: 600;
+            color: var(--deep-charcoal);
+        }
+        
+        .company-grid span:nth-child(even) {
+            color: var(--medium-gray);
+        }
+        
+        .ingredients-section {
+            background: #FFF8F3;
+            padding: clamp(25px, 5vw, 40px);
+            border-radius: clamp(16px, 3vw, 24px);
+            margin: clamp(20px, 6vw, 50px) 0;
+            border: 2px solid #FBBF24;
+        }
+        
+        .ingredients-content {
+            background: white;
+            padding: clamp(20px, 4vw, 30px);
+            border-radius: 12px;
+            font-size: clamp(14px, 3vw, 16px);
+            line-height: 1.8;
+        }
+        
+        .story-content {
+            background: #FFF5F5;
+            padding: clamp(20px, 4vw, 30px);
+            border-radius: 12px;
+            border-left: 4px solid var(--deep-rose);
+        }
+        
+        .ingredient-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        .ingredient-table th {
+            background: var(--light-gray);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid var(--border-gray);
+        }
+        
+        .ingredient-table td {
+            padding: 10px;
+            border: 1px solid var(--border-gray);
+        }
+        
+        @media (max-width: 640px) {
+            .ingredient-table {
+                font-size: 14px;
+            }
+            .ingredient-table th, .ingredient-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .section {
+                margin: 15px 0;
+                padding: 20px;
+            }
+            
+            .company-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+        }
+
+        /* 🎯 방안 2: 하이브리드 텍스트 정렬 (모바일 가독성 최적화) */
+        
+        /* 카드 내 본문은 항상 좌측 정렬 */
+        .card p,
+        .card .text-responsive {
+            text-align: left !important;
+        }
+        
+        /* 스토리 콘텐츠는 좌측 정렬 */
+        .story-content,
+        .story-content .text-lg {
+            text-align: left !important;
+        }
+        
+        /* 성분/원재료 설명도 좌측 정렬 */
+        .ingredients-content {
+            text-align: left !important;
+        }
+        
+        /* 섹션 제목은 중앙 정렬 유지 (브랜드 임팩트) */
+        .section-title {
+            text-align: center;
+        }
+        
+        /* 히어로 섹션은 중앙 정렬 유지 (첫인상 중요) */
+        .red-gradient {
+            text-align: center;
+        }
+        
+        /* 배송 정보도 중앙 정렬 유지 (임팩트) */
+        .section[style*="linear-gradient"] {
+            text-align: center;
+        }
+        
+        /* 카드 제목은 모바일에서 좌측 정렬 */
+        @media (max-width: 767px) {
+            .card .title-responsive {
+                text-align: left !important;
+            }
+            
+            .card .icon-circle {
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+        
+        /* 데스크탑에서는 카드 제목 중앙 정렬 유지 */
+        @media (min-width: 768px) {
+            .card .title-responsive {
+                text-align: center;
+            }
+        }
+        
+        /* 신뢰 카드들은 항상 아이콘만 중앙, 텍스트는 좌측 */
+        .trust-card {
+            text-align: left;
+        }
+        
+        .trust-card .title-responsive,
+        .trust-card p {
+            text-align: left !important;
+        }
+        
+        /* 데스크탑에서도 신뢰 카드 텍스트는 좌측 유지하되, 아이콘은 중앙 */
+        @media (min-width: 768px) {
+            .trust-card .title-responsive,
+            .trust-card p {
+                text-align: left !important;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <!-- 1️⃣ Strategic Header -->
+        <div class="red-gradient">
+            <h1 class="text-4xl md:text-5xl font-black mb-6">[씨씨더블유]고집 불막창 300g</h1>
+            <p class="text-xl md:text-2xl mb-8 leading-relaxed">만원요리 최씨남매가 엄선한 프리미엄 상품</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="feature-badge">최고 품질</span>
+                <span class="feature-badge">빠른 배송</span>
+            </div>
+            
+        </div>
+
+        <!-- 2️⃣ Why Section (4가지 핵심 특징) -->
+        <div class="section">
+            <h2 class="section-title">🤔 왜 만원요리 고집 불막창 300g일까요?</h2>
+            <div class="grid-mobile">
+                <div class="card">
+                    <div class="icon-circle">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="title-responsive mb-3">엄선된 재료</h3>
+                    <p class="text-responsive text-gray-600">최고급 원재료만을 사용하여 만든 프리미엄 제품입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-circle">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="title-responsive mb-3">전문가 검증</h3>
+                    <p class="text-responsive text-gray-600">식품 전문가들이 직접 검증한 안전한 제품입니다.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-circle">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3 class="title-responsive mb-3">신선도 보장</h3>
+                    <p class="text-responsive text-gray-600">철저한 온도관리로 신선함을 그대로 전달합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3️⃣ 제품 스토리 섹션 -->
+        <div id="productStory" class="section">
+            <h2 class="section-title">📖 고집 불막창 300g의 특별한 이야기</h2>
+            <div class="story-content">
+                <div class="text-lg leading-relaxed mb-6">고집 불막창 300g은(는) 오랜 전통과 노하우를 바탕으로 만들어진 특별한 제품입니다. 만원요리 최씨남매가 엄선한 이 제품은 최고의 재료와 정성으로 만들어져 특별한 맛을 자랑합니다.</div>
+                <div id="productSpecs" class="grid md:grid-cols-2 gap-4">
+                    
+      <div class="card">
+        <h4 class="font-bold mb-3">📦 제품 사양</h4>
+        <div class="space-y-2 text-sm">
+          <div><span class="font-semibold">구성:</span> 고집 불막창 300g x 1EA</div>
+          <div><span class="font-semibold">소비기한:</span> 26.05.09</div>
+          <div><span class="font-semibold">제품종류:</span> 돼지 가공</div>
+          <div><span class="font-semibold">보관방법:</span> 냉동</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4 class="font-bold mb-3">🚚 배송 정보</h4>
+        <div class="space-y-2 text-sm">
+          <div>만원요리 최씨남매와 함께라면 <br>배송비 걱정없이 장보기 완성</div>
+        </div>
+      </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 4️⃣ 상세 이미지 섹션 -->
+        <div id="productImages" class="section">
+            <h2 class="section-title">📸 상품 상세 이미지</h2>
+            <div id="imageContainer">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/ccw/bulmakchang-300g/bulmakchang-300g-1.jpg" alt="[씨씨더블유]고집 불막창 300g" class="w-full rounded-lg shadow-lg mb-6 fr-draggable">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/ccw/bulmakchang-300g/bulmakchang-300g-2.jpg" alt="[씨씨더블유]고집 불막창 300g" class="w-full rounded-lg shadow-lg mb-6 fr-draggable">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/ccw/bulmakchang-300g/bulmakchang-300g-3.jpg" alt="[씨씨더블유]고집 불막창 300g" class="w-full rounded-lg shadow-lg mb-6 fr-draggable">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/feer800g/feet800g-3.jpg" alt="[씨씨더블유]고집 불막창 300g" class="w-full rounded-lg shadow-lg mb-6 fr-draggable">
+            </div>
+        </div>
+
+        <!-- 4-1️⃣ 제품특성 섹션 -->
+        <div id="characteristicsSection" class="section">
+            <h2 class="section-title">✨ 제품 특성</h2>
+            <div class="story-content">
+                <div id="characteristicsContent" class="text-lg leading-relaxed mb-6">
+                    "청정 캐나다산 막창 80% 이상 사용, 두툼하고 쫄깃한 식감에 숯불향 양념으로 풍미를 더했습니다.
+
+화학 연육제 없이 국내산 키위·마늘 등 천연 재료로 숙성, 잡내 없이 부드럽고 고소한 맛을 자랑합니다.
+
+조리 간편: 해동 후 프라이팬이나 에어프라이어로 구우면 식당 같은 불막창 맛 그대로!
+
+철저한 위생 관리: 다단계 세척과 금속 검출 검사까지 거쳐 안심하고 먹을 수 있는 제품입니다.
+
+공급가 5,500원, 2인분 구성으로 가성비 좋은 고품질 간편식입니다."
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 5️⃣ Wow Section (배송 정보) -->
+        <div style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); color: white;" class="section">
+            <div class="text-center">
+                <div class="text-6xl mb-6">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h2 class="text-3xl font-black mb-4">같은회사 묶음배송</h2>
+                <p class="text-xl leading-relaxed mb-6">만원요리 최씨남매와 함께라면 <br>배송비 걱정없이 장보기 완성</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span style="background: white; color: #10B981;" class="badge-responsive">
+                        📦 안전포장
+                    </span>
+                    <span style="background: white; color: #10B981;" class="badge-responsive">
+                        ⏰ 빠른배송
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6️⃣ How Section (활용법) -->
+        <div class="section">
+            <h2 class="section-title">🍴 이렇게 즐겨보세요!</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="title-responsive text-red-600 mb-4">
+                        <i class="fas fa-fire mr-2"></i>간편 조리
+                    </h3>
+                    <p class="text-responsive text-gray-600">포장을 뜯고 간단한 조리만으로 맛있게 즐기실 수 있습니다.</p>
+                </div>
+                <div class="card">
+                    <h3 class="title-responsive text-red-600 mb-4">
+                        <i class="fas fa-lightbulb mr-2"></i>다양한 활용
+                    </h3>
+                    <p class="text-responsive text-gray-600">여러 요리에 활용 가능한 만능 식재료입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7️⃣ Trust Section + Company Info -->
+        <div class="section">
+            <h2 class="section-title">🏆 믿고 먹는 만원요리</h2>
+            
+            <!-- 신뢰 요소 -->
+            <div class="grid-mobile mb-8">
+                <div class="card trust-card">
+                    <div class="text-5xl text-yellow-500 mb-3 text-center">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="title-responsive mb-2">정직한 유통</h3>
+                    <p class="text-responsive text-gray-600">직접 검수, 직접 배송</p>
+                </div>
+                <div class="card trust-card">
+                    <div class="text-5xl text-yellow-500 mb-3 text-center">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h3 class="title-responsive mb-2">철저한 온도관리</h3>
+                    <p class="text-responsive text-gray-600">냉동 완벽 유지</p>
+                </div>
+                <div id="youtubeCard" class="card trust-card">
+                    <div class="text-5xl text-red-500 mb-3 text-center">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 class="title-responsive mb-2">38만 구독자 인증</h3>
+                    <p class="text-responsive text-gray-600">만원요리 최씨남매</p>
+                </div>
+                <div id="haccpCard" style="display: none;" class="card trust-card">
+                    <div class="text-5xl text-green-500 mb-3 text-center">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="title-responsive mb-2">HACCP 인증</h3>
+                    <p class="text-responsive text-gray-600">식품안전관리 인증</p>
+                </div>
+            </div>
+            
+            <!-- 판매원 정보 (고정) -->
+            <h2 class="section-title">판매원 정보</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="title-responsive text-yellow-600 mb-4 text-center">회사 정보</h3>
+                    <div class="company-grid">
+                        <span class="font-bold">상호</span><span>㈜값진한끼</span>
+                        <span class="font-bold">대표자</span><span>고혜숙</span>
+                        <span class="font-bold">사업자등록번호</span><span>434-86-03863</span>
+                        <span class="font-bold">통신판매업</span><span>2025-경기파주-2195호</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="title-responsive text-yellow-600 mb-4 text-center">연락처</h3>
+                    <div class="company-grid">
+                        <span class="font-bold">주소</span><span>경기도 파주시 경의로 1246, 11층 1105-19호</span>
+                        <span class="font-bold">전화</span><span>070-8835-2885</span>
+                        <span class="font-bold">이메일</span><span>we@manwonyori.com</span>
+                        <span class="font-bold">사이트</span><span>만원요리 최씨남매</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- 주의사항 (있을 경우) -->
+            <div id="warningSection"></div>
+        </div>
+
+        <!-- 8️⃣ Ingredients Section (품목제조보고서) -->
+        <div id="ingredientsSection" class="ingredients-section">
+            <h2 class="section-title">📋 품목제조보고서 (원재료 및 성분)</h2>
+            <div id="ingredientsContent" class="ingredients-content">
+                <div id="ingredientsTable">
+                    
+          <h4 class="font-bold mb-3 text-lg">🍜 원재료명 및 함량</h4>
+          &lt;
+            <table class="ingredient-table"><thead>
+              <tr><th>원재료명</th>
+                <th>함량</th>
+                <th>원산지</th></tr>
+            </thead>
+            <tbody><tr><td>돼지막창</td><td>80.69%</td><td>캐나다산</td></tr>
+<tr><td>고추가루</td><td>3.23%</td><td>중국산</td></tr>
+<tr><td>미향</td><td>3.23%</td><td>원산지 미표시</td></tr>
+<tr><td>과채가공품{파인애플</td><td>2.7%</td><td>인도네시아</td></tr>
+<tr><td>설탕</td><td>2.1%</td><td>원산지 미표시</td></tr>
+<tr><td>혼합간장</td><td>1.61%</td><td>글루텐{밀:외국산(중국,프랑스,호주등)}, 천일염(호주산)</td></tr>
+<tr><td>키위</td><td>함량 미표시</td><td>국내산</td></tr>
+<tr><td>마늘</td><td>함량 미표시</td><td>국내산</td></tr>
+<tr><td>캡사이신매운맛소스</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>혼합제제(탄산수소나트륨,D-소르비톨,DL-알라닌, 아라비아검, 플루란)</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>통깨</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>맛소금</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>식품첨가물(프로티아제, 식물성)</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>L-글루탐산나트륨(향미증진제)</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>가공소금</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>콩기름</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>다시다쇠고기</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>생강분말</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>쇠고기맛분말시즈닝</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>스테비텐후레쉬(효소처리스테비아100%)</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr><td>스모크향분말</td><td>함량 미표시</td><td>원산지 미표시</td></tr>
+<tr></tr></tbody></table>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

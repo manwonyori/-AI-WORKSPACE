@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-09-02T15:27:17.396009",
+  "csv_file": "manwonyori_20250901_301_e68d.csv",
+  "total_products_in_csv": 237,
+  "reorganization_stats": {
+    "total_files": 237,
+    "moved_files": 0,
+    "already_correct": 237,
+    "not_in_csv": 0,
+    "errors": 0,
+    "movements": {}
+  },
+  "final_folder_structure": {
+    "단지식품유통": 1,
+    "만원요리": 1,
+    "모비딕": 5,
+    "반찬단지": 48,
+    "비에스": 2,
+    "씨씨더블유": 37,
+    "인생": 95,
+    "최씨남매": 7,
+    "취영루": 14,
+    "태공식품": 26,
+    "피자코리아": 1
+  },
+  "movements": {}
+}

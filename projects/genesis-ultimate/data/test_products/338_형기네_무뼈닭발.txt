@@ -1,0 +1,29 @@
+<title>338_형기네 무뼈닭발 250g</title>
+<meta name="description" content="매콤달콤 무뼈 닭발의 정석">
+
+<h1>형기네 무뼈닭발 250g</h1>
+
+<p>뼈 때문에 먹기 불편했던 닭발을 완전 무뼈로 처리했습니다! 형기네만의 특제 양념으로 매콤하면서도 달콤한 맛이 일품인 무뼈닭발입니다.</p>
+
+<p>포장마차에서 먹던 그 맛 그대로 집에서 간편하게 즐기세요. 전자레인지 2-3분이면 완성되는 간편한 안주입니다.</p>
+
+<img src="https://images.unsplash.com/photo-1635439602481-d20cce40da24?w=800&h=600" alt="형기네 무뼈닭발 메인">
+<img src="https://images.unsplash.com/photo-1599321958573-c7a0a5109b8a?w=800&h=600" alt="무뼈닭발 조리 모습">
+<img src="https://images.unsplash.com/photo-1635456472896-bea982cc45f6?w=800&h=600" alt="무뼈닭발 상세">
+
+<h2>제품 특징</h2>
+<ul>
+<li>100% 무뼈 처리</li>
+<li>형기네 특제 양념</li>
+<li>포장마차 맛 그대로</li>
+<li>간편 조리 2-3분</li>
+<li>1인분 적정 용량</li>
+</ul>
+
+<h2>조리 방법</h2>
+<p>냉동상태에서 해동 후 전자레인지 2-3분 또는 끓는 물에 3분간 데워주세요.</p>
+
+<div class="price">
+<span>판매가: 8,900원</span>
+<span>중량: 250g</span>
+</div>

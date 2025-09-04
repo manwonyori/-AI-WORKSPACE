@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-09-01T20:16:43.057592",
+  "product": {
+    "file": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content\\html\\temp_txt\\131.txt",
+    "number": "131",
+    "product_name": "만원요리 교자만두",
+    "category": "manwon",
+    "product_id": "131",
+    "price": "10,000",
+    "weight": "1kg",
+    "origin": "국내산",
+    "storage": "냉동보관"
+  },
+  "images_generated": 4,
+  "content_sections": 7,
+  "output_file": "C:\\Users\\8899y\\CUA-MASTER\\modules\\cafe24\\complete_content\\output\\manwon\\131_complete.txt",
+  "status": "success"
+}

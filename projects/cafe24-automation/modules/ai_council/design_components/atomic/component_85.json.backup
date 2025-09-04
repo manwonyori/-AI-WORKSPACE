@@ -1,0 +1,36 @@
+{
+  "name": "component_85",
+  "created": "2025-08-30T10:36:50.748905",
+  "type": "button",
+  "properties": {
+    "variant": [
+      "primary",
+      "secondary",
+      "ghost"
+    ],
+    "size": [
+      "sm",
+      "md",
+      "lg"
+    ],
+    "state": [
+      "default",
+      "hover",
+      "active",
+      "disabled"
+    ]
+  },
+  "design_tokens": {
+    "colors": {
+      "primary": "#3498db",
+      "secondary": "#2ecc71"
+    },
+    "spacing": {
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px"
+    },
+    "borderRadius": "4px"
+  },
+  "ai_optimized": true
+}

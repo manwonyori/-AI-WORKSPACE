@@ -1,0 +1,750 @@
+{
+  "processed": [
+    {
+      "original": "duck-1.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-1_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-1_mobile_square.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-1_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-1_mobile_product.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-1_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-1_thumbnail.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-1_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-1_instagram_story.jpg"
+    },
+    {
+      "original": "duck-1.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-1_instagram_post.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-2_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-2_mobile_square.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-2_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-2_mobile_product.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-2_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-2_thumbnail.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-2_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-2_instagram_story.jpg"
+    },
+    {
+      "original": "duck-2.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-2_instagram_post.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-3_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-3_mobile_square.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-3_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-3_mobile_product.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-3_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-3_thumbnail.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-3_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-3_instagram_story.jpg"
+    },
+    {
+      "original": "duck-3.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-3_instagram_post.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-4_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-4_mobile_square.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-4_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-4_mobile_product.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-4_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-4_thumbnail.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-4_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-4_instagram_story.jpg"
+    },
+    {
+      "original": "duck-4.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-4_instagram_post.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-5_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-5_mobile_square.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-5_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-5_mobile_product.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-5_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-5_thumbnail.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-5_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-5_instagram_story.jpg"
+    },
+    {
+      "original": "duck-5.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-5_instagram_post.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-6_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-6_mobile_square.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-6_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-6_mobile_product.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-6_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-6_thumbnail.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-6_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-6_instagram_story.jpg"
+    },
+    {
+      "original": "duck-6.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-6_instagram_post.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "mobile_hero",
+      "size": [
+        750,
+        1000
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-7_mobile_hero.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "mobile_square",
+      "size": [
+        750,
+        750
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-7_mobile_square.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "mobile_wide",
+      "size": [
+        750,
+        422
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-7_mobile_wide.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "mobile_product",
+      "size": [
+        600,
+        600
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-7_mobile_product.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "mobile_detail",
+      "size": [
+        750,
+        1334
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-7_mobile_detail.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "thumbnail",
+      "size": [
+        300,
+        300
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\mobile\\duck-7_thumbnail.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "kakaotalk",
+      "size": [
+        800,
+        400
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-7_kakaotalk.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "instagram_story",
+      "size": [
+        1080,
+        1920
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-7_instagram_story.jpg"
+    },
+    {
+      "original": "duck-7.jpg",
+      "type": "instagram_post",
+      "size": [
+        1080,
+        1080
+      ],
+      "output": "C:\\Users\\8899y\\CUA-MASTER\\data\\mobile_optimized_images\\social\\duck-7_instagram_post.jpg"
+    }
+  ],
+  "errors": [],
+  "analysis": {
+    "duck-1.jpg": {
+      "focus_area": {
+        "x": 150,
+        "y": 150,
+        "width": 600,
+        "height": 400
+      },
+      "text_issues": [],
+      "mobile_problems": [
+        "The background (checkered tablecloth) can be visually distracting on smaller screens, making the main subject less prominent.",
+        "The secondary dish in the background might draw the viewer's attention away from the main product."
+      ],
+      "color_adjustments": {
+        "brightness": "Slightly increase brightness for better visibility on mobile devices.",
+        "contrast": "Increase contrast to make the food look more appetizing and stand out against the background.",
+        "saturation": "Slightly increase saturation to enhance the colors of the duck and vegetables."
+      },
+      "suggested_additions": [
+        "Consider adding a 'New' or 'Featured' badge if applicable, placed strategically in a corner (top left or right).",
+        "If the dish has any nutritional benefits (e.g., 'High Protein'), consider adding a small label or icon to highlight that. But be careful, it should not make the food look less attractive!"
+      ]
+    },
+    "duck-2.jpg": {
+      "focus_area": {
+        "x": 200,
+        "y": 150,
+        "width": 600,
+        "height": 500
+      },
+      "text_issues": [
+        "폰트 크기가 작아 모바일 환경에서 가독성이 떨어집니다. 특히 하단의 \"Smoked Boneless Whole Duck\"은 크기를 키우거나 다른 강조 방식을 사용해야 합니다.",
+        "\"※ 사진은 조리예입니다.\" 텍스트는 매우 작아서 보기 어렵습니다. 이 텍스트는 중요도가 낮다면 아예 삭제하거나, 중요 정보라면 크기를 키워야 합니다."
+      ],
+      "mobile_problems": [
+        "전체적으로 정보량이 많아 모바일 화면에서는 스크롤이 길어질 수 있습니다. 핵심 정보 위주로 간결하게 구성하는 것이 좋습니다.",
+        "둥근 테두리 디자인은 화면 비율에 따라 잘릴 수 있으므로 주의해야 합니다."
+      ],
+      "color_adjustments": {
+        "contrast": "전반적으로 대비를 높여서 상품이 더 눈에 띄도록 합니다. 특히 훈제오리의 색감을 더욱 강조할 필요가 있습니다.",
+        "brightness": "약간의 밝기 조절을 통해 전체적으로 이미지를 더 밝게 만들 수 있습니다."
+      },
+      "suggested_additions": [
+        "\"할인\" 또는 \"이벤트\" 배지를 추가하여 구매를 유도할 수 있습니다.",
+        "\"프리미엄\" 또는 \"국내산\" 라벨을 추가하여 상품의 특징을 강조할 수 있습니다.",
+        "QR 코드를 추가하여 상품 정보 페이지로 바로 연결되도록 할 수 있습니다."
+      ]
+    },
+    "duck-3.jpg": {
+      "focus_area": {
+        "x": 400,
+        "y": 300,
+        "width": 600,
+        "height": 400
+      },
+      "text_issues": [
+        "상품 설명 부분 (첫번째, 두번째, 세번째) 텍스트 크기가 작아 모바일에서 가독성이 떨어질 수 있습니다. 텍스트 크기를 키우거나, 더 간결하게 요약하는 것을 고려해야 합니다.",
+        "오른쪽 제품 상세 정보 이미지 내 텍스트가 매우 작아 모바일에서 거의 읽을 수 없습니다. 텍스트를 이미지에 넣는 대신, 별도로 텍스트로 제공하는 것이 좋습니다."
+      ],
+      "mobile_problems": [
+        "전체적인 이미지 레이아웃이 모바일에 최적화되어 있지 않습니다. 특히 두 개의 제품 사진이 나란히 있어 모바일 화면에서 너무 작게 보입니다. 사진을 하나로 합치거나, 슬라이드 형태로 제공하는 것을 고려해야 합니다.",
+        "제품 상세 정보 이미지가 너무 작아 모바일 환경에서 사용자가 확대해야 내용을 확인할 수 있습니다. 사용자 경험을 저해하므로, 해당 정보를 텍스트로 제공하거나, 확대 가능한 별도의 이미지로 제공하는 것이 좋습니다."
+      ],
+      "color_adjustments": {
+        "brightness": "전반적으로 약간 어둡게 느껴질 수 있으므로, 밝기를 약간 높여 상품의 디테일을 살리는 것이 좋습니다.",
+        "contrast": "컨트라스트를 약간 높여 제품의 선명도를 높여줍니다."
+      },
+      "suggested_additions": [
+        "\"BEST SELLER\" 또는 \"인기상품\" 배지를 추가하여 시선을 사로잡고 구매를 유도할 수 있습니다.",
+        "\"할인\" 또는 \"특가\" 라벨을 추가하여 가격적인 메리트를 강조할 수 있습니다."
+      ]
+    },
+    "duck-4.jpg": {
+      "focus_area": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 30
+      },
+      "text_issues": [
+        "전체적으로 텍스트 크기가 작아 모바일에서 가독성이 떨어집니다.",
+        "각 조리법 제목 (해동, 압력솥 등)의 크기를 키워야 합니다.",
+        "시간 정보 (3-4 MIN 등)의 크기를 키워야 합니다."
+      ],
+      "mobile_problems": [
+        "전체 이미지를 그대로 보여주는 대신, 각 조리법별로 분리하여 보여주는 것이 모바일 환경에 더 적합합니다.",
+        "이미지 가로 폭이 좁아지면 텍스트가 더 읽기 어려워집니다."
+      ],
+      "color_adjustments": {
+        "contrast": "전체적으로 대비를 높여 텍스트와 배경의 구분을 명확하게 해야 합니다.",
+        "background": "흰색 배경을 사용하여 텍스트 가독성을 높입니다."
+      },
+      "suggested_additions": [
+        "각 조리법의 난이도 표시 (예: 별점) 추가",
+        "각 조리법의 예상 소요 시간 요약 (이미 있지만 더 강조)",
+        "제품 사진 추가 (제품이 어떻게 생겼는지 보여주는 것이 좋습니다.)"
+      ]
+    },
+    "duck-5.jpg": {
+      "focus_area": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 500
+      },
+      "text_issues": [
+        "글자 크기가 작아 모바일에서 가독성이 떨어짐",
+        "줄 간격이 좁아 내용 파악이 어려움",
+        "일부 텍스트 (예: 영양성분 정보) 대비가 낮아 잘 안 보임"
+      ],
+      "mobile_problems": [
+        "전체 이미지가 모바일 화면에 맞게 축소되어 텍스트 가독성이 매우 낮아짐",
+        "표 형식의 데이터 (영양성분 정보)가 모바일에서 보기 어려움"
+      ],
+      "color_adjustments": {
+        "contrast": "영양정보 부분과 주의사항 부분의 배경색과 글자색의 대비를 높여 가독성을 개선해야 함",
+        "brightness": "전체적인 밝기를 약간 올려 텍스트가 더 잘 보이도록 조정"
+      },
+      "suggested_additions": [
+        "제품의 주요 특징을 강조하는 배지 (예: HACCP 인증)",
+        "원산지 정보를 강조하는 라벨 (예: '국내산' 강조)",
+        "영양정보를 요약한 아이콘 또는 그래픽",
+        "클릭 시 확대되는 기능 추가 (특히 영양정보 부분)"
+      ]
+    },
+    "duck-6.jpg": {
+      "focus_area": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 40
+      },
+      "text_issues": [
+        "전체적으로 텍스트 크기가 작아 모바일 환경에서 가독성이 떨어집니다.",
+        "제목과 본문의 텍스트 크기 차이를 더 크게 하여 중요도를 구분해야 합니다."
+      ],
+      "mobile_problems": [
+        "이미지 전체를 보여주기에는 텍스트가 너무 많고 작아 모바일 화면에서 읽기 어렵습니다.",
+        "긴 텍스트 블록은 모바일 사용자 경험을 저해할 수 있습니다."
+      ],
+      "color_adjustments": {
+        "contrast": "텍스트와 배경색의 대비를 높여 가독성을 개선해야 합니다. 배경색을 더 밝게 하거나 텍스트 색상을 더 어둡게 조정하는 것을 고려해볼 수 있습니다."
+      },
+      "suggested_additions": [
+        "각 섹션별 아이콘 추가 (예: 배송안내 - 트럭 아이콘, 환불교환 안내사항 - 리턴 아이콘)",
+        "요약 배지: '당일출고', '신선보장' 과 같이 강조할 만한 내용을 담은 배지를 이미지 상단에 추가합니다.",
+        "섹션별 구분선 추가: 각 안내사항 섹션을 명확하게 구분하기 위해 시각적인 구분선을 추가합니다."
+      ]
+    },
+    "duck-7.jpg": {
+      "focus_area": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 40
+      },
+      "text_issues": [
+        "전체적으로 텍스트 크기가 작아 모바일 환경에서 가독성이 떨어짐. 폰트 크기 확대 필요.",
+        "일부 긴 문장으로 인해 가독성이 더욱 저하됨. 문장 간략화 또는 분리 필요.",
+        "줄 간 간격이 좁아 텍스트가 답답하게 느껴짐. 줄 간격 조정 필요."
+      ],
+      "mobile_problems": [
+        "전체 이미지의 폭이 좁아 모바일 화면에 꽉 차지 않아 시각적으로 만족스럽지 않음. 이미지 폭 확대 필요.",
+        "텍스트 정보가 너무 많아 모바일 화면에서 한눈에 파악하기 어려움. 핵심 정보만 강조하고 나머지는 접거나 숨기는 방식 고려."
+      ],
+      "color_adjustments": {
+        "contrast": "텍스트와 배경색 간의 대비가 약해 가독성이 떨어짐. 텍스트 색상을 더 진하게 하거나 배경색을 밝게 하여 대비를 강화해야 함.",
+        "brightness": "이미지 전체적으로 밝기가 어두운 편. 밝기를 높여 시인성을 개선해야 함."
+      },
+      "suggested_additions": [
+        "아이스팩의 효과를 강조하는 문구 추가 (예: '최대 O시간 냉기 유지').",
+        "제품의 신선도를 보장하는 문구 추가 (예: '신선도 100% 보장').",
+        "문의 전화번호 또는 QR 코드 추가 (고객센터 연결 용이성 증대).",
+        "중요 텍스트에 아이콘이나 배지 추가하여 시각적 강조",
+        "각 안내사항을 번호 매기거나 불렛 포인트를 사용하여 정보 구성"
+      ]
+    }
+  }
+}

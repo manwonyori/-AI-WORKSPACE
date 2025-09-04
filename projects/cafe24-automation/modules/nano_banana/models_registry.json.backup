@@ -1,0 +1,14 @@
+{
+  "gemini-2.0-flash-thinking": {
+    "info": {
+      "release_date": "2024-12-19",
+      "new_features": [
+        "Enhanced reasoning",
+        "32K output tokens",
+        "Improved multimodal understanding"
+      ]
+    },
+    "installed": "2025-08-31T15:46:25.054062",
+    "auto_installed": true
+  }
+}

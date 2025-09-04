@@ -1,0 +1,173 @@
+{
+  "product_no": "338",
+  "timestamp": "2025-09-01T01:34:26.729049",
+  "sections": {
+    "표시설정": {
+      "name": "표시설정",
+      "timestamp": "2025-09-01T01:34:13.611821",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Alert Text: 쇼핑몰의 소중한 정보보호 및 보안 강화를 위하여 관리자 전용 로그인 페이지로 이동합니다.\nMessage: unexpected alert open: {Alert text : 쇼핑몰의 소중한 정보보호 및 보안 강화를 위하여 관리자 전용 로그인 페이지로 이동합니다.}\n  (Session info: chrome=139.0.7258.155)\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f83e14]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "기본정보": {
+      "name": "기본정보",
+      "timestamp": "2025-09-01T01:34:14.615781",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '기본정보')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "판매정보": {
+      "name": "판매정보",
+      "timestamp": "2025-09-01T01:34:15.628720",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '판매정보')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "옵션/재고": {
+      "name": "옵션/재고",
+      "timestamp": "2025-09-01T01:34:16.638052",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '옵션/재고')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "이미지정보": {
+      "name": "이미지정보",
+      "timestamp": "2025-09-01T01:34:17.646903",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '이미지정보')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "제작정보": {
+      "name": "제작정보",
+      "timestamp": "2025-09-01T01:34:18.655747",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '제작정보')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "상세이용안내": {
+      "name": "상세이용안내",
+      "timestamp": "2025-09-01T01:34:19.664512",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '상세이용안내')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "아이콘설정": {
+      "name": "아이콘설정",
+      "timestamp": "2025-09-01T01:34:20.674022",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '아이콘설정')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "배송정보": {
+      "name": "배송정보",
+      "timestamp": "2025-09-01T01:34:21.683280",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '배송정보')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "추가구성상품": {
+      "name": "추가구성상품",
+      "timestamp": "2025-09-01T01:34:22.692214",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '추가구성상품')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "관련상품": {
+      "name": "관련상품",
+      "timestamp": "2025-09-01T01:34:23.701902",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '관련상품')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "SEO설정": {
+      "name": "SEO설정",
+      "timestamp": "2025-09-01T01:34:24.710529",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), 'SEO설정')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    },
+    "메모": {
+      "name": "메모",
+      "timestamp": "2025-09-01T01:34:25.720204",
+      "subsections": {},
+      "elements": {},
+      "all_inputs": [],
+      "all_selects": [],
+      "all_checkboxes": [],
+      "all_radios": [],
+      "all_textareas": [],
+      "error": "Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), '메모')]\"}\n  (Session info: chrome=139.0.7258.155); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nStacktrace:\n\tGetHandleVerifier [0x0x7ff764133d85+79397]\n\tGetHandleVerifier [0x0x7ff764133de0+79488]\n\t(No symbol) [0x0x7ff763edc0fa]\n\t(No symbol) [0x0x7ff763f32fd6]\n\t(No symbol) [0x0x7ff763f3328c]\n\t(No symbol) [0x0x7ff763f86537]\n\t(No symbol) [0x0x7ff763f5b1df]\n\t(No symbol) [0x0x7ff763f83344]\n\t(No symbol) [0x0x7ff763f5af73]\n\t(No symbol) [0x0x7ff763f241b1]\n\t(No symbol) [0x0x7ff763f24f43]\n\tGetHandleVerifier [0x0x7ff7643fe1ed+3005069]\n\tGetHandleVerifier [0x0x7ff7643f831d+2980797]\n\tGetHandleVerifier [0x0x7ff764417e0d+3110573]\n\tGetHandleVerifier [0x0x7ff76414d6de+184190]\n\tGetHandleVerifier [0x0x7ff76415516f+215567]\n\tGetHandleVerifier [0x0x7ff76413c974+115220]\n\tGetHandleVerifier [0x0x7ff76413cb29+115657]\n\tGetHandleVerifier [0x0x7ff764123268+11016]\n\tBaseThreadInitThunk [0x0x7ffc1de3e8d7+23]\n\tRtlUserThreadStart [0x0x7ffc1ee9c34c+44]\n"
+    }
+  },
+  "statistics": {
+    "total_sections": 13,
+    "total_subsections": 0,
+    "total_inputs": 0,
+    "total_selects": 0,
+    "total_checkboxes": 0,
+    "total_radios": 0,
+    "total_textareas": 0,
+    "sections_with_errors": 13,
+    "total_elements": 0
+  }
+}

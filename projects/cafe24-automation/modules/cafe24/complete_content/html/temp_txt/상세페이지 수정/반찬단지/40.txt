@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품 - 만원요리 최씨남매</title>
+  
+  <!-- SEO 최적화 -->
+  <meta name="description" content="제품 - 프리미엄 품질의 특별한 선택">
+  <meta property="og:title" content="제품">
+  
+  <!-- 성능 최적화 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+    
+    :root {
+      --font-primary: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+      --saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937;
+      --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB;
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-primary); color: var(--deep-charcoal); background: var(--pure-white); -webkit-font-smoothing: antialiased; word-break: keep-all; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+    
+    /* Strategic Header - 140 스타일 */
+    header.hero { padding: clamp(28px, 6vw, 40px) 0; }
+    .strategic-header {
+      border: 3px solid var(--saffron-gold); border-radius: 12px;
+      margin: clamp(20px, 5vw, 30px) 0; padding: clamp(20px, 5vw, 30px);
+      background: var(--pure-white); text-align: center;
+    }
+    .header-brand { font-size: clamp(16px, 4vw, 20px); font-weight: 700; margin-bottom: 12px; }
+    .header-main-copy { font-size: clamp(28px, 8vw, 42px); font-weight: 900; margin: 0 0 20px; line-height: 1.3; }
+    
+    @keyframes color-change { 0%{color:var(--deep-rose);} 50%{color:var(--saffron-gold);} 100%{color:var(--deep-rose);} }
+    .animated-text { animation: color-change 3s infinite; }
+    
+    .hero-images { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; align-items: center; }
+    .hero-picture { display: block; width: 100%; max-width: 560px; height: auto; border-radius: 16px; box-shadow: 0 14px 32px rgba(0,0,0,0.1); }
+    
+    /* Sections - 140 스타일 */
+    section.section { padding: clamp(40px, 8vw, 80px) 0; text-align: center; }
+    .section-title { font-size: clamp(24px, 6.5vw, 36px); font-weight: 900; margin-bottom: clamp(22px, 6vw, 36px); }
+    
+    /* Why Section */
+    .why-section { background: var(--light-gray); }
+    .why-grid { display: grid; grid-template-columns: 1fr; gap: 20px; text-align: left; max-width: 700px; margin: 0 auto; }
+    @media (min-width: 640px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+    .why-card { background: var(--pure-white); border: 1px solid var(--border-gray); border-radius: 12px; padding: 22px; }
+    .why-card-title { font-size: clamp(18px, 4.5vw, 22px); font-weight: 700; margin: 0 0 8px; }
+    .why-card-desc { font-size: clamp(15px, 3.5vw, 16px); line-height: 1.65; color: var(--medium-gray); }
+    
+    /* Story Section */
+    .story-section { background: var(--pure-white); }
+    .story-content { max-width: 700px; margin: 0 auto; text-align: left; }
+    .story-content p { font-size: clamp(15px, 3.5vw, 16px); line-height: 1.8; margin-bottom: 20px; color: var(--medium-gray); }
+    
+    /* How Section */
+    .how-grid { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 700px; margin: 0 auto; text-align: left; }
+    .how-card { border: 2px solid var(--border-gray); border-radius: 12px; overflow: hidden; background: var(--pure-white); }
+    .how-card-header { padding: 18px; font-size: clamp(18px, 5vw, 22px); font-weight: 700; color: var(--pure-white); background: var(--saffron-gold); }
+    .how-card-body { padding: 18px; font-size: clamp(15px, 3.5vw, 16px); line-height: 1.7; }
+    
+    /* Trust Section */
+    .trust-section { background: var(--light-gray); }
+    .trust-grid { display: grid; gap: 14px; max-width: 700px; margin: 0 auto; }
+    .trust-item { display: flex; align-items: center; background: var(--pure-white); padding: 18px; border-radius: 12px; border: 1px solid var(--border-gray); text-align: left; }
+    .trust-icon { font-size: 32px; margin-right: 14px; }
+    .trust-text h3 { font-size: clamp(17px, 4vw, 20px); margin: 0 0 4px; color: var(--deep-charcoal); }
+    .trust-text p { font-size: clamp(14px, 3.5vw, 15px); margin: 0; color: var(--medium-gray); }
+    
+    /* Review Section */
+    .review-card {
+      background: var(--pure-white); padding: 20px; border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin: 15px 0; text-align: left;
+    }
+    .review-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+    .reviewer-name { font-weight: 700; color: var(--deep-charcoal); }
+    .review-rating { color: var(--saffron-gold); }
+    
+    /* Footer */
+    footer.company-info { background: var(--deep-charcoal); color: var(--medium-gray); padding: clamp(30px, 6vw, 50px) 0; font-size: clamp(12px, 3vw, 14px); line-height: 1.8; }
+    .company-info-grid { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 10px 30px; padding: 0 16px; }
+    @media (min-width: 640px) { .company-info-grid { grid-template-columns: 1fr 1fr; } }
+    .company-info-grid strong { color: var(--border-gray); margin-right: 8px; }
+  </style>
+</head>
+
+<body>
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="strategic-header">
+        <p class="header-brand">만원요리 최씨남매 X 프리미엄 공구</p>
+        <h1 class="header-main-copy">프리미엄 품질의 특별한<br>
+        <span class="animated-text">새로운 기준!</span></h1>
+        
+        <!-- Hero 이미지들 (모든 이미지 1열 배치) -->
+        <div class="hero-images">
+          
+            <img class="hero-picture" 
+                 src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/14/1.jpg"
+                 alt="제품 제품 이미지 1" 
+                 width="560" height="420" 
+                 loading="eager">
+            
+            <img class="hero-picture" 
+                 src="//ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/25_06_02/14/2.jpg"
+                 alt="제품 제품 이미지 2" 
+                 width="560" height="420" 
+                 loading="lazy">
+            
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section why-section">
+      <div class="container">
+        <h2 class="section-title">🤔 Why? 왜 이 제품이어야 할까요?</h2>
+        <div class="why-grid">
+          
+          <article class="why-card">
+            <h3 class="why-card-title">프리미엄 품질</h3>
+            <p class="why-card-desc">엄선된 재료로 만든 고급 제품입니다.</p>
+          </article>
+          
+          <article class="why-card">
+            <h3 class="why-card-title">간편한 조리</h3>
+            <p class="why-card-desc">바쁜 일상 속에서도 쉽게 즐길 수 있어요.</p>
+          </article>
+          
+          <article class="why-card">
+            <h3 class="why-card-title">영양가 만점</h3>
+            <p class="why-card-desc">맛있으면서도 건강한 한 끼 식사를 제공합니다.</p>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="section story-section">
+      <div class="container">
+        <h2 class="section-title">📖 이 맛의 진짜 이야기</h2>
+        <div class="story-content">
+          <p>제품는 우리나라 음식문화사에서 독특한 위치를 차지하고 있습니다. 그 시작은 생각보다 깊은 역사 속에 뿌리를 두고 있어요.</p>
+            <p>지역별로 다양한 조리법과 맛의 변화를 거치면서 오늘날의 모습을 갖추게 되었습니다. 각 지방마다 고유한 특색을 더해가며 발전해왔죠.</p>
+            <p>현대에 들어서는 기술의 발달과 함께 대량 생산이 가능해졌습니다. 전통적인 수작업 방식에서 현대적 가공 기술로의 전환이 이루어졌어요.</p>
+            <p>이제는 한국인의 일상 속 깊숙이 자리잡은 친숙한 음식이 되었습니다. 바쁜 현대인들에게 간편하면서도 정성이 담긴 한 끼를 제공하는 소중한 음식으로 사랑받고 있어요.</p>
+            
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">🍳 전문가의 조리법</h2>
+        <div class="how-grid">
+          
+          <div class="how-card">
+            <div class="how-card-header">👑 추천 조리법</div>
+            <div class="how-card-body">
+              <ol><li>포장을 뜯고 준비합니다.</li><li>적절한 조리기구를 준비합니다.</li><li>제품을 넣고 조리합니다.</li><li>맛있게 완성하여 드세요!</li></ol>
+              <p style="margin-top: 15px; font-weight: 700;">💡 TIP: 조리 시간을 정확히 지켜주세요!</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="section trust-section">
+      <div class="container">
+        <h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+        <div class="trust-grid">
+          
+          <div class="trust-item">
+            <span class="trust-icon">📜</span>
+            <div class="trust-text">
+              <h3>품질 보증</h3>
+              <p>엄선된 재료와 안전한 제조 과정</p>
+            </div>
+          </div>
+          
+          <div class="trust-item">
+            <span class="trust-icon">🏆</span>
+            <div class="trust-text">
+              <h3>전문성</h3>
+              <p>오랜 경험과 노하우로 만든 제품</p>
+            </div>
+          </div>
+          
+          <div class="trust-item">
+            <span class="trust-icon">⭐</span>
+            <div class="trust-text">
+              <h3>고객 만족</h3>
+              <p>높은 재구매율과 고객 추천도</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">💬 실제 고객 후기</h2>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">30대 워킹맘 김○○</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <p>간편하게 조리할 수 있어서 바쁜 저에게 딱이에요!</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">20대 자취생 이○○</span>
+            <span class="review-rating">★★★★☆</span>
+          </div>
+          <p>가성비 좋고 맛도 괜찮아요. 재주문 예정입니다!</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="company-info">
+    <div class="company-info-grid">
+      <span><strong>사이트명:</strong> 만원요리 최씨남매</span>
+      <span><strong>회사명:</strong> ㈜값진한끼</span>
+      <span><strong>대표자명:</strong> 고혜숙</span>
+      <span><strong>사업자등록번호:</strong> 434-86-03863</span>
+      <span><strong>통신판매업:</strong> 2025-경기파주-2195호</span>
+      <span><strong>연락처:</strong> 070-8835-2885</span>
+      <span><strong>이메일:</strong> manwonyori@naver.com</span>
+      <span><strong>주소:</strong> 경기도 파주시 경의로 1246, 11층 1105-19호</span>
+    </div>
+  </footer>
+</body>
+</html>

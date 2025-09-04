@@ -1,0 +1,790 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&amp;family=Pretendard:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style type="text/css">:root {
+  --font-primary: 'Noto Sans KR', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; --saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937; --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB; --text-primary: #1a1a1a; --text-secondary: #4a4a4a; --background-white: #ffffff; --background-light: #f8f9fa;
+ }
+ 
+ * {
+  margin: 0; padding: 0; box-sizing: border-box;
+ }
+ 
+ body {
+  font-family: var(--font-primary); line-height: 1.6; color: var(--text-primary); background: var(--background-white);
+ }
+ 
+ .pizza-container {
+  max-width: 1200px; margin: 0 auto; padding: clamp(15px, 3vw, 30px); width: 100%;
+ }
+ 
+ .main-image {
+  width: 100%; max-width: 400px; height: auto; margin: clamp(20px, 4vw, 30px) auto; display: block; border: none !important; outline: none !important; box-shadow: none !important; background: transparent !important; border-radius: 12px;
+ }
+ 
+ .section {
+  margin: clamp(20px, 4vw, 40px) 0; padding: clamp(20px, 4vw, 30px); border-radius: clamp(12px, 2vw, 20px); background: var(--background-light); border: 2px solid var(--border-gray); width: 100%;
+ }
+ 
+ .section-title {
+  font-size: clamp(18px, 4vw, 28px); font-weight: 800; color: var(--deep-rose); text-align: center; margin-bottom: clamp(15px, 3vw, 25px); line-height: 1.3;
+ }
+ 
+ .section-subtitle {
+  font-size: clamp(16px, 3vw, 20px); font-weight: 700; color: var(--saffron-gold); margin-bottom: clamp(10px, 2vw, 15px); line-height: 1.4; text-align: left;
+ }
+ 
+ .grid-container {
+  display: grid; gap: clamp(15px, 3vw, 25px); margin: clamp(15px, 3vw, 25px) 0;
+ }
+ 
+ .grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ }
+ 
+ .grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+ 
+ .card {
+  background: var(--background-white); padding: clamp(16px, 3vw, 25px); border-radius: clamp(8px, 1.5vw, 15px); border-left: 4px solid var(--deep-rose); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); height: 100%; display: flex; flex-direction: column;
+ }
+ 
+ .card-center {
+  background: var(--background-white); padding: clamp(16px, 3vw, 25px); border-radius: clamp(8px, 1.5vw, 15px); text-align: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); height: 100%; display: flex; flex-direction: column; justify-content: center;
+ }
+ 
+ .text-content {
+  font-size: clamp(14px, 2.5vw, 16px); line-height: 1.8; text-align: left; color: var(--text-primary);
+ }
+ 
+ .highlight-text {
+  font-weight: 600; color: var(--text-secondary); font-size: clamp(14px, 2.5vw, 16px); line-height: 1.7; text-align: left;
+ }
+ 
+ .card p {
+  text-align: left; color: var(--text-primary);
+ }
+ 
+ .card-center p {
+  text-align: center; color: var(--text-primary);
+ }
+ 
+ .highlight-box {
+  background: #fff3cd; border: 2px solid #ffc107; border-radius: clamp(8px, 1.5vw, 12px); padding: clamp(15px, 3vw, 25px); margin: clamp(15px, 3vw, 25px) 0; text-align: center;
+ }
+ 
+ .red-gradient {
+  background: linear-gradient(135deg, var(--deep-rose) 0%, #B91C1C 100%); color: var(--pure-white); padding: clamp(20px, 3vw, 25px); border-radius: clamp(12px, 2vw, 20px); margin: clamp(20px, 4vw, 40px) 0;
+ }
+ 
+ .red-gradient h2,
+ .red-gradient h3 {
+  color: var(--pure-white);
+ }
+ 
+ .red-gradient p {
+  color: var(--pure-white);
+ }
+ 
+ .checklist {
+  list-style: none; padding: 0; text-align: left;
+ }
+ 
+ .checklist li {
+  padding: clamp(6px, 1.5vw, 10px) 0; position: relative; padding-left: clamp(25px, 5vw, 35px); font-size: clamp(14px, 2.5vw, 16px); line-height: 1.5; text-align: left; color: var(--text-primary);
+ }
+ 
+ .checklist li:before {
+  content: "✓"; color: #28a745; font-weight: bold; position: absolute; left: 0; font-size: clamp(14px, 2.5vw, 16px);
+ }
+ 
+ .shipping-container {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(12px, 2vw, 20px); max-width: 900px; margin: 0 auto;
+ }
+ 
+ .shipping-item {
+  display: flex; align-items: center; gap: clamp(12px, 2vw, 15px); padding: clamp(8px, 1.5vw, 12px); background: rgba(255, 255, 255, 0.1); border-radius: clamp(8px, 1.5vw, 12px); border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ .shipping-icon {
+  font-size: clamp(18px, 3vw, 22px); flex-shrink: 0; width: 28px; text-align: center; color: var(--pure-white);
+ }
+ 
+ .shipping-text {
+  font-weight: 600; font-size: clamp(13px, 2.5vw, 15px); line-height: 1.4; flex: 1; text-align: left; color: var(--pure-white);
+ }
+ 
+ .company-grid {
+  display: grid; grid-template-columns: auto 1fr; gap: clamp(8px, 2vw, 12px); align-items: start; font-size: clamp(13px, 2.5vw, 15px); text-align: left; max-width: 800px; margin: 0 auto;
+ }
+ 
+ .company-label {
+  font-weight: 700; color: var(--text-primary); white-space: nowrap; min-width: fit-content; text-align: left;
+ }
+ 
+ .company-value {
+  color: var(--text-secondary); word-break: break-word; text-align: left;
+ }
+ 
+ .animate-text {
+  background: linear-gradient(45deg, var(--deep-rose), var(--saffron-gold)); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShift 3s ease-in-out infinite;
+ }
+ 
+ @keyframes gradientShift {
+  0%,
+  100% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+ }
+ 
+ .icon-large {
+  font-size: clamp(36px, 8vw, 56px); margin-bottom: clamp(12px, 2.5vw, 18px);
+ }
+ 
+ .youtube-embed {
+  position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: #000; border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;
+ }
+ 
+ .youtube-embed:hover {
+  transform: scale(1.02);
+ }
+ 
+ .youtube-embed img {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+ }
+ 
+ .youtube-play-button {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background-color: rgba(255, 0, 0, 0.8); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: background-color 0.3s ease;
+ }
+ 
+ .youtube-embed:hover .youtube-play-button {
+  background-color: rgba(255, 0, 0, 1);
+ }
+ 
+ .youtube-play-button::before {
+  content: ''; width: 0; height: 0; border-left: 18px solid white; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;
+ }
+ 
+ .modal {
+  display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ .modal-content {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 800px; background-color: #000; border-radius: 8px; overflow: hidden;
+ }
+ 
+ .modal-header {
+  background-color: #333; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center;
+ }
+ 
+ .modal-title {
+  color: white; font-size: 16px; font-weight: 600;
+ }
+ 
+ .close-button {
+  background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.3s ease;
+ }
+ 
+ .close-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+ }
+ 
+ .modal-body {
+  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+ }
+ 
+ .modal-body iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+ }
+ /* 스크롤 따라다니는 말풍선 */
+ 
+ .floating-bubble {
+  position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 100; background: linear-gradient(135deg, #fee500 0%, #f9d71c 100%); color: #3c1e1e; padding: 15px 20px; border-radius: 20px 20px 20px 5px; box-shadow: 0 8px 25px rgba(254, 229, 0, 0.4); font-weight: 700; font-size: 14px; line-height: 1.4; text-align: center; min-width: 160px; animation: float 4s ease-in-out infinite; cursor: pointer; transition: transform 0.3s ease;
+ }
+ 
+ .floating-bubble:hover {
+  transform: translateY(-50%) scale(1.05);
+ }
+ 
+ .floating-bubble::after {
+  content: ''; position: absolute; bottom: -8px; left: 25px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #f9d71c;
+ }
+ 
+ @keyframes float {
+  0%,
+  100% {
+  transform: translateY(-50%) translateX(0);
+  }
+  50% {
+  transform: translateY(-50%) translateX(-5px);
+  }
+ }
+ 
+ .stats-counter {
+  font-weight: 900; font-size: 1.5rem; color: white;
+ }
+ 
+ .card-hover {
+  transition: all 0.3s ease;
+ }
+ 
+ .card-hover:hover {
+  transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .product-images {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;
+ }
+ 
+ .product-image-card {
+  background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;
+ }
+ 
+ .product-image-card:hover {
+  transform: translateY(-5px);
+ }
+ 
+ .product-image-card img {
+  width: 100%; height: 200px; object-fit: cover;
+ }
+ 
+ .product-image-card h4 {
+  padding: 15px; font-weight: 700; color: var(--deep-rose); text-align: center; font-size: 16px;
+ }
+ /* 알림 섹션 스타일 */
+ 
+ .notice-section {
+  background: linear-gradient(135deg, #fee500 0%, #f9d71c 100%); color: #3c1e1e; margin: 20px 0; border-radius: 20px; box-shadow: 0 8px 25px rgba(254, 229, 0, 0.4); animation: pulse 2s ease-in-out infinite;
+ }
+ 
+ .order-notice-section {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: white; margin: 20px 0; border-radius: 20px; box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+ }
+ 
+ @keyframes pulse {
+  0%,
+  100% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.02);
+  }
+ }
+ 
+ .notice-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: center;
+ }
+ 
+ .cost-comparison {
+  display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+ }
+ 
+ .cost-item {
+  background: rgba(60, 30, 30, 0.1); padding: 15px 20px; border-radius: 12px; text-align: center; min-width: 150px;
+ }
+ 
+ .cost-before {
+  border: 2px solid #dc2626;
+ }
+ 
+ .cost-after {
+  border: 2px solid #16a34a;
+ }
+ 
+ .cost-arrow {
+  font-size: 24px; color: #3c1e1e;
+ }
+ 
+ @media (max-width: 768px) {
+  .floating-bubble {
+  right: 10px; padding: 12px 16px; font-size: 12px; min-width: 140px;
+  }
+  .product-images {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;
+  }
+  .product-image-card img {
+  height: 150px;
+  }
+  .cost-comparison {
+  flex-direction: column; gap: 10px;
+  }
+  .cost-arrow {
+  transform: rotate(90deg);
+  }
+ }
+</style>
+<!-- 스크롤 따라다니는 말풍선 -->
+<div onclick="window.open('http://pf.kakao.com/_xipwJn/chat', '_blank')" class="floating-bubble">🏪 카페·식당 사장님!<br>💬 카톡문의</div>
+<!-- 사장님 특가 알림 섹션 -->
+
+<div class="pizza-container">
+<div class="notice-section">
+<div class="p-8 text-center">
+<h2 class="text-3xl font-black mb-6">📢 드라이아이스 비용 문제로 얼음팩 배송으로 수정하였습니다.</h2>
+
+<div class="cost-comparison mb-6">
+<div class="cost-item cost-before">
+<div class="text-lg font-bold">사장님 직접 제조시</div>
+
+<div class="text-2xl font-black text-red-600">11만원</div>
+
+<div class="text-sm">재료비만</div>
+</div>
+
+<div class="cost-arrow">→</div>
+
+<div class="cost-item cost-after">
+<div class="text-lg font-bold">완성된 소스</div>
+
+<div class="text-2xl font-black text-green-600">10만원</div>
+
+<div class="text-sm">10kg 완제품</div>
+</div>
+</div>
+
+<div class="bg-black bg-opacity-10 rounded-lg p-4 mb-4">
+<p class="text-lg font-bold">💰 1만원 절약 + 가스비, 인건비 절약까지 [시간도 아끼고 돈도 아끼고!!]</p>
+</div>
+
+<div class="text-center"><button onclick="window.open('http://pf.kakao.com/_xipwJn/chat', '_blank')" class="bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-colors">📞 카카오톡 문의하기</button></div>
+</div>
+</div>
+</div>
+<!-- 주문 안내 섹션 -->
+
+<div class="pizza-container">
+<div class="order-notice-section">
+<div class="p-8">
+<h2 class="text-3xl font-black text-center mb-6">💫 주문 받기 시작했어요</h2>
+
+<div class="notice-grid">
+<div class="bg-white bg-opacity-10 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-bold">배송 일정</h3>
+</div>
+
+<p>수요일부터 배송 시작됩니다</p>
+</div>
+
+<div class="bg-white bg-opacity-10 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-bold">주문 안내</h3>
+</div>
+
+<p>개별 주문으로 묶음 배송이 되지 않습니다</p>
+</div>
+
+<div class="bg-white bg-opacity-10 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-bold">배송 옵션</h3>
+</div>
+
+<p>얼음팩으로 배송 됩니다. 냉기가 있으면 사용에 문제가 없습니다.</p>
+</div>
+
+<div class="bg-white bg-opacity-10 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<h3 class="text-xl font-bold">업장용</h3>
+</div>
+
+<p>업장용도 냉동 상태로 배송됩니다</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+
+<div class="pizza-container">
+<div class="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-3xl shadow-2xl overflow-hidden">
+<div class="p-8 text-center">
+<div class="flex items-center justify-center mb-4"><span class="text-lg font-bold">만원요리 최씨남매 공식 인증</span></div>
+
+<h1 class="text-3xl md:text-5xl font-black mb-4">🍕 토마토 만능소스 🍕</h1>
+
+<div class="text-xl md:text-2xl font-bold mb-6 animate-text">연매출 7억을 안겨준 바로 그 레시피!</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+<div class="bg-white bg-opacity-20 rounded-lg p-4">
+<div class="stats-counter">1,667만</div>
+
+<div class="text-sm">유튜브 조회수</div>
+</div>
+
+<div class="bg-white bg-opacity-20 rounded-lg p-4">
+<div class="stats-counter">36만</div>
+
+<div class="text-sm">구독자 수</div>
+</div>
+
+<div class="bg-white bg-opacity-20 rounded-lg p-4">
+<div class="stats-counter">연매출 7억</div>
+
+<div class="text-sm">실증된 매출</div>
+</div>
+</div>
+
+<div class="bg-white bg-opacity-20 rounded-lg p-4 text-2xl font-bold">350g × 3개 구성 = 총 1.05kg 🔥</div>
+</div>
+</div>
+</div>
+<!-- 제품 메인 이미지 -->
+
+<div class="pizza-container"><img alt="최씨남매 토마토 만능소스 350g 3개 구성" contenteditable="false" src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/choi/tomato350g/tomato-350-1.jpeg" class="main-image fr-draggable"></div>
+<!-- 활용 이미지들 -->
+
+<div class="pizza-container">
+<h2 class="section-title">🍽️ 이렇게 다양하게 활용하세요!</h2>
+
+<div class="product-images">
+<div class="product-image-card"><img alt="토마토소스 스파게티" contenteditable="false" src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/choi/tomato350g/tomato-350-2.jpeg" class="fr-draggable">
+<h4>🍝 스파게티</h4>
+</div>
+
+<div class="product-image-card"><img alt="토마토소스 피자" contenteditable="false" src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/choi/tomato350g/tomato-350-3.jpeg" class="fr-draggable">
+<h4>🍕 토마토 피자</h4>
+</div>
+
+<div class="product-image-card"><img alt="토마토소스 함박스테이크" contenteditable="false" src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/choi/tomato350g/tomato-350-4.jpeg" class="fr-draggable">
+<h4>🥩 함박스테이크</h4>
+</div>
+</div>
+</div>
+<!-- YouTube Shorts Showcase -->
+
+<div class="pizza-container">
+<h2 class="section-title">유튜브에서 검증된 인기 영상들</h2>
+
+<div class="grid-container grid-3"><!-- 메인 토마토소스 영상 -->
+<div class="card card-hover">
+<div onclick="openModal('4_7RH4Ffp_Q', '연매출 7억 토마토소스 레시피')" class="youtube-embed mb-4"><img alt="연매출 7억 토마토소스 레시피" contenteditable="false" src="https://i.ytimg.com/vi/4_7RH4Ffp_Q/mqdefault.jpg" class="fr-draggable">
+<div class="youtube-play-button">&nbsp;</div>
+</div>
+
+<h3 class="font-bold text-lg mb-2">연매출 7억 토마토소스 레시피</h3>
+
+<div class="flex items-center text-sm text-gray-600 mb-2"><span class="font-bold text-red-600">1,667만 조회수</span></div>
+
+<p class="text-sm">이 영상의 바로 그 레시피를 제품화!</p>
+</div>
+<!-- 피자 꿀조합 영상 -->
+
+<div class="card card-hover">
+<div onclick="openModal('hiky-h3uBV8', '피자 베스트 꿀조합')" class="youtube-embed mb-4"><img alt="피자 베스트 꿀조합" contenteditable="false" src="https://i.ytimg.com/vi/hiky-h3uBV8/mqdefault.jpg" class="fr-draggable">
+<div class="youtube-play-button">&nbsp;</div>
+</div>
+
+<h3 class="font-bold text-lg mb-2">피자 베스트 1위 꿀조합</h3>
+
+<div class="flex items-center text-sm text-gray-600 mb-2"><span class="font-bold text-red-600">317만 조회수</span></div>
+
+<p class="text-sm">피자집 사장님에게 배운 비법 토핑</p>
+</div>
+<!-- 피자 만들기 영상 -->
+
+<div class="card card-hover">
+<div onclick="openModal('zZGcOoYWq4M', '시카고 피자 만들기')" class="youtube-embed mb-4"><img alt="시카고 피자 만들기" contenteditable="false" src="https://i.ytimg.com/vi/zZGcOoYWq4M/mqdefault.jpg" class="fr-draggable">
+<div class="youtube-play-button">&nbsp;</div>
+</div>
+
+<h3 class="font-bold text-lg mb-2">시카고 피자 쉽게 만들기</h3>
+
+<div class="flex items-center text-sm text-gray-600 mb-2"><span class="font-bold text-red-600">174만 조회수</span></div>
+
+<p class="text-sm">에어프라이어로 간편하게!</p>
+</div>
+</div>
+</div>
+<!-- Why Section -->
+
+<div class="pizza-container">
+<div class="section">
+<h2 class="section-title">❓ Why? 왜 이 토마토 소스여야 할까요?</h2>
+
+<div class="grid-container grid-2">
+<div class="card">
+<div class="flex items-center mb-4">
+<h3 class="text-xl font-bold">3종 육류의 풍부한 감칠맛</h3>
+</div>
+
+<p class="text-content">베이컨 8.18% + 돼지고기 민찌 10.23% + 소고기 민찌 1.02%가 어우러진 깊고 진한 맛! 피자 도우 위에 발랐을 때 육류의 풍미가 치즈와 완벽하게 조화를 이룹니다.</p>
+</div>
+
+<div class="card">
+<div class="flex items-center mb-4">
+<h3 class="text-xl font-bold">5종 천연향신료 조화</h3>
+</div>
+
+<p class="text-content">오레가노, 바질, 치킨스톡분말, 후추분태, 월계수잎분말! 이탈리안 레스토랑의 그 진짜 맛을 집에서 구현할 수 있습니다.</p>
+</div>
+
+<div class="card">
+<div class="flex items-center mb-4">
+<h3 class="text-xl font-bold">농축토마토 53.18% 함유</h3>
+</div>
+
+<p class="text-content">미국산 농축토마토를 53.18%나 함유하여 진짜 토마토의 풍미를 그대로! 인공적인 맛이 아닌 자연스러운 토마토 본연의 맛을 느끼실 수 있습니다.</p>
+</div>
+
+<div class="card">
+<div class="flex items-center mb-4">
+<h3 class="text-xl font-bold">1,667만 조회수 검증</h3>
+</div>
+
+<p class="text-content">유튜브에서 이미 검증받은 레시피를 그대로 제품화! 수많은 구독자들이 인정한 그 맛을 이제 간편하게 만나보세요.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- How Section -->
+
+<div class="pizza-container">
+<div class="section">
+<h2 class="section-title">🍽️ How? 이렇게 활용하세요!</h2>
+
+<div class="grid-container grid-2"><!-- 기본 토마토 피자 -->
+<div class="card">
+<h3 class="section-subtitle">기본 토마토 피자</h3>
+
+<ul class="checklist">
+<li>피자 도우 준비 (냉동 도우 해동하거나 직접 만든 도우 사용)</li>
+<li>토마토소스 발라주기 (해동된 소스를 도우 전체에 고르게 펴 발라주세요)</li>
+<li>치즈와 토핑 올리기 (모짜렐라 치즈와 원하는 토핑을 올려주세요)</li>
+<li>굽기 (오븐 200°C에서 15-20분, 에어프라이어 180°C 12분)</li>
+</ul>
+</div>
+<!-- 스파게티 만들기 -->
+
+<div class="card">
+<h3 class="section-subtitle">진짜 맛있는 스파게티</h3>
+
+<ul class="checklist">
+<li>스파게티 면 삶기 (소금물에 8-10분간 알덴테로)</li>
+<li>토마토소스 가열 (팬에서 살짝 끓여주면 더욱 진한 맛)</li>
+<li>면과 소스 볶기 (삶은 면을 소스와 함께 1-2분간 볶아주세요)</li>
+<li>마무리 (파마산 치즈와 바질 올리면 완벽!)</li>
+</ul>
+</div>
+</div>
+<!-- 꿀팁 박스 -->
+
+<div class="highlight-box">
+<h3 class="text-xl font-bold mb-4 text-center">최씨남매 활용 꿀팁!</h3>
+
+<div class="grid-container grid-2">
+<div class="text-center">
+<p class="font-semibold">소스 온도 맞추기</p>
+
+<p class="text-sm">해동 후 레드페퍼, 소금, 설탕을 본인 입맛에 맞게 간을 조절하면 더욱 맛있어요!</p>
+</div>
+
+<div class="text-center">
+<p class="font-semibold">보관 주의사항</p>
+
+<p class="text-sm">이미 냉동된 제품이니 해동 후 재냉동은 금지! 개봉 후엔 빠른 시일 내 섭취하세요.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 제품 상세 정보 -->
+
+<div class="pizza-container">
+<div class="section">
+<h2 class="section-title">📋 제품 상세 정보</h2>
+
+<div class="grid-container grid-2"><!-- 기본 정보 -->
+<div class="card">
+<h3 class="section-subtitle text-center">기본 제품 정보</h3>
+
+<div class="company-grid"><span class="company-label">제품명:</span> <span class="company-value">최씨남매 토마토 만능소스</span> <span class="company-label">내용량:</span> <span class="company-value">350g × 3개</span> <span class="company-label">보관방법:</span> <span class="company-value">냉동보관(-18℃이하)</span> <span class="company-label">식품의 유형:</span> <span class="company-value">소스 (살균제품)</span> <span class="company-label">용도 및 용법:</span> <span class="company-value">가열조리 후 섭취</span> <span class="company-label">품목제조보고번호:</span> <span class="company-value">2019042406554</span> <span class="company-label">포장재질:</span> <span class="company-value">용기-PP / 리드지-PE</span></div>
+</div>
+<!-- 원재료 정보 -->
+
+<div class="card">
+<h3 class="section-subtitle text-center">원재료 및 함량</h3>
+
+<div class="text-content">
+<p><strong>농축토마토 53.18%</strong>(소스류, 미국산)</p>
+
+<p>간양파(국내산)</p>
+
+<p><strong>다진돼지고기 10.23%</strong>(수입산: 캐나다산, 오스트리아산, 미국산 등)</p>
+
+<p><strong>베이컨 8.18%</strong></p>
+
+<p>정제수, 설탕, 콩기름(대두유)</p>
+
+<p><strong>다진소고기 1.02%</strong>(국내산)</p>
+
+<p>간마늘(중국산)</p>
+
+<p>오레가노럽드(천연향신료)</p>
+
+<p>치킨스톡분말</p>
+
+<p>바질럽드(천연향신료)</p>
+
+<p>월계수잎분말(천연향신료)</p>
+
+<p>후추분태(천연향신료)</p>
+</div>
+</div>
+</div>
+<!-- 알레르기 및 주의사항 -->
+
+<div class="grid-container grid-2 mt-6">
+<div class="card">
+<h3 class="section-subtitle text-center">⚠️ 알레르기 정보</h3>
+
+<div class="text-content">
+<p class="font-bold text-red-600 mb-3">알레르기 유발 물질 제조시설 공유:</p>
+
+<p>메밀, 땅콩, 호두, 잣, 조개류(굴,전복,홍합포함), 새우, 오징어, 고등어, 게, 아황산류, 복숭아를 사용한 제품과 같은 제조시설에서 제조</p>
+</div>
+</div>
+
+<div class="card">
+<h3 class="section-subtitle text-center">💡 조리 및 보관 팁</h3>
+
+<div class="text-content">
+<p class="font-bold mb-2">조리 팁:</p>
+
+<p>해동 후 조리시 레드페퍼, 소금, 설탕을 본인의 입맛에 맞게 간을 조절하면 더욱 맛있게 즐길 수 있습니다.</p>
+
+<p class="font-bold mt-4 mb-2">보관 주의사항:</p>
+
+<p>• 이미 냉동된 제품으로 해동 후 재냉동 금지</p>
+
+<p>• 소비기한은 개봉 전 냉동보관 시에만 해당</p>
+
+<p>• 개봉 후에는 빠른 시일 내에 섭취</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Section -->
+
+<div class="pizza-container">
+<div class="section">
+<h2 class="section-title">🛡️ Trust! 믿을 수 있는 이유</h2>
+
+<div class="grid-container grid-3">
+<div class="card-center card-hover">
+<h3 class="text-xl font-bold mb-4">안전 인증 완료</h3>
+
+<p>품목제조보고번호 2019042406554로 정식 인증받은 제품입니다.</p>
+</div>
+
+<div class="card-center card-hover">
+<h3 class="text-xl font-bold mb-4">신뢰할 수 있는 제조사</h3>
+
+<p>(주)초심푸드에서 위생적으로 생산하여 더욱 믿을 수 있습니다.</p>
+</div>
+
+<div class="card-center card-hover">
+<h3 class="text-xl font-bold mb-4">최씨남매 품질 보증</h3>
+
+<p>유튜버 '만원요리 최씨남매'가 직접 먹어보고 인정한 맛입니다.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 배송 및 주의사항 -->
+
+<div class="pizza-container">
+<div class="red-gradient">
+<h2 class="text-3xl font-black text-center mb-8">🚚 배송 및 주의사항 📋</h2>
+
+<div class="shipping-container">
+<div class="shipping-item">
+<div class="shipping-text">배송비 무료<br>(옵션: 4kg, 10kg)</div>
+</div>
+
+<div class="shipping-item">
+<div class="shipping-text">⚠️ 중요 안내<br>일반 포장으로 배송시 녹아서 반품 요청 받지 않습니다</div>
+</div>
+
+<div class="shipping-item">
+<div class="shipping-text">❄️ 냉동 배송<br>해동 후 재냉동 금지</div>
+</div>
+
+<div class="shipping-item">
+<div class="shipping-text">💡 일반얼음포장은 도착시 더운날 녹을 수 있으니<br>냉기가 있으면 제품에 문제가 없습니다.!</div>
+</div>
+</div>
+
+<div class="bg-white bg-opacity-20 rounded-lg p-6 mt-6 text-center">
+<h3 class="text-2xl font-bold mb-4">🔥옵션 선택을 권장드립니다! 🔥</h3>
+
+<p class="text-lg">안전한 배송을 위해 얼음팩을 넣어 배송합니다.냉기가 있으면 제품에 문제가 없습니다.!</p>
+</div>
+</div>
+</div>
+<!-- Company Information -->
+
+<div class="pizza-container">
+<div class="section">
+<h2 class="section-title">🏢 업체 정보</h2>
+
+<div class="grid-container grid-2"><!-- 판매자 정보 -->
+<div class="card">
+<h3 class="section-subtitle text-center">판매자 정보</h3>
+
+<div class="company-grid"><span class="company-label">상호명:</span> <span class="company-value">㈜값진한끼</span> <span class="company-label">사업자등록번호:</span> <span class="company-value">434-86-03863</span> <span class="company-label">대표자명:</span> <span class="company-value">고혜숙</span> <span class="company-label">주소:</span> <span class="company-value">경기도 파주시 경의로 1246, 11층 1105-19호</span> <span class="company-label">연락처:</span> <span class="company-value">070-8835-2885</span> <span class="company-label">이메일:</span> <span class="company-value">we@manwonyori.com</span></div>
+</div>
+<!-- 제조원 정보 -->
+
+<div class="card">
+<h3 class="section-subtitle text-center">제조원 정보</h3>
+
+<div class="company-grid"><span class="company-label">제조사:</span> <span class="company-value">(주)초심푸드</span> <span class="company-label">주소:</span> <span class="company-value">전북 익산시 왕궁면 푸드폴리스로10길 48</span> <span class="company-label">연락처:</span> <span class="company-value">063-838-1116</span> <span class="company-label">품목제조보고번호:</span> <span class="company-value">2019042406554</span></div>
+</div>
+</div>
+<!-- 추가 안내사항 -->
+
+<div class="mt-6 bg-yellow-50 border-2 border-yellow-200 rounded-lg p-6">
+<h3 class="text-lg font-bold mb-4 text-center">📢 추가 안내사항</h3>
+
+<div class="grid-container grid-2">
+<div>
+<p class="text-sm"><strong>반품 및 교환:</strong> 구입처 또는 판매원</p>
+
+<p class="text-sm"><strong>소비자분쟁해결:</strong> 공정거래위원회 고시 기준에 의거 교환 또는 보상</p>
+</div>
+
+<div>
+<p class="text-sm"><strong>부정·불량식품 신고:</strong> 국번없이 1399</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Call to Action -->
+
+<div class="pizza-container">
+<div class="red-gradient text-center">
+<h2 class="text-3xl font-black mb-4">🍕 집에서 만나는 최씨네 그 맛! 🍕</h2>
+
+<p class="text-xl mb-6">1,667만 조회수로 검증된 바로 그 레시피를<br>이제 간편하게 집에서 만나보세요!</p>
+
+<div class="flex flex-wrap justify-center gap-4 mb-6"><span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">✅ 연매출 7억 실증</span> <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">✅ 36만 구독자 인증</span> <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">✅ 350g × 3개 구성</span> <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">✅ 농축토마토 53.18%</span></div>
+
+<div class="text-lg font-bold">만원요리 최씨남매와 함께하는 홈쿡의 즐거움!</div>
+</div>
+</div>
+<!-- 비디오 모달 -->
+
+<div id="videoModal" class="modal">
+<div class="modal-content">
+<div class="modal-header"><span id="modalTitle" class="modal-title">YouTube 영상</span><button onclick="closeModal()" class="close-button">×</button></div>
+
+<div class="modal-body"><iframe allowfullscreen="" frameborder="0" id="modalVideo" src=""></iframe></div>
+</div>
+</div>

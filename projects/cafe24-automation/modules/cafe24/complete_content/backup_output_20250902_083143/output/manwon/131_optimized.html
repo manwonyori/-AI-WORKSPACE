@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만원요리 최씨남매 X 취영루 오리지널 교자만두</title>
+    
+    <!-- Pretendard 폰트 (만원요리 사용 폰트) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    
+    <style>
+        /* 만원요리 디자인 시스템 */
+        :root {
+            --primary-color: #333333;
+            --secondary-color: #666666;
+            --accent-color: #ff6b6b;
+            --gold-color: #ffd700;
+            --bg-main: #ffffff;
+            --bg-sub: #f8f8f8;
+            --border-color: #e0e0e0;
+            --price-color: #e74c3c;
+            --button-color: #2c3e50;
+            --button-hover: #34495e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--primary-color);
+            line-height: 1.6;
+            background: var(--bg-main);
+        }
+        
+        /* 컨테이너 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 상품 헤더 영역 */
+        .product-header {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--border-color);
+        }
+        
+        @media (min-width: 768px) {
+            .product-header {
+                grid-template-columns: 500px 1fr;
+                gap: 40px;
+            }
+        }
+        
+        /* 이미지 영역 */
+        .product-images {
+            position: relative;
+        }
+        
+        .main-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            background: var(--bg-sub);
+            border: 1px solid var(--border-color);
+        }
+        
+        .thumbnail-list {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            overflow-x: auto;
+        }
+        
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid var(--border-color);
+            transition: border-color 0.3s;
+        }
+        
+        .thumbnail:hover {
+            border-color: var(--accent-color);
+        }
+        
+        /* 상품 정보 영역 */
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .product-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+            line-height: 1.4;
+        }
+        
+        .price-section {
+            padding: 20px;
+            background: var(--bg-sub);
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: var(--secondary-color);
+            font-size: 16px;
+        }
+        
+        .final-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--price-color);
+            margin-top: 5px;
+        }
+        
+        /* 구매 영역 */
+        .purchase-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .quantity-btn {
+            width: 35px;
+            height: 35px;
+            border: 1px solid var(--border-color);
+            background: white;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        
+        .quantity-btn:hover {
+            background: var(--bg-sub);
+        }
+        
+        .quantity-input {
+            width: 60px;
+            height: 35px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            font-size: 16px;
+        }
+        
+        .btn-purchase {
+            padding: 15px;
+            background: var(--button-color);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-purchase:hover {
+            background: var(--button-hover);
+        }
+        
+        .btn-cart {
+            padding: 15px;
+            background: white;
+            color: var(--button-color);
+            border: 2px solid var(--button-color);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-cart:hover {
+            background: var(--bg-sub);
+        }
+        
+        /* 탭 네비게이션 - 간결한 2탭 */
+        .tab-section {
+            margin-top: 50px;
+            border-top: 2px solid var(--primary-color);
+        }
+        
+        .tab-nav {
+            display: flex;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .tab-item {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--secondary-color);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab-item.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .tab-item:hover {
+            background: var(--bg-sub);
+        }
+        
+        /* 탭 콘텐츠 - 간결하게 */
+        .tab-content {
+            padding: 40px 20px;
+            background: white;
+            min-height: 300px;
+        }
+        
+        .tab-pane {
+            display: none;
+        }
+        
+        .tab-pane.active {
+            display: block;
+        }
+        
+        /* 상품설명 스타일 */
+        .product-description {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .desc-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .desc-content {
+            color: var(--secondary-color);
+            font-size: 15px;
+        }
+        
+        .desc-point {
+            background: var(--bg-sub);
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        /* 상세정보 테이블 */
+        .detail-table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        
+        .detail-table th,
+        .detail-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .detail-table th {
+            width: 150px;
+            background: var(--bg-sub);
+            font-weight: 500;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .product-header {
+                padding: 20px;
+            }
+            
+            .product-title {
+                font-size: 20px;
+            }
+            
+            .tab-item {
+                font-size: 14px;
+            }
+            
+            .detail-table {
+                font-size: 14px;
+            }
+            
+            .detail-table th {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 상품 헤더 -->
+        <div class="product-header">
+            <div class="product-images">
+                <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/common/common_1.jpg" alt="만원요리 최씨남매 X 취영루 오리지널 교자만두" class="main-image" id="mainImage">
+                <div class="thumbnail-list">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g.jpg" alt="상품 이미지" class="thumbnail" onclick="changeMainImage(this.src)">
+                        <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/chi/kyoja/kyoja-360g-d.jpg" alt="상품 이미지" class="thumbnail" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="product-title">만원요리 최씨남매 X 취영루 오리지널 교자만두</h1>
+                
+                <div class="price-section">
+                    <div class="original-price">12,000원</div>
+                    <div class="final-price">3,500원</div>
+                </div>
+                
+                <div class="purchase-section">
+                    <div class="quantity-control">
+                        <span>구매수량</span>
+                        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                        <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="99">
+                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
+                    
+                    <button class="btn-purchase">바로구매</button>
+                    <button class="btn-cart">장바구니</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 탭 섹션 (간결한 2탭 구조) -->
+        <div class="tab-section">
+            <div class="tab-nav">
+                <div class="tab-item active" onclick="showTab('description')">상품설명</div>
+                <div class="tab-item" onclick="showTab('detail')">상세정보</div>
+            </div>
+            
+            <div class="tab-content">
+                <!-- 상품설명 탭 -->
+                <div class="tab-pane active" id="description">
+                    <div class="product-description">
+                        <h2 class="desc-title">만원요리 프리미엄 간편식</h2>
+                        
+                        <div class="desc-point">
+                            ✓ 엄선된 재료로 만든 프리미엄 제품<br>
+                            ✓ 간편한 조리로 완벽한 한 끼 식사<br>
+                            ✓ 합리적인 가격의 고품질 간편식
+                        </div>
+                        
+                        <div class="desc-content">
+                            <p>만원요리 최씨남매 X 취영루 단독 공구</p>
+                            
+                            <p style="margin-top: 20px;">
+                                <strong>조리방법:</strong><br>
+                                1. 냉동 상태에서 바로 조리 가능<br>
+                                2. 전자레인지 3-5분<br>
+                                3. 에어프라이어 5-7분
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 상세정보 탭 -->
+                <div class="tab-pane" id="detail">
+                    <table class="detail-table">
+                        <tr>
+                            <th>제품명</th>
+                            <td>만원요리 최씨남매 X 취영루 오리지널 교자만두</td>
+                        </tr>
+                        <tr>
+                            <th>내용량</th>
+                            <td>360g</td>
+                        </tr>
+                        <tr>
+                            <th>원재료</th>
+                            <td>상품 포장 참조</td>
+                        </tr>
+                        <tr>
+                            <th>보관방법</th>
+                            <td>냉동보관 (-18℃ 이하)</td>
+                        </tr>
+                        <tr>
+                            <th>유통기한</th>
+                            <td>제조일로부터 12개월</td>
+                        </tr>
+                        <tr>
+                            <th>제조원</th>
+                            <td>만원요리</td>
+                        </tr>
+                        <tr>
+                            <th>배송안내</th>
+                            <td>냉동배송</td>
+                        </tr>
+                        <tr>
+                            <th>교환/반품</th>
+                            <td>수령일로부터 7일 이내</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 이미지 변경
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+        
+        // 수량 변경
+        function changeQuantity(delta) {
+            const input = document.getElementById('quantity');
+            let value = parseInt(input.value) + delta;
+            if (value < 1) value = 1;
+            if (value > 99) value = 99;
+            input.value = value;
+        }
+        
+        // 탭 전환
+        function showTab(tabName) {
+            // 모든 탭 비활성화
+            document.querySelectorAll('.tab-item').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            
+            // 선택된 탭 활성화
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+    </script>
+</body>
+</html>

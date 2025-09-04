@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": "131",
+      "name": "취영루 교자만두",
+      "price": 15900,
+      "stock": 100,
+      "category": "냉동식품",
+      "collected_at": "2025-09-04T09:05:39.164623"
+    },
+    {
+      "id": "170",
+      "name": "인생 등심왕돈까스",
+      "price": 18900,
+      "stock": 50,
+      "category": "냉동식품",
+      "collected_at": "2025-09-04T09:05:39.164651"
+    }
+  ],
+  "patterns": {
+    "average_price": 17400.0,
+    "total_products": 2,
+    "categories": [
+      "냉동식품"
+    ],
+    "analysis_time": "2025-09-04T09:05:41.169255"
+  },
+  "timestamp": "2025-09-04T09:05:41.169266"
+}

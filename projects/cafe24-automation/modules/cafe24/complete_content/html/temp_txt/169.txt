@@ -1,0 +1,626 @@
+<center>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>만원요리 최씨남매 X [인생]국물떡볶이 단독 공구</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <style>
+  :root {
+  --deep-charcoal: #1F2937;
+  --deep-rose: #C53030;
+  --pure-white: #FFFFFF;
+  --light-gray: #F9FAFB;
+  --medium-gray: #6B7280;
+  --border-gray: #E5E7EB;
+  --warm-gold: #D4AF37;
+  }
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--pure-white);
+  color: var(--deep-charcoal);
+  line-height: 1.6;
+  }
+
+  .main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+
+  .text-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left !important;
+  padding: 0 20px;
+  }
+
+  .center-only {
+  text-align: center !important;
+  }
+
+  .section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: var(--pure-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+
+  h1 {
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  }
+
+  h2 {
+  font-size: clamp(20px, 4vw, 26px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: var(--deep-charcoal);
+  }
+
+  h3 {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  }
+
+  p {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  }
+
+  .product-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .main-product-image {
+  max-width: 500px;
+  }
+
+  .heritage-section {
+  background: linear-gradient(135deg, var(--light-gray) 0%, var(--pure-white) 100%);
+  padding: 40px;
+  border-radius: 16px;
+  margin: 40px 0;
+  }
+
+  .heritage-quote {
+  font-size: clamp(16px, 3vw, 18px);
+  font-style: italic;
+  color: var(--warm-gold);
+  margin: 30px 0;
+  padding: 20px;
+  border-left: 4px solid var(--warm-gold);
+  background-color: rgba(212, 175, 55, 0.1);
+  }
+
+  .timeline-container {
+  margin: 30px 0;
+  }
+
+  .timeline-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: var(--pure-white);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .timeline-year {
+  font-weight: 700;
+  color: var(--deep-rose);
+  font-size: 18px;
+  margin-bottom: 8px;
+  }
+
+  .timeline-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  }
+
+  .timeline-desc {
+  color: var(--medium-gray);
+  font-size: 14px;
+  }
+
+  .heritage-secret {
+  background-color: var(--pure-white);
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+  }
+
+  .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+  }
+
+  .feature-card {
+  background-color: var(--light-gray);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  }
+
+  .feature-icon {
+  font-size: 32px;
+  color: var(--deep-rose);
+  margin-bottom: 15px;
+  }
+
+  .info-section {
+  background-color: var(--light-gray);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+  }
+
+  .info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  }
+
+  .info-list {
+  font-size: 14px;
+  }
+
+  .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  text-align: left;
+  }
+
+  .info-label {
+  min-width: 140px;
+  font-weight: 600;
+  color: var(--deep-charcoal);
+  flex-shrink: 0;
+  }
+
+  .info-colon {
+  margin: 0 8px;
+  flex-shrink: 0;
+  }
+
+  .info-value {
+  flex: 1;
+  color: var(--deep-charcoal);
+  text-align: left;
+  }
+
+  .company-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--deep-charcoal);
+  margin-bottom: 15px;
+  }
+
+  .highlight {
+  color: var(--deep-rose);
+  font-weight: 600;
+  }
+
+  .badge {
+  display: inline-block;
+  background-color: var(--deep-rose);
+  color: var(--pure-white);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 2px;
+  }
+
+  .usage-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+  }
+
+  .usage-step {
+  background-color: var(--light-gray);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  }
+
+  .step-number {
+  background-color: var(--deep-rose);
+  color: var(--pure-white);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0 auto 10px;
+  }
+
+  .special-highlight {
+  background-color: var(--deep-rose);
+  color: var(--pure-white);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: clamp(18px, 4vw, 22px);
+  display: inline-block;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(197, 48, 48, 0.3);
+  }
+
+  @media (max-width: 768px) {
+  .main-container {
+  padding: 0 15px;
+  }
+
+  .text-container {
+  padding: 0 15px;
+  }
+
+  .section {
+  padding: 20px;
+  margin-bottom: 30px;
+  }
+
+  .product-image {
+  max-width: 350px;
+  }
+
+  .main-product-image {
+  max-width: 400px;
+  }
+
+  .heritage-section {
+  padding: 25px;
+  }
+
+  .info-item {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  }
+
+  .info-label {
+  min-width: 100%;
+  margin-bottom: 4px;
+  font-weight: bold;
+  }
+
+  .info-colon {
+  display: none;
+  }
+
+  .info-value {
+  padding-left: 0;
+  word-break: break-word;
+  }
+
+  .features-grid {
+  grid-template-columns: 1fr;
+  }
+
+  .usage-steps {
+  grid-template-columns: 1fr;
+  }
+  }
+  </style>
+
+  <div class="main-container">
+  <!-- Section 1: Impact Zone -->
+  <section class="section">
+  <div class="center-only">
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/tteokbokki-430g/tteokbokki-430g-1.jpg" alt="인생 국물떡볶이 430g 매운맛 순한맛 선택 가능 가성비 끝판왕 만원요리 최씨남매 추천 제품 메인 이미지" class="product-image main-product-image fr-draggable">
+  </div>
+  <h1 class="center-only">🔥 만원요리 최씨남매 인정!<br>[인생]국물떡볶이 430g</h1>
+  <div class="center-only">
+  <div class="special-highlight">가성비 끝판왕</div>
+  </div>
+  <div class="text-container">
+  <p><strong>매운맛도 순한맛도 선택 가능!</strong> 430g 딱 맞는 3인분 구성으로 혼밥부터 가족 간식까지 완벽한 가성비 떡볶이입니다.</p>
+  <p>끓는 물에 10분이면 완성되는 간편함과 진짜 분식집에서 먹는 것 같은 깊은 맛을 한 번에 만나보세요.</p>
+  </div>
+  </section>
+
+  <!-- Section 2: Heritage Story Zone -->
+  <section class="heritage-section">
+  <h2 class="center-only">🏛️ 500년을 이어온 떡볶이의 깊은 역사</h2>
+  
+  <div class="heritage-quote center-only">
+  "조선시대 궁중음식 떡국에서 시작된 떡 문화가<br>
+  일제강점기 서민 분식문화를 거쳐 오늘날 우리의 식탁에서<br>
+  <strong>누구나 즐길 수 있는 국민간식</strong>으로 완성됩니다"
+  </div>
+  
+  <div class="timeline-container text-container">
+  <div class="timeline-item">
+  <div class="timeline-year">조선시대 (1392-1910)</div>
+  <div class="timeline-title"><strong>궁중 떡국의 시작</strong></div>
+  <div class="timeline-desc">왕실에서 설날에 먹던 떡국이 떡 요리의 기원. 흰떡에 맑은 국물을 부어 먹던 전통이 떡볶이 문화의 뿌리가 됩니다.</div>
+  </div>
+  
+  <div class="timeline-item">
+  <div class="timeline-year">일제강점기 (1910-1945)</div>
+  <div class="timeline-title"><strong>서민 분식의 탄생</strong></div>
+  <div class="timeline-desc">어려운 시기에 서민들이 떡을 더 맛있게 먹기 위해 고추장과 간장을 넣고 볶기 시작. 오늘날 떡볶이의 원형이 완성됩니다.</div>
+  </div>
+  
+  <div class="timeline-item">
+  <div class="timeline-year">1950년대</div>
+  <div class="timeline-title"><strong>국물떡볶이의 진화</strong></div>
+  <div class="timeline-desc">마복림 할머니가 신당동에서 시작한 떡볶이에 육수를 추가하여 국물떡볶이 탄생. 매콤달콤한 국물이 한국인의 소울푸드로 자리잡습니다.</div>
+  </div>
+  
+  <div class="timeline-item">
+  <div class="timeline-year">2025년 현재</div>
+  <div class="timeline-title"><strong>가성비 혁명의 완성</strong></div>
+  <div class="timeline-desc">500년 전통의 맛을 현대 기술로 재현하여 합리적인 가격으로 실현. 누구나 부담 없이 즐길 수 있는 진정한 국민간식이 되었습니다.</div>
+  </div>
+  </div>
+  
+  <div class="heritage-secret">
+  <h3 class="center-only">500년 전통 제조법의 비밀</h3>
+  <div class="center-only">
+  <p><strong>전통 쌀떡</strong>으로 쫄깃한 식감을 살리고</p>
+  <p><strong>고추장 양념</strong>으로 매콤달콤한 맛을 완성하며</p>
+  <p><strong>진한 육수</strong>로 깊은 풍미를 더해주는</p>
+  <p><strong>500년 전통의 진짜 맛</strong>을 경험하세요</p>
+  </div>
+  </div>
+  </section>
+
+  <!-- Section 3: Trust Building Zone -->
+  <section class="section">
+  <h2 class="center-only">👥 만원요리 최씨남매가 직접 추천하는 이유</h2>
+  <div class="text-container">
+  <div style="background-color: var(--light-gray); padding: 20px; border-radius: 10px; margin: 20px 0;">
+  <p style="font-size: 18px; font-weight: 600; color: var(--deep-rose); margin-bottom: 10px;">
+  <i class="fas fa-quote-left"></i> 이 퀄리티에 이 가성비면 진짜 대박이에요!
+  </p>
+  <p>끓는 물에 10분이면 완성되는데 맛은 진짜 신당동 떡볶이집에서 먹는 것 같아요. 430g이면 3인분 딱 맞고, 합리적인 가격에 말도 안 되는 가성비죠. 매운맛도 순한맛도 있어서 완전 좋습니다!</p>
+  </div>
+  <p>가성비를 최우선으로 하는 만원요리 최씨남매가 직접 체험하고 인정한 제품입니다. 맛은 기본이고, 가격 대비 만족도가 압도적이라서 자신 있게 추천드립니다.</p>
+  </div>
+  </section>
+
+  <!-- Section 4: Core Value Proof Zone -->
+  <section class="section">
+  <h2 class="center-only">💎 왜 이 제품을 선택해야 할까요?</h2>
+  <div class="text-container">
+  <h3><span class="highlight">고객 Pain Point:</span> 이런 고민 있으시죠?</h3>
+  <ul style="margin-left: 20px; margin-bottom: 30px;">
+  <li>떡볶이 먹고 싶은데 배달비까지 하면 부담스럽다</li>
+  <li>혼밥할 때 간편하면서도 든든한 한 끼를 원한다</li>
+  <li>매운 걸 못 먹는 사람도 있어서 선택권이 필요하다</li>
+  </ul>
+  
+  <h3><span class="highlight">해결책:</span> 이 제품이 답입니다!</h3>
+  </div>
+  
+  <div class="features-grid">
+  <div class="feature-card">
+  <div class="feature-icon">💰</div>
+  <h4>합리적인 가격</h4>
+  <p>배달비 없이 집에서 즐기는 진짜 분식집 맛. 430g 3인분을 합리적 가격에!</p>
+  </div>
+  <div class="feature-card">
+  <div class="feature-icon">🌶️</div>
+  <h4>매운맛 &amp; 순한맛 선택</h4>
+  <p>매운 걸 좋아하는 사람도, 못 먹는 사람도 모두 만족할 수 있는 선택권!</p>
+  </div>
+  <div class="feature-card">
+  <div class="feature-icon">⏰</div>
+  <h4>끓는 물 10분 완성</h4>
+  <p>복잡한 조리 과정 없이 간단하게 완성되는 편리함!</p>
+  </div>
+  </div>
+  </section>
+
+  <!-- Section 5: Usage & Application Zone -->
+  <section class="section">
+  <h2 class="center-only">🍽️ 간편한 조리법 &amp; 활용법</h2>
+  
+  <div class="usage-steps">
+  <div class="usage-step">
+  <div class="step-number">1</div>
+  <h4>물 끓이기</h4>
+  <p>냄비에 물 500ml<br>끓여주세요</p>
+  </div>
+  <div class="usage-step">
+  <div class="step-number">2</div>
+  <h4>떡 넣기</h4>
+  <p>끓는 물에 떡을<br>먼저 넣어주세요</p>
+  </div>
+  <div class="usage-step">
+  <div class="step-number">3</div>
+  <h4>양념 추가</h4>
+  <p>양념소스를 넣고<br>잘 섞어주세요</p>
+  </div>
+  <div class="usage-step">
+  <div class="step-number">4</div>
+  <h4>10분 완성</h4>
+  <p>중불에서 10분<br>끓여주면 완성!</p>
+  </div>
+  </div>
+  
+  <div class="text-container">
+  <h3>🎯 이런 분들께 추천합니다:</h3>
+  <ul style="margin-left: 20px;">
+  <li><strong>혼밥족</strong> - 430g 딱 맞는 3인분으로 혼자 먹기 좋아요</li>
+  <li><strong>직장인</strong> - 점심 도시락 대신 간편하게</li>
+  <li><strong>대학생</strong> - 합리적인 가격에 든든한 한 끼</li>
+  <li><strong>주부</strong> - 아이들 간식이나 야식으로 완벽</li>
+  <li><strong>야식러</strong> - 밤늦게 먹어도 부담 없는 가격</li>
+  <li><strong>매운 음식 못 먹는 분</strong> - 순한맛으로 누구나 OK</li>
+  </ul>
+  </div>
+  </section>
+
+  <!-- Section 6: Social Proof Zone -->
+  <section class="section">
+  <h2 class="center-only">⭐ 고객 만족도 체크포인트</h2>
+  <div class="text-container">
+  <div style="background-color: var(--light-gray); padding: 25px; border-radius: 12px;">
+  <h3>✅ 이 제품의 핵심 장점들</h3>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+  <li><strong>진짜 분식집 맛</strong> - 신당동 떡볶이집 수준의 깊은 맛</li>
+  <li><strong>쫄깃한 떡</strong> - 탱글탱글한 식감이 살아있는 쌀떡</li>
+  <li><strong>완벽한 양념</strong> - 매콤달콤한 국물이 일품</li>
+  <li><strong>간편한 조리</strong> - 끓는 물 10분으로 완성</li>
+  <li><strong>합리적 가격</strong> - 430g 3인분을 합리적 가격에</li>
+  <li><strong>선택의 즐거움</strong> - 매운맛과 순한맛 둘 다 가능</li>
+  </ul>
+  </div>
+  <p style="margin-top: 20px;">이 모든 것이 하나의 제품에 담겨 있습니다. 만원요리 최씨남매가 직접 체험하고 인정한 품질을 확인해보세요.</p>
+  </div>
+  </section>
+
+  <!-- Section 7: Final Purchase Proposal Zone -->
+  <section class="section">
+  <h2 class="center-only">🛒 제품 선택을 위한 마지막 체크</h2>
+  <div class="text-container">
+  <h3>🤔 자주 묻는 질문 FAQ</h3>
+  <div style="margin: 20px 0;">
+  <p><strong>Q: 매운맛과 순한맛 차이가 많이 나나요?</strong></p>
+  <p>A: 순한맛은 아이들도 드실 수 있을 정도로 순하고, 매운맛은 어른들이 즐기기 좋은 적당한 매운맛입니다.</p>
+  </div>
+  <div style="margin: 20px 0;">
+  <p><strong>Q: 430g이면 몇 인분인가요?</strong></p>
+  <p>A: 3인분 기준이지만 혼자 드셔도 든든한 한 끼가 되고, 가족끼리 나눠 먹기에도 적당합니다.</p>
+  </div>
+  <div style="margin: 20px 0;">
+  <p><strong>Q: 조리가 어렵지 않나요?</strong></p>
+  <p>A: 끓는 물에 10분이면 완성되는 간편한 조리법으로 누구나 쉽게 만들 수 있습니다.</p>
+  </div>
+  
+  <div style="background-color: var(--light-gray); padding: 20px; border-radius: 10px; margin: 30px 0;">
+  <h4 style="color: var(--deep-rose); margin-bottom: 10px;">💡 보관 팁</h4>
+  <p>냉동보관 가능하니까 여러 개 사서 냉동실에 보관해두시면 언제든 간편하게 드실 수 있어요. 야식이나 간식으로 정말 좋습니다!</p>
+  </div>
+  </div>
+  </section>
+
+  <!-- Section 8: Additional Product Images -->
+  <section class="section">
+  <h2 class="center-only">📸 제품 상세 이미지</h2>
+  <div class="center-only">
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/tteokbokki-430g/tteokbokki-430g-2.jpg" alt="인생 국물떡볶이 430g 제품 패키지 냉동 간편식 10분 완성 조리법 안내 상세 이미지" class="product-image fr-draggable">
+  <img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/life/tteokbokki-430g/tteokbokki-430g-3.jpg" alt="인생 국물떡볶이 430g 3인분 구성 매운맛 순한맛 선택권 핵심 특징 안내 이미지" class="product-image fr-draggable">
+  </div>
+  </section>
+
+  <!-- Section 9: Product Basic Information -->
+  <section class="info-section">
+  <h2 class="center-only">
+  <i style="color: var(--deep-rose); margin-right: 10px;" class="fas fa-info-circle"></i>
+  제품 기본정보
+  </h2>
+  <div class="text-container">
+  <div class="info-list">
+  <div class="info-item">
+  <span class="info-label">제품명</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">[인생]국물떡볶이(매운맛/순한맛) 430g</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">용량</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">430g (3인분)</span>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- Section 10: Company Information -->
+  <section class="info-section">
+  <h2 class="center-only">
+  <i style="color: var(--deep-rose); margin-right: 10px;" class="fas fa-building"></i>
+  판매원 정보
+  </h2>
+  <div class="info-grid">
+  <div class="company-section">
+  <h3 class="company-title">회사 정보</h3>
+  <div class="info-list">
+  <div class="info-item">
+  <span class="info-label">상호</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">㈜값진한끼</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">대표자</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">고혜숙</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">사업자등록번호</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">434-86-03863</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">통신판매업</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">2025-경기파주-2195호</span>
+  </div>
+  </div>
+  </div>
+  
+  <div class="company-section">
+  <h3 class="company-title">연락처</h3>
+  <div class="info-list">
+  <div class="info-item">
+  <span class="info-label">주소</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">경기도 파주시 경의로 1246, 11층 1105-19호</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">전화</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">070-8835-2885</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">이메일</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">we@manwonyori.com</span>
+  </div>
+  <div class="info-item">
+  <span class="info-label">사이트</span>
+  <span class="info-colon">:</span>
+  <span class="info-value">만원요리 최씨남매</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 40px 0; color: var(--medium-gray); border-top: 1px solid var(--border-gray);">
+  <p>© 2025 ㈜값진한끼. All rights reserved.</p>
+  <p>만원요리 최씨남매와 함께하는 맛있는 가성비 라이프</p>
+  </footer>
+  </div>
+</center>

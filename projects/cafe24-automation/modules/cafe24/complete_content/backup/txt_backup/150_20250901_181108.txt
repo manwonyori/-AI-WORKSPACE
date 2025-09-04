@@ -1,0 +1,317 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>만원요리 최씨남매 X 훈제오리 완포 단독 공구</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<style>
+	:root {
+		--saffron-gold: #E4A853; --deep-rose: #C53030; --deep-charcoal: #1F2937; --pure-white: #FFFFFF; --light-gray: #F9FAFB; --medium-gray: #6B7280; --border-gray: #E5E7EB;
+	}
+	
+	* {
+		font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+	}
+	
+	.brand-gradient {
+		background: linear-gradient(135deg, var(--saffron-gold), var(--deep-rose));
+	}
+	
+	.text-shadow {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	}
+	
+	.hover-scale {
+		transition: transform 0.3s ease;
+	}
+	
+	.hover-scale:hover {
+		transform: scale(1.02);
+	}
+	
+	.floating-animation {
+		animation: float 6s ease-in-out infinite;
+	}
+	
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+	
+	.fade-in {
+		animation: fadeIn 1s ease-in;
+	}
+	
+	@keyframes fadeIn {
+		from {
+			opacity: 0; transform: translateY(30px);
+		}
+		to {
+			opacity: 1; transform: translateY(0);
+		}
+	}
+	
+	.section-spacing {
+		margin-bottom: 3rem;
+	}
+	
+	@media print {
+		.section-spacing {
+			margin-bottom: 2rem;
+		}
+	}
+
+</style>
+
+
+<!-- Strategic Header -->
+<header class="bg-white shadow-lg section-spacing">
+<div class="max-w-4xl mx-auto px-4 py-8">
+<div class="text-center">
+<div class="inline-block border-2 border-yellow-400 rounded-lg px-6 py-3 mb-4">
+
+<h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+만원요리 최씨남매 X <span style="color: var(--deep-rose);">훈제오리 완포</span> 단독 공구
+</h1>
+</div>
+
+<h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-6">
+오리육 <span style="color: var(--deep-rose);">96.11%</span> 고함량의 진짜 맛을 경험하세요
+</h2>
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+
+<p class="text-lg font-medium text-gray-800">
+🦆 <strong>"완포(完胞)"란?</strong>
+<br>
+<span class="text-base text-gray-600">뼈를 완전히 제거한 순살 통오리 • 번거로운 뼈 발라내기 없이 바로 조리 가능</span>
+</p>
+</div>
+</div>
+</div>
+</header>
+
+<div class="max-w-4xl mx-auto px-4">
+<!-- 메인 제품 이미지 -->
+<div class="text-center section-spacing fade-in">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-1.jpg" alt="훈제오리 완포 메인 이미지" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg hover-scale fr-draggable">
+</div>
+
+<!-- 해선정 소개 -->
+<div class="text-center section-spacing">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-8.png" alt="해선정 브랜드 소개" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+
+<!-- Why Section -->
+<section class="section-spacing fade-in">
+<div class="bg-white rounded-xl shadow-lg p-8">
+
+<h2 style="color: var(--deep-rose);" class="text-2xl font-bold mb-6 text-center">
+<i class="fas fa-question-circle mr-2"></i>Why? 왜 이 훈제오리 완포여야 할까요?
+</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="text-center p-6 border border-gray-200 rounded-lg">
+<div class="text-3xl mb-4">🥇</div>
+
+<h3 style="color: var(--deep-charcoal);" class="font-bold text-lg mb-2">오리육 96.11%</h3>
+
+<p class="text-gray-600">업계 최고 수준의 고함량으로 진짜 오리 맛을 느낄 수 있습니다</p>
+</div>
+<div class="text-center p-6 border border-gray-200 rounded-lg">
+<div class="text-3xl mb-4">🔥</div>
+
+<h3 style="color: var(--deep-charcoal);" class="font-bold text-lg mb-2">간편한 조리</h3>
+
+<p class="text-gray-600">에어프라이어 10분이면 완성! 번거로운 조리 과정 없이 프리미엄 맛</p>
+</div>
+<div class="text-center p-6 border border-gray-200 rounded-lg">
+<div class="text-3xl mb-4">📊</div>
+
+<h3 style="color: var(--deep-charcoal);" class="font-bold text-lg mb-2">투명한 품질</h3>
+
+<p class="text-gray-600">성분 함량까지 정확히 공개하는 믿을 수 있는 제품</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Wow Section -->
+<section class="section-spacing fade-in">
+<div class="brand-gradient rounded-xl shadow-lg p-8 text-white">
+
+<h2 class="text-2xl font-bold mb-6 text-center">
+<i class="fas fa-gift mr-2"></i>배송 정보 &amp; 절약 TIP! 🚚
+</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-white bg-opacity-20 rounded-lg p-6">
+
+<h3 class="font-bold text-lg mb-4">📦 포장비 안내 (투명 공개)</h3>
+
+<ul class="space-y-2">
+<li>🧊 냉동 제품 특성상 전용 포장재 필요</li>
+<li>💰 포장비: 4,800원</li>
+<li>📝 포장비가 조금 비싸지만, 안전한 배송을 위해 꼭 필요합니다</li>
+<li>🔒 보냉박스로 신선도 보장</li>
+</ul>
+</div>
+<div class="bg-white bg-opacity-20 rounded-lg p-6">
+
+<h3 class="font-bold text-lg mb-4">💡 포장비 절약 TIP</h3>
+
+<ul class="space-y-2">
+<li>✅ 다른 냉동 제품과 함께 주문하시면 포장비 1회만!</li>
+<li>🎁 카카오채널 추가 시 추가 혜택 제공</li>
+<li>🛒 만원요리 다른 제품들도 함께 둘러보세요</li>
+<li>📱 스마트한 구매로 배송비 절약하세요</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How Section -->
+<section class="section-spacing fade-in">
+<div class="bg-white rounded-xl shadow-lg p-8">
+
+<h2 style="color: var(--deep-rose);" class="text-2xl font-bold mb-6 text-center">
+<i class="fas fa-utensils mr-2"></i>How? 이렇게 활용하세요!
+</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div style="background-color: var(--light-gray);" class="border border-yellow-300 rounded-lg p-6">
+
+<h3 style="color: var(--saffron-gold);" class="font-bold text-lg mb-4">🍳 간편 조리법</h3>
+
+<ul class="space-y-2 text-gray-700">
+<li><strong>에어프라이어:</strong> 180℃에서 10분</li>
+<li><strong>오븐:</strong> 180~200℃에서 10-12분</li>
+<li><strong>프라이팬:</strong> 중약불에서 5-10분</li>
+<li>💡 조리 중간에 뒤집어 주면 더욱 맛있어요!</li>
+</ul>
+</div>
+<div style="background-color: var(--light-gray);" class="border border-red-300 rounded-lg p-6">
+
+<h3 style="color: var(--deep-rose);" class="font-bold text-lg mb-4">👨‍🍳 추천 레시피</h3>
+
+<ul class="space-y-2 text-gray-700">
+<li><strong>오리 샐러드:</strong> 부추, 양파와 함께</li>
+<li><strong>오리 볶음밥:</strong> 김치와 함께 볶아서</li>
+<li><strong>오리 구이:</strong> 그냥 구워서 간단하게</li>
+<li>🍽️ 완포라서 뼈 걱정 없이 편리해요!</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Trust Section -->
+<section class="section-spacing fade-in">
+<div class="bg-white rounded-xl shadow-lg p-8">
+
+<h2 style="color: var(--deep-rose);" class="text-2xl font-bold mb-6 text-center">
+<i class="fas fa-shield-alt mr-2"></i>Trust! 믿을 수 있는 이유
+</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="text-center p-6 border border-gray-200 rounded-lg">
+<div class="text-3xl mb-4">📜</div>
+
+<h3 style="color: var(--deep-charcoal);" class="font-bold text-lg mb-2">안전 인증 완료</h3>
+
+<p class="text-gray-600">안전 인증을 완료한 제품</p>
+</div>
+<div class="text-center p-6 border border-gray-200 rounded-lg">
+<div class="text-3xl mb-4">🏭</div>
+
+<h3 style="color: var(--deep-charcoal);" class="font-bold text-lg mb-2">신뢰할 수 있는 제조사</h3>
+
+<p class="text-gray-600">검증된 제조 시설에서 엄격한 품질 관리로 생산</p>
+</div>
+<div class="text-center p-6 border border-gray-200 rounded-lg">
+<div class="text-3xl mb-4">✅</div>
+
+<h3 style="color: var(--deep-charcoal);" class="font-bold text-lg mb-2">만원요리 검증</h3>
+
+<p class="text-gray-600">만원요리 최씨남매가 직접 맛보고 검증한 품질</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 제품 상세 이미지들 -->
+<section class="section-spacing">
+
+<h2 style="color: var(--deep-charcoal);" class="text-2xl font-bold mb-6 text-center">제품 상세 정보</h2>
+<div class="space-y-6">
+<div class="text-center">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-2.jpg" alt="훈제오리 완포 상세정보 1" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+<div class="text-center">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-3.jpg" alt="훈제오리 완포 상세정보 2" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+<div class="text-center">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-4.jpg" alt="훈제오리 완포 조리 방법" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+<div class="text-center">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-5.jpg" alt="품목제조보고서" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+<div class="text-center">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-6.jpg" alt="배송 및 주의사항" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+<div class="text-center">
+<img src="https://ecimg.cafe24img.com/pg1966b42244249021/manwonyori/web/product/haesun/duck-800/duck-7.jpg" alt="배송관련 주의사항 2" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg fr-draggable">
+</div>
+</div>
+</section>
+
+<!-- 회사 정보 -->
+<section class="section-spacing">
+<div class="bg-gray-100 rounded-xl p-8">
+
+<h2 style="color: var(--deep-charcoal);" class="text-xl font-bold mb-6 text-center">회사 정보</h2>
+<div class="grid md:grid-cols-2 gap-8 text-sm">
+<div>
+
+<h3 style="color: var(--deep-rose);" class="font-bold text-lg mb-4">판매원 정보</h3>
+
+<ul class="space-y-1">
+<li><strong>상호명:</strong> ㈜값진한끼</li>
+<li><strong>사업자등록번호:</strong> 434-86-03863</li>
+<li><strong>대표자명:</strong> 고혜숙</li>
+<li><strong>주소:</strong> 경기도 파주시 경의로 1246, 11층 1105-19호</li>
+<li><strong>연락처:</strong> 070-8835-2885</li>
+<li><strong>이메일:</strong> we@manwonyori.com</li>
+<li><strong>통신판매업 신고번호:</strong> 2025-경기파주-2195호</li>
+</ul>
+</div>
+<div>
+
+<h3 style="color: var(--deep-rose);" class="font-bold text-lg mb-4">제조사 정보</h3>
+
+<ul class="space-y-1">
+<li><strong>제조사:</strong> HENAN HUAYING CHERRY VALLEY FOOD CO., LTD</li>
+<li><strong>수입/판매사:</strong> (주)모비딕에프에스</li>
+<li><strong>사업자등록번호:</strong> 215-87-26471</li>
+<li><strong>대표자명:</strong> 배영복</li>
+<li><strong>주소:</strong> 서울 송파구 가락로 164 파인힐빌딩 302호</li>
+<li><strong>원산지:</strong> 중국</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 mt-12">
+<div class="max-w-4xl mx-auto px-4 text-center">
+
+<p class="text-lg font-semibold mb-2">만원요리 최씨남매</p>
+
+<p class="text-gray-400">오리육 96.11% 고함량 훈제오리 완포로 특별한 식사를 경험하세요</p>
+</div>
+</footer>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Popup</title>
+    <style>
+        body {
+            width: 400px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-height: 80px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        .btn-danger {
+            background: #f44336;
+            color: white;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #999;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #f0f0f0;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .success { color: green; }
+        .error { color: red; }
+        .warning { color: orange; }
+    </style>
+</head>
+<body>
+    <h2>🚀 Relay Test Interface</h2>
+    
+    <div class="section">
+        <h3>Status Check</h3>
+        <button onclick="checkStatus()">Check Status</button>
+        <div id="statusDisplay" class="status">Click to check status...</div>
+    </div>
+    
+    <div class="section">
+        <h3>Auto Relay Test</h3>
+        <textarea id="relayObjective" placeholder="Enter project objective...">Test: Create a simple hello world function</textarea>
+        <div>
+            <button id="btnStartRelay" class="btn-primary" onclick="startRelay()">START RELAY</button>
+            <button id="btnStopRelay" class="btn-danger" onclick="stopRelay()" disabled>STOP RELAY</button>
+        </div>
+        <div id="relayStatus" class="status">Ready to start...</div>
+    </div>
+    
+    <div class="section">
+        <h3>Debug Info</h3>
+        <button onclick="debugInfo()">Get Debug Info</button>
+        <div id="debugDisplay" class="status">Debug info will appear here...</div>
+    </div>
+    
+    <script>
+        let relayActive = false;
+        
+        function updateUI() {
+            const startBtn = document.getElementById('btnStartRelay');
+            const stopBtn = document.getElementById('btnStopRelay');
+            
+            if (relayActive) {
+                startBtn.disabled = true;
+                stopBtn.disabled = false;
+            } else {
+                startBtn.disabled = false;
+                stopBtn.disabled = true;
+            }
+        }
+        
+        async function checkStatus() {
+            const statusDiv = document.getElementById('statusDisplay');
+            statusDiv.innerHTML = 'Checking status...';
+            
+            try {
+                const response = await chrome.runtime.sendMessage({
+                    action: 'GET_STATUS'
+                });
+                
+                if (response) {
+                    statusDiv.innerHTML = `
+                        <div class="success">✅ Connection OK</div>
+                        <div>Relay Active: ${response.relay?.active || false}</div>
+                        <div>Round: ${response.relay?.currentRound || 0}</div>
+                        <div>Platforms: ${Object.keys(response.platforms || {}).join(', ') || 'None'}</div>
+                    `;
+                    
+                    relayActive = response.relay?.active || false;
+                    updateUI();
+                } else {
+                    statusDiv.innerHTML = '<div class="error">❌ No response from background</div>';
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="error">❌ Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function startRelay() {
+            const objective = document.getElementById('relayObjective').value.trim();
+            const statusDiv = document.getElementById('relayStatus');
+            
+            if (!objective) {
+                alert('Please enter an objective!');
+                return;
+            }
+            
+            statusDiv.innerHTML = 'Starting relay...';
+            
+            try {
+                const response = await chrome.runtime.sendMessage({
+                    action: 'START_RELAY',
+                    objective: objective
+                });
+                
+                if (response?.success) {
+                    statusDiv.innerHTML = '<div class="success">✅ Relay started successfully!</div>';
+                    relayActive = true;
+                    updateUI();
+                    
+                    // Clear input
+                    document.getElementById('relayObjective').value = '';
+                } else {
+                    statusDiv.innerHTML = `<div class="error">❌ Failed to start: ${response?.error || 'Unknown error'}</div>`;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="error">❌ Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function stopRelay() {
+            const statusDiv = document.getElementById('relayStatus');
+            statusDiv.innerHTML = 'Stopping relay...';
+            
+            try {
+                const response = await chrome.runtime.sendMessage({
+                    action: 'STOP_RELAY'
+                });
+                
+                if (response?.success) {
+                    statusDiv.innerHTML = '<div class="warning">⏹️ Relay stopped</div>';
+                    relayActive = false;
+                    updateUI();
+                } else {
+                    statusDiv.innerHTML = `<div class="error">❌ Failed to stop</div>`;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="error">❌ Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function debugInfo() {
+            const debugDiv = document.getElementById('debugDisplay');
+            debugDiv.innerHTML = 'Gathering debug info...';
+            
+            try {
+                // Check if background is accessible
+                const backgroundTest = await chrome.runtime.sendMessage({ action: 'GET_STATUS' });
+                
+                // Check current tab
+                const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+                
+                // Get storage data
+                const storage = await chrome.storage.local.get(['relay', 'monitor']);
+                
+                debugDiv.innerHTML = `
+                    <div>Background: ${backgroundTest ? '✅ OK' : '❌ Not responding'}</div>
+                    <div>Current Tab: ${tabs[0]?.url || 'Unknown'}</div>
+                    <div>Storage Relay: ${JSON.stringify(storage.relay || {})}</div>
+                    <div>Monitor Data: ${JSON.stringify(storage.monitor || {})}</div>
+                    <div>Extension ID: ${chrome.runtime.id}</div>
+                `;
+            } catch (error) {
+                debugDiv.innerHTML = `<div class="error">Debug Error: ${error.message}</div>`;
+            }
+        }
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Test popup loaded');
+            updateUI();
+            checkStatus();
+        });
+    </script>
+</body>
+</html>

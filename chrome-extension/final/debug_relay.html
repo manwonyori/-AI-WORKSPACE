@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Relay Debug Monitor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: monospace;
+            background: #0a0a0a;
+            color: #0ff;
+            padding: 20px;
+        }
+        .header {
+            border: 2px solid #0ff;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .platform-card {
+            border: 1px solid #0ff;
+            padding: 10px;
+            background: rgba(0,255,255,0.05);
+        }
+        .platform-card.active {
+            background: rgba(0,255,0,0.2);
+            border-color: #0f0;
+        }
+        .platform-card.error {
+            background: rgba(255,0,0,0.2);
+            border-color: #f00;
+        }
+        .log-container {
+            border: 1px solid #0ff;
+            padding: 10px;
+            height: 400px;
+            overflow-y: auto;
+            background: rgba(0,0,0,0.5);
+        }
+        .log-entry {
+            margin: 2px 0;
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+        .log-entry.error { color: #ff0000; }
+        .log-entry.success { color: #00ff00; }
+        .log-entry.warning { color: #ffff00; }
+        .log-entry.info { color: #00ffff; }
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background: #0ff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background: #0f0;
+        }
+        button:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+        .relay-flow {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #0ff;
+            background: rgba(0,255,255,0.05);
+        }
+        .flow-item {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid #0ff;
+            background: rgba(0,255,255,0.1);
+        }
+        .flow-item.current {
+            background: rgba(0,255,0,0.3);
+            border-color: #0f0;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            border: 1px solid #0ff;
+            padding: 10px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0f0;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔍 AUTO-RELAY DEBUG MONITOR</h1>
+        <div>Real-time Relay System Diagnostics</div>
+    </div>
+
+    <div class="status-grid">
+        <div class="platform-card" id="status-chatgpt">
+            <h3>ChatGPT</h3>
+            <div>Tab: <span id="tab-chatgpt">-</span></div>
+            <div>Ready: <span id="ready-chatgpt">NO</span></div>
+            <div>Last: <span id="last-chatgpt">-</span></div>
+        </div>
+        <div class="platform-card" id="status-claude">
+            <h3>Claude</h3>
+            <div>Tab: <span id="tab-claude">-</span></div>
+            <div>Ready: <span id="ready-claude">NO</span></div>
+            <div>Last: <span id="last-claude">-</span></div>
+        </div>
+        <div class="platform-card" id="status-gemini">
+            <h3>Gemini</h3>
+            <div>Tab: <span id="tab-gemini">-</span></div>
+            <div>Ready: <span id="ready-gemini">NO</span></div>
+            <div>Last: <span id="last-gemini">-</span></div>
+        </div>
+        <div class="platform-card" id="status-perplexity">
+            <h3>Perplexity</h3>
+            <div>Tab: <span id="tab-perplexity">-</span></div>
+            <div>Ready: <span id="ready-perplexity">NO</span></div>
+            <div>Last: <span id="last-perplexity">-</span></div>
+        </div>
+    </div>
+
+    <div class="relay-flow">
+        <h3>Relay Sequence:</h3>
+        <div id="flow-sequence">
+            <div class="flow-item" data-platform="claude">Claude</div>
+            <div class="flow-item">→</div>
+            <div class="flow-item" data-platform="chatgpt">ChatGPT</div>
+            <div class="flow-item">→</div>
+            <div class="flow-item" data-platform="gemini">Gemini</div>
+            <div class="flow-item">→</div>
+            <div class="flow-item" data-platform="perplexity">Perplexity</div>
+            <div class="flow-item">→</div>
+            <div class="flow-item">Round Complete</div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-value" id="stat-round">0</div>
+            <div class="stat-label">ROUND</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="stat-messages">0</div>
+            <div class="stat-label">MESSAGES</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="stat-responses">0</div>
+            <div class="stat-label">RESPONSES</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="stat-errors">0</div>
+            <div class="stat-label">ERRORS</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="btnStartDebug">START DEBUG RELAY</button>
+        <button id="btnStopDebug">STOP</button>
+        <button id="btnClearLogs">CLEAR LOGS</button>
+        <button id="btnExportLogs">EXPORT LOGS</button>
+    </div>
+
+    <div class="log-container" id="logContainer">
+        <div class="log-entry info">Debug Monitor Ready...</div>
+    </div>
+
+    <script>
+        const DEBUG = {
+            logs: [],
+            stats: {
+                round: 0,
+                messages: 0,
+                responses: 0,
+                errors: 0
+            },
+            platforms: {},
+            relayActive: false,
+            currentPlatform: null
+        };
+
+        function log(message, type = 'info') {
+            const time = new Date().toLocaleTimeString();
+            const entry = { time, message, type };
+            DEBUG.logs.push(entry);
+            
+            const container = document.getElementById('logContainer');
+            const div = document.createElement('div');
+            div.className = `log-entry ${type}`;
+            div.textContent = `[${time}] ${message}`;
+            container.appendChild(div);
+            container.scrollTop = container.scrollHeight;
+            
+            console.log(`[DEBUG] ${message}`);
+        }
+
+        async function sendDebugMessage(action, data = {}) {
+            try {
+                const response = await chrome.runtime.sendMessage({
+                    action,
+                    ...data,
+                    debug: true,
+                    timestamp: Date.now()
+                });
+                return response;
+            } catch (error) {
+                log(`Error: ${error.message}`, 'error');
+                DEBUG.stats.errors++;
+                updateStats();
+                return null;
+            }
+        }
+
+        async function startDebugRelay() {
+            log('Starting debug relay test...', 'info');
+            
+            // First check all platforms
+            log('Checking platform status...', 'info');
+            const status = await sendDebugMessage('GET_STATUS');
+            
+            if (status && status.platforms) {
+                for (const [platform, tabId] of Object.entries(status.platforms)) {
+                    if (tabId) {
+                        log(`${platform}: Tab ${tabId} found`, 'success');
+                        document.getElementById(`tab-${platform}`).textContent = tabId;
+                        document.getElementById(`ready-${platform}`).textContent = 'YES';
+                        document.getElementById(`status-${platform}`).classList.add('active');
+                    } else {
+                        log(`${platform}: Not found`, 'warning');
+                    }
+                }
+            }
+            
+            // Start relay with debug objective
+            const objective = `[DEBUG TEST ${Date.now()}]
+Test auto-relay functionality.
+Each AI should respond and pass to the next.
+Claude -> ChatGPT -> Gemini -> Perplexity`;
+            
+            log('Sending relay start command...', 'info');
+            const result = await sendDebugMessage('START_RELAY', { 
+                objective,
+                debug: true 
+            });
+            
+            if (result && result.success) {
+                log('Relay started successfully!', 'success');
+                DEBUG.relayActive = true;
+                DEBUG.currentPlatform = 'claude';
+                updateFlowDisplay();
+            } else {
+                log('Failed to start relay', 'error');
+            }
+        }
+
+        function updateFlowDisplay() {
+            document.querySelectorAll('.flow-item[data-platform]').forEach(el => {
+                el.classList.remove('current');
+                if (el.dataset.platform === DEBUG.currentPlatform) {
+                    el.classList.add('current');
+                }
+            });
+        }
+
+        function updateStats() {
+            document.getElementById('stat-round').textContent = DEBUG.stats.round;
+            document.getElementById('stat-messages').textContent = DEBUG.stats.messages;
+            document.getElementById('stat-responses').textContent = DEBUG.stats.responses;
+            document.getElementById('stat-errors').textContent = DEBUG.stats.errors;
+        }
+
+        // Listen for background messages
+        chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+            if (request.debug || request.action === 'DEBUG_UPDATE') {
+                log(`Background: ${JSON.stringify(request)}`, 'info');
+                
+                if (request.platform) {
+                    document.getElementById(`last-${request.platform}`).textContent = 
+                        new Date().toLocaleTimeString();
+                }
+                
+                if (request.action === 'RELAY_RESPONSE') {
+                    DEBUG.stats.responses++;
+                    log(`Response from ${request.platform}: ${request.response.substring(0, 100)}...`, 'success');
+                    
+                    // Update current platform
+                    const sequence = ['claude', 'chatgpt', 'gemini', 'perplexity'];
+                    const currentIndex = sequence.indexOf(request.platform);
+                    if (currentIndex < sequence.length - 1) {
+                        DEBUG.currentPlatform = sequence[currentIndex + 1];
+                    } else {
+                        DEBUG.stats.round++;
+                        DEBUG.currentPlatform = sequence[0];
+                    }
+                    updateFlowDisplay();
+                }
+                
+                if (request.action === 'RELAY_SENT') {
+                    DEBUG.stats.messages++;
+                    log(`Message sent to ${request.platform}`, 'success');
+                }
+                
+                updateStats();
+            }
+        });
+
+        // Button handlers
+        document.getElementById('btnStartDebug').addEventListener('click', startDebugRelay);
+        
+        document.getElementById('btnStopDebug').addEventListener('click', async () => {
+            log('Stopping relay...', 'warning');
+            await sendDebugMessage('STOP_RELAY');
+            DEBUG.relayActive = false;
+        });
+        
+        document.getElementById('btnClearLogs').addEventListener('click', () => {
+            document.getElementById('logContainer').innerHTML = 
+                '<div class="log-entry info">Logs cleared...</div>';
+            DEBUG.logs = [];
+        });
+        
+        document.getElementById('btnExportLogs').addEventListener('click', () => {
+            const data = JSON.stringify(DEBUG, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `relay_debug_${Date.now()}.json`;
+            a.click();
+        });
+
+        // Auto-refresh status
+        setInterval(async () => {
+            if (DEBUG.relayActive) {
+                const status = await sendDebugMessage('GET_STATUS');
+                if (status && status.relay) {
+                    DEBUG.stats.round = status.relay.currentRound || 0;
+                    updateStats();
+                }
+            }
+        }, 3000);
+
+        log('Debug Monitor initialized', 'success');
+    </script>
+</body>
+</html>

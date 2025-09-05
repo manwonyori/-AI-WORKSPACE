@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "name": "AI Ultimate Auto-Relay System",
+  "version": "3.0.0",
+  "description": "완벽한 AI 자동 대화 릴레이 시스템 - 100% 작동 보장",
+  
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab",
+    "notifications",
+    "clipboardWrite",
+    "webNavigation"
+  ],
+  
+  "host_permissions": [
+    "https://*.chatgpt.com/*",
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://*.claude.ai/*",
+    "https://claude.ai/*",
+    "https://*.google.com/*",
+    "https://gemini.google.com/*",
+    "https://aistudio.google.com/*",
+    "https://*.perplexity.ai/*",
+    "https://perplexity.ai/*",
+    "https://www.perplexity.ai/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.chatgpt.com/*",
+        "*://chatgpt.com/*",
+        "*://chat.openai.com/*",
+        "*://*.claude.ai/*",
+        "*://claude.ai/*",
+        "*://*.google.com/*",
+        "*://gemini.google.com/*",
+        "*://aistudio.google.com/*",
+        "*://*.perplexity.ai/*",
+        "*://perplexity.ai/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_title": "AI Ultimate Auto-Relay"
+  },
+  
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["monitor.html", "dashboard.html", "debug_relay.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

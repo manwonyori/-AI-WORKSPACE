@@ -87,3 +87,20 @@ Thumbs.db
 # 민감한 설정 파일
 config/production.json
 config/secrets.json
+
+# Chrome Extension 정리 - 불필요한 파일들
+chrome-extension/node_modules/
+chrome-extension/archive/
+chrome-extension/development/
+chrome-extension/test_tools/
+chrome-extension/final_backup/
+chrome-extension/*test*.js
+chrome-extension/*diagnostic*.js
+chrome-extension/content_v*.js
+chrome-extension/*debug*.js
+
+# 중복/테스트 폴더들
+*backup*/
+*test*/
+*archive*/
+development/
